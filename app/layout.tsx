@@ -1,9 +1,19 @@
 import Header from "@/components/Header"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Sofia_Sans } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+const sofia_sans = Sofia_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sofia-sans",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +22,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${inter.variable} ${sofia_sans.variable}`}>
+      <body>
         <Header />
         <div className="min-h-screen">{children}</div>
       </body>

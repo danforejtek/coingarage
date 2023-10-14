@@ -55,9 +55,16 @@ export function Menu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger
+            className={cn(
+              "text-white bg-transparent ",
+              "hover:text-white hover:bg-primary data-[state=open]:bg-primary"
+            )}
+          >
+            Getting started
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -85,20 +92,23 @@ export function Menu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title} href={component.href}>
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
+          <Link href="/trade" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Trade</NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
+          <Link href="/convert" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Convert</NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/earn" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Earn</NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/nft" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>NFT</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
