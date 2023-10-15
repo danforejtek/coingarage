@@ -55,13 +55,8 @@ export function Menu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger
-            className={cn(
-              "text-white bg-transparent ",
-              "hover:text-white hover:bg-primary data-[state=open]:bg-primary"
-            )}
-          >
-            Getting started
+          <NavigationMenuTrigger className={cn("text-secondary bg-transparent text-md")}>
+            Buy Crypto
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -93,22 +88,30 @@ export function Menu() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/trade" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Trade</NavigationMenuLink>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+              Trade
+            </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/convert" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Convert</NavigationMenuLink>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+              Convert
+            </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/earn" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Earn</NavigationMenuLink>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+              Earn
+            </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/nft" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>NFT</NavigationMenuLink>
+            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+              NFT
+            </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
