@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main
       style={{
-        background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 10%, rgba(255, 31, 112, 0.22) 100%)",
+        background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 56%, rgba(255, 31, 112, 0.22) 100%)",
       }}
     >
       <div className="h-[84px]"></div>
