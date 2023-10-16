@@ -14,7 +14,7 @@ export default function Footer() {
             <li>Fees</li>
             <li>Digita assets</li>
             <li>Blog</li>
-            <li>FAQ's</li>
+            <li>FAQ&apos;s</li>
           </ul>
         </div>
         <div>
@@ -42,14 +42,14 @@ export default function Footer() {
               <li className="grid grid-cols-[24px_1fr] gap-4">
                 <Image src="/icons/map.png" alt="Address" width={24} height={24} className="mt-1" />
                 <span>
-                  Vlkova 532/8,
+                  Vlkova&nbsp;532/8,
                   <br />
-                  130 00 Prague, Czech Republic
+                  130&nbsp;00&nbsp;Prague,&nbsp;Czech&nbsp;Republic
                 </span>
               </li>
               <li className="grid grid-cols-[24px_1fr] gap-4">
                 <Image src="/icons/phone.png" alt="Address" width={24} height={24} className="mt-0" />
-                <span>+420 778 116 516</span>
+                <span>+420&nbsp;778&nbsp;116&nbsp;516</span>
               </li>
               <li className="grid grid-cols-[24px_1fr] gap-4">
                 <Image src="/icons/email.png" alt="Address" width={24} height={24} className="mt-0" />
@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li className="grid grid-cols-[24px_1fr] gap-4">
                 <Image src="/icons/list.png" alt="Address" width={24} height={24} className="mt-0" />
-                IČ: 11667974
+                IČ:&nbsp;11667974
               </li>
             </ul>
           </address>
