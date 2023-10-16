@@ -1,4 +1,5 @@
-import Header from "@/components/Header"
+import Footer from "@/components/layout/Footer"
+import Header from "@/components/layout/Header"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Header />
         <div className="min-h-screen">{children}</div>
+        <Footer />
       </body>
     </html>
   )

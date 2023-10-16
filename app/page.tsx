@@ -4,14 +4,17 @@ import Image from "next/image"
 import Heading from "@/components/Heading"
 import CryptoMarketTable from "@/components/CryptoMarketTable"
 import Link from "next/link"
+import Faq from "@/components/Faq"
 
 export default function Home() {
   return (
-    <main
-      style={{
-        background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 56%, rgba(255, 31, 112, 0.22) 100%)",
-      }}
-    >
+    <main className="relative">
+      <div
+        className="absolute top-0 left-0 w-full h-[100vh] -z-10"
+        style={{
+          background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 60%, rgba(255, 31, 112, 0.22) 100%)",
+        }}
+      ></div>
       <div className="h-[84px]"></div>
       <section className="container mx-auto flex flex-row flex-wrap justify-between mt-28">
         <div className="p-4 max-w-[500px]">
@@ -59,8 +62,16 @@ export default function Home() {
           <CryptoMarketTable />
         </div>
       </section>
+      <section className="container mx-auto p-4 md:p-8 flex flex-row justify-between mt-28">
+        <div className="flex flex-row 2xl:justify-between justify-center flex-wrap gap-4 w-full">
+          <Image src="/images/promo/guarantee.jpg" alt="" width={310} height={150} className="rounded-xl" />
+          <Image src="/images/promo/dividends.jpg" alt="" width={310} height={150} className="rounded-xl" />
+          <Image src="/images/promo/shareholder.jpg" alt="" width={310} height={150} className="rounded-xl" />
+          <Image src="/images/promo/join.jpg" alt="" width={310} height={150} className="rounded-xl" />
+        </div>
+      </section>
       <section className="relative mt-28">
-        <div className="absolute -top-[68px] left-0 w-[1116px] h-[822px] -z-10">
+        <div className="absolute -top-[68px] left-0 w-[1116px] h-[822px] max-w-[96vw] -z-10">
           <Image src="/images/fin.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
         </div>
         <div className="container mx-auto flex flex-row">
@@ -91,6 +102,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="container mx-auto p-4 md:p-8 flex flex-col justify-between mt-64 mb-32">
+        <Heading tag="h2" className="mb-12">
+          FAQ
+        </Heading>
+        <Faq />
       </section>
     </main>
   )
