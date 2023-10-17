@@ -43,15 +43,17 @@ const Nav = ({ onClose }: { onClose: () => void }) => {
                 </li>
               )
             })}
+            <li className="mb-4 mt-12">
+              <Button variant="outline" className="text-md w-full" asChild>
+                <Link href="/login">Login</Link>
+              </Button>
+            </li>
+            <li className="mb-4">
+              <Button className="text-md w-full" asChild>
+                <Link href="/sign-up">Sign up</Link>
+              </Button>
+            </li>
           </ul>
-          <div className="flex items-center justify-end p-6 lg:px-8 gap-4">
-            <Button variant="ghost" className="text-md" asChild>
-              <Link href="/login">Login</Link>
-            </Button>
-            <Button className="text-md" asChild>
-              <Link href="/sign-up">Sign up</Link>
-            </Button>
-          </div>
         </div>
       </div>
     </div>

@@ -6,37 +6,39 @@ export default function Footer() {
       <div className="container mx-auto mb-20">
         <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={100} />
       </div>
-      <div className="container mx-auto flex flex-row justify-start lg:justify-between flex-wrap gap-x-40 gap-y-12">
-        <div>
-          <ul className="flex flex-col gap-6 text-white text-sm font-sans">
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Fees</li>
-            <li>Digita assets</li>
-            <li>Blog</li>
-            <li>FAQ&apos;s</li>
-          </ul>
+      <div className="container mx-auto flex flex-row justify-between flex-wrap gap-x-40 gap-y-12">
+        <div className="flex flex-row justify-start flex-wrap gap-x-40 gap-y-12">
+          <div>
+            <ul className="flex flex-col gap-6 text-white text-sm font-sans">
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Fees</li>
+              <li>Digita assets</li>
+              <li>Blog</li>
+              <li>FAQ&apos;s</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="flex flex-col gap-6 text-white text-sm font-sans">
+              <li>Coin Listing</li>
+              <li>Markets</li>
+              <li>Trade</li>
+              <li>Buy Crypto</li>
+              <li>Earn</li>
+              <li>Staking</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="flex flex-col gap-6 text-white text-sm font-sans">
+              <li>Register</li>
+              <li>Login</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+              <li>Cookie policy</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <ul className="flex flex-col gap-6 text-white text-sm font-sans">
-            <li>Coin Listing</li>
-            <li>Markets</li>
-            <li>Trade</li>
-            <li>Buy Crypto</li>
-            <li>Earn</li>
-            <li>Staking</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="flex flex-col gap-6 text-white text-sm font-sans">
-            <li>Register</li>
-            <li>Login</li>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>Cookie policy</li>
-          </ul>
-        </div>
-        <div>
+        <div className="flex flex-row justify-center md:justify-between flex-wrap  gap-x-40 gap-y-12 mt-12 md:mt-0">
           <address className="not-italic">
             <ul className="flex flex-col gap-6 text-white text-sm font-sans">
               <li className="grid grid-cols-[24px_1fr] gap-4">

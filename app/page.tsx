@@ -103,7 +103,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto p-4 md:p-8 flex flex-col justify-between mt-64 mb-32">
+      <section className="container mx-auto p-4 md:p-8 flex flex-col justify-between mt-32 xl:mt-64 mb-32">
         <Heading tag="h2" className="mb-12">
           FAQ
         </Heading>
