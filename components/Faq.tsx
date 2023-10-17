@@ -28,7 +28,9 @@ export default function Faq() {
     <Accordion type="multiple" className="w-full">
       {faqs.map(({ title, content }, index) => (
         <AccordionItem key={index} value={`item_${index}`} className="bg-neutral-100 px-8 rounded-3xl border-b-0 mb-8">
-          <AccordionTrigger className="font-heading text-lg">{title}</AccordionTrigger>
+          <AccordionTrigger className="font-heading text-lg text-left">
+            <span className="mr-6">{title}</span>
+          </AccordionTrigger>
           <AccordionContent>{content}</AccordionContent>
         </AccordionItem>
       ))}
