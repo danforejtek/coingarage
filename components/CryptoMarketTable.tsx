@@ -49,7 +49,7 @@ export default function CryptoMarketTable() {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead className="">Currency</TableHead>
+          <TableHead className="min-w-[160px]">Currency</TableHead>
           <TableHead className="text-right">Price</TableHead>
           <TableHead className="text-right">24h Change</TableHead>
           <TableHead className="text-right">24h Volume</TableHead>

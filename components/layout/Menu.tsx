@@ -14,39 +14,49 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { describe } from "node:test"
 
-const components: { title: string; href: string; description: string }[] = [
+type NavItem = {
+  title: string
+  href: string
+  description?: string
+  subItems?: NavItem[]
+}
+
+export const navItems: NavItem[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description: "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Buy Crypto",
+    href: "/buy-crypto",
+    subItems: [
+      {
+        title: "Buy with Credit Card",
+        href: "/buy-crypto",
+      },
+      {
+        title: "Buy with Bank Transfer",
+        href: "/buy-crypto",
+      },
+      {
+        title: "Buy with Crypto",
+        href: "/buy-crypto",
+      },
+    ],
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description: "For sighted users to preview content available behind a link.",
+    title: "Trade",
+    href: "/trade",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Convert",
+    href: "/convert",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Earn",
+    href: "/earn",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "NFT",
+    href: "/ntf",
   },
 ]
 
@@ -54,66 +64,50 @@ export function Menu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className={cn("text-secondary bg-transparent text-md")}>
-            Buy Crypto
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
-                    <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/trade" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
-              Trade
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/convert" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
-              Convert
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/earn" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
-              Earn
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/nft" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
-              NFT
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+        {navItems.map(({ title, href, subItems }, index) => {
+          if (subItems) {
+            return (
+              <NavigationMenuItem key={index}>
+                <NavigationMenuTrigger className={cn("text-secondary bg-transparent text-md")}>
+                  {title}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/"
+                        >
+                          {/* <Icons.logo className="h-6 w-6" /> */}
+                          <div className="mb-2 mt-4 text-lg font-medium">Crypto</div>
+                          <p className="text-sm leading-tight text-muted-foreground"></p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                    {subItems.map(({ title, href, description }, index) => {
+                      return (
+                        <ListItem key={index} href={href} title={title}>
+                          {description ? description : title}
+                        </ListItem>
+                      )
+                    })}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            )
+          } else {
+            return (
+              <NavigationMenuItem key={index}>
+                <Link href={href} legacyBehavior passHref>
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+                    {title}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            )
+          }
+        })}
       </NavigationMenuList>
     </NavigationMenu>
   )
@@ -133,7 +127,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
             {...props}
           >
             <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
+            {/* <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p> */}
           </a>
         </NavigationMenuLink>
       </li>

@@ -16,8 +16,8 @@ export default function Home() {
         }}
       ></div>
       <div className="h-[84px]"></div>
-      <section className="container mx-auto flex flex-row flex-wrap justify-between mt-28">
-        <div className="p-4 max-w-[500px]">
+      <section className="container mx-auto flex flex-col lg:flex-row flex-wrap items-center justify-center xl:justify-between mt-16 xl:mt-28">
+        <div className="p-4 w-full max-w-[500px]">
           <h1 className="flex flex-col gap-3 font-heading text-5xl font-bold mb-6">
             <div>Crypto</div>
             <div>Banking & Trading</div>
@@ -37,7 +37,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end items-center max-w-[500px] mt-16 xl:mt-0">
           <Image
             src="/images/phone-graph-main.svg"
             className="animate-slow-bounce"
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
       <section className="container mx-auto flex flex-row justify-between mt-28">
-        <div className="flex flex-row justify-between flex-wrap gap-8 w-full">
+        <div className="flex flex-row justify-center xl:justify-between flex-wrap gap-8 w-full">
           <Figure icon="/icons/exchange.svg" caption="150+ Currencies Listed" />
           <Figure icon="/icons/globe.svg" caption="100+ Participating Countries" />
           <Figure icon="/icons/currency.svg" caption="12 Assets for staking" />
@@ -71,11 +71,11 @@ export default function Home() {
         </div>
       </section>
       <section className="relative mt-28">
-        <div className="absolute -top-[68px] left-0 w-[1116px] h-[822px] max-w-[96vw] -z-10">
+        <div className="absolute top-[180px] xl:-top-[68px] left-0 w-[1116px] h-[822px] max-w-[96vw] -z-10">
           <Image src="/images/fin.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
         </div>
-        <div className="container mx-auto flex flex-row">
-          <div className="flex flex-1 justify-start pt-36">
+        <div className="container mx-auto flex flex-col-reverse xl:flex-row">
+          <div className="flex flex-1 justify-center xl:justify-start pt-36">
             <Image src="/images/laptop.svg" className="animate-slow-bounce" alt="" width={500} height={500} />
           </div>
           <div className="p-4 max-w-[500px]">
