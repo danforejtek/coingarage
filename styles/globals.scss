@@ -19,6 +19,9 @@
     --secondary: 0 0% 11%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
+    --tertiary: 201 100% 66%;
+    --tertiary-foreground: 201 96% 84%;
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
@@ -35,6 +38,8 @@
     --radius: 0.5rem;
 
     --text-light: rgba(0, 0, 0, 0.50);
+
+    --gradient: linear-gradient(90deg, #FF1F70 0%, #52C3FF 100%)
   }
 
   .dark {
@@ -74,5 +79,19 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.checklist {
+  li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 24px;
+
+    &::before {
+      content: url("/icons/checkmark.svg");
+      margin-right: 18px;
+    }
   }
 }
