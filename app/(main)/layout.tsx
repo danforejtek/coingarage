@@ -34,8 +34,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${sofia_sans.variable}`}>
       <body>
         <Header />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        <div className="flex flex-col justify-between min-h-screen">
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   )

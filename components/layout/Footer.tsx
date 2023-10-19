@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <>
+    <div className="mt-24">
       <div className="h-2 bg-gradient-to-r from-primary to-tertiary"></div>
       <footer className="bg-secondary py-16">
         <div className="container mx-auto mb-20">
@@ -68,6 +68,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
