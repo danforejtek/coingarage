@@ -68,7 +68,7 @@ export default function MobileNav({ scrolled = false }) {
 
   return (
     <>
-      <Button variant="ghost" className="text-md" onClick={onOpen}>
+      <Button variant="ghost" className="text-md p-0" onClick={onOpen}>
         <Icons.menu className="h-6 w-6" color={scrolled ? "white" : "black"} />
       </Button>
       {isOpen ? <Nav onClose={onClose} /> : null}

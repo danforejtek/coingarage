@@ -96,7 +96,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mb-32 mt-32 flex flex-col justify-between p-4 md:p-8 xl:mt-64">
+      <section className="container mx-auto my-32 xl:mt-64">
         <Heading tag="h2" className="mb-12">
           FAQ
         </Heading>
