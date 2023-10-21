@@ -16,10 +16,10 @@ const Nav = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="relative w-full max-w-[400px] bg-white rounded-lg shadow-lg">
+      <div className="relative w-full max-w-[400px] rounded-lg bg-white shadow-lg">
         <div className="flex items-center justify-between p-6">
           <div className="flex items-center gap-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-full">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
               <Link href="/">
                 <Icons.logo className="h-10 w-10" />
               </Link>
@@ -60,7 +60,7 @@ const Nav = ({ onClose }: { onClose: () => void }) => {
   )
 }
 
-export default function MobileNav() {
+export default function MobileNav({ scrolled = false }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const onOpen = () => setIsOpen(true)
@@ -69,7 +69,7 @@ export default function MobileNav() {
   return (
     <>
       <Button variant="ghost" className="text-md" onClick={onOpen}>
-        <Icons.menu className="h-6 w-6" color="black" />
+        <Icons.menu className="h-6 w-6" color={scrolled ? "white" : "black"} />
       </Button>
       {isOpen ? <Nav onClose={onClose} /> : null}
     </>

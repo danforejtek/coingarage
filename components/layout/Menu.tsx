@@ -60,7 +60,7 @@ export const navItems: NavItem[] = [
   },
 ]
 
-export function Menu() {
+export function Menu({ textColor = "text-secondary" }) {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -68,7 +68,7 @@ export function Menu() {
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
-                <NavigationMenuTrigger className={cn("text-secondary bg-transparent text-md")}>
+                <NavigationMenuTrigger className={(cn("text-md bg-transparent"), textColor)}>
                   {title}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -100,7 +100,7 @@ export function Menu() {
             return (
               <NavigationMenuItem key={index}>
                 <Link href={href} legacyBehavior passHref>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-secondary text-md")}>
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-md", textColor)}>
                     {title}
                   </NavigationMenuLink>
                 </Link>

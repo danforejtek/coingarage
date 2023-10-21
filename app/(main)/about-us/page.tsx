@@ -11,19 +11,19 @@ export default function AboutUs() {
         }}
       ></div>
       <div className="h-[84px]"></div>
-      <section className="container mx-auto flex flex-col lg:flex-row flex-wrap items-center justify-center xl:justify-between mt-16 xl:mt-28">
+      <section className="container mx-auto flex flex-col lg:flex-row flex-wrap items-center justify-center xl:justify-between mt-12 xl:mt-28">
         <div className="p-4 w-full max-w-[680px]">
-          <h1 className="flex flex-col gap-3 font-heading text-5xl font-bold mb-6">
+          <h1 className="flex flex-col gap-3 font-heading text-5xl font-bold mb-16">
             <Heading tag="h1" size="2xl">
               About us
             </Heading>
           </h1>
 
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established
             in <b className="text-primary">Prague</b>, which has a full license to hold and trade cryptocurrencies.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             All activity is fully subject to <b>EU laws</b> and the supervision of regulators and authorities. Here you
             can buy crypto for fiat, hold it and trade it on one of the most modern platforms with an emphasis on
             completeness and simplicity
@@ -61,20 +61,20 @@ export default function AboutUs() {
       </section>
 
       <section className="container mx-auto mt-24 max-w-[800px] mb-36">
-        <Heading tag="h2" className="mb-24">
+        <Heading tag="h2" className="mb-16">
           We want cryptocurrencies to become a common and respected part of the financial world in Europe.
         </Heading>
-        <div className="pl-10">
-          <p className="text-lg text-text-neutral-600 mb-4">
+        <div>
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and
             safe environment that is in line with EU law and regulations.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             So that people know what they can expect from the crypto world and are aware of the benefits, but also the
             risks of this industry. So that they know that investing in crypto is not just a short-term speculation, but
             a long-term and meaningful investment.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we
             achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term
             regular profit from the crypto world.
