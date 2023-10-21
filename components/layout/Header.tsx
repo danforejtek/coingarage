@@ -16,7 +16,7 @@ export default function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 h-[86px] items-center px-8 transition-all duration-300 ease-in-out",
-        scrolledVariant ? "h-[64px] bg-white/30 shadow backdrop-blur-2xl" : null
+        scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-2xl" : null
       )}
     >
       <div className="grid h-full grid-cols-[1fr_26px] lg:grid-cols-2">
@@ -42,7 +42,7 @@ export default function Header() {
             </div>
           </div>
           <div className="lg:hidden">
-            <MobileNav scrolled={scrolledVariant} />
+            <MobileNav />
           </div>
         </div>
       </div>

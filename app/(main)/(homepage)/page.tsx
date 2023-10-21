@@ -49,7 +49,7 @@ export default function Home() {
           <Figure icon="/icons/payment.svg" caption="Deposit EUR via Sepa or Card" />
         </div>
       </section>
-      <section className="container mx-auto mt-28 flex flex-col justify-between">
+      <section className="container mx-auto mt-28">
         <Heading tag="h2">Crypto market</Heading>
         <div className="mt-16">
           <CryptoMarketTable />
