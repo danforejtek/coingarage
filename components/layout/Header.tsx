@@ -12,7 +12,7 @@ export default function Header() {
         <nav className="flex items-center p-6 lg:px-8 gap-10" aria-label="Global">
           <Link href="/">
             <div className="w-[206px] h-[30]">
-              <Image src="/logo.svg" width={206} height={30} alt="logo" />
+              <Image src="/logo.svg" width={206} height={31} alt="logo" />
             </div>
           </Link>
           <div className="hidden lg:block">

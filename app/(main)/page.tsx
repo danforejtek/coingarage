@@ -43,7 +43,7 @@ export default function Home() {
             className="animate-slow-bounce"
             alt="Picture of the author"
             width={500}
-            height={500}
+            height={364}
           />
         </div>
       </section>
@@ -64,10 +64,10 @@ export default function Home() {
       </section>
       <section className="container mx-auto p-4 md:p-8 flex flex-row justify-between mt-28">
         <div className="flex flex-row 2xl:justify-between justify-center flex-wrap gap-4 w-full">
-          <Image src="/images/promo/guarantee.jpg" alt="" width={310} height={150} className="rounded-xl" />
-          <Image src="/images/promo/dividends.jpg" alt="" width={310} height={150} className="rounded-xl" />
-          <Image src="/images/promo/shareholder.jpg" alt="" width={310} height={150} className="rounded-xl" />
-          <Image src="/images/promo/join.jpg" alt="" width={310} height={150} className="rounded-xl" />
+          <Image src="/images/promo/guarantee.jpg" alt="" width={310} height={149} className="rounded-xl" />
+          <Image src="/images/promo/dividends.jpg" alt="" width={310} height={149} className="rounded-xl" />
+          <Image src="/images/promo/shareholder.jpg" alt="" width={310} height={149} className="rounded-xl" />
+          <Image src="/images/promo/join.jpg" alt="" width={310} height={149} className="rounded-xl" />
         </div>
       </section>
       <section className="relative mt-28">
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto flex flex-col-reverse xl:flex-row">
           <div className="flex flex-1 justify-center xl:justify-start pt-36">
-            <Image src="/images/laptop.svg" className="animate-slow-bounce" alt="" width={500} height={500} />
+            <Image src="/images/laptop.svg" className="animate-slow-bounce" alt="" width={500} height={311} />
           </div>
           <div className="p-4 max-w-[500px]">
             <Heading tag="h2" className="mb-6">
@@ -90,12 +90,12 @@ export default function Home() {
               <div className="flex flex-row gap-4 mt-8">
                 <Button variant="link" className="w-[168px] h-[58px] p-0" asChild>
                   <Link href="https://apps.apple.com/cz/app/coingarage/id1672974634">
-                    <Image src="/images/AppStore.svg" alt="App Store" width={168} height={58} />
+                    <Image src="/images/AppStore.svg" alt="App Store" width={168} height={56} />
                   </Link>
                 </Button>
                 <Button variant="link" className="w-[168px] h-[58px] p-0" asChild>
                   <Link href="https://play.google.com/store/apps/details?id=io.coingarage.app">
-                    <Image src="/images/GPlay.svg" alt="App Store" width={168} height={58} />
+                    <Image src="/images/GPlay.svg" alt="App Store" width={168} height={56} />
                   </Link>
                 </Button>
               </div>

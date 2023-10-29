@@ -41,7 +41,7 @@ export default function AboutUs() {
       </section>
 
       <section className="container mx-auto p-4 flex flex-row justify-between py-16 mt-24 max-w-[680px]">
-        <ul className="checklist text-text-neutral-600">
+        <ul className="checklist text-text-neutral-600 px-8">
           <li className="text-lg">A key element of our platform is the comprehensiveness of services</li>
           <li className="text-lg">
             In one place you can buy crypto for fiat currency through your debit card or by transfer from your account,
@@ -64,8 +64,8 @@ export default function AboutUs() {
         <Heading tag="h2" className="mb-24">
           We want cryptocurrencies to become a common and respected part of the financial world in Europe.
         </Heading>
-        <div className="pl-10">
-          <p className="text-lg text-text-neutral-600 mb-4">
+        <div className="lg:pl-10">
+          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
             We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and
             safe environment that is in line with EU law and regulations.
           </p>

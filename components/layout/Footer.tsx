@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="h-2 bg-gradient-to-r from-primary to-tertiary"></div>
       <footer className="bg-secondary py-16">
         <div className="container mx-auto mb-20">
-          <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={100} />
+          <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={56} />
         </div>
         <div className="container mx-auto flex flex-row justify-between flex-wrap gap-x-40 gap-y-12">
           <div className="flex flex-row justify-start flex-wrap gap-x-40 gap-y-12">
