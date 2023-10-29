@@ -49,10 +49,6 @@ export const navItems: NavItem[] = [
         title: "Spot trading",
         href: "/trading",
       },
-      // {
-      //   title: "Convert",
-      //   href: "/convert",
-      // },
       {
         title: "Launchpad",
         href: "/launchpad",
@@ -126,7 +122,17 @@ export function Menu({ textColor = "text-secondary" }) {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <li className={cn(subItems ? `row-span-${subItems?.length}` : "row-span-3")}>
+                    <li
+                      // TODO: write this like a normal person
+                      className={cn(
+                        subItems?.length === 1 && "row-span-1",
+                        subItems?.length === 2 && "row-span-2",
+                        subItems?.length === 3 && "row-span-3",
+                        subItems?.length === 4 && "row-span-4",
+                        subItems?.length === 5 && "row-span-5",
+                        subItems?.length === 6 && "row-span-6"
+                      )}
+                    >
                       <NavigationMenuLink asChild>
                         <a
                           className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
