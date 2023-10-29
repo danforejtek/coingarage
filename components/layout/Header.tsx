@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 h-[86px] items-center px-8 transition-all duration-300 ease-in-out",
+        "sticky top-0 z-50 h-[86px] items-center px-8 transition-[height] duration-300 ease-in-out",
         scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-2xl" : null
       )}
     >

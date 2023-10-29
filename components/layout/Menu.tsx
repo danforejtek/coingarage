@@ -14,7 +14,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { describe } from "node:test"
 
 type NavItem = {
   title: string
@@ -29,22 +28,40 @@ export const navItems: NavItem[] = [
     href: "/buy-crypto",
     subItems: [
       {
-        title: "Buy with Credit Card",
+        title: "Buy Crypto",
         href: "/buy-crypto",
       },
       {
-        title: "Buy with Bank Transfer",
-        href: "/buy-crypto",
+        title: "Deposit FIAT",
+        href: "/deposit",
       },
       {
-        title: "Buy with Crypto",
-        href: "/buy-crypto",
+        title: "Deposit FIAT via SEPA",
+        href: "/deposit-via-sepa",
       },
     ],
   },
   {
     title: "Trade",
     href: "/trade",
+    subItems: [
+      {
+        title: "Spot trading",
+        href: "/trading",
+      },
+      // {
+      //   title: "Convert",
+      //   href: "/convert",
+      // },
+      {
+        title: "Launchpad",
+        href: "/launchpad",
+      },
+      {
+        title: "Trader Bot",
+        href: "/trader-bot",
+      },
+    ],
   },
   {
     title: "Convert",
@@ -53,10 +70,46 @@ export const navItems: NavItem[] = [
   {
     title: "Earn",
     href: "/earn",
+    subItems: [
+      {
+        title: "Become a Shareholder",
+        href: "/earn/shareholder",
+      },
+      {
+        title: "Affiliate",
+        href: "/earn/affiliate",
+      },
+      {
+        title: "Staking",
+        href: "/earn/staking",
+      },
+    ],
   },
   {
-    title: "NFT",
-    href: "/ntf",
+    title: "More",
+    href: "/more",
+    subItems: [
+      {
+        title: "About us",
+        href: "/about-us",
+      },
+      {
+        title: "Partners",
+        href: "/partners",
+      },
+      {
+        title: "GARY's Poster wall",
+        href: "/garys-poster-wall",
+      },
+      {
+        title: "Blog",
+        href: "/blog",
+      },
+      {
+        title: "Academy",
+        href: "/academy",
+      },
+    ],
   },
 ]
 
@@ -73,14 +126,14 @@ export function Menu({ textColor = "text-secondary" }) {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <li className="row-span-3">
+                    <li className={cn(subItems ? `row-span-${subItems?.length}` : "row-span-3")}>
                       <NavigationMenuLink asChild>
                         <a
                           className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                           href="/"
                         >
                           {/* <Icons.logo className="h-6 w-6" /> */}
-                          <div className="mb-2 mt-4 text-lg font-medium">Crypto</div>
+                          <div className="mb-2 mt-2 text-lg font-medium">{title}</div>
                           <p className="text-sm leading-tight text-muted-foreground"></p>
                         </a>
                       </NavigationMenuLink>
