@@ -5,31 +5,31 @@ export default function AboutUs() {
   return (
     <main className="relative">
       <div
-        className="absolute top-0 left-0 w-full h-[100vh] -z-10"
+        className="absolute left-0 top-0 -z-10 h-[100vh] w-full"
         style={{
           background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 60%, rgba(255, 31, 112, 0.22) 100%)",
         }}
       ></div>
       <div className="h-[84px]"></div>
-      <section className="container mx-auto flex flex-col lg:flex-row flex-wrap items-center justify-center xl:justify-between mt-16 xl:mt-28">
-        <div className="p-4 w-full max-w-[680px]">
-          <h1 className="flex flex-col gap-3 font-heading text-5xl font-bold mb-6">
+      <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
+        <div className="w-full max-w-[680px] p-4">
+          <h1 className="mb-16 flex flex-col gap-3 font-heading text-5xl font-bold">
             <Heading tag="h1" size="2xl">
               About us
             </Heading>
           </h1>
 
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established
             in <b className="text-primary">Prague</b>, which has a full license to hold and trade cryptocurrencies.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             All activity is fully subject to <b>EU laws</b> and the supervision of regulators and authorities. Here you
             can buy crypto for fiat, hold it and trade it on one of the most modern platforms with an emphasis on
             completeness and simplicity
           </p>
         </div>
-        <div className="flex justify-end items-center max-w-[500px] mt-16 xl:mt-0">
+        <div className="mt-16 flex max-w-[500px] items-center justify-end xl:mt-0">
           <Image
             src="/images/globe.png"
             className="animate-slow-bounce"
@@ -40,7 +40,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="container mx-auto p-4 flex flex-row justify-between py-16 mt-24 max-w-[680px]">
+      <section className="container mx-auto mt-24 flex max-w-[680px] flex-row justify-between p-4 py-16">
         <ul className="checklist text-text-neutral-600 px-8">
           <li className="text-lg">A key element of our platform is the comprehensiveness of services</li>
           <li className="text-lg">
@@ -60,21 +60,21 @@ export default function AboutUs() {
         </ul>
       </section>
 
-      <section className="container mx-auto mt-24 max-w-[800px] mb-36">
-        <Heading tag="h2" className="mb-24">
+      <section className="container mx-auto mb-36 mt-24 max-w-[800px]">
+        <Heading tag="h2" className="mb-16">
           We want cryptocurrencies to become a common and respected part of the financial world in Europe.
         </Heading>
         <div className="lg:pl-10">
-          <p className="text-lg text-text-neutral-600 mb-4 text-justify lg:text-left">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and
             safe environment that is in line with EU law and regulations.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             So that people know what they can expect from the crypto world and are aware of the benefits, but also the
             risks of this industry. So that they know that investing in crypto is not just a short-term speculation, but
             a long-term and meaningful investment.
           </p>
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we
             achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term
             regular profit from the crypto world.

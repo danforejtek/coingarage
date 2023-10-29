@@ -6,26 +6,29 @@ export default function AboutUs() {
   return (
     <main className="relative">
       <div
-        className="absolute top-0 left-0 w-full h-[100vh] -z-10"
+        className="absolute left-0 top-0 -z-10 h-[100vh] w-full"
         style={{
           background: "linear-gradient(to top, rgba(217, 217, 217, 0.00) 60%, rgba(255, 31, 112, 0.22) 100%)",
         }}
       ></div>
       <div className="h-[84px]"></div>
-      <section className="container mx-auto flex flex-col lg:flex-row flex-wrap items-center justify-center xl:justify-between mt-16 xl:mt-28">
-        <div className="p-4 w-full max-w-[680px]">
-          <h1 className="flex flex-col gap-3 font-heading text-5xl font-bold mb-6">
-            <div className="text-tertiary text-3xl">Buy & Sell Crypto:</div>
-            <div>Fund Your Account with</div>
-            <div>Traditional Currencies</div>
+      <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
+        <div className="w-full max-w-[680px] p-4">
+          <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
+            <div className="text-3xl text-tertiary">Buy & Sell Crypto:</div>
+            <div>
+              Fund Your Account with <br />
+              Traditional Currencies
+            </div>
+            <div></div>
           </h1>
 
-          <p className="text-lg text-text-neutral-600 mb-4">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
             User can easily buy Bitcoin and other cryptocurrencies using a wide range of payment options, including bank
             transfer, credit card or debit card, and cash. There is a payment option for everyone on Coingarage.
           </p>
         </div>
-        <div className="flex justify-end items-center max-w-[500px] mt-16 xl:mt-0">
+        <div className="mt-16 flex max-w-[500px] items-center justify-end xl:mt-0">
           <Image
             src="/images/profit.svg"
             className="animate-slow-bounce"
@@ -36,9 +39,9 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="container mx-auto flex flex-row justify-between mt-28 mb-28">
-        <div className="flex flex-row justify-center flex-wrap gap-10 w-full">
-          <div className="border border-tertiary p-8 rounded-xl shadow-lg shadow-tertiary/50">
+      <section className="container mx-auto mb-28 mt-28 flex flex-row justify-between">
+        <div className="flex w-full flex-row flex-wrap justify-center gap-10">
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
               textClassName="text-black"
@@ -46,7 +49,7 @@ export default function AboutUs() {
               caption="We work only with verified and trusted partners to give you a secure and seamless crypto buying experience."
             />
           </div>
-          <div className="border border-tertiary p-8 rounded-xl shadow-lg shadow-tertiary/50">
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
               textClassName="text-black"
@@ -54,7 +57,7 @@ export default function AboutUs() {
               caption="Coingarage accepts a wide range of currencies and makes it easy for you to buy crypto using EUR, USD and other fiat currencies."
             />
           </div>
-          <div className="border border-tertiary p-8 rounded-xl shadow-lg shadow-tertiary/50">
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
               textClassName="text-black"
@@ -62,7 +65,7 @@ export default function AboutUs() {
               caption="Once you complete the purchase, we will deposit your new crypto directly to your Coingarage wallet: a safe and simple way to manage your crypto assets."
             />
           </div>
-          <div className="border border-tertiary p-8 rounded-xl shadow-lg shadow-tertiary/50">
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
               textClassName="text-black"

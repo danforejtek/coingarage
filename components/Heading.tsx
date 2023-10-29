@@ -13,8 +13,8 @@ const Heading: React.FC<HeadingProps> = ({ tag = "h3", size = "text-4xl", classN
 
   return (
     <div className={cn("flex flex-row items-center justify-start", className)}>
-      <div className="top-0 left-0 w-4 h-16 bg-primary rounded-lg"></div>
-      <Tag className={cn("font-bold font-heading text-gray-800 ml-8", size)}>{children}</Tag>
+      <div className="left-0 top-0 h-16 w-4 rounded-lg bg-primary"></div>
+      <Tag className={cn("ml-8 font-heading font-bold text-gray-800", size)}>{children}</Tag>
     </div>
   )
 }
