@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 
 type FigureProps = {
-  icon: string
+  icon?: string
   caption: string
   iconSize?: number
   className?: string
