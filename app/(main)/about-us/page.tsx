@@ -1,3 +1,4 @@
+import Figure from "@/components/Figure"
 import Heading from "@/components/Heading"
 import Image from "next/image"
 
@@ -34,7 +35,84 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="container mx-auto mt-24 flex max-w-[680px] flex-row justify-between p-4 py-16">
+      <section className="container mx-auto mb-28 mt-28 flex flex-row justify-between">
+        <div className="flex w-full flex-row flex-wrap justify-center gap-10">
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/shield.svg"
+              caption="A key element of our platform is the comprehensiveness of services"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/currency.svg"
+              caption="In one place you can buy crypto for fiat currency through your debit card or by transfer from your account, you can then hold it here and trade it."
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/wallet.svg"
+              caption="You can find spot trading here, but also Futures"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="You will be able to use our professional trading DCA, GRID, Futures Boots with artificial intelligence for trades"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="You can earn on the exchange by staking the most popular coins"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="Our exchange will also offer its own NFT platform, including a market place"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="You can also exchange coins on the exchange using the P2P principle"
+            />
+          </div>
+          <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+              className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="All these functions will be supplemented with educational programs and videos"
+            />
+          </div>
+          {/* <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
+            <Figure
+             className="min-h-[180px] max-w-[220px] justify-center"
+              textClassName="text-black"
+              // icon="/icons/exchange.svg"
+              caption="Custom utilities and stable coins will be the icing on the cake"
+            />
+          </div> */}
+        </div>
+      </section>
+
+      {/* <section className="container mx-auto mt-24 flex max-w-[680px] flex-row justify-between p-4 py-16">
         <ul className="checklist text-text-neutral-600 px-8">
           <li className="text-lg">A key element of our platform is the comprehensiveness of services</li>
           <li className="text-lg">
@@ -52,7 +130,7 @@ export default function AboutUs() {
           <li className="text-lg">All these functions will be supplemented with educational programs and videos</li>
           <li className="text-lg">Custom utilities and stable coins will be the icing on the cake</li>
         </ul>
-      </section>
+      </section> */}
 
       <section className="container mx-auto mb-36 mt-24 max-w-[800px]">
         <Heading tag="h2" className="mb-16">

@@ -12,7 +12,7 @@ const Heading: React.FC<HeadingProps> = ({ tag = "h3", size = "text-4xl", classN
   const Tag = tag
 
   return (
-    <div className={cn("flex flex-row items-center justify-start", className)}>
+    <div className={cn("grid grid-cols-[16px_1fr] items-center", className)}>
       <div className="left-0 top-0 h-16 w-4 rounded-lg bg-primary"></div>
       <Tag className={cn("ml-8 font-heading font-bold text-gray-800", size)}>{children}</Tag>
     </div>

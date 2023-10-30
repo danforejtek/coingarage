@@ -7,10 +7,16 @@ import { Button } from "@/components/ui/button"
 import MobileNav from "./MobileNav"
 import { useScrollPosition } from "@/hooks/use-scroll-position"
 import { cn } from "@/lib/utils"
+import { useEffect, useState } from "react"
 
 export default function Header() {
   const scrollPosition = useScrollPosition()
-  const scrolledVariant = scrollPosition > 64
+  const [scrolledVariant, setScrolledVariant] = useState(false)
+
+  useEffect(() => {
+    if (scrollPosition > 64) setScrolledVariant(true)
+    if (scrollPosition === 0) setScrolledVariant(false)
+  }, [scrollPosition])
 
   return (
     <header
