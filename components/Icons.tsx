@@ -23,6 +23,7 @@ import {
   Twitter,
   User,
   X,
+  History,
 } from "lucide-react"
 
 export const Icons = {
@@ -49,4 +50,5 @@ export const Icons = {
   laptop: Laptop,
   twitter: Twitter,
   check: Check,
+  history: History,
 }
