@@ -10,6 +10,8 @@ import GetApp from "@/components/promo/GetApp"
 import Advantages from "@/components/promo/Advantages"
 import Motivation from "@/components/promo/Motivation"
 import NewsFeed from "@/components/NewsFeed"
+import CryptoStats from "@/components/CryptoStats"
+import GeniusTrader from "@/components/GeniusTrader"
 
 export default function Home() {
   return (
@@ -52,20 +54,40 @@ export default function Home() {
       <Motivation />
       <section className="container mx-auto mt-28">
         <Heading tag="h2">Crypto market - Hot list</Heading>
-        <div className="mt-16">
+        <div className="mt-12">
           <CryptoMarketTable />
+        </div>
+        <div className="mt-12">
+          <CryptoStats />
         </div>
       </section>
       <Advantages />
+      <section className="container mx-auto mt-28">
+        <GeniusTrader />
+      </section>
       <section className="relative mt-28">
-        <div className="absolute left-0 top-[180px] -z-10 h-[822px] w-[1116px] max-w-[96vw] xl:-top-[68px]">
+        <div className="absolute left-0 top-[180px] -z-10 h-[822px] w-[1000px] max-w-[96vw] xl:-top-[68px]">
           <Image src="/images/fin.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
         </div>
         <div className="container mx-auto flex flex-col-reverse xl:flex-row">
-          <div className="flex flex-1 justify-center pt-36 xl:justify-start">
-            <Image src="/images/laptop.svg" className="animate-slow-bounce" alt="" width={500} height={311} />
+          <div className="mt-12 flex flex-1 justify-center xl:mt-0 xl:justify-start">
+            <Image src="/images/promo/phone_3d.png" className="animate-slow-bounce" alt="" width={350} height={711} />
+            <div className="ml-12 hidden h-full flex-col justify-center md:flex">
+              <Image
+                src="/images/promo/QR.png"
+                alt="Get App"
+                width={224}
+                height={224}
+                className="rounded-xl bg-white p-1"
+              />
+              <div className="mt-4 text-center font-heading font-bold text-white ">
+                Scan QR Code to
+                <br />
+                Download App
+              </div>
+            </div>
           </div>
-          <div className="max-w-[500px]">
+          <div className="mt-20 max-w-[500px] md:mt-0">
             <Heading tag="h2" className="mb-12">
               Trade Anywhere Anytime
             </Heading>
@@ -75,22 +97,36 @@ export default function Home() {
                 Trading App. Experience the future of trading, where speed, convenience, and precision converge.
               </p>
               <div className="mt-8 flex flex-row justify-between gap-4 md:justify-start">
-                <Button variant="link" className="h-[58px] w-[168px] p-0" asChild>
-                  <Link href="https://apps.apple.com/cz/app/coingarage/id1672974634">
-                    <Image src="/images/AppStore.svg" alt="App Store" width={168} height={56} />
-                  </Link>
-                </Button>
-                <Button variant="link" className="h-[58px] w-[168px] p-0" asChild>
-                  <Link href="https://play.google.com/store/apps/details?id=io.coingarage.app">
-                    <Image src="/images/GPlay.svg" alt="App Store" width={168} height={56} />
-                  </Link>
-                </Button>
+                <div className="flex flex-row gap-8">
+                  <a
+                    href="https://apps.apple.com/cz/app/coingarage/id1672974634"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="rounded-md p-2 hover:bg-primary/10"
+                  >
+                    <div className="flex flex-row items-center gap-4">
+                      <Image src="/icons/appstore/app-store.png" alt="App Store" width={32} height={32} />
+                      <div className="font-heading font-bold">App Store</div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=io.coingarage.app"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="rounded-md p-2 hover:bg-primary/10"
+                  >
+                    <div className="flex flex-row items-center gap-4">
+                      <Image src="/icons/appstore/google-play.png" alt="Play Store" width={32} height={32} />
+                      <div className="font-heading font-bold">Google Play</div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto my-32 xl:mt-64">
+      <section className="container mx-auto my-32 xl:mt-36">
         <Heading tag="h2" className="mb-12">
           FAQ
         </Heading>

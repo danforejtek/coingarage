@@ -46,32 +46,34 @@ const cryptoData = [
 
 export default function CryptoMarketTable() {
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableHead className="min-w-[160px]">Currency</TableHead>
-          <TableHead className="text-right">Price</TableHead>
-          <TableHead className="text-right">24h Change</TableHead>
-          <TableHead className="text-right">24h Volume</TableHead>
-          <TableHead className="text-right">Market Cap</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {cryptoData.map((data, index) => (
-          <TableRow key={index}>
-            <TableCell className="font-medium">
-              <div className="flex flex-row items-center gap-8">
-                <Image src={data.icon} alt={data.currency} width={40} height={40} />
-                <span>{data.currency}</span>
-              </div>
-            </TableCell>
-            <TableCell className="text-right">{data.price}</TableCell>
-            <TableCell className="text-right">{data.change}</TableCell>
-            <TableCell className="text-right">{data.volume}</TableCell>
-            <TableCell className="text-right">{data.marketCap}</TableCell>
+    <div className="rounded-2xl bg-neutral-100 p-6">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="min-w-[160px]">Currency</TableHead>
+            <TableHead className="text-right">Price</TableHead>
+            <TableHead className="text-right">24h Change</TableHead>
+            <TableHead className="text-right">24h Volume</TableHead>
+            <TableHead className="text-right">Market Cap</TableHead>
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+        </TableHeader>
+        <TableBody>
+          {cryptoData.map((data, index) => (
+            <TableRow key={index}>
+              <TableCell className="font-medium">
+                <div className="flex flex-row items-center gap-8">
+                  <Image src={data.icon} alt={data.currency} width={40} height={40} />
+                  <span>{data.currency}</span>
+                </div>
+              </TableCell>
+              <TableCell className="text-right">{data.price}</TableCell>
+              <TableCell className="text-right">{data.change}</TableCell>
+              <TableCell className="text-right">{data.volume}</TableCell>
+              <TableCell className="text-right">{data.marketCap}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </div>
   )
 }
