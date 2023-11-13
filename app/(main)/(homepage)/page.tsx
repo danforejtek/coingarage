@@ -88,7 +88,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-20 max-w-[500px] md:mt-0">
-            <Heading tag="h2" className="mb-12">
+            <Heading tag="h2" size="4xl" className="mb-12">
               Trade Anywhere Anytime
             </Heading>
             <div>

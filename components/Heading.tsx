@@ -8,6 +8,14 @@ type HeadingProps = {
   className?: string
 }
 
+const sizes = {
+  "2xl": "text-2xl",
+  "3xl": "text-3xl",
+  "4xl": "text-4xl",
+  "5xl": "text-5xl",
+  "6xl": "text-6xl",
+}
+
 const Heading: React.FC<HeadingProps> = ({ tag = "h3", size = "4xl", className, children }) => {
   const Tag = tag
   const barSizeClass = ["4xl"].includes(size) ? "h-16 w-4" : "h-12 w-3"
@@ -15,7 +23,7 @@ const Heading: React.FC<HeadingProps> = ({ tag = "h3", size = "4xl", className, 
   return (
     <div className={cn("grid grid-cols-[16px_1fr] items-center", className)}>
       <div className={cn("left-0 top-0 rounded-lg bg-primary", barSizeClass)}></div>
-      <Tag className={cn("ml-8 font-heading font-bold text-gray-800", `text-${size}`)}>{children}</Tag>
+      <Tag className={cn("ml-8 font-heading font-bold text-gray-800", sizes?.[size])}>{children}</Tag>
     </div>
   )
 }

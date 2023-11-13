@@ -85,7 +85,7 @@ export default function GeniusTrader() {
         <div className="mt-8 max-w-[280px] md:mt-0">
           <div className="flex flex-col gap-12">
             <div className="grid grid-cols-[44px_1fr] gap-4">
-              <Image src="/icons/bot.png" alt="avatar" width={48} height={48} />
+              <Image src="/icons/brand-icons/bot.svg" alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Trading Bot</div>
                 <div className="font-heading text-base text-black">Grid a DCA bots. Long, short strategy and more</div>

@@ -14,9 +14,11 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import Image from "next/image"
 
 type NavItem = {
   title: string
+  icon?: React.ReactNode
   href: string
   description?: string
   subItems?: NavItem[]
@@ -26,6 +28,7 @@ export const navItems: NavItem[] = [
   {
     title: "Buy Crypto",
     href: "/buy-crypto",
+    icon: <Image src="/icons/brand-icons/buy_crypto_pink.svg" alt="" width={64} height={64} />,
     subItems: [
       {
         title: "Buy Crypto",
@@ -44,6 +47,7 @@ export const navItems: NavItem[] = [
   {
     title: "Trade",
     href: "/trade",
+    icon: <Image src="/icons/brand-icons/spot_trading_pink_v2.svg" alt="" width={64} height={64} />,
     subItems: [
       {
         title: "Spot trading",
@@ -66,6 +70,7 @@ export const navItems: NavItem[] = [
   {
     title: "Earn",
     href: "/earn",
+    icon: <Image src="/icons/brand-icons/stake_pink.svg" alt="" width={64} height={64} />,
     subItems: [
       {
         title: "Become a Shareholder",
@@ -84,6 +89,7 @@ export const navItems: NavItem[] = [
   {
     title: "More",
     href: "/more",
+    icon: <Image src="/icons/brand-icons/about_us_pink.svg" alt="" width={64} height={64} />,
     subItems: [
       {
         title: "About us",
@@ -105,6 +111,10 @@ export const navItems: NavItem[] = [
         title: "Academy",
         href: "/academy",
       },
+      {
+        title: "Whitepaper",
+        href: "/academy",
+      },
     ],
   },
 ]
@@ -113,7 +123,7 @@ export function Menu({ textColor = "text-secondary" }) {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        {navItems.map(({ title, href, subItems }, index) => {
+        {navItems.map(({ title, href, subItems, icon }, index) => {
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
@@ -138,8 +148,10 @@ export function Menu({ textColor = "text-secondary" }) {
                           className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                           href="/"
                         >
-                          {/* <Icons.logo className="h-6 w-6" /> */}
-                          <div className="mb-2 mt-2 text-lg font-medium">{title}</div>
+                          <div className="flex h-full flex-col justify-start">
+                            {icon ? icon : null}
+                            <div className="mb-2 mt-2 text-lg font-medium">{title}</div>
+                          </div>
                           <p className="text-sm leading-tight text-muted-foreground"></p>
                         </a>
                       </NavigationMenuLink>
