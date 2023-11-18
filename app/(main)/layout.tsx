@@ -1,9 +1,9 @@
+import { ThemeProvider } from "@/components/theme-provider"
 import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/Header"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
-import Head from "next/head"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,11 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${sofia_sans.variable}`}>
       <body>
-        <Header />
-        <div className="flex flex-col justify-between min-h-screen">
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </div>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Header />
+          <div className="flex min-h-screen flex-col justify-between">
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )

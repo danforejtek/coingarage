@@ -37,16 +37,16 @@
 
     --radius: 0.5rem;
 
-    --text-light: rgba(0, 0, 0, 0.50);
+    --text-light: rgba(0, 0, 0, 0.5);
 
-    --blue: hsl(200.81deg 100% 66.08%)
-
-    --gradient: linear-gradient(90deg, #FF1F70 0%, #52C3FF 100%)
+    --blue: hsl(200.81deg 100% 66.08%) --gradient: linear-gradient(90deg, #ff1f70 0%, #52c3ff 100%);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 240 11% 11%;
     --foreground: 210 40% 98%;
+
+    --background-muted: 233 12% 13%;
 
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -54,11 +54,14 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 338 100% 56%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 201 100% 66%;
+    --primary-foreground: 201 96% 84%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
+
+    --tertiary: 201 100% 66%;
+    --tertiary-foreground: 201 96% 84%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -96,4 +99,20 @@
       margin-right: 18px;
     }
   }
+}
+
+.primary-gradient {
+  background: linear-gradient(to top, rgba(217, 217, 217, 0) 60%, rgba(255, 31, 112, 0.22) 100%);
+}
+
+.dark {
+  .primary-gradient {
+    background: linear-gradient(to top, rgba(217, 217, 217, 0) 20%, rgba(82, 195, 255, 0.29) 100%);
+  }
+}
+
+.primary-color {
+  --primary: #52c3ff;
+  background: var(--primary);
+  fill: currentColor;
 }

@@ -20,7 +20,7 @@ const percents = new Intl.NumberFormat("en-US", {
 
 const TraderCard = () => {
   return (
-    <div className="w-56 rounded-xl bg-white p-4">
+    <div className="w-56 rounded-xl bg-white p-4 dark:bg-gray-800">
       <div className="grid grid-cols-[44px_1fr] gap-4">
         <div>
           <Image src="/images/avatars/batman.png" alt="avatar" width={44} height={44} />
@@ -54,7 +54,7 @@ const TraderCard = () => {
 
 export default function GeniusTrader() {
   return (
-    <div className="rounded-2xl bg-neutral-100 p-10">
+    <div className="dark:bg-backgroundMuted rounded-2xl bg-neutral-100 p-10">
       <div className="flex flex-row flex-wrap justify-center gap-8 lg:justify-between">
         <div>
           <Heading tag="h3" size="3xl">
@@ -88,14 +88,16 @@ export default function GeniusTrader() {
               <Image src="/icons/brand-icons/bot.svg" alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Trading Bot</div>
-                <div className="font-heading text-base text-black">Grid a DCA bots. Long, short strategy and more</div>
+                <div className="font-heading text-base text-black dark:text-gray-100">
+                  Grid a DCA bots. Long, short strategy and more
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-[44px_1fr] gap-4">
               <Image src="/icons/profit.png" alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Take Profit</div>
-                <div className="font-heading text-base text-black">
+                <div className="font-heading text-base text-black dark:text-gray-100">
                   Grow your crypto wealth Simply smartly, effectively
                 </div>
               </div>
@@ -104,14 +106,16 @@ export default function GeniusTrader() {
               <Image src="/icons/copy-trading.png" alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Copy Trading</div>
-                <div className="font-heading text-base text-black">Let top trader work for you just copy them</div>
+                <div className="font-heading text-base text-black dark:text-gray-100">
+                  Let top trader work for you just copy them
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-[44px_1fr] gap-4">
               <Image src="/icons/boxes.png" alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Bargain</div>
-                <div className="font-heading text-base text-black">Best offer on the Market</div>
+                <div className="font-heading text-base text-black dark:text-gray-100">Best offer on the Market</div>
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ const cryptoData = [
 
 export default function CryptoMarketTable() {
   return (
-    <div className="rounded-2xl bg-neutral-100 p-6">
+    <div className="dark:bg-backgroundMuted rounded-2xl bg-neutral-100 p-6">
       <Table>
         <TableHeader>
           <TableRow>

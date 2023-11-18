@@ -57,7 +57,7 @@ const down = "text-red-500"
 
 export default function CryptoTable({ heading }: { heading: string }) {
   return (
-    <div className="rounded-2xl bg-neutral-100 p-6">
+    <div className="dark:bg-backgroundMuted rounded-2xl bg-neutral-100 p-6">
       <Heading tag="h3" size="3xl" className="ml-4">
         {heading}
       </Heading>

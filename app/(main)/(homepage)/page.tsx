@@ -24,7 +24,7 @@ export default function Home() {
               <div>Banking & Trading</div>
               <div className="text-primary">Exchange</div>
             </h1>
-            <p className="text-md text-text-neutral-600 mb-4 text-justify lg:text-left">
+            <p className="text-md text-text-neutral-600 mb-4 text-justify dark:text-neutral-300 lg:text-left">
               Not in&nbsp;a&nbsp;tax haven, but in the heart of&nbsp;Europe, in&nbsp;
               <b className="text-primary">Prague</b>, a&nbsp;crypto exchange has been established, which has
               a&nbsp;license to&nbsp;hold and&nbsp;trade cryptocurrencies. All activity will&nbsp;be fully subject
@@ -92,7 +92,7 @@ export default function Home() {
               Trade Anywhere Anytime
             </Heading>
             <div>
-              <p className="text-md mb-4 text-justify text-neutral-600 lg:text-left">
+              <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
                 Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile
                 Trading App. Experience the future of trading, where speed, convenience, and precision converge.
               </p>

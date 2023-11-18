@@ -18,7 +18,7 @@ export default function AboutUs() {
             <div></div>
           </h1>
 
-          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             User can easily buy Bitcoin and other cryptocurrencies using a wide range of payment options, including bank
             transfer, credit card or debit card, and cash. There is a payment option for everyone on Coingarage.
           </p>
@@ -52,7 +52,7 @@ export default function AboutUs() {
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
-              textClassName="text-black"
+              textClassName="text-black dark:text-gray-100"
               icon="/icons/shield.svg"
               caption="We work only with verified and trusted partners to give you a secure and seamless crypto buying experience."
             />
@@ -60,7 +60,7 @@ export default function AboutUs() {
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
-              textClassName="text-black"
+              textClassName="text-black dark:text-gray-100"
               icon="/icons/currency.svg"
               caption="Coingarage accepts a wide range of currencies and makes it easy for you to buy crypto using EUR, USD and other fiat currencies."
             />
@@ -68,7 +68,7 @@ export default function AboutUs() {
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
-              textClassName="text-black"
+              textClassName="text-black dark:text-gray-100"
               icon="/icons/wallet.svg"
               caption="Once you complete the purchase, we will deposit your new crypto directly to your Coingarage wallet: a safe and simple way to manage your crypto assets."
             />
@@ -76,7 +76,7 @@ export default function AboutUs() {
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
             <Figure
               className="max-w-[220px]"
-              textClassName="text-black"
+              textClassName="text-black dark:text-gray-100"
               icon="/icons/exchange.svg"
               caption="You can immediately trade your purchased crypto on the main products and services on the Coingarage Exchange."
             />

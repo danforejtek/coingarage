@@ -12,10 +12,10 @@ export default function AboutUs() {
             <div>Join the Coingarage</div>
           </h1>
 
-          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             Do you believe that cryptocurrencies and blockchain technology can change the world for better?
           </p>
-          <p className="text-text-neutral-600 mb-4 text-justify text-lg lg:text-left">
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             If yes, than join the Coingarage Affiliate program and earn special rewards. Introduce your friends
             Coingarage, a full licensed Crypto Exchange in the heart of Europe.
           </p>
@@ -35,7 +35,7 @@ export default function AboutUs() {
         <div className="flex-column flex w-full flex-wrap justify-center gap-10">
           <Heading tag="h2">YOU CAN GET REWARDS ON 3 LEVELS</Heading>
           <Image src="/images/affiliate-levels.png" alt="Affiliate Levels" width={725} height={385} />
-          <p className="text-md text-text-neutral-600 mb-4 max-w-[725px]">
+          <p className="text-md text-text-neutral-600 mb-4 max-w-[725px] dark:text-neutral-300">
             *Very important: Please note that your Affiliate does not end only with your direct referrals if your direct
             referrals start to work and referrals from your direct referrals will receive the next rewards.
           </p>

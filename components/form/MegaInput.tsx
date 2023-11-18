@@ -5,10 +5,10 @@ type MegaInputProps = {
 
 export default function MegaInput({ label, subLabel, ...props }: MegaInputProps) {
   return (
-    <div className="h-[130px] w-[512px] rounded-2xl bg-neutral-100 px-5 py-4">
+    <div className="dark:bg-backgroundMuted h-[130px] w-[512px] rounded-2xl bg-neutral-100 px-5 py-4">
       <div className="grid h-full w-full grid-rows-2 gap-4">
         <div className="grid grid-cols-2">
-          <div className="font-heading text-lg font-semibold text-neutral-800">{label}</div>
+          <div className="font-heading text-lg font-semibold text-neutral-800 dark:text-neutral-200">{label}</div>
           <div className="flex items-start justify-end gap-6">
             <div className="text-sm">{subLabel}</div>
             <div className="text-sm font-bold text-primary">200.00 USD</div>
@@ -23,7 +23,7 @@ export default function MegaInput({ label, subLabel, ...props }: MegaInputProps)
               min="0.01"
               max="1000000000.00"
               step="0.01"
-              className="placeholder-text-neutral-500 h-full w-full bg-transparent text-3xl text-neutral-900 outline-none"
+              className="placeholder-text-neutral-500 h-full w-full bg-transparent text-3xl text-neutral-900 outline-none dark:text-white"
               placeholder="0.00"
             />
           </div>
@@ -31,7 +31,7 @@ export default function MegaInput({ label, subLabel, ...props }: MegaInputProps)
             <select
               title="Select Currency"
               name="currency"
-              className="placeholder-text-neutral-500 h-full w-full bg-transparent font-heading text-lg font-semibold text-neutral-900 outline-none "
+              className="placeholder-text-neutral-500 h-full w-full bg-transparent font-heading text-lg font-semibold text-neutral-900 outline-none dark:text-white"
               placeholder="0"
             >
               <option value="BTC">BTC</option>
