@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </section>
       <Motivation />
-      <section className="container mx-auto mt-28">
+      <section id="hot-coins" className="container mx-auto mt-28">
         <Heading tag="h2">Crypto market - Hot list</Heading>
         <div className="mt-12">
           <CryptoMarketTable />
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto flex flex-col-reverse xl:flex-row">
           <div className="mt-12 flex flex-1 justify-center xl:mt-0 xl:justify-start">
-            <Image src="/images/promo/phone_3d.png" className="animate-slow-bounce" alt="" width={350} height={711} />
+            <Image src="/images/promo/phone_3d.png" className="animate-slow-bounce" alt="" width={350} height={712} />
             <div className="ml-12 hidden h-full flex-col justify-center md:flex">
               <Image
                 src="/images/promo/QR.png"
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto my-32 xl:mt-36">
+      <section id="faq" className="container mx-auto my-32 xl:mt-36">
         <Heading tag="h2" className="mb-12">
           FAQ
         </Heading>

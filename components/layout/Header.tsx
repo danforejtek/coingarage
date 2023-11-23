@@ -23,7 +23,7 @@ export default function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 h-[86px] items-center px-8 transition-[height] duration-300 ease-in-out",
-        scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-2xl dark:bg-black/50" : null
+        scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50" : null
       )}
     >
       <div className="grid h-full grid-cols-[1fr_26px] lg:grid-cols-2">
@@ -41,10 +41,10 @@ export default function Header() {
           <div className="hidden lg:block">
             <div className="flex gap-4">
               <Button variant="ghost" className={cn("text-md")} asChild>
-                <Link href="/login">Login</Link>
+                <Link href="https://trade.coingarage.io/login">Login</Link>
               </Button>
               <Button className="text-md" asChild>
-                <Link href="/sign-up">Sign up</Link>
+                <Link href="https://trade.coingarage.io/signup">Sign up</Link>
               </Button>
               <ModeToggle />
             </div>

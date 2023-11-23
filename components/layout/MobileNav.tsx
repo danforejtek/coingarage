@@ -45,12 +45,12 @@ const Nav = ({ onClose }: { onClose: () => void }) => {
             })}
             <li className="mb-4 mt-12">
               <Button variant="outline" className="text-md w-full" asChild>
-                <Link href="/login">Login</Link>
+                <Link href="https://trade.coingarage.io/login">Login</Link>
               </Button>
             </li>
             <li className="mb-4">
               <Button className="text-md w-full" asChild>
-                <Link href="/sign-up">Sign up</Link>
+                <Link href="https://trade.coingarage.io/signup">Sign up</Link>
               </Button>
             </li>
           </ul>

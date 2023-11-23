@@ -36,11 +36,11 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Deposit FIAT",
-        href: "/deposit",
+        href: "/buy-crypto",
       },
       {
         title: "Deposit FIAT via SEPA",
-        href: "/deposit-via-sepa",
+        href: "/buy-crypto",
       },
     ],
   },
@@ -51,15 +51,15 @@ export const navItems: NavItem[] = [
     subItems: [
       {
         title: "Spot trading",
-        href: "/trading",
+        href: "https://trade.coingarage.io/exchange",
       },
       {
         title: "Launchpad",
-        href: "/launchpad",
+        href: "https://trade.coingarage.io/launchpad/projects",
       },
       {
         title: "Trader Bot",
-        href: "/trader-bot",
+        href: "https://trade.coingarage.io/login",
       },
     ],
   },
@@ -74,11 +74,11 @@ export const navItems: NavItem[] = [
     subItems: [
       {
         title: "Become a Shareholder",
-        href: "/earn/shareholder",
+        href: "https://www.coingarage-finance.com",
       },
       {
         title: "Affiliate",
-        href: "/earn/affiliate",
+        href: "/earn",
       },
       {
         title: "Staking",

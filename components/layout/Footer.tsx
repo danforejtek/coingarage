@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 
 export default function Footer() {
@@ -8,47 +9,99 @@ export default function Footer() {
         <div className="container mx-auto mb-20">
           <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={56} />
         </div>
-        <div className="container mx-auto flex flex-row justify-between flex-wrap gap-x-40 gap-y-12">
-          <div className="flex flex-row justify-start flex-wrap gap-x-40 gap-y-12">
+        <div className="container mx-auto flex flex-row flex-wrap justify-between gap-x-40 gap-y-12">
+          <div className="flex flex-row flex-wrap justify-start gap-x-40 gap-y-12">
             <div>
-              <ul className="flex flex-col gap-6 text-white text-sm font-sans">
-                <li>About us</li>
+              <ul className="flex flex-col gap-6 font-sans text-sm text-white">
+                <li>
+                  <Link href="/about-us" className="hover:text-primary">
+                    About us
+                  </Link>
+                </li>
                 <li>Contact us</li>
-                <li>Fees</li>
-                <li>Digita assets</li>
+                <li>
+                  <a
+                    className="hover:text-primary"
+                    href="https://trade.coingarage.io/exchange-fee/deposit-withdrawal-fee"
+                  >
+                    Fees
+                  </a>
+                </li>
+                <li>
+                  <Link href="/#hot-coins" className="hover:text-primary">
+                    Hot Coins
+                  </Link>
+                </li>
                 <li>Blog</li>
-                <li>FAQ&apos;s</li>
+                <li>
+                  <Link href="/#faq" className="hover:text-primary">
+                    FAQ&apos;s
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
-              <ul className="flex flex-col gap-6 text-white text-sm font-sans">
+              <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li>Coin Listing</li>
-                <li>Markets</li>
-                <li>Trade</li>
-                <li>Buy Crypto</li>
-                <li>Earn</li>
-                <li>Staking</li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                    Markets
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                    Trade
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                    Buy Crypto
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                    Staking
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
-              <ul className="flex flex-col gap-6 text-white text-sm font-sans">
-                <li>Register</li>
-                <li>Login</li>
-                <li>Terms of use</li>
-                <li>Privacy policy</li>
+              <ul className="flex flex-col gap-6 font-sans text-sm text-white">
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/signin">
+                    Staking
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/signin">
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/legal/terms">
+                    Terms of use
+                  </a>
+                </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/legal/privacy-policy">
+                    Privacy policy
+                  </a>
+                </li>
                 <li>Cookie policy</li>
               </ul>
             </div>
           </div>
-          <div className="flex flex-row justify-center md:justify-between flex-wrap  gap-x-40 gap-y-12 mt-12 md:mt-0">
+          <div className="mt-12 flex flex-row flex-wrap justify-center  gap-x-40 gap-y-12 md:mt-0 md:justify-between">
             <address className="not-italic">
-              <ul className="flex flex-col gap-6 text-white text-sm font-sans">
+              <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li className="grid grid-cols-[24px_1fr] gap-4">
                   <Image src="/icons/map.png" alt="Address" width={24} height={24} className="mt-1" />
                   <span>
-                    Vlkova&nbsp;532/8,
+                    Revoluční&nbsp;1082/8
                     <br />
-                    130&nbsp;00&nbsp;Prague,&nbsp;Czech&nbsp;Republic
+                    Nové&nbsp;Město&nbsp;(Praha&nbsp;1)
+                    <br />
+                    110&nbsp;00&nbsp;Prague,&nbsp;Czech&nbsp;Republic
                   </span>
                 </li>
                 <li className="grid grid-cols-[24px_1fr] gap-4">
@@ -57,7 +110,9 @@ export default function Footer() {
                 </li>
                 <li className="grid grid-cols-[24px_1fr] gap-4">
                   <Image src="/icons/email.png" alt="Address" width={24} height={24} className="mt-0" />
-                  support@coingarage.io
+                  <a href="mailto:support@coingarage.io" target="_blank" className="hover:text-primary">
+                    support@coingarage.io
+                  </a>
                 </li>
                 <li className="grid grid-cols-[24px_1fr] gap-4">
                   <Image src="/icons/list.png" alt="Address" width={24} height={24} className="mt-0" />
