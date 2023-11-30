@@ -32,15 +32,18 @@ export const navItems: NavItem[] = [
     subItems: [
       {
         title: "Buy Crypto",
-        href: "/buy-crypto",
+        // href: "/buy-crypto",
+        href: "https://trade.coingarage.io/login",
       },
       {
         title: "Deposit FIAT",
-        href: "/buy-crypto",
+        // href: "/buy-crypto",
+        href: "https://trade.coingarage.io/login",
       },
       {
         title: "Deposit FIAT via SEPA",
-        href: "/buy-crypto",
+        // href: "/buy-crypto",
+        href: "https://trade.coingarage.io/login",
       },
     ],
   },
