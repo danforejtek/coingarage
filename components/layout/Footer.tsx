@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="mt-24">
       <div className="h-2 bg-gradient-to-r from-primary to-tertiary"></div>
-      <footer className="bg-secondary py-16">
+      <footer className="bg-secondary py-16 dark:bg-foreground">
         <div className="container mx-auto mb-20">
           <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={56} />
         </div>
