@@ -94,11 +94,18 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-bottom: 24px;
 
     &::before {
       content: url("/icons/checkmark.svg");
       margin-right: 18px;
+    }
+  }
+  &.checklist-sm {
+    li {
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1.2;
     }
   }
 }

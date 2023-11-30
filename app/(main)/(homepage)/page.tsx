@@ -24,12 +24,16 @@ export default function Home() {
               <div>Banking & Trading</div>
               <div className="text-primary">Exchange</div>
             </h1>
-            <p className="text-md text-text-neutral-600 mb-4 text-justify dark:text-neutral-300 lg:text-left">
-              Not in&nbsp;a&nbsp;tax haven, but in the heart of&nbsp;Europe, in&nbsp;
+            <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
+              <b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In
+              the<b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of{" "}
+              <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>
+              {/* Not in&nbsp;a&nbsp;tax haven, but in the
+              heart of&nbsp;Europe, in&nbsp;
               <b className="text-primary">Prague</b>, a&nbsp;crypto exchange has been established, which has
               a&nbsp;license to&nbsp;hold and&nbsp;trade cryptocurrencies. All activity will&nbsp;be fully subject
               to&nbsp;the&nbsp;
-              <b className="text-tertiary">MiCA</b> directive and the oversight of&nbsp;regulators and&nbsp;authorities.
+              <b className="text-tertiary">MiCA</b> directive and the oversight of&nbsp;regulators and&nbsp;authorities. */}
             </p>
           </div>
           <div>
@@ -37,11 +41,11 @@ export default function Home() {
           </div>
           <div className="w-full max-w-[500px]">
             <div className="mt-8 flex flex-row flex-wrap gap-4">
-              <Button variant="default" size="lg" className="w-full sm:w-max">
-                Register
+              <Button variant="default" size="lg" className="w-full sm:w-max" asChild>
+                <a href="https://trade.coingarage.io/signup">Sign up</a>
               </Button>
-              <Button variant="outlinePrimary" size="lg" className="w-full font-bold sm:w-max">
-                Become a Shareholder
+              <Button variant="outlinePrimary" size="lg" className="w-full font-bold sm:w-max" asChild>
+                <a href="https://www.coingarage-finance.com">Become a Shareholder</a>
               </Button>
             </div>
           </div>

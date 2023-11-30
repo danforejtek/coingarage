@@ -16,7 +16,7 @@ export default function GetApp({ className }: { className?: string }) {
         </div>
         <div className="flex flex-col justify-center">
           <h2 className="mb-6 font-heading text-3xl font-bold">Trade Anywhere, Anytime</h2>
-          <div className="flex flex-row items-center gap-4 rounded-2xl bg-primary/5 p-6 md:gap-16 md:p-8">
+          <div className="flex flex-row items-center gap-4 rounded-2xl bg-primary/5 p-6 dark:bg-foreground/5 md:gap-16 md:p-8">
             <Image
               src="/images/promo/QR.png"
               alt="Get App"
@@ -29,7 +29,7 @@ export default function GetApp({ className }: { className?: string }) {
                 href="https://apps.apple.com/cz/app/coingarage/id1672974634"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="rounded-md p-2 hover:bg-primary/10"
+                className="rounded-md p-2 hover:bg-primary/10 dark:hover:bg-background/30"
               >
                 <div className="flex flex-row items-center gap-4">
                   <Image src="/icons/appstore/app-store.png" alt="App Store" width={32} height={32} />
@@ -40,7 +40,7 @@ export default function GetApp({ className }: { className?: string }) {
                 href="https://play.google.com/store/apps/details?id=io.coingarage.app"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="rounded-md p-2 hover:bg-primary/10"
+                className="rounded-md p-2 hover:bg-primary/10 dark:hover:bg-background/30"
               >
                 <div className="flex flex-row items-center gap-4">
                   <Image src="/icons/appstore/google-play.png" alt="Play Store" width={32} height={32} />

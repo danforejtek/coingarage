@@ -55,7 +55,8 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Launchpad",
-        href: "https://trade.coingarage.io/launchpad/projects",
+        // href: "https://trade.coingarage.io/launchpad/projects",
+        href: "https://trade.coingarage.io/login",
       },
       {
         title: "Trader Bot",
@@ -99,22 +100,22 @@ export const navItems: NavItem[] = [
         title: "Partners",
         href: "/partners",
       },
-      {
-        title: "GARY's Poster wall",
-        href: "/garys-poster-wall",
-      },
-      {
-        title: "Blog",
-        href: "/blog",
-      },
-      {
-        title: "Academy",
-        href: "/academy",
-      },
-      {
-        title: "Whitepaper",
-        href: "/academy",
-      },
+      // {
+      //   title: "GARY's Poster wall",
+      //   href: "/garys-poster-wall",
+      // },
+      // {
+      //   title: "Blog",
+      //   href: "/blog",
+      // },
+      // {
+      //   title: "Academy",
+      //   href: "/academy",
+      // },
+      // {
+      //   title: "Whitepaper",
+      //   href: "/academy",
+      // },
     ],
   },
 ]
