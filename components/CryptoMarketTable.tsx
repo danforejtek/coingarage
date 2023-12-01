@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { cn, formatAmount, formatCurrency, formatPercentage } from "@/lib/utils"
 
 const cryptoData = [
   {
@@ -45,9 +46,10 @@ const cryptoData = [
 ]
 
 const getData = async () => {
-  const response = await fetch("http://localhost:3000/api/latest")
+  const response = await fetch("http://localhost:3000/api/latest", { cache: "no-cache" })
   const data = await response.json()
-  console.log(data)
+  // console.log(JSON.stringify(data))
+  return data
 }
 
 export default async function CryptoMarketTable() {
@@ -65,21 +67,33 @@ export default async function CryptoMarketTable() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data?.data?.map((item, index) => (
-            console.log(index === 1 ? item : null)
-            <TableRow key={index}>
-              <TableCell className="font-medium">
-                <div className="flex flex-row items-center gap-8">
-                  <Image src={item.icon} alt={item.symbol} width={40} height={40} />
-                  <span>{item.name}</span>
-                </div>
-              </TableCell>
-              <TableCell className="text-right">{item.price}</TableCell>
-              <TableCell className="text-right">{item.change}</TableCell>
-              <TableCell className="text-right">{item.volume}</TableCell>
-              <TableCell className="text-right">{item.marketCap}</TableCell>
-            </TableRow>
-          ))}
+          {data?.data?.map((item: any, index: number) => {
+            // console.log(index === 1 ? item : null)
+            const changeClass = item?.quote?.USD?.percent_change_24h < 0 ? "text-red-500" : "text-green-500"
+            return (
+              <TableRow key={index}>
+                <TableCell className="font-medium">
+                  <div className="flex flex-row items-center gap-8">
+                    <Image
+                      src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
+                      alt={item.symbol}
+                      width={40}
+                      height={40}
+                    />
+                    <span>{item.name}</span>
+                  </div>
+                </TableCell>
+                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.price)}</TableCell>
+                <TableCell className={cn("text-right", changeClass)}>
+                  {formatPercentage(item?.quote?.USD?.percent_change_24h)}
+                </TableCell>
+                <TableCell className={cn("text-right", changeClass)}>
+                  {formatCurrency(item?.quote?.USD?.volume_change_24h)}
+                </TableCell>
+                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.market_cap, 0)}</TableCell>
+              </TableRow>
+            )
+          })}
         </TableBody>
       </Table>
     </div>

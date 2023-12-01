@@ -21,12 +21,12 @@ export default function Home() {
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
               <div>Crypto</div>
-              <div>Banking & Trading</div>
+              <div>Simply & Safe</div>
               <div className="text-primary">Exchange</div>
             </h1>
             <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
               <b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In
-              the<b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of{" "}
+              the <b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of{" "}
               <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>
               {/* Not in&nbsp;a&nbsp;tax haven, but in the
               heart of&nbsp;Europe, in&nbsp;
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
       <Motivation />
       <section id="hot-coins" className="container mx-auto mt-28">
-        <Heading tag="h2">Crypto market - Hot list</Heading>
+        <Heading tag="h2">Crypto market</Heading>
         <div className="mt-12">
           <CryptoMarketTable />
         </div>
