@@ -2,51 +2,8 @@ import Image from "next/image"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { cn, formatAmount, formatCurrency, formatPercentage } from "@/lib/utils"
 
-const cryptoData = [
-  {
-    currency: "Bitcoin",
-    icon: "/icons/coins/bitcoin.png",
-    price: "$250.00",
-    change: "0.00%",
-    volume: "$500.00",
-    marketCap: "$2500000.00",
-  },
-  {
-    currency: "Ripple",
-    icon: "/icons/coins/ripple.png",
-    price: "$250.00",
-    change: "0.00%",
-    volume: "$500.00",
-    marketCap: "$2500000.00",
-  },
-  {
-    currency: "Doge",
-    icon: "/icons/coins/doge.png",
-    price: "$250.00",
-    change: "0.00%",
-    volume: "$500.00",
-    marketCap: "$2500000.00",
-  },
-  {
-    currency: "Litecoin",
-    icon: "/icons/coins/litecoin.png",
-    price: "$250.00",
-    change: "0.00%",
-    volume: "$500.00",
-    marketCap: "$2500000.00",
-  },
-  {
-    currency: "Dash",
-    icon: "/icons/coins/dash.png",
-    price: "$250.00",
-    change: "0.00%",
-    volume: "$500.00",
-    marketCap: "$2500000.00",
-  },
-]
-
 const getData = async () => {
-  const response = await fetch(`${process.env.VERCEL_URL}/api/latest`, { cache: "no-cache" })
+  const response = await fetch(`https://${process.env.VERCEL_URL}/api/latest`, { cache: "no-cache" })
   const data = await response.json()
   // console.log(JSON.stringify(data))
   return data
