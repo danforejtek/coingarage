@@ -3,10 +3,19 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 import { cn, formatAmount, formatCurrency, formatPercentage } from "@/lib/utils"
 
 const getData = async () => {
-  const response = await fetch(`https://${process.env.VERCEL_URL}/api/latest`, { cache: "no-cache" })
-  const data = await response.json()
-  // console.log(JSON.stringify(data))
-  return data
+  try {
+    const response = await fetch(
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000/api/latest"
+        : `https://${process.env.VERCEL_URL}/api/latest`,
+      { next: { revalidate: 60 * 9 } }
+    )
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+    return []
+  }
 }
 
 export default async function CryptoMarketTable() {
