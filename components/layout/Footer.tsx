@@ -66,19 +66,14 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                  <Link href="/earn/staking" className="hover:text-primary">
                     Staking
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
-                <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/signin">
-                    Staking
-                  </a>
-                </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/signin">
                     Login

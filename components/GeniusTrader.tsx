@@ -3,6 +3,7 @@ import Heading from "./Heading"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 const up = "text-green-500"
 const down = "text-red-500"
@@ -54,7 +55,7 @@ const TraderCard = () => {
 
 export default function GeniusTrader() {
   return (
-    <div className="dark:bg-backgroundMuted rounded-2xl bg-neutral-100 p-10">
+    <div className="rounded-2xl bg-neutral-100 p-10 dark:bg-backgroundMuted">
       <div className="flex flex-row flex-wrap justify-center gap-8 lg:justify-between">
         <div>
           <Heading tag="h3" size="3xl">
@@ -71,9 +72,11 @@ export default function GeniusTrader() {
               <div className="text-sm text-neutral-500">Followers</div>
             </div>
           </div>
-          <Button variant="default" size="lg" className="mt-12 font-bold lg:mt-48">
-            Get Started
-          </Button>
+          <Link href="/trading-bot">
+            <Button variant="default" size="lg" className="mt-12 font-bold lg:mt-48">
+              Get Started
+            </Button>
+          </Link>
         </div>
         <div className="mt-8">
           <div className="font-heading text-lg text-primary">Best Traders</div>

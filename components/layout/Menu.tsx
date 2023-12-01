@@ -62,8 +62,8 @@ export const navItems: NavItem[] = [
         href: "https://trade.coingarage.io/login",
       },
       {
-        title: "Trader Bot",
-        href: "https://trade.coingarage.io/login",
+        title: "Trading Bot",
+        href: "/trading-bot",
       },
     ],
   },
