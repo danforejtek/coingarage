@@ -1,11 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
+import ContactUs from "@/components/form/ContactUs"
 
 export default function Footer() {
   return (
     <div className="mt-24">
       <div className="h-2 bg-gradient-to-r from-primary to-tertiary"></div>
-      <footer className="bg-secondary py-16 dark:bg-foreground">
+      <footer className="bg-secondary py-16 dark:bg-backgroundMuted">
         <div className="container mx-auto mb-20">
           <Image src="/logo/coingarage_icon_white_1.svg" alt="Logo" width={100} height={56} />
         </div>
@@ -18,7 +19,13 @@ export default function Footer() {
                     About us
                   </Link>
                 </li>
-                <li>Contact us</li>
+                <li>
+                  <ContactUs>
+                    <span className="hover:text-primary" role="button">
+                      Contact Us
+                    </span>
+                  </ContactUs>
+                </li>
                 <li>
                   <a
                     className="hover:text-primary"
