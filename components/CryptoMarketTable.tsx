@@ -46,7 +46,7 @@ const cryptoData = [
 ]
 
 const getData = async () => {
-  const response = await fetch("/api/latest", { cache: "no-cache" })
+  const response = await fetch(`${process.env.VERCEL_URL}/api/latest`, { cache: "no-cache" })
   const data = await response.json()
   // console.log(JSON.stringify(data))
   return data
