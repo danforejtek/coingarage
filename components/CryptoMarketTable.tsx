@@ -44,9 +44,16 @@ const cryptoData = [
   },
 ]
 
-export default function CryptoMarketTable() {
+const getData = async () => {
+  const response = await fetch("http://localhost:3000/api/latest")
+  const data = await response.json()
+  console.log(data)
+}
+
+export default async function CryptoMarketTable() {
+  const data = await getData()
   return (
-    <div className="dark:bg-backgroundMuted rounded-2xl bg-neutral-100 p-6">
+    <div className="rounded-2xl bg-neutral-100 p-6 dark:bg-backgroundMuted">
       <Table>
         <TableHeader>
           <TableRow>
@@ -58,18 +65,19 @@ export default function CryptoMarketTable() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {cryptoData.map((data, index) => (
+          {data?.data?.map((item, index) => (
+            console.log(index === 1 ? item : null)
             <TableRow key={index}>
               <TableCell className="font-medium">
                 <div className="flex flex-row items-center gap-8">
-                  <Image src={data.icon} alt={data.currency} width={40} height={40} />
-                  <span>{data.currency}</span>
+                  <Image src={item.icon} alt={item.symbol} width={40} height={40} />
+                  <span>{item.name}</span>
                 </div>
               </TableCell>
-              <TableCell className="text-right">{data.price}</TableCell>
-              <TableCell className="text-right">{data.change}</TableCell>
-              <TableCell className="text-right">{data.volume}</TableCell>
-              <TableCell className="text-right">{data.marketCap}</TableCell>
+              <TableCell className="text-right">{item.price}</TableCell>
+              <TableCell className="text-right">{item.change}</TableCell>
+              <TableCell className="text-right">{item.volume}</TableCell>
+              <TableCell className="text-right">{item.marketCap}</TableCell>
             </TableRow>
           ))}
         </TableBody>
