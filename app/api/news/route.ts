@@ -13,18 +13,20 @@ const client = new TelegramClient(session, Number(TELEGRAM_API_ID), TELEGRAM_API
 
 export async function GET() {
   try {
-    // await client.connect()
+    await client.connect().catch((error) => {
+      console.log(error)
+    })
 
-    // const messages = []
-    // for await (const message of client.iterMessages("www_Bitcoin_com", {
-    //   limit: 3,
-    // })) {
-    //   const rawText = message.text
-    //   const text = rawText.split(" […]\n")[0]
-    //   const url = rawText.match(/(https?:\/\/[^\s]+)/g)?.[0]
-    //   messages.push({ id: message.id, timestamp: new Date(message.date * 1000)?.toISOString(), text, url })
-    // }
-    return Response.json([])
+    const messages = []
+    for await (const message of client.iterMessages("www_Bitcoin_com", {
+      limit: 3,
+    })) {
+      const rawText = message.text
+      const text = rawText.split(" […]\n")[0]
+      const url = rawText.match(/(https?:\/\/[^\s]+)/g)?.[0]
+      messages.push({ id: message.id, timestamp: new Date(message.date * 1000)?.toISOString(), text, url })
+    }
+    return Response.json(messages)
   } catch (error) {
     console.log(error)
     return Response.json([])

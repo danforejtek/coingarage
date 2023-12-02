@@ -2,14 +2,14 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Heading from "@/components/Heading"
-// import CryptoMarketTable from "@/components/CryptoMarketTable"
+import CryptoMarketTable from "@/components/CryptoMarketTable"
 // import Link from "next/link"
 import Faq from "@/components/Faq"
 import GetGara from "@/components/promo/GetGara"
 import GetApp from "@/components/promo/GetApp"
 import Advantages from "@/components/promo/Advantages"
 import Motivation from "@/components/promo/Motivation"
-// import NewsFeed from "@/components/NewsFeed"
+import NewsFeed from "@/components/NewsFeed"
 import CryptoStats from "@/components/CryptoStats"
 import GeniusTrader from "@/components/GeniusTrader"
 
@@ -58,7 +58,9 @@ export default function Home() {
       <Motivation />
       <section id="hot-coins" className="container mx-auto mt-28">
         <Heading tag="h2">Crypto market</Heading>
-        <div className="mt-12">{/* <CryptoMarketTable /> */}</div>
+        <div className="mt-12">
+          <CryptoMarketTable />
+        </div>
         <div className="mt-12">
           <CryptoStats />
         </div>
