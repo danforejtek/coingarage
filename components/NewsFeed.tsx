@@ -20,8 +20,6 @@ const getData = async () => {
   } catch (error) {
     console.log(error)
     return []
-  } finally {
-    return []
   }
 }
 
