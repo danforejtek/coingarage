@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex-1">{children}</div>
             <Footer />
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

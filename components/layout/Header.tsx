@@ -9,6 +9,7 @@ import { useScrollPosition } from "@/hooks/use-scroll-position"
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
 import { ModeToggle } from "./ModeToggle"
+import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
 
 export default function Header() {
   const scrollPosition = useScrollPosition()
@@ -26,15 +27,16 @@ export default function Header() {
         scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50" : null
       )}
     >
-      <div className="grid h-full grid-cols-[1fr_26px] lg:grid-cols-2">
+      <div className="grid h-full grid-cols-[1fr_26px] lg:flex lg:flex-row lg:justify-between">
         <nav className="flex items-center gap-10" aria-label="Global">
           <Link href="/">
             <div className="h-[30] w-[206px]">
               <Image src="/logo.svg" width={206} height={31} alt="logo" />
             </div>
           </Link>
-          <div className="hidden lg:block">
+          <div className="hidden flex-row gap-2 lg:flex">
             <Menu />
+            <GarageCoinPresale />
           </div>
         </nav>
         <div className="flex h-full items-center justify-end">
