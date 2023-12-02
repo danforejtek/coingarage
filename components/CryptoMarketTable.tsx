@@ -6,7 +6,7 @@ const getData = async () => {
   try {
     const response = await fetch(
       process.env.NODE_ENV === "development"
-        ? `${process.env.NEXT_PUBLIC_URL}/api/latest`
+        ? `http://localhost:3000/api/latest`
         : `https://${process.env.VERCEL_URL}/api/latest`,
       { next: { revalidate: 60 * 9 } }
     )

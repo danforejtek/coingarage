@@ -11,7 +11,7 @@ const getData = async () => {
   try {
     const response = await fetch(
       process.env.NODE_ENV === "development"
-        ? `${process.env.NEXT_PUBLIC_URL}/api/news`
+        ? `http://localhost:3000/api/news`
         : `https://${process.env.VERCEL_URL}/api/news`,
       { next: { revalidate: 60 * 10 } }
     )
