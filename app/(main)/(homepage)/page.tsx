@@ -16,7 +16,7 @@ import GeniusTrader from "@/components/GeniusTrader"
 export default function Home() {
   return (
     <main>
-      <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center gap-12 lg:flex-row lg:items-start xl:mt-36 xl:justify-between xl:gap-6">
+      <section className="container mx-auto mt-12 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-36 xl:justify-between xl:gap-6">
         <div className="p-4">
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="grid-col-2 grid">
           <GetApp />
           <NewsFeed className="mt-8" />
         </div>
