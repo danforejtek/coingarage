@@ -15,7 +15,7 @@ export default function GetApp({ className }: { className?: string }) {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="mb-6 font-heading text-3xl font-bold">Trade Anywhere, Anytime</h2>
+          <h2 className="mb-6 font-heading text-3xl font-bold">Simply Anywhere Anytime</h2>
           <div className="flex flex-row items-center gap-4 rounded-2xl bg-primary/5 p-6 dark:bg-foreground/5 md:gap-16 md:p-8">
             <Image
               src="/images/promo/QR.png"
