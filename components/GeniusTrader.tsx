@@ -59,7 +59,7 @@ export default function GeniusTrader() {
       <div className="flex flex-row flex-wrap justify-center gap-8 lg:justify-between">
         <div>
           <Heading tag="h3" size="3xl">
-            {"GEnius Trader -"}
+            {"EEZY Trader"}
           </Heading>
           <div className="mt-8 font-heading text-lg text-primary">Let AI Bot work for you</div>
           <div className="flex flex-row gap-8">
