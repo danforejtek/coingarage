@@ -21,7 +21,7 @@ export default function Home() {
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
               <div>Crypto</div>
-              <div>Simply & Safe</div>
+              <div>Simply & Safely</div>
               <div className="text-primary">Exchange</div>
             </h1>
             <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
