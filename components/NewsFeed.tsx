@@ -14,8 +14,8 @@ const getData = async () => {
         ? `http://localhost:3000/api/news`
         : `https://${process.env.VERCEL_URL}/api/news`
     )
-    const data = (await response.json()) as Article[]
-    return data || []
+    const data = await response.json() as Article[]
+    return data
   } catch (error) {
     console.log(error)
     return []
