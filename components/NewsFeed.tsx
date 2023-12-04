@@ -14,7 +14,9 @@ const getData = async () => {
         ? `http://localhost:3000/api/news`
         : `https://${process.env.VERCEL_URL}/api/news`
     )
+    console.log(response)
     const data = await response.json() as Article[]
+    console.log(data)
     return data
   } catch (error) {
     console.log(error)
@@ -35,6 +37,7 @@ const Article = ({ text, timestamp, url }: Article) => {
 
 export default async function NewsFeed({ className }: { className?: string }) {
   const data = await getData()
+  console.log(data)
 
   return (
     <div className={cn("flex flex-col gap-6", className)}>
