@@ -12,8 +12,7 @@ const getData = async () => {
     const response = await fetch(
       process.env.NODE_ENV === "development"
         ? `http://localhost:3000/api/news`
-        : `https://${process.env.VERCEL_URL}/api/news`,
-      { next: { revalidate: 60 * 10 } }
+        : `https://${process.env.VERCEL_URL}/api/news`
     )
     const data = (await response.json()) as Article[]
     return data || []
