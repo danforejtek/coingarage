@@ -89,7 +89,11 @@ export default function Footer() {
                     Privacy policy
                   </a>
                 </li>
-                <li>Cookie policy</li>
+                <li>
+                  <Link href="/legal/cookie-policy" className="hover:text-primary">
+                    Cookie policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

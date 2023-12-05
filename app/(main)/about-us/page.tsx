@@ -8,11 +8,11 @@ export default function AboutUs() {
       {/* <div className="h-[84px]"></div> */}
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
         <div className="w-full max-w-[680px] p-4">
-          <h1 className="mb-16 flex flex-col gap-3 font-heading text-5xl font-bold">
-            <Heading tag="h1" size="4xl">
-              About us
-            </Heading>
-          </h1>
+          {/* <h1 className="mb-16 flex flex-col gap-3 font-heading text-5xl font-bold"> */}
+          <Heading tag="h1" size="4xl">
+            About us
+          </Heading>
+          {/* </h1> */}
 
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established

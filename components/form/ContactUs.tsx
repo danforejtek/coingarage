@@ -18,7 +18,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { useToast } from "@/components/ui/use-toast"
 
-const formSchema = z.object({
+export const userDataSchema = z.object({
   firstName: z.string().min(2, {
     message: "First name must be at least 2 characters.",
   }),
@@ -48,7 +48,7 @@ export default function ContactUs({ children }: { children?: React.ReactNode }) 
   const [isOpen, setOpen] = useState(false)
   const toggleOnpen = () => setOpen(!isOpen)
   const form = useForm({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(userDataSchema),
     defaultValues: {
       firstName: "",
       surname: "",
