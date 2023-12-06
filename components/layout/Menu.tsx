@@ -32,18 +32,21 @@ export const navItems: NavItem[] = [
     subItems: [
       {
         title: "Buy Crypto",
+        href: "https://trade.coingarage.io/buy-crypto/buy",
         // href: "/buy-crypto",
-        href: "https://trade.coingarage.io/login",
+        // href: "https://trade.coingarage.io/login",
       },
       {
         title: "Deposit FIAT",
+        href: "https://trade.coingarage.io/buy-crypto/buy",
         // href: "/buy-crypto",
-        href: "https://trade.coingarage.io/login",
+        // href: "https://trade.coingarage.io/login",
       },
       {
         title: "Deposit FIAT via SEPA",
+        href: "https://trade.coingarage.io/buy-crypto/buy",
         // href: "/buy-crypto",
-        href: "https://trade.coingarage.io/login",
+        // href: "https://trade.coingarage.io/login",
       },
     ],
   },
@@ -58,8 +61,8 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Launchpad",
-        // href: "https://trade.coingarage.io/launchpad/projects",
-        href: "https://trade.coingarage.io/login",
+        href: "https://trade.coingarage.io/launchpad/projects",
+        // href: "https://trade.coingarage.io/login",
       },
       {
         title: "Trading Bot",
@@ -69,7 +72,8 @@ export const navItems: NavItem[] = [
   },
   {
     title: "Convert",
-    href: "/convert",
+    href: "https://trade.coingarage.io/convert",
+    // href: "/convert",
   },
   {
     title: "Earn",
@@ -107,10 +111,10 @@ export const navItems: NavItem[] = [
       //   title: "GARY's Poster wall",
       //   href: "/garys-poster-wall",
       // },
-      // {
-      //   title: "Blog",
-      //   href: "/blog",
-      // },
+      {
+        title: "Blog",
+        href: "/blog",
+      },
       // {
       //   title: "Academy",
       //   href: "/academy",

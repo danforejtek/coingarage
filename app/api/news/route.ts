@@ -11,6 +11,8 @@ const client = new TelegramClient(session, Number(TELEGRAM_API_ID), TELEGRAM_API
   baseLogger: new Logger(LogLevel.ERROR),
 })
 
+export const revalidate = 60 * 10 // 10 minutes
+
 export async function GET() {
   try {
     await client.connect().catch((error) => {
