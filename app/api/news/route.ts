@@ -12,7 +12,7 @@ const client = new TelegramClient(session, Number(TELEGRAM_API_ID), TELEGRAM_API
 })
 
 // export const revalidate = 60 * 10 // 10 minutes
-export const revalidate = false
+export const revalidate = 0
 
 export async function GET() {
   try {

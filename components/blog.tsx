@@ -26,11 +26,7 @@ const BlogDate = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogImage = ({ children }: { children: ReactNode }) => {
-  return (
-    <div className="relative">
-      <div className="h-[284px] w-[auto]">{children}</div>
-    </div>
-  )
+  return <div className="relative h-[284px] w-[auto]">{children}</div>
 }
 
 const BlogLink = ({ children, href }: { children: ReactNode; href: string }) => {

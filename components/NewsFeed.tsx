@@ -1,4 +1,6 @@
+// "use client"
 import { cn, timeAgo } from "@/lib/utils"
+// import { useEffect, useState } from "react"
 
 type Article = {
   id: number
@@ -7,13 +9,15 @@ type Article = {
   url: string
 }
 
+export const revalidate = 0
+
 const getData = async () => {
   try {
     const response = await fetch(
       process.env.NODE_ENV === "development"
         ? `http://localhost:3000/api/news`
         : `https://${process.env.VERCEL_URL}/api/news`,
-      { next: { revalidate: 60 * 10 } }
+      { next: { revalidate: 0 } }
     )
     const data = (await response.json()) as Article[]
     return data
@@ -35,11 +39,20 @@ const Article = ({ text, timestamp, url }: Article) => {
 }
 
 export default async function NewsFeed({ className }: { className?: string }) {
-  const data = await getData()
+  // const [articles, setArticles] = useState<Article[]>([])
+
+  // useEffect(() => {
+  //   const getArticles = async () => {
+  //     const data = await getData()
+  //     setArticles(data)
+  //   }
+  //   getArticles()
+  // }, [])
+  const articles = await getData()
 
   return (
     <div className={cn("flex flex-col gap-6", className)}>
-      {data.map((article, index: number) => (
+      {articles.map((article, index: number) => (
         <Article key={index} {...article} />
       ))}
     </div>
