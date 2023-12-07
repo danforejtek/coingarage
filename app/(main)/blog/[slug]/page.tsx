@@ -57,6 +57,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <p className="font-heading text-primary">{date}</p>
         <p className="font-heading text-primary">{author}</p>
       </div>
+      <div className="ml-4 mt-6 hidden list-inside list-decimal pl-4"></div>
     </div>
   )
 }
