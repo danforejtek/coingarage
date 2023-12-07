@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className="grid-col-2 grid">
           <GetApp />
-          <NewsFeed className="mt-8" />
+          {/* <NewsFeed className="mt-8" /> */}
         </div>
       </section>
       <Motivation />
