@@ -1,4 +1,5 @@
 import { promises as fs } from "fs"
+import path from "path"
 import Image from "next/image"
 import Renderer from "@/lib/renderer"
 import Link from "next/link"
@@ -22,13 +23,13 @@ type Content = {
 type Articles = Article[]
 
 export async function generateStaticParams() {
-  const data = await fs.readFile(process.cwd() + "/static/articles.json", "utf-8")
+  const data = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
   const slugs = JSON.parse(data).map((item: { slug: string }) => item.slug)
   return slugs
 }
 
 const getData = async ({ slug }: { slug: string }) => {
-  const jsonData = await fs.readFile(process.cwd() + "/static/articles.json", "utf-8")
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
   const data = JSON.parse(jsonData).find((item: Article) => item.slug === slug)
   return data
 }

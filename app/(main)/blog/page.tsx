@@ -1,6 +1,7 @@
 import { promises as fs } from "fs"
 import { Blog } from "@/components/blog"
 import Image from "next/image"
+import path from "path"
 
 type Article = {
   heading: string
@@ -13,7 +14,7 @@ type Article = {
 }
 
 const getData = async () => {
-  const jsonData = await fs.readFile(process.cwd() + "/static/articles.json", "utf-8")
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
   const data = JSON.parse(jsonData).map((item: Article) => {
     delete item.content
     return { ...item }
