@@ -7,7 +7,7 @@ const getData = async () => {
       headers: { "Content-Type": "application/json" },
       next: { revalidate: 60 * 9 },
     })
-    console.log(response.clone().text())
+    console.log(await response.clone().text())
     const data = await response.json()
     if (data) {
       const market = data?.crypto_market
