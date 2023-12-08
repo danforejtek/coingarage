@@ -1,6 +1,7 @@
-// "use client"
+"use client"
 import { cn, timeAgo } from "@/lib/utils"
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
+import { Skeleton } from "@/components/ui/skeleton"
 
 type Article = {
   id: number
@@ -17,19 +18,19 @@ const getData = async () => {
       process.env.NODE_ENV === "development"
         ? `http://localhost:3000/api/news`
         : `https://${process.env.VERCEL_URL}/api/news`,
-      { next: { revalidate: 0 } }
+      { next: { revalidate: 60 * 10 } }
     )
     const data = (await response.json()) as Article[]
     return data
   } catch (error) {
     console.log(error)
-    return []
+    return null
   }
 }
 
 const Article = ({ text, timestamp, url }: Article) => {
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex min-h-[68px] w-full flex-col">
       <div className="text-sm text-primary">{timeAgo(new Date(timestamp))}</div>
       <a href={url} target="_blank" rel="noreferrer noopener" className="hover:text-primary">
         <div className="font-lg line-clamp-2 w-full font-heading font-bold">{text}</div>
@@ -38,17 +39,26 @@ const Article = ({ text, timestamp, url }: Article) => {
   )
 }
 
-export default async function NewsFeed({ className }: { className?: string }) {
-  // const [articles, setArticles] = useState<Article[]>([])
+export default function NewsFeed({ className }: { className?: string }) {
+  const [articles, setArticles] = useState<Article[] | null>()
 
-  // useEffect(() => {
-  //   const getArticles = async () => {
-  //     const data = await getData()
-  //     setArticles(data)
-  //   }
-  //   getArticles()
-  // }, [])
-  const articles = await getData()
+  useEffect(() => {
+    const getArticles = async () => {
+      const data = await getData()
+      setArticles(data)
+    }
+    getArticles()
+  }, [])
+  // const articles = await getData()
+
+  if (!articles)
+    return (
+      <div className={cn("flex flex-col gap-6", className)}>
+        <Skeleton className="h-[68px] w-full" />
+        <Skeleton className="h-[68px] w-full" />
+        <Skeleton className="h-[68px] w-full" />
+      </div>
+    )
 
   return (
     <div className={cn("flex flex-col gap-6", className)}>

@@ -62,7 +62,7 @@ export default function Page() {
             about event marketing and the help of influencers. We want to jointly enter the field of sports and culture
             as an important partner of European organizations.
           </div>
-          <div>
+          {/* <div>
             <div className="align-end flex h-36">
               <Image src="/images/partners/everstake.svg" alt="" width={292} height={48} />
             </div>
@@ -80,7 +80,7 @@ export default function Page() {
             time as we reach our first milestone of 50,000 users, we will bring our own debit card to the world of
             Coingarage. This will allow you to use crypto for every day purchases in line with our motto: “Crypto as
             usual”
-          </div>
+          </div> */}
         </article>
       </section>
     </main>

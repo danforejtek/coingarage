@@ -2,7 +2,7 @@ import { TelegramClient } from "telegram"
 import { StringSession } from "telegram/sessions/index.js"
 import input from "input"
 
-const apiId = 1234
+const apiId = 12124
 const apiHash = ""
 const stringSession = new StringSession("") // fill this later with the value from session.save()
 
