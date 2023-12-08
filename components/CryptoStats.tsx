@@ -7,9 +7,8 @@ const getData = async () => {
       headers: { "Content-Type": "application/json" },
       next: { revalidate: 60 * 9 },
     })
-    console.log(await response.clone().text())
     const data = await response.json()
-    if (data) {
+    if (typeof data === "object") {
       const market = data?.crypto_market
       const trending = Object.keys(data?.trending)
         .filter((item) => item.split("_")[1] === "USDT")
@@ -28,9 +27,9 @@ const getData = async () => {
         })
       return { trending, topGainers, recentlyAdded }
     }
+    return { trending: [], topGainers: [], recentlyAdded: [] }
   } catch (error) {
-    console.log("WHY THIS SHIT FAILS ON FUCNKING VERCEL")
-    console.log(JSON.stringify(error))
+    console.log(error)
     return { trending: [], topGainers: [], recentlyAdded: [] }
   }
 }

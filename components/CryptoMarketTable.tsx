@@ -53,9 +53,7 @@ export default async function CryptoMarketTable() {
                 <TableCell className={cn("text-right", changeClass)}>
                   {formatPercentage(item?.quote?.USD?.percent_change_24h)}
                 </TableCell>
-                <TableCell className={cn("text-right")}>
-                  {formatCurrency(item?.quote?.USD?.volume_change_24h)}
-                </TableCell>
+                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.volume_24h)}</TableCell>
                 <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.market_cap, 0)}</TableCell>
               </TableRow>
             )
