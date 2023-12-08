@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { cn, formatAmount, formatCurrency, formatPercentage } from "@/lib/utils"
+import { cn, formatCurrency, formatPercentage } from "@/lib/utils"
 
 const getData = async () => {
   try {
