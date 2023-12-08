@@ -12,7 +12,7 @@ const getData = async () => {
     return data
   } catch (error) {
     console.log(error)
-    return []
+    return { trending: [], topGainers: [], recentlyAdded: [] }
   }
 }
 
