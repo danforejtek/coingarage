@@ -15,9 +15,7 @@ export const revalidate = 0
 const getData = async () => {
   try {
     const response = await fetch(
-      process.env.NODE_ENV === "development"
-        ? `http://localhost:3000/api/news`
-        : `https://${process.env.VERCEL_URL}/api/news`,
+      process.env.NODE_ENV === "development" ? `http://localhost:3000/api/news` : `/api/news`,
       { next: { revalidate: 60 * 10 } }
     )
     const data = (await response.json()) as Article[]
