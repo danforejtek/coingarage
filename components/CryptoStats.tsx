@@ -5,6 +5,7 @@ const getData = async () => {
     // const response = await fetch(`https://api.coingarage.io/market/market-data`, { cache: "no-cache" })
     const response = await fetch(`https://api.coingarage.io/market/market-data`, { next: { revalidate: 60 * 9 } })
     const data = await response.json()
+    console.log("coingaragedata", data)
     const market = data?.crypto_market
     const trending = Object.keys(data?.trending)
       .filter((item) => item.split("_")[1] === "USDT")
