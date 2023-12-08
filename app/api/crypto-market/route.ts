@@ -28,6 +28,6 @@ export async function GET(request: Request) {
     return Response.json({ trending: [], topGainers: [], recentlyAdded: [] })
   } catch (error) {
     console.log(error)
-    return Response.json({ trending: [], topGainers: [], recentlyAdded: [] })
+    return Response.json({ error: JSON.stringify(error) })
   }
 }
