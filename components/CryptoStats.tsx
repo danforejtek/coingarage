@@ -24,6 +24,7 @@ const getData = async () => {
       })
     return { trending, topGainers, recentlyAdded }
   } catch (error) {
+    console.log("WHY THIS SHIT FAILS ON FUCNKING VERCEL")
     console.log(error)
     return { trending: [], topGainers: [], recentlyAdded: [] }
   }
