@@ -45,7 +45,7 @@ export default function Header() {
               <Button variant="ghost" className={cn("text-md")} asChild>
                 <Link href="https://trade.coingarage.io/login">Login</Link>
               </Button>
-              <Button className="text-md" asChild>
+              <Button className="text-md text-center leading-none" asChild>
                 <Link href="https://trade.coingarage.io/signup">Sign up</Link>
               </Button>
               <ModeToggle />

@@ -25,8 +25,7 @@ const parseData = (data) => {
   }
 }
 
-const fetcher = (...args) =>
-  fetch(...args, { headers: { "Content-Type": "application/json" }, mode: "no-cors" }).then((res) => res.json())
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 export default function CryptoStats() {
   const [parsedData, setParsedData] = useState({ trending: [], topGainers: [], recentlyAdded: [] })
