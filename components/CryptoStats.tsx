@@ -1,46 +1,58 @@
+"use client"
+import useSWR from "swr"
 import CryptoTable from "./CryptoTable"
+import { useEffect, useState } from "react"
+import { Skeleton } from "@/components/ui/skeleton"
 
-const getData = async () => {
+const parseData = (data) => {
   try {
-    // const response = await fetch(`https://api.coingarage.io/market/market-data`, { cache: "no-cache" })
-    const response = await fetch(`https://api.coingarage.io/market/market-data`, {
-      headers: { "Content-Type": "application/json" },
-      next: { revalidate: 60 * 9 },
-    })
-    const data = await response.json()
     if (typeof data === "object") {
       const market = data?.crypto_market
-      const trending = Object.keys(data?.trending)
-        .filter((item) => item.split("_")[1] === "USDT")
-        .map((item) => {
-          return { name: item.split("_")[0], ...market[item] }
-        })
-      const topGainers = Object.keys(data?.top_gainer)
-        .filter((item) => item.split("_")[1] === "USDT")
-        .map((item) => {
-          return { name: item.split("_")[0], ...market[item] }
-        })
-      const recentlyAdded = Object.keys(data?.recently_added)
-        .filter((item) => item.split("_")[1] === "USDT")
-        .map((item) => {
-          return { name: item.split("_")[0], ...market[item] }
-        })
+      const trending = Object.keys(data?.trending).map((item) => {
+        return { name: item.split("_")[0], ...market[item] }
+      })
+      const topGainers = Object.keys(data?.top_gainer).map((item) => {
+        return { name: item.split("_")[0], ...market[item] }
+      })
+      const recentlyAdded = Object.keys(data?.recently_added).map((item) => {
+        return { name: item.split("_")[0], ...market[item] }
+      })
       return { trending, topGainers, recentlyAdded }
     }
     return { trending: [], topGainers: [], recentlyAdded: [] }
   } catch (error) {
-    console.log(error)
     return { trending: [], topGainers: [], recentlyAdded: [] }
   }
 }
 
-export default async function CryptoStats() {
-  const { trending, topGainers, recentlyAdded } = await getData()
+const fetcher = (...args) =>
+  fetch(...args, { headers: { "Content-Type": "application/json" } }).then((res) => res.json())
+
+export default function CryptoStats() {
+  const [parsedData, setParsedData] = useState({ trending: [], topGainers: [], recentlyAdded: [] })
+  const { data, error, isLoading } = useSWR("https://api.coingarage.io/market/market-data/usdt", fetcher)
+
+  useEffect(() => {
+    if (data) {
+      setParsedData(parseData(data))
+    }
+  }, [data, error, isLoading])
+
   return (
     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-16">
-      <CryptoTable heading="Trending" data={trending} />
-      <CryptoTable heading="Top Gainers" data={topGainers} />
-      <CryptoTable heading="Recently Added" data={recentlyAdded} />
+      {false ? (
+        <>
+          <CryptoTable heading="Trending" data={parsedData?.trending} />
+          <CryptoTable heading="Top Gainers" data={parsedData?.topGainers} />
+          <CryptoTable heading="Recently Added" data={parsedData?.recentlyAdded} />
+        </>
+      ) : (
+        <>
+          <Skeleton className="h-[400px] w-full rounded-2xl" />
+          <Skeleton className="h-[400px] w-full rounded-2xl" />
+          <Skeleton className="h-[400px] w-full rounded-2xl" />
+        </>
+      )}
     </div>
   )
 }
