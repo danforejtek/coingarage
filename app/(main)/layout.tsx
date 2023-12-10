@@ -5,6 +5,7 @@ import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,7 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
           <div className="flex min-h-screen flex-col justify-between">
-            <div className="flex-1">{children}</div>
+            <div className="flex-1">
+              {children}
+              <SpeedInsights />
+            </div>
             <Footer />
           </div>
           <Toaster />
