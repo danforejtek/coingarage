@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <section className="container mx-auto mt-12 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-36 xl:justify-between xl:gap-6">
-        <div className="p-4">
+        <div>
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
               <div>Crypto</div>
@@ -73,6 +73,9 @@ export default function Home() {
       </section>
       <Advantages />
       <section className="container mx-auto mt-28">
+        <Heading tag="h2" size="4xl" className="mb-8">
+          Discover More Products
+        </Heading>
         <GeniusTrader />
       </section>
       <section className="relative mt-28">
@@ -83,13 +86,7 @@ export default function Home() {
           <div className="mt-12 flex flex-1 justify-center xl:mt-0 xl:justify-start">
             <Image src="/images/promo/phone_3d.png" className="animate-slow-bounce" alt="" width={350} height={712} />
             <div className="ml-12 hidden h-full flex-col justify-center md:flex">
-              <Image
-                src="/images/promo/QR.png"
-                alt="Get App"
-                width={224}
-                height={224}
-                className="rounded-xl bg-white p-1"
-              />
+              <Image src="/qr/get-app.svg" alt="Get App" width={224} height={224} className="rounded-xl bg-white p-1" />
               <div className="mt-4 text-center font-heading font-bold text-white ">
                 Scan QR Code to
                 <br />
