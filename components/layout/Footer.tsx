@@ -104,7 +104,11 @@ export default function Footer() {
                     Hot Coins
                   </Link>
                 </li>
-                <li>Blog</li>
+                <li>
+                  <Link href="/blog" className="hover:text-primary">
+                    Blog
+                  </Link>
+                </li>
                 <li>
                   <Link href="/#faq" className="hover:text-primary">
                     FAQ&apos;s
@@ -116,17 +120,17 @@ export default function Footer() {
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li>Coin Listing</li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                  <a className="hover:text-primary" href="https://trade.coingarage.io">
                     Markets
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                  <a className="hover:text-primary" href="https://trade.coingarage.io">
                     Trade
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/buy-crypto/buy">
                     Buy Crypto
                   </a>
                 </li>
