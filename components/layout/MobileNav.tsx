@@ -101,12 +101,12 @@ const MobileNav = ({ scrolled = false }) => {
           <ul className="flex flex-row items-center justify-center gap-6">
             <li>
               <Button variant="outline" className="text-md w-full" asChild>
-                <Link href="https://trade.coingarage.io/login">Login</Link>
+                <a href="https://trade.coingarage.io/login">Login</a>
               </Button>
             </li>
             <li>
               <Button className="text-md w-full" asChild>
-                <Link href="https://trade.coingarage.io/signup">Sign up</Link>
+                <a href="https://trade.coingarage.io/signup">Sign up</a>
               </Button>
             </li>
           </ul>

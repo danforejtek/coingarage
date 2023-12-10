@@ -43,10 +43,10 @@ export default function Header() {
           <div className="hidden lg:block">
             <div className="flex gap-4">
               <Button variant="ghost" className={cn("text-md")} asChild>
-                <Link href="https://trade.coingarage.io/login">Login</Link>
+                <a href="https://trade.coingarage.io/login">Login</a>
               </Button>
               <Button className="text-md text-center leading-none" asChild>
-                <Link href="https://trade.coingarage.io/signup">Sign up</Link>
+                <a href="https://trade.coingarage.io/signup">Sign up</a>
               </Button>
               <ModeToggle />
             </div>

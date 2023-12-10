@@ -36,10 +36,10 @@ export default function Home() {
           </div>
           <div className="w-full max-w-[500px]">
             <div className="mt-8 flex flex-row flex-wrap gap-4">
-              <Button variant="default" size="lg" className="w-full sm:w-max" asChild>
+              <Button variant="default" size="lg" className="text-md w-full sm:w-max" asChild>
                 <a href="https://trade.coingarage.io/signup">Sign up</a>
               </Button>
-              <Button variant="outlinePrimary" size="lg" className="w-full font-bold sm:w-max" asChild>
+              <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
                 <a href="https://www.coingarage-finance.com">Become a Shareholder</a>
               </Button>
             </div>
