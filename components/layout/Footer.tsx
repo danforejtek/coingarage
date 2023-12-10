@@ -35,7 +35,7 @@ export default function Footer() {
                   <Linkedin className="text-white" size={24} strokeWidth={0} fill="white" />
                 </a>
                 <a
-                  href="https://www.facebook.com/coingaragefinance"
+                  href="https://www.facebook.com/coingaragesro"
                   target="_blank"
                   rel="noopener noreferer"
                   className="hover:text-primary"
