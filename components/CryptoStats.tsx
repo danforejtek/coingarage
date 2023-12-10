@@ -8,15 +8,21 @@ const parseData = (data) => {
   try {
     if (typeof data === "object") {
       const market = data?.crypto_market
-      const trending = Object.keys(data?.trending).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
-      })
-      const topGainers = Object.keys(data?.top_gainer).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
-      })
-      const recentlyAdded = Object.keys(data?.recently_added).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
-      })
+      const trending = Object.keys(data?.trending)
+        .map((item) => {
+          return { name: item.split("_")[0], ...market[item] }
+        })
+        .sort((a, b) => b.change_perc_24hr - a.change_perc_24hr)
+      const topGainers = Object.keys(data?.top_gainer)
+        .map((item) => {
+          return { name: item.split("_")[0], ...market[item] }
+        })
+        .sort((a, b) => b.change_perc_24hr - a.change_perc_24hr)
+      const recentlyAdded = Object.keys(data?.recently_added)
+        .map((item) => {
+          return { name: item.split("_")[0], ...market[item] }
+        })
+        .sort((a, b) => b.change_perc_24hr - a.change_perc_24hr)
       return { trending, topGainers, recentlyAdded }
     }
     return { trending: [], topGainers: [], recentlyAdded: [] }
