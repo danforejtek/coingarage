@@ -9,13 +9,13 @@ const parseData = (data) => {
     if (typeof data === "object") {
       const market = data?.crypto_market
       const trending = Object.keys(data?.trending).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }
+        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
       })
       const topGainers = Object.keys(data?.top_gainer).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }
+        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
       })
       const recentlyAdded = Object.keys(data?.recently_added).map((item) => {
-        return { name: item.split("_")[0], ...market[item] }
+        return { name: item.split("_")[0], ...market[item] }.sort((a, b) => b.percent_change_24h - a.percent_change_24h)
       })
       return { trending, topGainers, recentlyAdded }
     }

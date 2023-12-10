@@ -140,7 +140,7 @@ export default function Footer() {
             <div>
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/signin">
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
                     Login
                   </a>
                 </li>
