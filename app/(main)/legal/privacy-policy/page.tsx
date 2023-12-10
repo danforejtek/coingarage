@@ -3,9 +3,8 @@ export default function Page() {
     <main>
       <section className="container mx-auto mt-6 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-14 xl:justify-between">
         <div className="w-full max-w-[1200px] p-4">
-          <h5>
-            <strong>A. INTRODUCTION</strong>
-          </h5>
+          <h1 className="font-heading text-4xl">Privacy policy</h1>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">A. INTRODUCTION</h3>
           <p>
             In this policy,&nbsp;we,&nbsp;us,&nbsp;our&nbsp;and&nbsp;Coingarage s.r.o.&nbsp;refer to&nbsp;Coingarage
             s.r.o..For more information about us and how to contact us, see Section 11.
@@ -31,13 +30,11 @@ export default function Page() {
             This Policy may change from time to time. Your continued use of the Services after we make changes is deemed
             to be acceptance of those changes, so please check the Policy periodically for updates.
           </p>
-          <h5>
-            <strong>B. PERSONAL DATA WE COLLECT ABOUT YOU AND HOW WE COLLECT IT</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">
+            B. PERSONAL DATA WE COLLECT ABOUT YOU AND HOW WE COLLECT IT
+          </h3>
           <p>There are three general categories of personal data we collect.</p>
-          <h5>
-            <strong>B.1 INFORMATION YOU GIVE TO US.</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">B.1 INFORMATION YOU GIVE TO US.</h3>
           <p>
             (a) We collect your account data, which may include personal identification information such as your name,
             date of birth, age, nationality, gender, signature, utility bills, photographs, phone number, home address,
@@ -67,9 +64,9 @@ export default function Page() {
             and website (Profile Data). The Profile Data may be processed for the purposes of providing you a better
             user experience when using the Services. The legal basis for this processing is your consent.
           </p>
-          <h5>
-            <strong>B2. INFORMATION WE AUTOMATICALLY COLLECT FROM YOUR USE OF THE SERVICES.</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">
+            B2. INFORMATION WE AUTOMATICALLY COLLECT FROM YOUR USE OF THE SERVICES.
+          </h3>
           <p>
             When you use the Services, we may automatically process information about your computer and internet
             connection (including your IP address, operating system and browser type), your mobile carrier, device
@@ -81,9 +78,7 @@ export default function Page() {
             to comply with legal obligations and our legitimate interest in being able to provide and improve the
             functionalities of the Services.
           </p>
-          <h5>
-            <strong>B3. INFORMATION WE COLLECT FROM THIRD PARTIES</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">B3. INFORMATION WE COLLECT FROM THIRD PARTIES</h3>
           <p>
             From time to time, we may obtain information about you from third party sources as required or permitted by
             applicable law, such as public databases, credit bureaus, ID verification partners, resellers and channel
@@ -94,9 +89,7 @@ export default function Page() {
             our legal obligations, such as anti-money laundering laws. The legal basis for the processing such data is
             compliance with legal obligations.
           </p>
-          <h5>
-            <strong>C. DISCLOSURE OF PERSONAL DATA</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">C. DISCLOSURE OF PERSONAL DATA</h3>
           <p>
             C.1 We may disclose your personal data to any member of our group of companies (this means our subsidiaries,
             our ultimate holding company and all its subsidiaries) insofar as reasonably necessary for the purposes, and
@@ -130,9 +123,7 @@ export default function Page() {
             for which it was originally collected or subsequently authorized by the individuals. In order to opt out
             from disclosure of your personal information, please write to us at https://coingaragesr.freshdesk.com/
           </p>
-          <h5>
-            <strong>D. INTERNATIONAL TRANSFERS OF YOUR PERSONAL DATA</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">D. INTERNATIONAL TRANSFERS OF YOUR PERSONAL DATA</h3>
           <p>
             We may provide information about the circumstances in which your personal data may be transferred to
             countries. We and our other group companies have offices in India and other countries. To facilitate our
@@ -143,9 +134,7 @@ export default function Page() {
             Transfers to our affiliated entities, to our service providers and other third parties will be protected by
             appropriate safeguards.
           </p>
-          <h5>
-            <strong>E. YOUR RIGHTS WITH REGARD TO PERSONAL DATA</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">E. YOUR RIGHTS WITH REGARD TO PERSONAL DATA</h3>
           <p>
             In this Section, we have summarized the rights that you have under data protection law based on whether you
             are a EEAresident (a&nbsp;EEA Resident) or you are not a resident of the EEA (a&nbsp;Non-&nbsp;EEA
@@ -176,7 +165,7 @@ export default function Page() {
             Furthermore, if you wish to have a copy of your ledger in Coingarage s.r.o., you may download them by
             submitting a request to
             <a href="mailto:https://coingaragesr.freshdesk.com/">https://coingaragesr.freshdesk.com/</a>
-            with the subject line “Download Ledger.””
+            with the subject line “Download Ledger.”
             <br />
             <br />
             Right to objection: you can object to the processing of your Personal Data for direct marketing purpose at
@@ -207,9 +196,7 @@ export default function Page() {
             Right to ask information: If you want your information what is there in Coingarage s.r.o. system, the
             platform will provide all your stored information its system within the stipulated time at free of cost.
           </p>
-          <h5>
-            <strong>F. RETAINING AND DELETING PERSONAL DATA</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">F. RETAINING AND DELETING PERSONAL DATA</h3>
           <p>
             F.1&nbsp;This Section sets out our data retention policies and procedure, which are designed to help ensure
             that we comply with our legal obligations in relation to the retention and deletion of personal data.
@@ -229,9 +216,7 @@ export default function Page() {
             retention is necessary for compliance with a legal obligation to which we are subject, or in order to
             protect your vital interests or the vital interests of another natural person.
           </p>
-          <h5>
-            <strong>G. CHILDREN</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">G. CHILDREN</h3>
           <p>
             Our Services are not intended for children. You must also be old enough to consent to the processing of your
             personal data in your country without parental consent. No one under age 18 may provide any personal data
@@ -240,11 +225,9 @@ export default function Page() {
             the interactive features of the Services or provide any information about yourself to us, including your
             name, address, telephone number, e-mail address or any screen name or user name you may use.
           </p>
-          <h5>
-            <strong>H. COOKIES</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">H. COOKIES</h3>
           <p>
-            <strong>H.1 About cookies</strong>
+            H.1 About cookies
             <br />
             <br />
             (a) A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web
@@ -266,7 +249,7 @@ export default function Page() {
             and unique advertising identifiers, to collect information about your activity, browser, and device.
             <br />
             <br />
-            <strong>H.2 We use these technologies for the following purposes:</strong>
+            H.2 We use these technologies for the following purposes:
             <br />
             <br />
             (a) to identify you and log you into the Services;
@@ -285,7 +268,7 @@ export default function Page() {
             <br />
             (f)to store your preferences in relation to the use of cookies more generally. <br />
             <br />
-            <strong>H.3 Cookies used by our service providers</strong>
+            H.3 Cookies used by our service providers
             <br />
             <br />
             (a)We use the following service providers to analyse the use of the Services. Each service provider gathers
@@ -294,7 +277,7 @@ export default function Page() {
             the URLs.
             <br />
             <br />
-            <strong>H.4 Managing cookies</strong>
+            H.4 Managing cookies
             <br />
             <br />
             (a)Most browsers allow you to refuse to accept cookies and to delete cookies. The methods for doing so vary
@@ -306,9 +289,7 @@ export default function Page() {
             (c)If you choose to decline cookies, some parts of the Services may not work as intended or may not work at
             all.
           </p>
-          <h5>
-            <strong>I. DATA SECURITY</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">I. DATA SECURITY</h3>
           <p>
             I.1&nbsp;We have implemented measures designed to secure your personal data from accidental loss and from
             unauthorized access, use, alteration and disclosure. The safety and security of your information also
@@ -334,9 +315,7 @@ export default function Page() {
             risk. We are not responsible for the circumvention of any privacy settings or security measures contained on
             the Services.
           </p>
-          <h5>
-            <strong>J. CHANGES TO OUR PRIVACY POLICY</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">J. CHANGES TO OUR PRIVACY POLICY</h3>
           <p>
             It is our policy to post any changes we make to our Policy on this page. If we make material changes to how
             we treat our user&apos;s personal data, we will notify you by e-mail to the primary e-mail address specified
@@ -344,9 +323,7 @@ export default function Page() {
             responsible for ensuring we have an up-to-date active and deliverable e-mail address for you, and for
             periodically visiting our Website and this Policy to check for any changes.
           </p>
-          <h5>
-            <strong>K. CONTACT INFORMATION</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">K. CONTACT INFORMATION</h3>
           <p>
             The data controller responsible for your personal data is at www.https://coingarage.io.Please write to us at
             <a href="mailto:https://coingaragesr.freshdesk.com/">https://coingaragesr.freshdesk.com/</a>

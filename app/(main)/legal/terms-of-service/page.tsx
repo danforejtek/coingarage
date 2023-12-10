@@ -57,11 +57,9 @@ export default function Page() {
             ADVICE. YOU ARE SOLELY AND EXCLUSIVELY RESPONSIBLE FOR ALL TRADING DECISIONS MADE BY YOU WHILE USING THE
             SERVICES.
           </p>
-          <h5>
-            <strong>1. Accounts</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">1. Accounts</h3>
           <p className="mt-4">
-            <strong>1. Account Creation.</strong> <br />
+            1. Account Creation. <br />
             In order to use certain features of the Site, you must register for an account (“Account”) and provide
             certain information about yourself as prompted by the account registration form. You represent and warrant
             that: (a) all required registration information you submit is truthful and accurate; (b) you will maintain
@@ -69,7 +67,7 @@ export default function Page() {
             instructions on the Site. {value} may suspend or terminate your Account in accordance with Section 8.{" "}
           </p>
           <p className="mt-4">
-            <strong>2. Identity Verification.</strong>
+            2. Identity Verification.
             <br />
             You agree to provide us with the information we request for the purposes of identity verification and the
             detection of money laundering, terrorist financing, fraud, or any other financial crime and permit us to
@@ -86,7 +84,7 @@ export default function Page() {
             reasonably deem necessary based on the results of such inquiries.
           </p>
           <p className="mt-4">
-            <strong>3. Certain Restrictions.</strong>
+            3. Certain Restrictions.
             <br />
             By using the Services, you represent and warrant that: (i) neither you nor any of your directors, officers,
             employees, agents, affiliates or representatives is an individual or an entity that is, or is owned or
@@ -100,7 +98,7 @@ export default function Page() {
             the United Nations Security Council, the European Union or other relevant sanctions authority.
           </p>
           <p className="mt-4">
-            <strong>4. Account Responsibilities.</strong>
+            4. Account Responsibilities.
             <br />
             You are responsible for maintaining the confidentiality of your Account login information and are fully
             responsible for all activities that occur under your Account. You agree to immediately notify Coingarage
@@ -109,7 +107,7 @@ export default function Page() {
             to comply with the above requirements.{" "}
           </p>
           <p className="mt-4">
-            <strong>5. Compliance.</strong>
+            5. Compliance.
             <br />
             You are solely responsible for ensuring that your use of the Services is in compliance with all laws, rules
             and regulations applicable to you and the right to access the Services is automatically revoked where use of
@@ -117,37 +115,35 @@ export default function Page() {
             with any law, rule or regulation applicable to you.{" "}
           </p>
           <p className="mt-4">
-            <strong>6. Available Only Where Permitted by Law.</strong>
-            The Services are only available in jurisdictions where they may be legally offered for sale. The Services
-            are not available to “U.S. Persons”, as such term is defined under Regulation S promulgated under the
-            Securities Act of 1933. By accessing or using the Site, you represent and warrant that you are not a U.S.
-            Person. SERVICES AVAILABLE ONLY IN THOSE JURISDICTION WHO HAS PERMITTED TO DEAL/TRADE IN CRYPTOCURRENCY.
+            6. Available Only Where Permitted by Law. The Services are only available in jurisdictions where they may be
+            legally offered for sale. The Services are not available to “U.S. Persons”, as such term is defined under
+            Regulation S promulgated under the Securities Act of 1933. By accessing or using the Site, you represent and
+            warrant that you are not a U.S. Person. SERVICES AVAILABLE ONLY IN THOSE JURISDICTION WHO HAS PERMITTED TO
+            DEAL/TRADE IN CRYPTOCURRENCY.
           </p>
-          <h5>
-            <strong> 2. Access to the Services</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">2. Access to the Services</h3>
           <p className="mt-4">
-            <strong>1. Licence.</strong>
+            1. Licence.
             <br />
             Subject to this Agreement, Coingarage s.r.o. grants you a non-transferable, non-exclusive, revocable,
             limited license to use and access the Services solely for your own personal or internal business purposes,
             in accordance with the Account type you are currently subscribing to.{" "}
           </p>
           <p className="mt-4">
-            <strong>2. Modification.</strong>
+            2. Modification.
             <br />
             Coingarage s.r.o. reserves the right, at any time, to modify, suspend, or discontinue the Services (in whole
             or in part) with or without notice to you. You agree that Coingarage s.r.o. will not be liable to you or to
             any third party for any modification, suspension, or discontinuation of the Services or any part thereof.{" "}
           </p>
           <p className="mt-4">
-            <strong>3. No Support or Maintenance.</strong>
+            3. No Support or Maintenance.
             <br />
             You acknowledge and agree that Coingarage s.r.o. will have no obligation to provide you with any support or
             maintenance in connection with the Services.{" "}
           </p>
           <p className="mt-4">
-            <strong>4. Ownership.</strong>
+            4. Ownership.
             <br />
             You acknowledge that all the intellectual property rights, including copyrights, patents, trademarks, and
             trade secrets, in the Services and its content are owned by Coingarage s.r.o. or its suppliers. Neither this
@@ -157,7 +153,7 @@ export default function Page() {
             There are no implied licenses granted under this Agreement.
           </p>
           <p className="mt-4">
-            <strong>5. Feedback.</strong>
+            5. Feedback.
             <br /> If you provide Coingarage s.r.o. with any feedback or suggestions regarding the Site (“Feedback”),
             you hereby assign to Coingarage s.r.o. all rights in such Feedback and agree that Coingarage s.r.o. shall
             have the right to use and fully exploit such Feedback and related information in any manner it deems
@@ -165,15 +161,11 @@ export default function Page() {
             and non-proprietary. You agree that you will not submit to Coingarage s.r.o. any information or ideas that
             you consider to be confidential or proprietary.
           </p>
-          <h5>
-            <strong>3. Prohibited Activities</strong>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">
+            3. Prohibited Activities
             <br />
-          </h5>
-          <p className="mt-4">
-            <strong>1. Prohibited Activities</strong>
-            <br />
-            In connection with your use of Services, you hereby agree that you will not:
-          </p>
+          </h3>
+          <p className="mt-4">In connection with your use of Services, you hereby agree that you will not:</p>
           <p className="mt-4">
             1. violate (or assist any other party in violating) any applicable law, statute, ordinance, or regulation;{" "}
           </p>
@@ -203,7 +195,7 @@ export default function Page() {
           <p className="mt-4">
             10. collect any user information from other Users, including, without limitation, email addresses;{" "}
           </p>
-          <p className="mt-4">terms.detail29 </p>
+          {/* <p className="mt-4">terms.detail29 </p> */}
           <p className="mt-4">
             12. upload, display or transmit any messages, photos, videos or other media that contain illegal goods,
             pornographic, violent, obscene or copyrighted images or materials for use as an avatar, in connection with a
@@ -220,7 +212,7 @@ export default function Page() {
             competitive product or service or copy any ideas, features, functions, or graphics of the Services.{" "}
           </p>
           <p className="mt-4">
-            <strong>Enforcement.</strong>
+            Enforcement.
             <br />
             We reserve the right (but have no obligation) to investigate and/or take appropriate action against you in
             our sole discretion if you engage in Prohibited Activities or violate any other provision of this Agreement
@@ -229,11 +221,9 @@ export default function Page() {
             authorities without providing any notice of you about any such report and confiscating any balance remaining
             in an Account which has been terminated.
           </p>
-          <h5>
-            <strong>4. Third-Party Products and Services; Other Users</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">4. Third-Party Products and Services; Other Users</h3>
           <p className="mt-4">
-            <strong>1. Third-Party Services.</strong>
+            1. Third-Party Services.
             <br />
             You acknowledge that the Service will enable or assist you to access, interact with, and/or purchase
             services from several supported platforms and other third parties via third-party websites or applications
@@ -250,12 +240,12 @@ export default function Page() {
             without entitling you to refund, credit, or other compensation.{" "}
           </p>
           <p className="mt-4">
-            <strong>2. Smart Token Funds; STF Traders. </strong>
+            2. Smart Token Funds; STF Traders.
             <br />
             terms.detail34{" "}
           </p>
           <p className="mt-4">
-            <strong>3. Other Users. </strong>
+            3. Other Users.
             <br />
             We do not guarantee the identity of any User or other party or ensure that a buyer or seller is authorized
             to complete a transaction or will complete a transaction. Your interactions with other Users are solely
@@ -264,7 +254,7 @@ export default function Page() {
             obligation to become involved.
           </p>
           <p className="mt-4">
-            <strong>4. Release.</strong>
+            4. Release.
             <br />
             You hereby release and forever discharge Coingarage s.r.o. (and our officers, employees, agents, successors,
             and assigns) from, and hereby waive and relinquish, each and every past, present and future dispute, claim,
@@ -273,24 +263,22 @@ export default function Page() {
             out of, or that relates directly or indirectly to, the Services (including any interactions with, or act or
             omission of, other Users or any Third-Party Products and Services).
           </p>
-          <h5>
-            <strong>5. The Coingarage s.r.o. wallet.</strong>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">
+            5. The Coingarage s.r.o. wallet.
             <br />
-          </h5>
+          </h3>
           <p className="mt-4">
-            <strong>1. Supported Cryptocurrencies.</strong>
-            The Coingarage s.r.o. wallet allows you to send, receive and store cryptocurrency (together, “Wallet
-            Transactions”). The Coingarage s.r.o. wallet is only available in relation to the cryptocurrencies that
-            Coingarage s.r.o., in its sole discretion, decides to support (“Supported Cryptocurrency” or “Supported
-            Cryptocurrencies”). Information about the Supported Cryptocurrencies can be found on the FAQ page on the
-            Coingarage s.r.o. website. The Supported Cryptocurrencies may change from time to time. Under no
-            circumstances should you attempt to carry out a Coingarage s.r.o. wallet Transaction in relation to a
-            cryptocurrency other than a Supported Cryptocurrency.{" "}
+            1. Supported Cryptocurrencies. The Coingarage s.r.o. wallet allows you to send, receive and store
+            cryptocurrency (together, “Wallet Transactions”). The Coingarage s.r.o. wallet is only available in relation
+            to the cryptocurrencies that Coingarage s.r.o., in its sole discretion, decides to support (“Supported
+            Cryptocurrency” or “Supported Cryptocurrencies”). Information about the Supported Cryptocurrencies can be
+            found on the FAQ page on the Coingarage s.r.o. website. The Supported Cryptocurrencies may change from time
+            to time. Under no circumstances should you attempt to carry out a Coingarage s.r.o. wallet Transaction in
+            relation to a cryptocurrency other than a Supported Cryptocurrency.{" "}
           </p>
           <p className="mt-4">
-            <strong>2. Transaction instructions</strong>
-            Coingarage s.r.o. will process Wallet Transactions according to your instructions. You accept and agree that
-            Coingarage s.r.o. does not:
+            2. Transaction instructions Coingarage s.r.o. will process Wallet Transactions according to your
+            instructions. You accept and agree that Coingarage s.r.o. does not:
           </p>
           <p className="mt-4">
             1. guarantee the identity of any user, receiver, or other party to a Coingarage s.r.o. Wallet Transaction.
@@ -336,11 +324,9 @@ export default function Page() {
             failure or otherwise. Coingarage s.r.o. provides no guarantee or warranty that any such attempt will be
             successful and will have no responsibility or liability for such error(s) or any correction attempt(s).
           </p>
-          <h5>
-            <strong> 6. Fees.</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">6. Fees.</h3>
           <p className="mt-4">
-            <strong>1. General.</strong> <br />
+            1. General. <br />
             You agree to pay Coingarage s.r.o. the fees set forth at
             <a href="https://coingarage.io/exchange-fee/trading-rules">
               https://coingarage.io/exchange-fee/trading-rules
@@ -351,14 +337,14 @@ export default function Page() {
             fees owed by you under this Agreement.
           </p>
           <p className="mt-4">
-            <strong>2. Withdrawal / Send fees. </strong>
+            2. Withdrawal / Send fees.
             <br />
             You may be charged a fee to send or withdraw a Supported Cryptocurrency from your Coingarage s.r.o. wallet.
             We currently do not charge fees to deposit or receive Supported Cryptocurrency into your Coingarage s.r.o.
             wallet.{" "}
           </p>
           <p className="mt-4">
-            <strong>3. Trade fees.</strong>
+            3. Trade fees.
             <br />
             Coingarage s.r.o. applies a Maker / Taker fee structure for customers who trade Supported Cryptocurrency
             using the Services. Please consult the page set forth at
@@ -370,9 +356,7 @@ export default function Page() {
             proceeding with any transaction, you accept and agree to the applicable fees. Such fees will also be
             displayed in your transaction history upon completion of the transaction.
           </p>
-          <h5>
-            <strong> 7. Contests.</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">7. Contests.</h3>
           <p className="mt-4">
             We may from time to time offer you the ability to participate in contests of skill (“Contest” or
             “Contests”). If you choose to participate in any Contests, you accept and agree to be bound and abide by the
@@ -383,39 +367,36 @@ export default function Page() {
             be changed or substituted at any time without prior notice. Taxes on any prize or award are the sole
             responsibility of the recipient.
           </p>
-          <h5>
-            <strong>8. Suspension, Termination, And Cancellation. </strong>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">
+            8. Suspension, Termination, And Cancellation.
             <br />
-          </h5>
+          </h3>
           <p className="mt-4">
-            <strong>1. General.</strong> <br />
+            1. General. <br />
             This Agreement will continue to apply to you until terminated by either you or Coingarage s.r.o.. Any
             provision of this Agreement which, either by its terms or to give effect to its meaning, must survive, and
             such other provisions which expressly, or by their nature, are intended to survive termination shall survive
             the expiration or termination of this Agreement.
           </p>
           <p className="mt-4">
-            <strong>2. Suspension, Termination.</strong>
-            We may terminate your Account or suspend your access to the Services at any time and with immediate effect
-            for any reason or no reason, in our sole and absolute discretion. We may decline to process any deposit or
-            withdrawal without prior notice and may limit or suspend your use of one or more Services at any time, in
-            our sole discretion. For example, we may, in our sole discretion, delay deposits or withdrawals if we
-            believe the transaction is suspicious, may involve fraud or misconduct, violates applicable laws, or
-            violates the terms of this Agreement. If you have a balance remaining in an Account which has been
-            suspended, we may freeze such balance for so long as the Account is suspended. If the Account is terminated
-            due to fraud, violation of law, or violation of this Agreement, Coingarage s.r.o. may, in its discretion,
-            confiscate any balance remaining in the Account and deliver it to any applicable government, law
+            2. Suspension, Termination. We may terminate your Account or suspend your access to the Services at any time
+            and with immediate effect for any reason or no reason, in our sole and absolute discretion. We may decline
+            to process any deposit or withdrawal without prior notice and may limit or suspend your use of one or more
+            Services at any time, in our sole discretion. For example, we may, in our sole discretion, delay deposits or
+            withdrawals if we believe the transaction is suspicious, may involve fraud or misconduct, violates
+            applicable laws, or violates the terms of this Agreement. If you have a balance remaining in an Account
+            which has been suspended, we may freeze such balance for so long as the Account is suspended. If the Account
+            is terminated due to fraud, violation of law, or violation of this Agreement, Coingarage s.r.o. may, in its
+            discretion, confiscate any balance remaining in the Account and deliver it to any applicable government, law
             enforcement, or other authorities where circumstances warrant.{" "}
           </p>
           <p className="mt-4">
-            <strong>3. Cancellation.</strong> <br />
+            3. Cancellation. <br />
             You may cancel your Account at any time by withdrawing all balances and sending us a message through
             thecontact pagerequesting the cancellation of your Account. Upon termination of this Agreement and your
             Account, you remain liable for all transactions made while the Account was open.
           </p>
-          <h5>
-            <strong> 9. Disclaimers</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">9. Disclaimers</h3>
           <p className="mt-4">
             THE SERVICES ARE PROVIDED ON AN “AS-IS” AND “AS AVAILABLE” BASIS, AND Coingarage s.r.o. EXPRESSLY DISCLAIMS
             ANY AND ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING ALL
@@ -434,9 +415,7 @@ export default function Page() {
             SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATION
             MAY NOT APPLY TO YOU.
           </p>
-          <h5>
-            <strong> 10. Indemnification</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">10. Indemnification</h3>
           <p className="mt-4">
             You agree to indemnify and hold Coingarage s.r.o. (and its officers, employees, and agents) harmless,
             including costs and attorneys’ fees, from any claim or demand made by any third party due to or arising out
@@ -447,9 +426,7 @@ export default function Page() {
             written consent of Coingarage s.r.o.. Coingarage s.r.o. will use reasonable efforts to notify you of any
             such claim, action or proceeding upon becoming aware of it.
           </p>
-          <h5>
-            <strong> 11. Limitation on Liability</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">11. Limitation on Liability</h3>
           <p className="mt-4">
             TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL
             {value}, ITS AFFILIATES AND THEIR RESPECTIVE SHAREHOLDERS, MEMBERS, DIRECTORS, OFFICERS, EMPLOYEES,
@@ -470,11 +447,9 @@ export default function Page() {
             EXCEED THE AMOUNT OF THE FEES PAID BY YOU TO {value} UNDER THIS AGREEMENT IN THE TWELVE-MONTH PERIOD
             IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM FOR LIABILITY.
           </p>
-          <h5>
-            <strong> 12. General</strong>
-          </h5>
+          <h3 className="mb-4 mt-8 font-heading text-2xl">12. General</h3>
           <p className="mt-4">
-            <strong>1. Dispute Resolution. </strong>
+            1. Dispute Resolution.
             <br />
             Please read this Arbitration Agreement carefully. It is part of your contract with Coingarage s.r.o. and
             affects your rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER.
@@ -532,12 +507,12 @@ export default function Page() {
             this Arbitration Agreement.
           </p>
           <p className="mt-4">
-            <strong>2. Applicable Law.</strong>
+            2. Applicable Law.
             <br /> The Czech Republic Laws will govern these Terms and any dispute that arises between you and
             Coingarage s.r.o..{" "}
           </p>
           <p className="mt-4">
-            <strong>3. Force Majeure.</strong>
+            3. Force Majeure.
             <br />
             Coingarage s.r.o. is not responsible for damages caused by delay or failure to perform undertakings under
             this Agreement when the delay or failure is due to fires; strikes; floods; power outages or failures; acts
@@ -549,7 +524,7 @@ export default function Page() {
             shall be fully and conclusively at an end.
           </p>
           <p className="mt-4">
-            <strong>4. Electronic Communications.</strong>
+            4. Electronic Communications.
             <br />
             The communications between you and Coingarage s.r.o. use electronic means, whether you use the Site or send
             us emails, or whether Coingarage s.r.o. posts notices on the Site or communicates with you via email. For
@@ -560,7 +535,7 @@ export default function Page() {
             non-waivable rights.
           </p>
           <p className="mt-4">
-            <strong>5. Entire Agreement..</strong>
+            5. Entire Agreement..
             <br />
             This Agreement, together with Coingarage s.r.o.’s Privacy Policy, constitute the entire agreement between
             you and us regarding the use of the Services. Our failure to exercise or enforce any right or provision of

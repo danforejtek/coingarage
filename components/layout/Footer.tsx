@@ -81,7 +81,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/legal/terms">
-                    Terms of use
+                    Terms of service
                   </a>
                 </li>
                 <li>

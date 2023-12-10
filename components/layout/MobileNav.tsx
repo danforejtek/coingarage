@@ -57,7 +57,7 @@ const MobileNav = ({ scrolled = false }) => {
             </DialogClose>
           </div>
         </DialogHeader>
-        <div className="flex justify-center overflow-auto border-t border-gray-100 dark:border-gray-700">
+        <div className="flex justify-center overflow-auto border-b border-t border-gray-100 dark:border-gray-700">
           <ul className="p-6">
             <li>
               <div className="mb-4">
@@ -96,7 +96,7 @@ const MobileNav = ({ scrolled = false }) => {
             })}
           </ul>
         </div>
-        <DialogFooter className="flex-row items-center justify-between border-t border-gray-100 pt-4 dark:border-gray-700">
+        <DialogFooter className="flex-row items-center justify-between">
           <ModeToggle />
           <ul className="flex flex-row items-center justify-center gap-6">
             <li>
