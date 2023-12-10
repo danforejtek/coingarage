@@ -20,6 +20,7 @@ import { Icons } from "@/components/Icons"
 import { navItems } from "./Menu"
 import { useEffect, useState } from "react"
 import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
+import { ModeToggle } from "@/components/layout/ModeToggle"
 
 const MobileNav = ({ scrolled = false }) => {
   const [isOpen, setOpen] = useState(false)
@@ -33,11 +34,11 @@ const MobileNav = ({ scrolled = false }) => {
   return (
     <Dialog open={isOpen} onOpenChange={toggleOnpen}>
       {/* <DialogTrigger asChild> */}
-      <Button variant="ghost" className="text-md p-0" onClick={toggleOnpen}>
+      <Button variant="ghost" className="text-md h-6 w-10 p-0" onClick={toggleOnpen}>
         <Icons.menu className="h-6 w-6 dark:fill-white" />
       </Button>
       {/* </DialogTrigger> */}
-      <DialogContent className="h-screen w-screen p-4 px-6" showClose={false}>
+      <DialogContent className="h-[100dvh] w-screen p-4 px-6" showClose={false}>
         <DialogHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -58,9 +59,11 @@ const MobileNav = ({ scrolled = false }) => {
         </DialogHeader>
         <div className="flex justify-center overflow-auto border-t border-gray-100 dark:border-gray-700">
           <ul className="p-6">
-            <div className="mb-4">
-              <GarageCoinPresale />
-            </div>
+            <li>
+              <div className="mb-4">
+                <GarageCoinPresale />
+              </div>
+            </li>
             {navItems.map(({ title, href, subItems }, index) => {
               return (
                 <li key={index} className="mb-4">
@@ -93,8 +96,9 @@ const MobileNav = ({ scrolled = false }) => {
             })}
           </ul>
         </div>
-        <DialogFooter className="items-center justify-center border-t border-gray-100 dark:border-gray-700">
-          <ul className="mt-4 flex flex-row justify-center gap-6">
+        <DialogFooter className="flex-row items-center justify-between border-t border-gray-100 pt-4 dark:border-gray-700">
+          <ModeToggle />
+          <ul className="flex flex-row items-center justify-center gap-6">
             <li>
               <Button variant="outline" className="text-md w-full" asChild>
                 <Link href="https://trade.coingarage.io/login">Login</Link>
