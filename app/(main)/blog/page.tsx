@@ -2,6 +2,7 @@ import { promises as fs } from "fs"
 import { Blog } from "@/components/blog"
 import Image from "next/image"
 import path from "path"
+import type { Metadata } from "next"
 
 type Article = {
   heading: string
@@ -11,6 +12,10 @@ type Article = {
   date: string
   author: string
   content: any
+}
+
+export const metadata: Metadata = {
+  title: "Blog | Coingarage",
 }
 
 const getData = async () => {

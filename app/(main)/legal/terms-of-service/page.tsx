@@ -1,3 +1,9 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Coingarage",
+}
+
 export default function Page() {
   const value = "Coingarage s.r.o."
   return (

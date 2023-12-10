@@ -1,4 +1,8 @@
-import Heading from "@/components/Heading"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Cookie policy | Coingarage",
+}
 
 export default function Page() {
   return (

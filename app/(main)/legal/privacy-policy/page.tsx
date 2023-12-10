@@ -1,3 +1,9 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Privacy policy | Coingarage",
+}
+
 export default function Page() {
   return (
     <main>

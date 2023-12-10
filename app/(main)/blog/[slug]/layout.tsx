@@ -1,9 +1,4 @@
-import type { Metadata } from "next"
 import LatestBlogPosts from "@/components/LatestBlogPosts"
-
-export const metadata: Metadata = {
-  title: "Buy Crypto | Coingarage",
-}
 
 export default function Layout({ children, params }: { children: React.ReactNode; params: Record<string, string> }) {
   const slug = params.slug

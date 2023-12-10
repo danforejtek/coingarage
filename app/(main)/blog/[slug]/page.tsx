@@ -4,6 +4,7 @@ import Image from "next/image"
 import Renderer from "@/lib/renderer"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
+import type { Metadata } from "next"
 
 type Article = {
   heading: string
@@ -21,6 +22,28 @@ type Content = {
 }
 
 type Articles = Article[]
+
+type Props = {
+  params: { slug: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // read route params
+  const slug = params.slug
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+  const data = JSON.parse(jsonData).find((item: Article) => item.slug === slug)
+  const { heading, perex, image, author } = data
+
+  return {
+    title: heading,
+    description: perex,
+    authors: [author],
+    openGraph: {
+      images: [`/images/blog/${image}`],
+    },
+  }
+}
 
 export async function generateStaticParams() {
   const data = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
