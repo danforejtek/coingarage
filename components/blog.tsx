@@ -2,7 +2,7 @@ import Link from "next/link"
 import { ReactNode } from "react"
 
 const BlogItem = ({ children }: { children: ReactNode }) => {
-  return <div className=" h-[626px] rounded-lg border">{children}</div>
+  return <div className=" h-[626px] overflow-hidden rounded-lg border">{children}</div>
 }
 
 const BlogHeading = ({ children }: { children: ReactNode }) => {

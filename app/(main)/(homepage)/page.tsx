@@ -12,6 +12,7 @@ import Motivation from "@/components/promo/Motivation"
 import NewsFeed from "@/components/NewsFeed"
 import CryptoStats from "@/components/CryptoStats"
 import GeniusTrader from "@/components/GeniusTrader"
+import { Youtube } from "lucide-react"
 
 export default function Home() {
   return (
@@ -28,12 +29,6 @@ export default function Home() {
               <b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In
               the <b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of{" "}
               <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>
-              {/* Not in&nbsp;a&nbsp;tax haven, but in the
-              heart of&nbsp;Europe, in&nbsp;
-              <b className="text-primary">Prague</b>, a&nbsp;crypto exchange has been established, which has
-              a&nbsp;license to&nbsp;hold and&nbsp;trade cryptocurrencies. All activity will&nbsp;be fully subject
-              to&nbsp;the&nbsp;
-              <b className="text-tertiary">MiCA</b> directive and the oversight of&nbsp;regulators and&nbsp;authorities. */}
             </p>
           </div>
           <div>
@@ -47,6 +42,17 @@ export default function Home() {
               <Button variant="outlinePrimary" size="lg" className="w-full font-bold sm:w-max" asChild>
                 <a href="https://www.coingarage-finance.com">Become a Shareholder</a>
               </Button>
+            </div>
+            <div className="mt-4 inline-flex justify-center">
+              <a
+                href="https://www.youtube.com/watch?v=y7-5gdlkLWw"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-primary"
+              >
+                <Youtube className="mr-2 inline-block" size={20} />
+                How to sign up?
+              </a>
             </div>
           </div>
         </div>
@@ -93,7 +99,7 @@ export default function Home() {
           </div>
           <div className="mt-20 max-w-[500px] md:mt-0">
             <Heading tag="h2" size="4xl" className="mb-12">
-              Trade Anywhere Anytime
+              Simply Anywhere Anytime
             </Heading>
             <div>
               <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">

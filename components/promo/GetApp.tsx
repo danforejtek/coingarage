@@ -17,13 +17,7 @@ export default function GetApp({ className }: { className?: string }) {
         <div className="flex flex-col justify-center">
           <h2 className="mb-6 font-heading text-3xl font-bold">Simply Anywhere Anytime</h2>
           <div className="flex flex-row items-center gap-4 rounded-2xl bg-primary/5 p-6 dark:bg-foreground/5 md:gap-16 md:p-8">
-            <Image
-              src="/images/promo/QR.png"
-              alt="Get App"
-              width={134}
-              height={134}
-              className="rounded-xl bg-white p-1"
-            />
+            <Image src="/qr/get-app.svg" alt="Get App" width={134} height={134} className="rounded-xl bg-white p-1" />
             <div className="flex flex-col gap-4">
               <a
                 href="https://apps.apple.com/cz/app/coingarage/id1672974634"

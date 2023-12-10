@@ -27,21 +27,26 @@ export const formatAmount = (amount: number = 0, fraction = 2) => {
 export const formatCurrency = (amount: number = 0, fraction = 2) => {
   if (amount && typeof amount === "number") {
     if (amount > 1) {
-      let value = +amount.toFixed(fraction)
       return new Intl.NumberFormat("en", {
         style: "currency",
         currency: "USD",
         minimumFractionDigits: fraction,
         maximumFractionDigits: fraction,
-      }).format(value)
-    } else {
-      let value = +amount.toFixed(4)
+      }).format(amount)
+    } else if (amount > 0.0001) {
       return new Intl.NumberFormat("en", {
         style: "currency",
         currency: "USD",
         minimumFractionDigits: 4,
         maximumFractionDigits: 4,
-      }).format(value)
+      }).format(amount)
+    } else {
+      return new Intl.NumberFormat("en", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 6,
+        maximumFractionDigits: 6,
+      }).format(amount)
     }
   }
   return new Intl.NumberFormat("en", {

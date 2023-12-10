@@ -39,7 +39,7 @@ export default function CryptoStats() {
   }, [data, error, isLoading])
 
   return (
-    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-16">
+    <div className="grid min-h-[532px] grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-16">
       {!isLoading ? (
         <>
           <CryptoTable heading="Trending" data={parsedData?.trending} />
@@ -48,9 +48,9 @@ export default function CryptoStats() {
         </>
       ) : (
         <>
-          <Skeleton className="h-[532px] w-full rounded-2xl" />
-          <Skeleton className="h-[532px] w-full rounded-2xl" />
-          <Skeleton className="h-[532px] w-full rounded-2xl" />
+          <Skeleton className="min-h-[532px] w-full rounded-2xl" />
+          <Skeleton className="min-h-[532px] w-full rounded-2xl" />
+          <Skeleton className="min-h-[532px] w-full rounded-2xl" />
         </>
       )}
     </div>

@@ -14,61 +14,12 @@ type CryptoData = {
   change_perc_24hr: string
 }
 
-const cryptoData = [
-  {
-    currency: "Bitcoin",
-    short: "BTC",
-    icon: "/icons/coins/bitcoin.png",
-    price: 35325.43,
-    change: 0.002,
-  },
-  {
-    currency: "Ripple",
-    short: "XRP",
-    icon: "/icons/coins/ripple.png",
-    price: 0.602,
-    change: 0.072,
-  },
-  {
-    currency: "Doge",
-    short: "DOGE",
-    icon: "/icons/coins/doge.png",
-    price: 4.58,
-    change: -0.12,
-  },
-  {
-    currency: "Litecoin",
-    short: "LTC",
-    icon: "/icons/coins/litecoin.png",
-    price: 68.08,
-    change: -0.05,
-  },
-  {
-    currency: "Dash",
-    short: "DASH",
-    icon: "/icons/coins/dash.png",
-    price: 28.76,
-    change: 0.03,
-  },
-]
-
-const usd = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-})
-
-const percents = new Intl.NumberFormat("en-US", {
-  style: "percent",
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
-})
-
 const up = "text-green-500"
 const down = "text-red-500"
 
 export default function CryptoTable({ heading, data }: { heading: string; data: CryptoData[] }) {
   return (
-    <div className="rounded-2xl bg-neutral-100 p-6 dark:bg-backgroundMuted">
+    <div className="h-[532px] rounded-2xl bg-neutral-100 p-6 dark:bg-backgroundMuted">
       <Heading tag="h3" size="3xl" className="ml-4">
         {heading}
       </Heading>
