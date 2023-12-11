@@ -13,7 +13,6 @@ export default function AboutUs() {
             About us
           </Heading>
           {/* </h1> */}
-
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established
             in <b className="text-primary">Prague</b>, which has a full license to hold and trade cryptocurrencies.
@@ -30,7 +29,7 @@ export default function AboutUs() {
             className="animate-slow-bounce"
             alt="Picture of the author"
             width={500}
-            height={500}
+            height={328}
           />
         </div>
       </section>

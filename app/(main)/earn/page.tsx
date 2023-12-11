@@ -21,13 +21,7 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="mt-16 flex max-w-[500px] items-center justify-end xl:mt-0">
-          <Image
-            src="/images/profit.svg"
-            className="animate-slow-bounce"
-            alt="Picture of the author"
-            width={500}
-            height={336}
-          />
+          <Image src="/images/profit.svg" className="animate-slow-bounce" alt="" width={500} height={336} />
         </div>
       </section>
 

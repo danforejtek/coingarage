@@ -13,6 +13,7 @@ import NewsFeed from "@/components/NewsFeed"
 import CryptoStats from "@/components/CryptoStats"
 import GeniusTrader from "@/components/GeniusTrader"
 import { Youtube } from "lucide-react"
+import { GetAppHp } from "@/components/promo/GetAppHp"
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
                 <a href="https://trade.coingarage.io/signup">Sign up</a>
               </Button>
               <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
-                <a href="https://www.coingarage-finance.com">Become a Shareholder</a>
+                <a href="https://www.coingarage-finance.com/en">Become a Shareholder</a>
               </Button>
             </div>
             <div className="mt-4 inline-flex justify-center">
@@ -98,38 +99,7 @@ export default function Home() {
             <Heading tag="h2" size="4xl" className="mb-12">
               Simply Anywhere Anytime
             </Heading>
-            <div>
-              <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
-                Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile
-                Trading App. Experience the future of trading, where speed, convenience, and precision converge.
-              </p>
-              <div className="mt-8 flex flex-row justify-between gap-4 md:justify-start">
-                <div className="flex flex-row gap-8">
-                  <a
-                    href="https://apps.apple.com/cz/app/coingarage/id1672974634"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="rounded-md p-2 hover:bg-primary/10"
-                  >
-                    <div className="flex flex-row items-center gap-4">
-                      <Image src="/icons/appstore/app-store.png" alt="App Store" width={32} height={32} />
-                      <div className="font-heading font-bold">App Store</div>
-                    </div>
-                  </a>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=io.coingarage.app"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="rounded-md p-2 hover:bg-primary/10"
-                  >
-                    <div className="flex flex-row items-center gap-4">
-                      <Image src="/icons/appstore/google-play.png" alt="Play Store" width={32} height={32} />
-                      <div className="font-heading font-bold">Google Play</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <GetAppHp />
           </div>
         </div>
       </section>

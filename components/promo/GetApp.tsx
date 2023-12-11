@@ -1,7 +1,15 @@
+"use client"
 import { cn } from "@/lib/utils"
+import { useTheme } from "next-themes"
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 export default function GetApp({ className }: { className?: string }) {
+  const { resolvedTheme } = useTheme()
+  const [theme, setTheme] = useState("")
+  useEffect(() => {
+    setTheme(resolvedTheme !== "dark" ? "" : "dark/")
+  }, [resolvedTheme])
   return (
     <div className={cn(className)}>
       <div className="flex flex-col items-center justify-between gap-8 sm:flex-row md:items-start">
@@ -26,7 +34,7 @@ export default function GetApp({ className }: { className?: string }) {
                 className="rounded-md p-2 hover:bg-primary/10 dark:hover:bg-background/30"
               >
                 <div className="flex flex-row items-center gap-4">
-                  <Image src="/icons/appstore/app-store.png" alt="App Store" width={32} height={32} />
+                  <Image src={`/icons/main/${theme}app_store.svg`} alt="App Store" width={32} height={32} />
                   <div className="font-heading font-bold">App Store</div>
                 </div>
               </a>
@@ -37,7 +45,7 @@ export default function GetApp({ className }: { className?: string }) {
                 className="rounded-md p-2 hover:bg-primary/10 dark:hover:bg-background/30"
               >
                 <div className="flex flex-row items-center gap-4">
-                  <Image src="/icons/appstore/google-play.png" alt="Play Store" width={32} height={32} />
+                  <Image src={`/icons/main/${theme}google_play.svg`} alt="Play Store" width={32} height={32} />
                   <div className="font-heading font-bold">Google Play</div>
                 </div>
               </a>

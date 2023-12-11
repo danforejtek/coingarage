@@ -1,17 +1,20 @@
+"use client"
 import Image from "next/image"
 import Heading from "./Heading"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"
 import Link from "next/link"
+import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 
 const up = "text-green-500"
 const down = "text-red-500"
 
-const usd = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-})
+// const usd = new Intl.NumberFormat("en-US", {
+//   style: "currency",
+//   currency: "USD",
+// })
 
 const percents = new Intl.NumberFormat("en-US", {
   style: "percent",
@@ -56,6 +59,11 @@ const TraderCard = ({ name, image, followers, roi, followersPln }) => {
 }
 
 export default function GeniusTrader() {
+  const { resolvedTheme } = useTheme()
+  const [theme, setTheme] = useState("")
+  useEffect(() => {
+    setTheme(resolvedTheme !== "dark" ? "" : "dark/")
+  }, [resolvedTheme])
   return (
     <div className="rounded-2xl bg-neutral-100 p-10 dark:bg-backgroundMuted">
       <div className="flex flex-row flex-wrap justify-center gap-8 lg:justify-between">
@@ -75,7 +83,7 @@ export default function GeniusTrader() {
             </div>
           </div>
           <Link href="/trading-bot">
-            <Button variant="default" size="lg" className="mt-12 font-bold lg:mt-48">
+            <Button variant="default" size="lg" className="text-md mt-12 font-bold lg:mt-48">
               Get Started
             </Button>
           </Link>
@@ -102,8 +110,7 @@ export default function GeniusTrader() {
         <div className="mt-8 max-w-[280px] md:mt-0">
           <div className="flex flex-col gap-12">
             <div className="grid grid-cols-[44px_1fr] gap-4">
-              <div></div>
-              {/* <Image src="/icons/brand-icons/bot.svg" alt="avatar" width={48} height={48} /> */}
+              <Image src={`/icons/main/${theme}bot.svg`} alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Trading Bot</div>
                 <div className="font-heading text-base text-black dark:text-gray-100">
@@ -112,7 +119,7 @@ export default function GeniusTrader() {
               </div>
             </div>
             <div className="grid grid-cols-[44px_1fr] gap-4">
-              <Image src="/icons/profit.png" alt="avatar" width={48} height={48} />
+              <Image src={`/icons/main/${theme}take_profit.svg`} alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Take Profit</div>
                 <div className="font-heading text-base text-black dark:text-gray-100">
@@ -121,7 +128,7 @@ export default function GeniusTrader() {
               </div>
             </div>
             <div className="grid grid-cols-[44px_1fr] gap-4">
-              <Image src="/icons/copy-trading.png" alt="avatar" width={48} height={48} />
+              <Image src={`/icons/main/${theme}copy_trading.svg`} alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Copy Trading</div>
                 <div className="font-heading text-base text-black dark:text-gray-100">
@@ -130,7 +137,7 @@ export default function GeniusTrader() {
               </div>
             </div>
             <div className="grid grid-cols-[44px_1fr] gap-4">
-              <Image src="/icons/boxes.png" alt="avatar" width={48} height={48} />
+              <Image src={`/icons/main/${theme}spot_trading.svg`} alt="avatar" width={48} height={48} />
               <div>
                 <div className="font-heading text-lg font-bold text-primary">Bargain</div>
                 <div className="font-heading text-base text-black dark:text-gray-100">Best offer on the Market</div>

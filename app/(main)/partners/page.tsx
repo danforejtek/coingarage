@@ -22,8 +22,8 @@ export default function Page() {
           </div>
           <div>
             <div className="align-end flex h-36">
-              <div className="h-[95px] w-[95px]">
-                <Image src="/images/partners/finrock.png" alt="" width={95} height={95} />
+              <div className="h-[60px] w-[300px]">
+                <Image src="/images/partners/finrock.svg" alt="" width={300} height={60} />
               </div>
             </div>
             <span className="text-primary">FINROCK GLOBAL LTD</span> - Based in London, Finrock provides us feature-rich

@@ -32,6 +32,7 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.287.0",
     "next": "latest",
+    "next-intl": "^3.3.1",
     "next-sanity": "^5.5.8",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
@@ -49,6 +50,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
