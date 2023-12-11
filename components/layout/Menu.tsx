@@ -49,7 +49,7 @@ import AcademyDark from "../../public/icons/main/dark/academy.svg"
 
 type NavItem = {
   title: string
-  icon?: React.ReactNode
+  icon?: string
   href: string
   description?: string
   subItems?: NavItem[]
@@ -211,8 +211,8 @@ export function Menu() {
     <NavigationMenu>
       <NavigationMenuList>
         {navItems.map(({ title, href, subItems, icon }, index) => {
-          const Icon =
-            resolvedTheme === "dark" ? (iconsDark[icon] as React.ReactNode) : (icons[icon] as React.ReactNode) || null
+          // @ts-ignore
+          const Icon = resolvedTheme === "dark" ? iconsDark[icon] : icons[icon] || null
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
@@ -247,6 +247,7 @@ export function Menu() {
                     </li>
                     {subItems.map(({ title, href, description, icon }, index) => {
                       return (
+                        // @ts-ignore
                         <ListItem key={index} href={href} title={title} icon={icon}>
                           {description ? description : title}
                         </ListItem>
@@ -276,10 +277,11 @@ export function Menu() {
 }
 
 const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWithoutRef<"a">>(
+  // @ts-ignore
   ({ className, title, children, icon, ...props }, ref) => {
     const { resolvedTheme } = useTheme()
-    const Icon =
-      resolvedTheme === "dark" ? (iconsDark[icon] as React.ReactNode) : (icons[icon] as React.ReactNode) || null
+    // @ts-ignore
+    const Icon = resolvedTheme === "dark" ? iconsDark[icon] : icons[icon] || null
     return (
       <li>
         <NavigationMenuLink asChild>
