@@ -1,5 +1,3 @@
-"use server"
-
 import React from "react"
 
 const Paragraph = ({ children }: { children: React.ReactNode }) => {
