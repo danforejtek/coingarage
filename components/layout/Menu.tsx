@@ -1,5 +1,5 @@
 "use client"
-
+import { useTranslations } from "next-intl"
 import * as React from "react"
 import Link from "next/link"
 
@@ -49,6 +49,7 @@ import AcademyDark from "@/public/icons/main/dark/academy.svg"
 
 type NavItem = {
   title: string
+  key?: string
   icon?: string
   href: string
   description?: string
@@ -92,11 +93,13 @@ const iconsDark = {
 export const navItems: NavItem[] = [
   {
     title: "Buy Crypto",
+    key: "buyCrypto",
     href: "/buy-crypto",
     icon: "buy_crypto",
     subItems: [
       {
         title: "Buy Crypto",
+        key: "buyCrypto",
         href: "https://trade.coingarage.io/buy-crypto/buy",
         icon: "buy_crypto",
         // href: "/buy-crypto",
@@ -104,12 +107,14 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Deposit FIAT",
+        key: "depositFiat",
         href: "https://trade.coingarage.io/buy-crypto/buy",
         icon: "deposit", // href: "/buy-crypto",
         // href: "https://trade.coingarage.io/login",
       },
       {
         title: "Deposit FIAT via SEPA",
+        key: "depositFiatViaSepa",
         href: "https://trade.coingarage.io/buy-crypto/buy",
         icon: "deposit_sepa", // href: "/buy-crypto",
         // href: "https://trade.coingarage.io/login",
@@ -118,22 +123,26 @@ export const navItems: NavItem[] = [
   },
   {
     title: "Trade",
+    key: "trade",
     href: "/trade",
     icon: "spot_trading",
     subItems: [
       {
         title: "Spot trading",
+        key: "spotTrading",
         href: "https://trade.coingarage.io/exchange",
         icon: "spot_trading",
       },
       {
         title: "Launchpad",
+        key: "launchpad",
         href: "https://trade.coingarage.io/launchpad/projects",
         // href: "https://trade.coingarage.io/login",
         icon: "launchpad",
       },
       {
         title: "Trading Bot",
+        key: "tradingBot",
         href: "/trading-bot",
         icon: "bot",
       },
@@ -141,26 +150,31 @@ export const navItems: NavItem[] = [
   },
   {
     title: "Convert",
+    key: "convert",
     href: "https://trade.coingarage.io/convert",
     // href: "/convert",
   },
   {
     title: "Earn",
+    key: "earn",
     href: "/earn",
     icon: "stake",
     subItems: [
       {
         title: "Become a Shareholder",
+        key: "becomeAShareholder",
         href: "https://www.coingarage-finance.com/en",
         icon: "shareholder",
       },
       {
         title: "Affiliate",
+        key: "affiliate",
         href: "/earn",
         icon: "affiliate",
       },
       {
         title: "Stake",
+        key: "stake",
         href: "/earn/staking",
         icon: "stake",
       },
@@ -168,16 +182,19 @@ export const navItems: NavItem[] = [
   },
   {
     title: "More",
+    key: "more",
     href: "/more",
     icon: "about_us",
     subItems: [
       {
         title: "About us",
+        key: "aboutUs",
         href: "/about-us",
         icon: "about_us",
       },
       {
         title: "Partners",
+        key: "partners",
         href: "/partners",
         icon: "partners",
       },
@@ -188,6 +205,7 @@ export const navItems: NavItem[] = [
       // },
       {
         title: "Blog",
+        key: "blog",
         href: "/blog",
         icon: "blog",
       },
@@ -206,18 +224,19 @@ export const navItems: NavItem[] = [
 ]
 
 export function Menu() {
+  const t = useTranslations()
   const { resolvedTheme } = useTheme()
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        {navItems.map(({ title, href, subItems, icon }, index) => {
+        {navItems.map(({ title, href, subItems, icon, key }, index) => {
           // @ts-ignore
           const Icon = resolvedTheme === "dark" ? iconsDark[icon] : icons[icon] || null
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
                 <NavigationMenuTrigger className={cn("text-md bg-transparent text-secondary dark:text-white")}>
-                  {title}
+                  {t(`Menu.${key}`)}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -239,17 +258,17 @@ export function Menu() {
                         >
                           <div className="flex h-full flex-col justify-start">
                             {icon && typeof Icon === "function" ? <Icon width="64px" height="64px" /> : <div></div>}
-                            <div className="mb-2 mt-2 text-lg font-medium">{title}</div>
+                            <div className="mb-2 mt-2 text-lg font-medium">{t(`Menu.${key}`)}</div>
                           </div>
                           <p className="text-sm leading-tight text-muted-foreground"></p>
                         </a>
                       </NavigationMenuLink>
                     </li>
-                    {subItems.map(({ title, href, description, icon }, index) => {
+                    {subItems.map(({ title, href, description, icon, key }, index) => {
                       return (
                         // @ts-ignore
-                        <ListItem key={index} href={href} title={title} icon={icon}>
-                          {description ? description : title}
+                        <ListItem key={index} href={href} title={title} icon={icon} localeKey={key}>
+                          {description ? description : t(`Menu.${key}`)}
                         </ListItem>
                       )
                     })}
@@ -264,7 +283,7 @@ export function Menu() {
                   <NavigationMenuLink
                     className={cn(navigationMenuTriggerStyle(), "text-md text-secondary dark:text-white")}
                   >
-                    {title}
+                    {t(`Menu.${key}`)}
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -278,7 +297,8 @@ export function Menu() {
 
 const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWithoutRef<"a">>(
   // @ts-ignore
-  ({ className, title, children, icon, ...props }, ref) => {
+  ({ className, title, children, icon, localeKey, ...props }, ref) => {
+    const t = useTranslations()
     const { resolvedTheme } = useTheme()
     // @ts-ignore
     const Icon = resolvedTheme === "dark" ? iconsDark[icon] : icons[icon] || null
@@ -295,7 +315,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
           >
             <div className="grid w-full grid-cols-[24px_1fr] items-center gap-6">
               {typeof Icon === "function" ? <Icon width="24px" height="24px" /> : <div></div>}
-              <div className="text-sm font-medium leading-none">{title}</div>
+              <div className="text-sm font-medium leading-none">{t(`Menu.${localeKey}`)}</div>
             </div>
             {/* <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p> */}
           </a>

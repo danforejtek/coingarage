@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
+const withNextIntl = require("next-intl/plugin")()
+
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "coinicons-api.vercel.app",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "trade.coingarage.io",
         port: "",
       },
     ],
@@ -40,4 +47,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)

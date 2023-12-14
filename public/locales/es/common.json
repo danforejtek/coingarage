@@ -1,0 +1,191 @@
+{
+    "navbar": {
+      "buyCrypto": {
+        "name": "Comprar Cripto",
+        "menu": {
+          "buyCrypto": "Comprar Cripto",
+          "depositFiat": "Depositar FIAT",
+          "depositFiatViaSepa": "Depositar FIAT a través de SEPA"
+        }
+      },
+      "trade": {
+        "name": "Comercio",
+        "menu": {
+          "spotTrading": "Comercio en el lugar",
+          "launchpad": "Lanzadera",
+          "tradingBot": "Robot de Comercio"
+        }
+      },
+      "convert": {
+        "name": "Convertir"
+      },
+      "earn": {
+        "name": "Ganar",
+        "menu": {
+          "becomeAShareholder": "Convertirse en Accionista",
+          "affilate": "Afiliado",
+          "staking": "Apostar"
+        }
+      },
+      "more": {
+        "name": "Más",
+        "menu": {
+          "aboutUs": "Acerca de Nosotros",
+          "partners": "Socios",
+          "blog": "Blog"
+        }
+      },
+      "garageCoinPreSale": {
+        "name": "Preventa de GARAGECoin",
+        "menu": {
+          "buyGarageCoin": "Comprar GARAGECoin",
+          "whitepaperEn": "Whitepaper EN (Inglés)",
+          "whitepaperCz": "Whitepaper CZ (Checo)",
+          "whitepaperDe": "Whitepaper DE (Alemán)"
+        }
+      },
+      "login": {
+        "name": "Iniciar sesión"
+      },
+      "signUp": {
+        "name": "Registrarse"
+      },
+      "mode": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
+      }
+    },
+    "cryptoLandingPage": {
+      "nameLine1": "Cripto",
+      "nameLine2": "Simple y Seguro",
+      "nameLine3": "Börse",
+      "mainText": "Descubre un nivel superior de privacidad financiera y libertad que los sistemas bancarios tradicionales ofrecen en el entorno simple y seguro de nuestro intercambio. Somos un intercambio basado en el corazón de la Unión Europea. ¡Los primeros en introducir regulaciones que harán explotar las criptomonedas aquí!",
+      "register": {
+        "content": "Regístrate y obtén hasta 100 USDT de recompensa en GARAGECoin (GARA)",
+        "limitedOffer": "Oferta limitada",
+        "mark": {
+          "option1": "Cada nuevo usuario en el intercambio recibirá 10 USDT en el token de intercambio GARA.",
+          "option2": "Cada 50º usuario recibirá 50 USDT en el token de intercambio GARA.",
+          "option3": "Cada 100º usuario recibirá 100 USDT en el token de intercambio GARA.",
+          "option4": "Refiere a un nuevo usuario y recibirás la misma recompensa que cada nuevo usuario al que te hayas referido."
+        }
+      },
+      "signUp": {
+        "name": "Registrarse"
+      },
+      "becomeAShareholder": "Conviértete en Accionista",
+      "howToSignUp": "¿Cómo registrarse?"
+    },
+    "app": {
+      "name": "Einfach überall, jederzeit",
+      "text": "Desbloquea el poder de los mercados financieros globales directamente desde la palma de tu mano con la aplicación móvil de comercio de Coingarage. Experimenta el futuro del trading, donde la velocidad, la conveniencia y la precisión convergen.",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "scanQrCode": "Escanear el código QR para descargar la aplicación"
+    },
+    "cryptoMarket": {
+      "name": "Mercado de Criptomonedas",
+      "currency": "Moneda",
+      "price": "Precio",
+      "24hChange": "Cambios en 24 horas",
+      "24h Volume": "Volumen en 24 horas",
+      "marketCap": "Capitalización de mercado"
+    },
+    "trending": "Trending",
+    "topGainers": "Principales Ganadores",
+    "recentlyAdded": "Recientemente Agregados",
+    "statistics": {
+      "icon1": "100 Monedas Listadas",
+      "icon2": "Más de 100 Países Participantes",
+      "icon3": "Próximamente: 12 Activos para el staking",
+      "icon4": "Comprar Cripto",
+      "icon5": "Depositar EUR a través de Sepa o Tarjeta"
+    },
+    "discoverMoreProducts": {
+      "name": "Descubre Más Productos",
+      "eezyTrader": {
+        "name": "EEZY Trader",
+        "text": "Deje que el Bot de IA trabaje por usted.",
+        "masterTraders": "Operadores Maestros",
+        "followers": "Seguidores",
+        "bestTraders": {
+          "7DROI": "Rendimiento en 7 días (7DROI)",
+          "7DFollowersPnL": "Ganancias y Pérdidas de Seguidores en 7 días (7D Followers PnL)",
+          "copy": "Copiar"
+        },
+        "features": {
+          "tradingBot": {
+            "name": "Robot de Comercio (TradingBot)",
+            "text": "Bots de 'Grid' y 'DCA' (Costo Promedio en Dólares). Estrategias largas, cortas y más."
+          },
+          "takeProfit": {
+            "name": "Tomar Ganancias",
+            "text": "Haz crecer tu riqueza criptográfica de manera simple, inteligente y efectiva."
+          },
+          "copyTrading": {
+            "name": "Copiar Trading",
+            "text": "Deja que los mejores traders trabajen para ti, simplemente cópialos."
+          },
+          "Bergain": {
+            "name": "Oferta",
+            "text": "La mejor oferta en el mercado."
+          }
+        }
+      }
+    },
+    "faq": {
+      "question1": {
+        "answer": "¿Cuál es la diferencia entre una 'Moneda' y un 'Token' en el sitio?",
+        "question": "Una moneda es una criptomoneda que puede operar de forma independiente. Un token es una criptomoneda que depende de otra criptomoneda como plataforma para operar. Consulta nuestro artículo en el blog para obtener más información."
+      },
+      "question2": {
+        "answer": "¿Qué es Bitcoin (BTC)?",
+        "question": "Bitcoin es la primera criptomoneda creada en 2009 por Satoshi Nakamoto. Es una moneda digital descentralizada que puede ser enviada de usuario a usuario en la red peer-to-peer de Bitcoin sin necesidad de intermediarios."
+      },
+      "question3": {
+        "answer": "¿Qué es la moneda USDT (USDT)?",
+        "question": "Tether (USDT) es una criptomoneda con un valor destinado a reflejar el valor del dólar estadounidense. La idea era crear una criptomoneda estable que pueda utilizarse como dólares digitales. Las monedas que sirven para este propósito de ser un sustituto estable del dólar se llaman 'stablecoins'. USDT es la stablecoin más popular e incluso actúa como un reemplazo del dólar en muchas de las principales bolsas."
+      },
+      "question4": {
+        "answer": "¿Cómo puedo comprar criptomonedas?",
+        "question": "Puedes comprar criptomonedas en Coingarage siguiendo estos tres pasos: 1. Regístrate en una cuenta de Coingarage. 2. Verifica tu cuenta. 3. Deposita EUR u otras criptomonedas admitidas. 4. Compra tus criptomonedas favoritas."
+      },
+      "question5": {
+        "answer": "¿Cómo puedo verificar mi cuenta personal?",
+        "question": "Puedes verificar tu cuenta personal siguiendo estos tres pasos: 1. Inicia sesión en tu cuenta de Coingarage. 2. Ve a la configuración de tu cuenta. 3. Haz clic en la pestaña de verificación. 4. Sigue las instrucciones y carga los documentos requeridos. 5. Espera a que se procese tu verificación. 6. ¡Comienza a operar!"
+      }
+    },
+    "footer": {
+      "aboutUs": "Sobre nosotros",
+      "contactUs": "Contáctenos",
+      "fees": "Tarifas",
+      "hotCoins": "Criptomonedas Calientes",
+      "blog": "Blog",
+      "faqs": "Preguntas frecuentes",
+      "coinListing": "Listado de Criptomonedas",
+      "markets": "Mercados",
+      "trade": "Comercio",
+      "buyCrypto": "Comprar Criptomonedas",
+      "staking": "Apostar",
+      "login": "Iniciar sesión",
+      "legal": {
+        "termsOfService": "Términos de servicio",
+        "privacyPolicy": "Política de privacidad",
+        "cookiePolicy": "Política de cookies"
+      }
+    },
+    "address": {
+        "street": "Revoluční 1082/8",
+        "city": "Nové Město (Praha 1)",
+        "postalCode": "110 00",
+        "country": "Prague, Czech Republic"
+    },
+    "contact": {
+        "phone": "+420 778 116 516",
+        "email": "support@coingarage.io"
+    },
+    "registration": {
+        "companyID": "IČ: 11667974"
+    }
+}

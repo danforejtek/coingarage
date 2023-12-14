@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl"
 // import Figure from "@/components/Figure"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -16,20 +17,19 @@ import { Youtube } from "lucide-react"
 import { GetAppHp } from "@/components/promo/GetAppHp"
 
 export default function Home() {
+  const t = useTranslations("CryptoLandingPage")
   return (
     <main>
       <section className="container mx-auto mt-12 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-36 xl:justify-between xl:gap-6">
         <div>
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
-              <div>Crypto</div>
-              <div>Simply & Safely</div>
-              <div className="text-primary">Exchange</div>
+              <div>{t("nameLine1")}</div>
+              <div>{t("nameLine2")}</div>
+              <div className="text-primary">{t("nameLine3")}</div>
             </h1>
             <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
-              <b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In
-              the <b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of{" "}
-              <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>
+              {t.rich("mainText", { b: (chunks) => <b>{chunks}</b> })}
             </p>
           </div>
           <div>
@@ -38,10 +38,10 @@ export default function Home() {
           <div className="w-full max-w-[500px]">
             <div className="mt-8 flex flex-row flex-wrap gap-4">
               <Button variant="default" size="lg" className="text-md w-full sm:w-max" asChild>
-                <a href="https://trade.coingarage.io/signup">Sign up</a>
+                <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
               </Button>
               <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
-                <a href="https://www.coingarage-finance.com/en">Become a Shareholder</a>
+                <a href="https://www.coingarage-finance.com/en">{t("becomeAShareholder")}</a>
               </Button>
             </div>
             <div className="mt-4 inline-flex justify-center">
@@ -52,7 +52,7 @@ export default function Home() {
                 className="text-primary"
               >
                 <Youtube className="mr-2 inline-block" size={20} />
-                How to sign up?
+                {t("howToSignUp")}
               </a>
             </div>
           </div>

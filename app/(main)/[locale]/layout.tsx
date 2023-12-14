@@ -1,6 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from "@/components/theme-provider"
+import { NextIntlClientProvider, useMessages } from "next-intl"
 import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/Header"
 import "@/styles/globals.scss"
@@ -32,22 +33,31 @@ export const metadata: Metadata = {
   manifest: `/site.webmanifest`,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode
+  params: { locale: string }
+}) {
+  const messages = useMessages()
   return (
-    <html lang="en" className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Header />
-          <div className="flex min-h-screen flex-col justify-between">
-            <div className="flex-1">
-              {children}
-              <SpeedInsights />
-              <Analytics />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            <Header />
+            <div className="flex min-h-screen flex-col justify-between">
+              <div className="flex-1">
+                {children}
+                <SpeedInsights />
+                <Analytics />
+              </div>
+              <Footer />
             </div>
-            <Footer />
-          </div>
-          <Toaster />
-        </ThemeProvider>
+            <Toaster />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )
