@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "coinicons-api.vercel.app",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "trade.coingarage.io",
+        port: "",
+      },
     ],
   },
   typescript: {
