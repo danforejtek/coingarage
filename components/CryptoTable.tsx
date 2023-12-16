@@ -37,6 +37,7 @@ export default function CryptoTable({ heading, data }: { heading: string; data: 
                       fill
                       style={{ objectFit: "contain" }}
                       sizes="32px"
+                      quality={100}
                       // width={32}
                       // height={32}
                     />
