@@ -1,5 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils"
+import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 import Image from "next/image"
 import { useEffect, useState } from "react"
@@ -10,6 +11,7 @@ export default function GetApp({ className }: { className?: string }) {
   useEffect(() => {
     setTheme(resolvedTheme !== "dark" ? "" : "dark/")
   }, [resolvedTheme])
+  const t = useTranslations("App")
   return (
     <div className={cn(className)}>
       <div className="flex flex-col items-center justify-between gap-8 sm:flex-row md:items-start">
@@ -23,7 +25,7 @@ export default function GetApp({ className }: { className?: string }) {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="mb-6 font-heading text-3xl font-bold">Simply Anywhere Anytime</h2>
+          <h2 className="mb-6 font-heading text-3xl font-bold">{t("name")}</h2>
           <div className="flex flex-row items-center gap-4 rounded-2xl bg-primary/5 p-6 dark:bg-foreground/5 md:gap-16 md:p-8">
             <Image src="/qr/get-app.svg" alt="Get App" width={134} height={134} className="rounded-xl bg-white p-1" />
             <div className="flex flex-col gap-4">
@@ -52,9 +54,9 @@ export default function GetApp({ className }: { className?: string }) {
             </div>
           </div>
           <div className="ml-10 mt-4 font-heading font-bold">
-            Scan QR Code to
+            {t("scanQrCode")}
             <br />
-            Download App
+            {t("toDownloadApp")}
           </div>
         </div>
       </div>

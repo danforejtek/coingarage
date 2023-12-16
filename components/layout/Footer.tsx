@@ -2,8 +2,11 @@ import Link from "next/link"
 import Image from "next/image"
 import ContactUs from "@/components/form/ContactUs"
 import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function Footer() {
+  const t = useTranslations("Footer")
+
   return (
     <div className="mt-24">
       <div className="h-2 bg-gradient-to-r from-primary to-tertiary"></div>
@@ -81,13 +84,13 @@ export default function Footer() {
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li>
                   <Link href="/about-us" className="hover:text-primary">
-                    About us
+                    {t("aboutUs")}
                   </Link>
                 </li>
                 <li>
                   <ContactUs>
                     <span className="hover:text-primary" role="button">
-                      Contact Us
+                      {t("contactUs")}
                     </span>
                   </ContactUs>
                 </li>
@@ -96,47 +99,47 @@ export default function Footer() {
                     className="hover:text-primary"
                     href="https://trade.coingarage.io/exchange-fee/deposit-withdrawal-fee"
                   >
-                    Fees
+                    {t("fees")}
                   </a>
                 </li>
                 <li>
                   <Link href="/#hot-coins" className="hover:text-primary">
-                    Hot Coins
+                    {t("hotCoins")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/blog" className="hover:text-primary">
-                    Blog
+                    {t("blog")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/#faq" className="hover:text-primary">
-                    FAQ&apos;s
+                    {t("faqs")}
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
-                <li>Coin Listing</li>
+                <li>{t("coinListing")}</li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io">
-                    Markets
+                    {t("markets")}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io">
-                    Trade
+                    {t("trade")}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/buy-crypto/buy">
-                    Buy Crypto
+                    {t("buyCrypto")}
                   </a>
                 </li>
                 <li>
                   <Link href="/earn/staking" className="hover:text-primary">
-                    Staking
+                    {t("staking")}
                   </Link>
                 </li>
               </ul>
@@ -145,22 +148,22 @@ export default function Footer() {
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/login">
-                    Login
+                    {t("login")}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/legal/terms">
-                    Terms of service
+                    {t("legal.termsOfService")}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io/legal/privacy-policy">
-                    Privacy policy
+                    {t("legal.privacyPolicy")}
                   </a>
                 </li>
                 <li>
                   <Link href="/legal/cookie-policy" className="hover:text-primary">
-                    Cookie policy
+                    {t("legal.cookiePolicy")}
                   </Link>
                 </li>
               </ul>

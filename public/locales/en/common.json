@@ -1,0 +1,161 @@
+{
+  "Menu": {
+    "buyCrypto": "Buy Crypto",
+    "depositFiat": "Deposit FIAT",
+    "depositFiatViaSepa": "Deposit FIAT via SEPA",
+    "trade": "Trade",
+    "spotTrading": "Spot Trading",
+    "launchpad": "Launchpad",
+    "tradingBot": "Trading Bot",
+    "convert": "Convert",
+    "earn": "Earn",
+    "becomeAShareholder": "Become a Shareholder",
+    "affiliate": "Affiliate",
+    "stake": "Stake",
+    "more": "More",
+    "aboutUs": "About Us",
+    "partners": "Partners",
+    "blog": "Blog",
+    "garageCoinPreSale": "GARAGECoin_Pre-Sale",
+    "buyGarageCoin": "Buy GARAGECoin",
+    "whitepaperEn": "Whitepaper EN",
+    "whitepaperCz": "Whitepaper CZ",
+    "whitepaperDe": "Whitepaper DE",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "mode": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "CryptoLandingPage": {
+    "nameLine1": "Crypto",
+    "nameLine2": "Simply & Safely",
+    "nameLine3": "Exchange",
+    "mainText": "<b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In the <b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>",
+    "register": {
+      "content": "Register and get up to 100 USDT reward in GARAGECoin (GARA)",
+      "limitedOffer": "Limited Offer",
+      "mark": {
+        "option1": "Each new user on the exchange will receive 10 USDT in the GARA exchange token.",
+        "option2": "Every 50th user will receive 50 USDT in GARA exchange token.",
+        "option3": "Every 100th user will receive 100 USDT in a GARA exchange token.",
+        "option4": "Refer a new user and you will receive the same reward as each new user you refered."
+      }
+    },
+    "signUp": "Sign Up",
+    "becomeAShareholder": "Become a Shareholder",
+    "howToSignUp": "How to sign up?"
+  },
+  "App": {
+    "name": "Simply Anywhere Anytime",
+    "text": "Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile Trading App. Experience the future of trading, where speed, convenience, and precision converge.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "scanQrCode": "Scan QR Code",
+    "toDownloadApp": "to Download App"
+  },
+  "CryptoMarket": {
+    "name": "Crypto Market",
+    "currency": "Currency",
+    "price": "Price",
+    "24hChange": "24h Change",
+    "24hVolume": "24h Volume",
+    "marketCap": "MarketCap"
+  },
+  "CryptoStats": {
+    "trending": "Trending",
+    "topGainers": "Top Gainers",
+    "recentlyAdded": "Recently Added"
+  },
+  "Statistics": {
+    "icon1": "100 Currencies Listed",
+    "icon2": "100+ Participating Countries",
+    "icon3": "12 Assets for staking coming soon",
+    "icon4": "Buy Crypto",
+    "icon5": "Deposit EUR via Sepa or Card"
+  },
+  "DiscoverMoreProducts": {
+    "name": "Discover More Products",
+    "eezyTrader": {
+      "name": "EEZY Trader",
+      "text": "Let AI Bot work for you.",
+      "masterTraders": "Master Traders",
+      "followers": "Followers",
+      "bestTraders": {
+        "7DROI": "7DROI",
+        "7DFollowersPnL": "7D Followers PnL",
+        "copy": "Copy"
+      },
+      "features": {
+        "tradingBot": {
+          "name": "TradingBot",
+          "text": "Grid a DCA bots. Long, short strategy and more."
+        },
+        "takeProfit": {
+          "name": "Take Profit",
+          "text": "Grow your crypto wealth Simply smartly, effectively."
+        },
+        "copyTrading": {
+          "name": "Copy Trading                    ",
+          "text": "Let top trader work for you just copy them"
+        },
+        "bargain": {
+          "name": "Bargain",
+          "text": "Best offer on the Market"
+        }
+      }
+    }
+  },
+  "Faq": {
+    "question1": {
+      "question": "What is the difference between a 'Coin' and a 'Token' on the site?",
+      "answer": "A coin is a cryptocurrency that can operate independently. A token is a cryptocurrency that depends on another cryptocurrency as a platform to operate. Check out our blog post for more information."
+    },
+    "question2": {
+      "question": "What is Bitcoin (BTC)?",
+      "answer": "Bitcoin is the first cryptocurrency created in 2009 by Satoshi Nakamoto. It is a decentralized digital currency that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries."
+    },
+    "question3": {
+      "question": "What is USDT Coin (USDT)?",
+      "answer": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar. The idea was to create a stable cryptocurrency that can be used like digital dollars. Coins that serve this purpose of being a stable dollar substitute are called “stable coins.” USDT is the most popular stable coin and even acts as a dollar replacement on many popular exchanges!"
+    },
+    "question4": {
+      "question": "How can I buy cryptocurrency?",
+      "answer": "You can buy cryptocurrency on Coingarage by following these three steps: 1. Sign up for a Coingarage account. 2. Verify your account. 3. Deposit EUR or other supported cryptocurrencies. 4. Buy your favorite cryptocurrencies."
+    },
+    "question5": {
+      "question": "How can I verify my personal account?",
+      "answer": "You can verify your personal account by following these three steps: 1. Log in to your Coingarage account. 2. Go to your account settings. 3. Click on the verification tab. 4. Follow the instructions and upload the required documents. 5. Wait for your verification to be processed. 6. Start trading!"
+    }
+  },
+  "Footer": {
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "fees": "Fees",
+    "hotCoins": "Hot Coins",
+    "blog": "Blog",
+    "faqs": "FAQ's",
+    "coinListing": "Coin Listing",
+    "markets": "Markets",
+    "trade": "Trade",
+    "buyCrypto": "Buy Crypto",
+    "staking": "Staking",
+    "login": "Login",
+    "legal": {
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    }
+  },
+  "Contact": {
+    "street": "Revoluční&nbsp;1082/8",
+    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+    "postalCode": "110 00",
+    "country": "Prague, Czech Republic",
+    "phone": "+420 778 116 516",
+    "email": "support@coingarage.io",
+    "companyID": "IČ: 11667974"
+  }
+}

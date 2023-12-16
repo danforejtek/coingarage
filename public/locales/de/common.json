@@ -1,0 +1,161 @@
+{
+  "Menu": {
+    "buyCrypto": "Kaufen Sie Krypto",
+    "depositFiat": "FIAT einzahlen",
+    "depositFiatViaSepa": "FIAT über SEPA einzahlen",
+    "trade": "Handel",
+    "spotTrading": "Spot-Handel",
+    "launchpad": "Startplattform",
+    "tradingBot": "Handelsroboter",
+    "convert": "Umwandeln",
+    "earn": "Verdienen",
+    "becomeAShareholder": "Teilhaber werden",
+    "affiliate": "Partnerprogramm",
+    "stake": "Teilnehmen",
+    "more": "Mehr",
+    "aboutUs": "Über uns",
+    "partners": "Partner",
+    "blog": "Blog",
+    "garageCoinPreSale": "GARAGECoin-Vorverkauf",
+    "buyGarageCoin": "GARAGECoin kaufen",
+    "whitepaperEn": "Whitepaper (Englisch)",
+    "whitepaperCz": "Whitepaper (Tschechisch)",
+    "whitepaperDe": "Whitepaper (Deutsch)",
+    "login": "Anmelden",
+    "signUp": "Registrieren",
+    "mode": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    }
+  },
+  "CryptoLandingPage": {
+    "nameLine1": "Krypto",
+    "nameLine2": "Einfach & Sicher",
+    "nameLine3": "Börse",
+    "mainText": "Entdecken Sie ein höheres Maß an finanzieller Privatsphäre und Freiheit, als es traditionelle Bankensysteme bieten, in der einfachen und sicheren Umgebung unserer Börse. Wir sind eine Börse mit Sitz im Herzen der Europäischen Union. Die Ersten, die Regulierungen einführen, die dazu führen werden, dass Kryptowährungen hier explodieren!",
+    "register": {
+      "content": "Registrieren Sie sich und erhalten Sie bis zu 100 USDT Belohnung in GARAGECoin (GARA)",
+      "limitedOffer": "Begrenztes Angebot",
+      "mark": {
+        "option1": "Jeder neue Benutzer auf der Börse erhält 10 USDT in der GARA-Coins.",
+        "option2": "Jeder 50. Benutzer erhält 50 USDT in GARA-Coins.",
+        "option3": "Jeder 100. Benutzer erhält 100 USDT in GARA-Coins.",
+        "option4": "Empfehlen Sie einen neuen Benutzer und Sie erhalten die gleiche Belohnung wie jeder von Ihnen empfohlene neue Benutzer."
+      }
+    },
+    "signUp": "Registrieren Sie sich",
+    "becomeAShareholder": "Werde Teilhaber",
+    "howToSignUp": "Wie melde ich mich an?"
+  },
+  "App": {
+    "name": "Einfach überall, jederzeit",
+    "text": "Entfesseln Sie die Kraft der globalen Finanzmärkte direkt von der Handfläche Ihrer Hand mit der Coingarage Mobile Trading App. Erleben Sie die Zukunft des Handels, in der Geschwindigkeit, Bequemlichkeit und Präzision zusammenkommen.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "scanQrCode": "Scannen Sie den QR-Code",
+    "toDownloadApp": "um Ihre App herunterzuladen"
+  },
+  "CryptoMarket": {
+    "name": "Kryptomarket",
+    "currency": "Währung",
+    "price": "Preis",
+    "24hChange": "24-Stunden-Veränderung",
+    "24hVolume": "24-Stunden-Volumen",
+    "marketCap": "Marktkapitalisierung"
+  },
+  "CryptoStats": {
+    "trending": "Trending",
+    "topGainers": "Top-Gewinner",
+    "recentlyAdded": "Kürzlich hinzugefügt"
+  },
+  "Statistics": {
+    "icon1": "100 gelistete Währungen",
+    "icon2": "Über 100 teilnehmende Länder",
+    "icon3": "12 Assets für Staking in Kürze verfügbar",
+    "icon4": "Kauf von Krypto",
+    "icon5": "EUR über Sepa oder Karte einzahlen"
+  },
+  "DiscoverMoreProducts": {
+    "name": "Entdecken Sie weitere Produkte",
+    "eezyTrader": {
+      "name": "EEZY Trader",
+      "text": "Lassen Sie den KI-Bot für Sie arbeiten.",
+      "masterTraders": "Master Trader",
+      "followers": "Follower",
+      "bestTraders": {
+        "7DROI": "7-Tages-Rendite (7DROI)",
+        "7DFollowersPnL": "7-Tages-Follower-Gewinn/Verlust (7D Followers PnL)",
+        "copy": "Kopieren"
+      },
+      "features": {
+        "tradingBot": {
+          "name": "Handelsroboter",
+          "text": "Grid- und DCA-Roboter. Lang-, Kurzstrategie und mehr."
+        },
+        "takeProfit": {
+          "name": "Gewinnmitnahme",
+          "text": "Steigern Sie Ihren Krypto-Assets einfach, intelligent und effektiv."
+        },
+        "copyTrading": {
+          "name": "Kopie Trading",
+          "text": "Lassen Sie Top-Trader für Sie arbeiten, kopieren Sie einfach ihre Strategien."
+        },
+        "bargain": {
+          "name": "Schnäppchen",
+          "text": "Bestes Angebot auf dem Markt."
+        }
+      }
+    }
+  },
+  "Faq": {
+    "question1": {
+      "question": "Was ist der Unterschied zwischen einem 'Coin' und einem 'Token' auf der Seite?",
+      "answer": "Ein Coin ist eine Kryptowährung, die unabhängig funktionieren kann. Ein Token hingegen ist eine Kryptowährung, die auf einer anderen Kryptowährung als Plattform für ihre Funktion angewiesen ist. Schauen Sie sich unseren Blogbeitrag für weitere Informationen an."
+    },
+    "question2": {
+      "question": "Was ist Bitcoin (BTC)?",
+      "answer": "Bitcoin ist die erste Kryptowährung, die 2009 von Satoshi Nakamoto geschaffen wurde. Es handelt sich um eine dezentralisierte digitale Währung, die von Benutzer zu Benutzer im Peer-to-Peer-Bitcoin-Netzwerk ohne die Notwendigkeit von Vermittlern gesendet werden kann."
+    },
+    "question3": {
+      "question": "Was ist die USDT-Münze (USDT)?",
+      "answer": "Tether (USDT) ist eine Kryptowährung mit einem Wert, der den Wert des US-Dollars widerspiegeln soll. Die Idee war, eine stabile Kryptowährung zu schaffen, die wie digitale Dollar verwendet werden kann. Münzen, die diesen Zweck erfüllen, indem sie einen stabilen Dollarersatz darstellen, werden als 'Stablecoins' bezeichnet. USDT ist der beliebteste Stablecoin und fungiert sogar als Dollarersatz auf vielen populären Börsen!"
+    },
+    "question4": {
+      "question": "Wie kann ich Kryptowährungen kaufen?",
+      "answer": "Sie können Kryptowährungen auf Coingarage kaufen, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich für ein Coingarage-Konto an. 2. Verifizieren Sie Ihr Konto. 3. Zahlen Sie EUR oder andere unterstützte Kryptowährungen ein. 4. Kaufen Sie Ihre Lieblingskryptowährungen."
+    },
+    "question5": {
+      "question": "Wie kann ich mein persönliches Konto verifizieren?",
+      "answer": "Sie können Ihr persönliches Konto verifizieren, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich bei Ihrem Coingarage-Konto an. 2. Gehen Sie zu Ihren Kontoeinstellungen. 3. Klicken Sie auf den Verifizierungs-Tab. 4. Befolgen Sie die Anweisungen und laden Sie die erforderlichen Dokumente hoch. 5. Warten Sie darauf, dass Ihre Verifizierung bearbeitet wird. 6. Beginnen Sie mit dem Handel!"
+    }
+  },
+  "Footer": {
+    "aboutUs": "Über uns",
+    "contactUs": "Kontakt",
+    "fees": "Gebühren",
+    "hotCoins": "Beliebte Kryptowährungen",
+    "blog": "Blog",
+    "faqs": "FAQ's",
+    "coinListing": "Listen von Kryptowährungen",
+    "markets": "Märkte",
+    "trade": "Handel",
+    "buyCrypto": "Kryptowährung kaufen",
+    "staking": "Staking",
+    "login": "Anmelden",
+    "legal": {
+      "termsOfService": "Nutzungsbedingungen",
+      "privacyPolicy": "Datenschutzbestimmungen",
+      "cookiePolicy": "Cookie-Richtlinie"
+    }
+  },
+  "Contact": {
+    "street": "Revoluční&nbsp;1082/8",
+    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+    "postalCode": "110 00",
+    "country": "Prague, Czech Republic",
+    "phone": "+420 778 116 516",
+    "email": "support@coingarage.io",
+    "companyID": "IČ: 11667974"
+  }
+}

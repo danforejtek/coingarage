@@ -3,6 +3,7 @@ import useSWR from "swr"
 import CryptoTable from "./CryptoTable"
 import { useEffect, useState } from "react"
 import { Skeleton } from "@/components/ui/skeleton"
+import { useTranslations } from "next-intl"
 
 const parseData = (data) => {
   try {
@@ -34,6 +35,7 @@ const parseData = (data) => {
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 export default function CryptoStats() {
+  const t = useTranslations("CryptoStats")
   const [parsedData, setParsedData] = useState({ trending: [], topGainers: [], recentlyAdded: [] })
   const { data, error, isLoading } = useSWR("https://api.coingarage.io/market/market-data/usdt", fetcher)
   // const { data, error, isLoading } = useSWR("/api/crypto-market", fetcher)
@@ -48,9 +50,9 @@ export default function CryptoStats() {
     <div className="grid min-h-[532px] grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-16">
       {!isLoading ? (
         <>
-          <CryptoTable heading="Trending" data={parsedData?.trending} />
-          <CryptoTable heading="Top Gainers" data={parsedData?.topGainers} />
-          <CryptoTable heading="Recently Added" data={parsedData?.recentlyAdded} />
+          <CryptoTable heading={t("trending")} data={parsedData?.trending} />
+          <CryptoTable heading={t("topGainers")} data={parsedData?.topGainers} />
+          <CryptoTable heading={t("recentlyAdded")} data={parsedData?.recentlyAdded} />
         </>
       ) : (
         <>

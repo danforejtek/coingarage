@@ -28,20 +28,14 @@ export default function CryptoTable({ heading, data }: { heading: string; data: 
           {data.map((data, index) => (
             <TableRow key={index} className="border-b-transparent">
               <TableCell className="border-b-transparent font-medium">
-                <div className="grid grid-cols-[32px_1fr] items-center gap-8">
-                  <div className="relative h-8 w-8">
-                    <Image
-                      src={`https://trade.coingarage.io/assets/icons/${data.name.toLowerCase()}.png`}
-                      // src={`https://coinicons-api.vercel.app/api/icon/${data.name.toLowerCase()}`}
-                      alt={data.name}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      sizes="32px"
-                      quality={100}
-                      // width={32}
-                      // height={32}
-                    />
-                  </div>
+                <div className="flex flex-row items-center gap-8">
+                  <Image
+                    // src={`https://coinicons-api.vercel.app/api/icon/${data.name.toLowerCase()}`}
+                    src={`/icons/coins/${data.name.toUpperCase()}.png`}
+                    alt={data.name}
+                    width={32}
+                    height={32}
+                  />
                   <div className="flex w-full flex-col">
                     <span className="font-heading text-lg">{data.name}</span>
                     <span className="text-sm text-neutral-400">{data.name}</span>
