@@ -48,32 +48,35 @@
     "becomeAShareholder": "Become a Shareholder",
     "howToSignUp": "How to sign up?"
   },
-  "app": {
+  "App": {
     "name": "Simply Anywhere Anytime",
     "text": "Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile Trading App. Experience the future of trading, where speed, convenience, and precision converge.",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "scanQrCode": "Scan QR Code to Download App"
+    "scanQrCode": "Scan QR Code",
+    "toDownloadApp": "to Download App"
   },
-  "cryptoMarket": {
+  "CryptoMarket": {
     "name": "Crypto Market",
     "currency": "Currency",
     "price": "Price",
     "24hChange": "24h Change",
-    "24h Volume": "24h Volume",
+    "24hVolume": "24h Volume",
     "marketCap": "MarketCap"
   },
-  "trending": "Trending",
-  "topGainers": "Top Gainers",
-  "recentlyAdded": "Recently Added",
-  "statistics": {
+  "CryptoStats": {
+    "trending": "Trending",
+    "topGainers": "Top Gainers",
+    "recentlyAdded": "Recently Added"
+  },
+  "Statistics": {
     "icon1": "100 Currencies Listed",
     "icon2": "100+ Participating Countries",
     "icon3": "12 Assets for staking coming soon",
     "icon4": "Buy Crypto",
     "icon5": "Deposit EUR via Sepa or Card"
   },
-  "discoverMoreProducts": {
+  "DiscoverMoreProducts": {
     "name": "Discover More Products",
     "eezyTrader": {
       "name": "EEZY Trader",
@@ -98,36 +101,36 @@
           "name": "Copy Trading                    ",
           "text": "Let top trader work for you just copy them"
         },
-        "Bergain": {
+        "bargain": {
           "name": "Bargain",
           "text": "Best offer on the Market"
         }
       }
     }
   },
-  "faq": {
+  "Faq": {
     "question1": {
-      "answer": "What is the difference between a 'Coin' and a 'Token' on the site?",
-      "question": "A coin is a cryptocurrency that can operate independently. A token is a cryptocurrency that depends on another cryptocurrency as a platform to operate. Check out our blog post for more information."
+      "question": "What is the difference between a 'Coin' and a 'Token' on the site?",
+      "answer": "A coin is a cryptocurrency that can operate independently. A token is a cryptocurrency that depends on another cryptocurrency as a platform to operate. Check out our blog post for more information."
     },
     "question2": {
-      "answer": "What is Bitcoin (BTC)?",
-      "question": "Bitcoin is the first cryptocurrency created in 2009 by Satoshi Nakamoto. It is a decentralized digital currency that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries."
+      "question": "What is Bitcoin (BTC)?",
+      "answer": "Bitcoin is the first cryptocurrency created in 2009 by Satoshi Nakamoto. It is a decentralized digital currency that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries."
     },
     "question3": {
-      "answer": "What is USDT Coin (USDT)?",
-      "question": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar. The idea was to create a stable cryptocurrency that can be used like digital dollars. Coins that serve this purpose of being a stable dollar substitute are called “stable coins.” USDT is the most popular stable coin and even acts as a dollar replacement on many popular exchanges!"
+      "question": "What is USDT Coin (USDT)?",
+      "answer": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar. The idea was to create a stable cryptocurrency that can be used like digital dollars. Coins that serve this purpose of being a stable dollar substitute are called “stable coins.” USDT is the most popular stable coin and even acts as a dollar replacement on many popular exchanges!"
     },
     "question4": {
-      "answer": "How can I buy cryptocurrency?",
-      "question": "You can buy cryptocurrency on Coingarage by following these three steps: 1. Sign up for a Coingarage account. 2. Verify your account. 3. Deposit EUR or other supported cryptocurrencies. 4. Buy your favorite cryptocurrencies."
+      "question": "How can I buy cryptocurrency?",
+      "answer": "You can buy cryptocurrency on Coingarage by following these three steps: 1. Sign up for a Coingarage account. 2. Verify your account. 3. Deposit EUR or other supported cryptocurrencies. 4. Buy your favorite cryptocurrencies."
     },
     "question5": {
-      "answer": "How can I verify my personal account?",
-      "question": "You can verify your personal account by following these three steps: 1. Log in to your Coingarage account. 2. Go to your account settings. 3. Click on the verification tab. 4. Follow the instructions and upload the required documents. 5. Wait for your verification to be processed. 6. Start trading!"
+      "question": "How can I verify my personal account?",
+      "answer": "You can verify your personal account by following these three steps: 1. Log in to your Coingarage account. 2. Go to your account settings. 3. Click on the verification tab. 4. Follow the instructions and upload the required documents. 5. Wait for your verification to be processed. 6. Start trading!"
     }
   },
-  "footer": {
+  "Footer": {
     "aboutUs": "About Us",
     "contactUs": "Contact Us",
     "fees": "Fees",
@@ -146,17 +149,13 @@
       "cookiePolicy": "Cookie Policy"
     }
   },
-  "address": {
-    "street": "Revoluční 1082/8",
-    "city": "Nové Město (Praha 1)",
+  "Contact": {
+    "street": "Revoluční&nbsp;1082/8",
+    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
     "postalCode": "110 00",
-    "country": "Prague, Czech Republic"
-  },
-  "contact": {
+    "country": "Prague, Czech Republic",
     "phone": "+420 778 116 516",
-    "email": "support@coingarage.io"
-  },
-  "registration": {
+    "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
   }
 }

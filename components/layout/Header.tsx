@@ -10,8 +10,11 @@ import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
 import { ModeToggle } from "./ModeToggle"
 import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
+import { useTranslations } from "next-intl"
+import LocaleSwitcher from "@/components/layout/LocaleSwitch"
 
 export default function Header() {
+  const t = useTranslations("Menu")
   const scrollPosition = useScrollPosition()
   const [scrolledVariant, setScrolledVariant] = useState(false)
 
@@ -43,12 +46,13 @@ export default function Header() {
           <div className="hidden lg:block">
             <div className="flex gap-4">
               <Button variant="ghost" className={cn("text-md")} asChild>
-                <a href="https://trade.coingarage.io/login">Login</a>
+                <a href="https://trade.coingarage.io/login">{t("login")}</a>
               </Button>
               <Button className="text-md text-center leading-none" asChild>
-                <a href="https://trade.coingarage.io/signup">Sign up</a>
+                <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
               </Button>
               <ModeToggle />
+              <LocaleSwitcher />
             </div>
           </div>
           <div className="lg:hidden">

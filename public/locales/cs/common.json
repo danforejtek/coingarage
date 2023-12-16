@@ -1,191 +1,161 @@
 {
-    "navbar": {
-        "buyCrypto": {
-            "name": "Koupit Kryptoměny",
-            "menu": {
-                "buyCrypto": "Koupit Kryptoměny",
-                "depositFiat": "Vložit FIAT",
-                "depositFiatViaSepa": "Vložit FIAT přes SEPA"
-            }
-        },
-        "trade": {
-            "name": "Obchodovat",
-            "menu": {
-                "spotTrading": "Spot Obchodní",
-                "launchpad": "Launchpad",
-                "tradingBot": "Obchodní Robot"
-            }
-        },
-        "convert": {
-            "name": "Konvertovat"
-        },
-        "earn": {
-            "name": "Získat",
-            "menu": {
-                "becomeAShareholder": "Stát se Spolumajitelem",
-                "affilate": "Doporučení",
-                "staking": "Stake"
-            }
-        },
-        "more": {
-            "name": "Více",
-            "menu": {
-                "aboutUs": "O Nás",
-                "partners": "Partneři",
-                "blog": "Blog"
-            }
-        },
-        "garageCoinPreSale": {
-            "name": "Předprodej GARAGECoin",
-            "menu": {
-                "buyGarageCoin": "Koupit GARAGECoin",
-                "whitepaperEn": "Whitepaper EN",
-                "whitepaperCz": "Whitepaper CZ",
-                "whitepaperDe": "Whitepaper DE"
-            }
-        },
-        "login": {
-            "name": "Přihlásit se"
-        },
-        "signUp": {
-            "name": "Registrovat se"
-        },
-        "mode": {
-            "light": "Světlý",
-            "dark": "Tmavý",
-            "system": "Systém"
-        }
-    },
-    "cryptoLandingPage": {
-        "nameLine1": "Krypto",
-        "nameLine2": "Jednoduchá a Bezpečná",
-        "nameLine3": "Burza",
-        "mainText": "Objevte vyšší úroveň finančního soukromí a svobody než nabízí tradiční bankovní systémy, a to v jednoduchém a bezpečném prostředí naší burzy. Jsme burza se sídlem v srdci Evropské unie. První, kdo představí regulaci, která tady nechá kryptoměnu explodovat!",
-        "register": {
-            "content": "Registrujte se a získejte až 100 USDT odměnu v GARAGECoin (GARA)",
-            "limitedOffer": "Omezená nabídka",
-            "mark": {
-                "option1": "Každý nový uživatel na burze obdrží 10 USDT ve směnárenském tokenu GARA.",
-                "option2": "Každý 50. uživatel obdrží 50 USDT ve směnárenském tokenu GARA.",
-                "option3": "Každý 100. uživatel obdrží 100 USDT ve směnárenském tokenu GARA.",
-                "option4": "Zapojte nového uživatele a obdržíte stejnou odměnu jako každý nový uživatel, kterého jste doporučili."
-            }
-        },
-        "signUp": {
-            "name": "Registrovat se"
-        },
-        "becomeAShareholder": "Stát se Spolumajitelem",
-        "howToSignUp": "Jak se Zaregistrovat?"
-    },
-    "app": {
-        "name": "Jednoduše Kdykoliv & Kdekoli",
-        "text": "Odemkněte sílu globálních finančních trhů přímo z dlaně ruky s mobilní obchodní aplikací Coingarage. Zažijte budoucnost obchodování, kde se rychlost, pohodlí a přesnost setkávají.",
-        "appStore": "App Store",
-        "googlePlay": "Google Play",
-        "scanQrCode": "Naskenujte QR kód pro stažení aplikace"
-    },
-    "cryptoMarket": {
-        "name": "Krypto Market",
-        "currency": "Coin",
-        "price": "Cena",
-        "24hChange": "24h Změna",
-        "24h Volume": "24h Objem",
-        "marketCap": "Market Cap"
-    },
-    "trending": "Trendující",
-    "topGainers": "Nejlépe Vynášející",
-    "recentlyAdded": "Nedávno Přidané",
-    "statistics": {
-        "icon1": "100 Kryptoměn v Nabídce",
-        "icon2": "100+ Zapojených Zemí",
-        "icon3": "12 Aktiv Pro Staking Již brzy",
-        "icon4": "Koupit Kryptoměny",
-        "icon5": "Vkládat EUR přes SEPA nebo kartou"
-    },
-    "discoverMoreProducts": {
-        "name": "Objevte Další Produkty",
-        "eezyTrader": {
-            "name": "EEZY Trader",
-            "text": "Nechte pracovat za vás umělou inteligenci.",
-            "masterTraders": "Mistři Obchodování",
-            "followers": "Sledující",
-            "bestTraders": {
-                "7DROI": "7denní ROI",
-                "7DFollowersPnL": "7denní PnL Sledujících",
-                "copy": "Kopírovat"
-            },
-            "features": {
-                "tradingBot": {
-                    "name": "Obchodní Robot",
-                    "text": "Roboti Grid a DCA. Strategie Long, Short a další."
-                },
-                "takeProfit": {
-                    "name": "Vzít zisk",
-                    "text": "Nechte růst své kryptoměnové jmění jednoduše, chytře, efektivně."
-                },
-                "copyTrading": {
-                    "name": "Kopírování obchodů",
-                    "text": "Nechte nejlepšího obchodníka pracovat za vás a jen ho kopírujte."
-                },
-                "Bergain": {
-                    "name": "Nabídka",
-                    "text": "Nejlepší nabídka na trhu."
-                }
-            }
-        }
-    },
-    "faq": {
-        "question1": {
-            "answer": "Jaký je rozdíl mezi 'Coin' a 'Token' na stránce?",
-            "question": "Coin je kryptoměna, která může operovat nezávisle. Token je kryptoměna, která závisí na jiné kryptoměně jako platformě pro svůj provoz. Podívejte se na náš blog pro více informací."
-        },
-        "question2": {
-            "answer": "Co je Bitcoin (BTC)?",
-            "question": "Bitcoin je první kryptoměna vytvořená v roce 2009 Satoshi Nakamotem. Je to decentralizovaná digitální měna, kterou lze posílat od uživatele k uživateli v peer-to-peer síti bitcoinu bez potřeby prostředníků."
-        },
-        "question3": {
-            "answer": "Co je USDT Coin (USDT)?",
-            "question": "Tether (USDT) je kryptoměna s hodnotou, která má odrážet hodnotu amerického dolaru. Cílem bylo vytvořit stabilní kryptoměnu, která může být používána jako digitální dolary. Mince, které slouží k tomuto účelu stabilní náhrady dolaru, se nazývají „stablecoiny“. USDT je nejoblíbenější stabilní coin a dokonce slouží jako náhrada dolaru na mnoha populárních směnárnách!"
-        },
-        "question4": {
-            "answer": "Jak mohu koupit kryptoměnu?",
-            "question": "Můžete koupit kryptoměnu na Coingarage následujícím třemi kroky: 1. Zaregistrujte se na účet Coingarage. 2. Ověřte svůj účet. 3. Vložte EUR nebo jiné podporované kryptoměny. 4. Kupte si své oblíbené kryptoměny."
-        },
-        "question5": {
-            "answer": "Jak mohu ověřit svůj osobní účet?",
-            "question": "Svůj osobní účet můžete ověřit třemi kroky: 1. Přihlaste se do svého účtu Coingarage. 2. Přejděte do nastavení účtu. 3. Klepněte na kartu ověření. 4. Postupujte podle instrukcí a nahrajte požadované dokumenty. 5. Počkejte, až bude váš ověření zpracováno. 6. Začněte obchodovat!"
-        }
-    },
-    "footer": {
-        "aboutUs": "O Nás",
-        "contactUs": "Kontaktujte Nás",
-        "fees": "Poplatky",
-        "hotCoins": "Oblíbené Coiny",
-        "blog": "Blog",
-        "faqs": "Často kladené otázky",
-        "coinListing": "Zalistovat Coin",
-        "markets": "Trhy",
-        "trade": "Obchodovat",
-        "buyCrypto": "Koupit Kryptoměny",
-        "staking": "Staking",
-        "login": "Přihlásit se",
-        "legal": {
-            "termsOfService": "Podmínky & služby",
-            "privacyPolicy": "Zásady ochrany osobních údajů",
-            "cookiePolicy": "Zásady používání souborů cookie"
-        }
-    },
-    "address": {
-        "street": "Revoluční 1082/8",
-        "city": "Nové Město (Praha 1)",
-        "postalCode": "110 00",
-        "country": "Praha, Česká republika"
-    },
-    "contact": {
-        "phone": "+420 778 116 516",
-        "email": "support@coingarage.io"
-    },
-    "registration": {
-        "companyID": "IČ: 11667974"
+  "Menu": {
+    "buyCrypto": "Koupit kryptoměny",
+    "depositFiat": "Vložit FIAT",
+    "depositFiatViaSepa": "Vložit FIAT přes SEPA",
+    "trade": "Obchodovat",
+    "spotTrading": "Spot obchodování",
+    "launchpad": "Launchpad",
+    "tradingBot": "Trading bot",
+    "convert": "Konvertovat",
+    "earn": "Profitovat",
+    "becomeAShareholder": "Stát se spolumajitelem",
+    "affiliate": "Doporučení",
+    "stake": "Stake",
+    "more": "Více",
+    "aboutUs": "O Nás",
+    "partners": "Partneři",
+    "blog": "Blog",
+    "garageCoinPreSale": "GARAGECoin Pre-Sale",
+    "buyGarageCoin": "Koupit GARAGECoin",
+    "whitepaperEn": "Whitepaper EN",
+    "whitepaperCz": "Whitepaper CZ",
+    "whitepaperDe": "Whitepaper DE",
+    "login": "Přihlásit se",
+    "signUp": "Registrovat se",
+    "mode": {
+      "light": "Světlý",
+      "dark": "Tmavý",
+      "system": "Systém"
     }
+  },
+  "CryptoLandingPage": {
+    "nameLine1": "Krypto",
+    "nameLine2": "Jednoduchá a bezpečná",
+    "nameLine3": "Burza",
+    "mainText": "Objevte vyšší úroveň finančního soukromí a svobody než nabízí tradiční bankovní systémy, a to v jednoduchém a bezpečném prostředí naší burzy. Jsme burza se sídlem v srdci Evropské unie. První, kdo představí regulaci, která tady nechá kryptoměnu explodovat!",
+    "register": {
+      "content": "Registrujte se a získejte až 100 USDT odměnu v GARAGECoin (GARA)",
+      "limitedOffer": "Omezená nabídka",
+      "mark": {
+        "option1": "Každý nový uživatel na burze obdrží 10 USDT ve směnárenském tokenu GARA.",
+        "option2": "Každý 50. uživatel obdrží 50 USDT ve směnárenském tokenu GARA.",
+        "option3": "Každý 100. uživatel obdrží 100 USDT ve směnárenském tokenu GARA.",
+        "option4": "Zapojte nového uživatele a obdržíte stejnou odměnu jako každý nový uživatel, kterého jste doporučili."
+      }
+    },
+    "signUp": "Registrovat se",
+    "becomeAShareholder": "Stát se spolumajitelem",
+    "howToSignUp": "Jak se zaregistrovat?"
+  },
+  "App": {
+    "name": "Jednoduše, kdykoliv a kdekoli",
+    "text": "Odemkněte sílu globálních finančních trhů přímo z dlaně ruky s mobilní obchodní aplikací Coingarage. Zažijte budoucnost obchodování, kde se rychlost, pohodlí a přesnost setkávají.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "scanQrCode": "Naskenujte QR kód",
+    "toDownloadApp": "pro stažení aplikace"
+  },
+  "CryptoMarket": {
+    "name": "Krypto Market",
+    "currency": "Coin",
+    "price": "Cena",
+    "24hChange": "24h změna",
+    "24hVolume": "24h objem",
+    "marketCap": "Market Cap"
+  },
+  "CryptoStats": {
+    "trending": "Trendující",
+    "topGainers": "Nejlépe vynášející",
+    "recentlyAdded": "Nedávno přidané"
+  },
+  "Statistics": {
+    "icon1": "100 kryptoměn v nabídce",
+    "icon2": "100+ zapojených zemí",
+    "icon3": "12 aktiv pro staking již brzy",
+    "icon4": "Koupit kryptoměny",
+    "icon5": "Vkládat EUR přes SEPA nebo kartou"
+  },
+  "DiscoverMoreProducts": {
+    "name": "Objevte Další Produkty",
+    "eezyTrader": {
+      "name": "EEZY Trader",
+      "text": "Nechte pracovat za vás umělou inteligenci.",
+      "masterTraders": "Mistři Obchodování",
+      "followers": "Sledující",
+      "bestTraders": {
+        "7DROI": "7denní ROI",
+        "7DFollowersPnL": "7denní PnL Sledujících",
+        "copy": "Kopírovat"
+      },
+      "features": {
+        "tradingBot": {
+          "name": "Obchodní Robot",
+          "text": "Roboti Grid a DCA. Strategie Long, Short a další."
+        },
+        "takeProfit": {
+          "name": "Vzít zisk",
+          "text": "Nechte růst své kryptoměnové jmění jednoduše, chytře, efektivně."
+        },
+        "copyTrading": {
+          "name": "Kopírování obchodů",
+          "text": "Nechte nejlepšího obchodníka pracovat za vás a jen ho kopírujte."
+        },
+        "bargain": {
+          "name": "Nabídka",
+          "text": "Nejlepší nabídka na trhu."
+        }
+      }
+    }
+  },
+  "Faq": {
+    "question1": {
+      "question": "Jaký je rozdíl mezi 'Coin' a 'Token'?",
+      "answer": "Coin je kryptoměna, která může operovat nezávisle. Token je kryptoměna, která závisí na jiné kryptoměně jako platformě pro svůj provoz. Podívejte se na náš blog pro více informací."
+    },
+    "question2": {
+      "question": "Co je Bitcoin (BTC)?",
+      "answer": "Bitcoin je první kryptoměna vytvořená v roce 2009 Satoshi Nakamotem. Je to decentralizovaná digitální měna, kterou lze posílat od uživatele k uživateli v peer-to-peer síti bitcoinu bez potřeby prostředníků."
+    },
+    "question3": {
+      "question": "Co je USDT Coin (USDT)?",
+      "answer": "Tether (USDT) je kryptoměna s hodnotou, která má odrážet hodnotu amerického dolaru. Cílem bylo vytvořit stabilní kryptoměnu, která může být používána jako digitální dolary. Mince, které slouží k tomuto účelu stabilní náhrady dolaru, se nazývají „stablecoiny“. USDT je nejoblíbenější stabilní coin a dokonce slouží jako náhrada dolaru na mnoha populárních směnárnách!"
+    },
+    "question4": {
+      "question": "Jak mohu koupit kryptoměnu?",
+      "answer": "Můžete koupit kryptoměnu na Coingarage následujícím třemi kroky: 1. Zaregistrujte se na účet Coingarage. 2. Ověřte svůj účet. 3. Vložte EUR nebo jiné podporované kryptoměny. 4. Kupte si své oblíbené kryptoměny."
+    },
+    "question5": {
+      "question": "Jak mohu ověřit svůj osobní účet?",
+      "answer": "Svůj osobní účet můžete ověřit třemi kroky: 1. Přihlaste se do svého účtu Coingarage. 2. Přejděte do nastavení účtu. 3. Klepněte na kartu ověření. 4. Postupujte podle instrukcí a nahrajte požadované dokumenty. 5. Počkejte, až bude váš ověření zpracováno. 6. Začněte obchodovat!"
+    }
+  },
+  "Footer": {
+    "aboutUs": "O nás",
+    "contactUs": "Kontaktujte nás",
+    "fees": "Poplatky",
+    "hotCoins": "Oblíbené coiny",
+    "blog": "Blog",
+    "faqs": "Často kladené otázky",
+    "coinListing": "Zalistovat coin",
+    "markets": "Trhy",
+    "trade": "Obchodovat",
+    "buyCrypto": "Koupit kryptoměny",
+    "staking": "Staking",
+    "login": "Přihlásit se",
+    "legal": {
+      "termsOfService": "Obchodní podmínky",
+      "privacyPolicy": "Zásady ochrany osobních údajů",
+      "cookiePolicy": "Zásady používání souborů cookie"
+    }
+  },
+  "Contact": {
+    "street": "Revoluční&nbsp;1082/8",
+    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+    "postalCode": "110 00",
+    "country": "Prague, Czech Republic",
+    "phone": "+420 778 116 516",
+    "email": "support@coingarage.io",
+    "companyID": "IČ: 11667974"
+  }
 }

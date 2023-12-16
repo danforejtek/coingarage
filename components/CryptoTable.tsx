@@ -30,7 +30,8 @@ export default function CryptoTable({ heading, data }: { heading: string; data: 
               <TableCell className="border-b-transparent font-medium">
                 <div className="flex flex-row items-center gap-8">
                   <Image
-                    src={`https://coinicons-api.vercel.app/api/icon/${data.name.toLowerCase()}`}
+                    // src={`https://coinicons-api.vercel.app/api/icon/${data.name.toLowerCase()}`}
+                    src={`/icons/coins/${data.name.toUpperCase()}.png`}
                     alt={data.name}
                     width={32}
                     height={32}

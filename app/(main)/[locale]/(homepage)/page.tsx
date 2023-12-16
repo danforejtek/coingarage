@@ -64,19 +64,13 @@ export default function Home() {
       </section>
       <Motivation />
       <section id="hot-coins" className="container mx-auto mt-28">
-        <Heading tag="h2">Crypto market</Heading>
-        <div className="mt-12">
-          <CryptoMarketTable />
-        </div>
+        <CryptoMarketTable />
         <div className="mt-12">
           <CryptoStats />
         </div>
       </section>
       <Advantages />
       <section className="container mx-auto mt-28">
-        <Heading tag="h2" size="4xl" className="mb-8">
-          Discover More Products
-        </Heading>
         <GeniusTrader />
       </section>
       <section className="relative mt-28">
@@ -96,9 +90,6 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-20 max-w-[500px] md:mt-0">
-            <Heading tag="h2" size="4xl" className="mb-12">
-              Simply Anywhere Anytime
-            </Heading>
             <GetAppHp />
           </div>
         </div>

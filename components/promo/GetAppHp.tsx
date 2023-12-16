@@ -1,4 +1,6 @@
 "use client"
+import Heading from "@/components/Heading"
+import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 import Image from "next/image"
 import { useEffect, useState } from "react"
@@ -9,12 +11,14 @@ export const GetAppHp = () => {
   useEffect(() => {
     setTheme(resolvedTheme !== "dark" ? "" : "dark/")
   }, [resolvedTheme])
+  const t = useTranslations("App")
+
   return (
     <div>
-      <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">
-        Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile Trading
-        App. Experience the future of trading, where speed, convenience, and precision converge.
-      </p>
+      <Heading tag="h2" size="4xl" className="mb-12">
+        {t("name")}
+      </Heading>
+      <p className="text-md mb-4 text-justify text-neutral-600 dark:text-neutral-300 lg:text-left">{t("text")}</p>
       <div className="mt-8 flex flex-row justify-between gap-4 md:justify-start">
         <div className="flex flex-row gap-8">
           <a
