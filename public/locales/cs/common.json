@@ -46,7 +46,9 @@
     },
     "signUp": "Registrovat se",
     "becomeAShareholder": "Stát se spolumajitelem",
-    "howToSignUp": "Jak se zaregistrovat?"
+    "howToSignUp": "Jak se zaregistrovat?",
+    "scanQrCode": "Naskenujte QR kód",
+    "toDownloadApp": "pro stažení aplikace"
   },
   "App": {
     "name": "Jednoduše, kdykoliv a kdekoli",
@@ -157,5 +159,36 @@
     "phone": "+420 778 116 516",
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
+  },
+  "Affiliate": {
+    "name": "Affiliate program",
+    "claim": "Přidejte se k Coingarage",
+    "text1": "Věříte, že kryptoměny a blockchainová technologie mohou změnit svět k lepšímu?",
+    "text2": "Pokud ano, připojte se k affiliate programu Coingarage a získejte speciální odměny. Představte svým přátelům Coingarage, plně licencovanou kryptoměnovou burzu v srdci Evropy.",
+    "reward": "ODMĚNY MŮŽETE ZÍSKAT NA 3 ÚROVNÍCH",
+    "warning": "*Velmi důležité: Prosím, mějte na paměti, že váš affiliate program nekončí pouze u vašich přímých odkazů. Pokud vaši přímí odkazovaní začnou pracovat a odkazovat další, obdržíte další odměny od těchto přímých odkazovaných."
+  },
+  "AboutUs": {
+    "weAreCoingarage": "Jsme coingarage",
+    "name": "O nás",
+    "text1": "Ne na vzdálených ostrovech v daňových rájích, ale v srdci Evropy byla v <b>Praze</b> založena první kryptoměnová burza, která má plnou licenci na držení a obchodování s kryptoměnami.",
+    "text2": "Veškerá činnost je plně podřízena <b>zákonům EU</b> a dohledu regulátorů a úřadů. Zde si můžete koupit krypto za fiat, držet jej a obchodovat na jedné z nejmodernějších platforem s důrazem na úplnost a jednoduchost",
+    "elements": {
+      "text1": "Klíčovým prvkem naší platformy je jednoduchost.",
+      "text2": "Zde najdete spotové obchodování, ale v budoucnu také Futures",
+      "text3": "Na burze budete moci vydělávat stakingem nejpopulárnějších mincí",
+      "text4": "Také bude možné vyměňovat mince na burze pomocí principu P2P",
+      "text5": "Na jednom místě si můžete koupit krypto za fiat měnu prostřednictvím své debetní karty nebo převodem ze svého účtu, poté jej zde můžete držet a obchodovat s ním.",
+      "text6": "Od ledna roku 2024 budete moci využít naše profesionální obchodní DCA, GRID, Futures Boots s umělou inteligencí pro obchody",
+      "text7": "Naše burza také nabídne vlastní NFT platformu, včetně tržiště",
+      "text8": "Všechny tyto funkce budou doplněny vzdělávacími programy a videi"
+    },
+    "financialWorld": {
+      "text1": "Chceme, aby se kryptoměny staly běžnou a respektovanou součástí finančního světa v Evropě.",
+      "text2": "Chceme přispět k adopci kryptoměn v Evropě a nabídnout zcela transparentní a bezpečné prostředí, které je v souladu s právem a předpisy EU.",
+      "text3": "Aby lidé věděli, co mohou od kryptosvěta očekávat a byli si vědomi výhod, ale také rizik tohoto průmyslu. Aby věděli, že investování do krypta není jen krátkodobá spekulace, ale dlouhodobá a smysluplná investice",
+      "text4": "Naše vize je založena na čtyřech základních hodnotách: transparentnost, úplnost, bezpečnost a jednoduchost. Pokud dosáhneme naplnění těchto hodnot v naší vizi, pak budeme na cestě přinést lidem dlouhodobý pravidelný zisk z kryptosvěta."
+    },
+    "getStarted": "Začít"
   }
 }

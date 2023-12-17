@@ -13,9 +13,9 @@ import Motivation from "@/components/promo/Motivation"
 import NewsFeed from "@/components/NewsFeed"
 import CryptoStats from "@/components/CryptoStats"
 import GeniusTrader from "@/components/GeniusTrader"
-import { Youtube } from "lucide-react"
 import { GetAppHp } from "@/components/promo/GetAppHp"
 import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
+import { RegistrationHelp } from "@/components/promo/RegistrationHelp"
 
 export default function Home() {
   const t = useTranslations("CryptoLandingPage")
@@ -47,15 +47,7 @@ export default function Home() {
               </Button>
             </div>
             <div className="mt-4 inline-flex justify-center">
-              <a
-                href="https://www.youtube.com/watch?v=y7-5gdlkLWw"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-primary"
-              >
-                <Youtube className="mr-2 inline-block" size={20} />
-                {t("howToSignUp")}
-              </a>
+              <RegistrationHelp />
             </div>
           </div>
         </div>
@@ -85,9 +77,9 @@ export default function Home() {
             <div className="ml-12 hidden h-full flex-col justify-center md:flex">
               <Image src="/qr/get-app.svg" alt="Get App" width={224} height={224} className="rounded-xl bg-white p-1" />
               <div className="mt-4 text-center font-heading font-bold text-white ">
-                Scan QR Code to
+                {t("scanQrCode")}
                 <br />
-                Download App
+                {t("toDownloadApp")}
               </div>
             </div>
           </div>

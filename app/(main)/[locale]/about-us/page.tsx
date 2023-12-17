@@ -1,8 +1,10 @@
 import Figure from "@/components/Figure"
 import Heading from "@/components/Heading"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 export default function AboutUs() {
+  const t = useTranslations("AboutUs")
   return (
     <main className="relative">
       {/* <div className="h-[84px]"></div> */}
@@ -10,27 +12,18 @@ export default function AboutUs() {
         <div className="w-full max-w-[680px] p-4">
           {/* <h1 className="mb-16 flex flex-col gap-3 font-heading text-5xl font-bold"> */}
           <Heading tag="h1" size="4xl">
-            About us
+            {t("weAreCoingarage")}
           </Heading>
           {/* </h1> */}
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established
-            in <b className="text-primary">Prague</b>, which has a full license to hold and trade cryptocurrencies.
+            {t.rich("text1", { b: (text) => <b className="text-primary">{text}</b> })}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            All activity is fully subject to <b>EU laws</b> and the supervision of regulators and authorities. Here you
-            can buy crypto for fiat, hold it and trade it on one of the most modern platforms with an emphasis on
-            completeness and simplicity
+            {t.rich("text2", { b: (text) => <b className="text-primary">{text}</b> })}
           </p>
         </div>
         <div className="mt-16 flex max-w-[500px] items-center justify-end xl:mt-0">
-          <Image
-            src="/images/globe.png"
-            className="animate-slow-bounce"
-            alt="Picture of the author"
-            width={500}
-            height={328}
-          />
+          <Image src="/images/globe.png" className="animate-slow-bounce" alt="" width={500} height={328} />
         </div>
       </section>
 
@@ -41,7 +34,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/shield.svg"
-              caption="A key element of our platform is the comprehensiveness of services"
+              caption={t("elements.text1")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -49,7 +42,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/currency.svg"
-              caption="In one place you can buy crypto for fiat currency through your debit card or by transfer from your account, you can then hold it here and trade it."
+              caption={t("elements.text2")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -57,7 +50,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/wallet.svg"
-              caption="You can find spot trading here, but also Futures"
+              caption={t("elements.text3")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -65,7 +58,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/exchange.svg"
-              caption="You will be able to use our professional trading DCA, GRID, Futures Boots with artificial intelligence for trades"
+              caption={t("elements.text4")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -73,7 +66,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/exchange.svg"
-              caption="You can earn on the exchange by staking the most popular coins"
+              caption={t("elements.text5")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -81,7 +74,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/exchange.svg"
-              caption="Our exchange will also offer its own NFT platform, including a market place"
+              caption={t("elements.text6")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -89,7 +82,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/exchange.svg"
-              caption="You can also exchange coins on the exchange using the P2P principle"
+              caption={t("elements.text7")}
             />
           </div>
           <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -97,7 +90,7 @@ export default function AboutUs() {
               className="min-h-[180px] max-w-[220px] justify-center"
               textClassName="text-black dark:text-gray-100"
               // icon="/icons/exchange.svg"
-              caption="All these functions will be supplemented with educational programs and videos"
+              caption={t("elements.text8")}
             />
           </div>
           {/* <div className="rounded-xl border border-tertiary p-8 shadow-lg shadow-tertiary/50">
@@ -111,44 +104,19 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* <section className="container mx-auto mt-24 flex max-w-[680px] flex-row justify-between p-4 py-16">
-        <ul className="checklist text-text-neutral-600 dark:text-neutral-300 px-8">
-          <li className="text-lg">A key element of our platform is the comprehensiveness of services</li>
-          <li className="text-lg">
-            In one place you can buy crypto for fiat currency through your debit card or by transfer from your account,
-            you can then hold it here and trade it.
-          </li>
-          <li className="text-lg">You can find spot trading here, but also Futures</li>
-          <li className="text-lg">
-            You will be able to use our professional trading DCA, GRID, Futures Boots with artificial intelligence for
-            trades
-          </li>
-          <li className="text-lg">You can earn on the exchange by staking the most popular coins</li>
-          <li className="text-lg">Our exchange will also offer its own NFT platform, including a market place</li>
-          <li className="text-lg">You can also exchange coins on the exchange using the P2P principle</li>
-          <li className="text-lg">All these functions will be supplemented with educational programs and videos</li>
-          <li className="text-lg">Custom utilities and stable coins will be the icing on the cake</li>
-        </ul>
-      </section> */}
-
       <section className="container mx-auto mb-36 mt-24 max-w-[800px]">
         <Heading tag="h2" className="mb-16">
-          We want cryptocurrencies to become a common and respected part of the financial world in Europe.
+          {t("financialWorld.text1")}
         </Heading>
         <div className="lg:pl-10">
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and
-            safe environment that is in line with EU law and regulations.
+            {t("financialWorld.text2")}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            So that people know what they can expect from the crypto world and are aware of the benefits, but also the
-            risks of this industry. So that they know that investing in crypto is not just a short-term speculation, but
-            a long-term and meaningful investment.
+            {t("financialWorld.text3")}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we
-            achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term
-            regular profit from the crypto world.
+            {t("financialWorld.text4")}
           </p>
         </div>
       </section>

@@ -46,7 +46,9 @@
     },
     "signUp": "Registrarse",
     "becomeAShareholder": "Conviértete en Accionista",
-    "howToSignUp": "¿Cómo registrarse?"
+    "howToSignUp": "¿Cómo registrarse?",
+    "scanQrCode": "Escanear el código QR",
+    "toDownloadApp": "para descargar la aplicación"
   },
   "App": {
     "name": "Simplemente en cualquier lugar y en cualquier momento",
@@ -157,5 +159,35 @@
     "phone": "+420 778 116 516",
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
+  },
+  "Affilate": {
+    "name": "Programa de afiliados",
+    "claim": "Únete a Coingarage",
+    "text1": "¿Crees que las criptomonedas y la tecnología blockchain pueden cambiar el mundo para mejor?",
+    "text2": "Si es así, únete al programa de afiliados de Coingarage y gana recompensas especiales. Presenta a tus amigos Coingarage, un intercambio de criptomonedas completamente licenciado en el corazón de Europa.",
+    "warning": "*Muy importante: Ten en cuenta que tu afiliación no termina solo con tus referidos directos. Si tus referidos directos comienzan a trabajar y obtienen referidos de tus referidos directos, recibirás las siguientes recompensas de esos referidos directos."
+  },
+  "AboutUs": {
+    "weAreCoingarage": "Somos coingarage",
+    "name": "Sobre nosotros",
+    "text1": "No en islas lejanas en paraísos fiscales, sino en el corazón de Europa, se estableció en Praga la primera bolsa de criptomonedas con licencia completa para poseer y comerciar con criptomonedas.",
+    "text2": "Toda la actividad está completamente subordinada a las leyes de la UE y a la supervisión de reguladores y autoridades. Aquí puedes comprar cripto por fiat, mantenerlo y comerciar en una de las plataformas más modernas con énfasis en la completitud y simplicidad",
+    "elements": {
+      "text1": "Un elemento clave de nuestra plataforma es la simplicidad.",
+      "text2": "Aquí encontrarás comercio al contado, pero también Futuros en el futuro",
+      "text3": "En la bolsa podrás ganar haciendo staking de las monedas más populares",
+      "text4": "También será posible intercambiar monedas en la bolsa utilizando el principio P2P",
+      "text5": "En un solo lugar puedes comprar cripto por moneda fiat a través de tu tarjeta de débito o por transferencia desde tu cuenta, luego puedes mantenerlo aquí y comerciar con él.",
+      "text6": "A partir de enero de 2024, podrás utilizar nuestros profesionales DCA, GRID, Futures Boots con inteligencia artificial para el comercio",
+      "text7": "Nuestra bolsa también ofrecerá su propia plataforma NFT, incluyendo un mercado",
+      "text8": "Todas estas funciones se complementarán con programas educativos y videos"
+    },
+    "financialWorld": {
+      "name": "Queremos que las criptomonedas se conviertan en una parte común y respetada del mundo financiero en Europa.",
+      "text1": "Queremos contribuir a la adopción de criptomonedas en Europa y ofrecer un entorno completamente transparente y seguro que esté en línea con la ley y las regulaciones de la UE.",
+      "text2": "Para que la gente sepa qué esperar del mundo cripto y sea consciente de los beneficios, pero también de los riesgos de esta industria. Para que sepan que invertir en cripto no es solo una especulación a corto plazo, sino una inversión a largo plazo y significativa",
+      "text3": "Nuestra visión se basa en cuatro valores fundamentales: transparencia, completitud, seguridad y simplicidad. Si logramos cumplir con estos valores en nuestra visión, entonces estaremos en camino de traer a la gente ganancias regulares a largo plazo del mundo cripto."
+    },
+    "getStarted": "Empezar"
   }
 }

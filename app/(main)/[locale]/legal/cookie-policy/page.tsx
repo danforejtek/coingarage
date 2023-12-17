@@ -11,7 +11,7 @@ export default function Page() {
         <div className="w-full max-w-[1200px] p-4">
           <h1 className="font-heading text-4xl">Cookie Policy</h1>
           <h3 className="mb-4 mt-8 font-heading text-2xl">
-            1. What do we mean when we use the term ‘cookie’, ‘web beacon’ or ‘similar technology’?
+            1. What do we mean when we use the term <i>cookie</i>, <i>web beacon</i> or <i>similar technology</i>?
           </h3>
           <p>
             Cookies is a term used to describe is a small text file (typically made of letters and numbers) that is
@@ -21,15 +21,15 @@ export default function Page() {
           </p>
           <h3 className="mb-4 mt-8 font-heading text-2xl">Cookies are typically split into 2 main types, namely:</h3>
           <p>
-            <b>Session cookies.</b> Session cookies are stored in your device’s memory only for the length of time of
-            your browsing session. For example, sessions cookies allow you to move around our website and your account
-            features without having to repeatedly log in. They are not accessible after your browser session may have
-            been inactive for a period of time and are deleted from your device when your browser is closed down.
+            <b>Session cookies.</b> Session cookies are stored in your device&apos;s memory only for the length of time
+            of your browsing session. For example, sessions cookies allow you to move around our website and your
+            account features without having to repeatedly log in. They are not accessible after your browser session may
+            have been inactive for a period of time and are deleted from your device when your browser is closed down.
           </p>
           <p>
-            <b>Persistent cookies.</b> Persistent cookies are stored in your devices’ memory and are not deleted when
-            your browser is closed. Persistent cookies can helpfully remember you and your preferences each time you
-            access our Services. We use both of these types of cookies.
+            <b>Persistent cookies.</b> Persistent cookies are stored in your device&apos;s memory and are not deleted
+            when your browser is closed. Persistent cookies can helpfully remember you and your preferences each time
+            you access our Services. We use both of these types of cookies.
           </p>
           <h3 className="mb-4 mt-8 font-heading text-2xl">Cookies can also be further categorised as follows:</h3>
           <p>
@@ -65,9 +65,9 @@ export default function Page() {
             example, you block cookies by activating the setting on your browser that allows you to refuse the setting
             of all or some cookies. However, if you use your browser settings to block all cookies (including cookies
             that are strictly necessary) you may not be able to access all or parts of our Services. <br />
-            Each browser is different and as such we suggest that you check the ‘Help’ menu on your particular browser
-            (or your mobile phone’s handset manual) to learn how to change your cookie preference. You may also find
-            more information on how to manage your cookies from third party websites.
+            Each browser is different and as such we suggest that you check the <i>Help</i> menu on your particular
+            browser (or your mobile phone&apos;s handset manual) to learn how to change your cookie preference. You may
+            also find more information on how to manage your cookies from third party websites.
           </p>
           <p className="mt-6 font-bold">
             Here are some links to popular browser cookie information pages which you might find helpful to assist in

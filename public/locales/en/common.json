@@ -46,7 +46,9 @@
     },
     "signUp": "Sign Up",
     "becomeAShareholder": "Become a Shareholder",
-    "howToSignUp": "How to sign up?"
+    "howToSignUp": "How to sign up?",
+    "scanQrCode": "Scan QR Code",
+    "toDownloadApp": "to Download App"
   },
   "App": {
     "name": "Simply Anywhere Anytime",
@@ -157,5 +159,34 @@
     "phone": "+420 778 116 516",
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
+  },
+  "Affiliate": {
+    "name": "Affiliate program",
+    "claim": "Join the Coingarag",
+    "text1": "Do you believe that cryptocurrencies and blockchain technology can change the world for better?",
+    "text2": "If yes, than join the Coingarage Affiliate program and earn special rewards. Introduce your friends Coingarage, a full licensed Crypto Exchange in the heart of Europe.",
+    "reward": "YOU CAN GET REWARDS ON 3 LEVELS",
+    "warning": "*Very important: Please note that your Affiliate does not end only with your direct referrals if your direct referrals start to work and referrals from your direct referrals will receive the next rewards."
+  },
+  "AboutUs": {
+    "weAreCoingarage": "We are Coingarage",
+    "text1": "Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established in <b>Prague</b>, which has a full license to hold and trade cryptocurrencies.",
+    "text2": "All activity is fully subject to <b>EU laws</b> and the supervision of regulators and authorities. Here you can buy crypto for fiat, hold it and trade it on one of the most modern platforms with an emphasis on completeness and simplicity",
+    "elements": {
+      "text1": "A key element of our platform is the comprehensiveness of services",
+      "text2": "In one place you can buy crypto for fiat currency through your debit card or by transfer from your account, you can then hold it here and trade it.",
+      "text3": "You can find spot trading here, but also Futures",
+      "text4": "You will be able to use our professional trading DCA, GRID, Futures Boots with artificial intelligence for trades",
+      "text5": "You can earn on the exchange by staking the most popular coins",
+      "text6": "Our exchange will also offer its own NFT platform, including a market place",
+      "text7": "You can also exchange coins on the exchange using the P2P principle",
+      "text8": "All these functions will be supplemented with educational programs and videos"
+    },
+    "financialWorld": {
+      "text1": "We want cryptocurrencies to become a common and respected part of the financial world in Europe.",
+      "text2": "We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and safe environment that is in line with EU law and regulations.",
+      "text3": "So that people know what they can expect from the crypto world and are aware of the benefits, but also the risks of this industry. So that they know that investing in crypto is not just a short-term speculation, but a long-term and meaningful investment.",
+      "text4": "Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term regular profit from the crypto world."
+    }
   }
 }

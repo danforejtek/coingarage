@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { useTimer } from "react-timer-hook"
-import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card"
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from "@/components/ui/dialog"
 import { useTranslations } from "next-intl"
 
@@ -26,19 +26,21 @@ export default function GetGara({ className }: { className?: string }) {
             <div className="relative inline-flex h-4 w-4 cursor-pointer select-none">
               <div className=" absolute -right-2 top-0">
                 <div className="hidden lg:flex">
-                  <HoverCard>
-                    <HoverCardTrigger className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-primary text-sm text-white">
-                      {"?"}
-                    </HoverCardTrigger>
-                    <HoverCardContent>
-                      <ul className="checklist checklist-sm">
-                        <li>{t("register.mark.option1")}</li>
-                        <li>{t("register.mark.option2")}</li>
-                        <li>{t("register.mark.option3")}</li>
-                        <li>{t("register.mark.option4")}</li>
-                      </ul>
-                    </HoverCardContent>
-                  </HoverCard>
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-primary text-sm text-white">
+                        {"?"}
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-[400px]">
+                        <ul className="checklist checklist-sm p-4">
+                          <li>{t("register.mark.option1")}</li>
+                          <li>{t("register.mark.option2")}</li>
+                          <li>{t("register.mark.option3")}</li>
+                          <li>{t("register.mark.option4")}</li>
+                        </ul>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 <div className="flex lg:hidden">
                   <Dialog>

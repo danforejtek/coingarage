@@ -46,7 +46,9 @@
     },
     "signUp": "Registrieren Sie sich",
     "becomeAShareholder": "Werde Teilhaber",
-    "howToSignUp": "Wie melde ich mich an?"
+    "howToSignUp": "Wie melde ich mich an?",
+    "scanQrCode": "Scannen Sie den QR-Code",
+    "toDownloadApp": "um Ihre App herunterzuladen"
   },
   "App": {
     "name": "Einfach überall, jederzeit",
@@ -157,5 +159,35 @@
     "phone": "+420 778 116 516",
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
+  },
+  "Affilate": {
+    "name": "Affiliate-Programm",
+    "claim": "Treten Sie Coingarage bei",
+    "text1": "Glauben Sie, dass Kryptowährungen und Blockchain-Technologie die Welt zum Besseren verändern können?",
+    "text2": "Wenn ja, dann treten Sie dem Coingarage Affiliate-Programm bei und verdienen Sie besondere Belohnungen. Stellen Sie Ihren Freunden Coingarage vor, eine voll lizenzierte Krypto-Börse im Herzen Europas.",
+    "rewards": "*Sehr wichtig: Bitte beachten Sie, dass Ihr Affiliate nicht nur mit Ihren direkten Empfehlungen endet. Wenn Ihre direkten Empfehlungen anfangen zu arbeiten und Empfehlungen von Ihren direkten Empfehlungen erhalten, werden Sie die nächsten Belohnungen erhalten."
+  },
+  "AboutUs": {
+    "weAreCoingarage": "Wir sind coingarage",
+    "name": "Über uns",
+    "text1": "Nicht auf entfernten Inseln in Steueroasen, sondern im Herzen Europas wurde in Prag die erste Kryptowährungsbörse gegründet, die über eine vollständige Lizenz zum Halten und Handeln von Kryptowährungen verfügt.",
+    "text2": "Die gesamte Tätigkeit unterliegt vollständig den EU-Gesetzen und der Aufsicht von Regulierungsbehörden und Ämtern. Hier können Sie Krypto für Fiat kaufen, halten und auf einer der modernsten Plattformen mit Schwerpunkt auf Vollständigkeit und Einfachheit handeln",
+    "elements": {
+      "text1": "Ein Schlüsselelement unserer Plattform ist die Einfachheit.",
+      "text2": "Hier finden Sie Spot-Trading, aber in Zukunft auch Futures",
+      "text3": "An der Börse können Sie durch Staking der beliebtesten Münzen verdienen",
+      "text4": "Es wird auch möglich sein, Münzen an der Börse nach dem P2P-Prinzip zu tauschen",
+      "text5": "An einem Ort können Sie Krypto für Fiat-Währung über Ihre Debitkarte oder durch Überweisung von Ihrem Konto kaufen, dann können Sie es hier halten und damit handeln.",
+      "text6": "Ab Januar 2024 können Sie unsere professionellen Handels-DCA, GRID, Futures Boots mit künstlicher Intelligenz für den Handel nutzen",
+      "text7": "Unsere Börse wird auch eine eigene NFT-Plattform anbieten, einschließlich eines Marktplatzes",
+      "text8": "All diese Funktionen werden durch Bildungsprogramme und Videos ergänzt"
+    },
+    "financialWorld": {
+      "name": "Wir möchten, dass Kryptowährungen zu einem alltäglichen und respektierten Teil der Finanzwelt in Europa werden.",
+      "text1": "Wir möchten zur Adoption von Kryptowährungen in Europa beitragen und eine völlig transparente und sichere Umgebung bieten, die im Einklang mit dem EU-Recht und den Vorschriften steht.",
+      "text2": "Damit die Menschen wissen, was sie von der Kryptowelt erwarten können und sich der Vorteile, aber auch der Risiken dieser Branche bewusst sind. Damit sie wissen, dass das Investieren in Krypto nicht nur eine kurzfristige Spekulation, sondern eine langfristige und sinnvolle Investition ist",
+      "text3": "Unsere Vision basiert auf vier Grundwerten: Transparenz, Vollständigkeit, Sicherheit und Einfachheit. Wenn wir diese Werte in unserer Vision verwirklichen, dann sind wir auf dem Weg, den Menschen langfristigen regelmäßigen Gewinn aus der Kryptowelt zu bringen."
+    },
+    "getStarted": "Beginnen"
   }
 }
