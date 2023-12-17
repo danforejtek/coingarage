@@ -15,7 +15,7 @@ export function GarageCoinPresale() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-primary">
-            <span className="lg:hidden xl:inline-flex">🔥 GARAGECoin</span>Pre-sale
+            <span className="text-sm lg:hidden xl:inline-flex">🔥 GARAGECoin</span>Pre-sale
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink asChild>

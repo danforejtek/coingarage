@@ -235,7 +235,7 @@ export function Menu() {
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
-                <NavigationMenuTrigger className={cn("text-md bg-transparent text-secondary dark:text-white")}>
+                <NavigationMenuTrigger className={cn("bg-transparent px-2 text-sm text-secondary dark:text-white")}>
                   {t(`Menu.${key}`)}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -281,7 +281,7 @@ export function Menu() {
               <NavigationMenuItem key={index}>
                 <Link href={href} legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), "text-md text-secondary dark:text-white")}
+                    className={cn(navigationMenuTriggerStyle(), "px-2 text-sm text-secondary dark:text-white")}
                   >
                     {t(`Menu.${key}`)}
                   </NavigationMenuLink>

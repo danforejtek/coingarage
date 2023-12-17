@@ -24,7 +24,7 @@ import { ModeToggle } from "@/components/layout/ModeToggle"
 
 const MobileNav = ({ scrolled = false }) => {
   const [isOpen, setOpen] = useState(false)
-  const toggleOnpen = () => setOpen(!isOpen)
+  const toggleOpen = () => setOpen(!isOpen)
   const pathname = usePathname()
   useEffect(() => {
     setOpen(false)
@@ -32,9 +32,9 @@ const MobileNav = ({ scrolled = false }) => {
   // useLockBody()
 
   return (
-    <Dialog open={isOpen} onOpenChange={toggleOnpen}>
+    <Dialog open={isOpen} onOpenChange={toggleOpen}>
       {/* <DialogTrigger asChild> */}
-      <Button variant="ghost" className="text-md h-6 w-10 p-0" onClick={toggleOnpen}>
+      <Button variant="ghost" className="text-md h-6 w-10 p-0" onClick={toggleOpen}>
         <Icons.menu className="h-6 w-6 dark:fill-white" />
       </Button>
       {/* </DialogTrigger> */}
@@ -101,12 +101,16 @@ const MobileNav = ({ scrolled = false }) => {
           <ul className="flex flex-row items-center justify-center gap-6">
             <li>
               <Button variant="outline" className="text-md w-full" asChild>
-                <a href="https://trade.coingarage.io/login">Login</a>
+                <a href="https://trade.coingarage.io/login" rel="noopener noreferrer">
+                  Login
+                </a>
               </Button>
             </li>
             <li>
               <Button className="text-md w-full" asChild>
-                <a href="https://trade.coingarage.io/signup">Sign up</a>
+                <a href="https://trade.coingarage.io/signup" rel="noopener noreferrer">
+                  Sign up
+                </a>
               </Button>
             </li>
           </ul>

@@ -15,13 +15,15 @@ import CryptoStats from "@/components/CryptoStats"
 import GeniusTrader from "@/components/GeniusTrader"
 import { Youtube } from "lucide-react"
 import { GetAppHp } from "@/components/promo/GetAppHp"
+import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
 
 export default function Home() {
   const t = useTranslations("CryptoLandingPage")
   return (
     <main>
-      <section className="container mx-auto mt-12 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-36 xl:justify-between xl:gap-6">
+      <section className="container mx-auto mt-8 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-20 xl:justify-between xl:gap-6">
         <div>
+          <ClaimGaraModal />
           <div className="w-full max-w-[500px]">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
               <div>{t("nameLine1")}</div>

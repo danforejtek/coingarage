@@ -37,18 +37,18 @@ export default function Header() {
               <Image src="/logo.svg" width={206} height={31} alt="logo" />
             </div>
           </Link>
-          <div className="hidden flex-row gap-2 lg:flex">
+          <div className="hidden max-w-[746px] flex-row gap-2 lg:flex">
             <Menu />
             <GarageCoinPresale />
           </div>
         </nav>
         <div className="flex h-full items-center justify-end">
           <div className="hidden lg:block">
-            <div className="flex gap-4">
-              <Button variant="ghost" className={cn("text-md")} asChild>
+            <div className="flex gap-2">
+              <Button variant="ghost" className={cn("text-sm")} asChild>
                 <a href="https://trade.coingarage.io/login">{t("login")}</a>
               </Button>
-              <Button className="text-md text-center leading-none" asChild>
+              <Button className="mr-2 text-center text-sm leading-none" asChild>
                 <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
               </Button>
               <ModeToggle />
