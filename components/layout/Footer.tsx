@@ -3,6 +3,7 @@ import Image from "next/image"
 import ContactUs from "@/components/form/ContactUs"
 import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from "lucide-react"
 import { useTranslations } from "next-intl"
+import CoinListing from "@/components/form/CoinListing"
 
 export default function Footer() {
   const t = useTranslations("Footer")
@@ -121,7 +122,13 @@ export default function Footer() {
             </div>
             <div>
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
-                <li>{t("coinListing")}</li>
+                <li>
+                  <CoinListing>
+                    <span className="hover:text-primary" role="button">
+                      {t("coinListing")}
+                    </span>
+                  </CoinListing>
+                </li>
                 <li>
                   <a className="hover:text-primary" href="https://trade.coingarage.io">
                     {t("markets")}
@@ -152,14 +159,14 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/legal/terms">
+                  <Link href="/legal/terms-of-service" className="hover:text-primary">
                     {t("legal.termsOfService")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/legal/privacy-policy">
+                  <Link href="/legal/privacy-policy" className="hover:text-primary">
                     {t("legal.privacyPolicy")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link href="/legal/cookie-policy" className="hover:text-primary">
