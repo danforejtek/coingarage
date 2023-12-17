@@ -48,7 +48,7 @@ export default async function CryptoMarketTable() {
                       <div className="flex flex-row items-center gap-8">
                         <Image
                           // src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
-                          src={`/icons/coins/${item.symbol.toUpperCase()}.png`}
+                          src={`/icons/coins/${item.symbol.toLowerCase()}.png`}
                           alt={item.symbol}
                           width={40}
                           height={40}
