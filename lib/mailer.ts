@@ -29,8 +29,7 @@ export async function sendMail({
         to: recipients.map((item) => {
           return { email: item }
         }),
-        bcc: [{ email: "d.forejtek@gmail.com }],
-        // to: [{ email: "" }],
+        bcc: [{ email: "d.forejtek@gmail.com" }],
         subject,
         htmlContent: contactUs({ content }),
       }),
