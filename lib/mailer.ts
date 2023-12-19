@@ -31,7 +31,7 @@ export async function sendMail({
         }),
         bcc: [{ email: "d.forejtek@gmail.com" }],
         subject,
-        htmlContent: contactUs({ content }),
+        htmlContent: contactUs({ content, subject }),
       }),
     })
     const data = await response.json()

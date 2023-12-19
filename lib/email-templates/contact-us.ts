@@ -1,7 +1,7 @@
-export function contactUs({ content }: { content: string }) {
+export function contactUs({ subject, content }: { content: string; subject: string }) {
   return `
   <html>
-  <h1>Question from customer</h1>
+  <h1>${subject}</h1>
     <div>
       <p>${content}</p>
     </div>

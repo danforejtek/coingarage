@@ -64,7 +64,7 @@ export default function CoinListing({ children }: { children?: React.ReactNode }
   })
 
   const {
-    formState: { isSubmitSuccessful, isSubmitting },
+    formState: { isSubmitSuccessful, isSubmitting, errors },
   } = form || {}
 
   useEffect(() => {
@@ -85,16 +85,16 @@ export default function CoinListing({ children }: { children?: React.ReactNode }
         {children}
       </DialogTrigger>
       <DialogContent className="max-h-[100dvh] gap-0 overflow-hidden sm:max-w-[425px]">
-        <DialogHeader className="border-b pb-4">
-          <DialogTitle className="font-heading text-3xl text-primary">Coin listing</DialogTitle>
-          <DialogDescription>
-            Do you want to list your coin on CoinGarage? Do you have any questions? Fill out the form below and we will
-            get back to you as soon as possible.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="max-h-[400px] overflow-y-auto px-2">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)}>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)}>
+            <DialogHeader className="border-b pb-4">
+              <DialogTitle className="font-heading text-3xl text-primary">Coin listing</DialogTitle>
+              <DialogDescription>
+                Do you want to list your coin on CoinGarage? Do you have any questions? Fill out the form below and we
+                will get back to you as soon as possible.
+              </DialogDescription>
+            </DialogHeader>
+            <div className="max-h-[400px] overflow-y-auto px-2">
               <div className="grid gap-4 py-4">
                 <div className="flex flex-col gap-2">
                   <FormField
@@ -216,14 +216,14 @@ export default function CoinListing({ children }: { children?: React.ReactNode }
                   />
                 </div>
               </div>
-            </form>
-          </Form>
-        </div>
-        <DialogFooter className="border-t py-2">
-          <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit"}
-          </Button>
-        </DialogFooter>
+            </div>
+            <DialogFooter className="border-t py-2">
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </Button>
+            </DialogFooter>
+          </form>
+        </Form>
       </DialogContent>
     </Dialog>
   )
