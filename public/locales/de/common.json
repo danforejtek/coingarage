@@ -31,7 +31,7 @@
   },
   "CryptoLandingPage": {
     "nameLine1": "Krypto",
-    "nameLine2": "Einfach & Sicher",
+    "nameLine2": "Einfache & Sichere",
     "nameLine3": "Börse",
     "mainText": "Entdecken Sie ein höheres Maß an finanzieller Privatsphäre und Freiheit, als es traditionelle Bankensysteme bieten, in der einfachen und sicheren Umgebung unserer Börse. Wir sind eine Börse mit Sitz im Herzen der Europäischen Union. Die Ersten, die Regulierungen einführen, die dazu führen werden, dass Kryptowährungen hier explodieren!",
     "register": {
@@ -160,7 +160,7 @@
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
   },
-  "Affilate": {
+  "Affiliate": {
     "name": "Affiliate-Programm",
     "claim": "Treten Sie Coingarage bei",
     "text1": "Glauben Sie, dass Kryptowährungen und Blockchain-Technologie die Welt zum Besseren verändern können?",
