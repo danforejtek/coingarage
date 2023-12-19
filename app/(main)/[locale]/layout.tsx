@@ -8,6 +8,7 @@ import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
+import GoogleAnalytics from "@/components/GoogleAnalytics"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
+        <GoogleAnalytics />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Header />
