@@ -116,7 +116,7 @@ export default function AboutUs() {
             {t("financialWorld.text3")}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            {t("financialWorld.text4")}
+            {t("financialWorld.text3")}
           </p>
         </div>
       </section>
