@@ -106,14 +106,14 @@ export default function AboutUs() {
 
       <section className="container mx-auto mb-36 mt-24 max-w-[800px]">
         <Heading tag="h2" className="mb-16">
-          {t("financialWorld.text1")}
+          {t("financialWorld.name")}
         </Heading>
         <div className="lg:pl-10">
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            {t("financialWorld.text2")}
+            {t("financialWorld.text1")}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            {t("financialWorld.text3")}
+            {t("financialWorld.text2")}
           </p>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             {t("financialWorld.text3")}
