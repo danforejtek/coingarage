@@ -10,10 +10,28 @@ type Article = {
 const baseUrl = process.env.NODE_ENV !== "production" ? "http://localhost:4200" : "https://coingarage.io"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
-  const data = JSON.parse(jsonData)
+  const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
+  const jsonData_en = await fs.readFile(path.join(process.cwd(), "static", `articles_${"en"}.json`), "utf-8")
+  const jsonData_de = await fs.readFile(path.join(process.cwd(), "static", `articles_${"de"}.json`), "utf-8")
+  const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"er"}.json`), "utf-8")
+  const data_cs = JSON.parse(jsonData_cs)
+  const data_en = JSON.parse(jsonData_en)
+  const data_de = JSON.parse(jsonData_de)
+  const data_es = JSON.parse(jsonData_es)
 
-  const posts = data.map((post: Article) => ({
+  const posts_cs = data_cs.map((post: Article) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date).toISOString(),
+  }))
+  const posts_en = data_en.map((post: Article) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date).toISOString(),
+  }))
+  const posts_de = data_de.map((post: Article) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date).toISOString(),
+  }))
+  const posts_es = data_es.map((post: Article) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
   }))
@@ -67,6 +85,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-    ...posts,
+    ...posts_cs,
+    ...posts_en,
+    ...posts_de,
+    ...posts_es,
   ]
 }
