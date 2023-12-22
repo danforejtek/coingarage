@@ -5,6 +5,7 @@ import Renderer from "@/lib/renderer"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
+import { unstable_setRequestLocale } from "next-intl/server"
 
 type Article = {
   heading: string
@@ -57,7 +58,8 @@ const getData = async ({ slug }: { slug: string }) => {
   return data
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: { slug: string; locale: string } }) {
+  unstable_setRequestLocale(params?.locale)
   const slug = params.slug
   const data: Article = await getData({ slug })
   const { heading, perex, image, date, author, content } = data

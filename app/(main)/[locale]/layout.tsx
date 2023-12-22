@@ -9,6 +9,13 @@ import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
+import { unstable_setRequestLocale } from "next-intl/server"
+
+import { locales } from "@/config"
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
+}
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,6 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
   params: { locale: string }
 }) {
+  unstable_setRequestLocale(locale)
   const messages = useMessages()
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
