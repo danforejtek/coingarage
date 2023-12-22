@@ -20,19 +20,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const data_es = JSON.parse(jsonData_es)
 
   const posts_cs = data_cs.map((post: Article) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/cs/blog/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
   }))
   const posts_en = data_en.map((post: Article) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/en/blog/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
   }))
   const posts_de = data_de.map((post: Article) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/de/blog/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
   }))
   const posts_es = data_es.map((post: Article) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/es/blog/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
   }))
 
