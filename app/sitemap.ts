@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
   const jsonData_en = await fs.readFile(path.join(process.cwd(), "static", `articles_${"en"}.json`), "utf-8")
   const jsonData_de = await fs.readFile(path.join(process.cwd(), "static", `articles_${"de"}.json`), "utf-8")
-  const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"er"}.json`), "utf-8")
+  const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"es"}.json`), "utf-8")
   const data_cs = JSON.parse(jsonData_cs)
   const data_en = JSON.parse(jsonData_en)
   const data_de = JSON.parse(jsonData_de)
