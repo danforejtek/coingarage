@@ -6,7 +6,6 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 import { unstable_setRequestLocale } from "next-intl/server"
-import { locales } from "@/config"
 
 type Article = {
   heading: string
@@ -48,11 +47,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  // return locales.map((locale) => ({ locale }))
   const data = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
   const slugs = JSON.parse(data).map((item: { slug: string }) => item.slug)
-  const slugWithLocale = locales.map((locale) => slugs.map((slug) => `${locale}/${slug}`)).flat()
-  return slugWithLocale
+  return slugs
 }
 
 const getData = async ({ slug }: { slug: string }) => {
@@ -62,8 +59,9 @@ const getData = async ({ slug }: { slug: string }) => {
 }
 
 export default async function Page({ params }: { params: { slug: string; locale: string } }) {
-  unstable_setRequestLocale(params?.locale)
-  const slug = params.slug.split("/")[0]
+  const slug = params.slug
+  const locale = params.locale
+  unstable_setRequestLocale(locale)
   const data: Article = await getData({ slug })
   const { heading, perex, image, date, author, content } = data
 
