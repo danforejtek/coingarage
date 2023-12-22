@@ -13,16 +13,16 @@ type Article = {
   content: any
 }
 
-const getData = async ({ slug }: { slug: string }) => {
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+const getData = async ({ slug, locale }: { slug: string; locale: string }) => {
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const data = JSON.parse(jsonData)
     .filter((item: Article) => item.slug !== slug)
     .slice(-3)
   return data
 }
 
-export default async function LatestBlogPosts({ slug }: { slug: string }) {
-  const data: Article[] = await getData({ slug })
+export default async function LatestBlogPosts({ slug, locale }: { slug: string; locale: string }) {
+  const data: Article[] = await getData({ slug, locale })
 
   return (
     <div className="flex flex-col gap-6">

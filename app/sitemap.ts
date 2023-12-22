@@ -10,7 +10,7 @@ type Article = {
 const baseUrl = process.env.NODE_ENV !== "production" ? "http://localhost:4200" : "https://coingarage.io"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const data = JSON.parse(jsonData)
 
   const posts = data.map((post: Article) => ({

@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "Blog | Coingarage",
 }
 
-const getData = async () => {
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+const getData = async ({ locale }: { locale: string }) => {
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const data = JSON.parse(jsonData).map((item: Article) => {
     delete item.content
     return { ...item }
@@ -27,8 +27,9 @@ const getData = async () => {
   return data
 }
 
-export default async function Page() {
-  const data: Article[] = await getData()
+export default async function Page({ params }: { params: { locale: string } }) {
+  const locale = params.locale
+  const data: Article[] = await getData({ locale })
 
   return (
     <main>
@@ -48,7 +49,7 @@ export default async function Page() {
                   <Blog.Perex>{perex}</Blog.Perex>
                   <Blog.Footer>
                     <Blog.Date>{date}</Blog.Date>
-                    <Blog.Link href={`/blog/${slug}`}>Read more...</Blog.Link>
+                    <Blog.Link href={`/${locale}/blog/${slug}`}>Read more...</Blog.Link>
                   </Blog.Footer>
                 </Blog.Content>
               </Blog.Item>

@@ -25,14 +25,15 @@ type Content = {
 type Articles = Article[]
 
 type Props = {
-  params: { slug: string }
+  params: { slug: string; locale: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
   const slug = params.slug
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+  const locale = params.locale
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const data = JSON.parse(jsonData).find((item: Article) => item.slug === slug)
   const { heading, perex, image, author } = data
 
@@ -46,14 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export async function generateStaticParams() {
-  const data = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+export async function generateStaticParams({ params }: { params: { slug: string; locale: string } }) {
+  const locale = params.locale
+  const data = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const slugs = JSON.parse(data).map((item: { slug: string }) => item.slug)
   return slugs
 }
 
-const getData = async ({ slug }: { slug: string }) => {
-  const jsonData = await fs.readFile(path.join(process.cwd(), "static", "articles.json"), "utf-8")
+const getData = async ({ slug, locale }: { slug: string; locale: string }) => {
+  const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
   const data = JSON.parse(jsonData).find((item: Article) => item.slug === slug)
   return data
 }
@@ -62,7 +64,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
   const slug = params.slug
   const locale = params.locale
   unstable_setRequestLocale(locale)
-  const data: Article = await getData({ slug })
+  const data: Article = await getData({ slug, locale })
   const { heading, perex, image, date, author, content } = data
 
   return (
