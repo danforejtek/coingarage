@@ -21,6 +21,7 @@ import { navItems } from "./Menu"
 import { useEffect, useState } from "react"
 import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
 import { ModeToggle } from "@/components/layout/ModeToggle"
+import LocaleSwitcher from "@/components/layout/LocaleSwitch"
 
 const MobileNav = ({ scrolled = false }) => {
   const [isOpen, setOpen] = useState(false)
@@ -97,7 +98,10 @@ const MobileNav = ({ scrolled = false }) => {
           </ul>
         </div>
         <DialogFooter className="flex-row items-center justify-between">
-          <ModeToggle />
+          <div className="flex flex-row gap-2">
+            <ModeToggle />
+            <LocaleSwitcher />
+          </div>
           <ul className="flex flex-row items-center justify-center gap-6">
             <li>
               <Button variant="outline" className="text-md w-full" asChild>

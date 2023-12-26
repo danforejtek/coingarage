@@ -2,7 +2,7 @@ import "@/styles/globals.scss"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Coingarage | Crypto Simply & Safely",
+  title: "Crypto Simply & Safely | Coingarage",
   description:
     "Discover a higher level of financial privacy and freedom than traditional banking systems offer In the simple and secure environment of our exchange. We are an exchange based in the heart of European union. The first to introduce regulation That will make crypto explode here!",
   keywords: "crypto, exchange, bitcoin, ethereum, crypto exchange, crypto trading, crypto wallet, crypto",
