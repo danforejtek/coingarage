@@ -9,6 +9,7 @@ import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
+import UmamiAnalytics from "@/components/UmamiAnalytics"
 import { unstable_setRequestLocale } from "next-intl/server"
 
 import { locales } from "@/config"
@@ -41,6 +42,8 @@ export const metadata: Metadata = {
   manifest: `/site.webmanifest`,
 }
 
+const IS_PRODUCTION = process.env.NODE_ENV === "production"
+
 export default function RootLayout({
   children,
   params: { locale },
@@ -54,6 +57,7 @@ export default function RootLayout({
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
         <GoogleAnalytics />
+        <UmamiAnalytics isProd={IS_PRODUCTION} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Header />
