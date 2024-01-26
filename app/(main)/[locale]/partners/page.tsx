@@ -13,12 +13,11 @@ export default function Page() {
         <article className="grid grid-cols-1 grid-rows-4 gap-x-12 gap-y-12 lg:grid-cols-2">
           <div>
             <div className="align-end flex h-36">
-              <Image src="/images/partners/blockchain_legal.svg" alt="" width={280} height={73} />
+              
             </div>
-            <span className="text-primary">Blockchain Legal</span> - Law firm providing legal services in the field of
-            digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). This
-            office ensures all compliance (compliance with legal standards) for us. In cooperation with this office, we
-            have already started steps towards obtaining a MiCA license.
+            <span className="text-primary">Blockchain Legal</span> Lawyers providing legal services in the field of digital technologies, 
+            blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance 
+            agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license.
           </div>
           <div>
             <div className="align-end flex h-36">
