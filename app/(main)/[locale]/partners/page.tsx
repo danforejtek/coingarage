@@ -13,7 +13,7 @@ export default function Page() {
         <article className="grid grid-cols-1 grid-rows-4 gap-x-12 gap-y-12 lg:grid-cols-2">
           <div>
             <div className="align-end flex h-36">
-               <div className="h-[132px] w-[132px] py-4">
+               <div className="h-[132px] w-[132px] mb-4">
                   <Image src="/images/partners/law.png" alt="" width={144} height={144} />
                </div>
             </div>
