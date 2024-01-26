@@ -13,9 +13,9 @@ export default function Page() {
         <article className="grid grid-cols-1 grid-rows-4 gap-x-12 gap-y-12 lg:grid-cols-2">
           <div>
             <div className="align-end flex h-36">
-              
+              <Image src="/images/partners/law.png" alt="" width={300} height={300} />
             </div>
-            <span className="text-primary">Blockchain Legal</span> Lawyers providing legal services in the field of digital technologies, 
+            Lawyers providing legal services in the field of digital technologies, 
             blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance 
             agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license.
           </div>
