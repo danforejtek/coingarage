@@ -59,11 +59,9 @@ export function Safety() {
               <div>
                 <Image src={`/logo/coingarage_icon_gradient.png`} alt="Logo" width={130} height={74} />
               </div>
-              <Link href="/trading-bot">
-                <Button variant="default" size="lg" className="text-md font-bold">
-                  Get Started
-                </Button>
-              </Link>
+              <Button variant="default" size="lg" className="text-md font-bold" asChild>
+                <a href="https://trade.coingarage.io/signup">Get Started</a>
+              </Button>
             </div>
             <p className="mt-8 text-sm text-neutral-600 dark:text-neutral-300">{t("heading")}</p>
           </div>
