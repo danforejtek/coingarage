@@ -191,5 +191,18 @@
       "text4": ""
     },
     "getStarted": "Začít"
+  },
+  "security": {
+    "security": "Zabezpečení Burzy",
+    "securityText": "Naše platforma využívá několik nejmodernějších technologií, které zajišťují robustní a efektivní systém. Pro přenos i ukládání dat používáme nejnovější verze šifrování. Používáme také pokročilé ochranné funkce založené na umělé inteligenci, které zajišťují bezpečné prostředí pro naše uživatele.",
+    "protection": "Ochrana Zákazníků",
+    "protectionText": "Opatření na ochranu zákazníků společnosti Coingarage jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie na ochranu vašich osobních údajů. Buďte si jisti, že vaše soukromí je naší nejvyšší prioritou.",
+    "fundsSecurity": "Ochrana Finančních Prostředků",
+    "fundsSecurityText": "Naše Ochrana Finanční Prostředků je vytvořena veterány blockchainového a webového průmyslu. Vytvořili jsme cloudovou platformu nové generace, která prochází hodnocením shody s bezpečnostními předpisy na úrovni bank a vysoce žádanými standardy kvality.",
+    "monitoring": "Monitorování v Reálném Čase",
+    "monitoringText": "Naše monitorovací systémy v reálném čase aktivně sledují a analyzují aktivity na naší platformě, což nám umožňuje okamžitě odhalit a reagovat na jakékoli podezřelé chování. Tento proaktivní přístup zajišťuje, že vaše aktiva a data jsou pod neustálou ochranou.",
+    "secureByDesign": "Zabezpečení Podle Designu",
+    "secureByDesignText": "Naše opatření na ochranu soukromí jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie pro ochranu vašich osobních údajů. Můžete si být jisti, že vaše soukromí je naší nejvyšší prioritou.",
+    "heading": "Bezpečný Přístav: Kde je standart soukromí, design a monitorování v reálném čase pro váš klid."
   }
 }

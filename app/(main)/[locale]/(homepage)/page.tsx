@@ -16,6 +16,7 @@ import GeniusTrader from "@/components/GeniusTrader"
 import { GetAppHp } from "@/components/promo/GetAppHp"
 import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
 import { RegistrationHelp } from "@/components/promo/RegistrationHelp"
+import { Safety } from "@/components/promo/Safety"
 
 export default function Home() {
   const t = useTranslations("CryptoLandingPage")
@@ -64,10 +65,8 @@ export default function Home() {
         </div>
       </section>
       <Advantages />
-      <section className="container mx-auto mt-28">
-        <GeniusTrader />
-      </section>
-      <section className="relative mt-28">
+      <Safety />
+      <section className="relative mt-28 md:mt-44">
         <div className="absolute left-0 top-[180px] -z-10 h-[822px] w-[1000px] max-w-[96vw] xl:-top-[68px]">
           <Image src="/images/fin.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
         </div>
@@ -87,6 +86,9 @@ export default function Home() {
             <GetAppHp />
           </div>
         </div>
+      </section>
+      <section className="container mx-auto mt-28">
+        <GeniusTrader />
       </section>
       <section id="faq" className="container mx-auto my-32 xl:mt-36">
         <Heading tag="h2" className="mb-12">

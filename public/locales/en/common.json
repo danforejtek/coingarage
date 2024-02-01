@@ -189,5 +189,18 @@
       "text3": "Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term regular profit from the crypto world.",
       "text4": ""
     }
+  },
+  "security": {
+    "security": "Exchange Security",
+    "securityText": "Our platform uses several state-of-the-art technologies to ensure a robust and efficient system. We use the latest versions of data encryption for both transmission and storage. We use advanced protection features based on artificial intelligence as well, ensuring a safe and secure environment for our users.",
+    "protection": "Customer Protection",
+    "protectionText": "Coingarage's customer protection measures go beyond industry norms, implementing robust policies and technologies to safeguard your personal information. Rest assured, your privacy is our top priority.",
+    "fundsSecurity": "Security of Funds",
+    "fundsSecurityText": "Our Fund Security is built by veterans of the blockchain & web industry. We created a next-generation cloud platform that passes bank-grade security compliance assessments and highly sought-after quality standards.",
+    "monitoring": "Real-Time Monitoring",
+    "monitoringText": "Our real-time monitoring systems actively track and analyze activities on our platform, allowing us to promptly detect and respond to any suspicious behavior. This proactive approach ensures that your assets and data are under constant protection.",
+    "secureByDesign": "Secure by Design",
+    "secureByDesignText": "Our privacy protection measures go beyond industry norms, implementing robust policies and technologies to safeguard your personal information. Rest assured, your privacy is our top priority.",
+    "heading": "A Secure Haven: Where Privacy, Design, and Real-Time Monitoring Converge for Your Peace of Mind"
   }
 }

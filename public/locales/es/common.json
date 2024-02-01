@@ -191,5 +191,18 @@
       "text4": ""
     },
     "getStarted": "Empezar"
+  },
+  "security": {
+    "security": "Seguridad del Intercambio",
+    "securityText": "Nuestra plataforma utiliza varias tecnologías de última generación para garantizar un sistema sólido y eficiente. Utilizamos las últimas versiones de cifrado de datos tanto para la transmisión como para el almacenamiento. También utilizamos funciones avanzadas de protección basadas en inteligencia artificial, asegurando un entorno seguro para nuestros usuarios.",
+    "protection": "Protección al Cliente",
+    "protectionText": "Las medidas de protección al cliente de Coingarage van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
+    "fundsSecurity": "Seguridad de Fondos",
+    "fundsSecurityText": "Nuestra Seguridad de Fondos está creada por veteranos de la industria de blockchain y web. Creamos una plataforma en la nube de próxima generación que cumple con evaluaciones de seguridad de calidad de grado bancario.",
+    "monitoring": "Monitoreo en Tiempo Real",
+    "monitoringText": "Nuestros sistemas de monitoreo en tiempo real rastrean y analizan activamente las actividades en nuestra plataforma, lo que nos permite detectar y responder rápidamente a cualquier comportamiento sospechoso. Este enfoque proactivo garantiza la constante protección de sus activos y datos.",
+    "secureByDesign": "Seguridad por Diseño",
+    "secureByDesignText": "Nuestras medidas de protección de la privacidad van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
+    "heading": "Un Refugio Seguro: Donde la Privacidad, el Diseño y el Monitoreo en Tiempo Real Convergen para su Tranquilidad"
   }
 }

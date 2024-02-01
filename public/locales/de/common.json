@@ -191,5 +191,18 @@
       "text4": ""
     },
     "getStarted": "Beginnen"
+  },
+  "security": {
+    "security": "Sicherheit des Austauschs",
+    "securityText": "Unsere Plattform verwendet mehrere modernste Technologien, um ein robustes und effizientes System zu gewährleisten. Wir verwenden die neuesten Versionen der Datenverschlüsselung sowohl für die Übertragung als auch für die Speicherung. Wir nutzen auch fortschrittliche Schutzfunktionen auf Basis künstlicher Intelligenz, um eine sichere und geschützte Umgebung für unsere Benutzer zu gewährleisten.",
+    "protection": "Kundenschutz",
+    "protectionText": "Die Kundenschutzmaßnahmen von Coingarage gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
+    "fundsSecurity": "Sicherheit der Mittel",
+    "fundsSecurityText": "Unsere Fondsicherheit wird von Veteranen der Blockchain- und Webindustrie geschaffen. Wir haben eine Cloud-Plattform der nächsten Generation geschaffen, die Sicherheitsprüfungen auf Bankniveau besteht und sehr begehrten Qualitätsstandards entspricht.",
+    "monitoring": "Echtzeitüberwachung",
+    "monitoringText": "Unsere Echtzeitüberwachungssysteme verfolgen und analysieren aktiv Aktivitäten auf unserer Plattform. Dies ermöglicht es uns, verdächtiges Verhalten schnell zu erkennen und darauf zu reagieren. Dieser proaktive Ansatz stellt sicher, dass Ihre Vermögenswerte und Daten ständig geschützt sind.",
+    "secureByDesign": "Sicherheit durch Design",
+    "secureByDesignText": "Unsere Maßnahmen zum Schutz der Privatsphäre gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
+    "heading": "Ein sicherer Hafen: Wo Datenschutz, Design und Echtzeitüberwachung für Ihre Seelenruhe zusammenkommen"
   }
 }
