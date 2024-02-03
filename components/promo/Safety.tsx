@@ -55,7 +55,7 @@ export function Safety() {
             <p className="text-sm text-neutral-600 dark:text-neutral-300">{t("secureByDesignText")}</p>
           </div>
           <div className="flex flex-col items-center gap-4 rounded-xl px-8 py-10">
-            <div className="flex w-full flex-row items-center justify-between gap-4">
+            <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
               <div>
                 <Image src={`/logo/coingarage_icon_gradient.png`} alt="Logo" width={130} height={74} />
               </div>
