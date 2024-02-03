@@ -90,7 +90,7 @@ const investmentData = () => {
       amountInBtc: investment / item.value,
       investmentSum: investmentSum,
       sumInBtc: sum,
-      sumInUsd: sum * item.value,
+      investmentValueUsd: sum * item.value,
     }
   })
 }
@@ -118,7 +118,7 @@ export default function Chart() {
           <Legend />
           <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
           {/* <Line type="monotone" dataKey="earningsInPercent" stroke="#a89432" /> */}
-          <Line type="monotone" dataKey="sumInUsd" stroke="#c930ba" />
+          <Line type="monotone" dataKey="investmentValueUsd" stroke="#c930ba" />
           <Line type="monotone" dataKey="investmentSum" stroke="#329da8" />
         </LineChart>
       </ResponsiveContainer>
