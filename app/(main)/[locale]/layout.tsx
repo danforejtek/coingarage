@@ -1,16 +1,12 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { NextIntlClientProvider, useMessages } from "next-intl"
-import Footer from "@/components/layout/Footer"
-import Header from "@/components/layout/Header"
+import { unstable_setRequestLocale } from "next-intl/server"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 import UmamiAnalytics from "@/components/UmamiAnalytics"
-import { unstable_setRequestLocale } from "next-intl/server"
 
 import { locales } from "@/config"
 
@@ -30,18 +26,6 @@ const sofia_sans = Sofia_Sans({
   variable: "--font-sofia-sans",
 })
 
-export const metadata: Metadata = {
-  title: "Coingarage | Crypto, Banking & Trading, Exchange",
-  description:
-    "Coingarage is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: `/site.webmanifest`,
-}
-
 const IS_PRODUCTION = process.env.NODE_ENV === "production"
 
 export default function RootLayout({
@@ -60,15 +44,7 @@ export default function RootLayout({
         <UmamiAnalytics isProd={IS_PRODUCTION} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-            <Header />
-            <div className="flex min-h-screen flex-col justify-between">
-              <div className="flex-1">
-                {children}
-                <SpeedInsights />
-                <Analytics />
-              </div>
-              <Footer />
-            </div>
+            {children}
             <Toaster />
           </ThemeProvider>
         </NextIntlClientProvider>

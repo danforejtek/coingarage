@@ -14,6 +14,11 @@ const nextConfig = {
         hostname: "trade.coingarage.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "via.assets.so",
+        port: "",
+      },
     ],
   },
   typescript: {
