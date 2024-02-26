@@ -67,7 +67,7 @@ export default function Home() {
           alt=""
           width={380}
           height={380}
-          className="absolute -right-[5%] top-[18%] -z-10 -translate-y-1/2 transform select-none"
+          className="absolute -right-[0%] top-[18%] -z-10 -translate-y-1/2 transform select-none"
         />
       </section>
       <section className="relative my-32 xl:mt-36">
@@ -76,14 +76,14 @@ export default function Home() {
           width={400}
           height={400}
           alt="phone"
-          className="absolute -left-16 top-0 rotate-[20deg] select-none"
+          className="absolute -left-16 top-0 hidden rotate-[20deg] select-none lg:block"
         />
         <div className="container mx-auto grid max-w-[800px] ">
-          <p className="pl-16 text-3xl font-bold">
+          <p className="text-3xl font-bold">
             Sit back and watch your cryptocurrency investments grow, day and night, 24/7, wherever you are
           </p>
         </div>
-        <div className="absolute right-0 top-40 grid h-10 w-[504px] grid-cols-2 items-center gap-2 rounded-l-xl bg-violet px-8 text-left font-bold text-white">
+        <div className="absolute right-0 top-40 hidden h-10 w-[504px] grid-cols-2 items-center gap-2 rounded-l-xl bg-violet px-8 text-left font-bold text-white lg:grid">
           Try for free for 7 days
           <span className="inline-flex w-full items-center gap-2 overflow-hidden">
             <div className="h-[6px] w-[6px] rounded-full bg-white"></div>
@@ -105,14 +105,14 @@ export default function Home() {
         </div>
       </section>
       <section className="container mx-auto my-32 xl:mt-36">
-        <div className="relative mx-auto h-[300px] w-[600px]">
-          <div className="absolute -left-6 top-[44%] flex flex-row items-center text-2xl font-bold">
+        <div className="relative mx-auto h-[180px] w-full lg:h-[300px] lg:w-[600px]">
+          <div className="absolute left-0 top-[44%] flex flex-row items-center font-bold lg:-left-6 lg:text-2xl">
             <span className="mr-2 text-3xl font-bold text-violet">1</span> Sign Up
           </div>
-          <div className="absolute -top-6 left-[44%] flex flex-col items-center text-2xl font-bold">
+          <div className="absolute -top-6 left-[44%] flex flex-col items-center font-bold lg:text-2xl">
             <span className="mr-2 text-3xl font-bold text-violet">2</span> Connect
           </div>
-          <div className="absolute -right-10 top-[44%] flex flex-row items-center text-2xl font-bold">
+          <div className="absolute right-0 top-[44%] flex flex-row items-center font-bold lg:-right-10 lg:text-2xl">
             <span className="mr-2 text-3xl font-bold text-violet">3</span> Start Trading
           </div>
           <Image
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
       <section className="bg-violet-200/30 py-24 dark:bg-violet-200/10">
         <div className="container relative mx-auto">
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <div>
               <Image src={`/logo/coingarage_icon_gradient.png`} alt="Logo" width={130} height={74} />
             </div>
@@ -155,13 +155,13 @@ export default function Home() {
               features.
             </p>
           </div>
-          <div className="w-1/2"></div>
+          <div className="lg:w-1/2"></div>
           <Image
             src="/images/eezy-trader/images/startup.png"
             alt=""
             width={400}
             height={400}
-            className="absolute -right-[2%] top-[50%] -z-10 -translate-y-1/2 transform select-none lg:left-[50%] lg:top-[50%] lg:-translate-x-1/2"
+            className="absolute right-0 top-[50%] -z-10 -translate-y-1/2 transform select-none lg:-right-[2%] lg:left-[50%] lg:top-[50%] lg:-translate-x-1/2"
           />
         </div>
       </section>
