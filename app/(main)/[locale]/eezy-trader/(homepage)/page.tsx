@@ -6,6 +6,7 @@ import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
 import { Button } from "@/components/ui/button"
 import { TableComp } from "@/components/eezy-trader/table"
 import Figure from "@/components/Figure"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function Home() {
   const t = useTranslations("CryptoLandingPage")
@@ -33,10 +34,10 @@ export default function Home() {
         <TableComp />
         <TableComp />
       </section>
-      <section className="container mx-auto my-32 max-w-[1000px] xl:mt-36">
+      <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
         <p className="text-center text-lg font-bold">Trusted by thousands of traders, powered by</p>
-        <p className="text-violet text-center text-2xl font-bold">Coingarage “Simply & safely Exchange”</p>
-        <div className="bg-violet/15 mt-24 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 rounded-lg p-8">
+        <p className="text-center text-2xl font-bold text-violet">Coingarage “Simply & safely Exchange”</p>
+        <div className="z-10 mt-24 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 rounded-lg bg-violet-50 p-8 dark:bg-violet-200/40">
           <div className="flex h-24 flex-1 items-center justify-center rounded-md bg-white/80 text-black">
             Long/Short
           </div>
@@ -59,8 +60,15 @@ export default function Home() {
           <div className="flex h-24 flex-1 items-center justify-center rounded-md bg-white/80 text-black">
             Technical Indicators
           </div>
-          <div className="flex h-24 flex-1 items-center justify-center rounded-md bg-white/50 text-black">90 Bots</div>
+          <div className="flex h-24 flex-1 items-center justify-center rounded-md bg-white/80 text-black">90 Bots</div>
         </div>
+        <Image
+          src="/images/eezy-trader/images/slingshot.png"
+          alt=""
+          width={380}
+          height={380}
+          className="absolute -right-[5%] top-[18%] -z-10 -translate-y-1/2 transform select-none"
+        />
       </section>
       <section className="relative my-32 xl:mt-36">
         <Image
@@ -68,14 +76,14 @@ export default function Home() {
           width={400}
           height={400}
           alt="phone"
-          className="absolute -left-16 top-0 rotate-[20deg]"
+          className="absolute -left-16 top-0 rotate-[20deg] select-none"
         />
         <div className="container mx-auto grid max-w-[800px] ">
           <p className="pl-16 text-3xl font-bold">
             Sit back and watch your cryptocurrency investments grow, day and night, 24/7, wherever you are
           </p>
         </div>
-        <div className="bg-violet absolute right-0 top-40 grid h-10 w-[504px] grid-cols-2 items-center gap-2 rounded-l-xl px-8 text-left font-bold text-white">
+        <div className="absolute right-0 top-40 grid h-10 w-[504px] grid-cols-2 items-center gap-2 rounded-l-xl bg-violet px-8 text-left font-bold text-white">
           Try for free for 7 days
           <span className="inline-flex w-full items-center gap-2 overflow-hidden">
             <div className="h-[6px] w-[6px] rounded-full bg-white"></div>
@@ -99,26 +107,27 @@ export default function Home() {
       <section className="container mx-auto my-32 xl:mt-36">
         <div className="relative mx-auto h-[300px] w-[600px]">
           <div className="absolute -left-6 top-[44%] flex flex-row items-center text-2xl font-bold">
-            <span className="text-violet mr-2 text-3xl font-bold">1</span> Sign Up
+            <span className="mr-2 text-3xl font-bold text-violet">1</span> Sign Up
           </div>
           <div className="absolute -top-6 left-[44%] flex flex-col items-center text-2xl font-bold">
-            <span className="text-violet mr-2 text-3xl font-bold">2</span> Connect
+            <span className="mr-2 text-3xl font-bold text-violet">2</span> Connect
           </div>
           <div className="absolute -right-10 top-[44%] flex flex-row items-center text-2xl font-bold">
-            <span className="text-violet mr-2 text-3xl font-bold">3</span> Start Trading
+            <span className="mr-2 text-3xl font-bold text-violet">3</span> Start Trading
           </div>
           <Image
             src="/images/eezy-trader/images/ellipse.png"
             alt=""
             fill={true}
             style={{ objectFit: "contain", zIndex: -1 }}
+            className="select-none"
           />
           <Image
             src="/images/eezy-trader/images/security.png"
             alt="phone"
             width={160}
             height={160}
-            className="absolute left-[40%] top-[24%]"
+            className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 select-none"
           />
         </div>
         <div className="flex flex-row-reverse">
@@ -127,23 +136,55 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="container mx-auto mt-16 flex flex-row justify-between lg:mt-28">
-        <div className="flex w-full flex-row flex-wrap justify-center gap-8 xl:justify-between">
-          <Figure
-            icon="/images/eezy-trader/images/presentation.gif"
-            caption={t("Sign up on Coingarage")}
-            iconSize={180}
+      <section className="bg-violet-200/30 py-24 dark:bg-violet-200/10">
+        <div className="container relative mx-auto">
+          <div className="w-1/2">
+            <div>
+              <Image src={`/logo/coingarage_icon_gradient.png`} alt="Logo" width={130} height={74} />
+            </div>
+            <h3 className="mt-8 flex flex-col gap-2 text-4xl font-bold">
+              <span>Start Earning with</span>
+              <span className="text-violet">Coingarage’s Trader</span>
+              <span>
+                <span className="text-violet">Bot</span> Today
+              </span>
+            </h3>
+            <p className="mt-12 max-w-[410px]">
+              Sign up to Coingarage and get fully functional{" "}
+              <span className="text-violet">7&#8209;day&nbsp;PRO&nbsp;trial</span> period to test all the advanced bot’s
+              features.
+            </p>
+          </div>
+          <div className="w-1/2"></div>
+          <Image
+            src="/images/eezy-trader/images/startup.png"
+            alt=""
+            width={400}
+            height={400}
+            className="absolute -right-[2%] top-[50%] -z-10 -translate-y-1/2 transform select-none lg:left-[50%] lg:top-[50%] lg:-translate-x-1/2"
           />
-          <Figure icon="/images/eezy-trader/images/money-bag.gif" caption={t("Log in to an Exchange")} iconSize={180} />
+        </div>
+      </section>
+      <section className="container mx-auto mt-16 lg:mt-28">
+        <div className="container mx-auto grid max-w-[800px] ">
+          <p className="pl-16 text-center text-3xl font-bold">Start GRID BOT in 5 Easy Steps</p>
+          <p className="mt-8 text-center text-xl">
+            Launch your GRID trading bot effortlessly in five simple steps: initiate trading and optimize your profits
+            today with Coingarage.
+          </p>
+        </div>
+        <div className="mt-12 flex w-full flex-row flex-wrap justify-center gap-8 xl:justify-between">
+          <Figure icon="/images/eezy-trader/images/presentation.gif" caption={"Sign up on Coingarage"} iconSize={180} />
+          <Figure icon="/images/eezy-trader/images/money-bag.gif" caption={"Log in to an Exchange"} iconSize={180} />
           <Figure
             icon="/images/eezy-trader/images/computer.gif"
-            caption={t("Go to Sub account and choose in menu EEZY Trader")}
+            caption={"Go to Sub account and choose in menu EEZY Trader"}
             iconSize={180}
           />
-          <Figure icon="/images/eezy-trader/images/target.gif" caption={t("Create an strategy")} iconSize={180} />
+          <Figure icon="/images/eezy-trader/images/target.gif" caption={"Create an strategy"} iconSize={180} />
           <Figure
             icon="/images/eezy-trader/images/rocket.gif"
-            caption={t("Run the bot and watch it profits!")}
+            caption={"Run the bot and watch it profits!"}
             iconSize={180}
           />
         </div>
@@ -154,10 +195,27 @@ export default function Home() {
         </Button>
       </div>
       <section id="faq" className="container mx-auto my-32 xl:mt-36">
-        <Heading tag="h2" className="mb-12">
-          FAQ
-        </Heading>
-        <Faq />
+        <p className="text-center text-3xl font-bold">FAQ</p>
+        <Accordion type="multiple" className="mt-12 w-full">
+          <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{`How can I get started with this platform?`}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{`Getting started is easy! Simply sign up for an account, complete the verification process, deposit funds into your account, and start trading using our intuitive platform and powerful trading tools.`}</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={`item-2`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{`How do you ensure security of my funds and personal information?`}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{`We deploy industry-standard security measures, including encryption, two-factor authentication (2FA), and regular security audits, to safeguard your funds and personal data. Additionally, our platform adheres to strict compliance standards to protect against unauthorized access and fraudulent activities.`}</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={`item-3`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{`What are the benefits of using DCA?`}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{`Getting started is easy! Simply sign up for an account, complete the verification process, deposit funds into your account, and start trading using our intuitive platform and powerful trading tools.`}</AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </section>
     </main>
   )

@@ -32,25 +32,20 @@ export default function Header() {
     >
       <div className="grid h-full grid-cols-[1fr_40px] lg:flex lg:flex-row lg:justify-between">
         <nav className="flex items-center gap-10" aria-label="Global">
-          <Link href="/">
+          <Link href="/eezy-trader">
             <div className="h-[30] w-[206px]">
-              <Image
-                src="https://via.assets.so/img.jpg?w=206&h=31&tc=violet&bg=white&fit=fill&text=logo"
-                width={206}
-                height={31}
-                alt="logo"
-              />
+              <Image src="/images/eezy-trader/logo/logo.png" width={206} height={31} alt="logo" />
             </div>
           </Link>
           <div className="hidden max-w-[746px] flex-row gap-2 lg:flex">
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <a href="https://trade.coingarage.io/login">{t("Knowledge base")}</a>
+              <a href="https://trade.coingarage.io/login">{"Knowledge base"}</a>
             </Button>
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <a href="https://trade.coingarage.io/login">{t("Affiliate program")}</a>
+              <Link href="/eezy-trader/affiliate">{"Affiliate program"}</Link>
             </Button>
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <a href="https://trade.coingarage.io/login">{t("Payment & Subscription")}</a>
+              <a href="https://trade.coingarage.io/login">{"Payment & Subscription"}</a>
             </Button>
           </div>
         </nav>

@@ -3,7 +3,7 @@ import Heading from "@/components/Heading"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-export default function AboutUs() {
+export default function Affiliate() {
   const t = useTranslations("Affiliate")
   return (
     <main className="relative">
