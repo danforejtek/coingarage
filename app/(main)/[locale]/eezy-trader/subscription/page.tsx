@@ -1,13 +1,15 @@
 // import Figure from "@/components/Figure"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { unstable_setRequestLocale } from "next-intl/server"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 // import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
-export default function Affiliate() {
+export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
   const t = useTranslations("eezy-trader.subscription")
+
   return (
     <main className="relative">
       <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">

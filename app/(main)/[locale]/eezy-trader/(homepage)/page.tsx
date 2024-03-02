@@ -1,16 +1,16 @@
 import { useTranslations } from "next-intl"
+import { unstable_setRequestLocale } from "next-intl/server"
 // import Heading from "@/components/Heading"
 // import Faq from "@/components/Faq"
 import Image from "next/image"
 // import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
 import { Button } from "@/components/ui/button"
-import { TableComp } from "@/components/eezy-trader/table"
 import Figure from "@/components/Figure"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { TopPerformers } from "@/components/eezy-trader/top-performers"
-import { TopPairs } from "@/components/eezy-trader/top-pairs"
 
-export default function Home() {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
   const t = useTranslations("CryptoLandingPage")
   return (
     <main>

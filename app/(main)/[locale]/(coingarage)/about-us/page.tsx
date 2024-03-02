@@ -1,9 +1,11 @@
+import { useTranslations } from "next-intl"
+import { unstable_setRequestLocale } from "next-intl/server"
 import Figure from "@/components/Figure"
 import Heading from "@/components/Heading"
-import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-export default function AboutUs() {
+export default function AboutUs({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
   const t = useTranslations("AboutUs")
   return (
     <main className="relative">

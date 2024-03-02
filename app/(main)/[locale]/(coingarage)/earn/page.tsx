@@ -1,9 +1,11 @@
 // import Figure from "@/components/Figure"
+import { unstable_setRequestLocale } from "next-intl/server"
 import Heading from "@/components/Heading"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-export default function Affiliate() {
+export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
   const t = useTranslations("Affiliate")
   return (
     <main className="relative">
