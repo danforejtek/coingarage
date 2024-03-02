@@ -1,12 +1,14 @@
 import { useTranslations } from "next-intl"
-import Heading from "@/components/Heading"
-import Faq from "@/components/Faq"
+// import Heading from "@/components/Heading"
+// import Faq from "@/components/Faq"
 import Image from "next/image"
-import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
+// import { ClaimGaraModal } from "@/components/promo/ClaimGaraModal"
 import { Button } from "@/components/ui/button"
 import { TableComp } from "@/components/eezy-trader/table"
 import Figure from "@/components/Figure"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { TopPerformers } from "@/components/eezy-trader/top-performers"
+import { TopPairs } from "@/components/eezy-trader/top-pairs"
 
 export default function Home() {
   const t = useTranslations("CryptoLandingPage")
@@ -31,8 +33,8 @@ export default function Home() {
         </p>
       </section>
       <section className="container mx-auto my-32 grid max-w-[800px] grid-cols-2 gap-6 xl:mt-36">
-        <TableComp />
-        <TableComp />
+        <TopPerformers />
+        {/* <TopPairs /> */}
       </section>
       <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
         <p className="text-center text-lg font-bold">Trusted by thousands of traders, powered by</p>

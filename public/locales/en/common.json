@@ -204,5 +204,56 @@
     "heading": "A Secure Haven: Where Privacy, Design, and Real-Time Monitoring Converge for Your Peace of Mind",
     "newDesign": "We are working on new design",
     "continueToTrader": "Continue to EEZY Trader"
+  },
+  "eezy-trader": {
+    "subscription": {
+      "btnBuy": "Buy Subscription",
+      "header": "What is a subscription plan?",
+      "subText": "A subscription plan grants you access to our services at full capacity. <b>With a subscription, you gain access to our revolutionary trading robot</b>, which allows you to trade in the markets with absolute ease and efficiency.",
+      "plans": {
+        "header": "Subscription",
+        "subText": "Not sure if our subscription is right for you? No problem! We offer a trial version where you can test out our bot and experience its capabilities firsthand.",
+        "trial": {
+          "header": "Trial",
+          "free": "Free",
+          "package": {
+            "header": "Test and Enjoy Trading Bot",
+            "1": "Up to 10 Bots",
+            "2": "All Strategies",
+            "3": "Trading Terminals",
+            "4": "Trailing Take profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Most used",
+          "header": "Basic Month",
+          "competitionPrice": "$45/month",
+          "price": "$15/month",
+          "package": {
+            "header": "Test and Enjoy Trading Bot",
+            "1": "Up to 50 Bots",
+            "2": "All Strategies",
+            "3": "Trading Terminals",
+            "4": "Trailing Take profit",
+            "5": "Auto Renewal"
+          }
+        },
+        "year": {
+          "header": "Basic Year",
+          "competitionPrice": "$384/month",
+          "price": "$120/month",
+          "save60": "Save $60",
+          "package": {
+            "header": "Unlock Full Trading Bot Potential",
+            "1": "Up to 99 Bots",
+            "2": "All Strategies",
+            "3": "Trading Terminals",
+            "4": "Trailing Take profit",
+            "5": "Auto Renewal"
+          }
+        },
+        "fee": "10% success fee in EEZY Coin is deducted from every profit."
+      }
+    }
   }
 }
