@@ -206,6 +206,110 @@
     "continueToTrader": "Continue to EEZY Trader"
   },
   "eezy-trader": {
+    "nav": {
+      "knowledgeBase": "Knowledge Base",
+      "affiliateProgram": "Affiliate Program",
+      "payments": "Payments & Subscriptions"
+    },
+    "homepage": {
+      "trialBtn": "START 7-DAY FREE TRIAL",
+      "main": {
+        "header": "The best AI-powered crypto trading bots, crypto buying, portfolio management and a free trial - all in one place.",
+        "noCreditCard": "*No credit card required"
+      },
+      "results": {
+        "header": "Realize the complete potential of your trading strategy by leveraging the advanced capabilities of the <b>Coingarage DCA Crypto Bot</b>, empowering you to attain peak trading performance and maximize profits.",
+        "topPerformers": "Top Performers",
+        "topPairs": "Top Pairs",
+        "name": "Name",
+        "pair": "Pair"
+      },
+      "trusting": {
+        "subHeader": "Trusted by thousands of traders, powered by Coingarage",
+        "header": "“Simply & safely Exchange”",
+        "columns": {
+          "1": "Long / Short",
+          "2": "Trading Profit",
+          "3": "DCA/ GRID",
+          "4": "Save Strategy",
+          "5": "Starting by AI",
+          "6": "Copy Trading",
+          "7": "100 Pairs to Trade",
+          "8": "Technical Indicators",
+          "9": "90 Bots"
+        }
+      },
+      "investment": {
+        "header": "Sit back and watch your cryptocurrency investments grow, day and night, 24/7, wherever you are",
+        "free7Days": "Try free for 7 days",
+        "howToConnect": {
+          "register": "Register",
+          "connect": "Connect",
+          "startTrading": "Start Trading"
+        }
+      },
+      "login": {
+        "header": "<span>Start Earning with</span><span class='text-violet'>Coingarage’s Trader</span><span><span class='text-violet'>Bot</span> Today</span>",
+        "subText": "Sign up to Coingarage and get fully functional <b>7-day PRO trial</b> period to test all the advanced bot's features.",
+        "loginForm": {
+          "login": "Login",
+          "yourEmail": "Your email",
+          "password": "Password",
+          "forgotPassword": "Forgot password ?",
+          "noAccount": "Don't have an account? Sign up here"
+        }
+      },
+      "start": {
+        "header": "Start GRID BOT in 5 Easy Steps",
+        "subText": "Launch your GRID trading bot effortlessly in five simple steps: initiate trading and optimize your profits today with Coingarage.",
+        "steps": {
+          "1": "Sign up on Coingarage",
+          "2": "Log in to an Exchange",
+          "3": "Go to Sub account and choose in menu EEZY Trader",
+          "4": "Create an strategy",
+          "5": "Run the bot and watch it profits!"
+        }
+      },
+      "faq": {
+        "question1": "How can I get started with your platform?",
+        "answer1": "Getting started is easy! Simply sign up for an account, complete the verification process, deposit funds into your account, and start trading using our intuitive platform and powerful trading tools.",
+        "question2": "How do you ensure the security of my funds and personal information?",
+        "answer2": "We employ industry-standard security measures, including encryption, two-factor authentication (2FA), and regular security audits, to safeguard your funds and personal data. Additionally, our platform adheres to strict compliance standards to protect against unauthorized access and fraudulent activities.",
+        "question3": "What are the benefits of using DCA?",
+        "answer3": "Dollar-cost averaging (DCA) is a strategy where an investor divides up the total amount to be invested across periodic purchases of a target asset in an effort to reduce the impact of volatility on the overall purchase. The key benefits of using DCA include reducing the risk associated with market timing, potentially lowering the average cost per share over time, and promoting disciplined investing behavior."
+      }
+    },
+    "affiliate": {
+      "btnAffiliate": "Get Your Affiliate",
+      "main": {
+        "header1": "Earn passive income.",
+        "header2": "Earn Up to 15% from each partner you refer.",
+        "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. Financial freedom, simply delightful. <b>Invite your friends and enjoy shared profits together!</b>"
+      },
+      "getStarted": {
+        "header1": "Register to a Coingarage.",
+        "subText1": "Create an Account, Log in and then gosection Affilate.",
+        "header2": "Invite Your Friends or Partners.",
+        "subText2": "Copy your Affiliate Link and send it to your friends or partners to increase your passive income.",
+        "header3": "Enjoy Your Earnings.",
+        "subText3": "Copy your Affiliate Link and send it to your friends or partners to increase your passive income."
+      },
+      "fag": {
+        "question1": "How does the affiliate program work?",
+        "answer1": "As an affiliate, you'll receive a unique referral link or code thast you can share with your audience. When someone clicks on your link or uses your code to make a purchase or sign up, you'll earn a commission on the sale or sign-up.",
+        "question2": "Is there a limit to how much I can earn through the affiliate program?",
+        "answer2": "There is no limit to how much you can earn through our affiliate program. Your earnings depend on the number of referrals you generate and the value of their purchases or sign-ups.",
+        "question3": " How can I track my referrals and commissions?",
+        "answer3": "Our affiliate program provides access to a dashboard or portal where you can track your referrals, monitor sales or sign-ups, and view your commission earnings in real-time.",
+        "question4": "What is the commission structure for the affiliate program?",
+        "answer4": "Our affiliate program offers a multi-level commission structure, with commission percentages based on the level of referrals:",
+        "levels": {
+          "1": "Level 1: 15% commission",
+          "2": "Level 2: 10% commission",
+          "3": "Level 3: 5% commission"
+        }
+      }
+    },
     "subscription": {
       "btnBuy": "Buy Subscription",
       "header": "What is a subscription plan?",

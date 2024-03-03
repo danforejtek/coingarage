@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Menu } from "./Menu"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import MobileNav from "./MobileNav"
@@ -15,6 +14,7 @@ import LocaleSwitcher from "@/components/layout/LocaleSwitch"
 
 export default function Header() {
   const t = useTranslations("Menu")
+  const tEz = useTranslations("eezy-trader.nav")
   const scrollPosition = useScrollPosition()
   const [scrolledVariant, setScrolledVariant] = useState(false)
 
@@ -39,13 +39,13 @@ export default function Header() {
           </Link>
           <div className="hidden max-w-[746px] flex-row gap-2 lg:flex">
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <a href="https://trade.coingarage.io/login">{"Knowledge base"}</a>
+              <a href="https://trade.coingarage.io/login">{tEz("knowledgeBase")}</a>
             </Button>
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <Link href="/eezy-trader/affiliate">{"Affiliate program"}</Link>
+              <Link href="/eezy-trader/affiliate">{tEz("affiliateProgram")}</Link>
             </Button>
             <Button variant="ghost" className={cn("text-sm")} asChild>
-              <a href="https://trade.coingarage.io/login">{"Payment & Subscription"}</a>
+              <Link href="/eezy-trader/subscription">{tEz("payments")}</Link>
             </Button>
           </div>
         </nav>

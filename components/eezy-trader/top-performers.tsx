@@ -11,7 +11,7 @@ type Data = {
   profit: number
 }
 
-export function TopPerformers() {
+export function TopPerformers({ heading }: { heading: string }) {
   const { data, error, isLoading } = useSWR("https://api.coingarage.io/grid/top-performers", fetcher)
 
   const transformedData = data
@@ -20,5 +20,5 @@ export function TopPerformers() {
     })
     .slice(0, 6)
 
-  return <>{<TableComp data={transformedData} isLoading={isLoading} />}</>
+  return <>{<TableComp data={transformedData} isLoading={isLoading} heading={heading} />}</>
 }

@@ -15,15 +15,17 @@ const up = "text-green-500"
 const down = "text-red-500"
 
 export function TableComp({
+  heading,
   data = [],
   isLoading = true,
 }: {
+  heading: string
   data: Array<{ name: string; value: number }>
   isLoading: boolean
 }) {
   return (
     <div>
-      <div className="mb-6 w-full text-center text-xl font-bold">Top performers</div>
+      <div className="mb-6 w-full text-center text-xl font-bold">{heading}</div>
       <div className="rounded-xl bg-violet-50 px-4 py-5 dark:bg-violet/10">
         {isLoading ? (
           <Skeleton className="min-h-[394px] w-full rounded-xl" />

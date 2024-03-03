@@ -1,29 +1,31 @@
 // import Figure from "@/components/Figure"
+import { useTranslations } from "next-intl"
+import { unstable_setRequestLocale } from "next-intl/server"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
 // import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-export default function Affiliate() {
+export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
+  const t = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative">
       <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
         <div className="w-full max-w-[600px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">
-            Earn passive income.
+            {t("main.header1")}
             <br />
-            Earn Up to 15% from each partner you refer.
+            {t("main.header2")}
           </h1>
 
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
-            Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. Financial
-            freedom, simply delightful.{" "}
-            <span className="font-bold text-violet">Invite your friends and enjoy shared profits together!</span>
+            {t.rich("main.subText", { b: (text) => <span className="font-bold text-violet">{text}</span> })}
           </p>
 
           <div className="mt-12 flex flex-row-reverse">
             <Button variant="violet" className="px-10">
-              Get Your Affiliate
+              {t("btnAffiliate")}
             </Button>
           </div>
         </div>
@@ -46,26 +48,22 @@ export default function Affiliate() {
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet text-xl font-bold text-white">
                 1
               </div>
-              <span className="text-center text-lg font-bold">Register to a Coingarage</span>
-              <p className="text-center">Create an Account, Log in and then go section Affilate.</p>
+              <span className="text-center text-lg font-bold">{t("getStarted.header2")}</span>
+              <p className="text-center">{t("getStarted.subText1")}</p>
             </div>
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet text-xl font-bold text-white">
                 2
               </div>
-              <span className="text-center text-lg font-bold">Invite Your Friends or Partners</span>
-              <p className="text-center">
-                Copy your Affiliate Link and send it to your friends or partners to increase your passive income.
-              </p>
+              <span className="text-center text-lg font-bold">{t("getStarted.header2")}</span>
+              <p className="text-center">{t("getStarted.subText2")}</p>
             </div>
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet text-xl font-bold text-white">
                 3
               </div>
-              <span className="text-center text-lg font-bold">Enjoy Your Earnings</span>
-              <p className="text-center">
-                Copy your Affiliate Link and send it to your friends or partners to increase your passive income.
-              </p>
+              <span className="text-center text-lg font-bold">{t("getStarted.header3")}</span>
+              <p className="text-center">{t("getStarted.subText3")}</p>
             </div>
           </div>
         </div>
@@ -76,39 +74,37 @@ export default function Affiliate() {
         <Accordion type="multiple" className="mt-12 w-full">
           <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{`How does the affiliate program work?`}</span>
+              <span className="mr-6">{t("fag.question1")}</span>
             </AccordionTrigger>
-            <AccordionContent className="text-md">{`As an affiliate, you'll receive a unique referral link or code that you can share with your audience. When someone clicks on your link or uses your code to make a purchase or sign up, you'll earn a commission on the sale or sign-up.`}</AccordionContent>
+            <AccordionContent className="text-md">{t("fag.answer1")}</AccordionContent>
           </AccordionItem>
           <AccordionItem value={`item-2`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{`Is there a limit to how much I can earn through the affiliate program?`}</span>
+              <span className="mr-6">{t("fag.question2")}</span>
             </AccordionTrigger>
-            <AccordionContent className="text-md">{`There is no limit to how much you can earn through our affiliate program. Your earnings depend on the number of referrals you generate and the value of their purchases or sign-ups.`}</AccordionContent>
+            <AccordionContent className="text-md">{t("fag.answer2")}</AccordionContent>
           </AccordionItem>
           <AccordionItem value={`item-3`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{` How can I track my referrals and commissions?`}</span>
+              <span className="mr-6">{t("fag.question3")}</span>
             </AccordionTrigger>
-            <AccordionContent className="text-md">{`Our affiliate program provides access to a dashboard or portal where you can track your referrals, monitor sales or sign-ups, and view your commission earnings in real-time.`}</AccordionContent>
+            <AccordionContent className="text-md">{t("fag.answer3")}</AccordionContent>
           </AccordionItem>
           <AccordionItem value={`item-4`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{`What is the commission structure for the affiliate program?`}</span>
+              <span className="mr-6">{t("fag.question4")}</span>
             </AccordionTrigger>
             <AccordionContent className="text-md">
-              {`Our affiliate program offers a multi-level commission structure, with commission percentages based on the level of referrals:`}
+              {t("fag.answer4")}
               <br />
               <br />
               <ul>
+                <li>{t("fag.levels.1")}</li>
                 <li>
-                  <b>Level 1</b>: 15% commission
+                  <li>{t("fag.levels.2")}</li>
                 </li>
                 <li>
-                  <b>Level 2</b>: 10% commission
-                </li>
-                <li>
-                  <b>Level 3</b>: 5% commission
+                  <li>{t("fag.levels.3")}</li>
                 </li>
               </ul>
             </AccordionContent>

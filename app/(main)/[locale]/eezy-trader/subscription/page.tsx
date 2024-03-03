@@ -1,10 +1,10 @@
 // import Figure from "@/components/Figure"
 import { unstable_setRequestLocale } from "next-intl/server"
+import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-// import { useTranslations } from "next-intl"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { Check } from "lucide-react"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -37,7 +37,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           <div className="mx-auto max-w-[800px]">
             <p className="text-text-neutral-600 mt-6 text-center text-lg dark:text-neutral-300">{t("plans.subText")}</p>
           </div>
-          <div className="mt-12 flex flex-col items-start justify-between gap-4 lg:flex-row">
+          <div className="mt-24 flex flex-col items-start justify-between gap-4 lg:flex-row">
             <div className="mt-24 flex min-h-[340px] w-[380px] flex-col items-center gap-6 rounded-lg bg-violet-200/30 p-8 dark:bg-violet-200/10">
               <span className="text-center text-xl font-bold">{t("plans.trial.header")}</span>
               <Image
@@ -49,12 +49,32 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
               />
               <p className="text-center text-lg text-violet">{t("plans.trial.free")}</p>
               <Separator className="w-full" />
-              <p className="text-center font-bold text-violet">{t("plans.trial.package.header")}</p>
-              <ul className="checklist checklist-sm mt-6">
-                <li className="!my-4 !text-base">{t("plans.trial.package.1")}</li>
-                <li className="!my-4 !text-base">{t("plans.trial.package.2")}</li>
-                <li className="!my-4 !text-base">{t("plans.trial.package.3")}</li>
-                <li className="!my-4 !text-base">{t("plans.trial.package.4")}</li>
+              <p className="text-center font-heading font-bold text-violet">{t("plans.trial.package.header")}</p>
+              <ul className="mt-6">
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.trial.package.1")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.trial.package.2")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.trial.package.3")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.trial.package.4")}
+                </li>
               </ul>
               <div className="mt-12 flex flex-row items-center">
                 <Button variant="violet" className="px-10">
@@ -74,19 +94,43 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
                 height={100}
                 className="fill-primary stroke-primary"
               />
-
-              <p className="text-center text-lg text-primary">
-                <p className="text-md text-sm text-foreground line-through">{t("plans.month.competitionPrice")}</p>
-                {t("plans.month.price")}
-              </p>
+              <div>
+                <p className="text-center text-sm text-foreground line-through">{t("plans.month.competitionPrice")}</p>
+                <p className="text-center text-lg text-primary">{t("plans.month.price")}</p>
+              </div>
               <Separator className="w-full" />
               <p className="text-center font-bold text-primary">{t("plans.month.package.header")}</p>
-              <ul className="checklist checklist-sm mt-6">
-                <li className="!my-4 !text-base">{t("plans.month.package.1")}</li>
-                <li className="!my-4 !text-base">{t("plans.month.package.2")}</li>
-                <li className="!my-4 !text-base">{t("plans.month.package.3")}</li>
-                <li className="!my-4 !text-base">{t("plans.month.package.4")}</li>
-                <li className="!my-4 !text-base">{t("plans.month.package.5")}</li>
+              <ul className="mt-6">
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.month.package.1")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.month.package.2")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.month.package.3")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.month.package.4")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.month.package.5")}
+                </li>
               </ul>
               <div className="mt-12 flex flex-row items-center">
                 <Button variant="default" className="px-10">
@@ -103,18 +147,43 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
                 height={100}
                 className="fill-violet stroke-violet"
               />
-              <p className="text-center text-lg text-violet">
-                <p className="text-md text-sm text-foreground line-through">{t("plans.year.competitionPrice")}</p>
-                {t("plans.year.price")}
-              </p>
+              <div>
+                <p className="text-center text-sm text-foreground line-through">{t("plans.year.competitionPrice")}</p>
+                <p className="text-center text-lg text-violet">{t("plans.year.price")}</p>
+              </div>
               <Separator className="w-full" />
-              <p className="text-center font-bold text-violet">{t("plans.year.package.header")}</p>
-              <ul className="checklist checklist-sm mt-6">
-                <li className="!my-4 !text-base">{t("plans.year.package.1")}</li>
-                <li className="!my-4 !text-base">{t("plans.year.package.2")}</li>
-                <li className="!my-4 !text-base">{t("plans.year.package.3")}</li>
-                <li className="!my-4 !text-base">{t("plans.year.package.4")}</li>
-                <li className="!my-4 !text-base">{t("plans.year.package.5")}</li>
+              <p className="text-center font-heading font-bold text-violet">{t("plans.year.package.header")}</p>
+              <ul className="mt-6">
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.year.package.1")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.year.package.2")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.year.package.3")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.year.package.4")}
+                </li>
+                <li className="!my-4 flex flex-row items-center gap-3 !text-base">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet">
+                    <Check className="h-3 w-3 stroke-white" />
+                  </div>
+                  {t("plans.year.package.5")}
+                </li>
               </ul>
               <div className="mt-12 flex flex-row items-center">
                 <Button variant="violet" className="px-10">
