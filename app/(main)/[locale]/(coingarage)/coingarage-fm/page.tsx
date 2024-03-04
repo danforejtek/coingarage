@@ -17,9 +17,13 @@ export default function AboutUs({ params: { locale } }: { params: { locale: stri
               "Coingarage, the unique platform for cryptocurrency enthusiasts, is now expanding its services with its own radio station! Our new radio station will be a source of the latest information and analytical programs on cryptocurrencies and blockchain. Users can expect regular updates and exclusive interviews."
             }
           </p>
-          {/* <div className="flex flex-row-reverse">
-            <Button>Connect to the Radio</Button>
-          </div> */}
+          <div className="flex flex-row-reverse">
+            <Button asChild>
+              <a href="https://play.radioking.com/radio/coingarage-fm/tracks" target="_blank" rel="noopener">
+                Connect to the Radio
+              </a>
+            </Button>
+          </div>
         </div>
         <div className="mt-16 flex max-w-[500px] flex-col items-center justify-end xl:mt-0">
           <p className="mb-6 font-heading text-2xl font-bold">Send us a message!</p>
