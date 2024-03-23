@@ -46,6 +46,7 @@ import PartnersDark from "@/public/icons/main/dark/partners.svg"
 import PosterWallDark from "@/public/icons/main/dark/poster_wall.svg"
 import BlogDark from "@/public/icons/main/dark/blog.svg"
 import AcademyDark from "@/public/icons/main/dark/academy.svg"
+import { RadioTower } from "lucide-react"
 
 type NavItem = {
   title: string
@@ -71,6 +72,7 @@ const icons = {
   poster_wall: PosterWall,
   blog: Blog,
   academy: Academy,
+  radio: <RadioTower className="fill-primary stroke-1" />,
 }
 
 const iconsDark = {
@@ -88,6 +90,7 @@ const iconsDark = {
   poster_wall: PosterWallDark,
   blog: BlogDark,
   academy: AcademyDark,
+  radio: <RadioTower className=" fill-primary stroke-1" />,
 }
 
 export const navItems: NavItem[] = [
@@ -209,6 +212,12 @@ export const navItems: NavItem[] = [
         href: "/blog",
         icon: "blog",
       },
+      {
+        title: "Coingarage FM",
+        key: "radio",
+        href: "/coingarage-fm",
+        icon: "radio",
+      },
       // {
       //   title: "Academy",
       //   href: "/academy",
@@ -235,11 +244,11 @@ export function Menu() {
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
-                <NavigationMenuTrigger className={cn("bg-transparent px-2 text-sm text-secondary dark:text-white")}>
+                <NavigationMenuTrigger className={cn("bg-transparent px-3 text-sm text-secondary dark:text-white")}>
                   {t(`Menu.${key}`)}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
                     <li
                       // TODO: write this like a normal person
                       className={cn(
@@ -281,7 +290,7 @@ export function Menu() {
               <NavigationMenuItem key={index}>
                 <Link href={href} legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), "px-2 text-sm text-secondary dark:text-white")}
+                    className={cn(navigationMenuTriggerStyle(), "px-3 text-sm text-secondary dark:text-white")}
                   >
                     {t(`Menu.${key}`)}
                   </NavigationMenuLink>
@@ -314,7 +323,7 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
             {...props}
           >
             <div className="grid w-full grid-cols-[24px_1fr] items-center gap-6">
-              {typeof Icon === "function" ? <Icon width="24px" height="24px" /> : <div></div>}
+              {typeof Icon === "function" ? <Icon width="24px" height="24px" /> : Icon}
               <div className="text-sm font-medium leading-none">{t(`Menu.${localeKey}`)}</div>
             </div>
             {/* <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p> */}
