@@ -10,7 +10,7 @@
     "convert": "Konvertovat",
     "earn": "Profitovat",
     "becomeAShareholder": "Stát se spolumajitelem",
-    "affiliate": "Doporučení",
+    "affiliate": "Referral",
     "stake": "Stake",
     "more": "Více",
     "aboutUs": "O Nás",
@@ -207,5 +207,160 @@
     "heading": "Bezpečný přístav: Kde je standard soukromí, design a monitorování v reálném čase pro váš klid.",
     "newDesign": "Pracujeme na novem designu",
     "continueToTrader": "Přejít do EEZY Trader"
+  },
+  "eezy-trader": {
+    "nav": {
+      "knowledgeBase": "Báze znalostí",
+      "affiliateProgram": "Partnerský program",
+      "payments": "Platby a předplatné"
+    },
+    "homepage": {
+      "trialBtn": "ZAČÍT 7DNE ZDARMA",
+      "main": {
+        "header": "Nejlepší kryptoměnový obchodní robot s umělou inteligencí",
+        "noCreditCard": "*Není vyžadována kreditní karta"
+      },
+      "results": {
+        "header": "Realizujte kompletní potenciál vaší obchodní strategie využitím pokročilých schopností kryptoměnového robota EEZY Trader od společnosti Coingarage, což vám umožní dosáhnout maximální obchodní výkonnosti a maximalizovat zisky.",
+        "topPerformers": "Top Výkonnost",
+        "topPairs": "Top Páry",
+        "name": "Jméno",
+        "pair": "Pár"
+      },
+      "trusting": {
+        "subHeader": "Důvěřuje tisícům obchodníků, poháněno",
+        "header": "Coingarage “Jednoduchá a bezpečná burza”",
+        "columns": {
+          "1": "Dlouhá / Krátká",
+          "2": "Obchodní zisk",
+          "3": "DCA/ GRID",
+          "4": "Uložit strategii",
+          "5": "Spuštění pomocí umělé inteligence",
+          "6": "Kopírování obchodů",
+          "7": "100 Párů k obchodu",
+          "8": "Technické ukazatele",
+          "9": "90 Robotů"
+        }
+      },
+      "investment": {
+        "header": "Posaďte se a sledujte růst svých investic do kryptoměn, den i noc, 24/7, kdekoli se právě nacházíte",
+        "free7Days": "Vyzkoušejte zdarma po dobu 7 dnů",
+        "howToConnect": {
+          "register": "Registrovat",
+          "connect": "Připojit",
+          "startTrading": "Začít obchodovat"
+        }
+      },
+      "login": {
+        "header": "<span>Začněte vydělávat s</span><span class='text-violet'>Coingarage Traderem</span><span><span class='text-violet'>Botem</span> dnes</span>",
+        "subText": "Přihlaste se k Coingarage a získejte plně funkční <b>7denní PRO zkušební</b> období, abyste vyzkoušeli všechny pokročilé funkce robota.",
+        "loginForm": {
+          "login": "Přihlásit se",
+          "yourEmail": "Vaše e-mailová adresa",
+          "password": "Heslo",
+          "forgotPassword": "Zapomenuté heslo?",
+          "noAccount": "Nemáte účet? Zaregistrujte se zde"
+        }
+      },
+      "start": {
+        "header": "Spusťte GRID BOTA v 5 jednoduchých krocích",
+        "subText": "Spusťte svůj GRID obchodní robot jednoduše v pěti jednoduchých krocích: zahajte obchodování a optimalizujte své zisky ještě dnes s Coingarage.",
+        "steps": {
+          "1": "Registrovat se na Coingarage",
+          "2": "Přihlásit se na burzu",
+          "3": "Přejděte na Podúčet a vyberte v nabídce EEZY Trader",
+          "4": "Vytvořte strategii",
+          "5": "Spusťte robota a sledujte jeho zisky!"
+        }
+      },
+      "faq": {
+        "question1": "Jak mohu začít s vaší platformou?",
+        "answer1": "Začátek je snadný! Stačí se zaregistrovat, dokončit proces ověření, vložit prostředky na svůj účet a začít obchodovat pomocí naší intuitivní platformy a silných obchodních nástrojů.",
+        "question2": "Jak zajistíte bezpečnost mých prostředků a osobních údajů?",
+        "answer2": "Používáme standardní bezpečnostní opatření, včetně šifrování, dvoufaktorové autentizace (2FA) a pravidelných bezpečnostních auditů, abychom ochránili vaše prostředky a osobní údaje. Kromě toho náš systém dodržuje přísné standardy shody, aby chránil proti neoprávněnému přístupu a podvodným činnostem.",
+        "question3": "Jaké jsou výhody používání DCA?",
+        "answer3": "Dollar-cost averaging (DCA) je strategie, kdy investor rozdělí celkovou částku určenou k investici mezi periodické nákupy cílového aktiva s cílem snížit dopad volatility na celkový nákup. Hlavní výhody používání DCA zahrnují snížení rizika spojeného s časováním trhu, potenciální snížení průměrné ceny akcie v čase a podporu disciplinovaného investování."
+      }
+    },
+    "affiliate": {
+      "btnAffiliate": "Začít",
+      "main": {
+        "header1": "Referral program",
+        "header2": "Vydělejte až 15% z poplatků z každého obchodu vašich partnerů",
+        "subText": "Měsíční odměny, bez námahy. Představte si radost z peněz, které přitékají, aniž byste museli zdvihnout prst. <b>Pozvěte své přátele a společně si užívejte sdílených zisků!</b>"
+      },
+      "getStarted": {
+        "header1": "Zaregistrujte se u společnosti Coingarage.",
+        "subText1": "Vytvořte si účet, přihlaste se a pak jdi na sekci Partnerství.",
+        "header2": "Pozvěte své přátele nebo partnery.",
+        "subText2": "Zkopírujte svůj partnerský odkaz a pošlete ho svým přátelům nebo partnerům, abyste zvýšili svůj pasivní příjem.",
+        "header3": "Užívejte si své příjmy.",
+        "subText3": "Zkopírujte svůj partnerský odkaz a pošlete ho svým přátelům nebo partnerům, abyste zvýšili svůj pasivní příjem."
+      },
+      "faq": {
+        "question1": "Jak funguje partnerský program?",
+        "answer1": "Jako partner obdržíte jedinečný odkaz nebo kód, který můžete sdílet se svým publikem. Když někdo klikne na váš odkaz nebo použije váš kód k nákupu nebo registraci, získáte provizi ze zisku nebo registrace.",
+        "question2": "Existuje nějaký limit pro to, kolik mohu vydělat prostřednictvím partnerského programu?",
+        "answer2": "Neexistuje žádný limit pro to, kolik můžete vydělat prostřednictvím našeho partnerského programu. Vaše příjmy závisí na počtu doporučení, která generujete, a hodnotě jejich nákupů nebo registrací.",
+        "question3": "Jak mohu sledovat své doporučení a provize?",
+        "answer3": "Náš partnerský program poskytuje přístup k ovládacímu panelu nebo portálu, kde můžete sledovat svá doporučení, monitorovat prodeje nebo registrace a zobrazovat své provizní příjmy v reálném čase.",
+        "question4": "Jaká je provizní struktura pro partnerský program?",
+        "answer4": "Náš partnerský program nabízí víceúrovňovou provizní strukturu s procentuální provizí založenou na úrovni doporučení:",
+        "levels": {
+          "1": "Úroveň 1: 15% provize",
+          "2": "Úroveň 2: 10% provize",
+          "3": "Úroveň 3: 5% provize"
+        }
+      }
+    },
+    "subscription": {
+      "btnBuy": "Koupit předplatné",
+      "header": "Co je to předplatné?",
+      "subText": "Předplatné vám poskytuje přístup k našim službám v plném rozsahu. <b>S předplatným získáte přístup k našemu revolučnímu obchodnímu robotovi</b>, který vám umožní obchodovat na trzích s absolutní lehkostí a efektivitou.",
+      "plans": {
+        "header": "Předplatné",
+        "subText": "Nejste si jisti, zda je naše předplatné pro vás to pravé? Žádný problém! Nabízíme zkušební verzi, kde si můžete vyzkoušet nášho robota a zažít jeho schopnosti na vlastní kůži.",
+        "trial": {
+          "header": "Zkušební verze",
+          "free": "Zdarma",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 10 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Nejvíce používané",
+          "header": "Základní měsíc",
+          "competitionPrice": "$45/měsíc",
+          "price": "$15/měsíc",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 50 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "year": {
+          "header": "Základní rok",
+          "competitionPrice": "$384/měsíc",
+          "price": "$120/měsíc",
+          "save60": "Ušetříte $60",
+          "package": {
+            "header": "Odemkněte plný potenciál obchodního robota",
+            "1": "Až 99 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "fee": "Z každého zisku je odečten úspěšný poplatek ve výši 10 % v EEZY Coin."
+      }
+    }
   }
 }

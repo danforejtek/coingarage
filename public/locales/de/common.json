@@ -207,5 +207,160 @@
     "heading": "Ein sicherer Hafen: Wo Datenschutz, Design und Echtzeitüberwachung für Ihre Seelenruhe zusammenkommen",
     "newDesign": "Wir arbeiten an einem neuen Design",
     "continueToTrader": "Weiter zu EEZY Trader"
+  },
+  "eezy-trader": {
+    "nav": {
+      "knowledgeBase": "Wissensdatenbank",
+      "affiliateProgram": "Partnerprogramm",
+      "payments": "Zahlungen & Abonnements"
+    },
+    "homepage": {
+      "trialBtn": "STARTEN SIE EINE KOSTENLOSE 7-TAGE-TESTVERSION",
+      "main": {
+        "header": "Der beste KI-gestützte Krypto-Handelsbot",
+        "noCreditCard": "*Keine Kreditkarte erforderlich"
+      },
+      "results": {
+        "header": "Realisieren Sie das volle Potenzial Ihrer Handelsstrategie, indem Sie die fortschrittlichen Fähigkeiten des Coingarage EEZY Trader Krypto-Bots nutzen, der es Ihnen ermöglicht, die Spitzenhandelsleistung zu erreichen und Gewinne zu maximieren.",
+        "topPerformers": "Top-Performer",
+        "topPairs": "Top-Paare",
+        "name": "Name",
+        "pair": "Paar"
+      },
+      "trusting": {
+        "subHeader": "Vertraut von Tausenden von Händlern, angetrieben von",
+        "header": "Coingarage „Einfach & sicher austauschen“",
+        "columns": {
+          "1": "Long / Short",
+          "2": "Handelsgewinn",
+          "3": "DCA / GRID",
+          "4": "Strategie speichern",
+          "5": "Beginnend mit KI",
+          "6": "Kopieren Handel",
+          "7": "100 Paare zum Handeln",
+          "8": "Technische Indikatoren",
+          "9": "90 Bots"
+        }
+      },
+      "investment": {
+        "header": "Lehnen Sie sich zurück und sehen Sie zu, wie Ihre Kryptowährungsinvestitionen Tag und Nacht wachsen, 24/7, wo immer Sie sind",
+        "free7Days": "7 Tage lang kostenlos testen",
+        "howToConnect": {
+          "register": "Registrieren",
+          "connect": "Verbinden",
+          "startTrading": "Handel starten"
+        }
+      },
+      "login": {
+        "header": "<span>Starten Sie das Verdienen mit</span><span class='text-violet'>Coingarage's Trader</span><span><span class='text-violet'>Bot</span> noch heute</span>",
+        "subText": "Melden Sie sich bei Coingarage an und erhalten Sie eine voll funktionsfähige <b>7-tägige PRO-Testphase</b>, um alle erweiterten Funktionen des Bots zu testen.",
+        "loginForm": {
+          "login": "Anmelden",
+          "yourEmail": "Ihre E-Mail",
+          "password": "Passwort",
+          "forgotPassword": "Passwort vergessen?",
+          "noAccount": "Haben Sie kein Konto? Hier anmelden"
+        }
+      },
+      "start": {
+        "header": "Starten Sie den GRID BOT in 5 einfachen Schritten",
+        "subText": "Starten Sie Ihren GRID-Handelsbot mühelos in fünf einfachen Schritten: Starten Sie den Handel und optimieren Sie noch heute Ihre Gewinne mit Coingarage.",
+        "steps": {
+          "1": "Registrieren Sie sich bei Coingarage",
+          "2": "Melden Sie sich bei einer Börse an",
+          "3": "Gehen Sie zu Unterkonto und wählen Sie im Menü EEZY Trader",
+          "4": "Erstellen Sie eine Strategie",
+          "5": "Starten Sie den Bot und beobachten Sie die Gewinne!"
+        }
+      },
+      "faq": {
+        "question1": "Wie kann ich mit Ihrer Plattform beginnen?",
+        "answer1": "Der Einstieg ist einfach! Melden Sie sich einfach für ein Konto an, absolvieren Sie den Verifizierungsprozess, zahlen Sie Geld auf Ihr Konto ein und beginnen Sie mit dem Handel mit unserer intuitiven Plattform und leistungsstarken Handelstools.",
+        "question2": "Wie gewährleisten Sie die Sicherheit meiner Gelder und persönlichen Informationen?",
+        "answer2": "Wir setzen branchenübliche Sicherheitsmaßnahmen ein, darunter Verschlüsselung, Zwei-Faktor-Authentifizierung (2FA) und regelmäßige Sicherheitsprüfungen, um Ihre Gelder und persönlichen Daten zu schützen. Darüber hinaus erfüllt unsere Plattform strenge Compliance-Standards, um unbefugten Zugriff und betrügerische Aktivitäten zu verhindern.",
+        "question3": "Was sind die Vorteile der Verwendung von DCA?",
+        "answer3": "Das Dollar-Cost-Averaging (DCA) ist eine Strategie, bei der ein Anleger den Gesamtbetrag, der investiert werden soll, auf periodische Käufe eines Zielwerts aufteilt, um die Auswirkungen der Volatilität auf den Gesamtkaufpreis zu verringern. Die wichtigsten Vorteile der Verwendung von DCA sind die Reduzierung des mit dem Timing des Marktes verbundenen Risikos, die potenzielle Senkung des durchschnittlichen Kosten pro Aktie im Laufe der Zeit und die Förderung eines disziplinierten Anlageverhaltens."
+      }
+    },
+    "affiliate": {
+      "btnAffiliate": "Loslegen",
+      "main": {
+        "header1": "Empfehlungsprogramm",
+        "header2": "Verdienen Sie bis zu 15% an Gebühren von jedem Handel Ihrer Partner",
+        "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren fließt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsam geteilte Gewinne!</b>"
+      },
+      "getStarted": {
+        "header1": "Registrieren Sie sich bei Coingarage.",
+        "subText1": "Erstellen Sie ein Konto, melden Sie sich an und gehen Sie dann zum Bereich Partner.",
+        "header2": "Laden Sie Ihre Freunde oder Partner ein.",
+        "subText2": "Kopieren Sie Ihren Partner-Link und senden Sie ihn an Ihre Freunde oder Partner, um Ihr passives Einkommen zu steigern.",
+        "header3": "Genießen Sie Ihre Einnahmen.",
+        "subText3": "Kopieren Sie Ihren Partner-Link und senden Sie ihn an Ihre Freunde oder Partner, um Ihr passives Einkommen zu steigern."
+      },
+      "faq": {
+        "question1": "Wie funktioniert das Partnerprogramm?",
+        "answer1": "Als Partner erhalten Sie einen einzigartigen Empfehlungslink oder Code, den Sie mit Ihrem Publikum teilen können. Wenn jemand auf Ihren Link klickt oder Ihren Code verwendet, um einen Kauf oder eine Anmeldung durchzuführen, erhalten Sie eine Provision für den Verkauf oder die Anmeldung.",
+        "question2": "Gibt es eine Grenze für das, was ich durch das Partnerprogramm verdienen kann?",
+        "answer2": "Es gibt keine Grenze dafür, wie viel Sie durch unser Partnerprogramm verdienen können. Ihre Einnahmen hängen von der Anzahl der von Ihnen generierten Empfehlungen und dem Wert ihrer Käufe oder Anmeldungen ab.",
+        "question3": "Wie kann ich meine Empfehlungen und Provisionen verfolgen?",
+        "answer3": "Unser Partnerprogramm bietet Zugang zu einem Dashboard oder Portal, über das Sie Ihre Empfehlungen verfolgen, Verkäufe oder Anmeldungen überwachen und Ihre Provisionsverdienste in Echtzeit anzeigen können.",
+        "question4": "Was ist die Provisionsstruktur für das Partnerprogramm?",
+        "answer4": "Unser Partnerprogramm bietet eine mehrstufige Provisionsstruktur, wobei die Prozentsätze der Provision auf der Ebene der Empfehlungen basieren:",
+        "levels": {
+          "1": "Ebene 1: 15% Provision",
+          "2": "Ebene 2: 10% Provision",
+          "3": "Ebene 3: 5% Provision"
+        }
+      }
+    },
+    "subscription": {
+      "btnBuy": "Abonnement kaufen",
+      "header": "Was ist ein Abonnement?",
+      "subText": "Ein Abonnement gewährt Ihnen vollen Zugriff auf unsere Dienste. <b>Mit einem Abonnement erhalten Sie Zugriff auf unseren revolutionären Handelsroboter</b>, der es Ihnen ermöglicht, auf den Märkten absolut einfach und effizient zu handeln.",
+      "plans": {
+        "header": "Abonnement",
+        "subText": "Nicht sicher, ob unser Abonnement das Richtige für Sie ist? Kein Problem! Wir bieten eine Testversion an, in der Sie unseren Bot ausprobieren und seine Fähigkeiten aus erster Hand erleben können.",
+        "trial": {
+          "header": "Testversion",
+          "free": "Kostenlos",
+          "package": {
+            "header": "Testen und Genießen Sie den Handelsbot",
+            "1": "Bis zu 10 Bots",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Nachlaufende Take-Profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Am häufigsten verwendet",
+          "header": "Basis Monat",
+          "competitionPrice": "$45/Monat",
+          "price": "$15/Monat",
+          "package": {
+            "header": "Testen und Genießen Sie den Handelsbot",
+            "1": "Bis zu 50 Bots",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Nachlaufende Take-Profit",
+            "5": "Automatische Verlängerung"
+          }
+        },
+        "year": {
+          "header": "Basis Jahr",
+          "competitionPrice": "$384/Monat",
+          "price": "$120/Monat",
+          "save60": "$60 sparen",
+          "package": {
+            "header": "Entsperren Sie das volle Potenzial des Handelsbots",
+            "1": "Bis zu 99 Bots",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Nachlaufende Take-Profit",
+            "5": "Automatische Verlängerung"
+          }
+        },
+        "fee": "10% Erfolgsgebühr in EEZY Coin wird von jedem Gewinn abgezogen."
+      }
+    }
   }
 }

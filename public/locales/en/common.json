@@ -10,7 +10,7 @@
     "convert": "Convert",
     "earn": "Earn",
     "becomeAShareholder": "Become a Shareholder",
-    "affiliate": "Affiliate",
+    "affiliate": "Referral",
     "stake": "Stake",
     "more": "More",
     "aboutUs": "About Us",
@@ -206,6 +206,7 @@
     "newDesign": "We are working on new design",
     "continueToTrader": "Continue to EEZY Trader"
   },
+
   "eezy-trader": {
     "nav": {
       "knowledgeBase": "Knowledge Base",
@@ -215,19 +216,19 @@
     "homepage": {
       "trialBtn": "START 7-DAY FREE TRIAL",
       "main": {
-        "header": "The best AI-powered crypto trading bots, crypto buying, portfolio management and a free trial - all in one place.",
+        "header": "The best AI-powered crypto trading bot",
         "noCreditCard": "*No credit card required"
       },
       "results": {
-        "header": "Realize the complete potential of your trading strategy by leveraging the advanced capabilities of the <b>Coingarage DCA Crypto Bot</b>, empowering you to attain peak trading performance and maximize profits.",
+        "header": "Realize the complete potential of your trading strategy by leveraging the advanced capabilities of the Coingarage’s EEZY Trader crypto bot, empowering you to attain peak trading performance and maximize profits.",
         "topPerformers": "Top Performers",
         "topPairs": "Top Pairs",
         "name": "Name",
         "pair": "Pair"
       },
       "trusting": {
-        "subHeader": "Trusted by thousands of traders, powered by Coingarage",
-        "header": "“Simply & safely Exchange”",
+        "subHeader": "Trusted by thousands of traders, powered by",
+        "header": "Coingarage “Simply & safely Exchange”",
         "columns": {
           "1": "Long / Short",
           "2": "Trading Profit",
@@ -281,11 +282,11 @@
       }
     },
     "affiliate": {
-      "btnAffiliate": "Get Your Affiliate",
+      "btnAffiliate": "Get started",
       "main": {
-        "header1": "Earn passive income.",
-        "header2": "Earn Up to 15% from each partner you refer.",
-        "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. Financial freedom, simply delightful. <b>Invite your friends and enjoy shared profits together!</b>"
+        "header1": "Referal program",
+        "header2": "Earn Up to 15% from fees of every trade of your partners",
+        "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>"
       },
       "getStarted": {
         "header1": "Register to a Coingarage.",
@@ -295,7 +296,7 @@
         "header3": "Enjoy Your Earnings.",
         "subText3": "Copy your Affiliate Link and send it to your friends or partners to increase your passive income."
       },
-      "fag": {
+      "faq": {
         "question1": "How does the affiliate program work?",
         "answer1": "As an affiliate, you'll receive a unique referral link or code thast you can share with your audience. When someone clicks on your link or uses your code to make a purchase or sign up, you'll earn a commission on the sale or sign-up.",
         "question2": "Is there a limit to how much I can earn through the affiliate program?",

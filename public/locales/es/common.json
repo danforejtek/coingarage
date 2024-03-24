@@ -10,7 +10,7 @@
     "convert": "Convertir",
     "earn": "Ganar",
     "becomeAShareholder": "Convertirse en Accionista",
-    "affiliate": "Afiliado",
+    "affiliate": "Referral",
     "stake": "Apostar",
     "more": "Más",
     "aboutUs": "Acerca de Nosotros",
@@ -207,5 +207,160 @@
     "heading": "Un Refugio Seguro: Donde la Privacidad, el Diseño y el Monitoreo en Tiempo Real Convergen para su Tranquilidad",
     "newDesign": "Estamos trabajando en un nuevo diseño",
     "continueToTrader": "Continuar a EEZY Trader"
+  },
+  "eezy-trader": {
+    "nav": {
+      "knowledgeBase": "Base de conocimientos",
+      "affiliateProgram": "Programa de afiliados",
+      "payments": "Pagos y suscripciones"
+    },
+    "homepage": {
+      "trialBtn": "COMIENZA LA PRUEBA GRATUITA DE 7 DÍAS",
+      "main": {
+        "header": "El mejor bot de trading de criptomonedas impulsado por IA",
+        "noCreditCard": "*No se requiere tarjeta de crédito"
+      },
+      "results": {
+        "header": "Realiza todo el potencial de tu estrategia de trading aprovechando las capacidades avanzadas del bot de criptomonedas EEZY Trader de Coingarage, lo que te permite alcanzar el máximo rendimiento comercial y maximizar los beneficios.",
+        "topPerformers": "Mejores rendimientos",
+        "topPairs": "Mejores pares",
+        "name": "Nombre",
+        "pair": "Par"
+      },
+      "trusting": {
+        "subHeader": "Confiado por miles de traders, impulsado por",
+        "header": "Coingarage “Simply & safely Exchange”",
+        "columns": {
+          "1": "Largo / Corto",
+          "2": "Beneficio de trading",
+          "3": "DCA/GRID",
+          "4": "Guardar estrategia",
+          "5": "Inicio por IA",
+          "6": "Copiar trading",
+          "7": "100 Pares para comerciar",
+          "8": "Indicadores técnicos",
+          "9": "90 Bots"
+        }
+      },
+      "investment": {
+        "header": "Siéntate y observa cómo crecen tus inversiones en criptomonedas, día y noche, 24/7, estés donde estés",
+        "free7Days": "Prueba gratuita de 7 días",
+        "howToConnect": {
+          "register": "Registrarse",
+          "connect": "Conectar",
+          "startTrading": "Comenzar a operar"
+        }
+      },
+      "login": {
+        "header": "<span>Comienza a ganar con</span><span class='text-violet'>Trader de Coingarage</span><span><span class='text-violet'>Bot</span> hoy</span>",
+        "subText": "Regístrate en Coingarage y obtén un período de prueba <b>PRO de 7 días</b> totalmente funcional para probar todas las funciones avanzadas del bot.",
+        "loginForm": {
+          "login": "Iniciar sesión",
+          "yourEmail": "Tu correo electrónico",
+          "password": "Contraseña",
+          "forgotPassword": "¿Olvidaste la contraseña?",
+          "noAccount": "¿No tienes una cuenta? Regístrate aquí"
+        }
+      },
+      "start": {
+        "header": "Inicia el BOT GRID en 5 sencillos pasos",
+        "subText": "Lanza tu bot de trading GRID sin esfuerzo en cinco simples pasos: inicia el trading y optimiza tus ganancias hoy mismo con Coingarage.",
+        "steps": {
+          "1": "Regístrate en Coingarage",
+          "2": "Inicia sesión en un Exchange",
+          "3": "Ve a la subcuenta y elige en el menú EEZY Trader",
+          "4": "Crea una estrategia",
+          "5": "¡Ejecuta el bot y observa cómo genera ganancias!"
+        }
+      },
+      "faq": {
+        "question1": "¿Cómo puedo empezar con su plataforma?",
+        "answer1": "¡Empezar es fácil! Simplemente regístrate para obtener una cuenta, completa el proceso de verificación, deposita fondos en tu cuenta y comienza a operar utilizando nuestra plataforma intuitiva y poderosas herramientas de trading.",
+        "question2": "¿Cómo aseguran la seguridad de mis fondos e información personal?",
+        "answer2": "Implementamos medidas de seguridad estándar de la industria, incluyendo cifrado, autenticación de dos factores (2FA) y auditorías de seguridad regulares, para proteger tus fondos e información personal. Además, nuestra plataforma cumple con estrictos estándares de cumplimiento para proteger contra el acceso no autorizado y actividades fraudulentas.",
+        "question3": "¿Cuáles son los beneficios de usar DCA?",
+        "answer3": "El promedio de costo en dólares (DCA) es una estrategia donde un inversor divide el monto total a invertir entre compras periódicas de un activo objetivo en un esfuerzo por reducir el impacto de la volatilidad en la compra total. Los principales beneficios de usar DCA incluyen reducir el riesgo asociado con el momento del mercado, potencialmente reducir el costo promedio por acción con el tiempo y promover un comportamiento de inversión disciplinado."
+      }
+    },
+    "affiliate": {
+      "btnAffiliate": "Empezar",
+      "main": {
+        "header1": "Programa de referidos",
+        "header2": "Gana hasta un 15% de comisión de cada operación de tus socios",
+        "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>Invita a tus amigos y disfruta de beneficios compartidos juntos.</b>"
+      },
+      "getStarted": {
+        "header1": "Regístrate en Coingarage.",
+        "subText1": "Crea una cuenta, inicia sesión y luego ve a la sección de Afiliados.",
+        "header2": "Invita a tus amigos o socios.",
+        "subText2": "Copia tu enlace de afiliado y envíalo a tus amigos o socios para aumentar tus ingresos pasivos.",
+        "header3": "Disfruta de tus ganancias.",
+        "subText3": "Copia tu enlace de afiliado y envíalo a tus amigos o socios para aumentar tus ingresos pasivos."
+      },
+      "faq": {
+        "question1": "¿Cómo funciona el programa de afiliados?",
+        "answer1": "Como afiliado, recibirás un enlace o código de referencia único que puedes compartir con tu audiencia. Cuando alguien hace clic en tu enlace o usa tu código para realizar una compra o registrarse, recibirás una comisión por la venta o inscripción.",
+        "question2": "¿Hay un límite en cuánto puedo ganar a través del programa de afiliados?",
+        "answer2": "No hay límite en cuánto puedes ganar a través de nuestro programa de afiliados. Tus ganancias dependen del número de referencias que generes y el valor de sus compras o inscripciones.",
+        "question3": "¿Cómo puedo rastrear mis referencias y comisiones?",
+        "answer3": "Nuestro programa de afiliados proporciona acceso a un panel donde puedes rastrear tus referencias, monitorear ventas o inscripciones y ver tus ganancias de comisión en tiempo real.",
+        "question4": "¿Cuál es la estructura de comisiones para el programa de afiliados?",
+        "answer4": "Nuestro programa de afiliados ofrece una estructura de comisiones multinivel, con porcentajes de comisión basados en el nivel de referencias:",
+        "levels": {
+          "1": "Nivel 1: comisión del 15%",
+          "2": "Nivel 2: comisión del 10%",
+          "3": "Nivel 3: comisión del 5%"
+        }
+      }
+    },
+    "subscription": {
+      "btnBuy": "Comprar Suscripción",
+      "header": "¿Qué es un plan de suscripción?",
+      "subText": "Un plan de suscripción te concede acceso a nuestros servicios a plena capacidad. <b>Con una suscripción, obtienes acceso a nuestro revolucionario robot de trading</b>, que te permite operar en los mercados con absoluta facilidad y eficiencia.",
+      "plans": {
+        "header": "Suscripción",
+        "subText": "¿No estás seguro si nuestra suscripción es adecuada para ti? ¡No hay problema! Ofrecemos una versión de prueba donde puedes probar nuestro bot y experimentar sus capacidades de primera mano.",
+        "trial": {
+          "header": "Prueba",
+          "free": "Gratis",
+          "package": {
+            "header": "Prueba y Disfruta del Bot de Trading",
+            "1": "Hasta 10 Bots",
+            "2": "Todas las Estrategias",
+            "3": "Terminales de Trading",
+            "4": "Trailing Take Profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Más utilizado",
+          "header": "Básico Mensual",
+          "competitionPrice": "$45/mes",
+          "price": "$15/mes",
+          "package": {
+            "header": "Prueba y Disfruta del Bot de Trading",
+            "1": "Hasta 50 Bots",
+            "2": "Todas las Estrategias",
+            "3": "Terminales de Trading",
+            "4": "Trailing Take Profit",
+            "5": "Renovación Automática"
+          }
+        },
+        "year": {
+          "header": "Básico Anual",
+          "competitionPrice": "$384/mes",
+          "price": "$120/mes",
+          "save60": "Ahorra $60",
+          "package": {
+            "header": "Desbloquea el Potencial Completo del Bot de Trading",
+            "1": "Hasta 99 Bots",
+            "2": "Todas las Estrategias",
+            "3": "Terminales de Trading",
+            "4": "Trailing Take Profit",
+            "5": "Renovación Automática"
+          }
+        },
+        "fee": "Se deduce una tarifa de éxito del 10% en EEZY Coin de cada ganancia."
+      }
+    }
   }
 }
