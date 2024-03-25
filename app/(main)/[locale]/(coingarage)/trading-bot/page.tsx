@@ -109,7 +109,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </div>
         </section>
       </div>
-      <section className="container mx-auto my-24 xl:mx-32">
+      <section className="container mx-auto my-24">
         <SubscriptionPlans />
       </section>
       <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
