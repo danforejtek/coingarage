@@ -32,7 +32,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
 
         <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
-          <Image src="/images/eezy-trader/images/affiliate_numbers.svg" alt="" width={460} height={460} />
+          <Image src="/images/eezy-trader/images/affiliate1.svg" alt="" width={460} height={460} />
         </div>
       </section>
 
