@@ -166,7 +166,7 @@
     "claim": "Přidejte se k Coingarage",
     "text1": "Věříte, že kryptoměny a blockchainová technologie mohou změnit svět k lepšímu?",
     "text2": "Pokud ano, připojte se k affiliate programu Coingarage a získejte speciální odměny. Představte svým přátelům Coingarage, plně licencovanou kryptoměnovou burzu v srdci Evropy.",
-    "reward": "ODMĚNY MŮŽETE ZÍSKAT NA 3 ÚROVNÍCH",
+    "reward": "Můžete získat 3 úrovně odměn",
     "warning": "*Velmi důležité: Prosím, mějte na paměti, že váš affiliate program nekončí pouze u vašich přímých odkazů. Pokud vaši přímí odkazovaní začnou pracovat a odkazovat další, obdržíte další odměny od těchto přímých odkazovaných."
   },
   "AboutUs": {
@@ -286,16 +286,17 @@
       "btnAffiliate": "Začít",
       "main": {
         "header1": "Referral program",
-        "header2": "Vydělejte až 15% z poplatků z každého obchodu vašich partnerů",
-        "subText": "Měsíční odměny, bez námahy. Představte si radost z peněz, které přitékají, aniž byste museli zdvihnout prst. <b>Pozvěte své přátele a společně si užívejte sdílených zisků!</b>"
+        "header2": "Vydělávejte až 15% z poplatků za každý obchod svých partnerů",
+        "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>"
       },
       "getStarted": {
-        "header1": "Zaregistrujte se u společnosti Coingarage.",
-        "subText1": "Vytvořte si účet, přihlaste se a pak jdi na sekci Partnerství.",
-        "header2": "Pozvěte své přátele nebo partnery.",
-        "subText2": "Zkopírujte svůj partnerský odkaz a pošlete ho svým přátelům nebo partnerům, abyste zvýšili svůj pasivní příjem.",
-        "header3": "Užívejte si své příjmy.",
-        "subText3": "Zkopírujte svůj partnerský odkaz a pošlete ho svým přátelům nebo partnerům, abyste zvýšili svůj pasivní příjem."
+        "header1": "Registrovat se do Coingarage",
+        "subText1": "Vytvořte účet na Coingarage, přihlaste se a pak přejděte do sekce Affiliate.",
+        "header2": "Pozvěte své přátele a partnery",
+        "subText2": "Zkopírujte si svůj odkaz na affiliate a pošlete ho svým přátelům nebo partnerům.",
+        "header3": "Užijte si své výdělky",
+        "subText3": "Když si vytvoří účet a začnou obchodovat, získáte své odměny.",
+        "disclaimer": "Budete přesměrováni na přihlašovací stránku. Po přihlášení do svého účtu najdete svůj kód doporučení v Moje -> Doporučení"
       },
       "faq": {
         "question1": "Jak funguje partnerský program?",
@@ -311,7 +312,19 @@
           "2": "Úroveň 2: 10% provize",
           "3": "Úroveň 3: 5% provize"
         }
-      }
+      },
+      "setupTradingBot": {
+        "name": "Nevíte, jak nastavit obchodního robota?",
+        "claim": "Žádné starosti, vytvořili jsme znalostní bázi",
+        "text1": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
+      },
+      "example": "Příklad",
+      "levels": {
+        "text1": "John je první osobou v řetězci doporučení. Pokud John doporučí Alice, získává 15% z celkové odměny za registraci Alice.",
+        "text2": "Alice je registrována pod Johnem, takže je na druhé úrovni. Pokud Alice doporučí Petera, John (první úroveň) získá 10% z celkové odměny za účet Petera.",
+        "text3": "Peter je registrován pod Alicí, takže je na třetí úrovni. Pokud Peter doporučí dalšího uživatele, John (první úroveň) získá 5% z celkové odměny za nového uživatele registrovaného Peterem."
+      },
+      "disclaimer": "Odměny jsou generovány z poplatků, které platí vaše doporučení."
     },
     "subscription": {
       "btnBuy": "Koupit předplatné",

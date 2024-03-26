@@ -39,44 +39,47 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         <p className="text-center">{t("start.subText")}</p>
       </section>
       <section className="container mx-auto mt-20 flex flex-col items-center lg:flex-row">
-        <div className="flex flex-col flex-wrap justify-center gap-8 lg:w-1/2 xl:justify-between">
+        <div className="relative flex flex-col flex-wrap justify-center gap-8 lg:w-1/2 xl:justify-between">
+          <span className="absolute left-[94px] top-0 h-full w-1 bg-tertiary/20"></span>
+          <span className="absolute bottom-0 left-[102px] h-[18px] w-1 rotate-45 bg-tertiary/20"></span>
+          <span className="absolute bottom-0 left-[86px] h-[18px] w-1 -rotate-45 bg-tertiary/20"></span>
           <Figure
-            icon="/images/eezy-trader/images/presentation.gif"
+            icon="/images/eezy-trader/icons/login.svg"
             direction="horizontal"
             caption={t("start.steps.1")}
-            iconSize={100}
+            iconSize={65}
             className="w-full gap-16 lg:w-[400px]"
             textClassName="text-primary"
           />
           <Figure
-            icon="/images/eezy-trader/images/money-bag.gif"
+            icon="/images/eezy-trader/icons/signUp.svg"
             direction="horizontal"
             caption={t("start.steps.2")}
-            iconSize={100}
+            iconSize={65}
             className="w-full gap-16 lg:w-[400px]"
             textClassName="text-primary"
           />
           <Figure
-            icon="/images/eezy-trader/images/computer.gif"
+            icon="/images/eezy-trader/icons/subAccount.svg"
             direction="horizontal"
             caption={t("start.steps.3")}
-            iconSize={100}
+            iconSize={65}
             className="w-full gap-16 lg:w-[400px]"
             textClassName="text-primary"
           />
           <Figure
-            icon="/images/eezy-trader/images/target.gif"
+            icon="/images/eezy-trader/icons/createStrategy.svg"
             direction="horizontal"
             caption={t("start.steps.4")}
-            iconSize={100}
+            iconSize={65}
             className="w-full gap-16 lg:w-[400px]"
             textClassName="text-primary"
           />
           <Figure
-            icon="/images/eezy-trader/images/rocket.gif"
+            icon="/images/eezy-trader/icons/runBot.svg"
             direction="horizontal"
             caption={t("start.steps.5")}
-            iconSize={100}
+            iconSize={65}
             className="w-full gap-16 lg:w-[400px]"
             textClassName="text-primary"
           />
@@ -105,7 +108,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </div>
 
           <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
-            <Image src="/images/eezy-trader/images/affiliate_numbers.svg" alt="" width={500} height={500} />
+            <Image src="/images/eezy-trader/images/affiliate_numbers.svg" alt="" width={600} height={600} />
           </div>
         </section>
       </div>
@@ -152,6 +155,28 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             {t("trusting.columns.9")}
             <Image src="/images/eezy-trader/icons/99bots.svg" width={28} height={28} alt="" />
           </div>
+        </div>
+      </section>
+      <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+        <div className="w-full max-w-[600px] p-4">
+          <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
+            <div className="text-3xl">{tAfi("setupTradingBot.name")}</div>
+            <div className="text-primary">{tAfi("setupTradingBot.claim")}</div>
+          </h1>
+          <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
+            {tAfi.rich("setupTradingBot.text1", {
+              b: (text) => <span className="font-bold text-primary">{text}</span>,
+            })}
+          </p>
+          <div>
+            <Button variant="default" size="lg" className="mt-8">
+              {tAfi("btnAffiliate")}
+            </Button>
+          </div>
+        </div>
+
+        <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
+          <Image src="/images/eezy-trader/images/setupTradingBot.svg" alt="" width={450} height={450} />
         </div>
       </section>
       <section id="faq" className="container mx-auto my-32 max-w-[1000px] xl:mt-36">

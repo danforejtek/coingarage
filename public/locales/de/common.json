@@ -162,9 +162,9 @@
     "companyID": "IČ: 11667974"
   },
   "Affiliate": {
-    "name": "Affiliate-Programm",
+    "name": "Empfehlungsprogramm",
     "claim": "Treten Sie Coingarage bei",
-    "reward": "BELOHNUNGEN KÖNNEN AUF 3 EBENEN VERDIENT WERDEN",
+    "reward": "Sie können 3 Ebenen von Belohnungen erhalten",
     "text1": "Glauben Sie, dass Kryptowährungen und Blockchain-Technologie die Welt zum Besseren verändern können?",
     "text2": "Wenn ja, dann treten Sie dem Coingarage Affiliate-Programm bei und verdienen Sie besondere Belohnungen. Stellen Sie Ihren Freunden Coingarage vor, eine voll lizenzierte Krypto-Börse im Herzen Europas.",
     "warning": "*Sehr wichtig: Bitte beachten Sie, dass Ihr Affiliate nicht nur mit Ihren direkten Empfehlungen endet. Wenn Ihre direkten Empfehlungen anfangen zu arbeiten und Empfehlungen von Ihren direkten Empfehlungen erhalten, werden Sie die nächsten Belohnungen erhalten."
@@ -286,16 +286,17 @@
       "btnAffiliate": "Loslegen",
       "main": {
         "header1": "Empfehlungsprogramm",
-        "header2": "Verdienen Sie bis zu 15% an Gebühren von jedem Handel Ihrer Partner",
-        "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren fließt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsam geteilte Gewinne!</b>"
+        "header2": "Verdienen Sie bis zu 15% der Gebühren für jeden Handel Ihrer Partner",
+        "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren hereinkommt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsame Gewinne!</b>"
       },
       "getStarted": {
-        "header1": "Registrieren Sie sich bei Coingarage.",
-        "subText1": "Erstellen Sie ein Konto, melden Sie sich an und gehen Sie dann zum Bereich Partner.",
-        "header2": "Laden Sie Ihre Freunde oder Partner ein.",
-        "subText2": "Kopieren Sie Ihren Partner-Link und senden Sie ihn an Ihre Freunde oder Partner, um Ihr passives Einkommen zu steigern.",
-        "header3": "Genießen Sie Ihre Einnahmen.",
-        "subText3": "Kopieren Sie Ihren Partner-Link und senden Sie ihn an Ihre Freunde oder Partner, um Ihr passives Einkommen zu steigern."
+        "header1": "Registrieren Sie sich bei Coingarage",
+        "subText1": "Erstellen Sie ein Konto bei Coingarage, melden Sie sich an und gehen Sie dann zum Bereich Empfehlungsprogramm.",
+        "header2": "Laden Sie Ihre Freunde und Partner ein",
+        "subText2": "Kopieren Sie Ihren Affiliate-Link und senden Sie ihn an Ihre Freunde oder Partner.",
+        "header3": "Genießen Sie Ihre Einnahmen",
+        "subText3": "Nachdem sie ein Konto erstellt und mit dem Handel begonnen haben, verdienen Sie Ihre Belohnungen.",
+        "disclaimer": "Sie werden auf die Anmeldeseite weitergeleitet. Nachdem Sie sich in Ihrem Konto angemeldet haben, finden Sie Ihren Empfehlungscode unter Mein -> Empfehlung"
       },
       "faq": {
         "question1": "Wie funktioniert das Partnerprogramm?",
@@ -311,7 +312,19 @@
           "2": "Ebene 2: 10% Provision",
           "3": "Ebene 3: 5% Provision"
         }
-      }
+      },
+      "setupTradingBot": {
+        "name": "Wissen Sie nicht, wie Sie einen Handelsroboter einrichten?",
+        "claim": "Keine Sorge, wir haben eine Wissensbasis erstellt",
+        "text1": "Hier finden Sie umfassende Anleitungen zur Einrichtung und zum Betrieb eines Handelsroboters, die alle wesentlichen Aspekte abdecken."
+      },
+      "example": "Beispiel",
+      "levels": {
+        "text1": "John ist die erste Person in der Empfehlungskette. Wenn John Alice empfiehlt, verdient er 15% der Gesamtbelohnung für die Registrierung von Alice.",
+        "text2": "Alice ist unter John registriert, daher auf der zweiten Ebene. Wenn Alice Peter empfiehlt, verdient John (erste Ebene) 10% der Gesamtbelohnung für Peters Konto.",
+        "text3": "Peter ist unter Alice registriert, daher auf der dritten Ebene. Wenn Peter einen weiteren Benutzer empfiehlt, verdient John (erste Ebene) 5% der Gesamtbelohnung für den neuen Benutzer, der von Peter registriert wurde."
+      },
+      "disclaimer": "Belohnungen werden aus den Gebühren generiert, die Ihre Empfehlungen zahlen."
     },
     "subscription": {
       "btnBuy": "Abonnement kaufen",

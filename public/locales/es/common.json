@@ -162,9 +162,9 @@
     "companyID": "IČ: 11667974"
   },
   "Affiliate": {
-    "name": "Programa de afiliados",
+    "name": "Programa de Referidos",
     "claim": "Únete a Coingarage",
-    "reward": "SE PUEDEN OBTENER RECOMPENSAS EN 3 NIVELES",
+    "reward": "Puede Obtener 3 Niveles de Recompensas",
     "text1": "¿Crees que las criptomonedas y la tecnología blockchain pueden cambiar el mundo para mejor?",
     "text2": "Si es así, únete al programa de afiliados de Coingarage y gana recompensas especiales. Presenta a tus amigos Coingarage, un intercambio de criptomonedas completamente licenciado en el corazón de Europa.",
     "warning": "*Muy importante: Ten en cuenta que tu afiliación no termina solo con tus referidos directos. Si tus referidos directos comienzan a trabajar y obtienen referidos de tus referidos directos, recibirás las siguientes recompensas de esos referidos directos."
@@ -285,17 +285,18 @@
     "affiliate": {
       "btnAffiliate": "Empezar",
       "main": {
-        "header1": "Programa de referidos",
+        "header1": "Programa de Referidos",
         "header2": "Gana hasta un 15% de comisión de cada operación de tus socios",
-        "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>Invita a tus amigos y disfruta de beneficios compartidos juntos.</b>"
+        "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>¡Invita a tus amigos y disfruten de ganancias compartidas juntos!</b>"
       },
       "getStarted": {
-        "header1": "Regístrate en Coingarage.",
-        "subText1": "Crea una cuenta, inicia sesión y luego ve a la sección de Afiliados.",
-        "header2": "Invita a tus amigos o socios.",
-        "subText2": "Copia tu enlace de afiliado y envíalo a tus amigos o socios para aumentar tus ingresos pasivos.",
-        "header3": "Disfruta de tus ganancias.",
-        "subText3": "Copia tu enlace de afiliado y envíalo a tus amigos o socios para aumentar tus ingresos pasivos."
+        "header1": "Regístrate en Coingarage",
+        "subText1": "Cree una cuenta en Coingarage, inicie sesión y luego vaya a la sección de Programa de Referidos.",
+        "header2": "Invita a tus amigos y socios",
+        "subText2": "Copie su enlace de afiliado y envíelo a sus amigos o socios.",
+        "header3": "Disfruta tus ganancias",
+        "subText3": "Después de que creen una cuenta y comiencen a operar, ganará sus recompensas.",
+        "disclaimer": "Será redirigido a la página de inicio de sesión. Después de iniciar sesión en su cuenta, puede encontrar su código de referencia en Mi -> Referido"
       },
       "faq": {
         "question1": "¿Cómo funciona el programa de afiliados?",
@@ -311,7 +312,20 @@
           "2": "Nivel 2: comisión del 10%",
           "3": "Nivel 3: comisión del 5%"
         }
-      }
+      },
+      "setupTradingBot": {
+        "name": "¿No sabes cómo configurar un robot de trading?",
+        "claim": "No se preocupe, hemos creado una base de conocimientos",
+        "text1": "Aquí encontrará una guía completa para establecer y operar un robot de trading, que cubre todos los aspectos esenciales."
+      },
+      "example": "Ejemplo",
+      "levels": {
+        "text1": "John es la primera persona en la cadena de referencia. Si John refiere a Alice, gana el 15% de la recompensa total por el registro de Alice.",
+        "text2": "Alice está registrada bajo John, por lo tanto, en el segundo nivel. Si Alice refiere a Peter, John (primer nivel) gana el 10% de la recompensa total por la cuenta de Peter.",
+        "text3": "Peter está registrado bajo Alice, por lo tanto, en el tercer nivel. Si Peter refiere a otro usuario, John (primer nivel) gana el 5% de la recompensa total por el nuevo usuario registrado por Peter."
+      },
+      "disclaimer": "Las recompensas se generan a partir de las tarifas pagadas por sus referencias.",
+      "warning": "*Muy importante: Tenga en cuenta que su programa de afiliados no termina solo con sus referencias directas, si sus referencias directas comienzan a trabajar y las referencias de sus referencias directas recibirán las próximas recompensas."
     },
     "subscription": {
       "btnBuy": "Comprar Suscripción",

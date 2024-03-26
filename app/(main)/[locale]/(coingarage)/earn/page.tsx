@@ -13,7 +13,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
   return (
     <main className="relative">
-      <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+      <section className="container mx-auto mt-16 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
         <div className="w-full max-w-[500px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-4xl text-primary">{t("main.header1")}</div>
@@ -31,17 +31,35 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </div>
         </div>
 
-        <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
+        <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
           <Image src="/images/eezy-trader/images/affiliate_numbers.svg" alt="" width={460} height={460} />
         </div>
       </section>
 
-      <section className="container mx-auto mb-36 mt-28 flex flex-row justify-between">
-        <div className="flex w-full flex-col flex-wrap items-center justify-center gap-10">
-          <h2 className="font-heading text-4xl font-bold">{tAfi("reward")}</h2>
-          <p className="text-primary">From first level you get 15%, from second 10% and from third 5%.</p>
-          <Image src="/images/affiliate-levels.png" alt="Affiliate Levels" width={650} height={345} />
-          {/* <p className="text-md text-text-neutral-600 mb-4 max-w-[725px] dark:text-neutral-300">{tAfi("warning")}</p> */}
+      <section className="container mx-auto mb-36 mt-28">
+        <h2 className="text-center font-heading text-4xl font-bold">{tAfi("reward")}</h2>
+        <div className="flex flex-col items-center justify-between gap-12 pt-16 lg:flex-row lg:items-start">
+          <div className="flex w-full flex-col flex-wrap items-center justify-center gap-10 lg:w-1/2">
+            {/* <p className="text-primary">From first level you get 15%, from second 10% and from third 5%.</p> */}
+            <Image src="/images/affiliate-levels.png" alt="Affiliate Levels" width={650} height={345} />
+            {/* <p className="text-md text-text-neutral-600 mb-4 max-w-[725px] dark:text-neutral-300">{tAfi("warning")}</p> */}
+          </div>
+          <div className="mt-12 flex w-full max-w-[650px] flex-col gap-6 lg:mt-0 lg:w-1/2">
+            <p className="ml-14 font-heading text-2xl font-bold text-primary">{t("example")}</p>
+            <div className="grid grid-cols-[24px_1fr] items-center gap-8">
+              <div className="font-heading text-4xl font-bold text-tertiary">1</div>
+              <p className="font-heading text-lg ">{t("levels.text1")}</p>
+            </div>
+            <div className="grid grid-cols-[24px_1fr] items-center gap-8">
+              <div className="font-heading text-4xl font-bold text-tertiary">2</div>
+              <p className="font-heading text-lg ">{t("levels.text2")}</p>
+            </div>
+            <div className="grid grid-cols-[24px_1fr] items-center gap-8">
+              <div className="font-heading text-4xl font-bold text-tertiary">3</div>
+              <p className="font-heading text-lg ">{t("levels.text3")}</p>
+            </div>
+            <p className="ml-14 text-sm text-tertiary">{t("disclaimer")}</p>
+          </div>
         </div>
       </section>
 
@@ -50,26 +68,29 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           <p className="text-center font-heading text-4xl font-bold">How to get started</p>
           <div className="mt-12 flex flex-col items-center justify-between gap-4 lg:flex-row">
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-xl font-bold text-white">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-2xl font-bold text-white">
                 1
               </div>
               <span className="text-center text-lg font-bold">{t("getStarted.header2")}</span>
               <p className="text-center text-sm">{t("getStarted.subText1")}</p>
             </div>
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-xl font-bold text-white">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-2xl font-bold text-white">
                 2
               </div>
               <span className="text-center text-lg font-bold">{t("getStarted.header2")}</span>
               <p className="text-center text-sm">{t("getStarted.subText2")}</p>
             </div>
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-xl font-bold text-white">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-2xl font-bold text-white">
                 3
               </div>
               <span className="text-center text-lg font-bold">{t("getStarted.header3")}</span>
               <p className="text-center text-sm">{t("getStarted.subText3")}</p>
             </div>
+          </div>
+          <div className="mx-auto max-w-[500px]">
+            <p className="mt-12 text-center text-sm text-primary ">{t("getStarted.disclaimer")}</p>
           </div>
           <div className="flex flex-row justify-center">
             <Button variant="default" size="lg" className="mt-8">

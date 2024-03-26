@@ -166,7 +166,7 @@
     "claim": "Join the Coingarage",
     "text1": "Do you believe that cryptocurrencies and blockchain technology can change the world for better?",
     "text2": "If yes, than join the Coingarage Affiliate program and earn special rewards. Introduce your friends Coingarage, a full licensed Crypto Exchange in the heart of Europe.",
-    "reward": "YOU CAN GET REWARDS ON 3 LEVELS",
+    "reward": "You Can Get 3 Levels of Rewards",
     "warning": "*Very important: Please note that your Affiliate does not end only with your direct referrals if your direct referrals start to work and referrals from your direct referrals will receive the next rewards."
   },
   "AboutUs": {
@@ -284,17 +284,18 @@
     "affiliate": {
       "btnAffiliate": "Get started",
       "main": {
-        "header1": "Referal program",
+        "header1": "Referral Program",
         "header2": "Earn Up to 15% from fees of every trade of your partners",
         "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>"
       },
       "getStarted": {
-        "header1": "Register to a Coingarage.",
-        "subText1": "Create an Account, Log in and then gosection Affilate.",
-        "header2": "Invite Your Friends or Partners.",
-        "subText2": "Copy your Affiliate Link and send it to your friends or partners to increase your passive income.",
-        "header3": "Enjoy Your Earnings.",
-        "subText3": "Copy your Affiliate Link and send it to your friends or partners to increase your passive income."
+        "header1": "Register to a Coingarage",
+        "subText1": "Create an Account on Coingarage, Log in and then go to section Affiliate.",
+        "header2": "Invite Your Friends and Partners",
+        "subText2": "Copy your Affiliate Link and send it to your friends or partners.",
+        "header3": "Enjoy Your Earnings",
+        "subText3": "After they create an account and start trading, you will earn your rewards.",
+        "disclaimer": "You will be redirected to login page. After you login to your account, you can find your referral code in My -> Referral"
       },
       "faq": {
         "question1": "How does the affiliate program work?",
@@ -310,7 +311,19 @@
           "2": "Level 2: 10% commission",
           "3": "Level 3: 5% commission"
         }
-      }
+      },
+      "setupTradingBot": {
+        "name": "Don’t Know How to Setup Trading Bot?",
+        "claim": "No worries, we have created a knowledgebase",
+        "text1": "Here, you'll discover comprehensive guidance on establishing and operating a trading bot, covering all essential aspects."
+      },
+      "example": "Example",
+      "levels": {
+        "text1": "John is the first person in the referral chain.If John refers Alice, he earns 15% of the total reward for Alice's registration.",
+        "text2": "Alice is registered under John, thus on the second level. If Alice refers Peter, John (first level) earns 10% of the total reward for Peter's account.",
+        "text3": "Peter is registered under Alice, thus on the third level. If Peter refers another user, John (first level) earns 5% of the total reward for the new user registered by Peter."
+      },
+      "disclaimer": "Rewards are generated from fees paid by your referrals"
     },
     "subscription": {
       "btnBuy": "Buy Subscription",
