@@ -25,8 +25,8 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             })}
           </p>
           <div className="">
-            <Button variant="default" size="lg" className="mt-8">
-              {t("btnAffiliate")}
+            <Button variant="default" size="lg" className="mt-8" asChild>
+              <a href="https://trade.coingarage.io/login">{t("btnAffiliate")}</a>
             </Button>
           </div>
         </div>
@@ -93,9 +93,8 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             <p className="mt-12 text-center text-sm text-primary ">{t("getStarted.disclaimer")}</p>
           </div>
           <div className="flex flex-row justify-center">
-            <Button variant="default" size="lg" className="mt-8">
-              {/* {t("btnAffiliate")} */}
-              Get your referral
+            <Button variant="default" size="lg" className="mt-8" asChild>
+              <a href="https://trade.coingarage.io/login">Get your referral</a>
             </Button>
           </div>
         </div>

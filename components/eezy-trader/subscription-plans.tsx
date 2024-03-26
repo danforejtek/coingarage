@@ -55,8 +55,8 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="mt-12 flex flex-row items-center">
-            <Button variant="tertiary" className="px-10">
-              {t("btnBuy")}
+            <Button variant="tertiary" className="px-10" asChild>
+              <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
           <p className="mt-8 text-center text-xs text-tertiary">
@@ -114,8 +114,8 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="mt-12 flex flex-row items-center">
-            <Button variant="default" className="px-10">
-              {t("btnBuy")}
+            <Button variant="default" className="px-10" asChild>
+              <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
           <p className="mt-8 text-center text-xs text-primary">
@@ -170,8 +170,8 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="mt-12 flex flex-row items-center">
-            <Button variant="tertiary" className="px-10">
-              {t("btnBuy")}
+            <Button variant="tertiary" className="px-10" asChild>
+              <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
           <p className="mt-8 text-center text-xs text-tertiary">
