@@ -34,7 +34,7 @@ export function TableComp({
             <TableHeader className="bg-tertiary">
               <TableRow className="border-none">
                 <TableHead className="h-9 w-[100px] rounded-l-lg text-white">Name</TableHead>
-                <TableHead className="h-9 rounded-r-lg text-right text-white">%</TableHead>
+                <TableHead className="h-9 rounded-r-lg text-right text-white">Month</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>

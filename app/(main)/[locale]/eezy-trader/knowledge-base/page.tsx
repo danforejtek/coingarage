@@ -29,7 +29,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </BreadcrumbList>
       </Breadcrumb>
       <div className="py-12">
-        <Tabs defaultValue="intro">
+        <Tabs defaultValue="intro" className="max-w-[1000px]">
           <TabsList>
             <TabsTrigger value="intro">{t("general.introduction.name")}</TabsTrigger>
             <TabsTrigger value="slang">{t("general.slang.name")}</TabsTrigger>

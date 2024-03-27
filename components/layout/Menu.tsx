@@ -47,6 +47,7 @@ import PosterWallDark from "@/public/icons/main/dark/poster_wall.svg"
 import BlogDark from "@/public/icons/main/dark/blog.svg"
 import AcademyDark from "@/public/icons/main/dark/academy.svg"
 import { RadioTower } from "lucide-react"
+import { BookOpen } from "lucide-react"
 
 type NavItem = {
   title: string
@@ -73,6 +74,7 @@ const icons = {
   blog: Blog,
   academy: Academy,
   radio: <RadioTower className="fill-primary stroke-1" />,
+  knowledge_base: <BookOpen className="fill-white stroke-2" />,
 }
 
 const iconsDark = {
@@ -91,6 +93,7 @@ const iconsDark = {
   blog: BlogDark,
   academy: AcademyDark,
   radio: <RadioTower className=" fill-primary stroke-1" />,
+  knowledge_base: <BookOpen className="fill-transparent stroke-2" />,
 }
 
 export const navItems: NavItem[] = [
@@ -211,6 +214,12 @@ export const navItems: NavItem[] = [
         key: "blog",
         href: "/blog",
         icon: "blog",
+      },
+      {
+        title: "Knowdledge Base",
+        key: "knowledgeBase",
+        href: "/eezy-trader/knowledge-base",
+        icon: "knowledge_base",
       },
       {
         title: "Coingarage FM",

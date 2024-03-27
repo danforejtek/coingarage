@@ -24,6 +24,7 @@
     "login": "Login",
     "signUp": "Sign Up",
     "radio": "Coingarage FM",
+    "knowledgeBase": "Knowledge Base",
     "mode": {
       "light": "Light",
       "dark": "Dark",
@@ -400,7 +401,7 @@
         },
         "conclusion": {
           "header": "Conclusion",
-          "subText:": "This introduction schema provides an overview of bot trading, its advantages, different types of strategies, considerations, and concludes with the potential benefits traders can derive from utilizing bots in their trading activities."
+          "subText": "This introduction schema provides an overview of bot trading, its advantages, different types of strategies, considerations, and concludes with the potential benefits traders can derive from utilizing bots in their trading activities."
         }
       },
       "slang": {

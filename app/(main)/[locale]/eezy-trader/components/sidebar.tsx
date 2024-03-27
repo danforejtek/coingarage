@@ -16,14 +16,14 @@ export function Sidebar() {
   const tSub = useTranslations("eezy-trader.subscription.plans")
   const tEzNav = useTranslations("eezy-trader.nav")
   return (
-    <aside className="sticky top-[0px] hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:shrink-0 md:flex-col lg:flex">
+    <aside className="sticky top-[0px] -mb-24 hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:shrink-0 md:flex-col lg:flex">
       <Link href="/eezy-trader/knowledge-base">
         <div className="gap-8p-4 flex flex-row items-center justify-center">
           <Image src="/images/eezy-trader/logo/logo.png" width={200} height={31} alt="logo" />
         </div>
       </Link>
       <div className="flex h-full flex-col justify-between gap-8 px-2 py-12">
-        <nav className="flex w-full flex-col items-center gap-3">
+        <nav className="flex h-full w-full flex-col items-center gap-3">
           <Collapsible className="w-full" defaultOpen={true}>
             <CollapsibleTrigger className="" asChild>
               <Button
@@ -64,7 +64,7 @@ export function Sidebar() {
               </Button>
             </CollapsibleContent>
           </Collapsible>
-          <Button
+          {/* <Button
             variant="ghost"
             className="group flex w-full flex-row items-center justify-between gap-4 text-start text-base"
           >
@@ -81,7 +81,7 @@ export function Sidebar() {
               <CreditCard className="h-6 w-6" />
               {tSub("header")}
             </div>
-          </Button>
+          </Button> */}
         </nav>
       </div>
     </aside>

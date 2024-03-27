@@ -24,6 +24,7 @@
     "login": "Anmelden",
     "signUp": "Registrieren",
     "radio": "Coingarage FM",
+    "knowledgeBase": "Wissensdatenbank",
     "mode": {
       "light": "Hell",
       "dark": "Dunkel",
@@ -459,7 +460,7 @@
           "subText": "Die DCA-Strategie bietet Händlern einen disziplinierten und systematischen Ansatz für Investitionen in Krypto- und Forex-Märkte. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen ermöglichen es DCA-Bots den Händlern, die Auswirkungen der Marktvolatilität zu mindern und im Laufe der Zeit potenziell erhebliche Renditen zu erzielen. Es ist jedoch wichtig, die damit verbundenen Risiken zu verstehen und geeignete Risikomanagementstrategien zu implementieren, um die Leistung zu optimieren und langfristige Anlageziele zu erreichen."
         }
       },
-      "setupDCABot": {
+      "setupDcaBot": {
         "name": "DCA-Bot Einrichten",
         "started": {
           "header": "Loslegen:",

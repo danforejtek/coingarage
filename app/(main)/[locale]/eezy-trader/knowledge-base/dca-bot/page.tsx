@@ -29,7 +29,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </BreadcrumbList>
       </Breadcrumb>
       <div className="py-12">
-        <Tabs defaultValue="intro">
+        <Tabs defaultValue="intro" className="max-w-[1000px]">
           <TabsList>
             <TabsTrigger value="intro">{t("dcaBot.dcaStrategy.name")}</TabsTrigger>
             <TabsTrigger value="long">{t("dcaBot.setupDcaBot.name") + " - Long"}</TabsTrigger>
