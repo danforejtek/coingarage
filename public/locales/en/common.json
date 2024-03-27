@@ -378,6 +378,12 @@
   "knowledgeBase": {
     "general": {
       "name": "General",
+      "activation": "Activation",
+      "subscription": "Subscription",
+      "features": "Features",
+      "activationYoutubeId": "m5HTNiSygck",
+      "subscriptionYoutubeId": "2JO4aMUHEpM",
+      "featuresYoutubeId": "s5qHJ_1u_V0",
       "introduction": {
         "name": "Introduction",
         "overview": {
@@ -429,8 +435,8 @@
       },
       "setupGridBot": "Setup Grid Bot",
       "customizeGridBot": "Customize Grid Bot",
-      "setupGridBotYoutubeId": "4LNhJWa-Xg4?si=LrmKECvL2bBhu-zi",
-      "customizeGridBotYoutubeId": "4LNhJWa-Xg4?si=LrmKECvL2bBhu-zi"
+      "setupGridBotYoutubeIdLong": "168caz6BLv8",
+      "setupGridBotYoutubeIdShort": "dYD9YkndroU"
     },
     "dcaBot": {
       "dcaStrategy": {
@@ -468,7 +474,9 @@
           "subtext1": "Conversely, in a Short position, the bot embarks on selling endeavors, seeking to amass profit in the base currency.",
           "subtext2": "Your bot will initiate a position by selling the base currency. Above this trade, it will place DCA (sell) orders and a Take Profit (buy) order below it. Should the price ascend, the bot will vend more base currency and procure the quote currency at the DCA levels. Conversely, when the price declines, your bot will repurchase the base currency with the Take Profit. Upon completion of the cycle, the bot commences a new one with the initial base currency investment.",
           "subtext3": "To create and execute your inaugural Long and Short DCA bot, kindly adhere to the following step-by-step instructions provided below."
-        }
+        },
+        "setupDcaBotYoutubeIdLong": "jv8L4_Njuu8",
+        "setupDcaBotYoutubeIdShort": "x00-x6uMfas"
       },
       "setupDcaStrategy": {
         "name": "Setup DCA Strategie"

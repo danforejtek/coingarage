@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Figure from "@/components/Figure"
 import { TopPerformers } from "@/components/eezy-trader/top-performers"
 import { SubscriptionPlans } from "@/components/eezy-trader/subscription-plans"
+import Link from "next/link"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -158,7 +159,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
-      {/* <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+      <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
         <div className="w-full max-w-[600px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-3xl">{tAfi("setupTradingBot.name")}</div>
@@ -171,14 +172,14 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </p>
           <div>
             <Button variant="default" size="lg" className="mt-8" asChild>
-              <a href="https://trade.coingarage.io/login">{tAfi("btnAffiliate")}</a>
+              <Link href="/eezy-trader/knowledge-base">{tAfi("btnAffiliate")}</Link>
             </Button>
           </div>
         </div>
         <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
           <Image src="/images/eezy-trader/images/setupTradingBot.svg" alt="" width={450} height={450} />
         </div>
-      </section> */}
+      </section>
 
       <section id="faq" className="container mx-auto my-32 max-w-[1000px] xl:mt-36">
         <p className="text-center text-3xl font-bold">FAQ</p>

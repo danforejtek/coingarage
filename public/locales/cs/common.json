@@ -379,6 +379,12 @@
   "knowledgeBase": {
     "general": {
       "name": "Obecné",
+      "activation": "Aktivace",
+      "subscription": "Předplatné",
+      "features": "Funkce",
+      "activationYoutubeId": "4LNhJWa-Xg4",
+      "subscriptionYoutubeId": "IZqeJ3ZPQcA",
+      "featuresYoutubeId": "pt561SgW-6s",
       "introduction": {
         "name": "Úvod",
         "overview": {
@@ -429,7 +435,9 @@
         }
       },
       "setupGridBot": "Nastavení Grid Bota",
-      "customizeGridBot": "Customizace Grid Bota"
+      "customizeGridBot": "Customizace Grid Bota",
+      "setupGridBotYoutubeIdLong": "ZBeMML_-dOs",
+      "setupGridBotYoutubeIdShort": "RFT9a0aL4ME"
     },
     "dcaBot": {
       "dcaStrategy": {
@@ -467,7 +475,9 @@
           "subtext1": "Naopak v pozici Short se bot pouští do prodejních aktivit, snaží se akumulovat zisk v základní měně.",
           "subtext2": "Váš bot zahájí pozici prodejem základní měny. Nad tímto obchodem umístí DCA (prodejní) objednávky a objednávku Take Profit (nákup) pod ním. Pokud cena stoupne, bot bude prodávat více základní měny a nakupovat měnu kvóty na úrovních DCA. Naopak, když cena klesá, váš bot znovu nakoupí základní měnu na úrovni Take Profit. Po dokončení cyklu bot zahájí nový s počátečním investičním obnosem základní měny.",
           "subtext3": "Pro vytvoření a provedení vašeho úvodního DCA bota Long a Short se prosím držte následujících kroků."
-        }
+        },
+        "setupDcaBotYoutubeIdLong": "B43M0fN16Hs",
+        "setupDcaBotYoutubeIdShort": "w-2oaeHJEpw"
       },
       "setupDcaStrategy": {
         "name": "Customizace DCA Strategie"

@@ -379,6 +379,12 @@
   "knowledgeBase": {
     "general": {
       "name": "Allgemein",
+      "activation": "Aktivierung",
+      "subscription": "Abonnement",
+      "features": "Funktionen",
+      "activationYoutubeId": "ELe8zM4KsaA",
+      "subscriptionYoutubeId": "4KnsHj8yDzk",
+      "featuresYoutubeId": "sBn-WGI3tCY",
       "introduction": {
         "name": "Einführung",
         "overview": {
@@ -429,7 +435,9 @@
         }
       },
       "setupGridBot": "Grid-Bot einrichten",
-      "customizeGridBot": "Passen Sie den Grid-Bot an"
+      "customizeGridBot": "Passen Sie den Grid-Bot an",
+      "setupGridBotYoutubeIdLong": "2a6bE6PtQ28",
+      "setupGridBotYoutubeIdShort": "c4MFwLGbWyo"
     },
     "dcaBot": {
       "dcaStrategy": {
@@ -467,7 +475,9 @@
           "subtext1": "Im Gegensatz dazu begibt sich der Bot in einer Short-Position auf Verkaufsunternehmungen, um Gewinn in der Basiscurrency anzuhäufen.",
           "subtext2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency verkauft. Über diesem Trade platziert er DCA (Verkauf) -Aufträge und einen Take-Profit (Kauf) -Auftrag darunter. Steigt der Preis, wird der Bot mehr Basiscurrency verkaufen und die Quotierungswährung zu den DCA-Ebenen erwerben. Wenn der Preis jedoch sinkt, wird Ihr Bot die Basiscurrency mit dem Take-Profit zurückerwerben. Nach Abschluss des Zyklus startet der Bot einen neuen mit der anfänglichen Basiscurrency-Investition.",
           "subtext3": "Um Ihren ersten Long- und Short-DCA-Bot zu erstellen und auszuführen, befolgen Sie bitte die untenstehenden schrittweisen Anweisungen."
-        }
+        },
+        "setupDcaBotYoutubeIdLong": "T6GnoaQxYsA",
+        "setupDcaBotYoutubeIdShort": "pDSi_balTMI"
       },
       "setupDcaStrategy": {
         "name": "Richten Sie Die DCA-Strategie Ein"

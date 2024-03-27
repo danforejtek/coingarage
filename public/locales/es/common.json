@@ -380,6 +380,12 @@
   "knowledgeBase": {
     "general": {
       "name": "General",
+      "activation": "Activación",
+      "subscription": "Suscripción",
+      "features": "Características",
+      "activationYoutubeId": "hJF5oCmLSvo",
+      "subscriptionYoutubeId": "F69rUJvCc9o",
+      "featuresYoutubeId": "C1swS8rtA2w",
       "introduction": {
         "name": "Introducción",
         "overview": {
@@ -430,7 +436,9 @@
         }
       },
       "setupGridBot": "Configurar Robot Grid",
-      "customizeGridBot": "Personalizar El Robot Grid"
+      "customizeGridBot": "Personalizar El Robot Grid",
+      "setupGridBotYoutubeIdLong": "5acdsw-wlzc",
+      "setupGridBotYoutubeIdShort": "CFBiNV_0Lkk"
     },
     "dcaBot": {
       "dcaStrategy": {
@@ -468,7 +476,9 @@
           "subtext1": "Por el contrario, en una posición corta, el bot se embarca en actividades de venta, buscando acumular ganancias en la moneda base.",
           "subtext2": "Tu bot iniciará una posición vendiendo la moneda base. Encima de este comercio, colocará órdenes de DCA (venta) y una orden de Take Profit (compra) debajo de él. Si el precio aumenta, el bot venderá más moneda base y adquirirá la moneda de cotización en los niveles de DCA. Por el contrario, cuando el precio disminuye, tu bot recomprará la moneda base con el Take Profit. Al completarse el ciclo, el bot inicia uno nuevo con la inversión inicial en moneda base.",
           "subtext3": "Para crear y ejecutar tu primer bot DCA largo y corto, sigue las siguientes instrucciones paso a paso que se proporcionan a continuación."
-        }
+        },
+        "setupDcaBotYoutubeIdLong": "qkqeSk14VMQ",
+        "setupDcaBotYoutubeIdShort": "5x_v6rsMQj8"
       },
       "setupDcaStrategy": {
         "name": "Personalice La Estrategia DCA"

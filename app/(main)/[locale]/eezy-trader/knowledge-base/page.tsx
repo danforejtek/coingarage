@@ -33,6 +33,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <TabsList>
             <TabsTrigger value="intro">{t("general.introduction.name")}</TabsTrigger>
             <TabsTrigger value="slang">{t("general.slang.name")}</TabsTrigger>
+            <TabsTrigger value="activation">{t("general.activation")}</TabsTrigger>
+            <TabsTrigger value="subscription">{t("general.subscription")}</TabsTrigger>
+            <TabsTrigger value="features">{t("general.features")}</TabsTrigger>
           </TabsList>
           <TabsContent value="intro">
             <article>
@@ -87,6 +90,39 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <span className="mr-2 font-bold">GRID Auto:</span>
               {t("general.slang.GRID_Auto")}
             </p>
+          </TabsContent>
+          <TabsContent value="activation">
+            <iframe
+              className="aspect-video w-full"
+              src={`https://www.youtube.com/embed/${t("general.activationYoutubeId")}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </TabsContent>
+          <TabsContent value="subscription">
+            <iframe
+              className="aspect-video w-full"
+              src={`https://www.youtube.com/embed/${t("general.subscriptionYoutubeId")}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </TabsContent>
+          <TabsContent value="features">
+            <iframe
+              className="aspect-video w-full"
+              src={`https://www.youtube.com/embed/${t("general.featuresYoutubeId")}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </TabsContent>
         </Tabs>
       </div>

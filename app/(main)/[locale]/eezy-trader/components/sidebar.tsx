@@ -16,7 +16,7 @@ export function Sidebar() {
   const tSub = useTranslations("eezy-trader.subscription.plans")
   const tEzNav = useTranslations("eezy-trader.nav")
   return (
-    <aside className="sticky top-[0px] hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:flex md:shrink-0 md:flex-col">
+    <aside className="sticky top-[0px] hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:shrink-0 md:flex-col lg:flex">
       <Link href="/eezy-trader/knowledge-base">
         <div className="gap-8p-4 flex flex-row items-center justify-center">
           <Image src="/images/eezy-trader/logo/logo.png" width={200} height={31} alt="logo" />
