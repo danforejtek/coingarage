@@ -29,7 +29,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </BreadcrumbList>
       </Breadcrumb>
       <div className="py-12">
-        <Tabs defaultValue="intro" className="max-w-[800px]">
+        <Tabs defaultValue="intro">
           <TabsList>
             <TabsTrigger value="intro">{t("general.introduction.name")}</TabsTrigger>
             <TabsTrigger value="slang">{t("general.slang.name")}</TabsTrigger>
@@ -38,7 +38,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <TabsTrigger value="features">{t("general.features")}</TabsTrigger>
           </TabsList>
           <TabsContent value="intro">
-            <article>
+            <article className="max-w-[800px]">
               <h1 className="mb-4 text-xl font-bold">{t("general.introduction.overview.header")}</h1>
               <p className="mb-8">{t("general.introduction.overview.subText")}</p>
               <h2 className="mb-4 text-xl font-bold">{t("general.introduction.advantages.header")}</h2>
@@ -54,42 +54,44 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </article>
           </TabsContent>
           <TabsContent value="slang">
-            <p className="mb-4">
-              <span className="mr-2 font-bold">GRID:</span>
-              {t("general.slang.GRID")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">DCA:</span>
-              {t("general.slang.DCA")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">TP:</span>
-              {t("general.slang.TP")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">SL:</span>
-              {t("general.slang.SL")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">SHORT:</span>
-              {t("general.slang.SHORT")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">LONG:</span>
-              {t("general.slang.LONG")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">START BY AI:</span>
-              {t("general.slang.START_BY_AI")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">DCA Auto:</span>
-              {t("general.slang.DCA_Auto")}
-            </p>
-            <p className="mb-4">
-              <span className="mr-2 font-bold">GRID Auto:</span>
-              {t("general.slang.GRID_Auto")}
-            </p>
+            <article className="max-w-[800px]">
+              <p className="mb-4">
+                <span className="mr-2 font-bold">GRID:</span>
+                {t("general.slang.GRID")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">DCA:</span>
+                {t("general.slang.DCA")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">TP:</span>
+                {t("general.slang.TP")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">SL:</span>
+                {t("general.slang.SL")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">SHORT:</span>
+                {t("general.slang.SHORT")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">LONG:</span>
+                {t("general.slang.LONG")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">START BY AI:</span>
+                {t("general.slang.START_BY_AI")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">DCA Auto:</span>
+                {t("general.slang.DCA_Auto")}
+              </p>
+              <p className="mb-4">
+                <span className="mr-2 font-bold">GRID Auto:</span>
+                {t("general.slang.GRID_Auto")}
+              </p>
+            </article>
           </TabsContent>
           <TabsContent value="activation">
             <iframe
