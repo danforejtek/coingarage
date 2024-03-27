@@ -375,5 +375,103 @@
         "fee": "Z každého zisku je odečten úspěšný poplatek ve výši 10 % v EEZY Coin."
       }
     }
+  },
+  "knowledgeBase": {
+    "general": {
+      "name": "Obecné",
+      "introduction": {
+        "name": "Úvod",
+        "overview": {
+          "header": "Přehled",
+          "subText": "Obchodování s boty, také známé jako automatizované obchodování, využívá předprogramovaný software k provádění obchodů za obchodníky. Tato metoda obchodování získala popularitu díky schopnosti provádět obchody rychle a přesně, 24/7, bez potřeby lidského zásahu."
+        },
+        "advantages": {
+          "header": "Výhody",
+          "subText1": "Rychlost: Boti mohou provádět obchody v milisekundách, kteří využívají rychlejších pohybů na trhu než lidský obchodník.",
+          "subText2": "Emoční Nezávislost: Boti obchodují na základě předdefinovaných pravidel a eliminují emoce jako strach a chamtivost, které mohou ovlivnit lidské rozhodování.",
+          "subText3": "24/7 Obchodování: Boti mohou pracovat nepřetržitě, využívat příležitosti na globálních trzích i tehdy, když jsou obchodníci spící nebo offline.",
+          "subText4": "Zpětné Testování a Optimalizace: Obchodníci mohou zpětně testovat strategie botů pomocí historických dat, aby posoudili výkon a optimalizovali strategie pro lepší výsledky.",
+          "subText5": "Diverzifikace: Boti mohou obchodovat současně přes více aktiv, což umožňuje větší diverzifikaci obchodních portfolií."
+        },
+        "conclusion": {
+          "header": "Závěr",
+          "subText": "Toto úvodní schéma poskytuje přehled o obchodování s boty, jejich výhodách, různých typech strategií, úvahách a končí potenciálními výhodami, které si obchodníci mohou odvodit z využívání botů ve svých obchodních aktivitách."
+        }
+      },
+      "slang": {
+        "name": "Slang",
+        "GRID": "Obchodní strategie, která zahrnuje umístění nákupních a prodejních objednávek v předem stanovených cenových intervalech v určeném rozmezí. Cílem grid obchodování je profitovat z cenových fluktuací v nastaveném rozsahu.",
+        "DCA": "Dolarové průměrování (DCA) je investiční strategie, kde investor pravidelně kupuje pevnou částku určité investice bez ohledu na cenu aktiva. Tato strategie si klade za cíl snížit dopad volatility trhu tím, že rozloží nákupní cenu v průběhu času.",
+        "TP": "Take Profit (TP) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k realizaci zisků. Objednávky Take Profit jsou obvykle nastaveny nad aktuální tržní cenou pro dlouhé pozice a pod aktuální tržní cenou pro krátké pozice.",
+        "SL": "Stop Loss (SL) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k omezení potenciálních ztrát. Objednávky Stop Loss jsou obvykle nastaveny pod aktuální tržní cenou pro dlouhé pozice a nad aktuální tržní cenou pro krátké pozice.",
+        "SHORT": "Obchodní pozice, kde obchodník prodává aktivum s očekáváním, že jeho cena klesne. Obchodníci profitují ze short pozic tím, že zpětně nakupují aktivum za nižší cenu, než za jakou je prodali.",
+        "LONG": "Obchodní pozice, kde obchodník kupuje aktivum s očekáváním, že jeho cena vzroste. Obchodníci profitují z long pozic tím, že prodávají aktivum za vyšší cenu, než za jakou je koupili.",
+        "START_BY_AI": "Zahájení nebo zahájení obchodních aktivit pomocí algoritmů umělé inteligence (AI) nebo platforem. To může zahrnovat automatizované obchodní strategie, kde AI analyzuje tržní data a provádí obchody na základě předdefinovaných pravidel nebo algoritmů.",
+        "DCA_Auto": "S DCA Auto jsou zavedeny hodnoty vybrané naší burzou, umožňující automatizované provedení nákupů v určených intervalech. To eliminuje potřebu manuálního zásahu, protože platforma automaticky provádí nákupy na základě přednastavených parametrů, umožňujíc investorům akumulaci aktiv v průběhu času bez kontinuálního monitorování.",
+        "GRID_Auto": "S GRID Auto jsou zavedeny hodnoty vybrané naší platformou, usnadňující automatizované provedení obchodů na základě těchto předem stanovených parametrů. To umožňuje obchodníkům kapitalizovat na tržních fluktuacích v určeném rozsahu bez potřeby manuálního zásahu."
+      }
+    },
+    "gridBot": {
+      "gridStrategy": {
+        "name": "Grid Strategie",
+        "strategy": {
+          "subText1": "Strategie GRID představuje základní kámen jak ve světě kryptoměn, tak v oblasti obchodování s forexem. Operuje prostřednictvím odkladů limitních nákupních a prodejních objednávek v předem stanovených cenových intervalech. Rozdělením vybrané cenové oblasti do více úrovní se vytváří síť objednávek, odtud také název strategie GRID.",
+          "subText2": "Naši GRID boti jsou navrženi tak, aby prováděli obchody na základě této strategie, neúnavně generují zisky z pohybů na trhu i tehdy, když neaktivně sledujete své obchody. Každá síť funguje vzájemně: jakmile je dokončena nákupní objednávka, bot okamžitě zahájí prodejní objednávku nad provedenou cenou a naopak. Veškeré vaše obchodní aktivity jsou efektivně řízeny prostřednictvím platformy Bitsgap."
+        },
+        "profit": {
+          "header": "Generování zisků pomocí strategie GRID:",
+          "subText": "Zajímavým aspektem strategie GRID je její schopnost využít přirozených fluktuací cen aktiv. Namísto utrácení nesčetných hodin za detailním studiem grafů pro načasování tržních pohybů, GRID boti provádějí obchody v příhodných okamžicích, nakupují za nízké ceny a prodávají za vysoké ceny. Pravidelně generují zisky bez nutnosti spoléhat se na složité algoritmy, jednoduše dodržují parametry sítě, které nastavíte."
+        },
+        "risk": {
+          "header": "Rizika spojená se strategií GRID:",
+          "subText1": "Automatizace strategie GRID nese v sobě základní rizika, zejména v nepříznivých tržních podmínkách. Neočekávané fluktuace cen mohou významně ovlivnit vaše obchodní výsledky. Pro zajištění vaší investice může být užitečné využít funkce jako Stop Loss nebo Trailing.",
+          "subText2": "Přestože existují rizika, obchodování pomocí sítě představuje jednu z nejjednodušších a osvědčených obchodních metod. V průběhu času má potenciál dosáhnout značných výsledků. Avšak jeho účinnost klesá během silných obratů trendu. Je tedy klíčové rozhodnout, kdy zahájit nebo zastavit provoz vašich botů."
+        }
+      },
+      "setupGridBot": "Nastavení Grid Bota",
+      "customizeGridBot": "Customizace Grid Bota"
+    },
+    "dcaBot": {
+      "dcaStrategy": {
+        "name": "DCA Strategie",
+        "strategy": {
+          "subText1": "Strategie DCA (Dollar-Cost Averaging) je široce přijímaný přístup jak v kryptoměnových, tak v forexových obchodních sférách. Spočívá v systematickém nákupu pevného množství aktiva v pravidelných intervalech, bez ohledu na fluktuace jeho ceny. Tato disciplinovaná strategie si klade za cíl snížit dopad volatility trhu na výnosy z investic v průběhu času.",
+          "subText2": "Naši DCA boti jsou pečlivě vytvořeni pro implementaci této strategie, umožňují obchodníkům postupně akumulovat aktiva v průběhu času bez potřeby neustálé manuální intervence. Tyto boti provádějí obchody podle předem stanovených parametrů, usnadňují bezproblémový růst portfolia a řízení rizik."
+        },
+        "profit": {
+          "header": "Generování zisku pomocí strategie DCA:",
+          "subText": "Krása strategie DCA spočívá v její schopnosti využít konceptu průměrování dolů. Tím, že pravidelně nakupují aktiva v pravidelných intervalech, bez ohledu na krátkodobé pohyby cen, umožňují boti DCA obchodníkům akumulovat aktiva za průměrnou cenu v průběhu času. Tento přístup může vést k významným ziskům během období tržní volatility, protože minimalizuje riziko nakupování aktiv za jednu, potenciálně nadhodnocenou cenu."
+        },
+        "risk": {
+          "header": "Rizika spojená se strategií DCA:",
+          "subText": "I když strategie DCA nabízí systematický přístup k investování, není bez rizika. Poklesy na trhu nebo dlouhé období úpadku aktiv mohou ovlivnit celkový výkon strategie. Obchodníci musí také pečlivě zvážit faktory jako je frekvence nákupů a délka investičního horizontu, aby optimalizovali výnosy a účinně řídili riziko."
+        },
+        "conclusion": {
+          "header": "Závěr",
+          "subText": "Strategie DCA poskytuje obchodníkům disciplinovaný a systematický přístup k investování na kryptoměnových a forexových trzích. Díky pravidelnému nákupu aktiv v pravidelných intervalech umožňují boti DCA obchodníkům minimalizovat dopad tržní volatility a potenciálně generovat významné zisky v průběhu času. Nicméně je nezbytné porozumět souvisejícím rizikům a implementovat vhodné strategie řízení rizika pro optimalizaci výkonu a dosažení dlouhodobých investičních cílů."
+        }
+      },
+      "setupDcaBot": {
+        "name": "Nastavení DCA Bota",
+        "started": {
+          "header": "Jak Začít",
+          "subText": "Při spouštění DCA bota máte možnost vybrat obchodní směr a vytvořit buď pozici Long nebo Short."
+        },
+        "long": {
+          "header": "Pozice Long:",
+          "subText1": "V pozici Long se bot zapojuje do nákupních aktivit, s cílem akumulovat zisk v měně kvóty.",
+          "subText2": "Váš bot zahájí pozici nákupem základní měny. Následně umístí DCA (nákupní) objednávky pod tímto obchodem a objednávku Take Profit (prodej) nad ním. Jakmile cena stoupá, váš bot bude prodávat veškerou zakoupenou základní měnu na úrovni Take Profit, čímž vygeneruje zisk. V tomto okamžiku cyklus končí a bot zahájí nový s počátečním investičním obnosem."
+        },
+        "short": {
+          "header": "Pozice Short:",
+          "subtext1": "Naopak v pozici Short se bot pouští do prodejních aktivit, snaží se akumulovat zisk v základní měně.",
+          "subtext2": "Váš bot zahájí pozici prodejem základní měny. Nad tímto obchodem umístí DCA (prodejní) objednávky a objednávku Take Profit (nákup) pod ním. Pokud cena stoupne, bot bude prodávat více základní měny a nakupovat měnu kvóty na úrovních DCA. Naopak, když cena klesá, váš bot znovu nakoupí základní měnu na úrovni Take Profit. Po dokončení cyklu bot zahájí nový s počátečním investičním obnosem základní měny.",
+          "subtext3": "Pro vytvoření a provedení vašeho úvodního DCA bota Long a Short se prosím držte následujících kroků."
+        }
+      },
+      "setupDcaStrategy": {
+        "name": "Customizace DCA Strategie"
+      }
+    }
   }
 }

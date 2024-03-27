@@ -376,5 +376,103 @@
         "fee": "Se deduce una tarifa de éxito del 10% en EEZY Coin de cada ganancia."
       }
     }
+  },
+  "knowledgeBase": {
+    "general": {
+      "name": "General",
+      "introduction": {
+        "name": "Introducción",
+        "overview": {
+          "header": "Visión general",
+          "subText": "El trading de bots, también conocido como trading automatizado, utiliza software preprogramado para ejecutar operaciones en nombre de los traders. Este método de trading ha ganado popularidad debido a su capacidad para ejecutar operaciones con velocidad y precisión, las 24 horas del día, los 7 días de la semana, sin necesidad de intervención humana."
+        },
+        "advantages": {
+          "header": "Ventajas",
+          "subText1": "Velocidad: Los bots pueden ejecutar operaciones en milisegundos, aprovechando los movimientos del mercado más rápido que los traders humanos.",
+          "subText2": "Trading sin emociones: Los bots operan en base a reglas predefinidas, eliminando emociones como el miedo y la avaricia que pueden afectar la toma de decisiones humanas.",
+          "subText3": "Trading las 24 horas del día, los 7 días de la semana: Los bots pueden operar todo el día, aprovechando las oportunidades en los mercados globales incluso cuando los traders están dormidos o fuera de línea.",
+          "subText4": "Backtesting y optimización: Los traders pueden probar las estrategias de los bots utilizando datos históricos para evaluar el rendimiento y optimizar las estrategias para obtener mejores resultados.",
+          "subText5": "Diversificación: Los bots pueden operar en múltiples activos simultáneamente, permitiendo una mayor diversificación de las carteras de trading."
+        },
+        "conclusion": {
+          "header": "Conclusión",
+          "subText": "Este esquema de introducción proporciona una visión general del trading de bots, sus ventajas, diferentes tipos de estrategias, consideraciones y concluye con los beneficios potenciales que los traders pueden obtener al utilizar bots en sus actividades de trading."
+        }
+      },
+      "slang": {
+        "name": "Slang",
+        "GRID": "Una estrategia de trading que implica colocar órdenes de compra y venta en intervalos de precios predefinidos dentro de un rango especificado. El objetivo del trading por grillas es obtener ganancias de las fluctuaciones de precios dentro del rango establecido.",
+        "DCA": "El promedio del costo en dólares (DCA) es una estrategia de inversión en la que un inversor compra una cantidad fija de una inversión particular en un horario regular, independientemente del precio del activo. Esta estrategia tiene como objetivo reducir el impacto de la volatilidad del mercado al distribuir el precio de compra a lo largo del tiempo.",
+        "TP": "El Take Profit (TP) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para realizar ganancias. Las órdenes de Take Profit generalmente se establecen por encima del precio de mercado actual para posiciones largas y por debajo del precio de mercado actual para posiciones cortas.",
+        "SL": "El Stop Loss (SL) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para limitar pérdidas potenciales. Las órdenes de Stop Loss generalmente se establecen por debajo del precio de mercado actual para posiciones largas y por encima del precio de mercado actual para posiciones cortas.",
+        "SHORT": "Una posición de trading en la que un trader vende un activo con la expectativa de que su precio disminuya. Los traders obtienen ganancias de las posiciones cortas comprando de nuevo el activo a un precio más bajo del que lo vendieron.",
+        "LONG": "Una posición de trading en la que un trader compra un activo con la expectativa de que su precio aumente. Los traders obtienen ganancias de las posiciones largas vendiendo el activo a un precio más alto del que lo compraron.",
+        "START_BY_AI": "Iniciar o comenzar actividades de trading utilizando algoritmos o plataformas de inteligencia artificial (IA). Esto puede implicar estrategias de trading automatizadas, donde la IA analiza datos del mercado y ejecuta operaciones basadas en reglas o algoritmos predefinidos.",
+        "DCA_Auto": "Con DCA Auto, se introducen los valores elegidos por nuestro exchange, lo que permite la ejecución automatizada de compras en intervalos especificados. Esto elimina la necesidad de intervención manual, ya que la plataforma ejecuta automáticamente las compras en función de los parámetros preestablecidos, permitiendo a los inversores acumular activos con el tiempo sin necesidad de monitoreo continuo.",
+        "GRID_Auto": "Con GRID Auto, se introducen los valores del exchange seleccionados por nuestra plataforma, facilitando la ejecución automatizada de operaciones basadas en estos parámetros predefinidos. Esto permite a los traders capitalizar las fluctuaciones del mercado dentro del rango especificado sin necesidad de intervención manual."
+      },
+      "gridBot": {
+        "gridStategy": {
+          "name": "Estrategia Grid",
+          "strategy": {
+            "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
+            "subText2": "Nuestros bots GRID están diseñados para ejecutar operaciones basadas en esta estrategia, generando beneficios incansablemente a partir de los movimientos del mercado incluso cuando no estás monitoreando activamente tus operaciones. Cada grilla funciona de manera intercambiable: una vez que se completa una orden de compra, el bot inicia rápidamente una orden de venta por encima del precio ejecutado, y viceversa. Todas tus actividades comerciales se gestionan eficientemente a través de la plataforma Bitsgap."
+          },
+          "profit": {
+            "header": "Generación de beneficios con la estrategia GRID:",
+            "subText": "El aspecto intrigante de la estrategia GRID radica en su capacidad para capitalizar las fluctuaciones naturales de los precios de los activos. En lugar de pasar horas incontables escudriñando gráficos para cronometrar movimientos del mercado, los bots GRID ejecutan operaciones en momentos oportunos, comprando a precios bajos y vendiendo a precios altos. Entregan consistentemente beneficios sin depender de algoritmos complejos, simplemente adhiriéndose a los parámetros de la grilla que estableces."
+          },
+          "risk": {
+            "header": "Riesgos asociados con la estrategia GRID:",
+            "subText1": "Automatizar la estrategia GRID conlleva riesgos inherentes, especialmente durante condiciones de mercado adversas. Las fluctuaciones de precios inesperadas pueden impactar significativamente los resultados de tus operaciones. Para proteger tu inversión, emplear funciones como Stop Loss o Trailing puede resultar beneficioso.",
+            "subText2": "A pesar de los riesgos, el trading con grillas presenta una de las metodologías comerciales más sencillas y probadas con el tiempo. Con el tiempo, tiene el potencial de generar resultados sustanciales. Sin embargo, su eficacia disminuye durante fuertes reversos de tendencia. Por lo tanto, es crucial discernir cuándo iniciar o detener las operaciones de tu bot."
+          }
+        }
+      },
+      "setupGridBot": "Configurar Robot Grid",
+      "customizeGridBot": "Personalizar El Robot Grid"
+    },
+    "dcaBot": {
+      "dcaStrategy": {
+        "name": "Estrategia DCA",
+        "strategy": {
+          "subText1": "La estrategia DCA (promedio de costos en dólares) es un enfoque ampliamente aceptado tanto en el ámbito del comercio de criptomonedas como en el de divisas. Consiste en comprar sistemáticamente una cantidad fija de un activo en intervalos regulares, independientemente de sus fluctuaciones de precio. Esta estrategia disciplinada tiene como objetivo reducir el impacto de la volatilidad del mercado en los rendimientos de la inversión con el tiempo.",
+          "subText2": "Nuestros bots DCA están meticulosamente diseñados para implementar esta estrategia, lo que permite a los traders acumular activos de manera constante con el tiempo sin necesidad de intervención manual constante. Estos bots ejecutan operaciones según parámetros predefinidos, facilitando así el crecimiento continuo de la cartera y la gestión de riesgos."
+        },
+        "profit": {
+          "header": "Generación de ganancias con la estrategia DCA:",
+          "subText": "La belleza de la estrategia DCA radica en su capacidad para capitalizar el concepto de promedio a la baja. Al comprar activos de manera constante en intervalos regulares, independientemente de los movimientos de precio a corto plazo, los bots DCA permiten a los traders acumular activos a un costo promedio con el tiempo. Este enfoque puede conducir a ganancias significativas durante períodos de volatilidad del mercado, ya que mitiga el riesgo de comprar activos a un solo punto de precio potencialmente inflado."
+        },
+        "risk": {
+          "header": "Riesgos asociados con la estrategia DCA:",
+          "subText": "Si bien la estrategia DCA ofrece un enfoque sistemático para invertir, no está exenta de riesgos. Las caídas del mercado o períodos prolongados de depreciación de activos pueden afectar el rendimiento general de la estrategia. Además, los traders deben considerar cuidadosamente factores como la frecuencia de compras y la duración del horizonte de inversión para optimizar los rendimientos y gestionar el riesgo de manera efectiva."
+        },
+        "conclusion": {
+          "header": "Conclusión",
+          "subText": "La estrategia DCA proporciona a los traders un enfoque disciplinado y sistemático para invertir en los mercados de criptomonedas y divisas. Al comprar activos constantemente en intervalos regulares, los bots DCA permiten a los traders mitigar el impacto de la volatilidad del mercado y potencialmente generar ganancias significativas con el tiempo. Sin embargo, es esencial comprender los riesgos asociados e implementar estrategias adecuadas de gestión del riesgo para optimizar el rendimiento y alcanzar los objetivos de inversión a largo plazo."
+        }
+      },
+      "setupDcaBot": {
+        "name": "Configurar robot DCA",
+        "started": {
+          "header": "Empezando:",
+          "subText": "Al iniciar un Bot DCA, tienes la opción de seleccionar una dirección comercial y establecer una posición larga o corta."
+        },
+        "long": {
+          "header": "Posición Larga:",
+          "subText1": "En una posición larga, el bot se dedica a actividades de compra, con el objetivo de acumular ganancias en la moneda de cotización.",
+          "subText2": "Tu bot iniciará una posición comprando la moneda base. Posteriormente, colocará órdenes de DCA (compra) debajo de este comercio y una orden de Take Profit (venta) encima de él. A medida que el precio aumenta, tu bot venderá toda la moneda base adquirida en el nivel de Take Profit, generando así ganancias. En este punto, el ciclo concluye y el bot inicia uno nuevo con la cantidad de inversión inicial."
+        },
+        "short": {
+          "header": "Posición Corta:",
+          "subtext1": "Por el contrario, en una posición corta, el bot se embarca en actividades de venta, buscando acumular ganancias en la moneda base.",
+          "subtext2": "Tu bot iniciará una posición vendiendo la moneda base. Encima de este comercio, colocará órdenes de DCA (venta) y una orden de Take Profit (compra) debajo de él. Si el precio aumenta, el bot venderá más moneda base y adquirirá la moneda de cotización en los niveles de DCA. Por el contrario, cuando el precio disminuye, tu bot recomprará la moneda base con el Take Profit. Al completarse el ciclo, el bot inicia uno nuevo con la inversión inicial en moneda base.",
+          "subtext3": "Para crear y ejecutar tu primer bot DCA largo y corto, sigue las siguientes instrucciones paso a paso que se proporcionan a continuación."
+        }
+      },
+      "setupDcaStrategy": {
+        "name": "Personalice La Estrategia DCA"
+      }
+    }
   }
 }

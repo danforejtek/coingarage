@@ -113,6 +113,15 @@
   }
 }
 
+.unordered-list {
+  list-style: outside;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .primary-gradient {
   background: linear-gradient(to top, rgba(217, 217, 217, 0) 60%, rgba(255, 31, 112, 0.22) 100%);
 }

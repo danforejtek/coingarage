@@ -375,5 +375,103 @@
         "fee": "10% Erfolgsgebühr in EEZY Coin wird von jedem Gewinn abgezogen."
       }
     }
+  },
+  "knowledgeBase": {
+    "general": {
+      "name": "Allgemein",
+      "introduction": {
+        "name": "Einführung",
+        "overview": {
+          "header": "Übersicht",
+          "subText": "Bot-Trading, auch als automatisiertes Trading bekannt, nutzt vorprogrammierte Software, um im Namen von Händlern Trades auszuführen. Diese Handelsmethode hat aufgrund ihrer Fähigkeit, Trades rund um die Uhr und ohne menschliches Eingreifen mit Geschwindigkeit und Präzision auszuführen, an Popularität gewonnen."
+        },
+        "advantages": {
+          "header": "Vorteile",
+          "subText1": "Schnelligkeit: Bots können Trades in Millisekunden ausführen und Marktbewegungen schneller als menschliche Händler ausnutzen.",
+          "subText2": "Emotionsloses Trading: Bots handeln auf der Grundlage vordefinierter Regeln und eliminieren Emotionen wie Angst und Gier, die menschliche Entscheidungen beeinflussen können.",
+          "subText3": "24/7 Trading: Bots können rund um die Uhr betrieben werden und Chancen in globalen Märkten nutzen, auch wenn Händler schlafen oder offline sind.",
+          "subText4": "Backtesting und Optimierung: Trader können Bot-Strategien mithilfe historischer Daten testen und die Leistung bewerten sowie Strategien zur Optimierung von Ergebnissen optimieren.",
+          "subText5": "Diversifikation: Bots können gleichzeitig über mehrere Vermögenswerte handeln und so eine größere Diversifizierung von Handelsportfolios ermöglichen."
+        },
+        "conclusion": {
+          "header": "Fazit",
+          "subText": "Dieses Einführungsschema bietet einen Überblick über das Bot-Trading, seine Vorteile, verschiedene Arten von Strategien, Überlegungen und schließt mit den potenziellen Vorteilen ab, die Händler aus der Nutzung von Bots in ihren Handelsaktivitäten ziehen können."
+        }
+      },
+      "slang": {
+        "name": "Slang",
+        "GRID": "Eine Handelsstrategie, die darin besteht, Kauf- und Verkaufsaufträge zu festgelegten Preisintervallen innerhalb eines bestimmten Bereichs zu platzieren. Ziel des Grid-Handels ist es, von Preisfluktuationen innerhalb des festgelegten Bereichs zu profitieren.",
+        "DCA": "Das Dollar-Cost-Averaging (DCA) ist eine Anlagestrategie, bei der ein Anleger regelmäßig einen festen Dollarbetrag einer bestimmten Anlage kauft, unabhängig vom Preis des Vermögenswerts. Diese Strategie zielt darauf ab, die Auswirkungen der Marktschwankungen zu verringern, indem der Kaufpreis im Laufe der Zeit verteilt wird.",
+        "TP": "Der Take-Profit (TP) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um Gewinne zu realisieren. Take-Profit-Aufträge werden typischerweise über dem aktuellen Marktpreis für Long-Positionen und unter dem aktuellen Marktpreis für Short-Positionen festgelegt.",
+        "SL": "Die Stop-Loss (SL) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um potenzielle Verluste zu begrenzen. Stop-Loss-Aufträge werden typischerweise unter dem aktuellen Marktpreis für Long-Positionen und über dem aktuellen Marktpreis für Short-Positionen festgelegt.",
+        "SHORT": "Eine Handelsposition, bei der ein Händler ein Asset verkauft in der Erwartung, dass der Preis sinkt. Händler erzielen aus Short-Positionen Gewinne, indem sie das Asset zu einem niedrigeren Preis zurückkaufen, als sie es verkauft haben.",
+        "LONG": "Eine Handelsposition, bei der ein Händler ein Asset kauft in der Erwartung, dass der Preis steigt. Händler erzielen aus Long-Positionen Gewinne, indem sie das Asset zu einem höheren Preis verkaufen, als sie es gekauft haben.",
+        "START_BY_AI": "Einleitung oder Beginn von Handelsaktivitäten unter Verwendung von künstlicher Intelligenz (KI)-Algorithmen oder Plattformen. Dies kann automatisierte Handelsstrategien umfassen, bei denen KI Marktdaten analysiert und Trades basierend auf vordefinierten Regeln oder Algorithmen ausführt.",
+        "DCA_Auto": "Mit DCA Auto werden die von unserer Börse gewählten Werte eingeführt, die eine automatisierte Ausführung von Käufen in festgelegten Intervallen ermöglichen. Dies beseitigt die Notwendigkeit manueller Intervention, da die Plattform Käufe automatisch basierend auf den voreingestellten Parametern ausführt, wodurch Anleger im Laufe der Zeit Vermögenswerte ansammeln können, ohne dass eine kontinuierliche Überwachung erforderlich ist.",
+        "GRID_Auto": "Mit GRID Auto werden die von unserer Plattform gewählten Börsenwerte eingeführt, die eine automatisierte Ausführung von Trades basierend auf diesen vordefinierten Parametern ermöglichen. Dies ermöglicht es den Händlern, von Marktschwankungen innerhalb des festgelegten Bereichs zu profitieren, ohne manuelle Intervention zu benötigen."
+      }
+    },
+    "gridBot": {
+      "gridStrategy": {
+        "name": "Grid-Strategie",
+        "strategy": {
+          "subText1": "Die GRID-Strategie steht als Eckpfeiler sowohl im Bereich des Krypto- als auch des Devisenhandels. Sie funktioniert durch verzögerte Limit-Kauf- und -Verkaufsaufträge innerhalb vordefinierter Preisintervalle. Durch die Aufteilung des ausgewählten Preisbereichs in mehrere Ebenen wird ein Raster von Aufträgen etabliert, daher ihr Name, die GRID-Strategie.",
+          "subText2": "Unsere GRID-Bots sind darauf ausgelegt, Trades basierend auf dieser Strategie auszuführen und unermüdlich Gewinne aus Marktbewegungen zu erzielen, auch wenn Sie Ihre Trades nicht aktiv überwachen. Jedes Raster funktioniert austauschbar: Sobald ein Kaufauftrag abgeschlossen ist, initiiert der Bot prompt einen Verkaufsauftrag über dem ausgeführten Preis und umgekehrt. Alle Ihre Handelsaktivitäten werden effizient über die Bitsgap-Plattform verwaltet."
+        },
+        "profit": {
+          "header": "Gewinnerzielung mit der GRID-Strategie:",
+          "subText": "Der faszinierende Aspekt der GRID-Strategie liegt in ihrer Fähigkeit, von den natürlichen Schwankungen der Vermögenspreise zu profitieren. Anstatt unzählige Stunden damit zu verbringen, Diagramme zu überprüfen, um Marktbewegungen zu timen, führen GRID-Bots Trades zu opportunistischen Momenten aus, kaufen zu niedrigen Preisen und verkaufen zu hohen Preisen. Sie liefern kontinuierlich Gewinne, ohne auf komplexe Algorithmen angewiesen zu sein, sondern einfach durch Einhaltung der von Ihnen festgelegten Rasterparameter."
+        },
+        "risk": {
+          "header": "Mit der GRID-Strategie verbundene Risiken:",
+          "subText1": "Die Automatisierung der GRID-Strategie birgt inhärente Risiken, insbesondere bei ungünstigen Marktbedingungen. Unerwartete Preisfluktuationen können Ihre Handelsergebnisse erheblich beeinflussen. Zur Sicherung Ihrer Investition kann es vorteilhaft sein, Funktionen wie Stop Loss oder Trailing einzusetzen.",
+          "subText2": "Trotz der Risiken präsentiert das Rasterhandel eine der einfachsten und bewährtesten Handelsmethoden. Im Laufe der Zeit hat es das Potenzial, wesentliche Ergebnisse zu erzielen. Die Effektivität nimmt jedoch bei starken Trendumkehrungen ab. Daher ist es entscheidend zu erkennen, wann Sie Ihre Bot-Operationen starten oder stoppen sollten."
+        }
+      },
+      "setupGridBot": "Grid-Bot einrichten",
+      "customizeGridBot": "Passen Sie den Grid-Bot an"
+    },
+    "dcaBot": {
+      "dcaStrategy": {
+        "name": "DCA-Strategie",
+        "strategy": {
+          "subText1": "Die DCA (Durchschnittskostenmethode) Strategie ist ein weit verbreiteter Ansatz sowohl im Krypto- als auch im Forex-Handel. Sie beinhaltet den systematischen Kauf einer festen Menge eines Vermögenswerts in regelmäßigen Abständen, unabhängig von seinen Preisfluktuationen. Diese disziplinierte Strategie zielt darauf ab, die Auswirkungen der Marktvolatilität auf die Anlageerträge im Laufe der Zeit zu reduzieren.",
+          "subText2": "Unsere DCA-Bots sind sorgfältig entwickelt, um diese Strategie umzusetzen, wodurch Händler im Laufe der Zeit Vermögenswerte kontinuierlich akkumulieren können, ohne ständige manuelle Intervention. Diese Bots führen Trades gemäß vordefinierten Parametern aus, die ein nahtloses Wachstum des Portfolios und das Risikomanagement ermöglichen."
+        },
+        "profit": {
+          "header": "Gewinnerzielung mit der DCA-Strategie:",
+          "subText": "Die Schönheit der DCA-Strategie liegt in ihrer Fähigkeit, von der Konzept des Durchschnittskaufs zu profitieren. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen, unabhängig von kurzfristigen Preisbewegungen, ermöglichen es DCA-Bots den Händlern, Vermögenswerte im Laufe der Zeit zu einem Durchschnittspreis anzuhäufen. Diese Herangehensweise kann während Phasen der Marktvolatilität zu erheblichen Gewinnen führen, da sie das Risiko des Kaufs von Vermögenswerten zu einem einzelnen, potenziell überbewerteten Preispunkt mindert."
+        },
+        "risk": {
+          "header": "Mit der DCA-Strategie verbundene Risiken:",
+          "subText": "Obwohl die DCA-Strategie einen systematischen Ansatz für Investitionen bietet, ist sie nicht ohne Risiken. Marktrückgänge oder lang anhaltende Phasen der Vermögenswertermittlung können die Gesamtleistung der Strategie beeinträchtigen. Darüber hinaus müssen Händler sorgfältig Faktoren wie die Häufigkeit von Käufen und die Dauer des Anlagehorizonts berücksichtigen, um Renditen zu optimieren und Risiken effektiv zu managen."
+        },
+        "conclusion": {
+          "header": "Fazit",
+          "subText": "Die DCA-Strategie bietet Händlern einen disziplinierten und systematischen Ansatz für Investitionen in Krypto- und Forex-Märkte. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen ermöglichen es DCA-Bots den Händlern, die Auswirkungen der Marktvolatilität zu mindern und im Laufe der Zeit potenziell erhebliche Renditen zu erzielen. Es ist jedoch wichtig, die damit verbundenen Risiken zu verstehen und geeignete Risikomanagementstrategien zu implementieren, um die Leistung zu optimieren und langfristige Anlageziele zu erreichen."
+        }
+      },
+      "setupDCABot": {
+        "name": "DCA-Bot Einrichten",
+        "started": {
+          "header": "Loslegen:",
+          "subText": "Beim Starten eines DCA-Bots haben Sie die Möglichkeit, eine Handelsrichtung auszuwählen und entweder eine Long- oder eine Short-Position einzurichten."
+        },
+        "long": {
+          "header": "Long-Position:",
+          "subText1": "In einer Long-Position beteiligt sich der Bot an Kaufaktivitäten mit dem Ziel, Gewinn in der Quotierungswährung anzuhäufen.",
+          "subText2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency kauft. Anschließend platziert er DCA (Kauf) -Aufträge unter diesem Trade und einen Take-Profit (Verkauf) -Auftrag darüber. Wenn der Preis steigt, wird Ihr Bot alle erworbenen Basiscurrency zum Take-Profit-Niveau verkaufen und somit Gewinn erzielen. An diesem Punkt endet der Zyklus, und der Bot startet einen neuen mit dem anfänglichen Anlagebetrag."
+        },
+        "short": {
+          "header": "Short-Position:",
+          "subtext1": "Im Gegensatz dazu begibt sich der Bot in einer Short-Position auf Verkaufsunternehmungen, um Gewinn in der Basiscurrency anzuhäufen.",
+          "subtext2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency verkauft. Über diesem Trade platziert er DCA (Verkauf) -Aufträge und einen Take-Profit (Kauf) -Auftrag darunter. Steigt der Preis, wird der Bot mehr Basiscurrency verkaufen und die Quotierungswährung zu den DCA-Ebenen erwerben. Wenn der Preis jedoch sinkt, wird Ihr Bot die Basiscurrency mit dem Take-Profit zurückerwerben. Nach Abschluss des Zyklus startet der Bot einen neuen mit der anfänglichen Basiscurrency-Investition.",
+          "subtext3": "Um Ihren ersten Long- und Short-DCA-Bot zu erstellen und auszuführen, befolgen Sie bitte die untenstehenden schrittweisen Anweisungen."
+        }
+      },
+      "setupDcaStrategy": {
+        "name": "Richten Sie Die DCA-Strategie Ein"
+      }
+    }
   }
 }
