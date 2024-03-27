@@ -1,11 +1,17 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
+import { cn } from "@/lib/utils"
 import { ArrowDown, ChevronRight, BookOpen, Users, CreditCard } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
+
+const activeLinkStyle = "text-primary"
 
 export function Sidebar() {
+  const currentPath = usePathname()
   return (
     <aside className="sticky top-[0px] hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:flex md:shrink-0 md:flex-col">
       <Link href="/">
@@ -19,7 +25,10 @@ export function Sidebar() {
             <CollapsibleTrigger className="" asChild>
               <Button
                 variant="ghost"
-                className="group flex w-full flex-row items-center justify-between gap-4 text-start text-base"
+                className={cn(
+                  "group flex w-full flex-row items-center justify-between gap-4 text-start text-base",
+                  currentPath.includes("/eezy-trader/knowledge-base") ? activeLinkStyle : ""
+                )}
               >
                 <div className="flex flex-row items-center gap-4">
                   <BookOpen className="h-6 w-6" />

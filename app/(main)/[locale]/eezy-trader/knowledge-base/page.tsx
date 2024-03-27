@@ -18,7 +18,7 @@ export default function Page() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/eezy-trader/knowledge-base">General</BreadcrumbLink>
+            <BreadcrumbLink>General</BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
