@@ -59,9 +59,7 @@ export function SubscriptionPlans() {
               <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
-          <p className="mt-8 text-center text-xs text-tertiary">
-            After you finish your registration, you will be able to select a subscription plan
-          </p>
+          <p className="mt-8 text-center text-xs text-tertiary">{t("disclaimer")}</p>
         </div>
         <div className="relative flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-primary/10 p-8 dark:bg-primary/10 lg:w-[380px]">
           <div className="absolute -top-[20px] rounded-3xl bg-primary px-12 py-2 text-lg text-background">
@@ -118,9 +116,7 @@ export function SubscriptionPlans() {
               <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
-          <p className="mt-8 text-center text-xs text-primary">
-            After you finish your registration, you will be able to select a subscription plan
-          </p>
+          <p className="mt-8 text-center text-xs text-primary">{t("disclaimer")}</p>
         </div>
         <div className="dark:bg-tertiary-200/10 flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-tertiary/10 p-8 lg:mt-16 lg:w-[380px]">
           <span className="text-center text-xl font-bold">{t("plans.year.header")}</span>
@@ -174,9 +170,7 @@ export function SubscriptionPlans() {
               <a href="https://trade.coingarage.io/login">{t("btnBuy")}</a>
             </Button>
           </div>
-          <p className="mt-8 text-center text-xs text-tertiary">
-            After you finish your registration, you will be able to select a subscription plan
-          </p>
+          <p className="mt-8 text-center text-xs text-tertiary">{t("disclaimer")}</p>
         </div>
       </div>
       <p className="mt-12 text-center text-neutral-400">{t("plans.fee")}</p>

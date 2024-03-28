@@ -174,7 +174,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                  <a
+                    className="hover:text-primary"
+                    href="https://drive.google.com/file/d/1MegR8rihLQDp_n6eQ1Ka8shPECgN_Zxe/view?usp=sharing"
+                    rel="noopener noreferer"
+                    target="_blank"
+                  >
                     {"EEZY Trader"} {t("legal.termsOfService")}
                   </a>
                 </li>
