@@ -1,4 +1,3 @@
 {
-  "regions": ["fra1"],
-  "vercelShit": "force redeploy"
+  "regions": ["fra1"]
 }
