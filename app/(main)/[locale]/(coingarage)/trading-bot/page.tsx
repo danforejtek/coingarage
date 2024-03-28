@@ -103,7 +103,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             </p>
             <div className="">
               <Button variant="default" size="lg" className="mt-8" asChild>
-                <a href="https://trade.coingarage.io/login">{tAfi("btnAffiliate")}</a>
+                <Link href="/earn">{tAfi("btnAffiliate")}</Link>
               </Button>
             </div>
           </div>

@@ -10,6 +10,12 @@ import {
 import { unstable_setRequestLocale } from "next-intl/server"
 import { useTranslations } from "next-intl"
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "DCA bot | EEZY TRADER",
+}
+
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
   const t = useTranslations("knowledgeBase")

@@ -9,6 +9,11 @@ import {
 } from "@/components/ui/breadcrumb"
 import { unstable_setRequestLocale } from "next-intl/server"
 import { useTranslations } from "next-intl"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Knowledge Base | EEZY TRADER",
+}
 
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)

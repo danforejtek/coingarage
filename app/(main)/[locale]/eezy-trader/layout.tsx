@@ -20,9 +20,9 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Coingarage | Crypto, Banking & Trading, Exchange",
+  title: "EEZY TRADER | Crypto, Banking & Trading, Exchange",
   description:
-    "Coingarage is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
+    "EEZY TRADER is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
