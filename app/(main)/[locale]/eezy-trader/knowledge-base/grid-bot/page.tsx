@@ -38,8 +38,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <Tabs defaultValue="intro" className="max-w-[1000px]">
           <TabsList>
             <TabsTrigger value="intro">{t("gridBot.gridStrategy.name")}</TabsTrigger>
-            <TabsTrigger value="long">{t("dcaBot.setupDcaBot.name") + " - Long"}</TabsTrigger>
-            <TabsTrigger value="short">{t("dcaBot.setupDcaBot.name") + " - Short"}</TabsTrigger>
+            <TabsTrigger value="long">{t("gridBot.setupDcaBot.name") + " - Long"}</TabsTrigger>
+            <TabsTrigger value="short">{t("gridBot.setupDcaBot.name") + " - Short"}</TabsTrigger>
             {/* <TabsTrigger value="customize">{t("dcaBot.setupDcaStrategy.name")}</TabsTrigger> */}
           </TabsList>
           <TabsContent value="intro">
