@@ -264,8 +264,8 @@
         }
       },
       "start": {
-        "header": "Starten Sie den GRID BOT in 5 einfachen Schritten",
-        "subText": "Starten Sie Ihren GRID-Handelsbot mühelos in fünf einfachen Schritten: Starten Sie den Handel und optimieren Sie noch heute Ihre Gewinne mit Coingarage.",
+        "header": "Starten Sie EEZY TRADER in 5 einfachen Schritten",
+        "subText": "Starten Sie Ihren EEZY-Handelsbot mühelos in fünf einfachen Schritten: Beginnen Sie noch heute mit dem Handel und optimieren Sie Ihre Gewinne mit Coingarage.",
         "steps": {
           "1": "Registrieren Sie sich bei Coingarage",
           "2": "Melden Sie sich bei einer Börse an",
@@ -361,8 +361,8 @@
         },
         "year": {
           "header": "Basis Jahr",
-          "competitionPrice": "$384/Monat",
-          "price": "$120/Monat",
+          "competitionPrice": "$384/Jahr",
+          "price": "$120/Jahr",
           "save60": "$60 sparen",
           "package": {
             "header": "Entsperren Sie das volle Potenzial des Handelsbots",
