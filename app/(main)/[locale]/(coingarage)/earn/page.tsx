@@ -65,7 +65,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
       <section className="bg-tertiary/25 py-12 dark:bg-tertiary/10 lg:py-24">
         <div className="container mx-auto max-w-[1200px]">
-          <p className="text-center font-heading text-4xl font-bold">How to get started</p>
+          <p className="text-center font-heading text-4xl font-bold">{t("getStarted.header")}</p>
           <div className="mt-12 flex flex-col items-center justify-between gap-4 lg:flex-row">
             <div className="flex min-h-[340px] max-w-[340px] flex-col items-center gap-6 rounded-lg bg-background p-8">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary font-heading text-2xl font-bold text-white">
