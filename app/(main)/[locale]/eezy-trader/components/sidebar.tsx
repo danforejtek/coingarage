@@ -28,7 +28,9 @@ export function Sidebar() {
             <CollapsibleTrigger className="" asChild>
               <Button
                 variant="ghost"
-                className={cn("group flex w-full flex-row items-center justify-between gap-4 text-start text-base")}
+                className={cn(
+                  "line-height group mb-3 flex w-full flex-row items-center justify-between gap-4 text-start text-base"
+                )}
               >
                 <div className="flex flex-row items-center gap-4">
                   <BookOpen className="h-6 w-6" />
