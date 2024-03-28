@@ -290,6 +290,7 @@
         "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>"
       },
       "getStarted": {
+        "header1": "How to get started",
         "header1": "Register to a Coingarage",
         "subText1": "Create an Account on Coingarage, Log in and then go to section Affiliate.",
         "header2": "Invite Your Friends and Partners",
@@ -360,8 +361,8 @@
         },
         "year": {
           "header": "Basic Year",
-          "competitionPrice": "$384/month",
-          "price": "$120/month",
+          "competitionPrice": "$384/year",
+          "price": "$120/year",
           "save60": "Save $60",
           "package": {
             "header": "Unlock Full Trading Bot Potential",
