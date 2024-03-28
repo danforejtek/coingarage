@@ -173,6 +173,11 @@ export default function Footer() {
                     {t("legal.cookiePolicy")}
                   </Link>
                 </li>
+                <li>
+                  <a className="hover:text-primary" href="https://trade.coingarage.io/login">
+                    {"EEZY Trader"} {t("legal.termsOfService")}
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

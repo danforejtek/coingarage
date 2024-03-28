@@ -8,7 +8,7 @@ const fetcher = (...args: any[]) =>
 
 type Data = {
   performer_login_name: string
-  profit: number
+  roi: number
 }
 
 export function TopPerformers({ heading }: { heading: string }) {
@@ -16,7 +16,7 @@ export function TopPerformers({ heading }: { heading: string }) {
 
   const transformedData = data
     ?.map((item: Data) => {
-      return { name: item.performer_login_name, value: item.profit }
+      return { name: item.performer_login_name, value: item.roi }
     })
     .slice(0, 6)
 
