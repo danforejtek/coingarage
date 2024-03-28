@@ -361,8 +361,8 @@
         },
         "year": {
           "header": "Základní rok",
-          "competitionPrice": "$384/měsíc",
-          "price": "$120/měsíc",
+          "competitionPrice": "$384/rok",
+          "price": "$120/rok",
           "save60": "Ušetříte $60",
           "package": {
             "header": "Odemkněte plný potenciál obchodního robota",
