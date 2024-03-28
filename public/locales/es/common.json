@@ -264,8 +264,8 @@
         }
       },
       "start": {
-        "header": "Inicia el BOT GRID en 5 sencillos pasos",
-        "subText": "Lanza tu bot de trading GRID sin esfuerzo en cinco simples pasos: inicia el trading y optimiza tus ganancias hoy mismo con Coingarage.",
+        "header": "Inicia el EEZY TRADER en 5 sencillos pasos",
+        "subText": "Lance su bot de trading EEZY sin esfuerzo en cinco sencillos pasos: empiece a operar y optimice sus beneficios hoy mismo con Coingarage.",
         "steps": {
           "1": "Regístrate en Coingarage",
           "2": "Inicia sesión en un Exchange",
@@ -362,8 +362,8 @@
         },
         "year": {
           "header": "Básico Anual",
-          "competitionPrice": "$384/mes",
-          "price": "$120/mes",
+          "competitionPrice": "$384/año",
+          "price": "$120/año",
           "save60": "Ahorra $60",
           "package": {
             "header": "Desbloquea el Potencial Completo del Bot de Trading",
