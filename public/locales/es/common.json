@@ -421,7 +421,7 @@
       }
     },
     "gridBot": {
-      "gridStategy": {
+      "gridStrategy": {
         "name": "Estrategia Grid",
         "strategy": {
           "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
