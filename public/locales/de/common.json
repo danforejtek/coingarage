@@ -1,489 +1,490 @@
 {
-  "Menu": {
-    "buyCrypto": "Kaufen Sie Krypto",
-    "depositFiat": "FIAT einzahlen",
-    "depositFiatViaSepa": "FIAT über SEPA einzahlen",
-    "trade": "Handel",
-    "spotTrading": "Spot-Handel",
-    "launchpad": "Startplattform",
-    "tradingBot": "Handelsroboter",
-    "convert": "Umwandeln",
-    "earn": "Verdienen",
-    "becomeAShareholder": "Teilhaber werden",
-    "affiliate": "Partnerprogramm",
-    "stake": "Teilnehmen",
-    "more": "Mehr",
-    "aboutUs": "Über uns",
-    "partners": "Partner",
-    "blog": "Blog",
-    "garageCoinPreSale": "GARAGECoin-Vorverkauf",
-    "buyGarageCoin": "GARAGECoin kaufen",
-    "whitepaperEn": "Whitepaper (Englisch)",
-    "whitepaperCz": "Whitepaper (Tschechisch)",
-    "whitepaperDe": "Whitepaper (Deutsch)",
-    "login": "Anmelden",
-    "signUp": "Registrieren",
-    "radio": "Coingarage FM",
-    "knowledgeBase": "Wissensdatenbank",
-    "mode": {
-      "light": "Hell",
-      "dark": "Dunkel",
-      "system": "System"
+    "Menu": {
+        "buyCrypto": "Kaufen Sie Krypto",
+        "depositFiat": "FIAT einzahlen",
+        "depositFiatViaSepa": "FIAT über SEPA einzahlen",
+        "trade": "Handel",
+        "spotTrading": "Spot-Handel",
+        "launchpad": "Startplattform",
+        "tradingBot": "Handelsroboter",
+        "convert": "Umwandeln",
+        "earn": "Verdienen",
+        "becomeAShareholder": "Teilhaber werden",
+        "affiliate": "Partnerprogramm",
+        "stake": "Teilnehmen",
+        "more": "Mehr",
+        "aboutUs": "Über uns",
+        "partners": "Partner",
+        "blog": "Blog",
+        "garageCoinPreSale": "GARAGECoin-Vorverkauf",
+        "buyGarageCoin": "GARAGECoin kaufen",
+        "whitepaperEn": "Whitepaper (Englisch)",
+        "whitepaperCz": "Whitepaper (Tschechisch)",
+        "whitepaperDe": "Whitepaper (Deutsch)",
+        "login": "Anmelden",
+        "signUp": "Registrieren",
+        "radio": "Coingarage FM",
+        "knowledgeBase": "Lexikon",
+        "mode": {
+            "light": "Hell",
+            "dark": "Dunkel",
+            "system": "System"
+        }
+    },
+    "CryptoLandingPage": {
+        "nameLine1": "Krypto",
+        "nameLine2": "Einfache & Sichere",
+        "nameLine3": "Börse",
+        "mainText": "Entdecken Sie ein höheres Maß an finanzieller Privatsphäre und Freiheit, als es traditionelle Bankensysteme bieten, in der einfachen und sicheren Umgebung unserer Börse. Wir sind eine Börse mit Sitz im Herzen der Europäischen Union. Die Ersten, die Regulierungen einführen, die dazu führen werden, dass Kryptowährungen hier explodieren!",
+        "register": {
+            "content": "Registrieren Sie sich und erhalten Sie bis zu 100 USDT Belohnung in GARAGECoin (GARA)",
+            "limitedOffer": "Begrenztes Angebot",
+            "mark": {
+                "option1": "Jeder neue Benutzer auf der Börse erhält 10 USDT in der GARA-Coins.",
+                "option2": "Jeder 50. Benutzer erhält 50 USDT in GARA-Coins.",
+                "option3": "Jeder 100. Benutzer erhält 100 USDT in GARA-Coins.",
+                "option4": "Empfehlen Sie einen neuen Benutzer und Sie erhalten die gleiche Belohnung wie jeder von Ihnen empfohlene neue Benutzer."
+            }
+        },
+        "signUp": "Registrieren Sie sich",
+        "becomeAShareholder": "Werde Teilhaber",
+        "howToSignUp": "Wie melde ich mich an?",
+        "scanQrCode": "Scannen Sie den QR-Code",
+        "toDownloadApp": "um Ihre App herunterzuladen"
+    },
+    "App": {
+        "name": "Einfach überall, jederzeit",
+        "text": "Entfesseln Sie die Kraft der globalen Finanzmärkte direkt von der Handfläche Ihrer Hand mit der Coingarage Mobile Trading App. Erleben Sie die Zukunft des Handels, in der Geschwindigkeit, Bequemlichkeit und Präzision zusammenkommen.",
+        "appStore": "App Store",
+        "googlePlay": "Google Play",
+        "scanQrCode": "Scannen Sie den QR-Code",
+        "toDownloadApp": "um Ihre App herunterzuladen"
+    },
+    "CryptoMarket": {
+        "name": "Kryptomarket",
+        "currency": "Währung",
+        "price": "Preis",
+        "24hChange": "24-Stunden-Veränderung",
+        "24hVolume": "24-Stunden-Volumen",
+        "marketCap": "Marktkapitalisierung"
+    },
+    "CryptoStats": {
+        "trending": "Trending",
+        "topGainers": "Top-Gewinner",
+        "recentlyAdded": "Kürzlich hinzugefügt"
+    },
+    "Statistics": {
+        "icon1": "100 gelistete Währungen",
+        "icon2": "Über 100 teilnehmende Länder",
+        "icon3": "12 Assets für Staking in Kürze verfügbar",
+        "icon4": "Kauf von Krypto",
+        "icon5": "EUR über Sepa oder Karte einzahlen"
+    },
+    "DiscoverMoreProducts": {
+        "name": "Entdecken Sie weitere Produkte",
+        "eezyTrader": {
+            "name": "EEZY Trader",
+            "text": "Lassen Sie den KI-Bot für Sie arbeiten.",
+            "masterTraders": "Master Trader",
+            "followers": "Follower",
+            "bestTraders": {
+                "7DROI": "7-Tages-Rendite (7DROI)",
+                "7DFollowersPnL": "7-Tages-Follower-Gewinn/Verlust (7D Followers PnL)",
+                "copy": "Kopieren"
+            },
+            "features": {
+                "tradingBot": {
+                    "name": "Handelsroboter",
+                    "text": "Grid- und DCA-Roboter. Lang-, Kurzstrategie und mehr."
+                },
+                "takeProfit": {
+                    "name": "Gewinnmitnahme",
+                    "text": "Steigern Sie Ihren Krypto-Assets einfach, intelligent und effektiv."
+                },
+                "copyTrading": {
+                    "name": "Kopie Trading",
+                    "text": "Lassen Sie Top-Trader für Sie arbeiten, kopieren Sie einfach ihre Strategien."
+                },
+                "bargain": {
+                    "name": "Schnäppchen",
+                    "text": "Bestes Angebot auf dem Markt."
+                }
+            }
+        }
+    },
+    "Faq": {
+        "question1": {
+            "question": "Was ist der Unterschied zwischen einem 'Coin' und einem 'Token' auf der Seite?",
+            "answer": "Ein Coin ist eine Kryptowährung, die unabhängig funktionieren kann. Ein Token hingegen ist eine Kryptowährung, die auf einer anderen Kryptowährung als Plattform für ihre Funktion angewiesen ist. Schauen Sie sich unseren Blogbeitrag für weitere Informationen an."
+        },
+        "question2": {
+            "question": "Was ist Bitcoin (BTC)?",
+            "answer": "Bitcoin ist die erste Kryptowährung, die 2009 von Satoshi Nakamoto geschaffen wurde. Es handelt sich um eine dezentralisierte digitale Währung, die von Benutzer zu Benutzer im Peer-to-Peer-Bitcoin-Netzwerk ohne die Notwendigkeit von Vermittlern gesendet werden kann."
+        },
+        "question3": {
+            "question": "Was ist die USDT-Münze (USDT)?",
+            "answer": "Tether (USDT) ist eine Kryptowährung mit einem Wert, der den Wert des US-Dollars widerspiegeln soll. Die Idee war, eine stabile Kryptowährung zu schaffen, die wie digitale Dollar verwendet werden kann. Münzen, die diesen Zweck erfüllen, indem sie einen stabilen Dollarersatz darstellen, werden als 'Stablecoins' bezeichnet. USDT ist der beliebteste Stablecoin und fungiert sogar als Dollarersatz auf vielen populären Börsen!"
+        },
+        "question4": {
+            "question": "Wie kann ich Kryptowährungen kaufen?",
+            "answer": "Sie können Kryptowährungen auf Coingarage kaufen, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich für ein Coingarage-Konto an. 2. Verifizieren Sie Ihr Konto. 3. Zahlen Sie EUR oder andere unterstützte Kryptowährungen ein. 4. Kaufen Sie Ihre Lieblingskryptowährungen."
+        },
+        "question5": {
+            "question": "Wie kann ich mein persönliches Konto verifizieren?",
+            "answer": "Sie können Ihr persönliches Konto verifizieren, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich bei Ihrem Coingarage-Konto an. 2. Gehen Sie zu Ihren Kontoeinstellungen. 3. Klicken Sie auf den Verifizierungs-Tab. 4. Befolgen Sie die Anweisungen und laden Sie die erforderlichen Dokumente hoch. 5. Warten Sie darauf, dass Ihre Verifizierung bearbeitet wird. 6. Beginnen Sie mit dem Handel!"
+        }
+    },
+    "Footer": {
+        "aboutUs": "Über uns",
+        "contactUs": "Kontakt",
+        "fees": "Gebühren",
+        "hotCoins": "Beliebte Kryptowährungen",
+        "blog": "Blog",
+        "faqs": "FAQ's",
+        "coinListing": "Listen von Kryptowährungen",
+        "markets": "Märkte",
+        "trade": "Handel",
+        "buyCrypto": "Kryptowährung kaufen",
+        "staking": "Staking",
+        "login": "Anmelden",
+        "legal": {
+            "termsOfService": "Nutzungsbedingungen",
+            "privacyPolicy": "Datenschutzbestimmungen",
+            "cookiePolicy": "Cookie-Richtlinie"
+        }
+    },
+    "Contact": {
+        "street": "Revoluční&nbsp;1082/8",
+        "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+        "postalCode": "110 00",
+        "country": "Prague, Czech Republic",
+        "phone": "+420 778 116 516",
+        "email": "support@coingarage.io",
+        "companyID": "IČ: 11667974"
+    },
+    "Affiliate": {
+        "name": "Empfehlungsprogramm",
+        "claim": "Treten Sie Coingarage bei",
+        "reward": "Sie können 3 Ebenen von Belohnungen erhalten",
+        "text1": "Glauben Sie, dass Kryptowährungen und Blockchain-Technologie die Welt zum Besseren verändern können?",
+        "text2": "Wenn ja, dann treten Sie dem Coingarage Affiliate-Programm bei und verdienen Sie besondere Belohnungen. Stellen Sie Ihren Freunden Coingarage vor, eine voll lizenzierte Krypto-Börse im Herzen Europas.",
+        "warning": "*Sehr wichtig: Bitte beachten Sie, dass Ihr Affiliate nicht nur mit Ihren direkten Empfehlungen endet. Wenn Ihre direkten Empfehlungen anfangen zu arbeiten und Empfehlungen von Ihren direkten Empfehlungen erhalten, werden Sie die nächsten Belohnungen erhalten."
+    },
+    "AboutUs": {
+        "weAreCoingarage": "Wir sind coingarage",
+        "name": "Über uns",
+        "text1": "Nicht auf entfernten Inseln in Steueroasen, sondern im Herzen Europas wurde in Prag die erste Kryptowährungsbörse gegründet, die über eine vollständige Lizenz zum Halten und Handeln von Kryptowährungen verfügt.",
+        "text2": "Die gesamte Tätigkeit unterliegt vollständig den EU-Gesetzen und der Aufsicht von Regulierungsbehörden und Ämtern. Hier können Sie Krypto für Fiat kaufen, halten und auf einer der modernsten Plattformen mit Schwerpunkt auf Vollständigkeit und Einfachheit handeln",
+        "elements": {
+            "text1": "Ein Schlüsselelement unserer Plattform ist die Einfachheit.",
+            "text2": "Hier finden Sie Spot-Trading, aber in Zukunft auch Futures",
+            "text3": "An der Börse können Sie durch Staking der beliebtesten Münzen verdienen",
+            "text4": "Es wird auch möglich sein, Münzen an der Börse nach dem P2P-Prinzip zu tauschen",
+            "text5": "An einem Ort können Sie Krypto für Fiat-Währung über Ihre Debitkarte oder durch Überweisung von Ihrem Konto kaufen, dann können Sie es hier halten und damit handeln.",
+            "text6": "Ab Januar 2024 können Sie unsere professionellen Handels-DCA, GRID, Futures Boots mit künstlicher Intelligenz für den Handel nutzen",
+            "text7": "Unsere Börse wird auch eine eigene NFT-Plattform anbieten, einschließlich eines Marktplatzes",
+            "text8": "All diese Funktionen werden durch Bildungsprogramme und Videos ergänzt"
+        },
+        "financialWorld": {
+            "name": "Wir möchten, dass Kryptowährungen zu einem alltäglichen und respektierten Teil der Finanzwelt in Europa werden.",
+            "text1": "Wir möchten zur Adoption von Kryptowährungen in Europa beitragen und eine völlig transparente und sichere Umgebung bieten, die im Einklang mit dem EU-Recht und den Vorschriften steht.",
+            "text2": "Damit die Menschen wissen, was sie von der Kryptowelt erwarten können und sich der Vorteile, aber auch der Risiken dieser Branche bewusst sind. Damit sie wissen, dass das Investieren in Krypto nicht nur eine kurzfristige Spekulation, sondern eine langfristige und sinnvolle Investition ist",
+            "text3": "Unsere Vision basiert auf vier Grundwerten: Transparenz, Vollständigkeit, Sicherheit und Einfachheit. Wenn wir diese Werte in unserer Vision verwirklichen, dann sind wir auf dem Weg, den Menschen langfristigen regelmäßigen Gewinn aus der Kryptowelt zu bringen.",
+            "text4": ""
+        },
+        "getStarted": "Beginnen"
+    },
+    "security": {
+        "security": "Sicherheit des Austauschs",
+        "securityText": "Unsere Plattform verwendet mehrere modernste Technologien, um ein robustes und effizientes System zu gewährleisten. Wir verwenden die neuesten Versionen der Datenverschlüsselung sowohl für die Übertragung als auch für die Speicherung. Wir nutzen auch fortschrittliche Schutzfunktionen auf Basis künstlicher Intelligenz, um eine sichere und geschützte Umgebung für unsere Benutzer zu gewährleisten.",
+        "protection": "Kundenschutz",
+        "protectionText": "Die Kundenschutzmaßnahmen von Coingarage gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
+        "fundsSecurity": "Sicherheit der Mittel",
+        "fundsSecurityText": "Unsere Fondsicherheit wird von Veteranen der Blockchain- und Webindustrie geschaffen. Wir haben eine Cloud-Plattform der nächsten Generation geschaffen, die Sicherheitsprüfungen auf Bankniveau besteht und sehr begehrten Qualitätsstandards entspricht.",
+        "monitoring": "Echtzeitüberwachung",
+        "monitoringText": "Unsere Echtzeitüberwachungssysteme verfolgen und analysieren aktiv Aktivitäten auf unserer Plattform. Dies ermöglicht es uns, verdächtiges Verhalten schnell zu erkennen und darauf zu reagieren. Dieser proaktive Ansatz stellt sicher, dass Ihre Vermögenswerte und Daten ständig geschützt sind.",
+        "secureByDesign": "Sicherheit durch Design",
+        "secureByDesignText": "Unsere Maßnahmen zum Schutz der Privatsphäre gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
+        "heading": "Ein sicherer Hafen: Wo Datenschutz, Design und Echtzeitüberwachung für Ihre Seelenruhe zusammenkommen",
+        "newDesign": "Wir arbeiten an einem neuen Design",
+        "continueToTrader": "Weiter zu EEZY Trader"
+    },
+    "eezy-trader": {
+        "nav": {
+            "knowledgeBase": "Lexikon",
+            "affiliateProgram": "Partnerprogramm",
+            "payments": "Zahlungen & Abonnements"
+        },
+        "homepage": {
+            "trialBtn": "STARTEN SIE EINE KOSTENLOSE 7-TAGE-TESTVERSION",
+            "main": {
+                "header": "Der beste KI-gestützte Krypto-Handelsbot",
+                "noCreditCard": "*Keine Kreditkarte erforderlich"
+            },
+            "results": {
+                "header": "Realisieren Sie das volle Potenzial Ihrer Handelsstrategie, indem Sie die fortschrittlichen Fähigkeiten des Coingarage EEZY Trader Krypto-Bots nutzen, der es Ihnen ermöglicht, die Spitzenhandelsleistung zu erreichen und Gewinne zu maximieren.",
+                "topPerformers": "Top-Performer",
+                "topPairs": "Top-Paare",
+                "name": "Name",
+                "pair": "Paar"
+            },
+            "trusting": {
+                "subHeader": "Vertraut von Tausenden von Händlern, angetrieben von",
+                "header": "Coingarage „Einfach & sicher Handeln“",
+                "columns": {
+                    "1": "Long / Short",
+                    "2": "Handelsgewinn",
+                    "3": "DCA / GRID",
+                    "4": "Strategie speichern",
+                    "5": "Beginnend mit KI",
+                    "6": "Kopieren Handel",
+                    "7": "100 Paare zum Handeln",
+                    "8": "Technische Indikatoren",
+                    "9": "90 Bots"
+                }
+            },
+            "investment": {
+                "header": "Lehnen Sie sich zurück und sehen Sie zu, wie Ihre Kryptowährungsinvestitionen Tag und Nacht wachsen, 24/7, wo immer Sie sind",
+                "free7Days": "7 Tage lang kostenlos testen",
+                "howToConnect": {
+                    "register": "Registrieren",
+                    "connect": "Verbinden",
+                    "startTrading": "Handel starten"
+                }
+            },
+            "login": {
+                "header": "<span>Starten Sie das Verdienen mit</span><span class='text-violet'>Coingarage's Trader</span><span><span class='text-violet'>Bot</span> noch heute</span>",
+                "subText": "Melden Sie sich bei Coingarage an und erhalten Sie eine voll funktionsfähige <b>7-tägige PRO-Testphase</b>, um alle erweiterten Funktionen des Bots zu testen.",
+                "loginForm": {
+                    "login": "Anmelden",
+                    "yourEmail": "Ihre E-Mail",
+                    "password": "Passwort",
+                    "forgotPassword": "Passwort vergessen?",
+                    "noAccount": "Haben Sie kein Konto? Hier anmelden"
+                }
+            },
+            "start": {
+                "header": "Starten Sie EEZY TRADER in 5 einfachen Schritten",
+                "subText": "Starten Sie Ihren EEZY-Handelsbot mühelos in fünf einfachen Schritten: Beginnen Sie noch heute mit dem Handel und optimieren Sie Ihre Gewinne mit Coingarage.",
+                "steps": {
+                    "1": "Registrieren Sie sich bei Coingarage",
+                    "2": "Melden Sie sich bei einer Börse an",
+                    "3": "Gehen Sie zu Unterkonto und wählen Sie im Menü EEZY Trader",
+                    "4": "Erstellen Sie eine Strategie",
+                    "5": "Starten Sie den Bot und beobachten Sie die Gewinne!"
+                }
+            },
+            "faq": {
+                "question1": "Wie kann ich mit Ihrer Plattform beginnen?",
+                "answer1": "Der Einstieg ist einfach! Melden Sie sich einfach für ein Konto an, absolvieren Sie den Verifizierungsprozess, zahlen Sie Geld auf Ihr Konto ein und beginnen Sie mit dem Handel mit unserer intuitiven Plattform und leistungsstarken Handelstools.",
+                "question2": "Wie gewährleisten Sie die Sicherheit meiner Gelder und persönlichen Informationen?",
+                "answer2": "Wir setzen branchenübliche Sicherheitsmaßnahmen ein, darunter Verschlüsselung, Zwei-Faktor-Authentifizierung (2FA) und regelmäßige Sicherheitsprüfungen, um Ihre Gelder und persönlichen Daten zu schützen. Darüber hinaus erfüllt unsere Plattform strenge Compliance-Standards, um unbefugten Zugriff und betrügerische Aktivitäten zu verhindern.",
+                "question3": "Was sind die Vorteile der Verwendung von DCA?",
+                "answer3": "Das Dollar-Cost-Averaging (DCA) ist eine Strategie, bei der ein Anleger den Gesamtbetrag, der investiert werden soll, auf periodische Käufe eines Zielwerts aufteilt, um die Auswirkungen der Volatilität auf den Gesamtkaufpreis zu verringern. Die wichtigsten Vorteile der Verwendung von DCA sind die Reduzierung des mit dem Timing des Marktes verbundenen Risikos, die potenzielle Senkung des durchschnittlichen Kosten pro Aktie im Laufe der Zeit und die Förderung eines disziplinierten Anlageverhaltens."
+            }
+        },
+        "affiliate": {
+            "btnAffiliate": "Loslegen",
+            "main": {
+                "header1": "Empfehlungsprogramm",
+                "header2": "Verdienen Sie bis zu 15% der Gebühren für jeden Handel Ihrer Partner",
+                "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren hereinkommt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsame Gewinne!</b>"
+            },
+            "getStarted": {
+                "header": "Wie man anfängt",
+                "header1": "Registrieren Sie sich bei Coingarage",
+                "subText1": "Erstellen Sie ein Konto bei Coingarage, melden Sie sich an und gehen Sie dann zum Bereich Empfehlungsprogramm.",
+                "header2": "Laden Sie Ihre Freunde und Partner ein",
+                "subText2": "Kopieren Sie Ihren Affiliate-Link und senden Sie ihn an Ihre Freunde oder Partner.",
+                "header3": "Genießen Sie Ihre Einnahmen",
+                "subText3": "Nachdem sie ein Konto erstellt und mit dem Handel begonnen haben, verdienen Sie Ihre Belohnungen.",
+                "disclaimer": "Sie werden auf die Anmeldeseite weitergeleitet. Nachdem Sie sich in Ihrem Konto angemeldet haben, finden Sie Ihren Empfehlungscode unter Mein -> Empfehlung"
+            },
+            "faq": {
+                "question1": "Wie funktioniert das Partnerprogramm?",
+                "answer1": "Als Partner erhalten Sie einen einzigartigen Empfehlungslink oder Code, den Sie mit Ihrem Publikum teilen können. Wenn jemand auf Ihren Link klickt oder Ihren Code verwendet, um einen Kauf oder eine Anmeldung durchzuführen, erhalten Sie eine Provision für den Verkauf oder die Anmeldung.",
+                "question2": "Gibt es eine Grenze für das, was ich durch das Partnerprogramm verdienen kann?",
+                "answer2": "Es gibt keine Grenze dafür, wie viel Sie durch unser Partnerprogramm verdienen können. Ihre Einnahmen hängen von der Anzahl der von Ihnen generierten Empfehlungen und dem Wert ihrer Käufe oder Anmeldungen ab.",
+                "question3": "Wie kann ich meine Empfehlungen und Provisionen verfolgen?",
+                "answer3": "Unser Partnerprogramm bietet Zugang zu einem Dashboard oder Portal, über das Sie Ihre Empfehlungen verfolgen, Verkäufe oder Anmeldungen überwachen und Ihre Provisionsverdienste in Echtzeit anzeigen können.",
+                "question4": "Was ist die Provisionsstruktur für das Partnerprogramm?",
+                "answer4": "Unser Partnerprogramm bietet eine mehrstufige Provisionsstruktur, wobei die Prozentsätze der Provision auf der Ebene der Empfehlungen basieren:",
+                "levels": {
+                    "1": "Ebene 1: 15% Provision",
+                    "2": "Ebene 2: 10% Provision",
+                    "3": "Ebene 3: 5% Provision"
+                }
+            },
+            "setupTradingBot": {
+                "name": "Wissen Sie nicht, wie Sie einen Handelsroboter einrichten?",
+                "claim": "Keine Sorge, wir haben für Sie ein Lexikon erstellt",
+                "text1": "Hier finden Sie umfassende Anleitungen zur Einrichtung und zum Betrieb eines Handelsroboters, die alle wesentlichen Aspekte abdecken."
+            },
+            "example": "Beispiel",
+            "levels": {
+                "text1": "John ist die erste Person in der Empfehlungskette. Wenn John Alice empfiehlt, verdient er 15% der Gesamtbelohnung für die Registrierung von Alice.",
+                "text2": "Alice ist unter John registriert, daher auf der zweiten Ebene. Wenn Alice Peter empfiehlt, verdient John (erste Ebene) 10% der Gesamtbelohnung für Peters Konto.",
+                "text3": "Peter ist unter Alice registriert, daher auf der dritten Ebene. Wenn Peter einen weiteren Benutzer empfiehlt, verdient John (erste Ebene) 5% der Gesamtbelohnung für den neuen Benutzer, der von Peter registriert wurde."
+            },
+            "disclaimer": "Belohnungen werden aus den Gebühren generiert, die Ihre Empfehlungen zahlen."
+        },
+        "subscription": {
+            "disclaimer": "Nachdem Sie Ihre Registrierung abgeschlossen haben, können Sie einen Abonnementplan auswählen",
+            "btnBuy": "Abonnement kaufen",
+            "header": "Was ist ein Abonnement?",
+            "subText": "Ein Abonnement gewährt Ihnen vollen Zugriff auf unsere Dienste. <b>Mit einem Abonnement erhalten Sie Zugriff auf unseren revolutionären Handelsroboter</b>, der es Ihnen ermöglicht, auf den Märkten absolut einfach und effizient zu handeln.",
+            "plans": {
+                "header": "Abonnement",
+                "subText": "Nicht sicher, ob unser Abonnement das Richtige für Sie ist? Kein Problem! Wir bieten eine Testversion an, in der Sie unseren Bot ausprobieren und seine Fähigkeiten aus erster Hand erleben können.",
+                "trial": {
+                    "header": "Testversion",
+                    "free": "Kostenlos",
+                    "package": {
+                        "header": "Testen und Genießen Sie den Handelsbot",
+                        "1": "Bis zu 10 Bots",
+                        "2": "Alle Strategien",
+                        "3": "Handelsterminals",
+                        "4": "Nachlaufende Take-Profit"
+                    }
+                },
+                "month": {
+                    "mostUsed": "Am häufigsten verwendet",
+                    "header": "Basis Monat",
+                    "competitionPrice": "$45/Monat",
+                    "price": "$15/Monat",
+                    "package": {
+                        "header": "Testen und Genießen Sie den Handelsbot",
+                        "1": "Bis zu 50 Bots",
+                        "2": "Alle Strategien",
+                        "3": "Handelsterminals",
+                        "4": "Nachlaufende Take-Profit",
+                        "5": "Automatische Verlängerung"
+                    }
+                },
+                "year": {
+                    "header": "Basis Jahr",
+                    "competitionPrice": "$384/Jahr",
+                    "price": "$120/Jahr",
+                    "save60": "$60 sparen",
+                    "package": {
+                        "header": "Entsperren Sie das volle Potenzial des Handelsbots",
+                        "1": "Bis zu 99 Bots",
+                        "2": "Alle Strategien",
+                        "3": "Handelsterminals",
+                        "4": "Nachlaufende Take-Profit",
+                        "5": "Automatische Verlängerung"
+                    }
+                },
+                "fee": "10% Erfolgsgebühr in EEZY Coin wird von jedem Gewinn abgezogen."
+            }
+        }
+    },
+    "knowledgeBase": {
+        "general": {
+            "name": "Allgemein",
+            "activation": "Aktivierung",
+            "subscription": "Abonnement",
+            "features": "Funktionen",
+            "activationYoutubeId": "ELe8zM4KsaA",
+            "subscriptionYoutubeId": "4KnsHj8yDzk",
+            "featuresYoutubeId": "sBn-WGI3tCY",
+            "introduction": {
+                "name": "Einführung",
+                "overview": {
+                    "header": "Übersicht",
+                    "subText": "Bot-Trading, auch als automatisiertes Trading bekannt, nutzt vorprogrammierte Software, um im Namen von Händlern Trades auszuführen. Diese Handelsmethode hat aufgrund ihrer Fähigkeit, Trades rund um die Uhr und ohne menschliches Eingreifen mit Geschwindigkeit und Präzision auszuführen, an Popularität gewonnen."
+                },
+                "advantages": {
+                    "header": "Vorteile",
+                    "subText1": "Schnelligkeit: Bots können Trades in Millisekunden ausführen und Marktbewegungen schneller als menschliche Händler ausnutzen.",
+                    "subText2": "Emotionsloses Trading: Bots handeln auf der Grundlage vordefinierter Regeln und eliminieren Emotionen wie Angst und Gier, die menschliche Entscheidungen beeinflussen können.",
+                    "subText3": "24/7 Trading: Bots können rund um die Uhr betrieben werden und Chancen in globalen Märkten nutzen, auch wenn Händler schlafen oder offline sind.",
+                    "subText4": "Backtesting und Optimierung: Trader können Bot-Strategien mithilfe historischer Daten testen und die Leistung bewerten sowie Strategien zur Optimierung von Ergebnissen optimieren.",
+                    "subText5": "Diversifikation: Bots können gleichzeitig über mehrere Vermögenswerte handeln und so eine größere Diversifizierung von Handelsportfolios ermöglichen."
+                },
+                "conclusion": {
+                    "header": "Fazit",
+                    "subText": "Dieses Einführungsschema bietet einen Überblick über das Bot-Trading, seine Vorteile, verschiedene Arten von Strategien, Überlegungen und schließt mit den potenziellen Vorteilen ab, die Händler aus der Nutzung von Bots in ihren Handelsaktivitäten ziehen können."
+                }
+            },
+            "slang": {
+                "name": "Slang",
+                "GRID": "Eine Handelsstrategie, die darin besteht, Kauf- und Verkaufsaufträge zu festgelegten Preisintervallen innerhalb eines bestimmten Bereichs zu platzieren. Ziel des Grid-Handels ist es, von Preisfluktuationen innerhalb des festgelegten Bereichs zu profitieren.",
+                "DCA": "Das Dollar-Cost-Averaging (DCA) ist eine Anlagestrategie, bei der ein Anleger regelmäßig einen festen Dollarbetrag einer bestimmten Anlage kauft, unabhängig vom Preis des Vermögenswerts. Diese Strategie zielt darauf ab, die Auswirkungen der Marktschwankungen zu verringern, indem der Kaufpreis im Laufe der Zeit verteilt wird.",
+                "TP": "Der Take-Profit (TP) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um Gewinne zu realisieren. Take-Profit-Aufträge werden typischerweise über dem aktuellen Marktpreis für Long-Positionen und unter dem aktuellen Marktpreis für Short-Positionen festgelegt.",
+                "SL": "Die Stop-Loss (SL) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um potenzielle Verluste zu begrenzen. Stop-Loss-Aufträge werden typischerweise unter dem aktuellen Marktpreis für Long-Positionen und über dem aktuellen Marktpreis für Short-Positionen festgelegt.",
+                "SHORT": "Eine Handelsposition, bei der ein Händler ein Asset verkauft in der Erwartung, dass der Preis sinkt. Händler erzielen aus Short-Positionen Gewinne, indem sie das Asset zu einem niedrigeren Preis zurückkaufen, als sie es verkauft haben.",
+                "LONG": "Eine Handelsposition, bei der ein Händler ein Asset kauft in der Erwartung, dass der Preis steigt. Händler erzielen aus Long-Positionen Gewinne, indem sie das Asset zu einem höheren Preis verkaufen, als sie es gekauft haben.",
+                "START_BY_AI": "Einleitung oder Beginn von Handelsaktivitäten unter Verwendung von künstlicher Intelligenz (KI)-Algorithmen oder Plattformen. Dies kann automatisierte Handelsstrategien umfassen, bei denen KI Marktdaten analysiert und Trades basierend auf vordefinierten Regeln oder Algorithmen ausführt.",
+                "DCA_Auto": "Mit DCA Auto werden die von unserer Börse gewählten Werte eingeführt, die eine automatisierte Ausführung von Käufen in festgelegten Intervallen ermöglichen. Dies beseitigt die Notwendigkeit manueller Intervention, da die Plattform Käufe automatisch basierend auf den voreingestellten Parametern ausführt, wodurch Anleger im Laufe der Zeit Vermögenswerte ansammeln können, ohne dass eine kontinuierliche Überwachung erforderlich ist.",
+                "GRID_Auto": "Mit GRID Auto werden die von unserer Plattform gewählten Börsenwerte eingeführt, die eine automatisierte Ausführung von Trades basierend auf diesen vordefinierten Parametern ermöglichen. Dies ermöglicht es den Händlern, von Marktschwankungen innerhalb des festgelegten Bereichs zu profitieren, ohne manuelle Intervention zu benötigen."
+            }
+        },
+        "gridBot": {
+            "gridStrategy": {
+                "name": "Grid-Strategie",
+                "strategy": {
+                    "subText1": "Die GRID-Strategie steht als Eckpfeiler sowohl im Bereich des Krypto- als auch des Devisenhandels. Sie funktioniert durch verzögerte Limit-Kauf- und -Verkaufsaufträge innerhalb vordefinierter Preisintervalle. Durch die Aufteilung des ausgewählten Preisbereichs in mehrere Ebenen wird ein Raster von Aufträgen etabliert, daher ihr Name, die GRID-Strategie.",
+                    "subText2": "Unsere GRID-Bots sind darauf ausgelegt, Trades basierend auf dieser Strategie auszuführen und unermüdlich Gewinne aus Marktbewegungen zu erzielen, auch wenn Sie Ihre Trades nicht aktiv überwachen. Jedes Raster funktioniert austauschbar: Sobald ein Kaufauftrag abgeschlossen ist, initiiert der Bot prompt einen Verkaufsauftrag über dem ausgeführten Preis und umgekehrt. Alle Ihre Handelsaktivitäten werden effizient über die Bitsgap-Plattform verwaltet."
+                },
+                "profit": {
+                    "header": "Gewinnerzielung mit der GRID-Strategie:",
+                    "subText": "Der faszinierende Aspekt der GRID-Strategie liegt in ihrer Fähigkeit, von den natürlichen Schwankungen der Vermögenspreise zu profitieren. Anstatt unzählige Stunden damit zu verbringen, Diagramme zu überprüfen, um Marktbewegungen zu timen, führen GRID-Bots Trades zu opportunistischen Momenten aus, kaufen zu niedrigen Preisen und verkaufen zu hohen Preisen. Sie liefern kontinuierlich Gewinne, ohne auf komplexe Algorithmen angewiesen zu sein, sondern einfach durch Einhaltung der von Ihnen festgelegten Rasterparameter."
+                },
+                "risk": {
+                    "header": "Mit der GRID-Strategie verbundene Risiken:",
+                    "subText1": "Die Automatisierung der GRID-Strategie birgt inhärente Risiken, insbesondere bei ungünstigen Marktbedingungen. Unerwartete Preisfluktuationen können Ihre Handelsergebnisse erheblich beeinflussen. Zur Sicherung Ihrer Investition kann es vorteilhaft sein, Funktionen wie Stop Loss oder Trailing einzusetzen.",
+                    "subText2": "Trotz der Risiken präsentiert das Rasterhandel eine der einfachsten und bewährtesten Handelsmethoden. Im Laufe der Zeit hat es das Potenzial, wesentliche Ergebnisse zu erzielen. Die Effektivität nimmt jedoch bei starken Trendumkehrungen ab. Daher ist es entscheidend zu erkennen, wann Sie Ihre Bot-Operationen starten oder stoppen sollten."
+                }
+            },
+            "setupGridBot": "Grid-Bot einrichten",
+            "customizeGridBot": "Passen Sie den Grid-Bot an",
+            "setupGridBotYoutubeIdLong": "2a6bE6PtQ28",
+            "setupGridBotYoutubeIdShort": "c4MFwLGbWyo"
+        },
+        "dcaBot": {
+            "dcaStrategy": {
+                "name": "DCA-Strategie",
+                "strategy": {
+                    "subText1": "Die DCA (Durchschnittskostenmethode) Strategie ist ein weit verbreiteter Ansatz sowohl im Krypto- als auch im Forex-Handel. Sie beinhaltet den systematischen Kauf einer festen Menge eines Vermögenswerts in regelmäßigen Abständen, unabhängig von seinen Preisfluktuationen. Diese disziplinierte Strategie zielt darauf ab, die Auswirkungen der Marktvolatilität auf die Anlageerträge im Laufe der Zeit zu reduzieren.",
+                    "subText2": "Unsere DCA-Bots sind sorgfältig entwickelt, um diese Strategie umzusetzen, wodurch Händler im Laufe der Zeit Vermögenswerte kontinuierlich akkumulieren können, ohne ständige manuelle Intervention. Diese Bots führen Trades gemäß vordefinierten Parametern aus, die ein nahtloses Wachstum des Portfolios und das Risikomanagement ermöglichen."
+                },
+                "profit": {
+                    "header": "Gewinnerzielung mit der DCA-Strategie:",
+                    "subText": "Die Schönheit der DCA-Strategie liegt in ihrer Fähigkeit, von der Konzept des Durchschnittskaufs zu profitieren. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen, unabhängig von kurzfristigen Preisbewegungen, ermöglichen es DCA-Bots den Händlern, Vermögenswerte im Laufe der Zeit zu einem Durchschnittspreis anzuhäufen. Diese Herangehensweise kann während Phasen der Marktvolatilität zu erheblichen Gewinnen führen, da sie das Risiko des Kaufs von Vermögenswerten zu einem einzelnen, potenziell überbewerteten Preispunkt mindert."
+                },
+                "risk": {
+                    "header": "Mit der DCA-Strategie verbundene Risiken:",
+                    "subText": "Obwohl die DCA-Strategie einen systematischen Ansatz für Investitionen bietet, ist sie nicht ohne Risiken. Marktrückgänge oder lang anhaltende Phasen der Vermögenswertermittlung können die Gesamtleistung der Strategie beeinträchtigen. Darüber hinaus müssen Händler sorgfältig Faktoren wie die Häufigkeit von Käufen und die Dauer des Anlagehorizonts berücksichtigen, um Renditen zu optimieren und Risiken effektiv zu managen."
+                },
+                "conclusion": {
+                    "header": "Fazit",
+                    "subText": "Die DCA-Strategie bietet Händlern einen disziplinierten und systematischen Ansatz für Investitionen in Krypto- und Forex-Märkte. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen ermöglichen es DCA-Bots den Händlern, die Auswirkungen der Marktvolatilität zu mindern und im Laufe der Zeit potenziell erhebliche Renditen zu erzielen. Es ist jedoch wichtig, die damit verbundenen Risiken zu verstehen und geeignete Risikomanagementstrategien zu implementieren, um die Leistung zu optimieren und langfristige Anlageziele zu erreichen."
+                }
+            },
+            "setupDcaBot": {
+                "name": "DCA-Bot Einrichten",
+                "started": {
+                    "header": "Loslegen:",
+                    "subText": "Beim Starten eines DCA-Bots haben Sie die Möglichkeit, eine Handelsrichtung auszuwählen und entweder eine Long- oder eine Short-Position einzurichten."
+                },
+                "long": {
+                    "header": "Long-Position:",
+                    "subText1": "In einer Long-Position beteiligt sich der Bot an Kaufaktivitäten mit dem Ziel, Gewinn in der Quotierungswährung anzuhäufen.",
+                    "subText2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency kauft. Anschließend platziert er DCA (Kauf) -Aufträge unter diesem Trade und einen Take-Profit (Verkauf) -Auftrag darüber. Wenn der Preis steigt, wird Ihr Bot alle erworbenen Basiscurrency zum Take-Profit-Niveau verkaufen und somit Gewinn erzielen. An diesem Punkt endet der Zyklus, und der Bot startet einen neuen mit dem anfänglichen Anlagebetrag."
+                },
+                "short": {
+                    "header": "Short-Position:",
+                    "subtext1": "Im Gegensatz dazu begibt sich der Bot in einer Short-Position auf Verkaufsunternehmungen, um Gewinn in der Basiscurrency anzuhäufen.",
+                    "subtext2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency verkauft. Über diesem Trade platziert er DCA (Verkauf) -Aufträge und einen Take-Profit (Kauf) -Auftrag darunter. Steigt der Preis, wird der Bot mehr Basiscurrency verkaufen und die Quotierungswährung zu den DCA-Ebenen erwerben. Wenn der Preis jedoch sinkt, wird Ihr Bot die Basiscurrency mit dem Take-Profit zurückerwerben. Nach Abschluss des Zyklus startet der Bot einen neuen mit der anfänglichen Basiscurrency-Investition.",
+                    "subtext3": "Um Ihren ersten Long- und Short-DCA-Bot zu erstellen und auszuführen, befolgen Sie bitte die untenstehenden schrittweisen Anweisungen."
+                },
+                "setupDcaBotYoutubeIdLong": "T6GnoaQxYsA",
+                "setupDcaBotYoutubeIdShort": "pDSi_balTMI"
+            },
+            "setupDcaStrategy": {
+                "name": "Richten Sie Die DCA-Strategie Ein"
+            }
+        }
     }
-  },
-  "CryptoLandingPage": {
-    "nameLine1": "Krypto",
-    "nameLine2": "Einfache & Sichere",
-    "nameLine3": "Börse",
-    "mainText": "Entdecken Sie ein höheres Maß an finanzieller Privatsphäre und Freiheit, als es traditionelle Bankensysteme bieten, in der einfachen und sicheren Umgebung unserer Börse. Wir sind eine Börse mit Sitz im Herzen der Europäischen Union. Die Ersten, die Regulierungen einführen, die dazu führen werden, dass Kryptowährungen hier explodieren!",
-    "register": {
-      "content": "Registrieren Sie sich und erhalten Sie bis zu 100 USDT Belohnung in GARAGECoin (GARA)",
-      "limitedOffer": "Begrenztes Angebot",
-      "mark": {
-        "option1": "Jeder neue Benutzer auf der Börse erhält 10 USDT in der GARA-Coins.",
-        "option2": "Jeder 50. Benutzer erhält 50 USDT in GARA-Coins.",
-        "option3": "Jeder 100. Benutzer erhält 100 USDT in GARA-Coins.",
-        "option4": "Empfehlen Sie einen neuen Benutzer und Sie erhalten die gleiche Belohnung wie jeder von Ihnen empfohlene neue Benutzer."
-      }
-    },
-    "signUp": "Registrieren Sie sich",
-    "becomeAShareholder": "Werde Teilhaber",
-    "howToSignUp": "Wie melde ich mich an?",
-    "scanQrCode": "Scannen Sie den QR-Code",
-    "toDownloadApp": "um Ihre App herunterzuladen"
-  },
-  "App": {
-    "name": "Einfach überall, jederzeit",
-    "text": "Entfesseln Sie die Kraft der globalen Finanzmärkte direkt von der Handfläche Ihrer Hand mit der Coingarage Mobile Trading App. Erleben Sie die Zukunft des Handels, in der Geschwindigkeit, Bequemlichkeit und Präzision zusammenkommen.",
-    "appStore": "App Store",
-    "googlePlay": "Google Play",
-    "scanQrCode": "Scannen Sie den QR-Code",
-    "toDownloadApp": "um Ihre App herunterzuladen"
-  },
-  "CryptoMarket": {
-    "name": "Kryptomarket",
-    "currency": "Währung",
-    "price": "Preis",
-    "24hChange": "24-Stunden-Veränderung",
-    "24hVolume": "24-Stunden-Volumen",
-    "marketCap": "Marktkapitalisierung"
-  },
-  "CryptoStats": {
-    "trending": "Trending",
-    "topGainers": "Top-Gewinner",
-    "recentlyAdded": "Kürzlich hinzugefügt"
-  },
-  "Statistics": {
-    "icon1": "100 gelistete Währungen",
-    "icon2": "Über 100 teilnehmende Länder",
-    "icon3": "12 Assets für Staking in Kürze verfügbar",
-    "icon4": "Kauf von Krypto",
-    "icon5": "EUR über Sepa oder Karte einzahlen"
-  },
-  "DiscoverMoreProducts": {
-    "name": "Entdecken Sie weitere Produkte",
-    "eezyTrader": {
-      "name": "EEZY Trader",
-      "text": "Lassen Sie den KI-Bot für Sie arbeiten.",
-      "masterTraders": "Master Trader",
-      "followers": "Follower",
-      "bestTraders": {
-        "7DROI": "7-Tages-Rendite (7DROI)",
-        "7DFollowersPnL": "7-Tages-Follower-Gewinn/Verlust (7D Followers PnL)",
-        "copy": "Kopieren"
-      },
-      "features": {
-        "tradingBot": {
-          "name": "Handelsroboter",
-          "text": "Grid- und DCA-Roboter. Lang-, Kurzstrategie und mehr."
-        },
-        "takeProfit": {
-          "name": "Gewinnmitnahme",
-          "text": "Steigern Sie Ihren Krypto-Assets einfach, intelligent und effektiv."
-        },
-        "copyTrading": {
-          "name": "Kopie Trading",
-          "text": "Lassen Sie Top-Trader für Sie arbeiten, kopieren Sie einfach ihre Strategien."
-        },
-        "bargain": {
-          "name": "Schnäppchen",
-          "text": "Bestes Angebot auf dem Markt."
-        }
-      }
-    }
-  },
-  "Faq": {
-    "question1": {
-      "question": "Was ist der Unterschied zwischen einem 'Coin' und einem 'Token' auf der Seite?",
-      "answer": "Ein Coin ist eine Kryptowährung, die unabhängig funktionieren kann. Ein Token hingegen ist eine Kryptowährung, die auf einer anderen Kryptowährung als Plattform für ihre Funktion angewiesen ist. Schauen Sie sich unseren Blogbeitrag für weitere Informationen an."
-    },
-    "question2": {
-      "question": "Was ist Bitcoin (BTC)?",
-      "answer": "Bitcoin ist die erste Kryptowährung, die 2009 von Satoshi Nakamoto geschaffen wurde. Es handelt sich um eine dezentralisierte digitale Währung, die von Benutzer zu Benutzer im Peer-to-Peer-Bitcoin-Netzwerk ohne die Notwendigkeit von Vermittlern gesendet werden kann."
-    },
-    "question3": {
-      "question": "Was ist die USDT-Münze (USDT)?",
-      "answer": "Tether (USDT) ist eine Kryptowährung mit einem Wert, der den Wert des US-Dollars widerspiegeln soll. Die Idee war, eine stabile Kryptowährung zu schaffen, die wie digitale Dollar verwendet werden kann. Münzen, die diesen Zweck erfüllen, indem sie einen stabilen Dollarersatz darstellen, werden als 'Stablecoins' bezeichnet. USDT ist der beliebteste Stablecoin und fungiert sogar als Dollarersatz auf vielen populären Börsen!"
-    },
-    "question4": {
-      "question": "Wie kann ich Kryptowährungen kaufen?",
-      "answer": "Sie können Kryptowährungen auf Coingarage kaufen, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich für ein Coingarage-Konto an. 2. Verifizieren Sie Ihr Konto. 3. Zahlen Sie EUR oder andere unterstützte Kryptowährungen ein. 4. Kaufen Sie Ihre Lieblingskryptowährungen."
-    },
-    "question5": {
-      "question": "Wie kann ich mein persönliches Konto verifizieren?",
-      "answer": "Sie können Ihr persönliches Konto verifizieren, indem Sie diese drei Schritte befolgen: 1. Melden Sie sich bei Ihrem Coingarage-Konto an. 2. Gehen Sie zu Ihren Kontoeinstellungen. 3. Klicken Sie auf den Verifizierungs-Tab. 4. Befolgen Sie die Anweisungen und laden Sie die erforderlichen Dokumente hoch. 5. Warten Sie darauf, dass Ihre Verifizierung bearbeitet wird. 6. Beginnen Sie mit dem Handel!"
-    }
-  },
-  "Footer": {
-    "aboutUs": "Über uns",
-    "contactUs": "Kontakt",
-    "fees": "Gebühren",
-    "hotCoins": "Beliebte Kryptowährungen",
-    "blog": "Blog",
-    "faqs": "FAQ's",
-    "coinListing": "Listen von Kryptowährungen",
-    "markets": "Märkte",
-    "trade": "Handel",
-    "buyCrypto": "Kryptowährung kaufen",
-    "staking": "Staking",
-    "login": "Anmelden",
-    "legal": {
-      "termsOfService": "Nutzungsbedingungen",
-      "privacyPolicy": "Datenschutzbestimmungen",
-      "cookiePolicy": "Cookie-Richtlinie"
-    }
-  },
-  "Contact": {
-    "street": "Revoluční&nbsp;1082/8",
-    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
-    "postalCode": "110 00",
-    "country": "Prague, Czech Republic",
-    "phone": "+420 778 116 516",
-    "email": "support@coingarage.io",
-    "companyID": "IČ: 11667974"
-  },
-  "Affiliate": {
-    "name": "Empfehlungsprogramm",
-    "claim": "Treten Sie Coingarage bei",
-    "reward": "Sie können 3 Ebenen von Belohnungen erhalten",
-    "text1": "Glauben Sie, dass Kryptowährungen und Blockchain-Technologie die Welt zum Besseren verändern können?",
-    "text2": "Wenn ja, dann treten Sie dem Coingarage Affiliate-Programm bei und verdienen Sie besondere Belohnungen. Stellen Sie Ihren Freunden Coingarage vor, eine voll lizenzierte Krypto-Börse im Herzen Europas.",
-    "warning": "*Sehr wichtig: Bitte beachten Sie, dass Ihr Affiliate nicht nur mit Ihren direkten Empfehlungen endet. Wenn Ihre direkten Empfehlungen anfangen zu arbeiten und Empfehlungen von Ihren direkten Empfehlungen erhalten, werden Sie die nächsten Belohnungen erhalten."
-  },
-  "AboutUs": {
-    "weAreCoingarage": "Wir sind coingarage",
-    "name": "Über uns",
-    "text1": "Nicht auf entfernten Inseln in Steueroasen, sondern im Herzen Europas wurde in Prag die erste Kryptowährungsbörse gegründet, die über eine vollständige Lizenz zum Halten und Handeln von Kryptowährungen verfügt.",
-    "text2": "Die gesamte Tätigkeit unterliegt vollständig den EU-Gesetzen und der Aufsicht von Regulierungsbehörden und Ämtern. Hier können Sie Krypto für Fiat kaufen, halten und auf einer der modernsten Plattformen mit Schwerpunkt auf Vollständigkeit und Einfachheit handeln",
-    "elements": {
-      "text1": "Ein Schlüsselelement unserer Plattform ist die Einfachheit.",
-      "text2": "Hier finden Sie Spot-Trading, aber in Zukunft auch Futures",
-      "text3": "An der Börse können Sie durch Staking der beliebtesten Münzen verdienen",
-      "text4": "Es wird auch möglich sein, Münzen an der Börse nach dem P2P-Prinzip zu tauschen",
-      "text5": "An einem Ort können Sie Krypto für Fiat-Währung über Ihre Debitkarte oder durch Überweisung von Ihrem Konto kaufen, dann können Sie es hier halten und damit handeln.",
-      "text6": "Ab Januar 2024 können Sie unsere professionellen Handels-DCA, GRID, Futures Boots mit künstlicher Intelligenz für den Handel nutzen",
-      "text7": "Unsere Börse wird auch eine eigene NFT-Plattform anbieten, einschließlich eines Marktplatzes",
-      "text8": "All diese Funktionen werden durch Bildungsprogramme und Videos ergänzt"
-    },
-    "financialWorld": {
-      "name": "Wir möchten, dass Kryptowährungen zu einem alltäglichen und respektierten Teil der Finanzwelt in Europa werden.",
-      "text1": "Wir möchten zur Adoption von Kryptowährungen in Europa beitragen und eine völlig transparente und sichere Umgebung bieten, die im Einklang mit dem EU-Recht und den Vorschriften steht.",
-      "text2": "Damit die Menschen wissen, was sie von der Kryptowelt erwarten können und sich der Vorteile, aber auch der Risiken dieser Branche bewusst sind. Damit sie wissen, dass das Investieren in Krypto nicht nur eine kurzfristige Spekulation, sondern eine langfristige und sinnvolle Investition ist",
-      "text3": "Unsere Vision basiert auf vier Grundwerten: Transparenz, Vollständigkeit, Sicherheit und Einfachheit. Wenn wir diese Werte in unserer Vision verwirklichen, dann sind wir auf dem Weg, den Menschen langfristigen regelmäßigen Gewinn aus der Kryptowelt zu bringen.",
-      "text4": ""
-    },
-    "getStarted": "Beginnen"
-  },
-  "security": {
-    "security": "Sicherheit des Austauschs",
-    "securityText": "Unsere Plattform verwendet mehrere modernste Technologien, um ein robustes und effizientes System zu gewährleisten. Wir verwenden die neuesten Versionen der Datenverschlüsselung sowohl für die Übertragung als auch für die Speicherung. Wir nutzen auch fortschrittliche Schutzfunktionen auf Basis künstlicher Intelligenz, um eine sichere und geschützte Umgebung für unsere Benutzer zu gewährleisten.",
-    "protection": "Kundenschutz",
-    "protectionText": "Die Kundenschutzmaßnahmen von Coingarage gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
-    "fundsSecurity": "Sicherheit der Mittel",
-    "fundsSecurityText": "Unsere Fondsicherheit wird von Veteranen der Blockchain- und Webindustrie geschaffen. Wir haben eine Cloud-Plattform der nächsten Generation geschaffen, die Sicherheitsprüfungen auf Bankniveau besteht und sehr begehrten Qualitätsstandards entspricht.",
-    "monitoring": "Echtzeitüberwachung",
-    "monitoringText": "Unsere Echtzeitüberwachungssysteme verfolgen und analysieren aktiv Aktivitäten auf unserer Plattform. Dies ermöglicht es uns, verdächtiges Verhalten schnell zu erkennen und darauf zu reagieren. Dieser proaktive Ansatz stellt sicher, dass Ihre Vermögenswerte und Daten ständig geschützt sind.",
-    "secureByDesign": "Sicherheit durch Design",
-    "secureByDesignText": "Unsere Maßnahmen zum Schutz der Privatsphäre gehen über branchenübliche Normen hinaus und implementieren robuste Richtlinien und Technologien zum Schutz Ihrer persönlichen Informationen. Seien Sie versichert, Ihre Privatsphäre hat für uns oberste Priorität.",
-    "heading": "Ein sicherer Hafen: Wo Datenschutz, Design und Echtzeitüberwachung für Ihre Seelenruhe zusammenkommen",
-    "newDesign": "Wir arbeiten an einem neuen Design",
-    "continueToTrader": "Weiter zu EEZY Trader"
-  },
-  "eezy-trader": {
-    "nav": {
-      "knowledgeBase": "Wissensdatenbank",
-      "affiliateProgram": "Partnerprogramm",
-      "payments": "Zahlungen & Abonnements"
-    },
-    "homepage": {
-      "trialBtn": "STARTEN SIE EINE KOSTENLOSE 7-TAGE-TESTVERSION",
-      "main": {
-        "header": "Der beste KI-gestützte Krypto-Handelsbot",
-        "noCreditCard": "*Keine Kreditkarte erforderlich"
-      },
-      "results": {
-        "header": "Realisieren Sie das volle Potenzial Ihrer Handelsstrategie, indem Sie die fortschrittlichen Fähigkeiten des Coingarage EEZY Trader Krypto-Bots nutzen, der es Ihnen ermöglicht, die Spitzenhandelsleistung zu erreichen und Gewinne zu maximieren.",
-        "topPerformers": "Top-Performer",
-        "topPairs": "Top-Paare",
-        "name": "Name",
-        "pair": "Paar"
-      },
-      "trusting": {
-        "subHeader": "Vertraut von Tausenden von Händlern, angetrieben von",
-        "header": "Coingarage „Einfach & sicher austauschen“",
-        "columns": {
-          "1": "Long / Short",
-          "2": "Handelsgewinn",
-          "3": "DCA / GRID",
-          "4": "Strategie speichern",
-          "5": "Beginnend mit KI",
-          "6": "Kopieren Handel",
-          "7": "100 Paare zum Handeln",
-          "8": "Technische Indikatoren",
-          "9": "90 Bots"
-        }
-      },
-      "investment": {
-        "header": "Lehnen Sie sich zurück und sehen Sie zu, wie Ihre Kryptowährungsinvestitionen Tag und Nacht wachsen, 24/7, wo immer Sie sind",
-        "free7Days": "7 Tage lang kostenlos testen",
-        "howToConnect": {
-          "register": "Registrieren",
-          "connect": "Verbinden",
-          "startTrading": "Handel starten"
-        }
-      },
-      "login": {
-        "header": "<span>Starten Sie das Verdienen mit</span><span class='text-violet'>Coingarage's Trader</span><span><span class='text-violet'>Bot</span> noch heute</span>",
-        "subText": "Melden Sie sich bei Coingarage an und erhalten Sie eine voll funktionsfähige <b>7-tägige PRO-Testphase</b>, um alle erweiterten Funktionen des Bots zu testen.",
-        "loginForm": {
-          "login": "Anmelden",
-          "yourEmail": "Ihre E-Mail",
-          "password": "Passwort",
-          "forgotPassword": "Passwort vergessen?",
-          "noAccount": "Haben Sie kein Konto? Hier anmelden"
-        }
-      },
-      "start": {
-        "header": "Starten Sie EEZY TRADER in 5 einfachen Schritten",
-        "subText": "Starten Sie Ihren EEZY-Handelsbot mühelos in fünf einfachen Schritten: Beginnen Sie noch heute mit dem Handel und optimieren Sie Ihre Gewinne mit Coingarage.",
-        "steps": {
-          "1": "Registrieren Sie sich bei Coingarage",
-          "2": "Melden Sie sich bei einer Börse an",
-          "3": "Gehen Sie zu Unterkonto und wählen Sie im Menü EEZY Trader",
-          "4": "Erstellen Sie eine Strategie",
-          "5": "Starten Sie den Bot und beobachten Sie die Gewinne!"
-        }
-      },
-      "faq": {
-        "question1": "Wie kann ich mit Ihrer Plattform beginnen?",
-        "answer1": "Der Einstieg ist einfach! Melden Sie sich einfach für ein Konto an, absolvieren Sie den Verifizierungsprozess, zahlen Sie Geld auf Ihr Konto ein und beginnen Sie mit dem Handel mit unserer intuitiven Plattform und leistungsstarken Handelstools.",
-        "question2": "Wie gewährleisten Sie die Sicherheit meiner Gelder und persönlichen Informationen?",
-        "answer2": "Wir setzen branchenübliche Sicherheitsmaßnahmen ein, darunter Verschlüsselung, Zwei-Faktor-Authentifizierung (2FA) und regelmäßige Sicherheitsprüfungen, um Ihre Gelder und persönlichen Daten zu schützen. Darüber hinaus erfüllt unsere Plattform strenge Compliance-Standards, um unbefugten Zugriff und betrügerische Aktivitäten zu verhindern.",
-        "question3": "Was sind die Vorteile der Verwendung von DCA?",
-        "answer3": "Das Dollar-Cost-Averaging (DCA) ist eine Strategie, bei der ein Anleger den Gesamtbetrag, der investiert werden soll, auf periodische Käufe eines Zielwerts aufteilt, um die Auswirkungen der Volatilität auf den Gesamtkaufpreis zu verringern. Die wichtigsten Vorteile der Verwendung von DCA sind die Reduzierung des mit dem Timing des Marktes verbundenen Risikos, die potenzielle Senkung des durchschnittlichen Kosten pro Aktie im Laufe der Zeit und die Förderung eines disziplinierten Anlageverhaltens."
-      }
-    },
-    "affiliate": {
-      "btnAffiliate": "Loslegen",
-      "main": {
-        "header1": "Empfehlungsprogramm",
-        "header2": "Verdienen Sie bis zu 15% der Gebühren für jeden Handel Ihrer Partner",
-        "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren hereinkommt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsame Gewinne!</b>"
-      },
-      "getStarted": {
-        "header":"Wie man anfängt",
-        "header1": "Registrieren Sie sich bei Coingarage",
-        "subText1": "Erstellen Sie ein Konto bei Coingarage, melden Sie sich an und gehen Sie dann zum Bereich Empfehlungsprogramm.",
-        "header2": "Laden Sie Ihre Freunde und Partner ein",
-        "subText2": "Kopieren Sie Ihren Affiliate-Link und senden Sie ihn an Ihre Freunde oder Partner.",
-        "header3": "Genießen Sie Ihre Einnahmen",
-        "subText3": "Nachdem sie ein Konto erstellt und mit dem Handel begonnen haben, verdienen Sie Ihre Belohnungen.",
-        "disclaimer": "Sie werden auf die Anmeldeseite weitergeleitet. Nachdem Sie sich in Ihrem Konto angemeldet haben, finden Sie Ihren Empfehlungscode unter Mein -> Empfehlung"
-      },
-      "faq": {
-        "question1": "Wie funktioniert das Partnerprogramm?",
-        "answer1": "Als Partner erhalten Sie einen einzigartigen Empfehlungslink oder Code, den Sie mit Ihrem Publikum teilen können. Wenn jemand auf Ihren Link klickt oder Ihren Code verwendet, um einen Kauf oder eine Anmeldung durchzuführen, erhalten Sie eine Provision für den Verkauf oder die Anmeldung.",
-        "question2": "Gibt es eine Grenze für das, was ich durch das Partnerprogramm verdienen kann?",
-        "answer2": "Es gibt keine Grenze dafür, wie viel Sie durch unser Partnerprogramm verdienen können. Ihre Einnahmen hängen von der Anzahl der von Ihnen generierten Empfehlungen und dem Wert ihrer Käufe oder Anmeldungen ab.",
-        "question3": "Wie kann ich meine Empfehlungen und Provisionen verfolgen?",
-        "answer3": "Unser Partnerprogramm bietet Zugang zu einem Dashboard oder Portal, über das Sie Ihre Empfehlungen verfolgen, Verkäufe oder Anmeldungen überwachen und Ihre Provisionsverdienste in Echtzeit anzeigen können.",
-        "question4": "Was ist die Provisionsstruktur für das Partnerprogramm?",
-        "answer4": "Unser Partnerprogramm bietet eine mehrstufige Provisionsstruktur, wobei die Prozentsätze der Provision auf der Ebene der Empfehlungen basieren:",
-        "levels": {
-          "1": "Ebene 1: 15% Provision",
-          "2": "Ebene 2: 10% Provision",
-          "3": "Ebene 3: 5% Provision"
-        }
-      },
-      "setupTradingBot": {
-        "name": "Wissen Sie nicht, wie Sie einen Handelsroboter einrichten?",
-        "claim": "Keine Sorge, wir haben eine Wissensbasis erstellt",
-        "text1": "Hier finden Sie umfassende Anleitungen zur Einrichtung und zum Betrieb eines Handelsroboters, die alle wesentlichen Aspekte abdecken."
-      },
-      "example": "Beispiel",
-      "levels": {
-        "text1": "John ist die erste Person in der Empfehlungskette. Wenn John Alice empfiehlt, verdient er 15% der Gesamtbelohnung für die Registrierung von Alice.",
-        "text2": "Alice ist unter John registriert, daher auf der zweiten Ebene. Wenn Alice Peter empfiehlt, verdient John (erste Ebene) 10% der Gesamtbelohnung für Peters Konto.",
-        "text3": "Peter ist unter Alice registriert, daher auf der dritten Ebene. Wenn Peter einen weiteren Benutzer empfiehlt, verdient John (erste Ebene) 5% der Gesamtbelohnung für den neuen Benutzer, der von Peter registriert wurde."
-      },
-      "disclaimer": "Belohnungen werden aus den Gebühren generiert, die Ihre Empfehlungen zahlen."
-    },
-    "subscription": {
-      "btnBuy": "Abonnement kaufen",
-      "header": "Was ist ein Abonnement?",
-      "subText": "Ein Abonnement gewährt Ihnen vollen Zugriff auf unsere Dienste. <b>Mit einem Abonnement erhalten Sie Zugriff auf unseren revolutionären Handelsroboter</b>, der es Ihnen ermöglicht, auf den Märkten absolut einfach und effizient zu handeln.",
-      "plans": {
-        "header": "Abonnement",
-        "subText": "Nicht sicher, ob unser Abonnement das Richtige für Sie ist? Kein Problem! Wir bieten eine Testversion an, in der Sie unseren Bot ausprobieren und seine Fähigkeiten aus erster Hand erleben können.",
-        "trial": {
-          "header": "Testversion",
-          "free": "Kostenlos",
-          "package": {
-            "header": "Testen und Genießen Sie den Handelsbot",
-            "1": "Bis zu 10 Bots",
-            "2": "Alle Strategien",
-            "3": "Handelsterminals",
-            "4": "Nachlaufende Take-Profit"
-          }
-        },
-        "month": {
-          "mostUsed": "Am häufigsten verwendet",
-          "header": "Basis Monat",
-          "competitionPrice": "$45/Monat",
-          "price": "$15/Monat",
-          "package": {
-            "header": "Testen und Genießen Sie den Handelsbot",
-            "1": "Bis zu 50 Bots",
-            "2": "Alle Strategien",
-            "3": "Handelsterminals",
-            "4": "Nachlaufende Take-Profit",
-            "5": "Automatische Verlängerung"
-          }
-        },
-        "year": {
-          "header": "Basis Jahr",
-          "competitionPrice": "$384/Jahr",
-          "price": "$120/Jahr",
-          "save60": "$60 sparen",
-          "package": {
-            "header": "Entsperren Sie das volle Potenzial des Handelsbots",
-            "1": "Bis zu 99 Bots",
-            "2": "Alle Strategien",
-            "3": "Handelsterminals",
-            "4": "Nachlaufende Take-Profit",
-            "5": "Automatische Verlängerung"
-          }
-        },
-        "fee": "10% Erfolgsgebühr in EEZY Coin wird von jedem Gewinn abgezogen."
-      }
-    }
-  },
-  "knowledgeBase": {
-    "general": {
-      "name": "Allgemein",
-      "activation": "Aktivierung",
-      "subscription": "Abonnement",
-      "features": "Funktionen",
-      "activationYoutubeId": "ELe8zM4KsaA",
-      "subscriptionYoutubeId": "4KnsHj8yDzk",
-      "featuresYoutubeId": "sBn-WGI3tCY",
-      "introduction": {
-        "name": "Einführung",
-        "overview": {
-          "header": "Übersicht",
-          "subText": "Bot-Trading, auch als automatisiertes Trading bekannt, nutzt vorprogrammierte Software, um im Namen von Händlern Trades auszuführen. Diese Handelsmethode hat aufgrund ihrer Fähigkeit, Trades rund um die Uhr und ohne menschliches Eingreifen mit Geschwindigkeit und Präzision auszuführen, an Popularität gewonnen."
-        },
-        "advantages": {
-          "header": "Vorteile",
-          "subText1": "Schnelligkeit: Bots können Trades in Millisekunden ausführen und Marktbewegungen schneller als menschliche Händler ausnutzen.",
-          "subText2": "Emotionsloses Trading: Bots handeln auf der Grundlage vordefinierter Regeln und eliminieren Emotionen wie Angst und Gier, die menschliche Entscheidungen beeinflussen können.",
-          "subText3": "24/7 Trading: Bots können rund um die Uhr betrieben werden und Chancen in globalen Märkten nutzen, auch wenn Händler schlafen oder offline sind.",
-          "subText4": "Backtesting und Optimierung: Trader können Bot-Strategien mithilfe historischer Daten testen und die Leistung bewerten sowie Strategien zur Optimierung von Ergebnissen optimieren.",
-          "subText5": "Diversifikation: Bots können gleichzeitig über mehrere Vermögenswerte handeln und so eine größere Diversifizierung von Handelsportfolios ermöglichen."
-        },
-        "conclusion": {
-          "header": "Fazit",
-          "subText": "Dieses Einführungsschema bietet einen Überblick über das Bot-Trading, seine Vorteile, verschiedene Arten von Strategien, Überlegungen und schließt mit den potenziellen Vorteilen ab, die Händler aus der Nutzung von Bots in ihren Handelsaktivitäten ziehen können."
-        }
-      },
-      "slang": {
-        "name": "Slang",
-        "GRID": "Eine Handelsstrategie, die darin besteht, Kauf- und Verkaufsaufträge zu festgelegten Preisintervallen innerhalb eines bestimmten Bereichs zu platzieren. Ziel des Grid-Handels ist es, von Preisfluktuationen innerhalb des festgelegten Bereichs zu profitieren.",
-        "DCA": "Das Dollar-Cost-Averaging (DCA) ist eine Anlagestrategie, bei der ein Anleger regelmäßig einen festen Dollarbetrag einer bestimmten Anlage kauft, unabhängig vom Preis des Vermögenswerts. Diese Strategie zielt darauf ab, die Auswirkungen der Marktschwankungen zu verringern, indem der Kaufpreis im Laufe der Zeit verteilt wird.",
-        "TP": "Der Take-Profit (TP) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um Gewinne zu realisieren. Take-Profit-Aufträge werden typischerweise über dem aktuellen Marktpreis für Long-Positionen und unter dem aktuellen Marktpreis für Short-Positionen festgelegt.",
-        "SL": "Die Stop-Loss (SL) ist ein vordefiniertes Preisniveau, zu dem ein Händler beschließt, einen Teil oder den gesamten Bestand zu verkaufen, um potenzielle Verluste zu begrenzen. Stop-Loss-Aufträge werden typischerweise unter dem aktuellen Marktpreis für Long-Positionen und über dem aktuellen Marktpreis für Short-Positionen festgelegt.",
-        "SHORT": "Eine Handelsposition, bei der ein Händler ein Asset verkauft in der Erwartung, dass der Preis sinkt. Händler erzielen aus Short-Positionen Gewinne, indem sie das Asset zu einem niedrigeren Preis zurückkaufen, als sie es verkauft haben.",
-        "LONG": "Eine Handelsposition, bei der ein Händler ein Asset kauft in der Erwartung, dass der Preis steigt. Händler erzielen aus Long-Positionen Gewinne, indem sie das Asset zu einem höheren Preis verkaufen, als sie es gekauft haben.",
-        "START_BY_AI": "Einleitung oder Beginn von Handelsaktivitäten unter Verwendung von künstlicher Intelligenz (KI)-Algorithmen oder Plattformen. Dies kann automatisierte Handelsstrategien umfassen, bei denen KI Marktdaten analysiert und Trades basierend auf vordefinierten Regeln oder Algorithmen ausführt.",
-        "DCA_Auto": "Mit DCA Auto werden die von unserer Börse gewählten Werte eingeführt, die eine automatisierte Ausführung von Käufen in festgelegten Intervallen ermöglichen. Dies beseitigt die Notwendigkeit manueller Intervention, da die Plattform Käufe automatisch basierend auf den voreingestellten Parametern ausführt, wodurch Anleger im Laufe der Zeit Vermögenswerte ansammeln können, ohne dass eine kontinuierliche Überwachung erforderlich ist.",
-        "GRID_Auto": "Mit GRID Auto werden die von unserer Plattform gewählten Börsenwerte eingeführt, die eine automatisierte Ausführung von Trades basierend auf diesen vordefinierten Parametern ermöglichen. Dies ermöglicht es den Händlern, von Marktschwankungen innerhalb des festgelegten Bereichs zu profitieren, ohne manuelle Intervention zu benötigen."
-      }
-    },
-    "gridBot": {
-      "gridStrategy": {
-        "name": "Grid-Strategie",
-        "strategy": {
-          "subText1": "Die GRID-Strategie steht als Eckpfeiler sowohl im Bereich des Krypto- als auch des Devisenhandels. Sie funktioniert durch verzögerte Limit-Kauf- und -Verkaufsaufträge innerhalb vordefinierter Preisintervalle. Durch die Aufteilung des ausgewählten Preisbereichs in mehrere Ebenen wird ein Raster von Aufträgen etabliert, daher ihr Name, die GRID-Strategie.",
-          "subText2": "Unsere GRID-Bots sind darauf ausgelegt, Trades basierend auf dieser Strategie auszuführen und unermüdlich Gewinne aus Marktbewegungen zu erzielen, auch wenn Sie Ihre Trades nicht aktiv überwachen. Jedes Raster funktioniert austauschbar: Sobald ein Kaufauftrag abgeschlossen ist, initiiert der Bot prompt einen Verkaufsauftrag über dem ausgeführten Preis und umgekehrt. Alle Ihre Handelsaktivitäten werden effizient über die Bitsgap-Plattform verwaltet."
-        },
-        "profit": {
-          "header": "Gewinnerzielung mit der GRID-Strategie:",
-          "subText": "Der faszinierende Aspekt der GRID-Strategie liegt in ihrer Fähigkeit, von den natürlichen Schwankungen der Vermögenspreise zu profitieren. Anstatt unzählige Stunden damit zu verbringen, Diagramme zu überprüfen, um Marktbewegungen zu timen, führen GRID-Bots Trades zu opportunistischen Momenten aus, kaufen zu niedrigen Preisen und verkaufen zu hohen Preisen. Sie liefern kontinuierlich Gewinne, ohne auf komplexe Algorithmen angewiesen zu sein, sondern einfach durch Einhaltung der von Ihnen festgelegten Rasterparameter."
-        },
-        "risk": {
-          "header": "Mit der GRID-Strategie verbundene Risiken:",
-          "subText1": "Die Automatisierung der GRID-Strategie birgt inhärente Risiken, insbesondere bei ungünstigen Marktbedingungen. Unerwartete Preisfluktuationen können Ihre Handelsergebnisse erheblich beeinflussen. Zur Sicherung Ihrer Investition kann es vorteilhaft sein, Funktionen wie Stop Loss oder Trailing einzusetzen.",
-          "subText2": "Trotz der Risiken präsentiert das Rasterhandel eine der einfachsten und bewährtesten Handelsmethoden. Im Laufe der Zeit hat es das Potenzial, wesentliche Ergebnisse zu erzielen. Die Effektivität nimmt jedoch bei starken Trendumkehrungen ab. Daher ist es entscheidend zu erkennen, wann Sie Ihre Bot-Operationen starten oder stoppen sollten."
-        }
-      },
-      "setupGridBot": "Grid-Bot einrichten",
-      "customizeGridBot": "Passen Sie den Grid-Bot an",
-      "setupGridBotYoutubeIdLong": "2a6bE6PtQ28",
-      "setupGridBotYoutubeIdShort": "c4MFwLGbWyo"
-    },
-    "dcaBot": {
-      "dcaStrategy": {
-        "name": "DCA-Strategie",
-        "strategy": {
-          "subText1": "Die DCA (Durchschnittskostenmethode) Strategie ist ein weit verbreiteter Ansatz sowohl im Krypto- als auch im Forex-Handel. Sie beinhaltet den systematischen Kauf einer festen Menge eines Vermögenswerts in regelmäßigen Abständen, unabhängig von seinen Preisfluktuationen. Diese disziplinierte Strategie zielt darauf ab, die Auswirkungen der Marktvolatilität auf die Anlageerträge im Laufe der Zeit zu reduzieren.",
-          "subText2": "Unsere DCA-Bots sind sorgfältig entwickelt, um diese Strategie umzusetzen, wodurch Händler im Laufe der Zeit Vermögenswerte kontinuierlich akkumulieren können, ohne ständige manuelle Intervention. Diese Bots führen Trades gemäß vordefinierten Parametern aus, die ein nahtloses Wachstum des Portfolios und das Risikomanagement ermöglichen."
-        },
-        "profit": {
-          "header": "Gewinnerzielung mit der DCA-Strategie:",
-          "subText": "Die Schönheit der DCA-Strategie liegt in ihrer Fähigkeit, von der Konzept des Durchschnittskaufs zu profitieren. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen, unabhängig von kurzfristigen Preisbewegungen, ermöglichen es DCA-Bots den Händlern, Vermögenswerte im Laufe der Zeit zu einem Durchschnittspreis anzuhäufen. Diese Herangehensweise kann während Phasen der Marktvolatilität zu erheblichen Gewinnen führen, da sie das Risiko des Kaufs von Vermögenswerten zu einem einzelnen, potenziell überbewerteten Preispunkt mindert."
-        },
-        "risk": {
-          "header": "Mit der DCA-Strategie verbundene Risiken:",
-          "subText": "Obwohl die DCA-Strategie einen systematischen Ansatz für Investitionen bietet, ist sie nicht ohne Risiken. Marktrückgänge oder lang anhaltende Phasen der Vermögenswertermittlung können die Gesamtleistung der Strategie beeinträchtigen. Darüber hinaus müssen Händler sorgfältig Faktoren wie die Häufigkeit von Käufen und die Dauer des Anlagehorizonts berücksichtigen, um Renditen zu optimieren und Risiken effektiv zu managen."
-        },
-        "conclusion": {
-          "header": "Fazit",
-          "subText": "Die DCA-Strategie bietet Händlern einen disziplinierten und systematischen Ansatz für Investitionen in Krypto- und Forex-Märkte. Durch den kontinuierlichen Kauf von Vermögenswerten in regelmäßigen Abständen ermöglichen es DCA-Bots den Händlern, die Auswirkungen der Marktvolatilität zu mindern und im Laufe der Zeit potenziell erhebliche Renditen zu erzielen. Es ist jedoch wichtig, die damit verbundenen Risiken zu verstehen und geeignete Risikomanagementstrategien zu implementieren, um die Leistung zu optimieren und langfristige Anlageziele zu erreichen."
-        }
-      },
-      "setupDcaBot": {
-        "name": "DCA-Bot Einrichten",
-        "started": {
-          "header": "Loslegen:",
-          "subText": "Beim Starten eines DCA-Bots haben Sie die Möglichkeit, eine Handelsrichtung auszuwählen und entweder eine Long- oder eine Short-Position einzurichten."
-        },
-        "long": {
-          "header": "Long-Position:",
-          "subText1": "In einer Long-Position beteiligt sich der Bot an Kaufaktivitäten mit dem Ziel, Gewinn in der Quotierungswährung anzuhäufen.",
-          "subText2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency kauft. Anschließend platziert er DCA (Kauf) -Aufträge unter diesem Trade und einen Take-Profit (Verkauf) -Auftrag darüber. Wenn der Preis steigt, wird Ihr Bot alle erworbenen Basiscurrency zum Take-Profit-Niveau verkaufen und somit Gewinn erzielen. An diesem Punkt endet der Zyklus, und der Bot startet einen neuen mit dem anfänglichen Anlagebetrag."
-        },
-        "short": {
-          "header": "Short-Position:",
-          "subtext1": "Im Gegensatz dazu begibt sich der Bot in einer Short-Position auf Verkaufsunternehmungen, um Gewinn in der Basiscurrency anzuhäufen.",
-          "subtext2": "Ihr Bot wird eine Position einnehmen, indem er die Basiscurrency verkauft. Über diesem Trade platziert er DCA (Verkauf) -Aufträge und einen Take-Profit (Kauf) -Auftrag darunter. Steigt der Preis, wird der Bot mehr Basiscurrency verkaufen und die Quotierungswährung zu den DCA-Ebenen erwerben. Wenn der Preis jedoch sinkt, wird Ihr Bot die Basiscurrency mit dem Take-Profit zurückerwerben. Nach Abschluss des Zyklus startet der Bot einen neuen mit der anfänglichen Basiscurrency-Investition.",
-          "subtext3": "Um Ihren ersten Long- und Short-DCA-Bot zu erstellen und auszuführen, befolgen Sie bitte die untenstehenden schrittweisen Anweisungen."
-        },
-        "setupDcaBotYoutubeIdLong": "T6GnoaQxYsA",
-        "setupDcaBotYoutubeIdShort": "pDSi_balTMI"
-      },
-      "setupDcaStrategy": {
-        "name": "Richten Sie Die DCA-Strategie Ein"
-      }
-    }
-  }
 }

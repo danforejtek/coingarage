@@ -330,6 +330,7 @@
       "warning": "*Muy importante: Tenga en cuenta que su programa de afiliados no termina solo con sus referencias directas, si sus referencias directas comienzan a trabajar y las referencias de sus referencias directas recibirán las próximas recompensas."
     },
     "subscription": {
+      "disclaimer": "Una vez finalizado el registro, podrá seleccionar un plan de suscripción",
       "btnBuy": "Comprar Suscripción",
       "header": "¿Qué es un plan de suscripción?",
       "subText": "Un plan de suscripción te concede acceso a nuestros servicios a plena capacidad. <b>Con una suscripción, obtienes acceso a nuestro revolucionario robot de trading</b>, que te permite operar en los mercados con absoluta facilidad y eficiencia.",
@@ -418,23 +419,23 @@
         "START_BY_AI": "Iniciar o comenzar actividades de trading utilizando algoritmos o plataformas de inteligencia artificial (IA). Esto puede implicar estrategias de trading automatizadas, donde la IA analiza datos del mercado y ejecuta operaciones basadas en reglas o algoritmos predefinidos.",
         "DCA_Auto": "Con DCA Auto, se introducen los valores elegidos por nuestro exchange, lo que permite la ejecución automatizada de compras en intervalos especificados. Esto elimina la necesidad de intervención manual, ya que la plataforma ejecuta automáticamente las compras en función de los parámetros preestablecidos, permitiendo a los inversores acumular activos con el tiempo sin necesidad de monitoreo continuo.",
         "GRID_Auto": "Con GRID Auto, se introducen los valores del exchange seleccionados por nuestra plataforma, facilitando la ejecución automatizada de operaciones basadas en estos parámetros predefinidos. Esto permite a los traders capitalizar las fluctuaciones del mercado dentro del rango especificado sin necesidad de intervención manual."
-      }
-    },
-    "gridBot": {
-      "gridStrategy": {
-        "name": "Estrategia Grid",
-        "strategy": {
-          "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
-          "subText2": "Nuestros bots GRID están diseñados para ejecutar operaciones basadas en esta estrategia, generando beneficios incansablemente a partir de los movimientos del mercado incluso cuando no estás monitoreando activamente tus operaciones. Cada grilla funciona de manera intercambiable: una vez que se completa una orden de compra, el bot inicia rápidamente una orden de venta por encima del precio ejecutado, y viceversa. Todas tus actividades comerciales se gestionan eficientemente a través de la plataforma Bitsgap."
-        },
-        "profit": {
-          "header": "Generación de beneficios con la estrategia GRID:",
-          "subText": "El aspecto intrigante de la estrategia GRID radica en su capacidad para capitalizar las fluctuaciones naturales de los precios de los activos. En lugar de pasar horas incontables escudriñando gráficos para cronometrar movimientos del mercado, los bots GRID ejecutan operaciones en momentos oportunos, comprando a precios bajos y vendiendo a precios altos. Entregan consistentemente beneficios sin depender de algoritmos complejos, simplemente adhiriéndose a los parámetros de la grilla que estableces."
-        },
-        "risk": {
-          "header": "Riesgos asociados con la estrategia GRID:",
-          "subText1": "Automatizar la estrategia GRID conlleva riesgos inherentes, especialmente durante condiciones de mercado adversas. Las fluctuaciones de precios inesperadas pueden impactar significativamente los resultados de tus operaciones. Para proteger tu inversión, emplear funciones como Stop Loss o Trailing puede resultar beneficioso.",
-          "subText2": "A pesar de los riesgos, el trading con grillas presenta una de las metodologías comerciales más sencillas y probadas con el tiempo. Con el tiempo, tiene el potencial de generar resultados sustanciales. Sin embargo, su eficacia disminuye durante fuertes reversos de tendencia. Por lo tanto, es crucial discernir cuándo iniciar o detener las operaciones de tu bot."
+      },
+      "gridBot": {
+        "gridStrategy": {
+          "name": "Estrategia Grid",
+          "strategy": {
+            "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
+            "subText2": "Nuestros bots GRID están diseñados para ejecutar operaciones basadas en esta estrategia, generando beneficios incansablemente a partir de los movimientos del mercado incluso cuando no estás monitoreando activamente tus operaciones. Cada grilla funciona de manera intercambiable: una vez que se completa una orden de compra, el bot inicia rápidamente una orden de venta por encima del precio ejecutado, y viceversa. Todas tus actividades comerciales se gestionan eficientemente a través de la plataforma Bitsgap."
+          },
+          "profit": {
+            "header": "Generación de beneficios con la estrategia GRID:",
+            "subText": "El aspecto intrigante de la estrategia GRID radica en su capacidad para capitalizar las fluctuaciones naturales de los precios de los activos. En lugar de pasar horas incontables escudriñando gráficos para cronometrar movimientos del mercado, los bots GRID ejecutan operaciones en momentos oportunos, comprando a precios bajos y vendiendo a precios altos. Entregan consistentemente beneficios sin depender de algoritmos complejos, simplemente adhiriéndose a los parámetros de la grilla que estableces."
+          },
+          "risk": {
+            "header": "Riesgos asociados con la estrategia GRID:",
+            "subText1": "Automatizar la estrategia GRID conlleva riesgos inherentes, especialmente durante condiciones de mercado adversas. Las fluctuaciones de precios inesperadas pueden impactar significativamente los resultados de tus operaciones. Para proteger tu inversión, emplear funciones como Stop Loss o Trailing puede resultar beneficioso.",
+            "subText2": "A pesar de los riesgos, el trading con grillas presenta una de las metodologías comerciales más sencillas y probadas con el tiempo. Con el tiempo, tiene el potencial de generar resultados sustanciales. Sin embargo, su eficacia disminuye durante fuertes reversos de tendencia. Por lo tanto, es crucial discernir cuándo iniciar o detener las operaciones de tu bot."
+          }
         }
       },
       "setupGridBot": "Configurar Robot Grid",
