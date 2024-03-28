@@ -168,7 +168,6 @@
     "text1": "Věříte, že kryptoměny a blockchainová technologie mohou změnit svět k lepšímu?",
     "text2": "Pokud ano, připojte se k affiliate programu Coingarage a získejte speciální odměny. Představte svým přátelům Coingarage, plně licencovanou kryptoměnovou burzu v srdci Evropy.",
     "reward": "Můžete získat 3 úrovně odměn",
-    "warning": "*Velmi důležité: Prosím, mějte na paměti, že váš affiliate program nekončí pouze u vašich přímých odkazů. Pokud vaši přímí odkazovaní začnou pracovat a odkazovat další, obdržíte další odměny od těchto přímých odkazovaných."
   },
   "AboutUs": {
     "weAreCoingarage": "Jsme coingarage",
@@ -211,14 +210,14 @@
   },
   "eezy-trader": {
     "nav": {
-      "knowledgeBase": "Báze znalostí",
-      "affiliateProgram": "Partnerský program",
+      "knowledgeBase": "Báze Znalostí",
+      "affiliateProgram": "Partnerský Program",
       "payments": "Platby a předplatné"
     },
     "homepage": {
-      "trialBtn": "ZAČÍT 7DNE ZDARMA",
+      "trialBtn": "ZAČÍT 7DNÍ ZDARMA",
       "main": {
-        "header": "Nejlepší kryptoměnový obchodní robot s umělou inteligencí",
+        "header": "Nejlepší Kryptoměnový Obchodní Robot s Umělou Inteligencí",
         "noCreditCard": "*Není vyžadována kreditní karta"
       },
       "results": {
@@ -264,8 +263,8 @@
         }
       },
       "start": {
-        "header": "Spusťte GRID BOTA v 5 jednoduchých krocích",
-        "subText": "Spusťte svůj GRID obchodní robot jednoduše v pěti jednoduchých krocích: zahajte obchodování a optimalizujte své zisky ještě dnes s Coingarage.",
+        "header": "Spusťte EEZY TRADERA v 5 Jednoduchých Krocích",
+        "subText": "Spusťte svého obchodního robota jednoduše v pěti jednoduchých krocích: zahajte obchodování a optimalizujte své zisky ještě dnes s Coingarage.",
         "steps": {
           "1": "Registrovat se na Coingarage",
           "2": "Přihlásit se na burzu",
@@ -291,6 +290,7 @@
         "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>"
       },
       "getStarted": {
+        "header":"Jak začít",
         "header1": "Registrovat se do Coingarage",
         "subText1": "Vytvořte účet na Coingarage, přihlaste se a pak přejděte do sekce Affiliate.",
         "header2": "Pozvěte své přátele a partnery",
@@ -315,7 +315,7 @@
         }
       },
       "setupTradingBot": {
-        "name": "Nevíte, jak nastavit obchodního robota?",
+        "name": "Nevíte Jak Nastavit Obchodního Robota?",
         "claim": "Žádné starosti, vytvořili jsme znalostní bázi",
         "text1": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
       },
