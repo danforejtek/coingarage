@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const withNextIntl = require("next-intl/plugin")()
 
+const vercelShit = "force redeploy"
+
 const nextConfig = {
   images: {
     remotePatterns: [
