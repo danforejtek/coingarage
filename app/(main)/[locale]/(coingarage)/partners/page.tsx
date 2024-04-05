@@ -27,7 +27,7 @@ export default function Page() {
                 <Image src="/images/partners/finrock.svg" alt="" width={300} height={60} />
               </div>
             </div>
-            <span className="text-primary">FINROCK GLOBAL LTD</span> - Based in London, Finrock provides us feature-rich
+            <span className="text-primary">Finrock Ltd.</span> - Based in UAE, Finrock provides us feature-rich
             digital asset custody services, whilst offering military-grade encryption.
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function Page() {
               <Image src="/images/partners/effective_solutions.svg" alt="" width={130} height={130} />
             </div>
             <span className="text-primary">EFFECTIVE SOLUTIONS PRIVATE LIMITED</span> - Headquartered in Delhi (India)
-            with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and
+            with sales offices in the UK & the UAE, they have over a decade of experience in providing IT and
             Blockchain services to businesses worldwide. Their services range from the provision of business consulting
             to the implementation of complex Blockchain solutions, including extensive technical support.
           </div>
