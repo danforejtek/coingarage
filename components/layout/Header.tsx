@@ -30,20 +30,20 @@ export default function Header() {
         scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50" : null
       )}
     >
-      <div className="grid h-full grid-cols-[1fr_40px] lg:flex lg:flex-row lg:justify-between">
+      <div className="grid h-full grid-cols-[1fr_40px] xl:flex xl:flex-row xl:justify-between">
         <nav className="flex items-center gap-10" aria-label="Global">
           <Link href="/">
             <div className="h-[30] w-[206px]">
               <Image src="/logo.svg" width={206} height={31} alt="logo" />
             </div>
           </Link>
-          <div className="hidden max-w-[746px] flex-row gap-2 lg:flex">
+          <div className="hidden max-w-[746px] flex-row gap-2 xl:flex">
             <Menu />
             <GarageCoinPresale />
           </div>
         </nav>
         <div className="flex h-full items-center justify-end">
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <div className="flex gap-2">
               <Button variant="ghost" className={cn("text-sm")} asChild>
                 <a href="https://trade.coingarage.io/login">{t("login")}</a>
@@ -55,7 +55,7 @@ export default function Header() {
               <LocaleSwitcher />
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <MobileNav />
           </div>
         </div>

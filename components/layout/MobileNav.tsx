@@ -39,25 +39,23 @@ const MobileNav = ({ scrolled = false }) => {
         <Icons.menu className="h-6 w-6 dark:fill-white" />
       </Button>
       {/* </DialogTrigger> */}
-      <DialogContent className="h-[100dvh] w-screen p-4 px-6" showClose={false}>
-        <DialogHeader>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <Link href="/">
-                  <Icons.logo className="h-10 w-10" />
-                </Link>
-              </div>
+      <DialogContent className="h-[100dvh] max-w-screen-2xl grid-rows-[80px_1fr_80px] p-4 px-6" showClose={false}>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+              <Link href="/">
+                <Icons.logo className="h-10 w-10" />
+              </Link>
             </div>
-            <DialogClose asChild>
-              {/* <div className="flex items-center gap-4"> */}
-              <Button variant="ghost" className="text-md px-2">
-                <Icons.close className="h-6 w-6" />
-              </Button>
-              {/* </div> */}
-            </DialogClose>
           </div>
-        </DialogHeader>
+          <DialogClose asChild>
+            {/* <div className="flex items-center gap-4"> */}
+            <Button variant="ghost" className="text-md px-2">
+              <Icons.close className="h-6 w-6" />
+            </Button>
+            {/* </div> */}
+          </DialogClose>
+        </div>
         <div className="flex justify-center overflow-auto border-b border-t border-gray-100 dark:border-gray-700">
           <ul className="p-6">
             <li>
@@ -97,7 +95,7 @@ const MobileNav = ({ scrolled = false }) => {
             })}
           </ul>
         </div>
-        <DialogFooter className="flex-row items-center justify-between">
+        <DialogFooter className="flex-row items-center justify-between sm:justify-between">
           <div className="flex flex-row gap-2">
             <ModeToggle />
             <LocaleSwitcher />
