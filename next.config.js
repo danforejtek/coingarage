@@ -44,9 +44,6 @@ const nextConfig = {
               },
             },
           ],
-          issuer: {
-            and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
-          },
         },
       ],
     })
