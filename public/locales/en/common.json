@@ -569,61 +569,61 @@
       "header": "At which side in this new technological revolution you want to be?",
       "negativeClaims": {
         "claim1": {
-          "text": "2017: “Cryptocurrency is just not a real thing, eventually it will be closed.”",
+          "text": "<grey>2017:</grey> “Cryptocurrency is just not a real thing, eventually it will be closed.”",
           "name": "Jamie Dimon"
         },
         "claim2": {
-          "text": "1997: “There is no reason anyone would want a computer in their home.”",
+          "text": "<grey>1997:</grey> “There is no reason anyone would want a computer in their home.”",
           "name": "Ken Olsen, co-founder Digital Equipment Corporation"
         },
         "claim3": {
-          "text": "1995: “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
+          "text": "<grey>1995:</grey> “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
           "name": " Robert Metcalfe (the inventor of Ethernet)"
         },
         "claim4": {
-          "text": "1989: “We will never make a 32-bit operating system.”",
+          "text": "<grey>1989:</grey> “We will never make a 32-bit operating system.”",
           "name": "Bill Gates, Founder of Microsoft"
         },
         "claim5": {
-          "text": "1961: “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
+          "text": "<grey>1961:</grey> “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
           "name": "T.A.M. Craven,  FCC commissioner"
         },
         "claim6": {
-          "text": "1946: “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
+          "text": "<grey>1946:</grey> “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
           "name": "Darryl Zanuck, 20th Century Fox"
         },
         "claim7": {
-          "text": "1903: “The horse is here to stay but the automobile is only a novelty – a fad.”",
+          "text": "<grey>1903:</grey> “The horse is here to stay but the automobile is only a novelty – a fad.”",
           "name": "President of the Michigan Bank"
         }
       },
       "positiveClaims": {
         "claim1": {
-          "text": "Actual: “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
+          "text": "<primary>Actual:</primary> “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
           "name": "Elon Mask founder of Tesla nad SpaceX"
         },
         "claim2": {
-          "text": "Actual: “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
+          "text": "<primary>Actual:</primary> “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
           "name": "Paul Vigna, Markets reporter for The Wall Street Journal"
         },
         "claim3": {
-          "text": "Actual: “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
+          "text": "<primary>Actual:</primary> “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
           "name": "Olaf Carlson-Wee"
         },
         "claim4": {
-          "text": "Actual: “The reason we are all here is that the current financial system is outdated.“",
+          "text": "<primary>Actual:</primary> “The reason we are all here is that the current financial system is outdated.“",
           "name": "Charlie Shrem, Founder & CEO of Bitinstant"
         },
         "claim5": {
-          "text": "Actual: “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
+          "text": "<primary>Actual:</primary> “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
           "name": "Marc Kenigsber"
         },
         "claim6": {
-          "text": "Actual: “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
+          "text": "<primary>Actual:</primary> “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
           "name": "Cathie Wood — Ark Invest CEO & fund manager"
         }
       },
-      "ps": "PS: Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
+      "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
     },
     "oppurtunities": {
       "header": "Current Investment Opportunities from 500 USD",

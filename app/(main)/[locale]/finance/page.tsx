@@ -27,6 +27,8 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { FinanceProgress } from "./components/progress"
+import { Input } from "@/components/ui/input"
+import { Select } from "./components/select"
 
 const exchanges = [
   {
@@ -66,15 +68,7 @@ const exchanges = [
   },
 ].reverse()
 
-export const IconFigure = ({
-  status,
-  caption,
-  children,
-}: {
-  status: string
-  caption: string
-  children: React.ReactNode
-}) => {
+const IconFigure = ({ status, caption, children }: { status: string; caption: string; children: React.ReactNode }) => {
   const statusImage =
     status === "done"
       ? "/images/finance/icons/done.svg"
@@ -89,6 +83,15 @@ export const IconFigure = ({
       <div className="px-6 py-2">{children}</div>
       <figcaption className="text-center font-heading">{caption}</figcaption>
     </figure>
+  )
+}
+
+const Claim = ({ claim, author }: { claim: string; author: string }) => {
+  return (
+    <div className="flex flex-col font-heading">
+      <p className="text-base font-bold">{claim}</p>
+      <div className="text-base">{author}</div>
+    </div>
   )
 }
 
@@ -292,6 +295,208 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 <h4 className="mb-4 mt-4 text-center font-heading text-xl text-primary">{t("oppurtunities.round1")}</h4>
                 <FinanceProgress value={25} />
                 <h4 className="mt-4 text-center font-heading text-base text-primary">{t("oppurtunities.money")}</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section className="mx-auto mt-12 flex flex-col items-center px-8">
+        <p className="mb-6 mt-20 max-w-[650px] text-center font-heading text-4xl font-bold">{t("revolution.header")}</p>
+        <div className="flex w-full flex-row flex-wrap justify-center">
+          <div className="flex w-1/2 max-w-[600px] flex-col justify-between gap-4 p-4 lg:border-r-[8px] lg:border-neutral-200 xl:gap-8 xl:p-8">
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim1.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim1.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim2.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim2.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim3.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim3.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim4.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim4.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim5.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim5.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim6.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim6.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.negativeClaims.claim7.text", {
+                  grey: (chunks) => <span className="text-neutral-400">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim7.name")}
+            />
+          </div>
+          <div className="flex w-1/2 max-w-[600px] flex-col justify-between gap-4 p-4 xl:gap-8 xl:p-8">
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim1.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.positiveClaims.claim1.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim2.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.positiveClaims.claim2.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim3.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.positiveClaims.claim3.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim4.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.negativeClaims.claim4.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim5.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.positiveClaims.claim5.name")}
+            />
+            <Claim
+              claim={
+                t.rich("revolution.positiveClaims.claim6.text", {
+                  primary: (chunks) => <span className="text-primary">{chunks}</span>,
+                }) as string
+              }
+              author={t("revolution.positiveClaims.claim6.name")}
+            />
+          </div>
+        </div>
+        <p className="mt-16 max-w-[650px] text-center font-heading">
+          {t.rich("revolution.ps", { bold: (chunk) => <strong>{chunk}</strong> })}
+        </p>
+      </section>
+      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
+        <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+          <div className="mx-auto">
+            <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
+          </div>
+          <div className="mt-12 flex w-full flex-row gap-4 lg:gap-8">
+            <div className="w-2/3">
+              <div className="mb-8 inline-flex w-full items-center justify-between">
+                <p className="font-heading text-2xl font-bold text-primary">{t("yourValuation.investment")}</p>
+                <div className="inline-flex items-center gap-4">
+                  <Input type="number" placeholder="Amount" className="max-w-[300px] rounded-3xl shadow-md" />
+                  <Select
+                    className="max-w-[120px] rounded-3xl shadow-md"
+                    label="Currency"
+                    options={[
+                      { value: "USD", label: "USD" },
+                      { value: "EUR", label: "EUR" },
+                      { value: "CZK", label: "CZK" },
+                    ]}
+                  />
+                </div>
+              </div>
+              <div className="w-full rounded-2xl bg-background p-8 shadow-md">
+                <Table className="w-full font-heading text-base">
+                  <TableHeader>
+                    <TableRow className="border-none font-heading ">
+                      <TableHead className="font-bold text-foreground">
+                        {t("yourValuation.table.header.column1")}
+                      </TableHead>
+                      <TableHead className="text-center font-bold text-primary">
+                        {t("yourValuation.table.header.column2")}
+                      </TableHead>
+                      <TableHead className="text-center font-bold text-foreground">
+                        {t("yourValuation.table.header.column3")}
+                      </TableHead>
+                      <TableHead className="text-center font-bold text-foreground">
+                        {t("yourValuation.table.header.column4")}
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow className="border-none">
+                      <TableCell className="text-primary">{t("yourValuation.table.rows.row1")}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                    </TableRow>
+                    <TableRow className="border-none">
+                      <TableCell className="text-primary">{t("yourValuation.table.rows.row2")}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                    </TableRow>
+                    <TableRow className="border-none">
+                      <TableCell className="text-primary">{t("yourValuation.table.rows.row3")}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                    </TableRow>
+                    <TableRow className="border-none font-bold">
+                      <TableCell className="text-primary">{t("yourValuation.table.rows.row4")}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                      <TableCell className="text-center">{0}</TableCell>
+                    </TableRow>
+                  </TableBody>
+                  <TableCaption className="border-t pt-4 text-left text-xs italic text-foreground">
+                    {t("yourValuation.table.concluision")}
+                  </TableCaption>
+                </Table>
+              </div>
+            </div>
+            <div className="flex w-1/3 flex-row gap-4 lg:gap-8">
+              <div>
+                <Heading tag="h3" size="2xl">
+                  {t("yourValuation.subheader")}
+                </Heading>
+                <div className="pl-12">
+                  <p className="mt-8 text-base">{t("yourValuation.subtext1")}</p>
+                  <p className="mt-6 text-base">{t("yourValuation.subtext1")}</p>
+                </div>
               </div>
             </div>
           </div>
