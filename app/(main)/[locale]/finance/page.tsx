@@ -15,6 +15,11 @@ import NftIcon from "@/public/images/finance/icons/nft.svg"
 import ReferralIcon from "@/public/images/finance/icons/referral.svg"
 import TradingBotIcon from "@/public/images/finance/icons/tradingBot.svg"
 import StakingIcon from "@/public/images/finance/icons/staking.svg"
+import ContractIcon from "@/public/images/finance/icons/contract.svg"
+import KycIcon from "@/public/images/finance/icons/kyc.svg"
+import PaymentIcon from "@/public/images/finance/icons/payment.svg"
+import PersonalDataIcon from "@/public/images/finance/icons/personalData.svg"
+import RegistrationIcon from "@/public/images/finance/icons/registration.svg"
 import Link from "next/link"
 import {
   Table,
@@ -29,6 +34,7 @@ import {
 import { FinanceProgress } from "./components/progress"
 import { Input } from "@/components/ui/input"
 import { Select } from "./components/select"
+import { GetMoreInfoForm } from "@/app/(main)/[locale]/finance/components/get-more-info-form"
 
 const exchanges = [
   {
@@ -487,6 +493,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                   </TableCaption>
                 </Table>
               </div>
+              <div className="mt-12 w-full rounded-2xl bg-background p-8 shadow-md">
+                <div className="p-4">
+                  <p className="text-center font-heading text-4xl font-bold text-primary">
+                    {t("yourValuation.table2.header")}
+                  </p>
+                  <div className="p-8">
+                    <p className="text-center font-heading text-lg">{t("yourValuation.table2.subtext")}</p>
+                    <GetMoreInfoForm />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="flex w-1/3 flex-row gap-4 lg:gap-8">
               <div>
@@ -495,13 +512,39 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 </Heading>
                 <div className="pl-12">
                   <p className="mt-8 text-base">{t("yourValuation.subtext1")}</p>
-                  <p className="mt-6 text-base">{t("yourValuation.subtext1")}</p>
+                  <p className="mt-6 text-base">{t("yourValuation.subtext2")}</p>
+                  <div className="mt-12">
+                    <Button variant="default" size="lg" asChild>
+                      <Link href="/earn">{t("yourValuation.investBtn")}</Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
+      <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8">
+        <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("simpleSteps.header")}</p>
+        <p className="text-center">{t("simpleSteps.subtext")}</p>
+        <div className="mt-12 flex grid-cols-5 grid-rows-1 flex-row flex-wrap gap-5 xl:grid">
+          <IconFigure status="done" caption={t("simpleSteps.box1")}>
+            <RegistrationIcon width="64px" height="64px" />
+          </IconFigure>
+          <IconFigure status="done" caption={t("simpleSteps.box2")}>
+            <PersonalDataIcon width="64px" height="64px" />
+          </IconFigure>
+          <IconFigure status="done" caption={t("simpleSteps.box3")}>
+            <KycIcon width="64px" height="64px" />
+          </IconFigure>
+          <IconFigure status="done" caption={t("simpleSteps.box4")}>
+            <PaymentIcon width="64px" height="64px" />
+          </IconFigure>
+          <IconFigure status="done" caption={t("simpleSteps.box5")}>
+            <ContractIcon width="64px" height="64px" />
+          </IconFigure>
+        </div>
+      </section>
     </main>
   )
 }

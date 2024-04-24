@@ -17,7 +17,7 @@ export function FinanceProgress({ value, className }: { value: number; className
     <Progress
       value={progress}
       postfix="%"
-      className={cn("h-[32px] w-full bg-background font-heading text-base text-background shadow-lg", className)}
+      className={cn("h-[32px] w-full font-heading text-base text-white shadow-lg dark:bg-[#282930]", className)}
     />
   )
 }
