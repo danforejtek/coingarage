@@ -35,6 +35,9 @@ import { FinanceProgress } from "./components/progress"
 import { Input } from "@/components/ui/input"
 import { Select } from "./components/select"
 import { GetMoreInfoForm } from "@/app/(main)/[locale]/finance/components/get-more-info-form"
+import { ChevronDown } from "lucide-react"
+import { PartnerCarousel } from "@/app/(main)/[locale]/finance/components/partner-carousel"
+import { FaqTabs } from "@/app/(main)/[locale]/finance/components/faq-tabs"
 
 const exchanges = [
   {
@@ -74,7 +77,17 @@ const exchanges = [
   },
 ].reverse()
 
-const IconFigure = ({ status, caption, children }: { status: string; caption: string; children: React.ReactNode }) => {
+const IconFigure = ({
+  status,
+  caption,
+  children,
+  icon,
+}: {
+  status: string
+  caption: string
+  children: React.ReactNode
+  icon?: React.ReactNode | string
+}) => {
   const statusImage =
     status === "done"
       ? "/images/finance/icons/done.svg"
@@ -82,9 +95,9 @@ const IconFigure = ({ status, caption, children }: { status: string; caption: st
         ? "/images/finance/icons/inDevelopment.svg"
         : "/images/finance/icons/planned.svg"
   return (
-    <figure className="rounded-lg border px-2 pb-6 pt-2">
+    <figure className="rounded-lg border bg-background px-2 pb-6 pt-2 transition-all hover:shadow-md hover:shadow-primary">
       <div className="flex flex-row-reverse">
-        <Image src={statusImage} width={18} height={18} alt="" />
+        {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
       </div>
       <div className="px-6 py-2">{children}</div>
       <figcaption className="text-center font-heading">{caption}</figcaption>
@@ -144,7 +157,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("developement.header")}</p>
         <p className="text-center">{t("developement.subtext")}</p>
-        <ul className="mt-12 flex flex-row gap-16 font-heading">
+        <ul className="xs:flex-col mt-12 flex flex-row flex-wrap gap-4 font-heading lg:gap-16">
           <li className="inline-flex items-center gap-4">
             {t("developement.done")}
             <Image src="/images/finance/icons/done.svg" width={18} height={18} alt="" />
@@ -158,7 +171,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <Image src="/images/finance/icons/planned.svg" width={18} height={18} alt="" />
           </li>
         </ul>
-        <div className="mt-12 flex grid-cols-6 grid-rows-2 flex-row flex-wrap gap-5 xl:grid">
+        <div className="mt-12 flex grid-cols-6 grid-rows-2 flex-row flex-wrap justify-center gap-5 xl:grid">
           <IconFigure status="done" caption={t("developement.list.box1")}>
             <TradingIcon width="67px" height="64px" />
           </IconFigure>
@@ -524,26 +537,97 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </section>
       </div>
-      <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8">
+      <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8 pb-4">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("simpleSteps.header")}</p>
         <p className="text-center">{t("simpleSteps.subtext")}</p>
-        <div className="mt-12 flex grid-cols-5 grid-rows-1 flex-row flex-wrap gap-5 xl:grid">
-          <IconFigure status="done" caption={t("simpleSteps.box1")}>
-            <RegistrationIcon width="64px" height="64px" />
-          </IconFigure>
-          <IconFigure status="done" caption={t("simpleSteps.box2")}>
-            <PersonalDataIcon width="64px" height="64px" />
-          </IconFigure>
-          <IconFigure status="done" caption={t("simpleSteps.box3")}>
-            <KycIcon width="64px" height="64px" />
-          </IconFigure>
-          <IconFigure status="done" caption={t("simpleSteps.box4")}>
-            <PaymentIcon width="64px" height="64px" />
-          </IconFigure>
-          <IconFigure status="done" caption={t("simpleSteps.box5")}>
-            <ContractIcon width="64px" height="64px" />
-          </IconFigure>
+        <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row lg:pl-8 xl:grid">
+          <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-6 lg:w-[calc(100%+24px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
+          <div className="flex flex-col items-center gap-4 lg:flex-row">
+            <IconFigure
+              status="done"
+              caption={t("simpleSteps.box1")}
+              icon={<span className="font-bold text-primary">1</span>}
+            >
+              <RegistrationIcon width="64px" height="64px" />
+            </IconFigure>
+            <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
+          </div>
+          <div className="flex flex-col items-center gap-4 lg:flex-row">
+            <IconFigure
+              status="done"
+              caption={t("simpleSteps.box2")}
+              icon={<span className="font-bold text-primary">2</span>}
+            >
+              <PersonalDataIcon width="64px" height="64px" />
+            </IconFigure>
+            <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
+          </div>
+          <div className="flex flex-col items-center gap-4 lg:flex-row">
+            <IconFigure
+              status="done"
+              caption={t("simpleSteps.box3")}
+              icon={<span className="font-bold text-primary">3</span>}
+            >
+              <KycIcon width="64px" height="64px" />
+            </IconFigure>
+            <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
+          </div>
+          <div className="flex flex-col items-center gap-4 lg:flex-row">
+            <IconFigure
+              status="done"
+              caption={t("simpleSteps.box4")}
+              icon={<span className="font-bold text-primary">4</span>}
+            >
+              <PaymentIcon width="64px" height="64px" />
+            </IconFigure>
+            <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
+          </div>
+          <div className="flex flex-col items-center gap-4 lg:flex-row">
+            <IconFigure
+              status="done"
+              caption={t("simpleSteps.box5")}
+              icon={<span className="font-bold text-primary">5</span>}
+            >
+              <ContractIcon width="64px" height="64px" />
+            </IconFigure>
+          </div>
         </div>
+        <div className="mt-12">
+          <a
+            href="https://coingarage-finance.s3.eu-west-1.amazonaws.com/docs/contract_content_en.pdf"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-tertiary underline underline-offset-4 transition-all hover:text-cyan-600 hover:underline-offset-2"
+          >
+            {t("simpleSteps.download")}
+          </a>
+        </div>
+      </section>
+      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
+        <section className="container mx-auto">
+          <p className="mb-12 text-center font-heading text-4xl font-bold">{t("partnersImages.header")}</p>
+          <PartnerCarousel />
+          <div className="mt-16 flex w-full flex-row justify-center">
+            <Button variant="default" size="lg" asChild>
+              <Link href="/earn">{t("partnersImages.infoBtn")}</Link>
+            </Button>
+          </div>
+        </section>
+      </div>
+      <section className="container mx-auto mt-12 w-full xl:mt-28">
+        <p className="mb-12 text-center font-heading text-4xl font-bold">{t("investorPlatform.header")}</p>
+        {/* <PartnerCarousel /> */}
+        <div className="mt-16 flex w-full flex-row justify-center">
+          <Button variant="default" size="lg" asChild>
+            <Link href="/earn">{t("investorPlatform.createAccountBtn")}</Link>
+          </Button>
+        </div>
+      </section>
+      <section className="container mx-auto mt-12 w-full xl:mt-28">
+        <Heading tag="h1" size="3xl">
+          {t("faq.header")}
+        </Heading>
+        <FaqTabs locale={locale} />
       </section>
     </main>
   )

@@ -35,6 +35,8 @@
     "@vercel/speed-insights": "^1.0.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "embla-carousel-autoplay": "^8.0.2",
+    "embla-carousel-react": "^8.0.2",
     "lucide-react": "^0.287.0",
     "next": "latest",
     "next-intl": "^3.7.0",
