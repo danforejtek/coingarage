@@ -6,9 +6,10 @@ import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
-import UmamiAnalytics from "@/components/UmamiAnalytics"
+// import UmamiAnalytics from "@/components/UmamiAnalytics"
 
 import { locales } from "@/config"
+import GoogleTagManager from "@/components/GoogleTagManager"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -41,7 +42,8 @@ export default function RootLayout({
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
         <GoogleAnalytics />
-        <UmamiAnalytics isProd={IS_PRODUCTION} />
+        <GoogleTagManager />
+        {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             {children}

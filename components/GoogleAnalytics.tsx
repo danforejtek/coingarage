@@ -4,6 +4,10 @@ import Script from "next/script"
 import * as gtag from "@/lib/gtag"
 
 const GoogleAnalytics = () => {
+  if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
+    return null
+  }
+
   return (
     <>
       <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`} />
