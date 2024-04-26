@@ -10,6 +10,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"
 
 import { locales } from "@/config"
 import GoogleTagManager from "@/components/GoogleTagManager"
+import { Suspense } from "react"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -41,8 +42,10 @@ export default function RootLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
-        <GoogleAnalytics />
-        <GoogleTagManager />
+        <Suspense fallback={null}>
+          <GoogleAnalytics />
+          <GoogleTagManager />
+        </Suspense>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
