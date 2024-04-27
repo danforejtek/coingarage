@@ -759,12 +759,7 @@
         },
         "question3": {
           "text": "Jaké výhody má tichý společník oproti jiným typům investování do společností?",
-          "listAnswer": {
-            "text1": "Podíl na zisku společnosti Coingarage Finance s.r.o. a podíl na zisku z eventuálního prodeje společnosti Coingarage s.r.o., čímž lze dosáhnout vyššího zhodnocení než například u dluhopisů, kde je pevně stanovený procentuální roční výnos.",
-            "text2": "Žádné vstupní ani průběžné poplatky, investujete přímo do projektu bez zprostředkovatele.",
-            "text3": "Možnost nahlížet do zveřejněných dokumentů týkající se hospodaření společnosti skrze privátní platformu společnosti Coingarage Finance s.r.o.",
-            "text4": "Lze vstoupit do projektu hned zkraje vzniku myšlenky, a získat tak mnohonásobně vyšší zhodnocení."
-          }
+          "answer": "<ul><li>Podíl na zisku společnosti Coingarage Finance s.r.o. a podíl na zisku z eventuálního prodeje společnosti Coingarage s.r.o., čímž lze dosáhnout vyššího zhodnocení než například u dluhopisů, kde je pevně stanovený procentuální roční výnos.</li><li>Žádné vstupní ani průběžné poplatky, investujete přímo do projektu bez zprostředkovatele.</li><li>Možnost nahlížet do zveřejněných dokumentů týkající se hospodaření společnosti skrze privátní platformu společnosti Coingarage Finance s.r.o.</li><li>Lze vstoupit do projektu hned zkraje vzniku myšlenky, a získat tak mnohonásobně vyšší zhodnocení.</li></ul>"
         },
         "question4": {
           "text": "Jak se mohu stát tichým společníkem?",

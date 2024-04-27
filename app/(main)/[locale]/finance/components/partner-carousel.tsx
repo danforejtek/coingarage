@@ -2,9 +2,11 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image"
 import Autoplay from "embla-carousel-autoplay"
+import { useTheme } from "next-themes"
 
 const partners = [
   "/images/finance/partners/blockchainLegalDarkMode.png",
+  "/images/finance/partners/blockchainLegalLightMode.png",
   "/images/finance/partners/creativeHeroes.svg",
   "/images/finance/partners/effectiveSolutions.svg",
   "/images/finance/partners/findrock.svg",
@@ -13,6 +15,11 @@ const partners = [
 ]
 
 export const PartnerCarousel = () => {
+  const { resolvedTheme } = useTheme()
+  const _partners =
+    resolvedTheme === "dark"
+      ? partners.filter((src) => !src.includes("LightMode"))
+      : partners.filter((src) => !src.includes("DarkMode"))
   return (
     <Carousel
       opts={{
@@ -27,7 +34,7 @@ export const PartnerCarousel = () => {
       className="w-full"
     >
       <CarouselContent className="h-[144px] ">
-        {partners.map((src, index) => (
+        {_partners.map((src, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div className="flex flex-row items-center justify-center p-1">
               <div className="relative h-[144px] w-[288px]">

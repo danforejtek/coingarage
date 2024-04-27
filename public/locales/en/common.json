@@ -760,12 +760,7 @@
         },
         "question3": {
           "text": "What are the advantages of a silent partnership over other types of investment in companies?",
-          "listAnswer": {
-            "text1": "Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.",
-            "text2": "No upfront or ongoing fees, you invest directly in the project without an intermediary.",
-            "text3": "Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.",
-            "text4": "You can enter the project right from the inception of the idea, and get many times the appreciation"
-          }
+          "answer": "<ul><li>Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.</li><li>No upfront or ongoing fees, you invest directly in the project without an intermediary.</li><li>Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.</li><li>You can enter the project right from the inception of the idea, and get many times the appreciation</li></ul>"
         },
         "question4": {
           "text": "How can I become a silent partner?",

@@ -95,11 +95,11 @@ const IconFigure = ({
         ? "/images/finance/icons/inDevelopment.svg"
         : "/images/finance/icons/planned.svg"
   return (
-    <figure className="rounded-lg border bg-background px-2 pb-6 pt-2 transition-all hover:shadow-md hover:shadow-primary">
-      <div className="flex flex-row-reverse">
+    <figure className="min-w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 transition-all hover:shadow-md hover:shadow-primary">
+      <div className="ju flex flex-row-reverse">
         {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
       </div>
-      <div className="px-6 py-2">{children}</div>
+      <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
       <figcaption className="text-center font-heading">{caption}</figcaption>
     </figure>
   )
@@ -144,7 +144,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </div>
         <div>
-          <div className="absolute right-[-100px] top-[400px] -z-50 h-[470px] w-[774px] max-w-[96vw] xl:top-[0px]">
+          <div className="absolute right-[-100px] top-[540px] -z-50 h-[470px] w-[774px] max-w-[96vw] overflow-hidden lg:top-[24px]">
             <Image src="/images/fin.svg" alt="" className="scale-x-[-1] object-contain" fill={true} />
           </div>
           <div className="container mx-auto flex flex-col-reverse xl:flex-row">
@@ -173,58 +173,71 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </ul>
         <div className="mt-12 flex grid-cols-6 grid-rows-2 flex-row flex-wrap justify-center gap-5 xl:grid">
           <IconFigure status="done" caption={t("developement.list.box1")}>
-            <TradingIcon width="67px" height="64px" />
+            <TradingIcon width="67px" height="64px" className="dark:!fill-white" />
           </IconFigure>
           <IconFigure status="done" caption={t("developement.list.box2")}>
-            <TradingBotIcon width="67px" height="64px" />
+            <TradingBotIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="done" caption={t("developement.list.box3")}>
-            <MobileAppIcon width="67px" height="64px" />
+            <MobileAppIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="done" caption={t("developement.list.box4")}>
-            <GaraCoinIcon width="67px" height="64px" />
+            <GaraCoinIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="done" caption={t("developement.list.box5")}>
-            <CoinListingIcon width="67px" height="64px" />
+            <CoinListingIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="done" caption={t("developement.list.box6")}>
-            <ReferralIcon width="67px" height="64px" />
+            <ReferralIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="inDevelopment" caption={t("developement.list.box7")}>
-            <BitcoinSavingsIcon width="67px" height="64px" />
+            <BitcoinSavingsIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="inDevelopment" caption={t("developement.list.box8")}>
-            <TradingIcon width="67px" height="64px" />
+            <TradingIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="inDevelopment" caption={t("developement.list.box9")}>
-            <AcademyIcon width="67px" height="64px" />
+            <AcademyIcon width="67px" height="64px" className="dark:!fill-white" />
           </IconFigure>
           <IconFigure status="planned" caption={t("developement.list.box10")}>
-            <StakingIcon width="67px" height="64px" />
+            <StakingIcon width="67px" height="64px" className="dark:!fill-white" />
           </IconFigure>
           <IconFigure status="planned" caption={t("developement.list.box11")}>
-            <NftIcon width="70px" height="68px" />
+            <NftIcon width="70px" height="68px" className="dark:!fill-white" />
           </IconFigure>
           <IconFigure status="planned" caption={t("developement.list.box12")}>
-            <CryptoCardIcon width="67px" height="64px" />
+            <CryptoCardIcon width="67px" height="64px" className="dark:!fill-white" />
           </IconFigure>
         </div>
       </section>
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
-        <div className="w-full max-w-[540px] p-4">
+        <div className="max-w-[540px] p-4 lg:w-1/2">
           <Heading tag="h1" size="4xl">
             {t("taxHeavens.header")}
           </Heading>
-          <div className="pl-12 pt-8">
-            <p className="text-text-neutral-600 mb-4 text-justify text-base dark:text-neutral-300 lg:text-left">
+          <div className="pt-8 md:pl-12">
+            <p className="mb-4 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
               {t.rich("taxHeavens.subtext1", { b: (text) => <b className="text-primary">{text}</b> })}
             </p>
-            <p className="text-text-neutral-600 mb-4 mt-12 text-justify text-base dark:text-neutral-300 lg:text-left">
+            <p className="mb-4 mt-12 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
               {t.rich("taxHeavens.subtext2", { b: (text) => <b className="text-primary">{text}</b> })}
             </p>
             <div className="mt-12 flex flex-row justify-between">
               <div>
-                <Image src="/images/finance/icons/images/euLightMode.svg" alt="" width={176} height={51} />
+                <Image
+                  src="/images/finance/icons/images/euLightMode.svg"
+                  alt=""
+                  width={176}
+                  height={51}
+                  className="dark:hidden"
+                />
+                <Image
+                  src="/images/finance/icons/images/euDarkMode.svg"
+                  alt=""
+                  width={176}
+                  height={51}
+                  className="hidden dark:block"
+                />
               </div>
               <div className="flex items-end">
                 <Image src="/images/finance/icons/images/esma.png" alt="" width={160} height={51} />
@@ -232,7 +245,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </div>
           </div>
         </div>
-        <div className="mt-16 flex max-w-[790px] items-center justify-end xl:mt-0">
+        <div className="mt-16 flex max-w-[790px] items-center justify-end lg:w-1/2 xl:mt-0">
           <Image src="/images/finance/icons/images/mapLightMode.svg" alt="" width={790} height={790} />
         </div>
       </section>
@@ -295,22 +308,22 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </div>
           </div>
           <div className="mt-16 w-full rounded-2xl bg-background p-12">
-            <h3 className="font-heading text-4xl font-bold">{t("oppurtunities.header")}</h3>
-            <div className="mt-12 flex flex-row gap-12">
-              <div className="w-1/2">
+            <h3 className="text-center font-heading text-4xl font-bold lg:text-start">{t("oppurtunities.header")}</h3>
+            <div className="mt-12 flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-start">
+              <div className="lg:w-1/2">
                 <p className="text-base">{t("oppurtunities.subtext")}</p>
                 <h4 className="mt-10 font-heading text-xl font-bold text-primary">{t("oppurtunities.bonuses")}</h4>
                 <ul className="mt-6 text-base">
                   <li>{t("oppurtunities.investment1")}</li>
                   <li>{t("oppurtunities.investment2")}</li>
                 </ul>
-                <div className="mt-12">
+                <div className="mt-12 flex flex-row justify-center lg:justify-start">
                   <Button variant="default" size="lg" asChild>
                     <Link href="/earn">{t("oppurtunities.shareholderBtn")}</Link>
                   </Button>
                 </div>
               </div>
-              <div className="w-1/2 px-12">
+              <div className="w-full lg:w-1/2 lg:px-12">
                 <h4 className="mb-4 mt-4 text-center font-heading text-xl text-primary">{t("oppurtunities.round1")}</h4>
                 <FinanceProgress value={25} />
                 <h4 className="mt-4 text-center font-heading text-base text-primary">{t("oppurtunities.money")}</h4>
@@ -440,11 +453,13 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="mx-auto">
             <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
           </div>
-          <div className="mt-12 flex w-full flex-row gap-4 lg:gap-8">
-            <div className="w-2/3">
-              <div className="mb-8 inline-flex w-full items-center justify-between">
-                <p className="font-heading text-2xl font-bold text-primary">{t("yourValuation.investment")}</p>
-                <div className="inline-flex items-center gap-4">
+          <div className="mt-12 flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
+            <div className="lg:w-2/3">
+              <div className="mb-8 inline-flex w-full flex-wrap items-center justify-between">
+                <p className="pb-4 font-heading text-2xl font-bold text-primary lg:pb-0">
+                  {t("yourValuation.investment")}
+                </p>
+                <div className="inline-flex w-full items-center gap-4 lg:w-fit">
                   <Input type="number" placeholder="Amount" className="max-w-[300px] rounded-3xl shadow-md" />
                   <Select
                     className="max-w-[120px] rounded-3xl shadow-md"
@@ -506,27 +521,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                   </TableCaption>
                 </Table>
               </div>
-              <div className="mt-12 w-full rounded-2xl bg-background p-8 shadow-md">
-                <div className="p-4">
-                  <p className="text-center font-heading text-4xl font-bold text-primary">
-                    {t("yourValuation.table2.header")}
-                  </p>
-                  <div className="p-8">
-                    <p className="text-center font-heading text-lg">{t("yourValuation.table2.subtext")}</p>
-                    <GetMoreInfoForm />
-                  </div>
-                </div>
-              </div>
+              <div className="lg:h-[300px]"></div>
             </div>
-            <div className="flex w-1/3 flex-row gap-4 lg:gap-8">
-              <div>
+            <div className="flex flex-row gap-4 lg:w-1/3 lg:gap-8">
+              <div className="mt-12 lg:mt-0">
                 <Heading tag="h3" size="2xl">
                   {t("yourValuation.subheader")}
                 </Heading>
                 <div className="pl-12">
-                  <p className="mt-8 text-base">{t("yourValuation.subtext1")}</p>
-                  <p className="mt-6 text-base">{t("yourValuation.subtext2")}</p>
-                  <div className="mt-12">
+                  <p className="mt-8 text-justify text-base lg:text-left">{t("yourValuation.subtext1")}</p>
+                  <p className="mt-6 text-justify text-base lg:text-left">{t("yourValuation.subtext2")}</p>
+                  <div className="mt-12 flex flex-row justify-center lg:justify-start">
                     <Button variant="default" size="lg" asChild>
                       <Link href="/earn">{t("yourValuation.investBtn")}</Link>
                     </Button>
@@ -537,9 +542,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </section>
       </div>
+      <div className="container z-10 mx-auto">
+        <div className="flex flex-row lg:gap-8">
+          <div className="-mt-[40px] rounded-2xl bg-background p-8 shadow-md lg:-mt-[300px] lg:w-2/3">
+            <div className="p-4">
+              <p className="text-center font-heading text-4xl font-bold text-primary">
+                {t("yourValuation.table2.header")}
+              </p>
+              <div className="pt-8 lg:px-8">
+                <p className="text-center font-heading text-lg">{t("yourValuation.table2.subtext")}</p>
+                <GetMoreInfoForm />
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-1/3"></div>
+        </div>
+      </div>
       <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8 pb-4">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("simpleSteps.header")}</p>
-        <p className="text-center">{t("simpleSteps.subtext")}</p>
+        <p className="text-justify text-base lg:text-center">{t("simpleSteps.subtext")}</p>
         <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row lg:pl-8 xl:grid">
           <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-6 lg:w-[calc(100%+24px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
           <div className="flex flex-col items-center gap-4 lg:flex-row">
@@ -568,7 +589,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box3")}
               icon={<span className="font-bold text-primary">3</span>}
             >
-              <KycIcon width="64px" height="64px" />
+              <KycIcon width="54px" height="64px" />
             </IconFigure>
             <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
           </div>
@@ -588,7 +609,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box5")}
               icon={<span className="font-bold text-primary">5</span>}
             >
-              <ContractIcon width="64px" height="64px" />
+              <ContractIcon width="50px" height="64px" />
             </IconFigure>
           </div>
         </div>

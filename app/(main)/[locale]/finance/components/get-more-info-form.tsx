@@ -22,12 +22,12 @@ export function GetMoreInfoForm() {
   return (
     <Form {...form}>
       <form className="mx-auto mt-12 max-w-[600px]">
-        <div className="mb-8 flex flex-row gap-8">
+        <div className="mb-4 flex flex-col gap-4 lg:mb-8 lg:flex-row lg:gap-8">
           <FormField
             control={form.control}
             name="fullName"
             render={({ field }) => (
-              <FormItem className="w-1/2">
+              <FormItem className="lg:w-1/2">
                 <div className="flex flex-col gap-2">
                   {/* <FormLabel className="text-left">Full name</FormLabel> */}
                   <FormControl>
@@ -46,7 +46,7 @@ export function GetMoreInfoForm() {
             control={form.control}
             name="phoneNumber"
             render={({ field }) => (
-              <FormItem className="w-1/2">
+              <FormItem className="lg:w-1/2">
                 <div className="flex flex-col gap-2">
                   {/* <FormLabel className="text-left">Phone number</FormLabel> */}
                   <FormControl>
@@ -62,12 +62,12 @@ export function GetMoreInfoForm() {
             )}
           />
         </div>
-        <div className="mb-8 flex flex-row gap-8">
+        <div className="flex flex-col gap-8 lg:mb-8 lg:flex-row">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="w-3/4">
+              <FormItem className="lg:w-3/4">
                 <div className="flex flex-col gap-2">
                   {/* <FormLabel className="text-left">Email</FormLabel> */}
                   <FormControl>
@@ -82,7 +82,7 @@ export function GetMoreInfoForm() {
               </FormItem>
             )}
           />
-          <Button className="w-1/4" type="submit" variant="default" size="lg">
+          <Button className="lg:w-1/4" type="submit" variant="default" size="lg">
             Send
           </Button>
         </div>

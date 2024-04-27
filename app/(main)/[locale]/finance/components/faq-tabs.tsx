@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl"
 import { unstable_setRequestLocale } from "next-intl/server"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
 
 const faqs = [
   [
@@ -41,7 +42,7 @@ const faqs = [
     },
     {
       question: "faq.silentPartnershipQuestions.question3.text",
-      answer: "faq.silentPartnershipQuestions.question3.listAnswer",
+      answer: "faq.silentPartnershipQuestions.question3.answer",
     },
     {
       question: "faq.silentPartnershipQuestions.question4.text",
@@ -117,14 +118,46 @@ export const FaqTabs = ({ locale }: { locale: string }) => {
   return (
     <Tabs defaultValue="section1" className="w-full">
       <TabsList className="flex w-full gap-4 lg:flex-row-reverse">
-        <TabsTrigger value="section4">{t("faq.section4")}</TabsTrigger>
-        <TabsTrigger value="section3">{t("faq.section3")}</TabsTrigger>
-        <TabsTrigger value="section2">{t("faq.section2")}</TabsTrigger>
-        <TabsTrigger value="section1">{t("faq.section1")}</TabsTrigger>
+        <TabsTrigger value="section4" asChild>
+          <Button
+            variant="link"
+            size="sm"
+            className="text-foreground !no-underline !shadow-none hover:text-primary data-[state=active]:!bg-transparent data-[state=active]:!text-primary"
+          >
+            {t("faq.section4")}
+          </Button>
+        </TabsTrigger>
+        <TabsTrigger value="section3" asChild>
+          <Button
+            variant="link"
+            size="sm"
+            className="text-foreground !no-underline !shadow-none hover:text-primary data-[state=active]:!bg-transparent data-[state=active]:!text-primary"
+          >
+            {t("faq.section3")}
+          </Button>
+        </TabsTrigger>
+        <TabsTrigger value="section2" asChild>
+          <Button
+            variant="link"
+            size="sm"
+            className="text-foreground !no-underline !shadow-none hover:text-primary data-[state=active]:!bg-transparent data-[state=active]:!text-primary"
+          >
+            {t("faq.section2")}
+          </Button>
+        </TabsTrigger>
+        <TabsTrigger value="section1" asChild>
+          <Button
+            variant="link"
+            size="sm"
+            className="text-foreground !no-underline !shadow-none hover:text-primary data-[state=active]:!bg-transparent data-[state=active]:!text-primary"
+          >
+            {t("faq.section1")}
+          </Button>
+        </TabsTrigger>
       </TabsList>
       {faqs.map((list, index) => {
         return (
-          <TabsContent value={`section${index + 1}`}>
+          <TabsContent key={index} value={`section${index + 1}`}>
             <Accordion type="multiple" className="w-full">
               {list.map(({ question, answer }, index2) => (
                 <AccordionItem
@@ -135,7 +168,12 @@ export const FaqTabs = ({ locale }: { locale: string }) => {
                   <AccordionTrigger className="text-left font-heading text-lg">
                     <span className="mr-6">{t(question)}</span>
                   </AccordionTrigger>
-                  <AccordionContent>{t(answer)}</AccordionContent>
+                  <AccordionContent className="text-justify lg:text-start">
+                    {t.rich(answer, {
+                      li: (chunks) => <li>{chunks}</li>,
+                      ul: (chunks) => <ul className="list-outside list-disc px-4">{chunks}</ul>,
+                    })}
+                  </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
