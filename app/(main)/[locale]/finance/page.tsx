@@ -267,7 +267,13 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <span className="font-heading text-sm text-primary">{t("estimatedValuation.estimated.text2")}</span>
               <div className="mt-4">
                 <Button variant="default" size="lg" asChild>
-                  <Link href="/earn">{t("estimatedValuation.estimated.investBtn")}</Link>
+                  <a
+                    href=" https://app.coingarage-finance.com/accounts/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("estimatedValuation.estimated.investBtn")}
+                  </a>
                 </Button>
               </div>
             </div>
@@ -319,7 +325,13 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 </ul>
                 <div className="mt-12 flex flex-row justify-center lg:justify-start">
                   <Button variant="default" size="lg" asChild>
-                    <Link href="/earn">{t("oppurtunities.shareholderBtn")}</Link>
+                    <a
+                      href=" https://app.coingarage-finance.com/accounts/signup/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("oppurtunities.shareholderBtn")}
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -533,7 +545,13 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                   <p className="mt-6 text-justify text-base lg:text-left">{t("yourValuation.subtext2")}</p>
                   <div className="mt-12 flex flex-row justify-center lg:justify-start">
                     <Button variant="default" size="lg" asChild>
-                      <Link href="/earn">{t("yourValuation.investBtn")}</Link>
+                      <a
+                        href="https://app.coingarage-finance.com/accounts/signup"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("yourValuation.investBtn")}
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -630,7 +648,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <PartnerCarousel />
           <div className="mt-16 flex w-full flex-row justify-center">
             <Button variant="default" size="lg" asChild>
-              <Link href="/earn">{t("partnersImages.infoBtn")}</Link>
+              <a href="https://app.coingarage-finance.com/accounts/signup/" target="_blank" rel="noopener noreferrer">
+                {t("partnersImages.infoBtn")}
+              </a>
             </Button>
           </div>
         </section>
@@ -640,7 +660,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         {/* <PartnerCarousel /> */}
         <div className="mt-16 flex w-full flex-row justify-center">
           <Button variant="default" size="lg" asChild>
-            <Link href="/earn">{t("investorPlatform.createAccountBtn")}</Link>
+            <a href="https://app.coingarage-finance.com/accounts/signup/" target="_blank" rel="noopener noreferrer">
+              {t("investorPlatform.createAccountBtn")}
+            </a>
           </Button>
         </div>
       </section>

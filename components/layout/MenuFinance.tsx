@@ -100,7 +100,7 @@ export const navItems: NavItem[] = [
   {
     title: "Partners",
     key: "partners",
-    href: "/partners",
+    href: "/finance/partners",
   },
   {
     title: "Contacts",
