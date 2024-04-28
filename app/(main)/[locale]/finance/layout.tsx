@@ -5,6 +5,7 @@ import "@/styles/globals.scss"
 import type { Metadata } from "next"
 
 import { locales } from "@/config"
+import HeaderFinance from "@/components/layout/HeaderFinance"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -32,7 +33,8 @@ export default function RootLayout({
   unstable_setRequestLocale(locale)
   return (
     <>
-      <Header />
+      <div className="tertiary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
+      <HeaderFinance />
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
         <Footer />
