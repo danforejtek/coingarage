@@ -1,9 +1,9 @@
-import { userDataSchema } from "@/components/form/ContactUs"
+"use server"
+import { contactMeSchema } from "../components/get-more-info-form"
 import { sendMail } from "@/lib/mailer"
-import { getMaxListeners } from "events"
 import z from "zod"
 
-type UserDataType = z.infer<typeof userDataSchema>
+type UserDataType = z.infer<typeof contactMeSchema>
 
 const formatUserData = (data: UserDataType) => {
   return `
@@ -22,13 +22,13 @@ const formatUserData = (data: UserDataType) => {
   `
 }
 
-export async function POST(request: Request) {
-  const data = await request.json()
+export async function submitContactMeForm({ data }: { data: UserDataType }) {
   const mailerResponse = await sendMail({
     recipients: process.env.NODE_ENV === "development" ? ["d.forejtek@gmail.com"] : ["office@coingarage.io"],
-    subject: "Question from customer",
+    subject: `CGF: ${data.fullName} requested more info`,
     content: formatUserData(data),
   })
 
-  return Response.json({ status: "ok", mailerResponse })
+  if (mailerResponse.status === "error") return { status: "error" }
+  return { status: "ok" }
 }

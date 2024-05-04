@@ -6,10 +6,22 @@ import { useForm } from "react-hook-form"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { formatCurrency } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { zodResolver } from "@hookform/resolvers/zod"
+import * as z from "zod"
+import { submitContactMeForm } from "@/app/(main)/[locale]/finance/lib/actions"
+import { toast } from "sonner"
+
+export const contactMeSchema = z.object({
+  fullName: z.string().min(6, {
+    message: "Full name must be at least 6 characters.",
+  }),
+  email: z.string().email({ message: "Invalid email address." }),
+  phone: z.string().min(9, { message: "Phone number must be at least 9 characters." }),
+})
 
 const defaultValues = {
   fullName: "",
-  phoneNumber: "",
+  phone: "",
   email: "",
 }
 
@@ -17,11 +29,22 @@ export function GetMoreInfoForm() {
   const form = useForm({
     defaultValues: defaultValues,
     mode: "onChange",
+    resolver: zodResolver(contactMeSchema),
   })
+
+  const submitHandler = async (data: z.infer<typeof contactMeSchema>) => {
+    const response = await submitContactMeForm({ data })
+    if (response.status === "ok") {
+      form.reset()
+      toast.success("Thank you for your interest!", {
+        description: "We will get back to you as soon as possible.",
+      })
+    }
+  }
 
   return (
     <Form {...form}>
-      <form className="mx-auto mt-12 max-w-[600px]">
+      <form className="mx-auto mt-12 max-w-[600px]" onSubmit={form.handleSubmit(submitHandler)}>
         <div className="mb-4 flex flex-col gap-4 lg:mb-8 lg:flex-row lg:gap-8">
           <FormField
             control={form.control}
@@ -44,7 +67,7 @@ export function GetMoreInfoForm() {
           />
           <FormField
             control={form.control}
-            name="phoneNumber"
+            name="phone"
             render={({ field }) => (
               <FormItem className="lg:w-1/2">
                 <div className="flex flex-col gap-2">

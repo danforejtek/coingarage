@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl"
-import { unstable_setRequestLocale } from "next-intl/server"
+// import { useTranslations } from "next-intl"
+import { unstable_setRequestLocale, getTranslations } from "next-intl/server"
 // import Figure from "@/components/Figure"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -20,7 +20,7 @@ import KycIcon from "@/public/images/finance/icons/kyc.svg"
 import PaymentIcon from "@/public/images/finance/icons/payment.svg"
 import PersonalDataIcon from "@/public/images/finance/icons/personalData.svg"
 import RegistrationIcon from "@/public/images/finance/icons/registration.svg"
-import Link from "next/link"
+
 import {
   Table,
   TableBody,
@@ -32,12 +32,13 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { FinanceProgress } from "./components/progress"
-import { Input } from "@/components/ui/input"
-import { Select } from "./components/select"
+
 import { GetMoreInfoForm } from "@/app/(main)/[locale]/finance/components/get-more-info-form"
 import { ChevronDown } from "lucide-react"
 import { PartnerCarousel } from "@/app/(main)/[locale]/finance/components/partner-carousel"
 import { FaqTabs } from "@/app/(main)/[locale]/finance/components/faq-tabs"
+import { fetchFinanceData } from "@/app/(main)/[locale]/finance/lib/data"
+import { ValuationTable } from "@/app/(main)/[locale]/finance/components/valuation-table"
 
 const exchanges = [
   {
@@ -114,9 +115,14 @@ const Claim = ({ claim, author }: { claim: string; author: string }) => {
   )
 }
 
-export default function Page({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale)
-  const t = useTranslations("finance")
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  // unstable_setRequestLocale(locale)
+  const t = await getTranslations("finance")
+  const financialData = await fetchFinanceData()
+  const activeRoundIndex: number =
+    financialData.status === "ok" ? financialData.data.rounds.findIndex((round) => round.active === "true") : 0
+  const currentRoundPercentage: number =
+    financialData.status === "ok" ? financialData.data.round_percentage[activeRoundIndex] : 0
 
   return (
     <main className="relative overflow-hidden">
@@ -337,7 +343,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </div>
               <div className="w-full lg:w-1/2 lg:px-12">
                 <h4 className="mb-4 mt-4 text-center font-heading text-xl text-primary">{t("oppurtunities.round1")}</h4>
-                <FinanceProgress value={25} />
+                <FinanceProgress value={currentRoundPercentage} />
                 <h4 className="mt-4 text-center font-heading text-base text-primary">{t("oppurtunities.money")}</h4>
               </div>
             </div>
@@ -466,75 +472,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
           </div>
           <div className="mt-12 flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
-            <div className="lg:w-2/3">
-              <div className="mb-8 inline-flex w-full flex-wrap items-center justify-between">
-                <p className="pb-4 font-heading text-2xl font-bold text-primary lg:pb-0">
-                  {t("yourValuation.investment")}
-                </p>
-                <div className="inline-flex w-full items-center gap-4 lg:w-fit">
-                  <Input type="number" placeholder="Amount" className="max-w-[300px] rounded-3xl shadow-md" />
-                  <Select
-                    className="max-w-[120px] rounded-3xl shadow-md"
-                    label="Currency"
-                    options={[
-                      { value: "USD", label: "USD" },
-                      { value: "EUR", label: "EUR" },
-                      { value: "CZK", label: "CZK" },
-                    ]}
-                  />
-                </div>
-              </div>
-              <div className="w-full rounded-2xl bg-background p-8 shadow-md">
-                <Table className="w-full font-heading text-base">
-                  <TableHeader>
-                    <TableRow className="border-none font-heading ">
-                      <TableHead className="font-bold text-foreground">
-                        {t("yourValuation.table.header.column1")}
-                      </TableHead>
-                      <TableHead className="text-center font-bold text-primary">
-                        {t("yourValuation.table.header.column2")}
-                      </TableHead>
-                      <TableHead className="text-center font-bold text-foreground">
-                        {t("yourValuation.table.header.column3")}
-                      </TableHead>
-                      <TableHead className="text-center font-bold text-foreground">
-                        {t("yourValuation.table.header.column4")}
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow className="border-none">
-                      <TableCell className="text-primary">{t("yourValuation.table.rows.row1")}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                    </TableRow>
-                    <TableRow className="border-none">
-                      <TableCell className="text-primary">{t("yourValuation.table.rows.row2")}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                    </TableRow>
-                    <TableRow className="border-none">
-                      <TableCell className="text-primary">{t("yourValuation.table.rows.row3")}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                    </TableRow>
-                    <TableRow className="border-none font-bold">
-                      <TableCell className="text-primary">{t("yourValuation.table.rows.row4")}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                      <TableCell className="text-center">{0}</TableCell>
-                    </TableRow>
-                  </TableBody>
-                  <TableCaption className="border-t pt-4 text-left text-xs italic text-foreground">
-                    {t("yourValuation.table.concluision")}
-                  </TableCaption>
-                </Table>
-              </div>
-              <div className="lg:h-[300px]"></div>
-            </div>
+            <ValuationTable locale={locale} data={financialData.status === "ok" ? financialData?.data : null} />
             <div className="flex flex-row gap-4 lg:w-1/3 lg:gap-8">
               <div className="mt-12 lg:mt-0">
                 <Heading tag="h3" size="2xl">
@@ -587,7 +525,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box1")}
               icon={<span className="font-bold text-primary">1</span>}
             >
-              <RegistrationIcon width="64px" height="64px" />
+              <RegistrationIcon width="64px" height="64px" className="dark:fill-white" />
             </IconFigure>
             <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
           </div>
@@ -597,7 +535,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box2")}
               icon={<span className="font-bold text-primary">2</span>}
             >
-              <PersonalDataIcon width="64px" height="64px" />
+              <PersonalDataIcon width="64px" height="64px" className="dark:fill-white" />
             </IconFigure>
             <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
           </div>
@@ -607,7 +545,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box3")}
               icon={<span className="font-bold text-primary">3</span>}
             >
-              <KycIcon width="54px" height="64px" />
+              <KycIcon width="54px" height="64px" className="dark:fill-white" />
             </IconFigure>
             <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
           </div>
@@ -617,7 +555,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box4")}
               icon={<span className="font-bold text-primary">4</span>}
             >
-              <PaymentIcon width="64px" height="64px" />
+              <PaymentIcon width="64px" height="64px" className="dark:fill-white" />
             </IconFigure>
             <ChevronDown className="h-6 w-6 text-primary/80 lg:-rotate-90" />
           </div>
@@ -627,7 +565,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               caption={t("simpleSteps.box5")}
               icon={<span className="font-bold text-primary">5</span>}
             >
-              <ContractIcon width="50px" height="64px" />
+              <ContractIcon width="50px" height="64px" className="dark:fill-white" />
             </IconFigure>
           </div>
         </div>
@@ -655,9 +593,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </section>
       </div>
-      <section className="container mx-auto mt-12 w-full xl:mt-28">
+      {/* <section className="container mx-auto mt-12 w-full xl:mt-28">
         <p className="mb-12 text-center font-heading text-4xl font-bold">{t("investorPlatform.header")}</p>
-        {/* <PartnerCarousel /> */}
         <div className="mt-16 flex w-full flex-row justify-center">
           <Button variant="default" size="lg" asChild>
             <a href="https://app.coingarage-finance.com/accounts/signup/" target="_blank" rel="noopener noreferrer">
@@ -665,7 +602,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </a>
           </Button>
         </div>
-      </section>
+      </section> */}
       <section className="container mx-auto mt-12 w-full xl:mt-28">
         <Heading tag="h1" size="3xl">
           {t("faq.header")}

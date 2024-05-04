@@ -10,17 +10,21 @@ import {
 import { cn } from "@/lib/utils"
 
 export const Select = ({
+  onChange,
+  value,
   label,
   className,
   options = [],
 }: {
+  value: string
+  onChange: (e: any) => void
   label: string
   className: string
   options?: Array<{ value: string; label: string }>
 }) => {
   return (
-    <ShadcnSelect>
-      <SelectTrigger className={cn(className)} >
+    <ShadcnSelect onValueChange={onChange} value={value}>
+      <SelectTrigger className={cn(className)}>
         <SelectValue placeholder={label} />
       </SelectTrigger>
       <SelectContent>
