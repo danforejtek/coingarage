@@ -472,7 +472,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
           </div>
           <div className="mt-12 flex w-full flex-col gap-4 lg:flex-row lg:gap-8">
-            <ValuationTable locale={locale} data={financialData.status === "ok" ? financialData?.data : null} />
+            {financialData.status === "ok" ? <ValuationTable locale={locale} data={financialData?.data} /> : null}
             <div className="flex flex-row gap-4 lg:w-1/3 lg:gap-8">
               <div className="mt-12 lg:mt-0">
                 <Heading tag="h3" size="2xl">

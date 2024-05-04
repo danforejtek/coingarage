@@ -71,9 +71,8 @@ const totalPaid = ({
 }
 
 export const ValuationTable = ({ locale, data }: { locale: string; data: FinanceDataResponse | null }) => {
-  if (data === null) return
   const t = useTranslations("finance")
-  const { currencies, rounds } = data
+  const { currencies, rounds } = data ? data : { currencies: [], rounds: [] }
   const [typing, setTyping] = useState(false)
   const [hasFocus, setHasFocus] = useState(false)
   const [currency, setCurrency] = useState(locale === "cs" ? "CZK" : "USD")
@@ -98,7 +97,6 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
 
   useEffect(() => {
     if (!typing) {
-      console.log(amount, activeCurrency.maximum_input, amount > activeCurrency.maximum_input)
       if (amount <= activeCurrency.minimum_input && amount <= activeCurrency.maximum_input) {
         setAmount(activeCurrency.minimum_input)
       }
