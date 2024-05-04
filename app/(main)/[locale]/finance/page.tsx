@@ -116,7 +116,7 @@ const Claim = ({ claim, author }: { claim: string; author: string }) => {
 }
 
 export default async function Page({ params: { locale } }: { params: { locale: string } }) {
-  // unstable_setRequestLocale(locale)
+  unstable_setRequestLocale(locale)
   const t = await getTranslations("finance")
   const financialData = await fetchFinanceData()
   const activeRoundIndex: number =
