@@ -488,5 +488,348 @@
         "name": "Personalice La Estrategia DCA"
       }
     }
+  },
+  "finance": {
+    "main": {
+      "text1": "Invest In The",
+      "text2": "Fastest-growing Industry",
+      "text3": "In The World.",
+      "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a shareholder of the global crypto Exchange.",
+      "exchangeBtn": "Enter the Exchange",
+      "shareholderBtn": "Become a Shareholder"
+    },
+    "developement": {
+      "header": "Current development of Coingarage Exchange",
+      "subtext": "Coingarage is a new European cryptocurrency exchange founded by entrepreneur Ota Janda in 2021. After two years of preparation and development of the necessary software, we launched the exchange in 2023. Since then, we have added numerous new features for our users and continue to develop more.",
+      "done": "Done",
+      "developement": "In Developement",
+      "planned": "Planned",
+      "list": {
+        "box1": "Trading v 1.0",
+        "box2": "Trading Bot",
+        "box3": "Mobile App",
+        "box4": "GARA Coin",
+        "box5": "Coin Listing",
+        "box6": "Referral",
+        "box7": "Bitcoin Saving",
+        "box8": "Trading v 2.0",
+        "box9": "Academy",
+        "box10": "Staking",
+        "box11": "NFT's",
+        "box12": "Crypto Card"
+      }
+    },
+    "estimatedValuation": {
+      "header": "Estimated Valuation by 2030",
+      "subText": "To calculate the company's value, we use references and examples of valuations of competing exchanges across the world, in addition to a recognized indicator called EBITDA.",
+      "estimated": {
+        "text1": "2.4B USD",
+        "text2": "the estimated value of the company Coingarage s.r.o.",
+        "investBtn": "Start Investing"
+      },
+      "tableHeader": "Valuation of Competitors",
+      "table": {
+        "header": {
+          "column1": "Exchange",
+          "column2": "Number of Users",
+          "column3": "Company Value"
+        },
+        "rows": {
+          "row1": {
+            "exchange": "Gemini",
+            "users": "2 Million",
+            "value": "7 Billion Dollars"
+          },
+          "row2": {
+            "exchange": "Kraken",
+            "users": "9 Million",
+            "value": "20 Billion Dollars"
+          },
+          "row3": {
+            "exchange": "BYBIT",
+            "users": "15 Million",
+            "value": "19 Billion Dollars"
+          },
+          "row4": {
+            "exchange": "KuCoin",
+            "users": "20 Million",
+            "value": "20 Billion Dollars"
+          },
+          "row5": {
+            "exchange": "Coinbase",
+            "users": "56 Million",
+            "value": "100 Billion Dollars"
+          },
+          "row6": {
+            "exchange": "Binance",
+            "users": "120 Million",
+            "value": "300 Billion Dollars"
+          }
+        }
+      }
+    },
+    "revolution": {
+      "header": "At which side in this new technological revolution you want to be?",
+      "negativeClaims": {
+        "claim1": {
+          "text": "<grey>2017:</grey> “Cryptocurrency is just not a real thing, eventually it will be closed.”",
+          "name": "Jamie Dimon"
+        },
+        "claim2": {
+          "text": "<grey>1997:</grey> “There is no reason anyone would want a computer in their home.”",
+          "name": "Ken Olsen, co-founder Digital Equipment Corporation"
+        },
+        "claim3": {
+          "text": "<grey>1995:</grey> “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
+          "name": " Robert Metcalfe (the inventor of Ethernet)"
+        },
+        "claim4": {
+          "text": "<grey>1989:</grey> “We will never make a 32-bit operating system.”",
+          "name": "Bill Gates, Founder of Microsoft"
+        },
+        "claim5": {
+          "text": "<grey>1961:</grey> “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
+          "name": "T.A.M. Craven,  FCC commissioner"
+        },
+        "claim6": {
+          "text": "<grey>1946:</grey> “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
+          "name": "Darryl Zanuck, 20th Century Fox"
+        },
+        "claim7": {
+          "text": "<grey>1903:</grey> “The horse is here to stay but the automobile is only a novelty – a fad.”",
+          "name": "President of the Michigan Bank"
+        }
+      },
+      "positiveClaims": {
+        "claim1": {
+          "text": "<primary>Actual:</primary> “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
+          "name": "Elon Mask founder of Tesla nad SpaceX"
+        },
+        "claim2": {
+          "text": "<primary>Actual:</primary> “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
+          "name": "Paul Vigna, Markets reporter for The Wall Street Journal"
+        },
+        "claim3": {
+          "text": "<primary>Actual:</primary> “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
+          "name": "Olaf Carlson-Wee"
+        },
+        "claim4": {
+          "text": "<primary>Actual:</primary> “The reason we are all here is that the current financial system is outdated.“",
+          "name": "Charlie Shrem, Founder & CEO of Bitinstant"
+        },
+        "claim5": {
+          "text": "<primary>Actual:</primary> “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
+          "name": "Marc Kenigsber"
+        },
+        "claim6": {
+          "text": "<primary>Actual:</primary> “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
+          "name": "Cathie Wood — Ark Invest CEO & fund manager"
+        }
+      },
+      "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
+    },
+    "oppurtunities": {
+      "header": "Current Investment Opportunities from 500 USD",
+      "subtext": "We have opened the first round, which is for retail investors. The next rounds will be for large investment companies only!",
+      "bonuses": "Investment Bonuses",
+      "investment1": "From 2,200 USD, you will receive GARA Coin worth 50% of your investment.",
+      "investment2": "From 4,400 USD, you will receive GARA Coin worth 100% of your investment.",
+      "visitBtn": "Visit Launchpad",
+      "round1": "1.round",
+      "money": "6,4M USD",
+      "shareholderBtn": "Become a Shareholder"
+    },
+    "simpleSteps": {
+      "header": "5 Simple Steps to Investing",
+      "subtext": "Coingarage is a global project, and therefore, we don't want to limit investment opportunities to just one country or region. In collaboration with legal experts and partners, we have developed a simple five-step system where every investor can invest comfortably from their home anywhere in the world. Additionally, after creating account, each investor will gain access to our investment platform, where they can manage their investment and receive new information about the project's development.",
+      "box1": "Registration",
+      "box2": "Personal Data",
+      "box3": "KYC",
+      "box4": "Payment",
+      "box5": "Contract",
+      "download": "Download the contract template"
+    },
+    "yourValuation": {
+      "header": "What Will be Valuation of Your Investment",
+      "investment": "Investment",
+      "table": {
+        "header": {
+          "column1": "Info",
+          "column2": "1.round",
+          "column3": "2.round",
+          "column4": "3.round"
+        },
+        "rows": {
+          "row1": "Share of distributed profit:",
+          "row2": "Profit Coingarage Finance s.r.o.:",
+          "row3": "Evaluation:",
+          "row4": "The total will be paid:"
+        },
+        "concluision": "Model calculation assumes Coingarage s.r.o. Valuation of USD 2.4 MLD The model calculation does not guarantee the achievement of the selected appreciation on the deposit. The assumed appreciation will be paid over a 7-year horizon in CZK, EUR or USD."
+      },
+      "table2": {
+        "header": "Would You Like to Get More Information?",
+        "subtext": "Send us your email and phone number and our sales representative will contact you and answer all your questions.",
+        "placeholder1": "Full Name",
+        "placeholder2": "Phone Number",
+        "placeholder3": "Email",
+        "sendBtn": "Send"
+      },
+      "subheader": "How Can We Achieve Such High Investment Returns?",
+      "subtext1": "The exchange itself does not trade assets, it earns money through fees for facilitating trades, transferring assets, and other services. Therefore, it is not directly influenced by market conditions and earns whether the price of assets goes up or down. Additionally, the cryptocurrency market does not have opening hours like other exchanges, which are closed on weekends. Trading with digital currencies occurs globally 24/7 without interruption.",
+      "subtext2": "Furthermore, the crypto market is the fastest-growing market today, growing on average by 56.4% each year over the last 6 years. This significantly affects the influx of new capital and has a strong positive impact on all companies operating in this industry. Thanks to this, we are able to grow rapidly and achieve the stated appreciation of 1100%. These figures, as well as all calculations you will find on our website, are based on current and historical data from competitors and are the results of standard economic calculations used.",
+      "investBtn": "Start Investing"
+    },
+    "taxHeavens": {
+      "header": "Not in tax havens, but in the heart of Europe.",
+      "subtext1": "Most of the current cryptocurrency exchanges are based in tax havens and countries outside the jurisdiction of EU laws. Our exchange is located directly in the heart of Europe in the Czech Republic and operates under local and European laws and regulations governing cryptocurrency trading.",
+      "subtext2": "Our aim is to rectify the digital currency market and provide all users in Europe with a safe and regulated environment for their trades. That's why we collaborate with lawyers and experts in crypto regulation and actively prepare for the new European regulation MiCA."
+    },
+    "partnersImages": {
+      "header": "Partners",
+      "infoBtn": "Click For More Information"
+    },
+    "partnersMain": {
+      "partner1": {
+        "header": "Blockchain Legal",
+        "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
+      },
+      "partner2": {
+        "header": "FINROCK GLOBAL LTD",
+        "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
+      },
+      "partner3": {
+        "header": "Simplex by NUVEI",
+        "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
+      },
+      "partner4": {
+        "header": "ZEN",
+        "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
+      },
+      "partner5": {
+        "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
+        "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
+      },
+      "partner6": {
+        "header": "Creative Heroes",
+        "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
+      },
+      "exchangeBtn": "Enter the Exchange"
+    },
+    "investorPlatform": {
+      "header": "Preview of the investor platform",
+      "createAccountBtn": "Create an Account"
+    },
+    "faq": {
+      "header": "Frequently Asked Questions",
+      "section1": "General questions",
+      "section2": "The silent partnership",
+      "section3": "Vision",
+      "section4": "Other",
+      "generalQuestions": {
+        "question1": {
+          "text": "What is the minimum ammount I can invest?",
+          "answer": "The minimum investment amount is set at 2 200 USD (or equivalent in another currency) corresponding to 0.00075% of the distributed profit of Coingarage Finance s.r.o."
+        },
+        "question2": {
+          "text": "What does distributed profit mean?",
+          "answer": "istributed profit is equal to 90% of the total profit of Coingarage Finance s.r.o. The remaining 10% belongs to the Coingarage s.r.o. team."
+        },
+        "question3": {
+          "text": "Is this project subject to the supervision of the Czech National Bank?",
+          "answer": "A silent partnership is a contractual relationship of obligation. The presented business model and contractual relationships are not covered by the material scope of Act No. 240/2013 Coll, on investment companies and investment funds, as amended (hereinafter referred to as 'ZISIF'), as it is an activity consisting in raising funds for the purpose of financing business activities of a non-financial nature, which fulfils the conditions of the so-called development exemption under Section 2 of ZISIF, and the activity in question - the offer to conclude a silent partnership agreement - is not considered a public offer under Section 34 et seq. of Act No. 256/2004 Coll, in view of the above, the described activity of the company is not subject to the supervision of the CNB."
+        },
+        "question4": {
+          "text": "What is the intended value of Coingarage s.r.o.?",
+          "answer": "The intended value of Coingarage s.r.o. is set at USD 10 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
+        },
+        "question5": {
+          "text": "What is Coingarage Finance s.r.o.?",
+          "answer": "Coingarage Finance s.r.o. serves as a legal guarantee that any future sale of Coingarage s.r.o. will also benefit the depositors through the silent partner. If the silent partner had contributed funds directly to Coingarage s.r.o., then the silent partner would not legally be able to be paid a share of any sale of Coingarage s.r.o., but only a share of the profits of Coingarage s.r.o. in the normal course of business during the year. With this model, the silent partner will receive a share of the profits and also a share of the planned sale of Coingarage s.r.o."
+        },
+        "question6": {
+          "text": "Will I be able to supervise my investment?",
+          "answer": "The silent partner has oversight of their investment through our private investor platform where they can see the progress of the development plan, significant business activity, current company value, information from the CEO and management team, accounting documents and a summary of Coingarage Finance Ltd. and Coingarage s.r.o.. news. He will also have the opportunity to communicate directly with the management of the company via the investor internal platform."
+        }
+      },
+      "silentPartnershipQuestions": {
+        "question1": {
+          "text": "What does a silent partner mean under the law, is it legal?",
+          "answer": " silent partner may be a natural or legal person, entrepreneur or nonentrepreneur, who contributes to the business of another person. In many developed countries of the world, silent partnerships are a common form of participation in the business of other persons. Within the legal system of the Czech Republic, the silent partnership was first regulated by the Commercial Code (after 1989), however, since 1 January 2014 its legal regulation has been included in the Civil Code. In accordance with the provisions of Section 2747 of Act No. 89/2012 Coll., the Civil Code, as amended, the silent partner undertakes to make a contribution that will contribute to the results of the company's business for the entire duration of the silent partnership, and the company undertakes to pay the silent partner a share of the profits."
+        },
+        "question2": {
+          "text": "What rights and obligations does a silent partner have?",
+          "answer": "A silent partner has the right to inspect all published business documents and accounting records of Coingarage Finance s.r.o. and Coingarage s.r.o. through our private platform. The silent partner also has the right to receive copies of each financial statement, each income tax return, including the schedules thereto, and each auditor's report on the audit of the financial statements of Coingarage Finance s.r.o. through the private platform, which shall be made during or for the period of the silent partner's service with the company.The silent partner shall be entitled to a share of the distributed profits in the amount of his investment as at the date of the financial statements and also of any other profits determined to be payable pursuant to a resolution of the general meeting of Coingarage Finance Ltd.r.o.In addition to the proper deposit and confidentiality, the silent partner is also liable for tax on any income from the profit share not paid by Coingarage Finance s.r.o, nor does it charge it to the silent partner, nor does it pay it on behalf of the silent partner."
+        },
+        "question3": {
+          "text": "What are the advantages of a silent partnership over other types of investment in companies?",
+          "answer": "<ul><li>Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.</li><li>No upfront or ongoing fees, you invest directly in the project without an intermediary.</li><li>Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.</li><li>You can enter the project right from the inception of the idea, and get many times the appreciation</li></ul>"
+        },
+        "question4": {
+          "text": "How can I become a silent partner?",
+          "answer": "By registering through our private investor platform app.coingarage-finance.com. A self-empowered person or businessman who successfully passes the verification process, invests the required funds in Coingarage Finance Ltd. and is approved at a general meeting of Coingarage Finance Ltd. can become a silent partner."
+        },
+        "question5": {
+          "text": "What is the verification process (KYC, AML, etc.)?",
+          "answer": "Even though we are not an obliged person within the meaning of Section 2 of Act No. 253/2008 Coll., on certain measures against the legalization of proceeds of crime and terrorist financing, as amended (hereinafter referred to as the 'AML Act'), i.e. we are not subject to the obligations regarding the identification and control of clients under the AML Act, we nevertheless identify each silent partner using at least one identity document and a basic background check (PEP, international sanctions, negative media mentions, etc.) for the protection of our company in which you wish to invest. This is handled for us by veriff.com, an application based in the European Union, so you don't have to worry about your personal data as GetID Ltd is subject to strict European legislation including GDPR."
+        },
+        "question6": {
+          "text": "Are there any fees associated with the silent partnership contribution?",
+          "answer": "Everything is free of charge, you invest directly in the project without intermediaries. Fees may only be incurred as part of the transaction itself, which may be charged by your bank or payment gateway."
+        },
+        "question7": {
+          "text": "When and under what conditions is a silent partner entitled to a share of the distributed profit?",
+          "answer": "The entitlement to the payment of profits arises when approved by the general meeting of Coingarage Finance s.r.o. and the subsequent amount of the profit share corresponds to the purchased share of the distributed profits. Further information is available in the projected appreciation calculator on the main page of this website."
+        },
+        "question8": {
+          "text": "How long is the silent partnership investment agreement?",
+          "answer": "The silent partner investment agreement is for a period of 7 years, at which time it is anticipated that the development phase will be completed and the growth of Coingarage s.r.o. will be at a global level."
+        }
+      },
+      "visionQuestions": {
+        "question1": {
+          "text": "Who is your target group?",
+          "answer": "There are about 480 million people of working age in Europe and only 9% - about 43 million of them have some experience with cryptos. Compared to Asia, the Americas, Africa and Latin America, this is about 16% less. This means that in addition to these 43 million, there is a potential for at least 77 million new people to start holding or trading crypto in the next seven years."
+        },
+        "question2": {
+          "text": "Why crypto and crypto exchange?",
+          "answer": "Blockchain technology and its related cryptocurrencies offer a number of benefits to users and have the potential to revolutionise the global financial ecosystem. We believe that by 2032, 1 billion people will be involved in the global ecosystem of digital assets and a significant portion of gross domestic product will be in the bitcoin economy."
+        },
+        "question3": {
+          "text": "Why a stock exchange in Europe? And why do you want to focus on Europe?",
+          "answer": "Most of the major stock exchanges today are based in tax havens or in countries where 100% transparency and security are not guaranteed. At the same time, if we compare the percentage of people who have come into contact with crypto in Europe with other continents, we see a great opportunity in the European market."
+        },
+        "question4": {
+          "text": "How do you reach 10 million active users?",
+          "answer": "This is based on the aforementioned assumption of the growth of the entire crypto world and an increase in the percentage of users in Europe to the level of e.g. the USA and Asia. At the same time, we are aware of our technological advantage, where we will soon combine on one platform to offer all the available functions of the industry. Marketing also plays an important role, where we are planning a number of important activities in the world of sports, culture, etc. in conjunction with the industry leaders, in addition to the usual tools."
+        },
+        "question5": {
+          "text": "How will you achieve ongoing profits?",
+          "answer": "It's no secret that fees play a key role in generating profits. Whenever any trade or transaction takes place on our exchange outside of a deposit, there are fees associated with it. The exchange makes a profit twenty-four hours a day, seven days a week."
+        },
+        "question6": {
+          "text": "How will you achieve the projected value of the company of USD 10 billion in 7 years?",
+          "answer": "The value of the company will be a unique solution in the form of a robust yet simple crypto exchange that will be available on all devices. Then there is the large community of users, billions in annual profits, brand, and experienced team. We have compared the value of our company with similar companies such as Kraken, KuCoin, Binance and yet the value of our company Coingarage s.r.o.. is undervalued"
+        }
+      },
+      "otherQuestions": {
+        "question1": {
+          "text": "Who will own and run Coingarage s.r.o.?",
+          "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (30%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
+        },
+        "question2": {
+          "text": "Why do you need and what will you use the funds for?",
+          "answer": "All funds will be used for activities for the stable growth and expansion of Coingarage s.r.o. Especially on the development of the stock exchange and its components. We will also invest in our brand awareness, i.e. in active marketing and sales activities."
+        },
+        "question3": {
+          "text": "Do you plan to release your own crypto tokens?",
+          "answer": "Yes, we are planning to release our own utility token, which will perform a similar function to BNB on Binance. We will also combine existing community tokens under this utility token."
+        },
+        "question4": {
+          "text": "Why a silent partner and not venture capital funds?",
+          "answer": "The journey with venture capital funds is usually a long one, we don't want to hold up the project, so the 1st investment round in particular is for silent partners from the public. The plan is that from the next investment rounds onwards, venture capital funds will be the primary focus."
+        }
+      }
+    }
   }
 }
