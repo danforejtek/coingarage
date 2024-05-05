@@ -160,6 +160,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </div>
         </div>
       </section>
+      {/*
+       * DEVELOPMENT
+       */}
       <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("developement.header")}</p>
         <p className="text-center">{t("developement.subtext")}</p>
@@ -216,6 +219,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </IconFigure>
         </div>
       </section>
+      {/*
+       * TAX HEAVENS
+       */}
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
         <div className="max-w-[540px] p-4 lg:w-1/2">
           <Heading tag="h1" size="4xl">
@@ -223,10 +229,10 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </Heading>
           <div className="pt-8 md:pl-12">
             <p className="mb-4 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
-              {t.rich("taxHeavens.subtext1", { b: (text) => <b className="text-primary">{text}</b> })}
+              {t.rich("taxHeavens.subtext1", { b: (text: string) => <b className="text-primary">{text}</b> })}
             </p>
             <p className="mb-4 mt-12 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
-              {t.rich("taxHeavens.subtext2", { b: (text) => <b className="text-primary">{text}</b> })}
+              {t.rich("taxHeavens.subtext2", { b: (text: string) => <b className="text-primary">{text}</b> })}
             </p>
             <div className="mt-12 flex flex-row justify-between">
               <div>
@@ -234,19 +240,19 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                   src="/images/finance/icons/images/euLightMode.svg"
                   alt=""
                   width={176}
-                  height={51}
+                  height={47}
                   className="dark:hidden"
                 />
                 <Image
                   src="/images/finance/icons/images/euDarkMode.svg"
                   alt=""
                   width={176}
-                  height={51}
+                  height={47}
                   className="hidden dark:block"
                 />
               </div>
               <div className="flex items-end">
-                <Image src="/images/finance/icons/images/esma.png" alt="" width={160} height={51} />
+                <Image src="/images/finance/icons/images/esma.png" alt="" width={160} height={42} />
               </div>
             </div>
           </div>
@@ -255,6 +261,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           <Image src="/images/finance/icons/images/mapLightMode.svg" alt="" width={790} height={790} />
         </div>
       </section>
+      {/*
+       * ESTIMATED VALUATION
+       */}
       <div className="mt-12 bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="w-full max-w-[540px] p-4">
@@ -350,6 +359,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </div>
         </section>
       </div>
+      {/*
+       * REVOLUTION
+       */}
       <section className="mx-auto mt-12 flex flex-col items-center px-8">
         <p className="mb-6 mt-20 max-w-[650px] text-center font-heading text-4xl font-bold">{t("revolution.header")}</p>
         <div className="flex w-full flex-row flex-wrap justify-center">
@@ -466,6 +478,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           {t.rich("revolution.ps", { bold: (chunk) => <strong>{chunk}</strong> })}
         </p>
       </section>
+      {/*
+       * INVESTMENT VALUATION
+       */}
       <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="mx-auto">
@@ -514,6 +529,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           <div className="lg:w-1/3"></div>
         </div>
       </div>
+      {/*
+       * INVESTMENT STEPS
+       */}
       <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8 pb-4">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("simpleSteps.header")}</p>
         <p className="text-justify text-base lg:text-center">{t("simpleSteps.subtext")}</p>
@@ -580,7 +598,10 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </a>
         </div>
       </section>
-      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
+      {/*
+       * PARTNERS
+       */}
+      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/30 xl:mt-28">
         <section className="container mx-auto">
           <p className="mb-12 text-center font-heading text-4xl font-bold">{t("partnersImages.header")}</p>
           <PartnerCarousel />

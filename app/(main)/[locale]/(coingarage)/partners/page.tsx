@@ -65,9 +65,21 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               >
                 <div className={cn("flex w-1/3 flex-row justify-center")}>
                   <div className="relative mb-4 h-[200px] w-full max-w-[300px]">
-                    <Image src={partner.src} alt="" fill className="object-contain dark:hidden" />
+                    <Image
+                      src={partner.src}
+                      alt=""
+                      fill
+                      className="object-contain dark:hidden"
+                      suppressHydrationWarning
+                    />
                     {partner?.srcDark ? (
-                      <Image src={partner.srcDark} alt="" fill className="hidden object-contain dark:block" />
+                      <Image
+                        src={partner.srcDark}
+                        alt=""
+                        fill
+                        className="hidden object-contain dark:block"
+                        suppressHydrationWarning
+                      />
                     ) : null}
                   </div>
                 </div>

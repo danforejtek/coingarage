@@ -155,19 +155,19 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
           <TableBody>
             <TableRow className="border-none">
               <TableCell className="text-primary">{t("yourValuation.table.rows.row1")}</TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {shareOfProfit({
                   total_amount: amount,
                   price: Number(rounds[0].price_per_unit[currency as RoundCurrencies]),
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {shareOfProfit({
                   total_amount: amount,
                   price: Number(rounds[1].price_per_unit[currency as RoundCurrencies]),
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {shareOfProfit({
                   total_amount: amount,
                   price: Number(rounds[2].price_per_unit[currency as RoundCurrencies]),
@@ -176,7 +176,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
             </TableRow>
             <TableRow className="border-none">
               <TableCell className="text-primary">{t("yourValuation.table.rows.row2")}</TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {overallEvaluation({
                   total_amount: amount,
                   value: Number(rounds[0].value),
@@ -184,7 +184,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
                   currency: currency,
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {overallEvaluation({
                   total_amount: amount,
                   value: Number(rounds[1].value),
@@ -192,7 +192,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
                   currency: currency,
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {overallEvaluation({
                   total_amount: amount,
                   value: Number(rounds[2].value),
@@ -203,13 +203,19 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
             </TableRow>
             <TableRow className="border-none">
               <TableCell className="text-primary">{t("yourValuation.table.rows.row3")}</TableCell>
-              <TableCell className="text-center">{assesment(Number(rounds[0].value))}</TableCell>
-              <TableCell className="text-center">{assesment(Number(rounds[1].value))}</TableCell>
-              <TableCell className="text-center">{assesment(Number(rounds[2].value))}</TableCell>
+              <TableCell className="text-center" suppressHydrationWarning>
+                {assesment(Number(rounds[0].value))}
+              </TableCell>
+              <TableCell className="text-center" suppressHydrationWarning>
+                {assesment(Number(rounds[1].value))}
+              </TableCell>
+              <TableCell className="text-center" suppressHydrationWarning>
+                {assesment(Number(rounds[2].value))}
+              </TableCell>
             </TableRow>
             <TableRow className="border-none font-bold">
               <TableCell className="text-primary">{t("yourValuation.table.rows.row4")}</TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {totalPaid({
                   total_amount: amount,
                   value: Number(rounds[0].value),
@@ -217,7 +223,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
                   currency: currency,
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {totalPaid({
                   total_amount: amount,
                   value: Number(rounds[1].value),
@@ -225,7 +231,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
                   currency: currency,
                 })}
               </TableCell>
-              <TableCell className="text-center">
+              <TableCell className="text-center" suppressHydrationWarning>
                 {totalPaid({
                   total_amount: amount,
                   value: Number(rounds[2].value),
