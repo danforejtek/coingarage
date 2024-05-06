@@ -21,7 +21,7 @@ export default async function middleware(request: NextRequest) {
   ) {
     const url = request.nextUrl.clone()
     url.hostname = "coingarage-finance.com"
-    url.pathname = pathname === `/${locale}/finance` ? `/${locale}` : pathname.replace(/^\/finance/, "")
+    url.pathname = pathname === `/finance` ? `/` : pathname.replace(/^\/finance/, "")
     // response.headers.set("x-middleware-rewrite", url.toString())
     // return response
     // console.log("Redirecting to", url.toString())

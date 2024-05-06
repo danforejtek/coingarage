@@ -67,32 +67,20 @@ const nextConfig = {
       },
     ]
   },
-  // rewrites: async () => {
-  //   return [
-  //     {
-  //       source: "/:path*{/}?",
-  //       has: [
-  //         {
-  //           type: "host",
-  //           value: "(?coingarage.io/*/finance)",
-  //         },
-  //       ],
-  //       destination: "/site/:siteHost/:path*",
-  //     },
-  //   ]
-  // },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: "/(.*)/finance",
-  //       destination: "https://new.coingarage-finance.com",
-  //     },
-  //     {
-  //       source: "/(.*)/finance",
-  //       destination: "https://new.coingarage-finance.com",
-  //     },
-  //   ]
-  // },
+  rewrites: async () => {
+    return [
+      {
+        source: "/:path*{/}?",
+        has: [
+          {
+            type: "host",
+            value: "new.coingarage-finance.com",
+          },
+        ],
+        destination: "/finance/:path*",
+      },
+    ]
+  },
 }
 
 module.exports = withNextIntl(nextConfig)
