@@ -20,9 +20,10 @@ export default async function middleware(request: NextRequest) {
     (pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance/`))
   ) {
     const url = request.nextUrl.clone()
-    url.hostname = "coingarage-finance.com"
+    url.hostname = "new.coingarage-finance.com"
     url.pathname = pathname === `/${locale}/finance` ? `/${locale}` : pathname.replace(/^\/finance/, "")
-    return NextResponse.rewrite(url)
+    response.headers.set("x-middleware-rewrite", url.toString())
+    // return NextResponse.rewrite(url)
   }
 
   return response
