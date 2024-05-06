@@ -1,14 +1,27 @@
 import createMiddleware from "next-intl/middleware"
 import { locales } from "@/config"
+import { NextRequest } from "next/server"
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: locales,
-  // Used when no locale matches
-  defaultLocale: "en",
-  // localeDetection: false,
-  localePrefix: "always",
-})
+// const financeRoutes = ["/finance", "/finance/partners"]
+
+export default async function middleware(request: NextRequest) {
+  const handleI18nRouting = createMiddleware({
+    // A list of all locales that are supported
+    locales: locales,
+    // Used when no locale matches
+    defaultLocale: "en",
+    // localeDetection: false,
+    localePrefix: "always",
+  })
+  const response = handleI18nRouting(request)
+  // if (process.env.VERCEL_ENV === "production") {
+  //   if (financeRoutes.includes(request.nextUrl.pathname)) {
+  //     return Response.redirect("https://example.com", 307)
+  //   }
+  // }
+
+  return response
+}
 
 export const config = {
   // Matcher entries are linked with a logical "or", therefore

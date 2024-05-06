@@ -2,7 +2,6 @@ const createNextIntlPlugin = require("next-intl/plugin")
 const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
-const vercelShit = "force redeploy"
 
 const nextConfig = {
   images: {
@@ -68,6 +67,32 @@ const nextConfig = {
       },
     ]
   },
+  // rewrites: async () => {
+  //   return [
+  //     {
+  //       source: "/:path*{/}?",
+  //       has: [
+  //         {
+  //           type: "host",
+  //           value: "(?coingarage.io/*/finance)",
+  //         },
+  //       ],
+  //       destination: "/site/:siteHost/:path*",
+  //     },
+  //   ]
+  // },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/(.*)/finance",
+  //       destination: "https://new.coingarage-finance.com",
+  //     },
+  //     {
+  //       source: "/(.*)/finance",
+  //       destination: "https://new.coingarage-finance.com",
+  //     },
+  //   ]
+  // },
 }
 
 module.exports = withNextIntl(nextConfig)
