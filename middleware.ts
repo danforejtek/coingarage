@@ -1,6 +1,6 @@
 import createMiddleware from "next-intl/middleware"
 import { locales } from "@/config"
-import { NextRequest } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 
 // const financeRoutes = ["/finance", "/finance/partners"]
 
@@ -22,7 +22,7 @@ export default async function middleware(request: NextRequest) {
     const url = request.nextUrl.clone()
     url.hostname = "coingarage-finance.com"
     url.pathname = pathname === `/${locale}/finance` ? `/${locale}` : pathname.replace(/^\/finance/, "")
-    return response.rewrite(url)
+    return NextResponse.rewrite(url)
   }
 
   return response
