@@ -16,7 +16,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
-import { useToast } from "@/components/ui/use-toast"
+import { toast } from "sonner"
 
 export const userDataSchema = z.object({
   firstName: z.string().min(2, {
@@ -46,7 +46,6 @@ const onSubmit = async (data: any) => {
 }
 
 export default function CoinListing({ children }: { children?: React.ReactNode }) {
-  const { toast } = useToast()
   const [isOpen, setOpen] = useState(false)
   const toggleOnpen = () => setOpen(!isOpen)
   const form = useForm({
@@ -69,10 +68,8 @@ export default function CoinListing({ children }: { children?: React.ReactNode }
 
   useEffect(() => {
     if (isSubmitSuccessful) {
-      toast({
-        title: "Your message has been sent.",
+      toast.success("Your message has been sent.", {
         description: "We will get back to you as soon as possible.",
-        variant: "success",
       })
       form.reset()
       setOpen(false)

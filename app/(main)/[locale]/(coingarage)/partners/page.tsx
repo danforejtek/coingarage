@@ -13,13 +13,13 @@ export default function Page() {
         <article className="grid grid-cols-1 grid-rows-4 gap-x-12 gap-y-12 lg:grid-cols-2">
           <div>
             <div className="align-end flex h-36">
-               <div className="h-[132px] w-[132px] mb-4">
-                  <Image src="/images/partners/law.png" alt="" width={144} height={144} />
-               </div>
+              <div className="mb-4 h-[132px] w-[132px]">
+                <Image src="/images/partners/law.png" alt="" width={144} height={144} />
+              </div>
             </div>
-            Lawyers providing legal services in the field of digital technologies, 
-            blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance 
-            agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license.
+            Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies
+            (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance
+            with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license.
           </div>
           <div>
             <div className="align-end flex h-36">
@@ -27,17 +27,17 @@ export default function Page() {
                 <Image src="/images/partners/finrock.svg" alt="" width={300} height={60} />
               </div>
             </div>
-            <span className="text-primary">Finrock Ltd.</span> - Based in UAE, Finrock provides us feature-rich
-            digital asset custody services, whilst offering military-grade encryption.
+            <span className="text-primary">Finrock Ltd.</span> - Based in UAE, Finrock provides us feature-rich digital
+            asset custody services, whilst offering military-grade encryption.
           </div>
           <div>
             <div className="align-end flex h-36">
               <Image src="/images/partners/effective_solutions.svg" alt="" width={130} height={130} />
             </div>
             <span className="text-primary">EFFECTIVE SOLUTIONS PRIVATE LIMITED</span> - Headquartered in Delhi (India)
-            with sales offices in the UK & the UAE, they have over a decade of experience in providing IT and
-            Blockchain services to businesses worldwide. Their services range from the provision of business consulting
-            to the implementation of complex Blockchain solutions, including extensive technical support.
+            with sales offices in the UK & the UAE, they have over a decade of experience in providing IT and Blockchain
+            services to businesses worldwide. Their services range from the provision of business consulting to the
+            implementation of complex Blockchain solutions, including extensive technical support.
           </div>
           <div>
             <div className="align-end flex h-36">

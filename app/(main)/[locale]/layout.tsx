@@ -4,7 +4,8 @@ import { unstable_setRequestLocale } from "next-intl/server"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
-import { Toaster } from "@/components/ui/toaster"
+// import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/sonner"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 // import UmamiAnalytics from "@/components/UmamiAnalytics"
 
@@ -50,7 +51,7 @@ export default function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             {children}
-            <Toaster />
+            <Toaster richColors />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

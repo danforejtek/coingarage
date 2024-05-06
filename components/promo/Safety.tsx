@@ -19,7 +19,7 @@ export function Safety() {
       <h3 className="text-center font-heading text-4xl">{t("heading")}</h3>
       <div className="mt-12">
         <div className="grid grid-flow-row gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex min-h-[232px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all transition-all hover:shadow-primary md:min-h-[280px]">
+          <div className="flex min-h-[232px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("security")}</h5>
               <Image src={`/icons/security/${theme}security.svg`} alt="" width={32} height={38} />

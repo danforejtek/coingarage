@@ -39,7 +39,7 @@ const MobileNav = ({ scrolled = false }) => {
         <Icons.menu className="h-6 w-6 dark:fill-white" />
       </Button>
       {/* </DialogTrigger> */}
-      <DialogContent className="h-[100dvh] max-w-screen-2xl grid-rows-[80px_1fr_80px] p-4 px-6" showClose={false}>
+      <DialogContent className="h-[100dvh] max-w-screen-2xl grid-rows-[56px_1fr_56px] p-4 px-6" showClose={false}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">

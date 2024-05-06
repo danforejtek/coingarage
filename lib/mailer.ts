@@ -13,7 +13,7 @@ export async function sendMail({
   recipients: string[]
   subject: string
   content: string
-}): Promise<void> {
+}): Promise<{ status: "ok" | "error"; error: any }> {
   try {
     const response = await fetch(`https://api.brevo.com/v3/smtp/email`, {
       method: "POST",
@@ -35,8 +35,10 @@ export async function sendMail({
       }),
     })
     const data = await response.json()
-    console.log(data)
+    if (data.messageId) return data
+    return { status: "error", error: data }
   } catch (error) {
     console.error(error)
+    return { status: "error", error }
   }
 }

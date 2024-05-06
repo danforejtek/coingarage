@@ -23,7 +23,7 @@ export default function Footer() {
                 <a
                   href="https://www.instagram.com/coingaragesro"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Instagram"
                 >
@@ -32,7 +32,7 @@ export default function Footer() {
                 <a
                   href="https://www.linkedin.com/company/coingarage-finance"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Linkedin"
                 >
@@ -41,7 +41,7 @@ export default function Footer() {
                 <a
                   href="https://www.facebook.com/coingaragesro"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Facebook"
                 >
@@ -50,7 +50,7 @@ export default function Footer() {
                 <a
                   href="https://twitter.com/Coingaragesro"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Twitter"
                 >
@@ -59,7 +59,7 @@ export default function Footer() {
                 <a
                   href="https://t.me/+ccuBEw5S5M5jNTA0"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Youtube"
                 >
@@ -73,7 +73,7 @@ export default function Footer() {
                 <a
                   href="https://www.youtube.com/@coingaragesro"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   className="hover:text-primary"
                   aria-label="Youtube"
                 >
@@ -177,7 +177,7 @@ export default function Footer() {
                   <a
                     className="hover:text-primary"
                     href="https://drive.google.com/file/d/1MegR8rihLQDp_n6eQ1Ka8shPECgN_Zxe/view?usp=sharing"
-                    rel="noopener noreferer"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     {"EEZY Trader"} {t("legal.termsOfService")}
@@ -186,7 +186,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 flex flex-row flex-wrap justify-center  gap-x-40 gap-y-12 md:mt-0 md:justify-between">
+          <div className="mt-12 flex flex-row flex-wrap justify-center gap-x-40 gap-y-12 md:mt-0 md:justify-between">
             <address className="not-italic">
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li className="grid grid-cols-[24px_1fr] gap-4">

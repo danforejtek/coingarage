@@ -1,5 +1,6 @@
 import { userDataSchema } from "@/components/form/ContactUs"
 import { sendMail } from "@/lib/mailer"
+import { getMaxListeners } from "events"
 import z from "zod"
 
 type UserDataType = z.infer<typeof userDataSchema>
@@ -24,10 +25,10 @@ const formatUserData = (data: UserDataType) => {
 export async function POST(request: Request) {
   const data = await request.json()
   const mailerResponse = await sendMail({
-    recipients: ["office@coingarage.io"],
+    recipients: process.env.NODE_ENV === "development" ? ["d.forejtek@gmail.com"] : ["office@coingarage.io"],
     subject: "Question from customer",
     content: formatUserData(data),
   })
 
-  return Response.json({ status: "ok" })
+  return Response.json({ status: "ok", mailerResponse })
 }

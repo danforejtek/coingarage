@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-const withNextIntl = require("next-intl/plugin")()
+const createNextIntlPlugin = require("next-intl/plugin")
+const withNextIntl = createNextIntlPlugin()
 
-const vercelShit = "force redeploy"
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
   images: {
@@ -44,9 +44,6 @@ const nextConfig = {
               },
             },
           ],
-          issuer: {
-            and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
-          },
         },
       ],
     })
@@ -70,6 +67,32 @@ const nextConfig = {
       },
     ]
   },
+  // rewrites: async () => {
+  //   return [
+  //     {
+  //       source: "/:path*{/}?",
+  //       has: [
+  //         {
+  //           type: "host",
+  //           value: "(?coingarage.io/*/finance)",
+  //         },
+  //       ],
+  //       destination: "/site/:siteHost/:path*",
+  //     },
+  //   ]
+  // },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/(.*)/finance",
+  //       destination: "https://new.coingarage-finance.com",
+  //     },
+  //     {
+  //       source: "/(.*)/finance",
+  //       destination: "https://new.coingarage-finance.com",
+  //     },
+  //   ]
+  // },
 }
 
 module.exports = withNextIntl(nextConfig)
