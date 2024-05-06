@@ -68,18 +68,20 @@ const nextConfig = {
     ]
   },
   rewrites: async () => {
-    return [
-      {
-        source: "/:path*{/}?",
-        has: [
-          {
-            type: "host",
-            value: "coingarage-finance.*",
-          },
-        ],
-        destination: "/finance/:path*",
-      },
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: "/:path*{/}?",
+          has: [
+            {
+              type: "host",
+              value: "coingarage-finance.*",
+            },
+          ],
+          destination: "/finance/:path*",
+        },
+      ],
+    }
   },
 }
 
