@@ -23,6 +23,7 @@ export default async function middleware(request: NextRequest) {
     url.hostname = "new.coingarage-finance.com"
     url.pathname = pathname === `/${locale}/finance` ? `/${locale}` : pathname.replace(/^\/finance/, "")
     response.headers.set("x-middleware-rewrite", url.toString())
+    return response
     // return NextResponse.rewrite(url)
   }
 
