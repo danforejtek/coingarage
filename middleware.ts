@@ -5,32 +5,26 @@ import { NextRequest } from "next/server"
 // const financeRoutes = ["/finance", "/finance/partners"]
 
 export default async function middleware(request: NextRequest) {
+  const [, locale] = request.nextUrl.pathname.split("/")
   const handleI18nRouting = createMiddleware({
-    // A list of all locales that are supported
     locales: locales,
-    // Used when no locale matches
     defaultLocale: "en",
-    // localeDetection: false,
     localePrefix: "always",
   })
   const response = handleI18nRouting(request)
-  // if (process.env.VERCEL_ENV === "production") {
-  //   if (financeRoutes.includes(request.nextUrl.pathname)) {
-  //     return Response.redirect("https://example.com", 307)
-  //   }
-  // }
+
+  const { pathname, hostname } = request.nextUrl
+
+  if (hostname === "coingarage.io" && (pathname === `${locale}/finance` || pathname.startsWith(`${locale}/finance/`))) {
+    const url = request.nextUrl.clone()
+    url.hostname = "coingarage-finance.com"
+    url.pathname = pathname === "/finance" ? "/" : pathname.replace(/^\/finance/, "")
+    return response.rewrite(url)
+  }
 
   return response
 }
 
 export const config = {
-  // Matcher entries are linked with a logical "or", therefore
-  // if one of them matches, the middleware will be invoked.
-  matcher: [
-    // Match all pathnames except for
-    // - … if they start with `/api`, `/_next` or `/_vercel`
-    // - … the ones containing a dot (e.g. `favicon.ico`)
-    "/((?!api|_next|_vercel|.*\\..*).*)",
-    // However, match all pathnames within `/users`, optionally with a locale prefix
-  ],
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 }

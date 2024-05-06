@@ -186,7 +186,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 flex flex-row flex-wrap justify-center  gap-x-40 gap-y-12 md:mt-0 md:justify-between">
+          <div className="mt-12 flex flex-row flex-wrap justify-center gap-x-40 gap-y-12 md:mt-0 md:justify-between">
             <address className="not-italic">
               <ul className="flex flex-col gap-6 font-sans text-sm text-white">
                 <li className="grid grid-cols-[24px_1fr] gap-4">

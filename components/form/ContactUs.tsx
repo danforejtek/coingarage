@@ -46,6 +46,26 @@ const onSubmit = async (data: any) => {
 export default function ContactUs({ children }: { children?: React.ReactNode }) {
   const [isOpen, setOpen] = useState(false)
   const toggleOnpen = () => setOpen(!isOpen)
+
+  return (
+    <Dialog open={isOpen} onOpenChange={toggleOnpen}>
+      <DialogTrigger onClick={toggleOnpen} asChild>
+        {children}
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle className="font-heading text-3xl text-primary">Contact us</DialogTitle>
+          <DialogDescription>
+            We are here to help and answer any question you might have. We look forward to hearing from you.
+          </DialogDescription>
+        </DialogHeader>
+        <ContactUsForm setOpen={setOpen} />
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+export function ContactUsForm({ setOpen }: { setOpen?: (value: boolean) => void }) {
   const form = useForm({
     resolver: zodResolver(userDataSchema),
     defaultValues: {
@@ -68,119 +88,106 @@ export default function ContactUs({ children }: { children?: React.ReactNode }) 
         description: "We will get back to you as soon as possible.",
       })
       form.reset()
-      setOpen(false)
+      if (typeof setOpen === "function") setOpen(false)
     }
   }, [isSubmitSuccessful])
 
   return (
-    <Dialog open={isOpen} onOpenChange={toggleOnpen}>
-      <DialogTrigger onClick={toggleOnpen} asChild>
-        {children}
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle className="font-heading text-3xl text-primary">Contact us</DialogTitle>
-          <DialogDescription>
-            We are here to help and answer any question you might have. We look forward to hearing from you.
-          </DialogDescription>
-        </DialogHeader>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="grid gap-4 py-4">
-              <div className="flex flex-col gap-2">
-                <FormField
-                  control={form.control}
-                  name="firstName"
-                  render={({ field }) => (
-                    <FormItem>
-                      <div className="flex flex-col gap-2">
-                        <FormLabel className="text-left">First name</FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="Jane" />
-                        </FormControl>
-                        <FormMessage className="font-light" />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <FormField
-                  control={form.control}
-                  name="surname"
-                  render={({ field }) => (
-                    <FormItem>
-                      <div className="flex flex-col gap-2">
-                        <FormLabel className="text-left">Surname</FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="Doe" />
-                        </FormControl>
-                        <FormMessage className="font-light" />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <div className="flex flex-col gap-2">
-                        <FormLabel className="text-left">Email</FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="jane@doe.com" />
-                        </FormControl>
-                        <FormMessage className="font-light" />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <div className="flex flex-col gap-2">
-                        <FormLabel className="text-left">Phone</FormLabel>
-                        <FormControl>
-                          <Input {...field} placeholder="+420 213 423 523" />
-                        </FormControl>
-                        <FormMessage className="font-light" />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <div className="flex flex-col gap-2">
-                        <FormLabel className="text-left">Message</FormLabel>
-                        <FormControl>
-                          <Textarea {...field} placeholder="Your message..." />
-                        </FormControl>
-                        <FormMessage className="font-light" />
-                      </div>
-                    </FormItem>
-                  )}
-                />
-              </div>
-            </div>
-            <DialogFooter>
-              <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </Button>
-            </DialogFooter>
-          </form>
-        </Form>
-      </DialogContent>
-    </Dialog>
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <div className="grid gap-4 py-4">
+          <div className="flex flex-col gap-2">
+            <FormField
+              control={form.control}
+              name="firstName"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex flex-col gap-2">
+                    <FormLabel className="text-left">First name</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="Jane" />
+                    </FormControl>
+                    <FormMessage className="font-light" />
+                  </div>
+                </FormItem>
+              )}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <FormField
+              control={form.control}
+              name="surname"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex flex-col gap-2">
+                    <FormLabel className="text-left">Surname</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="Doe" />
+                    </FormControl>
+                    <FormMessage className="font-light" />
+                  </div>
+                </FormItem>
+              )}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex flex-col gap-2">
+                    <FormLabel className="text-left">Email</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="jane@doe.com" />
+                    </FormControl>
+                    <FormMessage className="font-light" />
+                  </div>
+                </FormItem>
+              )}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex flex-col gap-2">
+                    <FormLabel className="text-left">Phone</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="+420 213 423 523" />
+                    </FormControl>
+                    <FormMessage className="font-light" />
+                  </div>
+                </FormItem>
+              )}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex flex-col gap-2">
+                    <FormLabel className="text-left">Message</FormLabel>
+                    <FormControl>
+                      <Textarea {...field} placeholder="Your message..." />
+                    </FormControl>
+                    <FormMessage className="font-light" />
+                  </div>
+                </FormItem>
+              )}
+            />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </Button>
+        </DialogFooter>
+      </form>
+    </Form>
   )
 }
