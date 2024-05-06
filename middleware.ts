@@ -17,15 +17,15 @@ export default async function middleware(request: NextRequest) {
 
   if (
     hostname === "coingarage.io" &&
-    (pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance/`))
+    (pathname === `/finance` || pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance/`))
   ) {
     const url = request.nextUrl.clone()
     url.hostname = "new.coingarage-finance.com"
     url.pathname = pathname === `/${locale}/finance` ? `/${locale}` : pathname.replace(/^\/finance/, "")
-    // response.headers.set("x-middleware-rewrite", url.toString())
-    // return response
-    console.log("Redirecting to", url.toString())
-    return NextResponse.rewrite(url)
+    response.headers.set("x-middleware-rewrite", url.toString())
+    return response
+    // console.log("Redirecting to", url.toString())
+    // return NextResponse.rewrite(url)
   }
 
   return response
