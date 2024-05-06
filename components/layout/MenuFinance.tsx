@@ -97,11 +97,11 @@ const iconsDark = {
 }
 
 export const navItems: NavItem[] = [
-  {
-    title: "Partners",
-    key: "partners",
-    href: "/finance/partners",
-  },
+  // {
+  //   title: "Partners",
+  //   key: "partners",
+  //   href: "/finance/partners",
+  // },
   {
     title: "Contacts",
     key: "contacts",

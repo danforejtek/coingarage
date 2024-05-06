@@ -123,14 +123,14 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
             value={hasFocus ? amount : amount.toLocaleString(undefined)}
             type={hasFocus ? "number" : "string"}
             placeholder="Amount"
-            className="min-w-[200px] max-w-[300px] rounded-3xl shadow-md"
+            className="min-w-[200px] max-w-[300px] rounded-3xl shadow-md lg:w-[200px]"
             onFocus={() => setHasFocus(true)}
             onBlur={() => setHasFocus(false)}
           />
           <Select
             value={currency}
             onChange={(e) => setCurrency(e)}
-            className="max-w-[120px] rounded-3xl shadow-md"
+            className="max-w-[120px] rounded-3xl shadow-md lg:w-[120px]"
             label="Currency"
             options={currencies.map((c) => ({ label: c.value, value: c.value }))}
           />

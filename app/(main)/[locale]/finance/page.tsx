@@ -601,7 +601,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * PARTNERS
        */}
-      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/30 xl:mt-28">
+      {/* <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/30 xl:mt-28">
         <section className="container mx-auto">
           <p className="mb-12 text-center font-heading text-4xl font-bold">{t("partnersImages.header")}</p>
           <PartnerCarousel />
@@ -613,7 +613,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </Button>
           </div>
         </section>
-      </div>
+      </div> */}
       {/* <section className="container mx-auto mt-12 w-full xl:mt-28">
         <p className="mb-12 text-center font-heading text-4xl font-bold">{t("investorPlatform.header")}</p>
         <div className="mt-16 flex w-full flex-row justify-center">
