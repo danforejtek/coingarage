@@ -75,7 +75,7 @@ const nextConfig = {
           has: [
             {
               type: "host",
-              value: "coingarage-finance.*",
+              value: "new.coingarage-finance.*",
             },
           ],
           destination: "/finance/:path*",
