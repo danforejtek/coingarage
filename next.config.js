@@ -78,7 +78,7 @@ const nextConfig = {
               value: "new.coingarage-finance.*",
             },
           ],
-          destination: "/finance/:path*",
+          destination: "/:path*",
         },
       ],
     }
