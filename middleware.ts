@@ -35,8 +35,8 @@ export default async function middleware(request: NextRequest) {
 
   if (hostname === "new.coingarage-finance.com") {
     const url = request.nextUrl.clone()
-    url.locale = locale
     url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
+    if (locale === "") url.pathname === "/en/finance"
     console.log(
       "using CGF:",
       url.toString(),
