@@ -5,8 +5,8 @@ import Autoplay from "embla-carousel-autoplay"
 import { useTheme } from "next-themes"
 
 const partners = [
-  "/images/finance/partners/blockchainLegalDarkMode.png",
-  "/images/finance/partners/blockchainLegalLightMode.png",
+  // "/images/finance/partners/blockchainLegalDarkMode.png",
+  // "/images/finance/partners/blockchainLegalLightMode.png",
   "/images/finance/partners/creativeHeroes.svg",
   "/images/finance/partners/effectiveSolutions.svg",
   "/images/finance/partners/findrock.svg",
