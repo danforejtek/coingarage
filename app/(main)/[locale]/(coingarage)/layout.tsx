@@ -11,9 +11,9 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Coingarage | Crypto, Banking & Trading, Exchange",
+  title: "Coingarage Finance | Crypto, Banking & Trading, Exchange",
   description:
-    "Coingarage is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
+    "Coingarage Finance is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -36,9 +36,7 @@ export default function RootLayout({
     <>
       <Header />
       <div className="flex min-h-screen flex-col justify-between">
-        <div className="flex-1">
-          {children}
-        </div>
+        <div className="flex-1">{children}</div>
         <Footer />
       </div>
     </>

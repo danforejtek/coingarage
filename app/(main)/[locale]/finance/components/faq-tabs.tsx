@@ -163,7 +163,7 @@ export const FaqTabs = ({ locale }: { locale: string }) => {
                 <AccordionItem
                   key={index2}
                   value={`item_${index2}`}
-                  className="mb-8 rounded-3xl border-b-0 bg-neutral-100 px-8 dark:bg-backgroundMuted"
+                  className="shodow mb-8 rounded-3xl border border-neutral-100 bg-transparent px-8 shadow-lg dark:border-none dark:bg-tertiary/20 dark:shadow-none"
                 >
                   <AccordionTrigger className="text-left font-heading text-lg">
                     <span className="mr-6">{t(question)}</span>

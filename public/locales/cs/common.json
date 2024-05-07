@@ -529,7 +529,7 @@
       "table": {
         "header": {
           "column1": "Burza",
-          "column2": "Počet uživatel",
+          "column2": "Počet uživatelů",
           "column3": "Hodnota Firmy"
         },
         "rows": {
@@ -567,7 +567,7 @@
       }
     },
     "revolution": {
-      "header": "At which side in this new technological revolution you want to be?",
+      "header": "Na které straně této nové technologické revoluce chcete být?",
       "negativeClaims": {
         "claim1": {
           "text": "<grey>2017:</grey> “Kryptoměna prostě není reálná věc, nakonec bude zrušena.”",
@@ -666,11 +666,11 @@
       },
       "table2": {
         "header": "Would You Like to Get More Information?",
-        "subtext": "Send us your email and phone number and our sales representative will contact you and answer all your questions.",
-        "placeholder1": "Full Name",
-        "placeholder2": "Phone Number",
+        "subtext": "Pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a zodpoví všechny vaše dotazy.",
+        "placeholder1": "Celé Jméno",
+        "placeholder2": "Telefoní Číslo",
         "placeholder3": "Email",
-        "sendBtn": "Send"
+        "sendBtn": "Poslat"
       },
       "subheader": "Jak je možné, že dosáhneme tak vysokých investičních výnosů?",
       "subtext1": "Burza sama s aktivy neobchoduje, peníze vydělává prostřednictvím poplatků za zprostředkování obchodů, převod aktiv a další služby. Není tedy přímo ovlivněna tržními podmínkami a vydělává, ať už cena aktiv stoupá nebo klesá. Kromě toho trh s kryptoměnami nemá jako jiné burzy omezené otevírací hodiny a nezavírá se o víkendech. Obchodování s digitálními měnami probíhá globálně a nepřetržitě 24/7.",
@@ -711,7 +711,7 @@
         "header": "Creative Heroes",
         "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
       },
-      "exchangeBtn": "Enter the Exchange"
+      "exchangeBtn": "Vstupte na Burzu"
     },
     "investorPlatform": {
       "header": "Náhled investorské platformy",

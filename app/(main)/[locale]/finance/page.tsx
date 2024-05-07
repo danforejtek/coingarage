@@ -96,7 +96,7 @@ const IconFigure = ({
         ? "/images/finance/icons/inDevelopment.svg"
         : "/images/finance/icons/planned.svg"
   return (
-    <figure className="min-w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 transition-all hover:shadow-md hover:shadow-primary">
+    <figure className="min-w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
       <div className="ju flex flex-row-reverse">
         {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
       </div>
@@ -264,7 +264,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * ESTIMATED VALUATION
        */}
-      <div className="mt-12 bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
+      <div className="mt-12 bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="w-full max-w-[540px] p-4">
             <Heading tag="h1" size="4xl">
@@ -275,7 +275,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 b: (text) => <span className="font-bold text-primary">{text}</span>,
               })}
             </p>
-            <div className="mt-8 flex w-full flex-col justify-center gap-4 rounded-2xl bg-background p-8 text-center">
+            <div className="mt-8 flex w-full flex-col justify-center gap-4 rounded-2xl bg-background p-8 text-center dark:bg-[#1D1E25]">
               <span className="font-heading text-4xl font-bold text-primary">
                 {t("estimatedValuation.estimated.text1")}
               </span>
@@ -294,7 +294,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </div>
           </div>
           <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
-            <div className="w-full rounded-2xl bg-background p-8 xl:max-w-[662px]">
+            <div className="w-full rounded-2xl bg-background p-8 dark:bg-[#1D1E25] xl:max-w-[662px]">
               <Table className="w-full font-heading text-base">
                 <TableHeader>
                   <TableRow className="border-none font-heading">
@@ -328,7 +328,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               </Table>
             </div>
           </div>
-          <div className="mt-16 w-full rounded-2xl bg-background p-12">
+          <div className="mt-16 w-full rounded-2xl bg-background p-12 dark:bg-[#1D1E25]">
             <h3 className="text-center font-heading text-4xl font-bold lg:text-start">{t("oppurtunities.header")}</h3>
             <div className="mt-12 flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-start">
               <div className="lg:w-1/2">
@@ -481,7 +481,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * INVESTMENT VALUATION
        */}
-      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/10 xl:mt-28">
+      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="mx-auto">
             <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
@@ -515,7 +515,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       </div>
       <div className="container z-10 mx-auto">
         <div className="flex flex-row lg:gap-8">
-          <div className="-mt-[40px] rounded-2xl bg-background p-8 shadow-md lg:-mt-[300px] lg:w-2/3">
+          <div className="-mt-[40px] rounded-2xl bg-background p-8 shadow-md dark:bg-[#1D1E25] lg:-mt-[300px] lg:w-2/3">
             <div className="p-4">
               <p className="text-center font-heading text-4xl font-bold text-primary">
                 {t("yourValuation.table2.header")}
@@ -601,7 +601,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * PARTNERS
        */}
-      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/30 xl:mt-28">
+      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto">
           <p className="mb-12 text-center font-heading text-4xl font-bold">{t("partnersImages.header")}</p>
           <PartnerCarousel />
@@ -625,7 +625,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
         </div>
       </section> */}
       <section className="container mx-auto mt-12 w-full xl:mt-28">
-        <Heading tag="h1" size="3xl">
+        <Heading tag="h1" size="3xl" className="mb-0">
           {t("faq.header")}
         </Heading>
         <FaqTabs locale={locale} />
