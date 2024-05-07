@@ -14,7 +14,6 @@ export default async function middleware(request: NextRequest) {
   const response = handleI18nRouting(request)
 
   const { pathname, hostname } = request.nextUrl
-  // console.log(hostname, pathname, pathname.startsWith(`/${locale}/finance`))
 
   if (
     hostname === "coingarage.io" &&
@@ -36,6 +35,7 @@ export default async function middleware(request: NextRequest) {
 
   if (hostname === "new.coingarage-finance.com") {
     const url = request.nextUrl.clone()
+    url.locale = locale
     url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
     console.log(
       "using CGF:",
