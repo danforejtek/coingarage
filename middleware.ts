@@ -17,7 +17,7 @@ export default async function middleware(request: NextRequest) {
 
   if (
     hostname === "coingarage.io" &&
-    (pathname === `/finance` || pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance/`))
+    (pathname === `/finance` || pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance`))
   ) {
     console.log(hostname)
     const url = request.nextUrl.clone()
@@ -27,9 +27,10 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  if (hostname === "new.coingarage-finance.com" && pathname === "/") {
+  if (hostname === "new.coingarage-finance.com" && pathname.startsWith(`/${locale}/finance`)) {
+    console.log(pathname, pathname.startsWith(`/${locale}/finance`))
     const url = request.nextUrl.clone()
-    url.pathname = `/finance`
+    url.pathname = pathname === `/finance` ? `/` : pathname.replace(/^\/finance/, "")
     console.log("using CGF:", url.toString())
     return NextResponse.rewrite(url)
   }
