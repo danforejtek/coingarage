@@ -14,12 +14,15 @@ export default async function middleware(request: NextRequest) {
   const response = handleI18nRouting(request)
 
   const { pathname, hostname } = request.nextUrl
+  console.log(hostname, pathname, pathname.startsWith(`/${locale}/finance`))
 
   if (
     hostname === "coingarage.io" &&
-    (pathname === `/finance` || pathname === `/${locale}/finance` || pathname.startsWith(`/${locale}/finance`))
+    (pathname === `/finance` ||
+      pathname === `/${locale}/finance` ||
+      pathname.startsWith(`/finance`) ||
+      pathname.startsWith(`/${locale}/finance`))
   ) {
-    console.log(hostname)
     const url = request.nextUrl.clone()
     url.hostname = "new.coingarage-finance.com"
     url.pathname = pathname === `/finance` ? `/` : pathname.replace(/^\/finance/, "")
@@ -27,8 +30,7 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  console.log(pathname, pathname.startsWith(`/${locale}/finance`))
-  if (hostname === "new.coingarage-finance.com" && pathname.startsWith(`/${locale}/finance`)) {
+  if (hostname === "new.coingarage-finance.com") {
     const url = request.nextUrl.clone()
     url.pathname = pathname === `/finance` ? `/` : pathname.replace(/^\/finance/, "")
     console.log("using CGF:", url.toString())
