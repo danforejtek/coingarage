@@ -67,22 +67,22 @@ const nextConfig = {
       },
     ]
   },
-  rewrites: async () => {
-    return {
-      beforeFiles: [
-        {
-          source: "/:locale/finance/:path*",
-          has: [
-            {
-              type: "host",
-              value: "(.*)\\coingarage-finance\\.com",
-            },
-          ],
-          destination: "https://new.coingarage-finance.com/:path*",
-        },
-      ],
-    }
-  },
+  // rewrites: async () => {
+  //   return {
+  //     beforeFiles: [
+  //       {
+  //         source: "/:locale/finance/:path*",
+  //         has: [
+  //           {
+  //             type: "host",
+  //             value: "(.*)\\coingarage-finance\\.com",
+  //           },
+  //         ],
+  //         destination: "https://new.coingarage-finance.com/:path*",
+  //       },
+  //     ],
+  //   }
+  // },
 }
 
 module.exports = withNextIntl(nextConfig)
