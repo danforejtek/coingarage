@@ -71,11 +71,11 @@ const nextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/finance/:path*",
+          source: "/:locale/finance/:path*",
           has: [
             {
               type: "host",
-              value: "*.coingarage-finance.com",
+              value: "(.*)\\coingarage-finance\\.com",
             },
           ],
           destination: "https://new.coingarage-finance.com/:path*",

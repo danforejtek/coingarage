@@ -14,6 +14,7 @@ export default async function middleware(request: NextRequest) {
   const response = handleI18nRouting(request)
 
   const { pathname, hostname } = request.nextUrl
+  console.log(hostname)
 
   // if (
   //   hostname === "coingarage.io" &&
