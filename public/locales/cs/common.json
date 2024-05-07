@@ -665,7 +665,7 @@
         "concluision": "Modelový výpočet vychází z vypočtené hodnoty Coingarage s.r.o. ve výši 2,4 MLD USD Modelový výpočet nezaručuje dosažení zvoleného zhodnocení  vkladu a stejně jako každá investice i tato nese značnou míru rizika. Předpokládané zhodnocení bude vypláceno v průběhu let v CZK, EUR nebo USD s exitem v roce 2030."
       },
       "table2": {
-        "header": "Would You Like to Get More Information?",
+        "header": "Chcete získat více informací?",
         "subtext": "Pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a zodpoví všechny vaše dotazy.",
         "placeholder1": "Celé Jméno",
         "placeholder2": "Telefoní Číslo",
@@ -684,7 +684,7 @@
     },
     "partnersImages": {
       "header": "Partneři",
-      "infoBtn": "Click For More Information"
+      "infoBtn": "Kliknětě pro více informací"
     },
     "partnersMain": {
       "partner1": {

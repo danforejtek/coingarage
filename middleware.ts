@@ -27,15 +27,21 @@ export default async function middleware(request: NextRequest) {
     url.hostname = "new.coingarage-finance.com"
     const pathnameWithoutLocale = pathname.replace(`/${locale}`, "")
     url.pathname =
-      pathnameWithoutLocale === `/finance` ? `/${locale}/` : pathnameWithoutLocale.replace(/^\/finance/, "")
+      pathnameWithoutLocale === `/finance`
+        ? `/${locale}/`
+        : `/${locale}/${pathnameWithoutLocale.replace(/^\/finance/, "")}`
     // console.log("using CG:", url.toString())
     return NextResponse.redirect(url)
   }
 
   if (hostname === "new.coingarage-finance.com") {
     const url = request.nextUrl.clone()
-    url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance${pathname.replace(`/${locale}`, "")}`
-    console.log("using CGF:", url.toString())
+    url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
+    console.log(
+      "using CGF:",
+      url.toString(),
+      pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
+    )
     return NextResponse.rewrite(url)
   }
 
