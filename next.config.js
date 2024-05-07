@@ -71,14 +71,14 @@ const nextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/finance/:path*{/}?",
-          // has: [
-          //   {
-          //     type: "host",
-          //     value: "new.coingarage-finance.*",
-          //   },
-          // ],
-          destination: "new.coingarage-finance.com/:path*",
+          source: "/finance/:path*",
+          has: [
+            {
+              type: "host",
+              value: "*.coingarage-finance.com",
+            },
+          ],
+          destination: "https://new.coingarage-finance.com/:path*",
         },
       ],
     }
