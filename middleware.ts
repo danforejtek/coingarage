@@ -23,7 +23,7 @@ const getLocale = ({
 export default async function middleware(request: NextRequest) {
   const [, locale] = request.nextUrl.pathname.split("/")
   let noLocale = false
-  if (locales.includes(locale)) noLocale = true
+  if (!locales.includes(locale)) noLocale = true
   const { pathname, hostname } = request.nextUrl
   if (hostname === "new.coingarage-finance.com" && noLocale) {
     const acceptLanguage = request.headers.get("accept-language") || ""
