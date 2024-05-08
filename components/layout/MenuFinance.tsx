@@ -105,7 +105,7 @@ export const navItems: NavItem[] = [
   {
     title: "Contacts",
     key: "contacts",
-    href: "/finance/contacts",
+    href: "/contacts",
   },
 ]
 

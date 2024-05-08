@@ -7,8 +7,8 @@ import { NextRequest, NextResponse } from "next/server"
 export default async function middleware(request: NextRequest) {
   const [, locale] = request.nextUrl.pathname.split("/")
   const { pathname, hostname } = request.nextUrl
-  if (hostname === "new.coingarage-finance.com" && (pathname === "/" || locale === "")) {
-    return NextResponse.redirect("https://new.coingarage-finance.com/en")
+  if (hostname === "new.coingarage-finance.com" && locale === "") {
+    return NextResponse.redirect(`https://new.coingarage-finance.com/en/${pathname}`)
   }
 
   const handleI18nRouting = createMiddleware({
