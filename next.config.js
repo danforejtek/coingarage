@@ -67,21 +67,22 @@ const nextConfig = {
       },
     ]
   },
-  // rewrites: async () => {
-  //   return {
-  //     beforeFiles: [
-  //       {
-  //         source: "/:locale/finance/:path*",
-  //         has: [
-  //           {
-  //             type: "host",
-  //             value: "(.*)\\coingarage-finance\\.com",
-  //           },
-  //         ],
-  //         destination: "https://new.coingarage-finance.com/:path*",
-  //       },
-  //     ],
-  //   }
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       has: [
+  //         {
+  //           type: "host",
+  //           value: "new.coingarage-finance.com",
+  //         },
+  //       ],
+  //       locale: false,
+  //       destination: "https://new.coingarage-finance.com/en",
+  //       basePath: false,
+  //       permanent: false,
+  //     },
+  //   ]
   // },
 }
 

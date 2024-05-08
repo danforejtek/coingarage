@@ -6,14 +6,17 @@ import { NextRequest, NextResponse } from "next/server"
 
 export default async function middleware(request: NextRequest) {
   const [, locale] = request.nextUrl.pathname.split("/")
+  const { pathname, hostname } = request.nextUrl
+  if (hostname === "new.coingarage-finance.com" && (pathname === "/" || locale === "")) {
+    return NextResponse.redirect("https://new.coingarage-finance.com/en")
+  }
+
   const handleI18nRouting = createMiddleware({
     locales: locales,
     defaultLocale: "en",
     localePrefix: "always",
   })
   const response = handleI18nRouting(request)
-
-  const { pathname, hostname } = request.nextUrl
 
   if (
     hostname === "coingarage.io" &&
@@ -37,11 +40,6 @@ export default async function middleware(request: NextRequest) {
     const url = request.nextUrl.clone()
     url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
     if (locale === "") url.pathname === "/en/finance"
-    console.log(
-      "using CGF:",
-      url.toString(),
-      pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
-    )
     return NextResponse.rewrite(url)
   }
 
