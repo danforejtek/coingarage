@@ -1,19 +1,41 @@
 import createMiddleware from "next-intl/middleware"
-import { locales } from "@/config"
+import { locales, defaultLocale } from "@/config"
 import { NextRequest, NextResponse } from "next/server"
+import { match } from "@formatjs/intl-localematcher"
+import Negotiator from "negotiator"
 
-// const financeRoutes = ["/finance", "/finance/partners"]
+type Locale = (typeof locales)[number]
+
+const getLocale = ({
+  acceptLanguage,
+  locales,
+  defaultLocale,
+}: {
+  acceptLanguage: string
+  locales: Array<string>
+  defaultLocale: Locale
+}) => {
+  const languages = new Negotiator({ headers: { "accept-language": acceptLanguage } }).languages()
+  const assertedLocale = match(languages, locales, defaultLocale)
+  return assertedLocale && assertedLocale !== "" ? assertedLocale : defaultLocale
+}
 
 export default async function middleware(request: NextRequest) {
   const [, locale] = request.nextUrl.pathname.split("/")
+  let noLocale = false
+  if (locales.includes(locale)) noLocale = true
   const { pathname, hostname } = request.nextUrl
-  if (hostname === "new.coingarage-finance.com" && locale === "") {
-    return NextResponse.redirect(`https://new.coingarage-finance.com/en/${pathname}`)
+  if (hostname === "new.coingarage-finance.com" && noLocale) {
+    const acceptLanguage = request.headers.get("accept-language") || ""
+    const localeFromHeader = getLocale({ acceptLanguage, locales, defaultLocale })
+    return NextResponse.redirect(
+      `https://new.coingarage-finance.com/${localeFromHeader}${pathname !== "/" ? pathname : ""}`
+    )
   }
 
   const handleI18nRouting = createMiddleware({
     locales: locales,
-    defaultLocale: "en",
+    defaultLocale: defaultLocale,
     localePrefix: "always",
   })
   const response = handleI18nRouting(request)
