@@ -31,7 +31,7 @@ export default function HeaderFinance() {
     >
       <div className="grid h-full grid-cols-[1fr_40px] xl:flex xl:flex-row xl:justify-between">
         <nav className="flex items-center gap-10" aria-label="Global">
-          <Link href="/finance">
+          <Link href="/">
             <div className="h-[30] w-[206px]">
               <Image src="/icons/coingarage-finance.svg" width={206} height={35} alt="logo" />
             </div>
