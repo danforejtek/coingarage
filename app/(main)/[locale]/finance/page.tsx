@@ -313,7 +313,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </div>
           </div>
           <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
-            <div className="w-full rounded-2xl bg-background dark:bg-[#1D1E25] md:p-8 xl:max-w-[662px]">
+            <div className="w-full rounded-2xl bg-background p-4 dark:bg-[#1D1E25] md:p-8 xl:max-w-[662px]">
               <Table className="w-full font-heading text-base">
                 <TableHeader>
                   <TableRow className="border-none font-heading">
