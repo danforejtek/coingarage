@@ -160,7 +160,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 className="text-md w-full font-bold leading-[1.2] sm:w-max"
                 asChild
               >
-                <a href="https://www.coingarage-finance.com/en">{t("main.exchangeBtn")}</a>
+                <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
               <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
                 <a href="https://trade.coingarage.io/signup">{t("main.shareholderBtn")}</a>
@@ -317,13 +317,13 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               <Table className="w-full font-heading text-base">
                 <TableHeader>
                   <TableRow className="border-none font-heading">
-                    <TableHead className="text-neutral-400">Exchange</TableHead>
-                    <TableHead className="hidden text-neutral-400 md:table-cell">Number of Users</TableHead>
-                    <TableHead className="table-cell text-neutral-400 md:hidden">Users</TableHead>
-                    <TableHead className="hidden text-neutral-400 md:table-cell">
+                    <TableHead className="w-1/3 text-neutral-400">Exchange</TableHead>
+                    <TableHead className="hidden w-1/3 text-neutral-400 md:table-cell">Number of Users</TableHead>
+                    <TableHead className="table-cell w-1/3 text-neutral-400 md:hidden">Users</TableHead>
+                    <TableHead className="hidden w-1/3 text-neutral-400 md:table-cell">
                       <div className="w-full text-right">Company Value ($)</div>
                     </TableHead>
-                    <TableHead className="table-cell text-center text-neutral-400 md:hidden">Value ($)</TableHead>
+                    <TableHead className="table-cell w-1/3 text-center text-neutral-400 md:hidden">Value ($)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
