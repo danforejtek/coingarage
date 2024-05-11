@@ -454,7 +454,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               author={t("revolution.negativeClaims.claim7.name")}
             />
           </div>
-          <div className="flex max-w-[600px] flex-col justify-between gap-4 p-4 lg:w-1/2 xl:gap-8 xl:p-8">
+          <div className="mt-6 flex max-w-[600px] flex-col justify-between gap-4 lg:mt-0 lg:w-1/2 xl:gap-8 xl:p-8">
             <Claim
               claim={
                 t.rich("revolution.positiveClaims.claim1.text", {
