@@ -19,9 +19,9 @@ const Progress = React.forwardRef<
         className="flex h-full w-full flex-1 items-center justify-end bg-primary transition-all"
         style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
       >
-        <span className="px-2">
+        <span className="px-1 md:px-2">
           {value}
-          {postfix ? <span className="ml-2">{postfix}</span> : null}
+          {postfix ? <span className="ml-1 md:ml-2">{postfix}</span> : null}
         </span>
       </ProgressPrimitive.Indicator>
     </ProgressPrimitive.Root>

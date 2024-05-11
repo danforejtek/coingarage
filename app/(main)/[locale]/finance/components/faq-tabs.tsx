@@ -117,7 +117,7 @@ export const FaqTabs = ({ locale }: { locale: string }) => {
 
   return (
     <Tabs defaultValue="section1" className="w-full">
-      <TabsList className="flex w-full gap-4 lg:flex-row-reverse">
+      <TabsList className="flex w-full !flex-row justify-center !gap-2 lg:!flex-row-reverse lg:justify-start lg:gap-4">
         <TabsTrigger value="section4" asChild>
           <Button
             variant="link"

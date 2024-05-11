@@ -44,37 +44,51 @@ const exchanges = [
   {
     exchange: "Coingarage",
     users: "2.5 Million",
-    value: "2.4 Billion Dollars",
+    value: "2.4 Billion",
+    usersShort: "2.5 M",
+    valueShort: "2.4 B",
   },
   {
     exchange: "Gemini",
     users: "2 Million",
-    value: "7 Billion Dollars",
+    value: "7 Billion",
+    usersShort: "2 M",
+    valueShort: "7 B",
   },
   {
     exchange: "Kraken",
     users: "9 Million",
-    value: "20 Billion Dollars",
+    value: "20 Billion",
+    usersShort: "9 M",
+    valueShort: "20 B",
   },
   {
     exchange: "BYBIT",
     users: "15 Million",
-    value: "19 Billion Dollars",
+    value: "19 Billion",
+    usersShort: "15 M",
+    valueShort: "19 B",
   },
   {
     exchange: "KuCoin",
     users: "20 Million",
-    value: "20 Billion Dollars",
+    value: "20 Billion",
+    usersShort: "20 M",
+    valueShort: "20 B",
   },
   {
     exchange: "Coinbase",
     users: "56 Million",
-    value: "100 Billion Dollars",
+    value: "100 Billion",
+    usersShort: "56 M",
+    valueShort: "100 B",
   },
   {
     exchange: "Binance",
     users: "120 Million",
-    value: "300 Billion Dollars",
+    value: "300 Billion",
+    usersShort: "120 M",
+    valueShort: "300 B",
   },
 ].reverse()
 
@@ -96,12 +110,12 @@ const IconFigure = ({
         ? "/images/finance/icons/inDevelopment.svg"
         : "/images/finance/icons/planned.svg"
   return (
-    <figure className="min-w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+    <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
       <div className="ju flex flex-row-reverse">
         {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
       </div>
       <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
-      <figcaption className="text-center font-heading">{caption}</figcaption>
+      <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>
     </figure>
   )
 }
@@ -110,7 +124,7 @@ const Claim = ({ claim, author }: { claim: string; author: string }) => {
   return (
     <div className="flex flex-col font-heading">
       <p className="text-base font-bold">{claim}</p>
-      <div className="text-base">{author}</div>
+      <div className="mt-2 text-base">{author}</div>
     </div>
   )
 }
@@ -140,10 +154,15 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </div>
           <div className="w-full max-w-[500px]">
             <div className="mt-8 flex flex-row flex-wrap gap-4">
-              <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
+              <Button
+                variant="outlinePrimary"
+                size="lg"
+                className="text-md w-full font-bold leading-[1.2] sm:w-max"
+                asChild
+              >
                 <a href="https://www.coingarage-finance.com/en">{t("main.exchangeBtn")}</a>
               </Button>
-              <Button variant="default" size="lg" className="text-md w-full sm:w-max" asChild>
+              <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
                 <a href="https://trade.coingarage.io/signup">{t("main.shareholderBtn")}</a>
               </Button>
             </div>
@@ -166,7 +185,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("developement.header")}</p>
         <p className="text-center">{t("developement.subtext")}</p>
-        <ul className="xs:flex-col mt-12 flex flex-row flex-wrap gap-4 font-heading lg:gap-16">
+        <ul className="xs:flex-col mt-12 flex flex-row flex-wrap justify-center gap-4 font-heading lg:gap-16">
           <li className="inline-flex items-center gap-4">
             {t("developement.done")}
             <Image src="/images/finance/icons/done.svg" width={18} height={18} alt="" />
@@ -223,15 +242,15 @@ export default async function Page({ params: { locale } }: { params: { locale: s
        * TAX HEAVENS
        */}
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
-        <div className="max-w-[540px] p-4 lg:w-1/2">
+        <div className="max-w-[540px] p-0 md:p-4 lg:w-1/2">
           <Heading tag="h1" size="4xl">
             {t("taxHeavens.header")}
           </Heading>
           <div className="pt-8 md:pl-12">
-            <p className="mb-4 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
+            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
               {t.rich("taxHeavens.subtext1", { b: (text: string) => <b className="text-primary">{text}</b> })}
             </p>
-            <p className="mb-4 mt-12 text-justify text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
+            <p className="mb-4 mt-12 text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
               {t.rich("taxHeavens.subtext2", { b: (text: string) => <b className="text-primary">{text}</b> })}
             </p>
             <div className="mt-12 flex flex-row justify-between">
@@ -266,11 +285,11 @@ export default async function Page({ params: { locale } }: { params: { locale: s
        */}
       <div className="mt-12 bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
-          <div className="w-full max-w-[540px] p-4">
+          <div className="w-full max-w-[540px] p-0 md:p-4">
             <Heading tag="h1" size="4xl">
               {t("estimatedValuation.header")}
             </Heading>
-            <p className="text-text-neutral-600 mb-4 pl-12 text-justify text-sm dark:text-neutral-300 lg:text-left">
+            <p className="text-text-neutral-600 mb-4 mt-8 text-justify text-sm dark:text-neutral-300 md:pl-12 lg:text-left">
               {t.rich("estimatedValuation.subText", {
                 b: (text) => <span className="font-bold text-primary">{text}</span>,
               })}
@@ -294,15 +313,17 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </div>
           </div>
           <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
-            <div className="w-full rounded-2xl bg-background p-8 dark:bg-[#1D1E25] xl:max-w-[662px]">
+            <div className="w-full rounded-2xl bg-background dark:bg-[#1D1E25] md:p-8 xl:max-w-[662px]">
               <Table className="w-full font-heading text-base">
                 <TableHeader>
                   <TableRow className="border-none font-heading">
                     <TableHead className="text-neutral-400">Exchange</TableHead>
-                    <TableHead className="text-neutral-400">Number of Users</TableHead>
-                    <TableHead className="text-neutral-400">
-                      <div className="w-full text-right">Company Value</div>
+                    <TableHead className="hidden text-neutral-400 md:table-cell">Number of Users</TableHead>
+                    <TableHead className="table-cell text-neutral-400 md:hidden">Users</TableHead>
+                    <TableHead className="hidden text-neutral-400 md:table-cell">
+                      <div className="w-full text-right">Company Value ($)</div>
                     </TableHead>
+                    <TableHead className="table-cell text-center text-neutral-400 md:hidden">Value ($)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -310,17 +331,25 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                     if (exchange.exchange === "Coingarage") {
                       return (
                         <TableRow key={exchange.exchange} className="border-none">
-                          <TableCell className="font-bold text-primary">{exchange.exchange}</TableCell>
-                          <TableCell className="font-bold">{exchange.users}</TableCell>
-                          <TableCell className="text-right font-bold">{exchange.value}</TableCell>
+                          <TableCell className="font-bold text-primary md:table-cell">{exchange.exchange}</TableCell>
+                          <TableCell className="hidden font-bold md:table-cell">{exchange.users}</TableCell>
+                          <TableCell className="hidden text-right font-bold md:table-cell">{exchange.value}</TableCell>
+                          <TableCell className="table-cell text-center font-bold md:hidden">
+                            {exchange.usersShort}
+                          </TableCell>
+                          <TableCell className="table-cell text-center font-bold md:hidden">
+                            {exchange.valueShort}
+                          </TableCell>
                         </TableRow>
                       )
                     }
                     return (
                       <TableRow key={exchange.exchange} className="border-none">
                         <TableCell className="font-medium text-primary">{exchange.exchange}</TableCell>
-                        <TableCell>{exchange.users}</TableCell>
-                        <TableCell className="text-right">{exchange.value}</TableCell>
+                        <TableCell className="hidden md:table-cell">{exchange.users}</TableCell>
+                        <TableCell className="hidden text-right md:table-cell">{exchange.value}</TableCell>
+                        <TableCell className="table-cell text-center md:hidden">{exchange.usersShort}</TableCell>
+                        <TableCell className="table-cell text-center md:hidden">{exchange.valueShort}</TableCell>
                       </TableRow>
                     )
                   })}
@@ -328,11 +357,13 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               </Table>
             </div>
           </div>
-          <div className="mt-16 w-full rounded-2xl bg-background p-12 dark:bg-[#1D1E25]">
-            <h3 className="text-center font-heading text-4xl font-bold lg:text-start">{t("oppurtunities.header")}</h3>
+          <div className="mt-16 w-full rounded-2xl bg-background p-6 py-12 dark:bg-[#1D1E25] md:p-12">
+            <h3 className="hyphens-auto break-words text-center font-heading text-4xl font-bold lg:text-start">
+              {t("oppurtunities.header")}
+            </h3>
             <div className="mt-12 flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-start">
               <div className="lg:w-1/2">
-                <p className="text-base">{t("oppurtunities.subtext")}</p>
+                <p className="text-justify text-base md:text-start">{t("oppurtunities.subtext")}</p>
                 <h4 className="mt-10 font-heading text-xl font-bold text-primary">{t("oppurtunities.bonuses")}</h4>
                 <ul className="mt-6 text-base">
                   <li>{t("oppurtunities.investment1")}</li>
@@ -364,8 +395,8 @@ export default async function Page({ params: { locale } }: { params: { locale: s
        */}
       <section className="mx-auto mt-12 flex flex-col items-center px-8">
         <p className="mb-6 mt-20 max-w-[650px] text-center font-heading text-4xl font-bold">{t("revolution.header")}</p>
-        <div className="flex w-full flex-row flex-wrap justify-center">
-          <div className="flex w-1/2 max-w-[600px] flex-col justify-between gap-4 p-4 lg:border-r-[8px] lg:border-neutral-200 xl:gap-8 xl:p-8">
+        <div className="flex w-full flex-col flex-wrap justify-center lg:flex-row">
+          <div className="flex max-w-[600px] flex-col justify-between gap-4 p-0 md:p-4 lg:w-1/2 lg:border-r-[8px] lg:border-neutral-200 xl:gap-8 xl:p-8">
             <Claim
               claim={
                 t.rich("revolution.negativeClaims.claim1.text", {
@@ -423,7 +454,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               author={t("revolution.negativeClaims.claim7.name")}
             />
           </div>
-          <div className="flex w-1/2 max-w-[600px] flex-col justify-between gap-4 p-4 xl:gap-8 xl:p-8">
+          <div className="flex max-w-[600px] flex-col justify-between gap-4 p-4 lg:w-1/2 xl:gap-8 xl:p-8">
             <Claim
               claim={
                 t.rich("revolution.positiveClaims.claim1.text", {
@@ -493,7 +524,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 <Heading tag="h3" size="2xl">
                   {t("yourValuation.subheader")}
                 </Heading>
-                <div className="pl-12">
+                <div className="md:pl-12">
                   <p className="mt-8 text-justify text-base lg:text-left">{t("yourValuation.subtext1")}</p>
                   <p className="mt-6 text-justify text-base lg:text-left">{t("yourValuation.subtext2")}</p>
                   <div className="mt-12 flex flex-row justify-center lg:justify-start">
@@ -516,7 +547,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       <div className="container z-10 mx-auto">
         <div className="flex flex-row lg:gap-8">
           <div className="-mt-[40px] rounded-2xl bg-background p-8 shadow-md dark:bg-[#1D1E25] lg:-mt-[300px] lg:w-2/3">
-            <div className="p-4">
+            <div className="p-0 md:p-4">
               <p className="text-center font-heading text-4xl font-bold text-primary">
                 {t("yourValuation.table2.header")}
               </p>
@@ -628,7 +659,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
         <Heading tag="h1" size="3xl" className="mb-0">
           {t("faq.header")}
         </Heading>
-        <FaqTabs locale={locale} />
+        <div className="mt-4 lg:mt-0">
+          <FaqTabs locale={locale} />
+        </div>
       </section>
     </main>
   )
