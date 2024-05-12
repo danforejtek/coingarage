@@ -136,7 +136,7 @@ export const ValuationTable = ({ locale, data }: { locale: string; data: Finance
           />
         </div>
       </div>
-      <div className="w-full rounded-2xl bg-background p-8 shadow-md">
+      <div className="w-full rounded-2xl bg-background p-4 shadow-md lg:p-8">
         <Table className="w-full font-heading text-base">
           <TableHeader>
             <TableRow className="border-none font-heading ">

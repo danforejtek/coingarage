@@ -319,7 +319,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                   <TableRow className="border-none font-heading">
                     <TableHead className="w-1/3 text-neutral-400">Exchange</TableHead>
                     <TableHead className="hidden w-1/3 text-neutral-400 md:table-cell">Number of Users</TableHead>
-                    <TableHead className="table-cell w-1/3 text-neutral-400 md:hidden">Users</TableHead>
+                    <TableHead className="table-cell w-1/3 text-center text-neutral-400 md:hidden md:text-start">
+                      Users
+                    </TableHead>
                     <TableHead className="hidden w-1/3 text-neutral-400 md:table-cell">
                       <div className="w-full text-right">Company Value ($)</div>
                     </TableHead>
@@ -393,8 +395,10 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * REVOLUTION
        */}
-      <section className="mx-auto mt-12 flex flex-col items-center px-8">
-        <p className="mb-6 mt-20 max-w-[650px] text-center font-heading text-4xl font-bold">{t("revolution.header")}</p>
+      <section className="container mx-auto flex flex-col items-center lg:mt-12">
+        <p className="mb-6 mt-12 max-w-[650px] text-center font-heading text-4xl font-bold lg:mt-20">
+          {t("revolution.header")}
+        </p>
         <div className="flex w-full flex-col flex-wrap justify-center lg:flex-row">
           <div className="flex max-w-[600px] flex-col justify-between gap-4 p-0 md:p-4 lg:w-1/2 lg:border-r-[8px] lg:border-neutral-200 xl:gap-8 xl:p-8">
             <Claim
