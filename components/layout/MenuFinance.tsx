@@ -167,7 +167,10 @@ export function MenuFinance() {
               <NavigationMenuItem key={index}>
                 <Link href={href} legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), "px-3 text-sm text-secondary dark:text-white")}
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      "px-3 text-sm text-secondary hover:bg-transparent hover:text-primary focus:bg-transparent active:bg-transparent dark:text-white"
+                    )}
                   >
                     {t(`Menu.${key}`)}
                   </NavigationMenuLink>

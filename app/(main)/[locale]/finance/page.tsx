@@ -40,6 +40,9 @@ import { FaqTabs } from "@/app/(main)/[locale]/finance/components/faq-tabs"
 import { fetchFinanceData } from "@/app/(main)/[locale]/finance/lib/data"
 import { ValuationTable } from "@/app/(main)/[locale]/finance/components/valuation-table"
 
+const IS_PROD = process.env.NODE_ENV === "production"
+const COINGARAGE_PREFIX = IS_PROD ? "https://coingarage.io" : ""
+
 const exchanges = [
   {
     exchange: "Coingarage",
@@ -97,11 +100,13 @@ const IconFigure = ({
   caption,
   children,
   icon,
+  href,
 }: {
   status: string
   caption: string
   children: React.ReactNode
   icon?: React.ReactNode | string
+  href?: string
 }) => {
   const statusImage =
     status === "done"
@@ -110,13 +115,27 @@ const IconFigure = ({
         ? "/images/finance/icons/inDevelopment.svg"
         : "/images/finance/icons/planned.svg"
   return (
-    <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
-      <div className="ju flex flex-row-reverse">
-        {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
-      </div>
-      <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
-      <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>
-    </figure>
+    <>
+      {href ? (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+            <div className="ju flex flex-row-reverse">
+              {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
+            </div>
+            <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
+            <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>
+          </figure>
+        </a>
+      ) : (
+        <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#282930]">
+          <div className="ju flex flex-row-reverse">
+            {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
+          </div>
+          <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
+          <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>
+        </figure>
+      )}
+    </>
   )
 }
 
@@ -200,22 +219,38 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </li>
         </ul>
         <div className="mt-12 flex grid-cols-6 grid-rows-2 flex-row flex-wrap justify-center gap-5 xl:grid">
-          <IconFigure status="done" caption={t("developement.list.box1")}>
+          <IconFigure
+            status="done"
+            caption={t("developement.list.box1")}
+            href="https://trade.coingarage.io/exchange/BTC-USDT"
+          >
             <TradingIcon width="67px" height="64px" className="dark:!fill-white" />
           </IconFigure>
-          <IconFigure status="done" caption={t("developement.list.box2")}>
+          <IconFigure
+            status="done"
+            caption={t("developement.list.box2")}
+            href={`${COINGARAGE_PREFIX}/${locale}/trading-bot`}
+          >
             <TradingBotIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
-          <IconFigure status="done" caption={t("developement.list.box3")}>
+          <IconFigure
+            status="done"
+            caption={t("developement.list.box3")}
+            href={`${COINGARAGE_PREFIX}/${locale}/get-app`}
+          >
             <MobileAppIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
-          <IconFigure status="done" caption={t("developement.list.box4")}>
+          <IconFigure
+            status="done"
+            caption={t("developement.list.box4")}
+            href="https://trade.coingarage.io/launchpad/projects"
+          >
             <GaraCoinIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
-          <IconFigure status="done" caption={t("developement.list.box5")}>
+          <IconFigure status="done" caption={t("developement.list.box5")} href={`${COINGARAGE_PREFIX}/${locale}`}>
             <CoinListingIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
-          <IconFigure status="done" caption={t("developement.list.box6")}>
+          <IconFigure status="done" caption={t("developement.list.box6")} href={`${COINGARAGE_PREFIX}/${locale}/earn`}>
             <ReferralIcon width="67px" height="64px" className="dark:fill-white" />
           </IconFigure>
           <IconFigure status="inDevelopment" caption={t("developement.list.box7")}>
