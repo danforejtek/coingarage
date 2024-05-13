@@ -10,6 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { submitContactMeForm } from "@/app/(main)/[locale]/finance/lib/actions"
 import { toast } from "sonner"
+import { useTranslations } from "next-intl"
 
 export const contactMeSchema = z.object({
   fullName: z.string().min(6, {
@@ -26,6 +27,7 @@ const defaultValues = {
 }
 
 export function GetMoreInfoForm() {
+  const t = useTranslations("finance")
   const form = useForm({
     defaultValues: defaultValues,
     mode: "onChange",
@@ -56,7 +58,7 @@ export function GetMoreInfoForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="Full name"
+                      placeholder={t("yourValuation.table2.placeholder1")}
                       className="h-[44px] rounded-3xl px-8 shadow-md dark:border-[#282930] dark:bg-[#282930]"
                     />
                   </FormControl>
@@ -75,7 +77,7 @@ export function GetMoreInfoForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="Phone number"
+                      placeholder={t("yourValuation.table2.placeholder2")}
                       className="h-[44px] rounded-3xl px-8 shadow-md dark:border-[#282930] dark:bg-[#282930]"
                     />
                   </FormControl>
@@ -96,7 +98,7 @@ export function GetMoreInfoForm() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="Email"
+                      placeholder={t("yourValuation.table2.placeholder3")}
                       className="h-[44px] rounded-3xl px-8 shadow-md dark:border-[#282930] dark:bg-[#282930]"
                     />
                   </FormControl>
@@ -106,7 +108,7 @@ export function GetMoreInfoForm() {
             )}
           />
           <Button className="lg:w-1/4" type="submit" variant="default" size="lg">
-            Send
+            {t("yourValuation.table2.sendBtn")}
           </Button>
         </div>
       </form>
