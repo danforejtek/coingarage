@@ -9,7 +9,7 @@
     "tradingBot": "Trading Bot",
     "convert": "Convert",
     "earn": "Earn",
-    "becomeAShareholder": "Become a Shareholder",
+    "becomeAShareholder": "Become a Silent Partner",
     "affiliate": "Referral",
     "stake": "Stake",
     "more": "More",
@@ -48,7 +48,7 @@
       }
     },
     "signUp": "Sign Up",
-    "becomeAShareholder": "Become a Shareholder",
+    "becomeAShareholder": "Become a Silent Partner",
     "howToSignUp": "How to sign up?",
     "scanQrCode": "Scan QR Code",
     "toDownloadApp": "to Download App"
@@ -492,9 +492,9 @@
       "text1": "Invest In The",
       "text2": "Fastest-growing Industry",
       "text3": "In The World.",
-      "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a shareholder of the global crypto Exchange.",
+      "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a silent partner of the global crypto Exchange.",
       "exchangeBtn": "Enter the Exchange",
-      "shareholderBtn": "Become a Shareholder"
+      "shareholderBtn": "Become a Silent Partner"
     },
     "developement": {
       "header": "Current development of Coingarage Exchange",
@@ -635,7 +635,7 @@
       "visitBtn": "Visit Launchpad",
       "round1": "1.round",
       "money": "6,4M USD",
-      "shareholderBtn": "Become a Shareholder"
+      "shareholderBtn": "Become a Silent Partner"
     },
     "simpleSteps": {
       "header": "5 Simple Steps to Investing",
