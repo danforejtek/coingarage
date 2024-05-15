@@ -50,7 +50,7 @@ export default function HeaderFinance() {
                 <a href="https://app.coingarage-finance.com/accounts/signup">{t("becomeAShareholder")}</a>
               </Button>
               <ModeToggle />
-              <LocaleSwitcher />
+              <LocaleSwitcher isFinance={true} />
             </div>
           </div>
           <div className="xl:hidden">

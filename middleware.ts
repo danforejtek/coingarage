@@ -4,6 +4,8 @@ import { NextRequest, NextResponse } from "next/server"
 import { match } from "@formatjs/intl-localematcher"
 import Negotiator from "negotiator"
 
+const FINANCE_DOMAIN: string = process.env.FINANCE_DOMAIN ?? ""
+
 type Locale = (typeof locales)[number]
 
 const getLocale = ({
@@ -25,12 +27,10 @@ export default async function middleware(request: NextRequest) {
   let noLocale = false
   if (!locales.includes(locale)) noLocale = true
   const { pathname, hostname } = request.nextUrl
-  if (hostname === "new.coingarage-finance.com" && noLocale) {
+  if (hostname === FINANCE_DOMAIN && noLocale) {
     const acceptLanguage = request.headers.get("accept-language") || ""
-    const localeFromHeader = getLocale({ acceptLanguage, locales, defaultLocale })
-    return NextResponse.redirect(
-      `https://new.coingarage-finance.com/${localeFromHeader}${pathname !== "/" ? pathname : ""}`
-    )
+    const localeFromHeader = getLocale({ acceptLanguage, locales: ["cs", "en"], defaultLocale })
+    return NextResponse.redirect(`https://${FINANCE_DOMAIN}/${localeFromHeader}${pathname !== "/" ? pathname : ""}`)
   }
 
   const handleI18nRouting = createMiddleware({
@@ -48,7 +48,7 @@ export default async function middleware(request: NextRequest) {
       pathname.startsWith(`/${locale}/finance`))
   ) {
     const url = request.nextUrl.clone()
-    url.hostname = "new.coingarage-finance.com"
+    url.hostname = FINANCE_DOMAIN
     const pathnameWithoutLocale = pathname.replace(`/${locale}`, "")
     url.pathname =
       pathnameWithoutLocale === `/finance`
@@ -58,7 +58,7 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  if (hostname === "new.coingarage-finance.com") {
+  if (hostname === FINANCE_DOMAIN) {
     const url = request.nextUrl.clone()
     url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
     if (locale === "") url.pathname === "/en/finance"
