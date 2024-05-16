@@ -61,7 +61,12 @@ export default async function middleware(request: NextRequest) {
 
   if (hostname === FINANCE_DOMAIN) {
     const url = request.nextUrl.clone()
-    console.log("finance pathname:", url.pathname)
+    console.log(
+      "finance pathname:",
+      url.pathname,
+      url.pathname !== "/" && !FINANCE_ROUTES.includes(url.pathname),
+      !FINANCE_ROUTES.includes(url.pathname)
+    )
     if (url.pathname !== "/" && !FINANCE_ROUTES.includes(url.pathname))
       NextResponse.redirect(`https://coingarage.io/${locale}${url.pathname}`)
     url.pathname = pathname === `/` ? `/${locale}/finance` : `/${locale}/finance/${pathname.replace(`/${locale}`, "")}`
