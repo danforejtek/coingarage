@@ -9,7 +9,7 @@
     "tradingBot": "Trading bot",
     "convert": "Konvertovat",
     "earn": "Profitovat",
-    "becomeAShareholder": "Stát se spolumajitelem",
+    "becomeAShareholder": "Začít Investovat",
     "affiliate": "Referral",
     "stake": "Stake",
     "more": "Více",
@@ -48,7 +48,7 @@
       }
     },
     "signUp": "Registrovat se",
-    "becomeAShareholder": "Stát se spolumajitelem",
+    "becomeAShareholder": "Stát se Tichým Společníkem",
     "howToSignUp": "Jak se zaregistrovat?",
     "scanQrCode": "Naskenujte QR kód",
     "toDownloadApp": "pro stažení aplikace"
@@ -492,9 +492,9 @@
       "text1": "Investujte do",
       "text2": "Nejrychleji rostoucího odvětví",
       "text3": "Na Světě",
-      "subText": "Trh s digitálními měnami a technologií blockchainu je dnes nejrychleji rostoucím odvětvím. Nyní máte jedinečnou příležitost investovat do této oblasti a stát se spolumajitelem globální kryptoměnové burzy.",
+      "subText": "Trh s digitálními měnami a technologií blockchainu je dnes nejrychleji rostoucím odvětvím. Nyní máte jedinečnou příležitost investovat do této oblasti a stát se tichým společníkem globální kryptoměnové burzy.",
       "exchangeBtn": "Vstupte na Burzu",
-      "shareholderBtn": "Staňte se Spolumajitelem"
+      "shareholderBtn": "Stát se Tichým Společníkem"
     },
     "developement": {
       "header": "Aktuální vývoj burzy Coingarage",
@@ -634,7 +634,7 @@
       "investment2": "Od 100 000 CZK, získáte *GARA Coin v hodnotě 100% vaší investice.",
       "round1": "1.kolo",
       "money": "141M CZK",
-      "shareholderBtn": "Staňte se Spolumajitelem"
+      "shareholderBtn": "Stát se Tichým Společníkem"
     },
     "simpleSteps": {
       "header": "Investujte jednoduše v 5ti krocích",
