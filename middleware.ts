@@ -30,7 +30,7 @@ export default async function middleware(request: NextRequest) {
   const { pathname, hostname } = request.nextUrl
   const acceptLanguage = request.headers.get("accept-language") || ""
   const localeFromHeader = getLocale({ acceptLanguage, locales: ["cs", "en"], defaultLocale })
-  if (hostname === FINANCE_DOMAIN && (pathname !== "/" || !FINANCE_ROUTES.includes(pathname)))
+  if (hostname === FINANCE_DOMAIN && pathname !== "/" && !FINANCE_ROUTES.includes(pathname))
     return NextResponse.redirect(`https://coingarage.io/${localeFromHeader}${pathname}`)
   if (hostname === FINANCE_DOMAIN && noLocale) {
     return NextResponse.redirect(`https://${FINANCE_DOMAIN}/${localeFromHeader}${pathname !== "/" ? pathname : ""}`)
