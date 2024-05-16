@@ -8,6 +8,8 @@ type Article = {
 }
 
 const baseUrl = process.env.NODE_ENV !== "production" ? "http://localhost:4200" : "https://coingarage.io"
+const baseUrlFinance =
+  process.env.NODE_ENV !== "production" ? "http://localhost:4200/finance" : `https://${process.env.FINANCE_DOMAIN}`
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
@@ -89,5 +91,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...posts_en,
     ...posts_de,
     ...posts_es,
+    {
+      url: `${baseUrlFinance}`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 1,
+    },
+    {
+      url: `${baseUrlFinance}/contacts`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
   ]
 }

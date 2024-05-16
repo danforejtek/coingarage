@@ -5,6 +5,7 @@ import { match } from "@formatjs/intl-localematcher"
 import Negotiator from "negotiator"
 
 const FINANCE_DOMAIN: string = process.env.FINANCE_DOMAIN ?? ""
+const FINANCE_ROUTES = ["/contacts"]
 
 type Locale = (typeof locales)[number]
 
@@ -27,9 +28,11 @@ export default async function middleware(request: NextRequest) {
   let noLocale = false
   if (!locales.includes(locale)) noLocale = true
   const { pathname, hostname } = request.nextUrl
+  const acceptLanguage = request.headers.get("accept-language") || ""
+  const localeFromHeader = getLocale({ acceptLanguage, locales: ["cs", "en"], defaultLocale })
+  if (hostname === FINANCE_DOMAIN && (pathname !== "/" || !FINANCE_ROUTES.includes(pathname)))
+    return NextResponse.redirect(`https://coingarage.io/${localeFromHeader}${pathname}`)
   if (hostname === FINANCE_DOMAIN && noLocale) {
-    const acceptLanguage = request.headers.get("accept-language") || ""
-    const localeFromHeader = getLocale({ acceptLanguage, locales: ["cs", "en"], defaultLocale })
     return NextResponse.redirect(`https://${FINANCE_DOMAIN}/${localeFromHeader}${pathname !== "/" ? pathname : ""}`)
   }
 
