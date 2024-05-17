@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
         <Suspense fallback={null}>
-          <GoogleAnalytics />
+          <GoogleAnalytics isFinance={isFinance} />
           <GoogleTagManager isFinance={isFinance} />
         </Suspense>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
