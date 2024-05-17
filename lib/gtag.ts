@@ -1,6 +1,7 @@
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ID
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 export const FINANCE_GTM_ID = process.env.NEXT_PUBLIC_FINANCE_GTM_ID
+export const FINANCE_GA_TRACKING_ID = process.env.NEXT_PUBLIC_FINANCE_GOOGLE_ID
 
 type WindowWithDataLayer = Window & {
   dataLayer: Record<string, any>[]
