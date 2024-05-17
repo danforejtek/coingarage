@@ -5,10 +5,9 @@ import { usePathname, useSearchParams } from "next/navigation"
 import Script from "next/script"
 import { useEffect } from "react"
 
-export default function GoogleTagManager() {
+export default function GoogleTagManager({ isFinance }: { isFinance: boolean }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const isFinance = pathname.includes("/finance")
 
   useEffect(() => {
     if (pathname) {

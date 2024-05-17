@@ -12,6 +12,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"
 import { locales } from "@/config"
 import GoogleTagManager from "@/components/GoogleTagManager"
 import { Suspense } from "react"
+import { headers } from "next/headers"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -40,12 +41,16 @@ export default function RootLayout({
 }) {
   unstable_setRequestLocale(locale)
   const messages = useMessages()
+  const headersList = headers()
+  const hostname = headersList.get("x-forwarded-host")
+  const isFinance = process.env.FINANCE_DOMAIN === hostname
+
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <body>
         <Suspense fallback={null}>
           <GoogleAnalytics />
-          <GoogleTagManager />
+          <GoogleTagManager isFinance={isFinance} />
         </Suspense>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
