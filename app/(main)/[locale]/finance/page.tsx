@@ -182,7 +182,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
               <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
-                <a href="https://trade.coingarage.io/signup">{t("main.shareholderBtn")}</a>
+                <a href="https://app.coingarage-finance.com/accounts/signup">{t("main.shareholderBtn")}</a>
               </Button>
             </div>
           </div>
