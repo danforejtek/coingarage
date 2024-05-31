@@ -1,11 +1,11 @@
-import { unstable_setRequestLocale } from "next-intl/server"
-import Footer from "@/components/layout/Footer"
-import Header from "@/components/layout/Header"
 import "@/styles/globals.scss"
+import { unstable_setRequestLocale } from "next-intl/server"
 import type { Metadata } from "next"
 
-import { locales } from "@/config"
 import HeaderFinance from "@/components/layout/HeaderFinance"
+import FooterFinance from "@/components/layout/FooterFinance"
+
+import { locales } from "@/config"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -37,7 +37,7 @@ export default function RootLayout({
       <HeaderFinance />
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
-        <Footer />
+        <FooterFinance />
       </div>
     </>
   )

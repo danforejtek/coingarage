@@ -698,7 +698,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
         <Heading tag="h1" size="3xl" className="mb-0">
           {t("faq.header")}
         </Heading>
-        <div className="mt-4 lg:mt-0">
+        <div id="faq" className="mt-4 lg:mt-0">
           <FaqTabs locale={locale} />
         </div>
       </section>
