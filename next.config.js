@@ -26,26 +26,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  webpack(config, options) {
+  webpack: (config) => {
     config.module.rules.push({
-      test: /\.svg?$/,
-      oneOf: [
-        {
-          use: [
-            {
-              loader: "@svgr/webpack",
-              options: {
-                prettier: false,
-                svgo: true,
-                svgoConfig: {
-                  plugins: [{ name: "removeViewBox", active: false }],
-                },
-                titleProp: true,
-              },
-            },
-          ],
-        },
-      ],
+      test: /\.svg$/i,
+      use: ["@svgr/webpack"],
     })
     return config
   },

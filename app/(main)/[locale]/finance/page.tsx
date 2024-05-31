@@ -659,7 +659,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
         </div>
         <div className="mt-12">
           <a
-            href="https://coingarage-finance.s3.eu-west-1.amazonaws.com/docs/contract_content_en.pdf"
+            href={`https://coingarage-finance.s3.eu-west-1.amazonaws.com/docs/contract_content_${locale}.pdf`}
             target="_blank"
             rel="noreferrer noopener"
             className="text-tertiary underline underline-offset-4 transition-all hover:text-cyan-600 hover:underline-offset-2"
