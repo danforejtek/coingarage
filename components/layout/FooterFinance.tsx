@@ -159,9 +159,14 @@ export default function FooterFinance() {
                   </a>
                 </li>
                 <li>
-                  <Link href="/legal/terms-of-service" className="hover:text-primary">
+                  <a
+                    href="/legal/general-terms-and-conditions"
+                    className="hover:text-primary"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     {t("legal.termsOfService")}
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link href="/legal/privacy-policy" className="hover:text-primary">

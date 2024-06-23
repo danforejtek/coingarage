@@ -158,10 +158,20 @@ export default function Footer() {
                     {t("login")}
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/legal/terms-of-service" className="hover:text-primary">
                     {t("legal.termsOfService")}
                   </Link>
+                </li> */}
+                <li>
+                  <a
+                    href="/legal/general-terms-and-conditions"
+                    className="hover:text-primary"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {t("legal.termsOfService")}
+                  </a>
                 </li>
                 <li>
                   <Link href="/legal/privacy-policy" className="hover:text-primary">
@@ -175,12 +185,22 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
+                    href="/legal/general-terms-and-conditions"
                     className="hover:text-primary"
-                    href="https://drive.google.com/file/d/1MegR8rihLQDp_n6eQ1Ka8shPECgN_Zxe/view?usp=sharing"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     {"EEZY Trader"} {t("legal.termsOfService")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/legal/spot-market-terms"
+                    className="hover:text-primary"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {t("legal.sportTradingTerms")}
                   </a>
                 </li>
               </ul>

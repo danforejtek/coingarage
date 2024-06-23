@@ -51,23 +51,58 @@ const nextConfig = {
       },
     ]
   },
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: "/",
-  //       has: [
-  //         {
-  //           type: "host",
-  //           value: "new.coingarage-finance.com",
-  //         },
-  //       ],
-  //       locale: false,
-  //       destination: "https://new.coingarage-finance.com/en",
-  //       basePath: false,
-  //       permanent: false,
-  //     },
-  //   ]
-  // },
+  async rewrites() {
+    return [
+      {
+        source: "/cs/legal/general-terms-and-conditions",
+        destination: "/legal-files/general_terms_and_conditions_cz.pdf",
+      },
+      {
+        source: "/en/legal/general-terms-and-conditions",
+        destination: "/legal-files/general_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/es/legal/general-terms-and-conditions",
+        destination: "/legal-files/general_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/de/legal/general-terms-and-conditions",
+        destination: "/legal-files/general_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/cs/legal/eezy-trader/terms-and-conditions",
+        destination: "/legal-files/eezy_trader_terms_and_conditions_cz.pdf",
+      },
+      {
+        source: "/en/legal/eezy-trader/terms-and-conditions",
+        destination: "/legal-files/eezy_trader_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/es/legal/eezy-trader/terms-and-conditions",
+        destination: "/legal-files/eezy_trader_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/de/legal/eezy-trader/terms-and-conditions",
+        destination: "/legal-files/eezy_trader_terms_and_conditions_en.pdf",
+      },
+      {
+        source: "/cs/legal/spot-market-terms",
+        destination: "/legal-files/spot_market_terms_cz.pdf",
+      },
+      {
+        source: "/en/legal/spot-market-terms",
+        destination: "/legal-files/spot_market_terms_en.pdf",
+      },
+      {
+        source: "/es/legal/spot-market-terms",
+        destination: "/legal-files/spot_market_terms_en.pdf",
+      },
+      {
+        source: "/de/legal/spot-market-terms",
+        destination: "/legal-files/spot_market_terms_en.pdf",
+      },
+    ]
+  },
 }
 
 module.exports = withNextIntl(nextConfig)
