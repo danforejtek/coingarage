@@ -771,10 +771,22 @@
              "answer":"Die Firma Coingarage Finance s.r.o. hat in der Entwicklungsphase die Absicht, in das Gebiet mit einer gut bekannten öffentlichen Handelsplattform und einer Devisenhandelsplattform, aber auch in der Börsenhandelsplattform zu investieren. Es wird jedoch ein Bein zur Seite schwingen, um das zu erlöste Vermögen das antioxidive hoher Frequentanz  Entwicklung dieser Technologie  z. B. eine"
           }
        },
-       "otherQuestions":{
-          "question1":{
-             "text":"Was sind in diesem Fall die Rechte und Pflichten des stille Gesellschafters im Innenverhältnis?",
-             "answer":"Die Rechte und Pflichten des stillen Gesellschafters sind im Grundsatz der gegenseitigen Rücksichtnahme zu gewähren. Der stille Gesellschafter hat gegenüber der Firma Coingarage Finance s.r.o. keinerlei Weisungsrecht, sofern dies nicht im Vertrag über die stille Gesellschaft vorgesehen ist. Der stille Gesellschafter hat keinen Anspruch auf Beschlussfassung, auch wenn dies nicht im Vertrag über die stille Gesellschaft vorgesehen ist. Der stille Gesellschafter ist berechtigt, von der Firma Coingarage Finance s.r.o. die für den Gewinn der Kontoerklärung der Buchhaltung im Innenverhältnis erforderlichen rechtlichen Verpflichtungen zur Zahlung von Gewinnansprüchen und zur Mitwirkung an Unterlagen zu fordern. Der stillen des Vertrages befindet sich im."
+       "otherQuestions": {
+          "question1": {
+            "text": "Wer wird Eigentümer und Leiter der Coingarage s.r.o. sein?",
+            "answer": "Die Eigentümer der Coingarage s.r.o. sind Coingarage Finance s.r.o. (30 %) und Ota Janda (70 %). In naher Zukunft wird eine Anpassung der Eigentümerstruktur erwartet, bei der Technologieexperten und ausländische Investoren in das Unternehmen eintreten werden. Weitere Informationen zu den einzelnen Eigentümern und der Geschäftsführung finden Sie im Abschnitt Über uns."
+          },
+          "question2": {
+            "text": "Warum benötigen Sie die erhaltenen finanziellen Mittel und wofür werden Sie sie verwenden?",
+            "answer": "Alle finanziellen Mittel werden für Aktivitäten verwendet, die ein stabiles Wachstum und die Expansion der Coingarage s.r.o. fördern. Insbesondere für die Entwicklung der Börse und ihrer Komponenten. Wir werden auch in die Bekanntheit unserer Marke investieren, also in aktives Marketing und Geschäftstätigkeiten."
+          },
+          "question3": {
+            "text": "Haben Sie vor, eigene Krypto-Token herauszugeben?",
+            "answer": "Ja, wir planen die Herausgabe eines eigenen Utility-Tokens, der eine ähnliche Funktion wie zum Beispiel BNB bei Binance erfüllen wird. Wir werden auch bestehende Community-Token unter diesen Utility-Token zusammenführen."
+          },
+          "question4": {
+            "text": "Warum stille Teilhaber und nicht Venture-Capital-Fonds?",
+            "answer": "Der Weg mit Venture-Capital-Fonds ist in der Regel langwierig, wir wollen das Projekt nicht verzögern, und daher ist die erste Investitionsrunde vor allem für stille Teilhaber aus der Öffentlichkeit bestimmt. Es ist geplant, dass in den folgenden Investitionsrunden hauptsächlich Venture-Capital-Fonds im Vordergrund stehen werden."
           }
        }
     }
