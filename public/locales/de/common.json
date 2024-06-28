@@ -536,35 +536,35 @@
         },
         "rows": {
           "row1": {
-            "exchange": "Zwillinge",
-            "users": "2 Millionen",
-            "value": "7 Milliarden Dollar"
-          },
-          "row2": {
-            "exchange": "Krake",
-            "users": "9 Millionen",
-            "value": "20 Milliarden Dollar"
-          },
-          "row3": {
-            "exchange": "ZU SEIN",
-            "users": "15 Millionen",
-            "value": "19 Milliarden Dollar"
-          },
-          "row4": {
-            "exchange": "KuCoin",
-            "users": "20 Millionen",
-            "value": "20 Milliarden Dollar"
-          },
-          "row5": {
-            "exchange": "Coinbase",
-            "users": "56 Millionen",
-            "value": "100 Milliarden Dollar"
-          },
-          "row6": {
-            "exchange": "Binance",
-            "users": "120 Millionen",
-            "value": "300 Milliarden Dollar"
-          }
+                    "exchange": "Gemini",
+                    "users": "2 Millionen",
+                    "value": "7 Milliarden Dollar"
+                },
+                "row2": {
+                    "exchange": "Kraken",
+                    "users": "9 Millionen",
+                    "value": "20 Milliarden Dollar"
+                },
+                "row3": {
+                    "exchange": "BYBIT",
+                    "users": "15 Millionen",
+                    "value": "19 Milliarden Dollar"
+                },
+                "row4": {
+                    "exchange": "KuCoin",
+                    "users": "20 Millionen",
+                    "value": "20 Milliarden Dollar"
+                },
+                "row5": {
+                    "exchange": "Coinbase",
+                    "users": "56 Millionen",
+                    "value": "100 Milliarden Dollar"
+                },
+                "row6": {
+                    "exchange": "Binance",
+                    "users": "120 Millionen",
+                    "value": "300 Milliarden Dollar"
+                }
         }
       }
     },
@@ -698,7 +698,7 @@
         "subtext": "Finrock mit Sitz in London bietet uns funktionsreiche Verwahrungsdienste für digitale Vermögenswerte und bietet gleichzeitig Verschlüsselung auf Militärniveau."
       },
       "partner3": {
-        "header": "Simplex von NUVEI",
+        "header": "Simplex by NUVEI",
         "subtext": "Stärkt die Kryptoindustrie mit einer vollständigen Fiat-Infrastruktur. "
       },
       "partner4": {
@@ -710,7 +710,7 @@
         "subtext": "Efficacious hat seinen Hauptsitz in Delhi (Indien) und Vertriebsbüros im Vereinigten Königreich und in den Vereinigten Arabischen Emiraten und verfügt über mehr als ein Jahrzehnt Erfahrung in der Bereitstellung von IT- und Blockchain-Dienstleistungen für Unternehmen weltweit. "
       },
       "partner6": {
-        "header": "Kreative Helden",
+        "header": "Kreative Heroes",
         "subtext": "Eine Kreativagentur mit einem ungewöhnlichen Marketingansatz. "
       },
       "exchangeBtn": "Betreten Sie die Börse"
