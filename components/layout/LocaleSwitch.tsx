@@ -9,7 +9,7 @@ export default function LocaleSwitcher({ isFinance = false }) {
   return (
     <LocaleSwitchSelect defaultValue={locale} label={locale}>
       {locales
-        .filter((item) => (isFinance ? !["es", "de"].includes(item) : true))
+        .filter((item) => (isFinance ? !["es"].includes(item) : true))
         .map((item) => (
           <option key={item} value={item}>
             {/* @ts-ignore */}
