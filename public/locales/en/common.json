@@ -830,5 +830,142 @@
         }
       }
     }
+  },
+  "GARA": {
+    "main": {
+      "header": "GARAGE Coin <span>GARA</span>",
+      "text1": "GARA is the token of our Coingarage exchange, which helps us develop the exchange ecosystem. This token was created with a fixed maximum of only 900 million units, and it cannot be increased. However, due to our burning mechanism, the number of GARA tokens will gradually decrease over time.",
+      "text2": "The main use of GARA is to pay for various fees on the exchange. When used to pay these fees, our users additionally receive a 20% discount on the amount of these fees. Furthermore, GARA serves as a form of reward for our users.",
+      "buyGARA": {
+        "header": "Buy GARA",
+        "totalTokens": "Total amount of GARA tokens",
+        "distributedTokens": "Total distributed GARA tokens",
+        "soldTokens": "Tokens sold",
+        "btnConnectWallet": "Connect Wallet",
+        "btnBuyGARA": "Buy GARA",
+        "buyWith": "Buy with",
+        "linkGoToLaunchapad": "Go to Launchpad",
+        "poweredBy": "Powered by"
+      }
+    },
+    "usage": {
+      "header": "GARA Planning Use",
+      "usage1": "Listing fees",
+      "usage2": "Fees from card transactions",
+      "usage3": "Required gas for transfer",
+      "usage4": "Success fee",
+      "usage5": "Withdrawal fee",
+      "usage6": "Gas fee for EEZY Trader",
+      "usage7": "Purchase fees",
+      "usage8": "Advertisement"
+    },
+    "burnMechanism": {
+      "header": "GARA Burn Mechanism",
+      "box1": {
+        "text": "Every month we burn 20% of GARA",
+        "subText": "on fees received"
+      },
+      "box2": {
+        "text": "Until 200 million GARA remains",
+        "subText": "  from the original 900 million."
+      }
+    },
+    "roadmap": {
+      "header": "Roadmap",
+      "btnBuyGARA": "Buy GARA",
+      "text1": "Exchange Started",
+      "text2": "GARA Created",
+      "text3": "Launched the Trading Robot EEZY Trader",
+      "text4": "Presale of GARA",
+      "text5": "Listing on Uniswap",
+      "text6": "GARA Listing on Coinmarketcap & Coingecko",
+      "text7": "Launch of GARA trading on Coingarage exchange",
+      "text8": "First GARA Airdrop",
+      "text9": "Application of GARA fees and GARA burning",
+      "text10": "Second GARA Airdrop",
+      "text11": "Staking and cash back in GARA",
+      "text12": "Crypto card and cash back in GARA"
+    },
+    "alocation": {
+      "header": "Allocation",
+      "IEO": {
+        "text": "50% (450M GARA)",
+        "subText": "IEO Public Presale"
+      },
+      "baseTeam": {
+        "text": "20% (180M GARA)",
+        "subText": "Founder Team"
+      },
+      "burnedAt": {
+        "text": "15% (135M GARA)",
+        "subText": "Will be burned 5/1/2024"
+      },
+      "angelInvestors": {
+        "text": "10% (90M GARA)",
+        "subText": "Angel Investors"
+      },
+      "marketing": {
+        "text": "5% (45M GARA)",
+        "subText": "Marketing new exchange users"
+      },
+      "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
+    },
+    "release": {
+      "header": "GARA Release for Team",
+      "subHeader": "180 Millions GARA",
+      "text": "The 180 million GARA allocated for the team will be released gradually, with 20% (36 million) being released each year over a period of 5 years.",
+      "box1": {
+        "text": "At the Presale Launch",
+        "subText": "20% (36M.)"
+      },
+      "box2": {
+        "text": "After 2 Years",
+        "subText": "20% (36M.)"
+      },
+      "box3": {
+        "text": "After 3 Years",
+        "subText": "20% (36M.)"
+      },
+      "box4": {
+        "text": "After 4 Years",
+        "subText": "20% (36M.)"
+      },
+      "box5": {
+        "text": "After 5 Years",
+        "subText": "20% (36M.)"
+      }
+    },
+    "IEO": {
+      "header": "IEO Public Presale",
+      "text1": "40% of the funds raised from the GARA presale will be used to build and improve the Coingarage platform in accordance with the business plan.",
+      "text2": "Another 40% will be used for marketing and building the Coingarage brand to ensure the exchange grows quickly and attracts as many users as possible. These users will utilize Coingarage's services and tools, paying with GARA, thus increasing its usage and accelerating its burn rate.",
+      "text3": "The remaining 20% of the funds raised will be kept in reserve for unexpected situations.",
+      "box": {
+        "address": "Contract Address",
+        "btnBuyWithUSDT": "Buy with USDT",
+        "btnBuyWithMatic": "Buy with Matic"
+      }
+    },
+    "GARArunning": {
+      "header": "GARA Runs on Polygon Blockchain",
+      "text": "Polygon (formerly known as Matic Network) is a blockchain platform that expands and enhances the Ethereum network. It has several advantages, including:",
+      "box1": {
+        "header": "Scalability",
+        "text": "Polygon enables fast and efficient scalability of the Ethereum network. Through so-called scaling layers, it can process many more transactions per second than the Ethereum base blockchain."
+      },
+      "box2": {
+        "header": "Low fees",
+        "text": "Thanks to scalability and transaction process optimization, Polygon offers low fees for transactions. This is advantageous for users who want to conduct frequent and inexpensive transactions."
+      },
+      "box3": {
+        "header": "Interoperability",
+        "text": "Polygon is compatible with Ethereum, that means that dApps and smart contracts developed for Ethereum can be easily transferred to Polygon. This allows developers to leverage Polygon's advantages without a need write a new code."
+      },
+      "box4": {
+        "header": "Security",
+        "text": "Polygon relies on the security of the Ethereum network and utilizes its Proof of Stake (PoS) consensus. This means that holders of the Polygon token can stake their tokens to help secure the network and earn rewards for doing so."
+      },
+      "btnGARAOnPolygon": "GARA on Polygonscanu"
+    }
   }
 }
