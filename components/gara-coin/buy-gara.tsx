@@ -1,7 +1,9 @@
 "use client"
 import { CoinInput } from "@/components/gara-coin/coin-input"
+import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
@@ -38,6 +40,29 @@ export function BuyGara() {
         <CoinInput coin="GARA" name="buy" type="number" coin="GARA" placeholder="0" className="mt-4 w-full" />
         <CoinInput coin="MATIC" name="buy" type="number" coin="MATIC" placeholder="0" className="mt-4 w-full" />
       </div>
+      <div className="mt-8 grid grid-cols-2 justify-between gap-4">
+        <Button variant="default">{t("btnConnectWallet")}</Button>
+        <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
+      </div>
+      <div className="mt-6 flex flex-row justify-between gap-2 px-4">
+        <p className="flex items-center">
+          {t("buyWith")}
+          <span className="mx-2 inline-flex">
+            <Image src="/icons/coins/usdt.png" width="18" height="18" alt="USDT" />
+          </span>
+          USDT
+        </p>
+        <span className="text-2xl leading-none">⟶</span>
+        <Button variant="link" size="sm" className="p-0">
+          {t("linkGoToLaunchapad")}
+        </Button>
+      </div>
+      <p className="mt-4 flex flex-row items-center justify-center">
+        <span className="leading-none">{t("poweredBy")}</span>
+        <span className="ml-2 inline-flex items-center">
+          <Image src="/icons/polygon.svg" width="84" height="16" alt="Polygon" />
+        </span>
+      </p>
     </section>
   )
 }
