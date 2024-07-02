@@ -11,8 +11,9 @@ export function CoinInput({
 }: {
   name: string
   coin: string
-  placeholder: string
+  placeholder?: string
   type: string
+  className?: string
 }) {
   return (
     <div className={cn("bg-g flex flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2", className)}>
