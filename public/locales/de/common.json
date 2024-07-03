@@ -760,9 +760,29 @@
              "text":"Welche Rechte und Pflichten hat ein stiller Gesellschafter?",
              "answer":"Der stille Gesellschafter hat das Recht, über unsere private Plattform Einsicht in alle veröffentlichten Geschäftsdokumente und Buchführungsaufzeichnungen der Unternehmen Coingarage Finance s.r.o. und Coingarage s.r.o. zu nehmen. Weiterhin hat er das Recht, über die private Plattform Kopien jeder Jahresabschlussrechnung, jeder Einkommenssteuererklärung einschließlich ihrer Anlagen und jedes Berichts des Wirtschaftsprüfers über die Prüfung des Jahresabschlusses der Firma Coingarage Finance s.r.o. zu erhalten, die während oder für die Dauer der Tätigkeit des stillen Gesellschafters im Unternehmen erstellt werden. Der stille Gesellschafter hat Anspruch auf einen Gewinnanteil in Höhe seines zum Zeitpunkt der Erstellung der Jahresabschlussrechnung erworbenen Anteils am ausgeschütteten Gewinn sowie auf jeden weiteren Gewinn, der gemäß der Entscheidung der Hauptversammlung der Firma Coingarage Finance s.r.o. zur Auszahlung bestimmt ist. Zusätzlich zu der ordnungsgemäßen Einzahlung und Verschwiegenheitspflicht ist die steuerliche Verpflichtung des stillen Gesellschafters, mögliche Einkünfte aus dem Gewinnanteil zu versteuern, nicht von der Firma Coingarage Finance s.r.o. gedeckt, noch erfasst sie die Firma Coingarage s.r.o. als stiller Gesellschafter, noch zahlt sie dafür."
           },
-          "question3":{
+          "question3": {
              "text":"Welche Vorteile hat ein stiller Gesellschafter gegenüber anderen Arten der Investition in Unternehmen?",
              "answer":"<ul><li>Teilnahme am Gewinn der Firma Coingarage Finance s.r.o. und am Gewinn aus einem möglichen Verkauf der Firma Coingarage s.r.o., wodurch ein höherer Gewinn erzielt werden kann als beispielsweise bei Anleihen, bei denen ein festgelegter jährlicher Prozentsatz des Ertrags garantiert ist.</li><li>Keine Eintritts- oder laufenden Gebühren, Investition direkt in das Projekt ohne Vermittler.</li><li>Möglichkeit, Einsicht in veröffentlichte Dokumente zu erhalten, die die Geschäftstätigkeit der Firma Coingarage Finance s.r.o. betreffen, über die private Plattform der Firma Coingarage Finance s.r.o.</li></ul>"
+          },
+          "question4": {
+            "text": "Wie kann ich ein stiller Begleiter werden?",
+            "answer": "Durch die Registrierung über unsere Privatanlegerplattform app.coingarage-finance.com. "
+          },
+          "question5": {
+            "text": "Wie ist der Verifizierungsprozess (KYC, AML usw.)?",
+            "answer": "Auch wenn wir kein Verpflichteter im Sinne der Bestimmungen des § 2 des Gesetzes Nr. 253/2008 Slg. über bestimmte Maßnahmen gegen die Legalisierung von Erträgen aus kriminellen Aktivitäten und der Finanzierung des Terrorismus in der jeweils gültigen Fassung sind (im Folgenden: als „AML Act“), d.h. dass wir keine Kundenidentifizierungs- und Kontrollpflichten nach dem AML Act anwenden, jedoch zum Schutz unseres Unternehmens, in das Sie investieren möchten, jeden stillen Gesellschafter anhand mindestens eines Ausweisdokuments identifizieren und eine grundlegende Hintergrundüberprüfung (PEP, internationale Sanktionen, negative Erwähnungen in den Medien usw.). "
+          },
+          "question6": {
+            "text": "Fallen bei der Einlage eines stillen Gesellschafters Gebühren an?",
+            "answer": "Alles ist kostenlos, Sie investieren direkt in das Projekt, ohne Zwischenhändler. "
+          },
+          "question7": {
+            "text": "Wann und unter welchen Voraussetzungen hat ein stiller Gesellschafter Anspruch auf eine Beteiligung am ausgeschütteten Gewinn?",
+            "answer": "Der Anspruch auf Gewinnauszahlung entsteht mit der Genehmigung durch die Hauptversammlung der Coingarage Finance s.r.o. "
+          },
+          "question8": {
+            "text": "Wie lange läuft der Stille Beteiligungsvertrag?",
+            "answer": "Der Investitionsvertrag für stille Gesellschafter hat eine Laufzeit von 7 Jahren. Es wird davon ausgegangen, dass die Entwicklungsphase abgeschlossen ist und das Wachstum von Coingarage s.r.o. "
           }
        },
        "visionQuestions":{
