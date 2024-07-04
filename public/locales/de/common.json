@@ -490,325 +490,345 @@
     }
   },
   "finance": {
-    "main":{
-       "text1":"Investieren Sie in",
-       "text2":"Das am schnellsten wachsende Industrie",
-       "text3":"Der Welt",
-       "subText":"Der Markt für digitale Währungen und Blockchain-Technologie ist heute das am schnellsten wachsende Industrie. Jetzt haben Sie eine einzigartige Gelegenheit, in diesen Bereich zu investieren und ein stiller Partner einer globalen Kryptowährungsbörse zu werden.",
-       "exchangeBtn":"Treten Sie der Börse bei",
-       "shareholderBtn":"Stiller Partner werden"
+    "main": {
+      "text1": "Investieren Sie in",
+      "text2": "Das am schnellsten wachsende Industrie",
+      "text3": "Der Welt",
+      "subText": "Der Markt für digitale Währungen und Blockchain-Technologie ist heute das am schnellsten wachsende Industrie. Jetzt haben Sie eine einzigartige Gelegenheit, in diesen Bereich zu investieren und ein stiller Partner einer globalen Kryptowährungsbörse zu werden.",
+      "exchangeBtn": "Treten Sie der Börse bei",
+      "shareholderBtn": "Stiller Partner werden"
     },
-    "developement":{
-       "header":"Aktuelle Entwicklung der Coingarage Börse",
-       "subtext":"Coingarage ist eine neue europäische Kryptowährungsbörse, die 2022 vom Unternehmer Ota Janda gegründet wurde. Nach einem Jahr der Vorbereitung und Entwicklung der notwendigen Software haben wir die Börse im Januar 2023 gestartet. Seitdem haben wir viele neue Funktionen für unsere Benutzer hinzugefügt und entwickeln sie weiter.",
-       "done":"Fertig",
-       "developement":"In Entwicklung",
-       "planned":"Geplant",
-       "list":{
-          "box1":"Handel 1.0",
-          "box2":"Handels-Bot",
-          "box3":"Mobile App",
-          "box4":"GARA Coin",
-          "box5":"Coin-Listing",
-          "box6":"Empfehlung",
-          "box7":"Bitcoin-Sparen",
-          "box8":"Handel 2.0",
-          "box9":"Akademie",
-          "box10":"Verzinsung",
-          "box11":"NFTs",
-          "box12":"Krypto-Karte"
-       }
+    "developement": {
+      "header": "Aktuelle Entwicklung der Coingarage Börse",
+      "subtext": "Coingarage ist eine neue europäische Kryptowährungsbörse, die 2022 vom Unternehmer Ota Janda gegründet wurde. Nach einem Jahr der Vorbereitung und Entwicklung der notwendigen Software haben wir die Börse im Januar 2023 gestartet. Seitdem haben wir viele neue Funktionen für unsere Benutzer hinzugefügt und entwickeln sie weiter.",
+      "done": "Fertig",
+      "developement": "In Entwicklung",
+      "planned": "Geplant",
+      "list": {
+        "box1": "Handel 1.0",
+        "box2": "Handels-Bot",
+        "box3": "Mobile App",
+        "box4": "GARA Coin",
+        "box5": "Coin-Listing",
+        "box6": "Empfehlung",
+        "box7": "Bitcoin-Sparen",
+        "box8": "Handel 2.0",
+        "box9": "Akademie",
+        "box10": "Verzinsung",
+        "box11": "NFTs",
+        "box12": "Krypto-Karte"
+      }
     },
-    "estimatedValuation":{
-       "header":"Geschätzter Unternehmenswert im Jahr 2030",
-       "subText":"Zur Berechnung des Unternehmenswerts verwenden wir Referenzen und Bewertungsbeispiele von konkurrierenden Börsen weltweit sowie den anerkannten Indikator EBITDA.",
-       "estimated":{
-          "text1":"2,4 Milliarden USD",
-          "text2":"Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2,5 Millionen Nutzern in 6 Jahren.",
-          "investBtn":"Jetzt investieren"
-       },
-       "tableHeader":"Bewertung der Konkurrenz",
-       "table":{
-          "header":{
-             "column1":"Börse",
-             "column2":"Anzahl der Nutzer",
-             "column3":"Unternehmenswert"
+    "estimatedValuation": {
+      "header": "Geschätzter Unternehmenswert im Jahr 2030",
+      "subText": "Zur Berechnung des Unternehmenswerts verwenden wir Referenzen und Bewertungsbeispiele von konkurrierenden Börsen weltweit sowie den anerkannten Indikator EBITDA.",
+      "estimated": {
+        "text1": "2,4 Milliarden USD",
+        "text2": "Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2,5 Millionen Nutzern in 6 Jahren.",
+        "investBtn": "Jetzt investieren"
+      },
+      "tableHeader": "Bewertung der Konkurrenz",
+      "table": {
+        "header": {
+          "column1": "Börse",
+          "column2": "Anzahl der Nutzer",
+          "column3": "Unternehmenswert"
+        },
+        "rows": {
+          "row1": {
+            "exchange": "Gemini",
+            "users": "2 Millionen",
+            "value": "7 Milliarden Dollar"
           },
-          "rows":{
-             "row1":{
-                "exchange":"Gemini",
-                "users":"2 Millionen",
-                "value":"7 Milliarden Dollar"
-             },
-             "row2":{
-                "exchange":"Kraken",
-                "users":"9 Millionen",
-                "value":"20 Milliarden Dollar"
-             },
-             "row3":{
-                "exchange":"BYBIT",
-                "users":"15 Millionen",
-                "value":"19 Milliarden Dollar"
-             },
-             "row4":{
-                "exchange":"KuCoin",
-                "users":"20 Millionen",
-                "value":"20 Milliarden Dollar"
-             },
-             "row5":{
-                "exchange":"Coinbase",
-                "users":"56 Millionen",
-                "value":"100 Milliarden Dollar"
-             },
-             "row6":{
-                "exchange":"Binance",
-                "users":"120 Millionen",
-                "value":"300 Milliarden Dollar"
-             }
+          "row2": {
+            "exchange": "Kraken",
+            "users": "9 Millionen",
+            "value": "20 Milliarden Dollar"
+          },
+          "row3": {
+            "exchange": "BYBIT",
+            "users": "15 Millionen",
+            "value": "19 Milliarden Dollar"
+          },
+          "row4": {
+            "exchange": "KuCoin",
+            "users": "20 Millionen",
+            "value": "20 Milliarden Dollar"
+          },
+          "row5": {
+            "exchange": "Coinbase",
+            "users": "56 Millionen",
+            "value": "100 Milliarden Dollar"
+          },
+          "row6": {
+            "exchange": "Binance",
+            "users": "120 Millionen",
+            "value": "300 Milliarden Dollar"
           }
-       }
+        }
+      }
     },
-    "revolution":{
-       "header":"Auf welcher Seite dieser neuen technologischen Revolution möchten Sie stehen?",
-       "negativeClaims":{
-          "claim1":{
-             "text":"<grey>2017:</grey> „Kryptowährung ist einfach keine reale Sache, sie wird letztendlich abgeschafft.“",
-             "name":"Jamie Dimon"
-          },
-          "claim2":{
-             "text":"<grey>1997:</grey> „Es gibt keinen Grund, warum jemand einen Computer zu Hause haben möchte.“",
-             "name":"Ken Olsen, Mitbegründer der Digital Equipment Corporation"
-          },
-          "claim3":{
-             "text":"<grey>1995:</grey> „Ich prognostiziere, dass das Internet bald spektakulär explodieren und 1996 katastrophal zusammenbrechen wird“",
-             "name":"Robert Metcalfe (Erfinder des Ethernets)"
-          },
-          "claim4":{
-             "text":"<grey>1989:</grey> „Wir werden niemals in der Lage sein, ein 32-Bit-Betriebssystem zu erstellen.“",
-             "name":"Bill Gates, Gründer von Microsoft"
-          },
-          "claim5":{
-             "text":"<grey>1961:</grey> „Es besteht praktisch keine Chance, dass Kommunikationssatelliten dazu verwendet werden, bessere Telefon-, Telegrafen-, Fernseh- oder Rundfunkdienste in den USA bereitzustellen.“",
-             "name":"T.A.M. Craven, FCC-Kommissar"
-          },
-          "claim6":{
-             "text":"<grey>1946:</grey> „Das Fernsehen wird keinen Markt halten können, den es gewinnt, nach den ersten sechs Monaten werden die Leute es leid sein, jeden Abend auf eine Holzkiste zu starren.“",
-             "name":"Darryl Zanuck, 20th Century Fox"
-          },
-          "claim7":{
-             "text":"<grey>1903:</grey> „Das Pferd wird bleiben, das Auto ist nur eine Neuheit – eine Modeerscheinung.“",
-             "name":"Präsident der Michigan Bank"
-          }
-       },
-       "positiveClaims":{
-          "claim1":{
-             "text":"<primary>Aktuell:</primary> „Die Struktur von Bitcoin ist sehr erfinderisch. Papiergeld verschwindet und Kryptowährungen sind ein viel besserer Weg, um Wert zu übertragen als ein Stück Papier.“",
-             "name":"Elon Musk, Gründer von Tesla und SpaceX"
-          },
-          "claim2":{
-             "text":"<primary>Aktuell:</primary> „Im Kern basieren Kryptowährungen auf dem Prinzip eines universellen, unveränderlichen Hauptbuchs, das vollständig öffentlich ist und ständig von diesen leistungsstarken Computern verifiziert wird, wobei jeder von ihnen im Wesentlichen unabhängig von den anderen handelt.“",
-             "name":"Paul Vigna, Reporter des Wall Street Journal"
-          },
-          "claim3":{
-             "text":"<primary>Aktuell:</primary> „Wenn dezentrale Blockchain-Protokolle beginnen, zentrale Webdienste zu verdrängen, die das heutige Internet dominieren, werden wir echte, auf dem Internet basierende Souveränität erleben. Die Zukunft des Internets wird dezentralisiert sein.“",
-             "name":"Olaf Carlson-Wee"
-          },
-          "claim4":{
-             "text":"<primary>Aktuell:</primary> „Der Grund, warum wir alle in Krypto sind, ist, dass das aktuelle Finanzsystem veraltet ist.“",
-             "name":"Charlie Shrem, Gründer und CEO von Bitinstant"
-          },
-          "claim5":{
-             "text":"<primary>Aktuell:</primary> „Blockchain ist eine Technologie. Bitcoin ist nur die erste große Manifestation ihres Potenzials.“",
-             "name":"Marc Kenigsber"
-          },
-          "claim6":{
-             "text":"<primary>Aktuell:</primary> „Was gerade passiert, wäre der Traum des Nobelpreisträgers für Wirtschaft Robert Mundell: ein globales Währungssystem einzuführen, das nicht der Kontrolle eines einzelnen Individuums unterliegt.“",
-             "name":"Cathie Wood, CEO von Ark Invest"
-          }
-       },
-       "ps":"<bold>PS:</bold> Trotz der Kritik an Bitcoin von Jamie Dimon hat sich die Haltung von JPMorgan geändert, die Bank ist jetzt im Bereich Kryptowährungen und Blockchain-Technologie tätig. Sie haben sogar ihr eigenes auf Blockchain basierendes Zahlungssystem namens JPM Coin entwickelt."
+    "revolution": {
+      "header": "Auf welcher Seite dieser neuen technologischen Revolution möchten Sie stehen?",
+      "negativeClaims": {
+        "claim1": {
+          "text": "<grey>2017:</grey> „Kryptowährung ist einfach keine reale Sache, sie wird letztendlich abgeschafft.“",
+          "name": "Jamie Dimon"
+        },
+        "claim2": {
+          "text": "<grey>1997:</grey> „Es gibt keinen Grund, warum jemand einen Computer zu Hause haben möchte.“",
+          "name": "Ken Olsen, Mitbegründer der Digital Equipment Corporation"
+        },
+        "claim3": {
+          "text": "<grey>1995:</grey> „Ich prognostiziere, dass das Internet bald spektakulär explodieren und 1996 katastrophal zusammenbrechen wird“",
+          "name": "Robert Metcalfe (Erfinder des Ethernets)"
+        },
+        "claim4": {
+          "text": "<grey>1989:</grey> „Wir werden niemals in der Lage sein, ein 32-Bit-Betriebssystem zu erstellen.“",
+          "name": "Bill Gates, Gründer von Microsoft"
+        },
+        "claim5": {
+          "text": "<grey>1961:</grey> „Es besteht praktisch keine Chance, dass Kommunikationssatelliten dazu verwendet werden, bessere Telefon-, Telegrafen-, Fernseh- oder Rundfunkdienste in den USA bereitzustellen.“",
+          "name": "T.A.M. Craven, FCC-Kommissar"
+        },
+        "claim6": {
+          "text": "<grey>1946:</grey> „Das Fernsehen wird keinen Markt halten können, den es gewinnt, nach den ersten sechs Monaten werden die Leute es leid sein, jeden Abend auf eine Holzkiste zu starren.“",
+          "name": "Darryl Zanuck, 20th Century Fox"
+        },
+        "claim7": {
+          "text": "<grey>1903:</grey> „Das Pferd wird bleiben, das Auto ist nur eine Neuheit – eine Modeerscheinung.“",
+          "name": "Präsident der Michigan Bank"
+        }
+      },
+      "positiveClaims": {
+        "claim1": {
+          "text": "<primary>Aktuell:</primary> „Die Struktur von Bitcoin ist sehr erfinderisch. Papiergeld verschwindet und Kryptowährungen sind ein viel besserer Weg, um Wert zu übertragen als ein Stück Papier.“",
+          "name": "Elon Musk, Gründer von Tesla und SpaceX"
+        },
+        "claim2": {
+          "text": "<primary>Aktuell:</primary> „Im Kern basieren Kryptowährungen auf dem Prinzip eines universellen, unveränderlichen Hauptbuchs, das vollständig öffentlich ist und ständig von diesen leistungsstarken Computern verifiziert wird, wobei jeder von ihnen im Wesentlichen unabhängig von den anderen handelt.“",
+          "name": "Paul Vigna, Reporter des Wall Street Journal"
+        },
+        "claim3": {
+          "text": "<primary>Aktuell:</primary> „Wenn dezentrale Blockchain-Protokolle beginnen, zentrale Webdienste zu verdrängen, die das heutige Internet dominieren, werden wir echte, auf dem Internet basierende Souveränität erleben. Die Zukunft des Internets wird dezentralisiert sein.“",
+          "name": "Olaf Carlson-Wee"
+        },
+        "claim4": {
+          "text": "<primary>Aktuell:</primary> „Der Grund, warum wir alle in Krypto sind, ist, dass das aktuelle Finanzsystem veraltet ist.“",
+          "name": "Charlie Shrem, Gründer und CEO von Bitinstant"
+        },
+        "claim5": {
+          "text": "<primary>Aktuell:</primary> „Blockchain ist eine Technologie. Bitcoin ist nur die erste große Manifestation ihres Potenzials.“",
+          "name": "Marc Kenigsber"
+        },
+        "claim6": {
+          "text": "<primary>Aktuell:</primary> „Was gerade passiert, wäre der Traum des Nobelpreisträgers für Wirtschaft Robert Mundell: ein globales Währungssystem einzuführen, das nicht der Kontrolle eines einzelnen Individuums unterliegt.“",
+          "name": "Cathie Wood, CEO von Ark Invest"
+        }
+      },
+      "ps": "<bold>PS:</bold> Trotz der Kritik an Bitcoin von Jamie Dimon hat sich die Haltung von JPMorgan geändert, die Bank ist jetzt im Bereich Kryptowährungen und Blockchain-Technologie tätig. Sie haben sogar ihr eigenes auf Blockchain basierendes Zahlungssystem namens JPM Coin entwickelt."
     },
-    "oppurtunities":{
-       "header":"Aktuelle Investitionsmöglichkeiten ab 10.000 CZK",
-       "subtext":"Wir haben die erste Investitionsrunde eröffnet, die nur für Einzelpersonen bestimmt ist. Weitere Runden, die folgen werden, sind nur für Investmentgesellschaften vorgesehen.",
-       "bonuses":"Bonusse zu Ihrer Investition",
-       "investment1":"Ab 50.000 CZK erhalten Sie *GARA Coin im Wert von 50% Ihrer Investition.",
-       "investment2":"Ab 100.000 CZK erhalten Sie *GARA Coin im Wert von 100% Ihrer Investition.",
-       "round1":"1. Runde",
-       "money":"141M CZK",
-       "shareholderBtn":"Stiller Partner werden"
+    "oppurtunities": {
+      "header": "Aktuelle Investitionsmöglichkeiten ab 10.000 CZK",
+      "subtext": "Wir haben die erste Investitionsrunde eröffnet, die nur für Einzelpersonen bestimmt ist. Weitere Runden, die folgen werden, sind nur für Investmentgesellschaften vorgesehen.",
+      "bonuses": "Bonusse zu Ihrer Investition",
+      "investment1": "Ab 50.000 CZK erhalten Sie *GARA Coin im Wert von 50% Ihrer Investition.",
+      "investment2": "Ab 100.000 CZK erhalten Sie *GARA Coin im Wert von 100% Ihrer Investition.",
+      "round1": "1. Runde",
+      "money": "141M CZK",
+      "shareholderBtn": "Stiller Partner werden"
     },
-    "simpleSteps":{
-       "header":"Investieren Sie einfach in 5 Schritten",
-       "subtext":"Coingarage ist ein globales Projekt und wir möchten daher Investitionsmöglichkeiten nicht auf ein Land oder eine Region beschränken. In Zusammenarbeit mit Rechtsexperten und Partnern haben wir ein einfaches Fünf-Schritte-System entwickelt, das es jedem ermöglicht, bequem von zu Hause aus überall auf der Welt zu investieren. Nach der Kontoerstellung erhält jeder Investor Zugang zu unserer Investitionsplattform, auf der sie ihre Investition verwalten und neue Informationen über die Projektentwicklung erhalten können.",
-       "box1":"Registrierung",
-       "box2":"Persönliche Informationen",
-       "box3":"KYC",
-       "box4":"Vertrag",
-       "box5":"Zahlung",
-       "download":"Vorlagenvertrag herunterladen"
+    "simpleSteps": {
+      "header": "Investieren Sie einfach in 5 Schritten",
+      "subtext": "Coingarage ist ein globales Projekt und wir möchten daher Investitionsmöglichkeiten nicht auf ein Land oder eine Region beschränken. In Zusammenarbeit mit Rechtsexperten und Partnern haben wir ein einfaches Fünf-Schritte-System entwickelt, das es jedem ermöglicht, bequem von zu Hause aus überall auf der Welt zu investieren. Nach der Kontoerstellung erhält jeder Investor Zugang zu unserer Investitionsplattform, auf der sie ihre Investition verwalten und neue Informationen über die Projektentwicklung erhalten können.",
+      "box1": "Registrierung",
+      "box2": "Persönliche Informationen",
+      "box3": "KYC",
+      "box4": "Vertrag",
+      "box5": "Zahlung",
+      "download": "Vorlagenvertrag herunterladen"
     },
-    "yourValuation":{
-       "header":"Geschätzter Wert Ihrer Investition (Modellbeispiel)",
-       "investment":"Investition",
-       "table":{
-          "header":{
-             "column1":"Info",
-             "column2":"1. Runde",
-             "column3":"2. Runde",
-             "column4":"3. Runde"
-          },
-          "rows":{
-             "row1":"Anteil am verteilten Gewinn:",
-             "row2":"Gewinn von Coingarage Finance s.r.o.:",
-             "row3":"Rendite:",
-             "row4":"Gesamtbetrag wird ausgezahlt:"
-          },
-          "concluision":"Das Modell berechnet den Wert von Coingarage s.r.o. basierend auf einem geschätzten Wert von 2,4 Billionen USD. Das Modell garantiert nicht die Erreichung der gewählten Investitionsrendite und birgt wie jede Investition erhebliche Risiken. Die erwartete Rendite wird in CZK, EUR oder USD ausgezahlt, mit einem Exit im Jahr 2030."
-       },
-       "table2":{
-          "header":"Möchten Sie weitere Informationen erhalten?",
-          "subtext":"Senden Sie uns Ihre E-Mail und Telefonnummer, und unser Vertriebsmitarbeiter wird Sie kontaktieren und alle Ihre Fragen beantworten.",
-          "placeholder1":"Voller Name",
-          "placeholder2":"Telefonnummer",
-          "placeholder3":"E-Mail",
-          "sendBtn":"Senden"
-       },
-       "subheader":"Wie erreichen wir so hohe Investitionsrenditen?",
-       "subtext1":"Die Börse handelt nicht selbst mit Vermögenswerten, sondern verdient Geld durch Gebühren für die Vermittlung von Transaktionen, den Transfer von Vermögenswerten und andere Dienstleistungen. Sie ist daher nicht direkt von Marktbedingungen abhängig und verdient sowohl bei steigenden als auch bei fallenden Assetpreisen. Darüber hinaus hat der Kryptowährungsmarkt im Gegensatz zu anderen Börsen keine begrenzten Öffnungszeiten und schließt nicht am Wochenende. Der Handel mit digitalen Währungen findet global und rund um die Uhr statt.",
-       "subtext2":"Der Kryptowährungsmarkt ist heute auch der am schnellsten wachsende Markt, der in den letzten 6 Jahren durchschnittlich um 56,4 % pro Jahr gewachsen ist. Dies beeinflusst den Zufluss neuer Kapitalströme erheblich und hat einen stark positiven Einfluss auf alle Unternehmen in dieser Branche. Dadurch können wir schnell wachsen und eine Rendite von 1100 % erzielen. Diese Daten sowie alle Berechnungen in der Präsentation basieren auf aktuellen und historischen Daten von Wettbewerbern und sind das Ergebnis standardmäßiger wirtschaftlicher Berechnungen.",
-       "investBtn":"Investieren starten"
+    "yourValuation": {
+      "header": "Geschätzter Wert Ihrer Investition (Modellbeispiel)",
+      "investment": "Investition",
+      "table": {
+        "header": {
+          "column1": "Info",
+          "column2": "1. Runde",
+          "column3": "2. Runde",
+          "column4": "3. Runde"
+        },
+        "rows": {
+          "row1": "Anteil am verteilten Gewinn:",
+          "row2": "Gewinn von Coingarage Finance s.r.o.:",
+          "row3": "Rendite:",
+          "row4": "Gesamtbetrag wird ausgezahlt:"
+        },
+        "concluision": "Das Modell berechnet den Wert von Coingarage s.r.o. basierend auf einem geschätzten Wert von 2,4 Billionen USD. Das Modell garantiert nicht die Erreichung der gewählten Investitionsrendite und birgt wie jede Investition erhebliche Risiken. Die erwartete Rendite wird in CZK, EUR oder USD ausgezahlt, mit einem Exit im Jahr 2030."
+      },
+      "table2": {
+        "header": "Möchten Sie weitere Informationen erhalten?",
+        "subtext": "Senden Sie uns Ihre E-Mail und Telefonnummer, und unser Vertriebsmitarbeiter wird Sie kontaktieren und alle Ihre Fragen beantworten.",
+        "placeholder1": "Voller Name",
+        "placeholder2": "Telefonnummer",
+        "placeholder3": "E-Mail",
+        "sendBtn": "Senden"
+      },
+      "subheader": "Wie erreichen wir so hohe Investitionsrenditen?",
+      "subtext1": "Die Börse handelt nicht selbst mit Vermögenswerten, sondern verdient Geld durch Gebühren für die Vermittlung von Transaktionen, den Transfer von Vermögenswerten und andere Dienstleistungen. Sie ist daher nicht direkt von Marktbedingungen abhängig und verdient sowohl bei steigenden als auch bei fallenden Assetpreisen. Darüber hinaus hat der Kryptowährungsmarkt im Gegensatz zu anderen Börsen keine begrenzten Öffnungszeiten und schließt nicht am Wochenende. Der Handel mit digitalen Währungen findet global und rund um die Uhr statt.",
+      "subtext2": "Der Kryptowährungsmarkt ist heute auch der am schnellsten wachsende Markt, der in den letzten 6 Jahren durchschnittlich um 56,4 % pro Jahr gewachsen ist. Dies beeinflusst den Zufluss neuer Kapitalströme erheblich und hat einen stark positiven Einfluss auf alle Unternehmen in dieser Branche. Dadurch können wir schnell wachsen und eine Rendite von 1100 % erzielen. Diese Daten sowie alle Berechnungen in der Präsentation basieren auf aktuellen und historischen Daten von Wettbewerbern und sind das Ergebnis standardmäßiger wirtschaftlicher Berechnungen.",
+      "investBtn": "Investieren starten"
     },
-    "taxHeavens":{
-       "header":"Nicht in Steueroasen, sondern direkt im Herzen Europas.",
-       "subtext1":"Die meisten heutigen Kryptowährungsbörsen befinden sich in Steueroasen und außerhalb der Gerichtsbarkeit der EU-Gesetze. Unsere Börse befindet sich direkt im Herzen Europas in der Tschechischen Republik und unterliegt den lokalen und europäischen Gesetzen und Vorschriften für den Handel mit Kryptowährungen.",
-       "subtext2":"Unser Ziel ist es, zum Ausgleich des digitalen Währungsmarkts beizutragen und allen Benutzern in Europa eine sichere und regulierte Umgebung für ihre Transaktionen zu bieten. Daher arbeiten wir mit Rechtsanwälten und Experten für die Regulierung von Kryptowährungen zusammen und bereiten uns aktiv auf die neue europäische MiCA-Regulierung vor."
+    "taxHeavens": {
+      "header": "Nicht in Steueroasen, sondern direkt im Herzen Europas.",
+      "subtext1": "Die meisten heutigen Kryptowährungsbörsen befinden sich in Steueroasen und außerhalb der Gerichtsbarkeit der EU-Gesetze. Unsere Börse befindet sich direkt im Herzen Europas in der Tschechischen Republik und unterliegt den lokalen und europäischen Gesetzen und Vorschriften für den Handel mit Kryptowährungen.",
+      "subtext2": "Unser Ziel ist es, zum Ausgleich des digitalen Währungsmarkts beizutragen und allen Benutzern in Europa eine sichere und regulierte Umgebung für ihre Transaktionen zu bieten. Daher arbeiten wir mit Rechtsanwälten und Experten für die Regulierung von Kryptowährungen zusammen und bereiten uns aktiv auf die neue europäische MiCA-Regulierung vor."
     },
-    "partnersImages":{
-       "header":"Partner",
-       "infoBtn":"Klicken Sie hier für weitere Informationen"
+    "partnersImages": {
+      "header": "Partner",
+      "infoBtn": "Klicken Sie hier für weitere Informationen"
     },
-    "partnersMain":{
-       "partner1":{
-          "header":"Blockchain Legal",
-          "subtext":"Anwälte, die Rechtsdienstleistungen im Bereich digitaler Technologien, Blockchain und Kryptowährungen (Bitcoin, Litecoin, Ethereum, Monero und andere) anbieten. Sie unterstützen uns bei der gesamten Compliance-Agenda (Einhaltung rechtlicher Standards). In Zusammenarbeit mit ihnen haben wir bereits Schritte unternommen, um eine MiCA-Lizenz zu erhalten."
-       },
-       "partner2":{
-          "header":"FINROCK GLOBAL LTD",
-          "subtext":"Mit Sitz in London bietet Finrock uns umfassende Dienstleistungen für die Verwahrung digitaler Vermögenswerte mit militärischer Verschlüsselung."
-       },
-       "partner3":{
-          "header":"Simplex by NUVEI",
-          "subtext":"Stärkt die Kryptoindustrie mit einer vollständigen Fiat-Infrastruktur. Dank der Zusammenarbeit mit diesem Unternehmen ist es möglich, Kryptowährungen direkt mit FIAT über Kreditkarten auf Coingarage zu kaufen."
-       },
-       "partner4":{
-          "header":"ZEN",
-          "subtext":"Bietet Dienstleistungen im Bereich digitaler Zahlungen und finanzieller Transaktionen einschließlich Zahlungsgateway an. Es bietet eine Vielzahl von Funktionen und Produkten, die darauf abzielen, Online-Zahlungen für Einzelpersonen und Unternehmen zu vereinfachen und zu beschleunigen. Die Zusammenarbeit mit ZEN.COM ermöglichte uns die Erstellung einer EUR-Wallet und eines EUR/BTC-Handelspaars. Gleichzeitig können Sie dank seiner Dienste EUR zu Coingarage überweisen und abheben."
-       },
-       "partner5":{
-          "header":"EFFECTIVE SOLUTIONS PRIVATE LIMITED",
-          "subtext":"Mit Hauptsitz in Delhi (Indien) und Verkaufsbüros im Vereinigten Königreich und den Vereinigten Arabischen Emiraten verfügt Efficacious über mehr als ein Jahrzehnt Erfahrung in der Bereitstellung von IT- und Blockchain-Dienstleistungen für Unternehmen weltweit. Ihre Dienstleistungen reichen von der Unternehmensberatung bis zur Umsetzung komplexer Blockchain-Lösungen, einschließlich umfangreicher technischer Unterstützung."
-       },
-       "partner6":{
-          "header":"Creative Heroes",
-          "subtext":"Eine Kreativagentur mit einem ungewöhnlichen Ansatz im Marketing. Wir sind für alle da, die gute Ideen, Leistung, Innovation und Originalität suchen! Creative Heroes steht hinter der Marke Coingarage. Gemeinsam planen wir Marketingkampagnen zur Markenbildung, aber auch Performance-Kampagnen im Bereich SM, SEO, PPC, E-Mail-Marketing. Wir vergessen auch nicht das Eventmarketing und die Unterstützung von Influencern. Wir möchten gemeinsam als wichtiger Partner europäischer Organisationen in die Bereiche Sport und Kultur einsteigen."
-       },
-       "exchangeBtn":"Betreten Sie die Börse"
+    "partnersMain": {
+      "partner1": {
+        "header": "Blockchain Legal",
+        "subtext": "Anwälte, die Rechtsdienstleistungen im Bereich digitaler Technologien, Blockchain und Kryptowährungen (Bitcoin, Litecoin, Ethereum, Monero und andere) anbieten. Sie unterstützen uns bei der gesamten Compliance-Agenda (Einhaltung rechtlicher Standards). In Zusammenarbeit mit ihnen haben wir bereits Schritte unternommen, um eine MiCA-Lizenz zu erhalten."
+      },
+      "partner2": {
+        "header": "FINROCK GLOBAL LTD",
+        "subtext": "Mit Sitz in London bietet Finrock uns umfassende Dienstleistungen für die Verwahrung digitaler Vermögenswerte mit militärischer Verschlüsselung."
+      },
+      "partner3": {
+        "header": "Simplex by NUVEI",
+        "subtext": "Stärkt die Kryptoindustrie mit einer vollständigen Fiat-Infrastruktur. Dank der Zusammenarbeit mit diesem Unternehmen ist es möglich, Kryptowährungen direkt mit FIAT über Kreditkarten auf Coingarage zu kaufen."
+      },
+      "partner4": {
+        "header": "ZEN",
+        "subtext": "Bietet Dienstleistungen im Bereich digitaler Zahlungen und finanzieller Transaktionen einschließlich Zahlungsgateway an. Es bietet eine Vielzahl von Funktionen und Produkten, die darauf abzielen, Online-Zahlungen für Einzelpersonen und Unternehmen zu vereinfachen und zu beschleunigen. Die Zusammenarbeit mit ZEN.COM ermöglichte uns die Erstellung einer EUR-Wallet und eines EUR/BTC-Handelspaars. Gleichzeitig können Sie dank seiner Dienste EUR zu Coingarage überweisen und abheben."
+      },
+      "partner5": {
+        "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
+        "subtext": "Mit Hauptsitz in Delhi (Indien) und Verkaufsbüros im Vereinigten Königreich und den Vereinigten Arabischen Emiraten verfügt Efficacious über mehr als ein Jahrzehnt Erfahrung in der Bereitstellung von IT- und Blockchain-Dienstleistungen für Unternehmen weltweit. Ihre Dienstleistungen reichen von der Unternehmensberatung bis zur Umsetzung komplexer Blockchain-Lösungen, einschließlich umfangreicher technischer Unterstützung."
+      },
+      "partner6": {
+        "header": "Creative Heroes",
+        "subtext": "Eine Kreativagentur mit einem ungewöhnlichen Ansatz im Marketing. Wir sind für alle da, die gute Ideen, Leistung, Innovation und Originalität suchen! Creative Heroes steht hinter der Marke Coingarage. Gemeinsam planen wir Marketingkampagnen zur Markenbildung, aber auch Performance-Kampagnen im Bereich SM, SEO, PPC, E-Mail-Marketing. Wir vergessen auch nicht das Eventmarketing und die Unterstützung von Influencern. Wir möchten gemeinsam als wichtiger Partner europäischer Organisationen in die Bereiche Sport und Kultur einsteigen."
+      },
+      "exchangeBtn": "Betreten Sie die Börse"
     },
-    "investorPlatform":{
-       "header":"Vorschau der Investorenplattform",
-       "createAccountBtn":"Konto erstellen"
+    "investorPlatform": {
+      "header": "Vorschau der Investorenplattform",
+      "createAccountBtn": "Konto erstellen"
     },
-    "faq":{
-       "header":"Häufig gestellte Fragen",
-       "section1":"Allgemeine Fragen",
-       "section2":"Stille Partnerschaft",
-       "section3":"Vision",
-       "section4":"Sonstiges",
-       "generalQuestions":{
-          "question1":{
-             "text":"Was ist der Mindestbetrag, den ich investieren kann?",
-             "answer":"Die Mindestinvestitionssumme beträgt 10.000 CZK (oder den Gegenwert in einer anderen Währung), was einem Anteil von 0,00075% am ausgeschütteten Gewinn der Firma Coingarage Finance s.r.o. entspricht."
-          },
-          "question2":{
-             "text":"Was bedeutet ausgeschütteter Gewinn?",
-             "answer":"Der ausgeschüttete Gewinn beträgt 90 % des Gesamtgewinns der Firma Coingarage Finance s.r.o. Die restlichen 10 % gehören dem Team der Firma Coingarage s.r.o."
-          },
-          "question3":{
-             "text":"Unterliegt dieses Projekt der Aufsicht der Tschechischen Nationalbank?",
-             "answer":"Eine stille Gesellschaft fällt unter Vertragsverhältnisse. Der vorgelegte Geschäftsplan und die Vertragsbeziehungen unterliegen nicht der materiellen Zuständigkeit des Gesetzes Nr. 240/2013 Slg. über Investmentgesellschaften und Investmentfonds sowie Änderungen (im Folgenden „ZISIF“), da es sich um eine Aktivität handelt, die darauf abzielt, Mittel zur Finanzierung von Geschäftsaktivitäten anderer als finanzieller Art zu sammeln, wodurch die Bedingungen für die so genannte Entwicklungsausnahme gemäß § 2 ZISIF erfüllt sind und auch die betreffende Tätigkeit – das Angebot zum Abschluss eines Vertrags über eine stille Gesellschaft – nicht als öffentliches Angebot gemäß den Bestimmungen des Gesetzes Nr. 256/2004 Slg., über das Kapitalmarktgeschäft (im Folgenden „ZPKT“) angesehen wird, und ist auch kein Finanzinstrument im Sinne von § 3 ZPKT. In Anbetracht der oben beschriebenen Tätigkeit unterliegt die Firma nicht der Aufsicht der Tschechischen Nationalbank."
-          },
-          "question4":{
-             "text":"Was ist der beabsichtigte Wert der Firma Coingarage s.r.o.?",
-             "answer":"Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 10 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
-          },
-          "question5":{
-             "text":"Wofür dient und was ist Coingarage Finance s.r.o. eigentlich?",
-             "answer":"Coingarage Finance s.r.o. dient als rechtliche Sicherheit dafür, dass bei einem möglichen zukünftigen Verkauf der Firma Coingarage s.r.o. auch die Investoren durch den stillen Partner profitieren werden. Wenn der stille Partner Geld direkt in die Coingarage s.r.o. investiert, könnte ihm gesetzlich kein Anteil am Verkaufserlös der Coingarage s.r.o. ausgezahlt werden, sondern nur ein Anteil am Gewinn der Coingarage s.r.o. während des regulären Geschäftsbetriebs. Dank dieses Modells erhält der stille Partner sowohl einen Gewinnanteil als auch einen Anteil am geplanten Verkauf der Firma Coingarage s.r.o."
-          },
-          "question6":{
-             "text":"Werde ich die Möglichkeit haben, meine Investition zu überwachen?",
-             "answer":"Der stille Partner kann seine Investition über unsere private Investorenplattform überwachen, auf der er den Fortschritt des Entwicklungsplans, bedeutende Geschäftsaktivitäten, den aktuellen Firmenwert, Informationen vom CEO und der Unternehmensführung, Buchhaltungsunterlagen sowie Neuigkeiten über die Firmen Coingarage Finance s.r.o. und Coingarage s.r.o. einsehen kann. Darüber hinaus wird er über die interne Investorenplattform direkt mit der Unternehmensleitung kommunizieren können."
-          }
-       },
-       "silentPartnershipQuestions":{
-          "question1":{
-             "text":"Was bedeutet laut Gesetz ein stiller Gesellschafter, ist das legal?",
-             "answer":"Ein stiller Gesellschafter kann eine natürliche oder juristische Person, ein Unternehmer oder ein Nicht-Unternehmer sein, die mit ihrer Einlage am Geschäft einer anderen Person beteiligt ist. In vielen entwickelten Ländern der Welt gehört eine stille Partnerschaft zur gängigen Form der Beteiligung an Unternehmen anderer Personen. Im tschechischen Rechtsrahmen wurde die stille Gesellschaft zunächst im Handelsgesetzbuch (nach 1989) geregelt, jedoch seit dem 1. Januar 2014 ist ihre rechtliche Regelung im Bürgerlichen Gesetzbuch enthalten. Gemäß § 2747 des Gesetzes Nr. 89/2012 Slg., des Bürgerlichen Gesetzbuches in der geänderten Fassung, verpflichtet sich der stille Gesellschafter durch den Vertrag über die stille Gesellschaft zur Einlage, mit der er während der gesamten Dauer der stillen Gesellschaft am Geschäftsergebnis des Unternehmens beteiligt sein wird, und das Unternehmen verpflichtet sich, dem stillen Gesellschafter einen Gewinnanteil zu zahlen."
-          },
-          "question2":{
-             "text":"Welche Rechte und Pflichten hat ein stiller Gesellschafter?",
-             "answer":"Der stille Gesellschafter hat das Recht, über unsere private Plattform Einsicht in alle veröffentlichten Geschäftsdokumente und Buchführungsaufzeichnungen der Unternehmen Coingarage Finance s.r.o. und Coingarage s.r.o. zu nehmen. Weiterhin hat er das Recht, über die private Plattform Kopien jeder Jahresabschlussrechnung, jeder Einkommenssteuererklärung einschließlich ihrer Anlagen und jedes Berichts des Wirtschaftsprüfers über die Prüfung des Jahresabschlusses der Firma Coingarage Finance s.r.o. zu erhalten, die während oder für die Dauer der Tätigkeit des stillen Gesellschafters im Unternehmen erstellt werden. Der stille Gesellschafter hat Anspruch auf einen Gewinnanteil in Höhe seines zum Zeitpunkt der Erstellung der Jahresabschlussrechnung erworbenen Anteils am ausgeschütteten Gewinn sowie auf jeden weiteren Gewinn, der gemäß der Entscheidung der Hauptversammlung der Firma Coingarage Finance s.r.o. zur Auszahlung bestimmt ist. Zusätzlich zu der ordnungsgemäßen Einzahlung und Verschwiegenheitspflicht ist die steuerliche Verpflichtung des stillen Gesellschafters, mögliche Einkünfte aus dem Gewinnanteil zu versteuern, nicht von der Firma Coingarage Finance s.r.o. gedeckt, noch erfasst sie die Firma Coingarage s.r.o. als stiller Gesellschafter, noch zahlt sie dafür."
-          },
-          "question3": {
-             "text":"Welche Vorteile hat ein stiller Gesellschafter gegenüber anderen Arten der Investition in Unternehmen?",
-             "answer":"<ul><li>Teilnahme am Gewinn der Firma Coingarage Finance s.r.o. und am Gewinn aus einem möglichen Verkauf der Firma Coingarage s.r.o., wodurch ein höherer Gewinn erzielt werden kann als beispielsweise bei Anleihen, bei denen ein festgelegter jährlicher Prozentsatz des Ertrags garantiert ist.</li><li>Keine Eintritts- oder laufenden Gebühren, Investition direkt in das Projekt ohne Vermittler.</li><li>Möglichkeit, Einsicht in veröffentlichte Dokumente zu erhalten, die die Geschäftstätigkeit der Firma Coingarage Finance s.r.o. betreffen, über die private Plattform der Firma Coingarage Finance s.r.o.</li></ul>"
-          },
-          "question4": {
-            "text": "Wie kann ich ein stiller Begleiter werden?",
-            "answer": "Durch die Registrierung über unsere Privatanlegerplattform app.coingarage-finance.com. "
-          },
-          "question5": {
-            "text": "Wie ist der Verifizierungsprozess (KYC, AML usw.)?",
-            "answer": "Auch wenn wir kein Verpflichteter im Sinne der Bestimmungen des § 2 des Gesetzes Nr. 253/2008 Slg. über bestimmte Maßnahmen gegen die Legalisierung von Erträgen aus kriminellen Aktivitäten und der Finanzierung des Terrorismus in der jeweils gültigen Fassung sind (im Folgenden: als „AML Act“), d.h. dass wir keine Kundenidentifizierungs- und Kontrollpflichten nach dem AML Act anwenden, jedoch zum Schutz unseres Unternehmens, in das Sie investieren möchten, jeden stillen Gesellschafter anhand mindestens eines Ausweisdokuments identifizieren und eine grundlegende Hintergrundüberprüfung (PEP, internationale Sanktionen, negative Erwähnungen in den Medien usw.). "
-          },
-          "question6": {
-            "text": "Fallen bei der Einlage eines stillen Gesellschafters Gebühren an?",
-            "answer": "Alles ist kostenlos, Sie investieren direkt in das Projekt, ohne Zwischenhändler. "
-          },
-          "question7": {
-            "text": "Wann und unter welchen Voraussetzungen hat ein stiller Gesellschafter Anspruch auf eine Beteiligung am ausgeschütteten Gewinn?",
-            "answer": "Der Anspruch auf Gewinnauszahlung entsteht mit der Genehmigung durch die Hauptversammlung der Coingarage Finance s.r.o. "
-          },
-          "question8": {
-            "text": "Wie lange läuft der Stille Beteiligungsvertrag?",
-            "answer": "Der Investitionsvertrag für stille Gesellschafter hat eine Laufzeit von 7 Jahren. Es wird davon ausgegangen, dass die Entwicklungsphase abgeschlossen ist und das Wachstum von Coingarage s.r.o. "
-          }
-       },
-       "visionQuestions":{
-          "question1":{
-             "text":"Gibt es ein Entwicklungsprojekt, das finanziert werden soll, um den Wert der Firma Coingarage s.r.o. zu steigern, und wird es an die Aktionäre weitergegeben?",
-             "answer":"Die Firma Coingarage Finance s.r.o. hat in der Entwicklungsphase die Absicht, in das Gebiet mit einer gut bekannten öffentlichen Handelsplattform und einer Devisenhandelsplattform, aber auch in der Börsenhandelsplattform zu investieren. Es wird jedoch ein Bein zur Seite schwingen, um das zu erlöste Vermögen das antioxidive hoher Frequentanz  Entwicklung dieser Technologie  z. B. eine"
-          }
-       },
-       "otherQuestions": {
-          "question1": {
-            "text": "Wer wird Eigentümer und Leiter der Coingarage s.r.o. sein?",
-            "answer": "Die Eigentümer der Coingarage s.r.o. sind Coingarage Finance s.r.o. (30 %) und Ota Janda (70 %). In naher Zukunft wird eine Anpassung der Eigentümerstruktur erwartet, bei der Technologieexperten und ausländische Investoren in das Unternehmen eintreten werden. Weitere Informationen zu den einzelnen Eigentümern und der Geschäftsführung finden Sie im Abschnitt Über uns."
-          },
-          "question2": {
-            "text": "Warum benötigen Sie die erhaltenen finanziellen Mittel und wofür werden Sie sie verwenden?",
-            "answer": "Alle finanziellen Mittel werden für Aktivitäten verwendet, die ein stabiles Wachstum und die Expansion der Coingarage s.r.o. fördern. Insbesondere für die Entwicklung der Börse und ihrer Komponenten. Wir werden auch in die Bekanntheit unserer Marke investieren, also in aktives Marketing und Geschäftstätigkeiten."
-          },
-          "question3": {
-            "text": "Haben Sie vor, eigene Krypto-Token herauszugeben?",
-            "answer": "Ja, wir planen die Herausgabe eines eigenen Utility-Tokens, der eine ähnliche Funktion wie zum Beispiel BNB bei Binance erfüllen wird. Wir werden auch bestehende Community-Token unter diesen Utility-Token zusammenführen."
-          },
-          "question4": {
-            "text": "Warum stille Teilhaber und nicht Venture-Capital-Fonds?",
-            "answer": "Der Weg mit Venture-Capital-Fonds ist in der Regel langwierig, wir wollen das Projekt nicht verzögern, und daher ist die erste Investitionsrunde vor allem für stille Teilhaber aus der Öffentlichkeit bestimmt. Es ist geplant, dass in den folgenden Investitionsrunden hauptsächlich Venture-Capital-Fonds im Vordergrund stehen werden."
-          }
-       }
+    "faq": {
+      "header": "Häufig gestellte Fragen",
+      "section1": "Allgemeine Fragen",
+      "section2": "Stille Partnerschaft",
+      "section3": "Vision",
+      "section4": "Sonstiges",
+      "generalQuestions": {
+        "question1": {
+          "text": "Was ist der Mindestbetrag, den ich investieren kann?",
+          "answer": "Die Mindestinvestitionssumme beträgt 10.000 CZK (oder den Gegenwert in einer anderen Währung), was einem Anteil von 0,00075% am ausgeschütteten Gewinn der Firma Coingarage Finance s.r.o. entspricht."
+        },
+        "question2": {
+          "text": "Was bedeutet ausgeschütteter Gewinn?",
+          "answer": "Der ausgeschüttete Gewinn beträgt 90 % des Gesamtgewinns der Firma Coingarage Finance s.r.o. Die restlichen 10 % gehören dem Team der Firma Coingarage s.r.o."
+        },
+        "question3": {
+          "text": "Unterliegt dieses Projekt der Aufsicht der Tschechischen Nationalbank?",
+          "answer": "Eine stille Gesellschaft fällt unter Vertragsverhältnisse. Der vorgelegte Geschäftsplan und die Vertragsbeziehungen unterliegen nicht der materiellen Zuständigkeit des Gesetzes Nr. 240/2013 Slg. über Investmentgesellschaften und Investmentfonds sowie Änderungen (im Folgenden „ZISIF“), da es sich um eine Aktivität handelt, die darauf abzielt, Mittel zur Finanzierung von Geschäftsaktivitäten anderer als finanzieller Art zu sammeln, wodurch die Bedingungen für die so genannte Entwicklungsausnahme gemäß § 2 ZISIF erfüllt sind und auch die betreffende Tätigkeit – das Angebot zum Abschluss eines Vertrags über eine stille Gesellschaft – nicht als öffentliches Angebot gemäß den Bestimmungen des Gesetzes Nr. 256/2004 Slg., über das Kapitalmarktgeschäft (im Folgenden „ZPKT“) angesehen wird, und ist auch kein Finanzinstrument im Sinne von § 3 ZPKT. In Anbetracht der oben beschriebenen Tätigkeit unterliegt die Firma nicht der Aufsicht der Tschechischen Nationalbank."
+        },
+        "question4": {
+          "text": "Was ist der beabsichtigte Wert der Firma Coingarage s.r.o.?",
+          "answer": "Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 10 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
+        },
+        "question5": {
+          "text": "Wofür dient und was ist Coingarage Finance s.r.o. eigentlich?",
+          "answer": "Coingarage Finance s.r.o. dient als rechtliche Sicherheit dafür, dass bei einem möglichen zukünftigen Verkauf der Firma Coingarage s.r.o. auch die Investoren durch den stillen Partner profitieren werden. Wenn der stille Partner Geld direkt in die Coingarage s.r.o. investiert, könnte ihm gesetzlich kein Anteil am Verkaufserlös der Coingarage s.r.o. ausgezahlt werden, sondern nur ein Anteil am Gewinn der Coingarage s.r.o. während des regulären Geschäftsbetriebs. Dank dieses Modells erhält der stille Partner sowohl einen Gewinnanteil als auch einen Anteil am geplanten Verkauf der Firma Coingarage s.r.o."
+        },
+        "question6": {
+          "text": "Werde ich die Möglichkeit haben, meine Investition zu überwachen?",
+          "answer": "Der stille Partner kann seine Investition über unsere private Investorenplattform überwachen, auf der er den Fortschritt des Entwicklungsplans, bedeutende Geschäftsaktivitäten, den aktuellen Firmenwert, Informationen vom CEO und der Unternehmensführung, Buchhaltungsunterlagen sowie Neuigkeiten über die Firmen Coingarage Finance s.r.o. und Coingarage s.r.o. einsehen kann. Darüber hinaus wird er über die interne Investorenplattform direkt mit der Unternehmensleitung kommunizieren können."
+        }
+      },
+      "silentPartnershipQuestions": {
+        "question1": {
+          "text": "Was bedeutet laut Gesetz ein stiller Gesellschafter, ist das legal?",
+          "answer": "Ein stiller Gesellschafter kann eine natürliche oder juristische Person, ein Unternehmer oder ein Nicht-Unternehmer sein, die mit ihrer Einlage am Geschäft einer anderen Person beteiligt ist. In vielen entwickelten Ländern der Welt gehört eine stille Partnerschaft zur gängigen Form der Beteiligung an Unternehmen anderer Personen. Im tschechischen Rechtsrahmen wurde die stille Gesellschaft zunächst im Handelsgesetzbuch (nach 1989) geregelt, jedoch seit dem 1. Januar 2014 ist ihre rechtliche Regelung im Bürgerlichen Gesetzbuch enthalten. Gemäß § 2747 des Gesetzes Nr. 89/2012 Slg., des Bürgerlichen Gesetzbuches in der geänderten Fassung, verpflichtet sich der stille Gesellschafter durch den Vertrag über die stille Gesellschaft zur Einlage, mit der er während der gesamten Dauer der stillen Gesellschaft am Geschäftsergebnis des Unternehmens beteiligt sein wird, und das Unternehmen verpflichtet sich, dem stillen Gesellschafter einen Gewinnanteil zu zahlen."
+        },
+        "question2": {
+          "text": "Welche Rechte und Pflichten hat ein stiller Gesellschafter?",
+          "answer": "Der stille Gesellschafter hat das Recht, über unsere private Plattform Einsicht in alle veröffentlichten Geschäftsdokumente und Buchführungsaufzeichnungen der Unternehmen Coingarage Finance s.r.o. und Coingarage s.r.o. zu nehmen. Weiterhin hat er das Recht, über die private Plattform Kopien jeder Jahresabschlussrechnung, jeder Einkommenssteuererklärung einschließlich ihrer Anlagen und jedes Berichts des Wirtschaftsprüfers über die Prüfung des Jahresabschlusses der Firma Coingarage Finance s.r.o. zu erhalten, die während oder für die Dauer der Tätigkeit des stillen Gesellschafters im Unternehmen erstellt werden. Der stille Gesellschafter hat Anspruch auf einen Gewinnanteil in Höhe seines zum Zeitpunkt der Erstellung der Jahresabschlussrechnung erworbenen Anteils am ausgeschütteten Gewinn sowie auf jeden weiteren Gewinn, der gemäß der Entscheidung der Hauptversammlung der Firma Coingarage Finance s.r.o. zur Auszahlung bestimmt ist. Zusätzlich zu der ordnungsgemäßen Einzahlung und Verschwiegenheitspflicht ist die steuerliche Verpflichtung des stillen Gesellschafters, mögliche Einkünfte aus dem Gewinnanteil zu versteuern, nicht von der Firma Coingarage Finance s.r.o. gedeckt, noch erfasst sie die Firma Coingarage s.r.o. als stiller Gesellschafter, noch zahlt sie dafür."
+        },
+        "question3": {
+          "text": "Welche Vorteile hat ein stiller Gesellschafter gegenüber anderen Arten der Investition in Unternehmen?",
+          "answer": "<ul><li>Teilnahme am Gewinn der Firma Coingarage Finance s.r.o. und am Gewinn aus einem möglichen Verkauf der Firma Coingarage s.r.o., wodurch ein höherer Gewinn erzielt werden kann als beispielsweise bei Anleihen, bei denen ein festgelegter jährlicher Prozentsatz des Ertrags garantiert ist.</li><li>Keine Eintritts- oder laufenden Gebühren, Investition direkt in das Projekt ohne Vermittler.</li><li>Möglichkeit, Einsicht in veröffentlichte Dokumente zu erhalten, die die Geschäftstätigkeit der Firma Coingarage Finance s.r.o. betreffen, über die private Plattform der Firma Coingarage Finance s.r.o.</li></ul>"
+        },
+        "question4": {
+          "text": "Wie kann ich ein stiller Begleiter werden?",
+          "answer": "Durch die Registrierung über unsere Privatanlegerplattform app.coingarage-finance.com. "
+        },
+        "question5": {
+          "text": "Wie ist der Verifizierungsprozess (KYC, AML usw.)?",
+          "answer": "Auch wenn wir kein Verpflichteter im Sinne der Bestimmungen des § 2 des Gesetzes Nr. 253/2008 Slg. über bestimmte Maßnahmen gegen die Legalisierung von Erträgen aus kriminellen Aktivitäten und der Finanzierung des Terrorismus in der jeweils gültigen Fassung sind (im Folgenden: als „AML Act“), d.h. dass wir keine Kundenidentifizierungs- und Kontrollpflichten nach dem AML Act anwenden, jedoch zum Schutz unseres Unternehmens, in das Sie investieren möchten, jeden stillen Gesellschafter anhand mindestens eines Ausweisdokuments identifizieren und eine grundlegende Hintergrundüberprüfung (PEP, internationale Sanktionen, negative Erwähnungen in den Medien usw.). "
+        },
+        "question6": {
+          "text": "Fallen bei der Einlage eines stillen Gesellschafters Gebühren an?",
+          "answer": "Alles ist kostenlos, Sie investieren direkt in das Projekt, ohne Zwischenhändler. "
+        },
+        "question7": {
+          "text": "Wann und unter welchen Voraussetzungen hat ein stiller Gesellschafter Anspruch auf eine Beteiligung am ausgeschütteten Gewinn?",
+          "answer": "Der Anspruch auf Gewinnauszahlung entsteht mit der Genehmigung durch die Hauptversammlung der Coingarage Finance s.r.o. "
+        },
+        "question8": {
+          "text": "Wie lange läuft der Stille Beteiligungsvertrag?",
+          "answer": "Der Investitionsvertrag für stille Gesellschafter hat eine Laufzeit von 7 Jahren. Es wird davon ausgegangen, dass die Entwicklungsphase abgeschlossen ist und das Wachstum von Coingarage s.r.o. "
+        }
+      },
+      "visionQuestions": {
+        "question1": {
+          "text": "Wer ist Ihre Zielgruppe?",
+          "answer": "In Europa gibt es etwa 480 Millionen Menschen im erwerbsfähigen Alter und nur 9 % – etwa 43 Millionen von ihnen – haben Erfahrung mit Krypta. "
+        },
+        "question2": {
+          "text": "Warum Krypto und Krypto-Börse?",
+          "answer": "Die Blockchain-Technologie und verwandte Kryptowährungen bieten den Nutzern zahlreiche Vorteile und haben das Potenzial, das globale Finanzökosystem zu revolutionieren. "
+        },
+        "question3": {
+          "text": "Warum Börse in Europa? ",
+          "answer": "Die meisten großen Börsen haben heute ihren Sitz in Steueroasen oder in Ländern, in denen 100 % Transparenz und Sicherheit nicht gewährleistet sind. "
+        },
+        "question4": {
+          "text": "Wie erreicht man 10 Millionen aktive Nutzer?",
+          "answer": "Wir gehen bereits von der oben genannten Annahme eines Wachstums der gesamten Kryptowelt und einer Steigerung des Nutzeranteils in Europa auf das Niveau beispielsweise der USA und Asiens aus. "
+        },
+        "question5": {
+          "text": "Wie erzielen Sie dauerhafte Gewinne?",
+          "answer": "Es ist kein Geheimnis, dass Gebühren eine Schlüsselrolle bei der Erzielung von Gewinnen spielen. "
+        },
+        "question6": {
+          "text": "Wie erreicht man in sieben Jahren einen prognostizierten Unternehmenswert von 10 Milliarden US-Dollar?",
+          "answer": "Der Wert des Unternehmens wird eine einzigartige Lösung in Form eines robusten und gleichzeitig einfachen Krypto-Austauschs sein, der auf allen Geräten verfügbar sein wird. "
+        }
+      },
+      "otherQuestions": {
+        "question1": {
+          "text": "Wer wird Eigentümer und Leiter der Coingarage s.r.o. sein?",
+          "answer": "Die Eigentümer der Coingarage s.r.o. sind Coingarage Finance s.r.o. (30 %) und Ota Janda (70 %). In naher Zukunft wird eine Anpassung der Eigentümerstruktur erwartet, bei der Technologieexperten und ausländische Investoren in das Unternehmen eintreten werden. Weitere Informationen zu den einzelnen Eigentümern und der Geschäftsführung finden Sie im Abschnitt Über uns."
+        },
+        "question2": {
+          "text": "Warum benötigen Sie die erhaltenen finanziellen Mittel und wofür werden Sie sie verwenden?",
+          "answer": "Alle finanziellen Mittel werden für Aktivitäten verwendet, die ein stabiles Wachstum und die Expansion der Coingarage s.r.o. fördern. Insbesondere für die Entwicklung der Börse und ihrer Komponenten. Wir werden auch in die Bekanntheit unserer Marke investieren, also in aktives Marketing und Geschäftstätigkeiten."
+        },
+        "question3": {
+          "text": "Haben Sie vor, eigene Krypto-Token herauszugeben?",
+          "answer": "Ja, wir planen die Herausgabe eines eigenen Utility-Tokens, der eine ähnliche Funktion wie zum Beispiel BNB bei Binance erfüllen wird. Wir werden auch bestehende Community-Token unter diesen Utility-Token zusammenführen."
+        },
+        "question4": {
+          "text": "Warum stille Teilhaber und nicht Venture-Capital-Fonds?",
+          "answer": "Der Weg mit Venture-Capital-Fonds ist in der Regel langwierig, wir wollen das Projekt nicht verzögern, und daher ist die erste Investitionsrunde vor allem für stille Teilhaber aus der Öffentlichkeit bestimmt. Es ist geplant, dass in den folgenden Investitionsrunden hauptsächlich Venture-Capital-Fonds im Vordergrund stehen werden."
+        }
+      }
     }
   },
   "footer": {
