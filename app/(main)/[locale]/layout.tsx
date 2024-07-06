@@ -47,11 +47,11 @@ export default function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
+      <Suspense fallback={null}>
+        <GoogleAnalytics isFinance={isFinance} />
+        <GoogleTagManager isFinance={isFinance} />
+      </Suspense>
       <body>
-        <Suspense fallback={null}>
-          <GoogleAnalytics isFinance={isFinance} />
-          <GoogleTagManager isFinance={isFinance} />
-        </Suspense>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
