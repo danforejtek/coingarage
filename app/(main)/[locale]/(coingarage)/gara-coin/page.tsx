@@ -129,6 +129,30 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </div>
       </section>
+      <div className="mt-12 bg-tertiary/10 pt-16 dark:bg-tertiary/20 xl:mt-28">
+        <section className="container mx-auto">
+          <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("roadmap.header")}</h2>
+          <div className="relative mt-8 flex items-center justify-center pb-[194px]">
+            <Image src="/images/gara-coin/roadmap.svg" alt="" width="1232" height="487" />
+            <div className="absolute inset-0">
+              <div className="grid h-full w-full grid-cols-4 grid-rows-3 justify-center pl-[14.5%] pr-[15%] pt-[26px]">
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   )
 }
