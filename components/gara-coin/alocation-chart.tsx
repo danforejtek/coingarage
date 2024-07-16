@@ -89,11 +89,11 @@ export function AlocationChart() {
             const sy = cy + (outerRadius + 10) * sin
             const mx = cx + (outerRadius + 30) * cos
             const my = cy + (outerRadius + 30) * sin
-            const ex = mx + (cos >= 0 ? 1 : -1) * 22
+            const ex = mx + (cos >= 0 ? 1 : -1) * 350
             const ey = my
-            const textAnchor = cos >= 0 ? "start" : "end"
             const radius = 25 + innerRadius + (outerRadius - innerRadius)
             const x = cx + radius * Math.cos(-midAngle * RADIAN)
+            const textAnchor = x > cx ? "end" : "start"
 
             return (
               <g>
@@ -118,30 +118,12 @@ export function AlocationChart() {
                   outerRadius={outerRadius + 10}
                   fill={fill}
                 /> */}
-                <path
-                  d={`M${sx},${sy}L${mx},${my}L${x > cx ? ex + 350 : ex - 350},${ey}`}
-                  stroke={fill}
-                  fill="none"
-                  strokeWidth={2}
-                />
+                <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" strokeWidth={2} />
                 {/* <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" /> */}
-                <text
-                  x={ex + (cos >= 0 ? 1 : -1) * 200}
-                  y={ey - 10}
-                  textAnchor={textAnchor}
-                  fill={fill}
-                  className="font-heading text-lg"
-                >
+                <text x={ex} y={ey - 10} textAnchor={textAnchor} fill={fill} className="font-heading text-lg">
                   {chartData[index].label}
                 </text>
-                <text
-                  x={ex + (cos >= 0 ? 1 : -1) * 120}
-                  y={ey}
-                  dy={18}
-                  textAnchor={textAnchor}
-                  fill=""
-                  className="text-base"
-                >
+                <text x={ex} y={ey} dy={20} textAnchor={textAnchor} fill="" className="text-base">
                   {chartData[index].description}
                 </text>
               </g>
