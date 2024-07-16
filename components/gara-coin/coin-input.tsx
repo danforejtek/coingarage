@@ -25,7 +25,7 @@ export function CoinInput({
         {...rest}
       />
       <div className="flex flex-row items-center justify-end gap-4 font-heading text-base font-semibold text-neutral-900 dark:text-white">
-        <Image src={`/icons/coins/${coin}.png`} alt={coin} width={32} height={32} />
+        <Image src={`/icons/coins/${coin?.toLowerCase()}.png`} alt={coin} width={32} height={32} />
         <span className="w-[46px]">{coin}</span>
       </div>
     </div>

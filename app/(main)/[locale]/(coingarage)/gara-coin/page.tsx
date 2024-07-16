@@ -1,3 +1,4 @@
+import { AlocationChart } from "@/components/gara-coin/alocation-chart"
 import { BuyGara } from "@/components/gara-coin/buy-gara"
 import { Button } from "@/components/ui/button"
 import { useTranslations } from "next-intl"
@@ -129,7 +130,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </div>
         </div>
       </section>
-      <div className="mt-12 bg-tertiary/10 pt-16 dark:bg-tertiary/20 xl:mt-28">
+      <div className="mt-12 bg-tertiary/10 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto">
           <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("roadmap.header")}</h2>
           <div className="relative mt-8 flex items-center justify-center pb-[194px]">
@@ -151,8 +152,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </div>
             </div>
           </div>
+          <div className="flex w-full justify-center">
+            <Button variant="default" className="min-w-[200px]">
+              {t("roadmap.btnBuyGARA")}
+            </Button>
+          </div>
         </section>
       </div>
+      <section className="container mx-auto mt-16 py-12">
+        <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("alocation.header")}</h2>
+        <AlocationChart />
+      </section>
     </>
   )
 }
