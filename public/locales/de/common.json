@@ -492,9 +492,9 @@
   "finance": {
     "main": {
       "text1": "Investieren Sie in",
-      "text2": "Das am schnellsten wachsende Industrie",
+      "text2": "Die am schnellsten wachsende Industrie",
       "text3": "Der Welt",
-      "subText": "Der Markt für digitale Währungen und Blockchain-Technologie ist heute das am schnellsten wachsende Industrie. Jetzt haben Sie eine einzigartige Gelegenheit, in diesen Bereich zu investieren und ein stiller Partner einer globalen Kryptowährungsbörse zu werden.",
+      "subText": "Der Markt für digitale Währungen und Blockchain-Technologie ist heute die am schnellsten wachsende Industrie. Jetzt haben Sie eine einzigartige Gelegenheit, in diesen Bereich zu investieren und ein stiller Partner einer globalen Kryptowährungsbörse zu werden.",
       "exchangeBtn": "Treten Sie der Börse bei",
       "shareholderBtn": "Stiller Partner werden"
     },
@@ -763,12 +763,52 @@
         "question3": {
           "text": "Welche Vorteile hat ein stiller Gesellschafter gegenüber anderen Arten der Investition in Unternehmen?",
           "answer": "<ul><li>Teilnahme am Gewinn der Firma Coingarage Finance s.r.o. und am Gewinn aus einem möglichen Verkauf der Firma Coingarage s.r.o., wodurch ein höherer Gewinn erzielt werden kann als beispielsweise bei Anleihen, bei denen ein festgelegter jährlicher Prozentsatz des Ertrags garantiert ist.</li><li>Keine Eintritts- oder laufenden Gebühren, Investition direkt in das Projekt ohne Vermittler.</li><li>Möglichkeit, Einsicht in veröffentlichte Dokumente zu erhalten, die die Geschäftstätigkeit der Firma Coingarage Finance s.r.o. betreffen, über die private Plattform der Firma Coingarage Finance s.r.o.</li></ul>"
+        },
+        "question4": {
+          "text": "Wie kann ich ein stiller Begleiter werden?",
+          "answer": "Durch die Registrierung über unsere Privatanlegerplattform app.coingarage-finance.com. "
+        },
+        "question5": {
+          "text": "Wie ist der Verifizierungsprozess (KYC, AML usw.)?",
+          "answer": "Auch wenn wir kein Verpflichteter im Sinne der Bestimmungen des § 2 des Gesetzes Nr. 253/2008 Slg. über bestimmte Maßnahmen gegen die Legalisierung von Erträgen aus kriminellen Aktivitäten und der Finanzierung des Terrorismus in der jeweils gültigen Fassung sind (im Folgenden: als „AML Act“), d.h. dass wir keine Kundenidentifizierungs- und Kontrollpflichten nach dem AML Act anwenden, jedoch zum Schutz unseres Unternehmens, in das Sie investieren möchten, jeden stillen Gesellschafter anhand mindestens eines Ausweisdokuments identifizieren und eine grundlegende Hintergrundüberprüfung (PEP, internationale Sanktionen, negative Erwähnungen in den Medien usw.). "
+        },
+        "question6": {
+          "text": "Fallen bei der Einlage eines stillen Gesellschafters Gebühren an?",
+          "answer": "Alles ist kostenlos, Sie investieren direkt in das Projekt, ohne Zwischenhändler. "
+        },
+        "question7": {
+          "text": "Wann und unter welchen Voraussetzungen hat ein stiller Gesellschafter Anspruch auf eine Beteiligung am ausgeschütteten Gewinn?",
+          "answer": "Der Anspruch auf Gewinnauszahlung entsteht mit der Genehmigung durch die Hauptversammlung der Coingarage Finance s.r.o. "
+        },
+        "question8": {
+          "text": "Wie lange läuft der Stille Beteiligungsvertrag?",
+          "answer": "Der Investitionsvertrag für stille Gesellschafter hat eine Laufzeit von 7 Jahren. Es wird davon ausgegangen, dass die Entwicklungsphase abgeschlossen ist und das Wachstum von Coingarage s.r.o. "
         }
       },
       "visionQuestions": {
         "question1": {
-          "text": "Gibt es ein Entwicklungsprojekt, das finanziert werden soll, um den Wert der Firma Coingarage s.r.o. zu steigern, und wird es an die Aktionäre weitergegeben?",
-          "answer": "Die Firma Coingarage Finance s.r.o. hat in der Entwicklungsphase die Absicht, in das Gebiet mit einer gut bekannten öffentlichen Handelsplattform und einer Devisenhandelsplattform, aber auch in der Börsenhandelsplattform zu investieren. Es wird jedoch ein Bein zur Seite schwingen, um das zu erlöste Vermögen das antioxidive hoher Frequentanz  Entwicklung dieser Technologie  z. B. eine"
+          "text": "Wer ist Ihre Zielgruppe?",
+          "answer": "In Europa gibt es etwa 480 Millionen Menschen im erwerbsfähigen Alter und nur 9 % – etwa 43 Millionen von ihnen – haben Erfahrung mit Krypta. "
+        },
+        "question2": {
+          "text": "Warum Krypto und Krypto-Börse?",
+          "answer": "Die Blockchain-Technologie und verwandte Kryptowährungen bieten den Nutzern zahlreiche Vorteile und haben das Potenzial, das globale Finanzökosystem zu revolutionieren. "
+        },
+        "question3": {
+          "text": "Warum Börse in Europa? ",
+          "answer": "Die meisten großen Börsen haben heute ihren Sitz in Steueroasen oder in Ländern, in denen 100 % Transparenz und Sicherheit nicht gewährleistet sind. "
+        },
+        "question4": {
+          "text": "Wie erreicht man 10 Millionen aktive Nutzer?",
+          "answer": "Wir gehen bereits von der oben genannten Annahme eines Wachstums der gesamten Kryptowelt und einer Steigerung des Nutzeranteils in Europa auf das Niveau beispielsweise der USA und Asiens aus. "
+        },
+        "question5": {
+          "text": "Wie erzielen Sie dauerhafte Gewinne?",
+          "answer": "Es ist kein Geheimnis, dass Gebühren eine Schlüsselrolle bei der Erzielung von Gewinnen spielen. "
+        },
+        "question6": {
+          "text": "Wie erreicht man in sieben Jahren einen prognostizierten Unternehmenswert von 10 Milliarden US-Dollar?",
+          "answer": "Der Wert des Unternehmens wird eine einzigartige Lösung in Form eines robusten und gleichzeitig einfachen Krypto-Austauschs sein, der auf allen Geräten verfügbar sein wird. "
         }
       },
       "otherQuestions": {

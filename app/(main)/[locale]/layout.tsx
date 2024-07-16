@@ -13,6 +13,7 @@ import { locales } from "@/config"
 import GoogleTagManager from "@/components/GoogleTagManager"
 import { Suspense } from "react"
 import { headers } from "next/headers"
+import { SmartlookScript } from "@/components/SmarlookScript"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -47,11 +48,12 @@ export default function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
+      <Suspense fallback={null}>
+        <GoogleAnalytics isFinance={isFinance} />
+        <GoogleTagManager isFinance={isFinance} />
+        {isFinance ? <SmartlookScript /> : null}
+      </Suspense>
       <body>
-        <Suspense fallback={null}>
-          <GoogleAnalytics isFinance={isFinance} />
-          <GoogleTagManager isFinance={isFinance} />
-        </Suspense>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

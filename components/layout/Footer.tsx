@@ -185,7 +185,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/legal/general-terms-and-conditions"
+                    href="/legal/eezy-trader/terms-and-conditions"
                     className="hover:text-primary"
                     rel="noopener noreferrer"
                     target="_blank"
