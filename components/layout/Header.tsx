@@ -39,7 +39,7 @@ export default function Header() {
           </Link>
           <div className="hidden max-w-[746px] flex-row gap-2 xl:flex">
             <Menu />
-            <GarageCoinPresale />
+            {/* <GarageCoinPresale /> */}
           </div>
         </nav>
         <div className="flex h-full items-center justify-end">

@@ -965,7 +965,7 @@
         "header": "Security",
         "text": "Polygon relies on the security of the Ethereum network and utilizes its Proof of Stake (PoS) consensus. This means that holders of the Polygon token can stake their tokens to help secure the network and earn rewards for doing so."
       },
-      "btnGARAOnPolygon": "GARA on Polygonscanu"
+      "btnGARAOnPolygon": "GARA on Polygonscan"
     }
   }
 }

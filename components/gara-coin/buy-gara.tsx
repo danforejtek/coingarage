@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
+import Arrow from "@/public/images/gara-coin/arrow.svg"
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
@@ -52,7 +53,9 @@ export function BuyGara() {
           </span>
           USDT
         </p>
-        <span className="text-2xl leading-none">⟶</span>
+        <div className="flex items-center justify-center">
+          <Arrow />
+        </div>
         <Button variant="link" size="sm" className="p-0">
           {t("linkGoToLaunchapad")}
         </Button>
