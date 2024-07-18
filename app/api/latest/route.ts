@@ -11,6 +11,10 @@ export async function GET(request: Request) {
         "X-CMC_PRO_API_KEY": process.env.COINMARKETCAP_API_KEY,
       },
     })
+    if (!res.ok) {
+      throw new Error("Network response was not ok")
+    }
+
     const data = await res.json()
 
     return Response.json(data)
