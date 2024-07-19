@@ -21,9 +21,11 @@ const Heading: React.FC<HeadingProps> = ({ tag = "h3", size = "4xl", className, 
   const barSizeClass = ["4xl"].includes(size) ? "h-[110%] min-h-[64px] w-4" : "h-[110%] min-h-[48px]  w-3"
 
   return (
-    <div className={cn("mb-4 grid grid-cols-[16px_1fr] items-center text-balance break-words", className)}>
-      <div className={cn("left-0 top-0 rounded-lg bg-primary", barSizeClass)}></div>
-      <Tag className={cn("ml-8 font-heading font-bold text-gray-800 dark:text-gray-100", sizes?.[size])}>
+    <div
+      className={cn("mb-4 grid grid-cols-1 items-center text-balance break-words lg:grid-cols-[16px_1fr]", className)}
+    >
+      <div className={cn("left-0 top-0 hidden rounded-lg bg-primary lg:block", barSizeClass)}></div>
+      <Tag className={cn("font-heading font-bold text-gray-800 dark:text-gray-100 lg:ml-8", sizes?.[size])}>
         {children}
       </Tag>
     </div>

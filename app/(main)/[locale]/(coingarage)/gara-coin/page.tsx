@@ -58,7 +58,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
 
   return (
     <>
-      <section className="container mx-auto mt-8 flex flex-wrap items-center justify-center gap-12 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-20 xl:justify-between xl:gap-6">
+      <section className="container mx-auto mt-8 flex flex-wrap items-center justify-center gap-12 px-8 lg:grid lg:grid-cols-2 lg:flex-row lg:items-start xl:mt-20 xl:justify-between xl:gap-6">
         {/* <div className="absolute right-[-100px] top-[540px] -z-50 h-[470px] w-[774px] max-w-[96vw] overflow-hidden lg:top-[24px]">
           <Image src="/images/fin.svg" alt="" className="scale-x-[-1] object-contain" fill={true} />
         </div> */}
@@ -152,8 +152,11 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </ul>
           </div>
         </div>
-        <div className="flex justify-center">
-          <ul className="flex w-[300px] flex-col gap-8 text-start font-heading font-bold lg:hidden">
+        <div className="flex justify-center gap-12">
+          <div className="relative w-5">
+            <Image src="/images/gara-coin/usage_gara.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
+          </div>
+          <ul className="flex w-[300px] flex-col gap-8 py-8 text-start font-heading font-bold lg:hidden">
             <li>{t("usage.usage5")}</li>
             <li>{t("usage.usage5")}</li>
             <li>{t("usage.usage7")}</li>
@@ -165,7 +168,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </ul>
         </div>
         <div
-          className="mt-24 py-12"
+          className="mt-24 py-12 lg:!bg-none"
           style={{
             backgroundImage:
               "linear-gradient(to top, rgba(255, 255, 255,0.5), rgba(255, 255, 255,0.5)), url(/images/gara-coin/fire.svg)",
@@ -176,40 +179,59 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         >
           <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("burnMechanism.header")}</h2>
           <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-24">
-            <div className="flex w-[480px] flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md">
+            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md lg:w-[480px]">
               <p className="font-heading text-lg font-bold">{t("burnMechanism.box1.text")}</p>
               <p className="font-heading text-sm text-primary">{t("burnMechanism.box1.subText")}</p>
             </div>
             <Image src="/images/gara-coin/fire.svg" alt="" width="92" height="145" className="hidden lg:block" />
-            <div className="flex w-[480px] flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md">
+            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md lg:w-[480px]">
               <p className="font-heading text-lg font-bold">{t("burnMechanism.box2.text")}</p>
               <p className="font-heading text-sm text-primary">{t("burnMechanism.box2.subText")}</p>
             </div>
-            <div className="h-12"></div>
+            <div className="block h-12 lg:hidden"></div>
           </div>
         </div>
       </section>
       <div className="mt-12 bg-tertiary/10 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto">
           <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("roadmap.header")}</h2>
-          <div className="relative mt-8 flex items-center justify-center pb-[194px]">
+          <div className="relative mt-8 hidden items-center justify-center pb-[194px] lg:flex">
             <Image src="/images/gara-coin/roadmap.svg" alt="" width="1232" height="487" />
             <div className="absolute inset-0">
               <div className="grid h-full w-full grid-cols-4 grid-rows-3 justify-center pl-[14.5%] pr-[15%] pt-[26px]">
-                {/* <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div>
-                <div className="px-4 pb-6 pt-8 text-center font-heading">{t("roadmap.q1")}</div> */}
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text1")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text2")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text3")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text4")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text5")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text6")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text7")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text8")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text9")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text10")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text11")}</div>
+                <div className="px-4 pb-6 pt-2 text-center font-heading lg:pt-10">{t("roadmap.text12")}</div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center gap-12">
+            <div className="relative w-12">
+              <Image src="/images/gara-coin/gradient_roadmap.svg" alt="" fill={true} style={{ objectFit: "contain" }} />
+            </div>
+            <ul className="flex w-[300px] flex-col gap-6 pb-12 pt-10 text-start font-heading text-sm font-bold lg:hidden">
+              <li className="">{t("roadmap.text1")}</li>
+              <li className="">{t("roadmap.text2")}</li>
+              <li className="">{t("roadmap.text3")}</li>
+              <li className="">{t("roadmap.text4")}</li>
+              <li className="">{t("roadmap.text5")}</li>
+              <li className="">{t("roadmap.text6")}</li>
+              <li className="">{t("roadmap.text7")}</li>
+              <li className="">{t("roadmap.text8")}</li>
+              <li className="">{t("roadmap.text9")}</li>
+              <li className="">{t("roadmap.text10")}</li>
+              <li className="">{t("roadmap.text11")}</li>
+              <li className="">{t("roadmap.text12")}</li>
+            </ul>
           </div>
           <div className="flex w-full justify-center">
             <Button variant="default" className="min-w-[200px]">
@@ -222,8 +244,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("alocation.header")}</h2>
         <AlocationChart />
         <p className="mt-12 w-full text-center font-heading text-sm font-bold">{t("alocation.limit")}</p>
-        <div className="mx-10 mt-20 bg-tertiary/10 p-12 dark:bg-tertiary/20">
-          <div className="flex flex-row justify-between gap-12">
+        <div className="mx-4 mt-20 bg-tertiary/10 p-12 dark:bg-tertiary/20 lg:mx-10">
+          <div className="flex flex-row justify-between gap-6">
             <div>
               <h2 className="mb-6 hidden font-heading text-3xl font-bold lg:block">
                 {t("release.header")} <span className="ml-4 text-xl text-primary">{t("release.subHeader")}</span>
@@ -240,7 +262,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" />
             </div>
           </div>
-          <p className="mb-6 text-justify text-sm lg:text-left">{t("release.text")}</p>
+          <p className="mb-6 pt-6 text-justify text-sm lg:pt-0 lg:text-left">{t("release.text")}</p>
           <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row xl:grid">
             <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-2 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-2 lg:w-[calc(100%-68px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
@@ -292,17 +314,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </p>
             </div>
           </div>
-          <div className="flex justify-end">
-            <div className="flex max-w-[480px] flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md">
+          <div className="flex justify-end px-4">
+            <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md lg:w-[480px]">
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
-              <span className="inline-flex items-center gap-2 font-heading text-sm">
+              <span className="inline-flex items-center gap-2 font-heading text-xs md:text-sm">
                 <Button variant="ghost" size="icon" className="!size-6">
                   <ClipboardCopy className="size-4 stroke-primary" />
                 </Button>
                 0x0B258A4ECC4Ac7a15fEdb882DB5d13F6EF23B02F
               </span>
-              <div className="flex flex-row justify-between gap-8">
+              <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
                 <Button variant="default" className="min-w-[200px]">
                   {t("IEO.box.btnBuyWithUSDT")}
                 </Button>
@@ -315,18 +337,16 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </section>
       </div>
       <section className="container mx-auto mt-24 flex flex-wrap items-center justify-between gap-12 px-10 lg:flex-row lg:items-start xl:justify-between xl:gap-6">
-        <div className="max-w-[600px]">
-          <Heading tag="h2">{t("GARArunning.header")}</Heading>
-          <div className="mt-16">
-            <p className="text-md mb-6 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
-              {t("GARArunning.text")}
-            </p>
+        <div className="flex w-full flex-col">
+          <div className="flex w-full justify-between">
+            <Heading tag="h2">{t("GARArunning.header")}</Heading>
+            <div className="flex max-w-[480px]">
+              <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" />
+            </div>
           </div>
-        </div>
-        <div className="flex justify-end">
-          <div className="flex max-w-[480px]">
-            <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" />
-          </div>
+          <p className="text-md mb-6 max-w-[600px] pt-6 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
+            {t("GARArunning.text")}
+          </p>
         </div>
         <div className="grid w-full grid-flow-row gap-8 px-10 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
           <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">

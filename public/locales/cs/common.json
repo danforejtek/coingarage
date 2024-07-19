@@ -830,6 +830,7 @@
       }
     }
   },
+
   "GARA": {
     "main": {
       "header": "GARAGE Coin <span>GARA</span>",
@@ -871,7 +872,19 @@
     },
     "roadmap": {
       "header": "Roadmapa",
-      "btnBuyGARA": "Koupit GARA"
+      "btnBuyGARA": "Koupit GARA",
+      "text1": "Spuštění Burzy",
+      "text2": "Vytvoření GARA",
+      "text3": "Spuštění Obchodního Robota",
+      "text4": "Předprodej GARA",
+      "text5": "Zalistování na Uniswap",
+      "text6": "Zalistování GARA na Coinmarketcap a Coingecko",
+      "text7": "Spuštění obchodování GARA na burze Coingarage ",
+      "text8": "První GARA Airdrop",
+      "text9": "Aplikace GARA Poplatků a Spalování GARA",
+      "text10": "Druhý GARA Airdrop",
+      "text11": "Staking a Cash Back v GARA",
+      "text12": "Crypto Platební Karta a Cash Back v GARA"
     },
     "alocation": {
       "header": "Alokace",
