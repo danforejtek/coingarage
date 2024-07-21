@@ -6,7 +6,7 @@ import Heading from "@/components/Heading"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, ClipboardCopy } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { unstable_setRequestLocale } from "next-intl/server"
+// import { unstable_setRequestLocale } from "next-intl/server"
 import Image from "next/image"
 import Scalability from "@/public/images/gara-coin/scalability.svg"
 import Fees from "@/public/images/gara-coin/fees.svg"
@@ -68,9 +68,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <Image src="/images/fin.svg" alt="" className="scale-x-[-1] object-contain" fill={true} />
         </div> */}
         <div className="mt-16 max-w-[500px]">
-          <hgroup className="mb-8 flex flex-row gap-3 font-heading text-5xl font-bold">
+          <hgroup className="mb-8 flex flex-col gap-3 font-heading text-5xl font-bold lg:flex-row">
             <h1>GARAGE Coin</h1>
-            <p className="ml-4 text-primary">GARA</p>
+            <p className="text-primary lg:ml-4">GARA</p>
           </hgroup>
           <p className="text-md mb-6 text-justify text-neutral-800 dark:text-neutral-300 lg:text-left">
             {t("main.text1")}
@@ -346,9 +346,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <div className="flex w-full flex-col">
           <div className="flex w-full justify-between">
             <Heading tag="h2">{t("GARArunning.header")}</Heading>
-            <div className="flex max-w-[480px]">
+            <div className="flex lg:max-w-[480px]">
               {/* <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" /> */}
-              <Polygon className="fill-black dark:fill-white" width="302" height="57" />
+              <Polygon className="fill-black dark:fill-white" width="auto" height="57" />
             </div>
           </div>
           <p className="text-md mb-6 max-w-[600px] pt-6 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
