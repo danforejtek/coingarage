@@ -5,12 +5,13 @@ import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
+import Polygon from "@/public/icons/polygon.svg"
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
 
   return (
-    <section className="max-w-[400px] flex-1 rounded-2xl bg-background p-6 shadow-md">
+    <section className="max-w-[480px] flex-1 rounded-2xl bg-background p-6 shadow-md">
       <h3 className="mb-6 text-center font-heading text-3xl font-bold">{t("header")}</h3>
       <Table className="text-sm">
         <TableBody className="text-sm">
@@ -30,11 +31,11 @@ export function BuyGara() {
       </Table>
       <div className="mt-4 grid grid-cols-[1fr_140px_1fr] gap-2">
         <div className="relative flex w-full flex-row items-center justify-center">
-          <div className="h-[2px] w-full bg-black"></div>
+          <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
         <p className="text-center font-heading font-semibold">1 GARA = $0.15</p>
         <div className="relative flex w-full flex-row items-center justify-center">
-          <div className="h-[2px] w-full bg-black"></div>
+          <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
       <div>
@@ -54,7 +55,7 @@ export function BuyGara() {
           USDT
         </p>
         <div className="flex items-center justify-center">
-          <Arrow />
+          <Arrow className="stroke-black dark:stroke-white" />
         </div>
         <Button variant="link" size="sm" className="p-0">
           {t("linkGoToLaunchapad")}
@@ -63,7 +64,8 @@ export function BuyGara() {
       <p className="mt-4 flex flex-row items-center justify-center">
         <span className="leading-none">{t("poweredBy")}</span>
         <span className="ml-2 inline-flex items-center">
-          <Image src="/icons/polygon.svg" width="84" height="16" alt="Polygon" />
+          <Polygon className="fill-black dark:fill-white" width="84" height="16" />
+          {/* <Image src="/icons/polygon.svg" width="84" height="16" alt="Polygon" /> */}
         </span>
       </p>
     </section>

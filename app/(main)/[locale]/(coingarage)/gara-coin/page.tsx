@@ -1,3 +1,5 @@
+"use client"
+import { useTheme } from "next-themes"
 import { AlocationChart } from "@/components/gara-coin/alocation-chart"
 import { BuyGara } from "@/components/gara-coin/buy-gara"
 import Heading from "@/components/Heading"
@@ -11,6 +13,8 @@ import Fees from "@/public/images/gara-coin/fees.svg"
 import Interoperability from "@/public/images/gara-coin/interoperability.svg"
 import Security from "@/public/images/gara-coin/security.svg"
 import Document from "@/public/images/gara-coin/document.svg"
+import Polygon from "@/public/icons/polygon.svg"
+import Present from "@/public/images/gara-coin/present.svg"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (
@@ -53,7 +57,8 @@ const whitepaperLink = {
 } as const
 
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale)
+  // unstable_setRequestLocale(locale)
+  const { theme } = useTheme()
   const t = useTranslations("GARA")
 
   return (
@@ -123,7 +128,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="flex flex-row items-center justify-center">
             <Image src="/icons/gara-pink-big.svg" alt="" width="425" height="425" />
           </div>
-          <div className="-ml-14 flex flex-col justify-center gap-4">
+          <div className="-ml-10 flex flex-col justify-center gap-4">
             <ul className="flex flex-col gap-10 text-start font-heading font-bold">
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
@@ -170,8 +175,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <div
           className="mt-24 py-12 lg:!bg-none"
           style={{
-            backgroundImage:
-              "linear-gradient(to top, rgba(255, 255, 255,0.5), rgba(255, 255, 255,0.5)), url(/images/gara-coin/fire.svg)",
+            backgroundImage: `linear-gradient(to top, ${theme !== "dark" ? "rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))" : "rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5))"}, url(/images/gara-coin/fire.svg)`,
             backgroundPosition: "bottom",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
@@ -179,12 +183,12 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         >
           <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("burnMechanism.header")}</h2>
           <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-24">
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md lg:w-[480px]">
+            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
               <p className="font-heading text-lg font-bold">{t("burnMechanism.box1.text")}</p>
               <p className="font-heading text-sm text-primary">{t("burnMechanism.box1.subText")}</p>
             </div>
             <Image src="/images/gara-coin/fire.svg" alt="" width="92" height="145" className="hidden lg:block" />
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md lg:w-[480px]">
+            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
               <p className="font-heading text-lg font-bold">{t("burnMechanism.box2.text")}</p>
               <p className="font-heading text-sm text-primary">{t("burnMechanism.box2.subText")}</p>
             </div>
@@ -256,41 +260,43 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </h2>
             </div>
             <div className="mr-6 hidden lg:flex">
-              <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" />
+              {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
+              <Present className="fill-black dark:fill-white" width="100" height="104" />
             </div>
             <div className="relative flex min-w-[100px] lg:hidden">
-              <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" />
+              {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
+              <Present className="fill-black dark:fill-white" width="100" height="104" />
             </div>
           </div>
           <p className="mb-6 pt-6 text-justify text-sm lg:pt-0 lg:text-left">{t("release.text")}</p>
           <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row xl:grid">
             <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-2 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-2 lg:w-[calc(100%-68px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930] dark:shadow-neutral-900">
                 <div className="text-center font-heading text-sm leading-none">{t("release.box1.text")}</div>
                 <div className="text-center font-heading text-primary">{t("release.box1.subText")}</div>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930] dark:shadow-neutral-900">
                 <div className="text-center font-heading text-sm leading-none">{t("release.box2.text")}</div>
                 <div className="text-center font-heading text-primary">{t("release.box2.subText")}</div>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930] dark:shadow-neutral-900">
                 <div className="text-center font-heading text-sm leading-none">{t("release.box3.text")}</div>
                 <div className="text-center font-heading text-primary">{t("release.box3.subText")}</div>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930] dark:shadow-neutral-900">
                 <div className="text-center font-heading text-sm leading-none">{t("release.box4.text")}</div>
                 <div className="text-center font-heading text-primary">{t("release.box4.subText")}</div>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
+              <div className="flex w-[170px] flex-col justify-center gap-4 rounded-lg border bg-background p-4 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930] dark:shadow-neutral-900">
                 <div className="text-center font-heading text-sm leading-none">{t("release.box5.text")}</div>
                 <div className="text-center font-heading text-primary">{t("release.box5.subText")}</div>
               </div>
@@ -315,7 +321,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </div>
           </div>
           <div className="flex justify-end px-4">
-            <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md lg:w-[480px]">
+            <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <span className="inline-flex items-center gap-2 font-heading text-xs md:text-sm">
@@ -341,7 +347,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="flex w-full justify-between">
             <Heading tag="h2">{t("GARArunning.header")}</Heading>
             <div className="flex max-w-[480px]">
-              <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" />
+              {/* <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" /> */}
+              <Polygon className="fill-black dark:fill-white" width="302" height="57" />
             </div>
           </div>
           <p className="text-md mb-6 max-w-[600px] pt-6 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
@@ -349,28 +356,28 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           </p>
         </div>
         <div className="grid w-full grid-flow-row gap-8 px-10 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
-          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">
+          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box1.header")}</h5>
               <Scalability width="37px" height="37px" />
             </div>
             <p className="text-sm text-neutral-600 dark:text-neutral-300">{t("GARArunning.box1.text")}</p>
           </div>
-          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">
+          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box2.header")}</h5>
               <Fees width="37px" height="37px" />
             </div>
             <p className="text-sm text-neutral-600 dark:text-neutral-300">{t("GARArunning.box2.text")}</p>
           </div>
-          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">
+          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box3.header")}</h5>
               <Interoperability width="37px" height="37px" />
             </div>
             <p className="text-sm text-neutral-600 dark:text-neutral-300">{t("GARArunning.box3.text")}</p>
           </div>
-          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary md:min-h-[280px]">
+          <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box4.header")}</h5>
               <Security width="37px" height="37px" />

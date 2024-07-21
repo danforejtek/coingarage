@@ -6,8 +6,10 @@ import { Label, Pie, PieChart } from "recharts"
 
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import { useTranslations } from "next-intl"
+import { useTheme } from "next-themes"
 
 export function AlocationChart() {
+  const { theme } = useTheme()
   const { width } = useViewportSize()
   const t = useTranslations("GARA.alocation")
   const chartConfig = useMemo(() => {
@@ -104,7 +106,14 @@ export function AlocationChart() {
                   <text x={ex} y={ey - 10} textAnchor={textAnchor} fill={fill} className="font-heading text-lg">
                     {chartData[index].label}
                   </text>
-                  <text x={ex} y={ey} dy={20} textAnchor={textAnchor} fill="" className="font-heading text-base">
+                  <text
+                    x={ex}
+                    y={ey}
+                    dy={20}
+                    textAnchor={textAnchor}
+                    fill={theme === "dark" ? "white" : "black"}
+                    className="font-heading text-base"
+                  >
                     {chartData[index].description}
                   </text>
                 </g>
@@ -146,8 +155,8 @@ export function AlocationChart() {
                             y2="37.8438"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#FF1F70" />
-                            <stop offset="1" stop-color="#52C3FF" />
+                            <stop stopColor="#FF1F70" />
+                            <stop offset="1" stopColor="#52C3FF" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -176,7 +185,7 @@ export function AlocationChart() {
                 <p className="text-center font-heading text-2xl font-bold" style={{ color: fill }}>
                   {label}
                 </p>
-                <p className="text-center font-heading text-xl text-neutral-700">{description}</p>
+                <p className="text-center font-heading text-xl text-neutral-700 dark:text-neutral-200">{description}</p>
               </div>
             </div>
           ))}

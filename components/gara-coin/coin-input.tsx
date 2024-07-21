@@ -16,12 +16,17 @@ export function CoinInput({
   className?: string
 }) {
   return (
-    <div className={cn("bg-g flex flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2", className)}>
+    <div
+      className={cn(
+        "flex flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2 ring-neutral-200 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800",
+        className
+      )}
+    >
       <input
         name={coin}
         type="number"
         placeholder={placeholder}
-        className="bg-transparent font-heading text-lg text-neutral-900 outline-none dark:text-white"
+        className="flex-1 bg-transparent font-heading text-lg text-neutral-900 outline-none dark:text-white"
         {...rest}
       />
       <div className="flex flex-row items-center justify-end gap-4 font-heading text-base font-semibold text-neutral-900 dark:text-white">
