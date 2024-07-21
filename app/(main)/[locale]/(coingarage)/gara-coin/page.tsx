@@ -175,7 +175,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <div
           className="mt-24 py-12 lg:!bg-none"
           style={{
-            backgroundImage: `linear-gradient(to top, ${theme !== "dark" ? "rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))" : "rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5))"}, url(/images/gara-coin/fire.svg)`,
+            backgroundImage: `linear-gradient(to top, ${theme === "dark" ? "rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5))" : "rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))"}, url(/images/gara-coin/fire.svg)`,
             backgroundPosition: "bottom",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
