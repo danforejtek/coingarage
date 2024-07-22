@@ -1,14 +1,35 @@
 "use client"
+
+import { useTranslations } from "next-intl"
+import { useSDK, MetaMaskProvider } from "@metamask/sdk-react"
+import Image from "next/image"
 import { CoinInput } from "@/components/gara-coin/coin-input"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
-import { useTranslations } from "next-intl"
-import Image from "next/image"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/icons/polygon.svg"
+import { formatAddress } from "@/lib/utils"
+import { useState } from "react"
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
+  const { sdk, connected, connecting, account, chainId } = useSDK()
+  const [hovered, setHovered] = useState(false)
+
+  const connect = async () => {
+    try {
+      const address = await sdk?.connect()
+      console.log(address)
+    } catch (err) {
+      console.warn("failed to connect..", err)
+    }
+  }
+
+  const disconnect = () => {
+    if (sdk) {
+      sdk.terminate()
+    }
+  }
 
   return (
     <section className="max-w-[480px] flex-1 rounded-2xl bg-background p-6 shadow-md">
@@ -43,7 +64,22 @@ export function BuyGara() {
         <CoinInput coin="MATIC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
       </div>
       <div className="mt-8 grid grid-cols-2 justify-between gap-4">
-        <Button variant="default">{t("btnConnectWallet")}</Button>
+        {!connected ? (
+          <Button variant="default" disabled={connecting} onClick={connect}>
+            {t("btnConnectWallet")}
+          </Button>
+        ) : (
+          <Button
+            variant="default"
+            disabled={connecting}
+            onClick={disconnect}
+            onPointerEnter={() => setHovered(true)}
+            onPointerLeave={() => setHovered(false)}
+          >
+            {hovered ? "Disconnect" : formatAddress(account)}
+          </Button>
+        )}
+
         <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
       </div>
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">

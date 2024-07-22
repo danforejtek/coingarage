@@ -14,6 +14,7 @@ import GoogleTagManager from "@/components/GoogleTagManager"
 import { Suspense } from "react"
 import { headers } from "next/headers"
 import { SmartlookScript } from "@/components/SmarlookScript"
+import { Providers } from "@/components/layout/providers"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -54,13 +55,12 @@ export default function RootLayout({
         {isFinance ? <SmartlookScript /> : null}
       </Suspense>
       <body>
-        {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <Providers>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
             <Toaster richColors />
-          </ThemeProvider>
-        </NextIntlClientProvider>
+          </NextIntlClientProvider>
+        </Providers>
       </body>
     </html>
   )
