@@ -56,7 +56,7 @@ export default function RootLayout({
       <body>
         {/* <UmamiAnalytics isProd={IS_PRODUCTION} /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
             {children}
             <Toaster richColors />
           </ThemeProvider>
