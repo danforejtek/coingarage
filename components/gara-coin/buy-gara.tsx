@@ -73,10 +73,15 @@ export function BuyGara() {
             variant="default"
             disabled={connecting}
             onClick={disconnect}
-            onPointerEnter={() => setHovered(true)}
-            onPointerLeave={() => setHovered(false)}
+            data-connected={connected}
+            className="group"
           >
-            {hovered ? "Disconnect" : formatAddress(account)}
+            <span data-connected={connected} className="hidden group-data-[connected]:group-hover:block">
+              Disconnect
+            </span>
+            <span data-connected={connected} className="block group-data-[connected]:group-hover:hidden">
+              {formatAddress(account)}
+            </span>
           </Button>
         )}
 
