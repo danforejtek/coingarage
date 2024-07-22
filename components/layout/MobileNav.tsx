@@ -11,7 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { usePathname } from "next/navigation"
+import { useParams, usePathname } from "next/navigation"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 import { Button } from "@/components/ui/button"
@@ -22,11 +22,14 @@ import { useEffect, useState } from "react"
 import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
 import { ModeToggle } from "@/components/layout/ModeToggle"
 import LocaleSwitcher from "@/components/layout/LocaleSwitch"
+import { cn } from "@/lib/utils"
 
 const MobileNav = ({ scrolled = false }) => {
+  const pathname = usePathname()
+  const { locale } = useParams()
+  const pathnameWithoutLocale = pathname.replace(`/${locale}`, "")
   const [isOpen, setOpen] = useState(false)
   const toggleOpen = () => setOpen(!isOpen)
-  const pathname = usePathname()
   useEffect(() => {
     setOpen(false)
   }, [pathname])
@@ -64,22 +67,38 @@ const MobileNav = ({ scrolled = false }) => {
               </div>
             </li>
             {navItems.map(({ title, href, subItems }, index) => {
+              const hasActiveSubItem =
+                pathnameWithoutLocale.endsWith(pathname) ||
+                subItems?.some(({ href }) => pathnameWithoutLocale.endsWith(href))
+              const isActive = pathnameWithoutLocale.endsWith(href) || (href.includes(pathname) && pathname !== "/")
+
               return (
                 <li key={index} className="mb-4">
                   {!subItems ? (
-                    <Button variant="ghost" className="text-md w-full font-heading text-lg">
+                    <Button
+                      variant="ghost"
+                      className={cn("text-md w-full font-heading text-lg", isActive ? "text-primary" : "")}
+                    >
                       <Link href={href}>{title}</Link>
                     </Button>
                   ) : (
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1" className="border-b-0">
-                        <AccordionTrigger className="justify-center">{title}</AccordionTrigger>
+                        <AccordionTrigger className={cn("justify-center", hasActiveSubItem ? "text-primary" : "")}>
+                          {title}
+                        </AccordionTrigger>
                         <AccordionContent>
                           <ul>
                             {subItems.map(({ title, href }, index) => {
+                              const isActive =
+                                pathnameWithoutLocale.endsWith(href) || (href.includes(pathname) && pathname !== "/")
                               return (
                                 <li key={index}>
-                                  <Button variant="ghost" className="w-full text-sm">
+                                  <Button
+                                    variant="ghost"
+                                    className={cn("w-full text-sm", isActive ? "!text-primary" : "")}
+                                    data-active={isActive}
+                                  >
                                     <Link href={href}>{title}</Link>
                                   </Button>
                                 </li>

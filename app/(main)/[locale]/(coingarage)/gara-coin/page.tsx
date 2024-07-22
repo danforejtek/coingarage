@@ -4,7 +4,6 @@ import { AlocationChart } from "@/components/gara-coin/alocation-chart"
 import { BuyGara } from "@/components/gara-coin/buy-gara"
 import Heading from "@/components/Heading"
 import { Button } from "@/components/ui/button"
-import { ChevronDown, ClipboardCopy } from "lucide-react"
 import { useTranslations } from "next-intl"
 // import { unstable_setRequestLocale } from "next-intl/server"
 import Image from "next/image"
@@ -15,6 +14,7 @@ import Security from "@/public/images/gara-coin/security.svg"
 import Document from "@/public/images/gara-coin/document.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import Present from "@/public/images/gara-coin/present.svg"
+import { PolygonAddressCopyToClipboard } from "@/components/gara-coin/polygon-address-copy-to-clipboard"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (
@@ -324,12 +324,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
-              <span className="inline-flex items-center gap-2 font-heading text-xs md:text-sm">
-                <Button variant="ghost" size="icon" className="!size-6">
-                  <ClipboardCopy className="size-4 stroke-primary" />
-                </Button>
-                0x0B258A4ECC4Ac7a15fEdb882DB5d13F6EF23B02F
-              </span>
+              <PolygonAddressCopyToClipboard />
               <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
                 <Button variant="default" className="min-w-[200px]">
                   {t("IEO.box.btnBuyWithUSDT")}

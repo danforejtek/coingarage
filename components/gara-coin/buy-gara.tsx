@@ -47,18 +47,31 @@ export function BuyGara() {
         <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
       </div>
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
-        <p className="flex items-center">
-          {t("buyWith")}
-          <span className="mx-2 inline-flex">
-            <Image src="/icons/coins/usdt.png" width="18" height="18" alt="USDT" />
-          </span>
-          USDT
-        </p>
+        <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
+          <a
+            href="https://trade.coingarage.io/launchpad/project-details?project=GARA"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="flex items-center"
+          >
+            {t("buyWith")}
+            <span className="mx-2 inline-flex">
+              <Image src="/icons/coins/usdt.png" width="18" height="18" alt="USDT" />
+            </span>
+            USDT
+          </a>
+        </Button>
         <div className="flex items-center justify-center">
           <Arrow className="stroke-black dark:stroke-white" />
         </div>
         <Button variant="link" size="sm" className="p-0">
-          {t("linkGoToLaunchapad")}
+          <a
+            href="https://trade.coingarage.io/launchpad/project-details?project=GARA"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {t("linkGoToLaunchapad")}
+          </a>
         </Button>
       </div>
       <p className="mt-4 flex flex-row items-center justify-center">
