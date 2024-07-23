@@ -61,7 +61,7 @@ export function BuyGara() {
       </div>
       <div>
         <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
-        <CoinInput coin="MATIC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
+        <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
       </div>
       <div className="mt-8 grid grid-cols-2 justify-between gap-4">
         {!connected ? (
