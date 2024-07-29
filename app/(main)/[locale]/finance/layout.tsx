@@ -38,9 +38,8 @@ export default function RootLayout({
       <HeaderFinance />
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
-        <div className="fixed bottom-0 right-0">
-          <ContactUsWidget />
-        </div>
+
+        <ContactUsWidget />
         <FooterFinance />
       </div>
     </>

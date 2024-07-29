@@ -142,3 +142,7 @@
   background: var(--primary);
   fill: currentColor;
 }
+
+[vaul-drawer][vaul-drawer-direction="bottom"]::after {
+  background: transparent;
+}
