@@ -37,7 +37,7 @@ export default function Header() {
               <Image src="/logo.svg" width={206} height={31} alt="logo" />
             </div>
           </Link>
-          <div className="hidden max-w-[746px] flex-row gap-2 xl:flex">
+          <div className="hidden max-w-[752px] flex-row gap-2 xl:flex">
             <Menu />
             <GarageCoinPresale />
           </div>

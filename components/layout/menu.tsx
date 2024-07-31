@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl"
 import * as React from "react"
 import Link from "next/link"
+import { useParams, usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"
 // import { Icons } from "@/components/icons"
@@ -169,7 +170,7 @@ export const navItems: NavItem[] = [
       {
         title: "Become a Shareholder",
         key: "becomeAShareholder",
-        href: "https://www.coingarage-finance.com/en",
+        href: "https://coingarage-finance.com",
         icon: "shareholder",
       },
       {
@@ -242,18 +243,33 @@ export const navItems: NavItem[] = [
 ]
 
 export function Menu() {
+  const pathname = usePathname()
+  const { locale } = useParams()
+  const pathnameWithoutLocale = pathname.replace(`/${locale}`, "")
   const t = useTranslations()
   const { resolvedTheme } = useTheme()
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
         {navItems.map(({ title, href, subItems, icon, key }, index) => {
+          const hasActiveSubItem = subItems?.some(({ href }) => pathnameWithoutLocale.endsWith(href))
+          const isActive =
+            pathnameWithoutLocale.endsWith(pathname) ||
+            hasActiveSubItem ||
+            (href.includes(pathname) && pathname !== "/")
+
           // @ts-ignore
           const Icon = resolvedTheme === "dark" ? iconsDark[icon] : icons[icon] || null
           if (subItems) {
             return (
               <NavigationMenuItem key={index}>
-                <NavigationMenuTrigger className={cn("bg-transparent px-3 text-sm text-secondary dark:text-white")}>
+                <NavigationMenuTrigger
+                  className={cn(
+                    "bg-transparent px-3 text-sm text-secondary dark:text-white",
+                    isActive ? "!text-primary" : ""
+                  )}
+                >
                   {t(`Menu.${key}`)}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -315,7 +331,9 @@ export function Menu() {
 
 const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWithoutRef<"a">>(
   // @ts-ignore
-  ({ className, title, children, icon, localeKey, ...props }, ref) => {
+  ({ className, title, children, icon, localeKey, href, ...props }, ref) => {
+    const pathname = usePathname()
+    const isActive = pathname.endsWith(href) || (href.includes(pathname) && pathname !== "/")
     const t = useTranslations()
     const { resolvedTheme } = useTheme()
     // @ts-ignore
@@ -325,8 +343,10 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
         <NavigationMenuLink asChild>
           <a
             ref={ref}
+            href={href}
             className={cn(
               "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              isActive ? "text-primary" : "",
               className
             )}
             {...props}
