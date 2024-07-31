@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { cn } from "@/lib/utils"
-import { ArrowDown, ChevronRight, BookOpen, Users, CreditCard } from "lucide-react"
+import { ChevronRight, BookOpen } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"

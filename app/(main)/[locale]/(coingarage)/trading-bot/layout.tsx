@@ -1,6 +1,4 @@
 import { unstable_setRequestLocale } from "next-intl/server"
-import Footer from "@/components/layout/Footer"
-import Header from "@/components/layout/HeaderEz"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
 

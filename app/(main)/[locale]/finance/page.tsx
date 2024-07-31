@@ -3,7 +3,7 @@ import { unstable_setRequestLocale, getTranslations } from "next-intl/server"
 // import Figure from "@/components/Figure"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import Heading from "@/components/Heading"
+import Heading from "@/components/heading"
 import TradingIcon from "@/public/images/finance/icons/trading.svg"
 import AcademyIcon from "@/public/images/finance/icons/academy.svg"
 import BitcoinSavingsIcon from "@/public/images/finance/icons/bitcoinSavings.svg"
@@ -283,10 +283,10 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </Heading>
           <div className="pt-8 md:pl-12">
             <p className="mb-4 text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
-              {t.rich("taxHeavens.subtext1", { b: (text: string) => <b className="text-primary">{text}</b> })}
+              {t.rich("taxHeavens.subtext1", { b: (text: React.ReactNode) => <b className="text-primary">{text}</b> })}
             </p>
             <p className="mb-4 mt-12 text-base text-neutral-600 dark:text-neutral-300 lg:text-left">
-              {t.rich("taxHeavens.subtext2", { b: (text: string) => <b className="text-primary">{text}</b> })}
+              {t.rich("taxHeavens.subtext2", { b: (text: React.ReactNode) => <b className="text-primary">{text}</b> })}
             </p>
             <div className="mt-12 flex flex-row justify-between">
               <div>

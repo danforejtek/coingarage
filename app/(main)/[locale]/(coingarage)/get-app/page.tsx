@@ -1,5 +1,5 @@
 "use client"
-import GetApp from "@/components/promo/GetApp"
+import GetApp from "@/components/promo/get-app"
 import { useOs } from "@/hooks/use-os"
 import { useEffect } from "react"
 

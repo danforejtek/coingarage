@@ -1,6 +1,6 @@
 "use client"
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Link from "next/link"
 import {
   Dialog,
   DialogClose,
@@ -11,17 +11,17 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-import { Icons } from "@/components/Icons"
 import { Button } from "@/components/ui/button"
+import { Icons } from "@/components/icons"
 
-import LocaleSwitcher from "@/components/layout/LocaleSwitch"
-import { ModeToggle } from "@/components/layout/ModeToggle"
-import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
+import { navItems } from "./menu"
 import { useEffect, useState } from "react"
-import { navItems } from "./MenuFinance"
+import { GarageCoinPresale } from "@/components/promo/garage-coin-presale"
+import { ModeToggle } from "@/components/layout/mode-toggle"
+import LocaleSwitcher from "@/components/layout/locale-switch"
 
 const MobileNav = ({ scrolled = false }) => {
   const [isOpen, setOpen] = useState(false)
@@ -58,6 +58,11 @@ const MobileNav = ({ scrolled = false }) => {
         </div>
         <div className="flex justify-center overflow-auto border-b border-t border-gray-100 dark:border-gray-700">
           <ul className="p-6">
+            <li>
+              <div className="mb-4">
+                <GarageCoinPresale />
+              </div>
+            </li>
             {navItems.map(({ title, href, subItems }, index) => {
               return (
                 <li key={index} className="mb-4">
@@ -93,19 +98,19 @@ const MobileNav = ({ scrolled = false }) => {
         <DialogFooter className="flex-row items-center justify-between sm:justify-between">
           <div className="flex flex-row gap-2">
             <ModeToggle />
-            <LocaleSwitcher isFinance={true} />
+            <LocaleSwitcher />
           </div>
           <ul className="flex flex-row items-center justify-center gap-6">
             <li>
               <Button variant="outline" className="text-md w-full" asChild>
-                <a href="https://app.coingarage-finance.com/accounts/login" rel="noopener noreferrer">
+                <a href="https://trade.coingarage.io/login" rel="noopener noreferrer">
                   Login
                 </a>
               </Button>
             </li>
             <li>
               <Button className="text-md w-full" asChild>
-                <a href="https://app.coingarage-finance.com/accounts/signup" rel="noopener noreferrer">
+                <a href="https://trade.coingarage.io/signup" rel="noopener noreferrer">
                   Sign up
                 </a>
               </Button>

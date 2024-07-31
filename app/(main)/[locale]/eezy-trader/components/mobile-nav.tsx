@@ -1,24 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+import { Dialog, DialogClose, DialogContent, DialogFooter, DialogHeader } from "@/components/ui/dialog"
 import { usePathname } from "next/navigation"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import { Icons } from "@/components/Icons"
+import { Icons } from "@/components/icons"
 import { useEffect, useState } from "react"
-import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
-import { ModeToggle } from "@/components/layout/ModeToggle"
-import LocaleSwitcher from "@/components/layout/LocaleSwitch"
+import { ModeToggle } from "@/components/layout/mode-toggle"
+import LocaleSwitcher from "@/components/layout/locale-switch"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { cn } from "@/lib/utils"
 import { ArrowDown, ChevronRight, BookOpen, Users, CreditCard } from "lucide-react"

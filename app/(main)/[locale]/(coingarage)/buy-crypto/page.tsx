@@ -1,6 +1,6 @@
-import Figure from "@/components/Figure"
-import Heading from "@/components/Heading"
-import MegaInput from "@/components/form/MegaInput"
+import Figure from "@/components/figure"
+import Heading from "@/components/heading"
+import MegaInput from "@/components/form/mega-input"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 

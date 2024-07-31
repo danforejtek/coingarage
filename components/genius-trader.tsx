@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import Heading from "./Heading"
+import Heading from "./heading"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
 import { ChevronRight } from "lucide-react"

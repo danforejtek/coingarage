@@ -1,5 +1,5 @@
 "use client"
-import Heading from "@/components/Heading"
+import Heading from "@/components/heading"
 import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 import Image from "next/image"

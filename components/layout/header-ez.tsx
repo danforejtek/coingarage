@@ -3,14 +3,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import MobileNav from "./MobileNav"
+import MobileNav from "./mobile-nav"
 import { useScrollPosition } from "@/hooks/use-scroll-position"
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
-import { ModeToggle } from "./ModeToggle"
-import { GarageCoinPresale } from "@/components/promo/GarageCoinPresale"
+import { ModeToggle } from "./mode-toggle"
+import { GarageCoinPresale } from "@/components/promo/garage-coin-presale"
 import { useTranslations } from "next-intl"
-import LocaleSwitcher from "@/components/layout/LocaleSwitch"
+import LocaleSwitcher from "@/components/layout/locale-switch"
 
 export default function Header() {
   const t = useTranslations("Menu")

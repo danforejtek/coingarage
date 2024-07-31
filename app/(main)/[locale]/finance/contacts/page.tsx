@@ -1,7 +1,6 @@
 // import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
-import Image from "next/image"
-import { ContactUsForm } from "@/components/form/ContactUs"
-import { Fingerprint, Info, ListIcon, ListTreeIcon, Mail, MapPin, Phone } from "lucide-react"
+import { ContactUsForm } from "@/components/form/contact-us"
+import { Fingerprint, Mail, MapPin, Phone } from "lucide-react"
 
 export default async function Page({ params: { locale } }: { params: { locale: string } }) {
   // unstable_setRequestLocale(locale)

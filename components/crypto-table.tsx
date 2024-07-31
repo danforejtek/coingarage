@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import Heading from "./Heading"
+import Heading from "./heading"
 import { cn, formatCurrency, formatPercentage } from "@/lib/utils"
 
 type CryptoData = {

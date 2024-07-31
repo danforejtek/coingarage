@@ -1,6 +1,6 @@
 "use client"
 import useSWR from "swr"
-import CryptoTable from "./CryptoTable"
+import CryptoTable from "./crypto-table"
 import { useEffect, useState } from "react"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useTranslations } from "next-intl"

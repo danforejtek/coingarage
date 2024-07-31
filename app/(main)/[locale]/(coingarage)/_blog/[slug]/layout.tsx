@@ -1,4 +1,4 @@
-import LatestBlogPosts from "@/components/LatestBlogPosts"
+import LatestBlogPosts from "@/components/latest-blog-posts"
 import { locales } from "@/config"
 import { unstable_setRequestLocale } from "next-intl/server"
 

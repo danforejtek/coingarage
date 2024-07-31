@@ -1,4 +1,4 @@
-import { userDataSchema } from "@/components/form/CoinListing"
+import { userDataSchema } from "@/components/form/coin-listing"
 import { sendMail } from "@/lib/mailer"
 import z from "zod"
 

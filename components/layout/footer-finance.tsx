@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import ContactUs from "@/components/form/ContactUs"
+import ContactUs from "@/components/form/contact-us"
 import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from "lucide-react"
 import { useTranslations } from "next-intl"
-import CoinListing from "@/components/form/CoinListing"
+import CoinListing from "@/components/form/coin-listing"
 
 export default function FooterFinance() {
   const t = useTranslations("Footer")

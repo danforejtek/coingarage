@@ -1,18 +1,16 @@
 import { unstable_setRequestLocale } from "next-intl/server"
-import Footer from "@/components/layout/Footer"
-import Header from "@/components/layout/Header"
+import Footer from "@/components/layout/footer"
 import "@/styles/globals.scss"
 import type { Metadata } from "next"
-
 import { locales } from "@/config"
 import { Sidebar } from "@/app/(main)/[locale]/eezy-trader/components/sidebar"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { cn } from "@/lib/utils"
-import LocaleSwitcher from "@/components/layout/LocaleSwitch"
+import LocaleSwitcher from "@/components/layout/locale-switch"
 import Link from "next/link"
-import MobileNav from "@/app/(main)/[locale]/eezy-trader/components/MobileNav"
+import MobileNav from "@/app/(main)/[locale]/eezy-trader/components/mobile-nav"
 import Image from "next/image"
 
 export function generateStaticParams() {

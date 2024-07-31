@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl"
 import { unstable_setRequestLocale } from "next-intl/server"
-import Figure from "@/components/Figure"
-import Heading from "@/components/Heading"
+import Figure from "@/components/figure"
+import Heading from "@/components/heading"
 import Image from "next/image"
 
 export default function AboutUs({ params: { locale } }: { params: { locale: string } }) {

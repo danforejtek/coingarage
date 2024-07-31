@@ -1,4 +1,4 @@
-import ComingSoon from "@/components/ComingSoon"
+import ComingSoon from "@/components/coming-soon"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

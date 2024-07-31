@@ -1,7 +1,7 @@
-import MegaInput from "@/components/form/MegaInput"
+import MegaInput from "@/components/form/mega-input"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Icons } from "@/components/Icons"
+import { Icons } from "@/components/icons"
 
 export default function AboutUs() {
   return (

@@ -2,8 +2,8 @@ import "@/styles/globals.scss"
 import { unstable_setRequestLocale } from "next-intl/server"
 import type { Metadata } from "next"
 
-import HeaderFinance from "@/components/layout/HeaderFinance"
-import FooterFinance from "@/components/layout/FooterFinance"
+import HeaderFinance from "@/components/layout/header-finance"
+import FooterFinance from "@/components/layout/footer-finance"
 
 import { locales } from "@/config"
 

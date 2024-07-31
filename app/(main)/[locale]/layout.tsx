@@ -6,14 +6,14 @@ import type { Metadata } from "next"
 import { Inter, Sofia_Sans } from "next/font/google"
 // import { Toaster } from "@/components/ui/toaster"
 import { Toaster } from "@/components/ui/sonner"
-import GoogleAnalytics from "@/components/GoogleAnalytics"
+import GoogleAnalytics from "@/components/google-analytics"
 // import UmamiAnalytics from "@/components/UmamiAnalytics"
 
 import { locales } from "@/config"
-import GoogleTagManager from "@/components/GoogleTagManager"
+import GoogleTagManager from "@/components/google-tag-manager"
 import { Suspense } from "react"
 import { headers } from "next/headers"
-import { SmartlookScript } from "@/components/SmarlookScript"
+import { SmartlookScript } from "@/components/smartlook-script"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))

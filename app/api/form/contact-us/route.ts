@@ -1,4 +1,4 @@
-import { userDataSchema } from "@/components/form/ContactUs"
+import { userDataSchema } from "@/components/form/contact-us"
 import { sendMail } from "@/lib/mailer"
 import { getMaxListeners } from "events"
 import z from "zod"

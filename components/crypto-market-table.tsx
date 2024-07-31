@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { cn, formatCurrency, formatPercentage } from "@/lib/utils"
-import Heading from "@/components/Heading"
+import Heading from "@/components/heading"
 import { getTranslations } from "next-intl/server"
 
 const getData = async () => {

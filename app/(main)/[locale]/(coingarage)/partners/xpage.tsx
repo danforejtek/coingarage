@@ -1,6 +1,6 @@
 import Image from "next/image"
 import type { Metadata } from "next"
-import Heading from "@/components/Heading"
+import Heading from "@/components/heading"
 import { unstable_setRequestLocale } from "next-intl/server"
 import { useTranslations } from "next-intl"
 import { cn } from "@/lib/utils"
