@@ -161,7 +161,6 @@
     "postalCode": "110 00",
     "country": "Praga, Repubblica Ceca",
 
-
     "phone": "+420 778 116 516",
     "email": "support@coingarage.io",
     "companyID": "IČ: 11667974"
@@ -829,6 +828,143 @@
           "answer": "Il percorso con i fondi di capitale di rischio è solitamente lungo, non vogliamo rallentare il progetto, quindi il 1° round di investimento in particolare è per i soci silenziosi del pubblico. Il piano è che dai prossimi round di investimento in poi, i fondi di capitale di rischio saranno il focus principale."
         }
       }
+    }
+  },
+  "GARA": {
+    "main": {
+      "header": "GARAGE Coin <span>GARA</span>",
+      "text1": "GARA è il token del nostro exchange Coingarage, che ci aiuta a sviluppare l'ecosistema dell'exchange. Questo token è stato creato con un massimo fisso di soli 900 milioni di unità, e non può essere aumentato. Tuttavia, a causa del nostro meccanismo di burning, il numero di token GARA diminuirà gradualmente nel tempo.",
+      "text2": "L'uso principale di GARA è per pagare varie commissioni sull'exchange. Quando viene utilizzato per pagare queste commissioni, i nostri utenti ricevono inoltre uno sconto del 20% sull'importo di queste commissioni. Inoltre, GARA serve come forma di ricompensa per i nostri utenti.",
+      "buyGARA": {
+        "header": "Acquista GARA",
+        "totalTokens": "Quantità totale di token GARA",
+        "distributedTokens": "Token GARA distribuiti totali",
+        "soldTokens": "Token venduti",
+        "btnConnectWallet": "Collega Wallet",
+        "btnBuyGARA": "Acquista GARA",
+        "buyWith": "Acquista con",
+        "linkGoToLaunchapad": "Vai al Launchpad",
+        "poweredBy": "Offerto da"
+      }
+    },
+    "usage": {
+      "header": "Pianificazione dell'uso di GARA",
+      "usage1": "Commissioni di listing",
+      "usage2": "Commissioni dalle transazioni con carta",
+      "usage3": "Gas richiesto per il trasferimento",
+      "usage4": "Commissione di successo",
+      "usage5": "Commissione di prelievo",
+      "usage6": "Commissione gas per EEZY Trader",
+      "usage7": "Commissioni di acquisto",
+      "usage8": "Pubblicità"
+    },
+    "burnMechanism": {
+      "header": "Meccanismo di burning di GARA",
+      "box1": {
+        "text": "Ogni mese bruciamo il 20% di GARA",
+        "subText": "sulle commissioni ricevute"
+      },
+      "box2": {
+        "text": "Fino a quando rimangono 200 milioni di GARA",
+        "subText": "  dai 900 milioni originali."
+      }
+    },
+    "roadmap": {
+      "header": "Roadmap",
+      "btnBuyGARA": "Acquista GARA",
+      "text1": "Exchange avviato",
+      "text2": "GARA creato",
+      "text3": "Lanciato il robot di trading EEZY Trader",
+      "text4": "Prevendita di GARA",
+      "text5": "Listing su Uniswap",
+      "text6": "Listing di GARA su Coinmarketcap e Coingecko",
+      "text7": "Lancio del trading di GARA su Coingarage",
+      "text8": "Primo airdrop di GARA",
+      "text9": "Applicazione delle commissioni GARA e burning di GARA",
+      "text10": "Secondo airdrop di GARA",
+      "text11": "Staking e cashback in GARA",
+      "text12": "Carta crittografica e cashback in GARA"
+    },
+    "alocation": {
+      "header": "Allocazione",
+      "IEO": {
+        "text": "50% (450M GARA)",
+        "subText": "Prevendita pubblica IEO"
+      },
+      "baseTeam": {
+        "text": "20% (180M GARA)",
+        "subText": "Team fondatore"
+      },
+      "burnedAt": {
+        "text": "15% (135M GARA)",
+        "subText": "Sarà bruciato il 5/1/2024"
+      },
+      "angelInvestors": {
+        "text": "10% (90M GARA)",
+        "subText": "Investitori Angel"
+      },
+      "marketing": {
+        "text": "5% (45M GARA)",
+        "subText": "Marketing per nuovi utenti dell'exchange"
+      },
+      "limit": " È stato creato un limite di 900 milioni di GARA, che non sarà mai aumentato."
+    },
+    "release": {
+      "header": "Rilascio di GARA per il Team",
+      "subHeader": "180 Milioni di GARA",
+      "text": "I 180 milioni di GARA destinati al team saranno rilasciati gradualmente, con il 20% (36 milioni) rilasciato ogni anno per un periodo di 5 anni.",
+      "box1": {
+        "text": "Al lancio della prevendita",
+        "subText": "20% (36M.)"
+      },
+      "box2": {
+        "text": "Dopo 2 anni",
+        "subText": "20% (36M.)"
+      },
+      "box3": {
+        "text": "Dopo 3 anni",
+        "subText": "20% (36M.)"
+      },
+      "box4": {
+        "text": "Dopo 4 anni",
+        "subText": "20% (36M.)"
+      },
+      "box5": {
+        "text": "Dopo 5 anni",
+        "subText": "20% (36M.)"
+      }
+    },
+    "IEO": {
+      "header": "Prevendita pubblica IEO",
+      "text1": "Il 40% dei fondi raccolti dalla prevendita di GARA sarà utilizzato per costruire e migliorare la piattaforma Coingarage in conformità con il piano aziendale.",
+      "text2": "Un altro 40% sarà utilizzato per il marketing e la costruzione del marchio Coingarage per garantire che l'exchange cresca rapidamente e attragga il maggior numero possibile di utenti. Questi utenti utilizzeranno i servizi e gli strumenti di Coingarage, pagando con GARA, aumentando così il suo utilizzo e accelerando il suo tasso di burning.",
+      "text3": "Il restante 20% dei fondi raccolti sarà tenuto in riserva per situazioni impreviste.",
+      "box": {
+        "address": "Indirizzo del contratto",
+        "btnBuyWithUSDT": "Acquista con USDT",
+        "btnBuyWithMatic": "Acquista con Matic"
+      }
+    },
+    "GARArunning": {
+      "header": "GARA funziona sulla blockchain di Polygon",
+      "text": "Polygon (precedentemente conosciuto come Matic Network) è una piattaforma blockchain che espande e migliora la rete Ethereum. Ha diversi vantaggi, tra cui:",
+      "box1": {
+        "header": "Scalabilità",
+        "text": "Polygon consente una scalabilità rapida ed efficiente della rete Ethereum. Attraverso i cosiddetti strati di scaling, può elaborare molte più transazioni al secondo rispetto alla blockchain base di Ethereum."
+      },
+      "box2": {
+        "header": "Commissioni basse",
+        "text": "Grazie alla scalabilità e all'ottimizzazione del processo di transazione, Polygon offre commissioni basse per le transazioni. Questo è vantaggioso per gli utenti che desiderano effettuare transazioni frequenti ed economiche."
+      },
+      "box3": {
+        "header": "Interoperabilità",
+        "text": "Polygon è compatibile con Ethereum, il che significa che le dApp e gli smart contract sviluppati per Ethereum possono essere facilmente trasferiti su Polygon. Questo consente agli sviluppatori di sfruttare i vantaggi di Polygon senza dover scrivere un nuovo codice."
+      },
+      "box4": {
+        "header": "Sicurezza",
+        "text": "Polygon si basa sulla sicurezza della rete Ethereum e utilizza il consenso Proof of Stake (PoS). Questo significa che i detentori del token Polygon possono mettere in staking i loro token per aiutare a garantire la sicurezza della rete e guadagnare ricompense per farlo."
+      },
+      "btnGARAOnPolygon": "GARA su Polygonscanu"
     }
   }
 }

@@ -828,5 +828,142 @@
         }
       }
     }
+  },
+  "GARA": {
+    "main": {
+      "header": "GARAGE Coin <span>GARA</span>",
+      "text1": "GARA, borsamız Coingarage'ın tokenıdır ve borsa ekosistemini geliştirmemize yardımcı olur. Bu token, maksimum 900 milyon birimle oluşturulmuş olup artırılamaz. Ancak, yakma mekanizmamız nedeniyle GARA tokenlarının sayısı zamanla kademeli olarak azalacaktır.",
+      "text2": "GARA'nın ana kullanımı borsadaki çeşitli ücretlerin ödenmesidir. Bu ücretlerin ödenmesi için kullanıldığında, kullanıcılarımız bu ücretlerin miktarı üzerinden %20 indirim alır. Ayrıca, GARA kullanıcılarımıza ödül olarak da hizmet eder.",
+      "buyGARA": {
+        "header": "GARA Satın Al",
+        "totalTokens": "Toplam GARA Tokenı",
+        "distributedTokens": "Toplam Dağıtılan GARA Tokenları",
+        "soldTokens": "Satılan Tokenlar",
+        "btnConnectWallet": "Cüzdanı Bağla",
+        "btnBuyGARA": "GARA Satın Al",
+        "buyWith": "İle Satın Al",
+        "linkGoToLaunchapad": "Launchpad'e Git",
+        "poweredBy": "Tarafından Sağlanmaktadır"
+      }
+    },
+    "usage": {
+      "header": "GARA Kullanım Planlaması",
+      "usage1": "Listeleme Ücretleri",
+      "usage2": "Kart İşlemleri Ücretleri",
+      "usage3": "Transfer için Gerekli Gas",
+      "usage4": "Başarı Ücreti",
+      "usage5": "Çekim Ücreti",
+      "usage6": "EEZY Trader için Gas Ücreti",
+      "usage7": "Alım Ücretleri",
+      "usage8": "Reklam"
+    },
+    "burnMechanism": {
+      "header": "GARA Yakma Mekanizması",
+      "box1": {
+        "text": "Her ay alınan ücretlerin %20'sini yakıyoruz",
+        "subText": ""
+      },
+      "box2": {
+        "text": "900 milyon orijinalden",
+        "subText": "200 milyon GARA kalana kadar."
+      }
+    },
+    "roadmap": {
+      "header": "Yol Haritası",
+      "btnBuyGARA": "GARA Satın Al",
+      "text1": "Borsa Başladı",
+      "text2": "GARA Oluşturuldu",
+      "text3": "EEZY Trader ticaret botu başlatıldı",
+      "text4": "GARA Ön Satışı",
+      "text5": "Uniswap'ta listeleme",
+      "text6": "Coinmarketcap ve Coingecko'da GARA listeleme",
+      "text7": "Coingarage'da GARA ticaretinin başlatılması",
+      "text8": "İlk GARA airdropu",
+      "text9": "GARA ücretlerinin uygulanması ve GARA yakma",
+      "text10": "İkinci GARA airdropu",
+      "text11": "GARA staking ve geri ödeme",
+      "text12": "Kripto kart ve GARA geri ödeme"
+    },
+    "alocation": {
+      "header": "Tahsisat",
+      "IEO": {
+        "text": "50% (450M GARA)",
+        "subText": "Halka Açık Ön Satış IEO"
+      },
+      "baseTeam": {
+        "text": "20% (180M GARA)",
+        "subText": "Kurucu Ekip"
+      },
+      "burnedAt": {
+        "text": "15% (135M GARA)",
+        "subText": "5/1/2024 tarihinde yakılacaktır"
+      },
+      "angelInvestors": {
+        "text": "10% (90M GARA)",
+        "subText": "Melek Yatırımcılar"
+      },
+      "marketing": {
+        "text": "5% (45M GARA)",
+        "subText": "Borsanın yeni kullanıcıları için pazarlama"
+      },
+      "limit": " 900 milyon GARA sınırı oluşturulmuş olup asla artırılmayacaktır."
+    },
+    "release": {
+      "header": "Takım İçin GARA Sürümü",
+      "subHeader": "180 Milyon GARA",
+      "text": "Takım için ayrılan 180 milyon GARA, 5 yıl boyunca her yıl %20'si (36 milyon) serbest bırakılacak şekilde kademeli olarak serbest bırakılacaktır.",
+      "box1": {
+        "text": "Ön Satışın Başlangıcında",
+        "subText": "20% (36M.)"
+      },
+      "box2": {
+        "text": "2 Yıl Sonra",
+        "subText": "20% (36M.)"
+      },
+      "box3": {
+        "text": "3 Yıl Sonra",
+        "subText": "20% (36M.)"
+      },
+      "box4": {
+        "text": "4 Yıl Sonra",
+        "subText": "20% (36M.)"
+      },
+      "box5": {
+        "text": "5 Yıl Sonra",
+        "subText": "20% (36M.)"
+      }
+    },
+    "IEO": {
+      "header": "Halka Açık Ön Satış IEO",
+      "text1": "GARA ön satışından toplanan fonların %40'ı, iş planına uygun olarak Coingarage platformunu inşa etmek ve iyileştirmek için kullanılacaktır.",
+      "text2": "Başka bir %40, borsanın hızla büyümesini sağlamak ve mümkün olduğunca çok sayıda kullanıcı çekmek için Coingarage markasının pazarlanması ve oluşturulması için kullanılacaktır. Bu kullanıcılar, Coingarage hizmetlerini ve araçlarını kullanarak GARA ile ödeme yapacak, böylece kullanımını artıracak ve yakılma hızını hızlandıracaktır.",
+      "text3": "Toplanan fonların geri kalan %20'si, öngörülemeyen durumlar için yedekte tutulacaktır.",
+      "box": {
+        "address": "Sözleşme Adresi",
+        "btnBuyWithUSDT": "USDT ile Satın Al",
+        "btnBuyWithMatic": "Matic ile Satın Al"
+      }
+    },
+    "GARArunning": {
+      "header": "GARA Polygon Blockchain Üzerinde Çalışıyor",
+      "text": "Polygon (eski adıyla Matic Network), Ethereum ağını genişleten ve iyileştiren bir blockchain platformudur. Birçok avantajı vardır, bunlar arasında:",
+      "box1": {
+        "header": "Ölçeklenebilirlik",
+        "text": "Polygon, Ethereum ağının hızlı ve verimli bir şekilde ölçeklenmesini sağlar. Ölçeklenebilir katmanlar aracılığıyla, temel Ethereum blockchain'inden çok daha fazla işlemi saniyede işleyebilir."
+      },
+      "box2": {
+        "header": "Düşük Ücretler",
+        "text": "İşlem sürecinin ölçeklenebilirliği ve optimize edilmesi sayesinde, Polygon işlemler için düşük ücretler sunar. Bu, sık ve ekonomik işlemler yapmak isteyen kullanıcılar için avantajlıdır."
+      },
+      "box3": {
+        "header": "İş Birliği",
+        "text": "Polygon, Ethereum ile uyumludur, bu da Ethereum için geliştirilen dApp'lerin ve akıllı sözleşmelerin kolayca Polygon'a taşınabileceği anlamına gelir. Bu, geliştiricilerin Polygon'un avantajlarından faydalanmalarını sağlar."
+      },
+      "box4": {
+        "header": "Güvenlik",
+        "text": "Polygon, Ethereum ağının güvenliğine dayanır ve Proof of Stake (PoS) konsensüsünü kullanır. Bu, Polygon token sahiplerinin tokenlarını stake ederek ağın güvenliğine katkıda bulunabilecekleri ve bunun için ödül kazanabilecekleri anlamına gelir."
+      },
+      "btnGARAOnPolygon": "Polygonscan'da GARA"
+    }
   }
 }

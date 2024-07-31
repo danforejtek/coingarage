@@ -126,8 +126,8 @@ export function AlocationChart() {
                   return (
                     <>
                       <svg
-                        x={viewBox.cx - 38}
-                        y={viewBox.cy - 50}
+                        x={Number(viewBox.cx) - 38}
+                        y={Number(viewBox.cy) - 50}
                         width="97"
                         height="53"
                         viewBox="0 0 97 53"
@@ -161,7 +161,7 @@ export function AlocationChart() {
                         </defs>
                       </svg>
                       <text x={viewBox.cx} y={viewBox.cy} textAnchor="middle" dominantBaseline="middle">
-                        <tspan x={viewBox.cx} y={viewBox.cy + 40} className="fill-foreground text-lg font-bold">
+                        <tspan x={viewBox.cx} y={Number(viewBox.cy) + 40} className="fill-foreground text-lg font-bold">
                           {total.toLocaleString()}
                           {"M"}
                         </tspan>

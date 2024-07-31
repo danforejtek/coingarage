@@ -2,7 +2,7 @@
 import { useTheme } from "next-themes"
 import { AlocationChart } from "@/components/gara-coin/alocation-chart"
 import { BuyGara } from "@/components/gara-coin/buy-gara"
-import Heading from "@/components/Heading"
+import Heading from "@/components/heading"
 import { Button } from "@/components/ui/button"
 import { useTranslations } from "next-intl"
 // import { unstable_setRequestLocale } from "next-intl/server"

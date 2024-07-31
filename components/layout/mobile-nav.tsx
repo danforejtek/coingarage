@@ -61,11 +61,11 @@ const MobileNav = ({ scrolled = false }) => {
         </div>
         <div className="flex justify-center overflow-auto border-b border-t border-gray-100 dark:border-gray-700">
           <ul className="p-6">
-            <li>
+            {/* <li>
               <div className="mb-4">
                 <GarageCoinPresale />
               </div>
-            </li>
+            </li> */}
             {navItems.map(({ title, href, subItems }, index) => {
               const hasActiveSubItem =
                 pathnameWithoutLocale.endsWith(pathname) ||
