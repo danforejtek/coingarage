@@ -6,6 +6,7 @@ import HeaderFinance from "@/components/layout/header-finance"
 import FooterFinance from "@/components/layout/footer-finance"
 
 import { locales } from "@/config"
+import { ContactUsWidget } from "@/app/(main)/[locale]/finance/components/contact-us-widget"
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -37,6 +38,8 @@ export default function RootLayout({
       <HeaderFinance />
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
+
+        <ContactUsWidget />
         <FooterFinance />
       </div>
     </>

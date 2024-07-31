@@ -2,7 +2,8 @@
 
 import { Input } from "@/components/ui/input"
 import { useForm } from "react-hook-form"
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form"
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { cn, formatCurrency } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
@@ -10,21 +11,38 @@ import { submitContactMeForm } from "@/app/(main)/[locale]/finance/lib/actions"
 import { toast } from "sonner"
 import { useTranslations } from "next-intl"
 
-export const contactMeSchema = z.object({
-  fullName: z.string().min(6, {
-    message: "Full name must be at least 6 characters.",
-  }),
-  email: z.string().email({ message: "Invalid email address." }),
-  phone: z.string().min(9, { message: "Phone number must be at least 9 characters." }),
-})
+export const contactMeSchema = z
+  .object({
+    fullName: z.string().min(6, {
+      message: "Full name must be at least 6 characters.",
+    }),
+    email: z.string().optional(),
+    phone: z.string().optional(),
+  })
+  .and(
+    z.union(
+      [
+        z.object({
+          email: z.undefined(),
+          phone: z.string().min(9, { message: "Phone number must be at least 9 characters." }),
+        }),
+        z.object({ email: z.string().email({ message: "Invalid email address." }), phone: z.undefined() }),
+        z.object({
+          email: z.string().email({ message: "Invalid email address." }),
+          phone: z.string().min(9, { message: "Phone number must be at least 9 characters." }),
+        }),
+      ],
+      { errorMap: (issue, ctx) => ({ message: "Either email or phone must be filled in" }) }
+    )
+  )
 
 const defaultValues = {
   fullName: "",
-  phone: "",
-  email: "",
+  phone: undefined,
+  email: undefined,
 }
 
-export function GetMoreInfoForm() {
+export function GetMoreInfoForm({ onSuccess, className }: { onSuccess?: () => void; className?: string }) {
   const t = useTranslations("finance")
   const form = useForm({
     defaultValues: defaultValues,
@@ -39,12 +57,15 @@ export function GetMoreInfoForm() {
       toast.success("Thank you for your interest!", {
         description: "We will get back to you as soon as possible.",
       })
+      if (typeof onSuccess === "function") {
+        onSuccess()
+      }
     }
   }
 
   return (
     <Form {...form}>
-      <form className="mx-auto mt-12 max-w-[600px]" onSubmit={form.handleSubmit(submitHandler)}>
+      <form className={cn("mx-auto mt-12 max-w-[600px]", className)} onSubmit={form.handleSubmit(submitHandler)}>
         <div className="mb-4 flex flex-col gap-4 lg:mb-8 lg:flex-row lg:gap-8">
           <FormField
             control={form.control}
