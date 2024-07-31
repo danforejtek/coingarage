@@ -841,5 +841,142 @@
     "email": "E-Mail",
     "newsletter": "Newsletter abonnieren",
     "subscribe": "Abonnieren"
+  },
+  "GARA": {
+    "main": {
+      "header": "GARAGE Coin <span>GARA</span>",
+      "text1": "Es ist das Token unserer Coingarage-Börse, das uns hilft, unser Börsen-Ökosystem zu entwickeln. Dieses Token wurde mit einem festen Maximum von nur 900 Millionen Einheiten erstellt, und es kann nicht erhöht werden.",
+      "text2": "GARA wird als Belohnungsform für unsere Nutzer verwendet. Es kann auch verwendet werden, um eine Vielzahl von Gebühren an der Börse zu bezahlen. Wenn es verwendet wird, um diese Gebühren zu bezahlen, erhalten unsere Nutzer zusätzlich einen Rabatt von 20% auf den Betrag dieser Gebühren.",
+      "buyGARA": {
+        "header": "GARA kaufen",
+        "totalTokens": "Gesamtanzahl der GARA-Tokens",
+        "distributedTokens": "Insgesamt verteilte GARA-Tokens",
+        "soldTokens": "Verkaufte Tokens",
+        "btnConnectWallet": "Wallet verbinden",
+        "btnBuyGARA": "GARA kaufen",
+        "buyWith": "Kaufen mit",
+        "linkGoToLaunchapad": "Zum Launchpad",
+        "poweredBy": "Angetrieben von"
+      }
+    },
+    "usage": {
+      "header": "GARA Nutzungsplanung",
+      "usage1": "Listing-Gebühren",
+      "usage2": "Gebühren für Kartentransaktionen",
+      "usage3": "Erforderliches Gas für Transfers",
+      "usage4": "Erfolgsgebühr",
+      "usage5": "Abhebungsgebühr",
+      "usage6": "Gasgebühr für EEZY Trader",
+      "usage7": "Kaufgebühren",
+      "usage8": "Werbung"
+    },
+    "burnMechanism": {
+      "header": "GARA Verbrennungsmechanismus",
+      "box1": {
+        "text": "Jeden Monat verbrennen wir 20% von GARA",
+        "subText": "auf erhaltenen Gebühren"
+      },
+      "box2": {
+        "text": "Bis 200 Millionen GARA übrig bleiben",
+        "subText": " von den ursprünglichen 900 Millionen."
+      }
+    },
+    "roadmap": {
+      "header": "Fahrplan",
+      "btnBuyGARA": "GARA kaufen",
+      "text1": "Börse gestartet",
+      "text2": "GARA erstellt",
+      "text3": "Start des Trading-Roboters EEZY Trader",
+      "text4": "Vorverkauf von GARA",
+      "text5": "Listing auf Uniswap",
+      "text6": "GARA-Listing auf Coinmarketcap & Coingecko",
+      "text7": "Start des GARA-Handels auf der Coingarage-Börse",
+      "text8": "Erster GARA-Airdrop",
+      "text9": "Anwendung der GARA-Gebühren und GARA-Verbrennung",
+      "text10": "Zweiter GARA-Airdrop",
+      "text11": "Staking und Cashback in GARA",
+      "text12": "Krypto-Karte und Cashback in GARA"
+    },
+    "alocation": {
+      "header": "Zuweisung",
+      "IEO": {
+        "text": "50% (450M GARA)",
+        "subText": "Öffentlicher IEO-Vorverkauf"
+      },
+      "baseTeam": {
+        "text": "20% (180M GARA)",
+        "subText": "Gründerteam"
+      },
+      "burnedAt": {
+        "text": "15% (135M GARA)",
+        "subText": "Wird am 01.05.2024 verbrannt"
+      },
+      "angelInvestors": {
+        "text": "10% (90M GARA)",
+        "subText": "Angel-Investoren"
+      },
+      "marketing": {
+        "text": "5% (45M GARA)",
+        "subText": "Marketing für neue Börsennutzer"
+      },
+      "limit": " Es wurde ein Limit von 900 Millionen GARA erstellt, das nie erhöht wird."
+    },
+    "release": {
+      "header": "GARA-Freigabe für das Team",
+      "subHeader": "180 Millionen GARA",
+      "text": "Die 180 Millionen GARA, die dem Team zugewiesen wurden, werden schrittweise freigegeben, wobei jedes Jahr 20% (36 Millionen) über einen Zeitraum von 5 Jahren freigegeben werden.",
+      "box1": {
+        "text": "Beim Start des Vorverkaufs",
+        "subText": "20% (36M.)"
+      },
+      "box2": {
+        "text": "Nach 2 Jahren",
+        "subText": "20% (36M.)"
+      },
+      "box3": {
+        "text": "Nach 3 Jahren",
+        "subText": "20% (36M.)"
+      },
+      "box4": {
+        "text": "Nach 4 Jahren",
+        "subText": "20% (36M.)"
+      },
+      "box5": {
+        "text": "Nach 5 Jahren",
+        "subText": "20% (36M.)"
+      }
+    },
+    "IEO": {
+      "header": "Öffentlicher IEO-Vorverkauf",
+      "text1": "40% der Mittel, die aus dem GARA-Vorverkauf aufgebracht werden, werden verwendet, um die Coingarage-Plattform gemäß dem Geschäftsplan zu bauen und zu verbessern.",
+      "text2": "Weitere 40% werden für Marketing und Markenbildung der Coingarage verwendet, um sicherzustellen, dass die Börse schnell wächst und so viele Nutzer wie möglich anzieht. Diese Nutzer werden die Dienste und Werkzeuge von Coingarage nutzen und mit GARA bezahlen, wodurch die Nutzung erhöht und die Verbrennungsrate beschleunigt wird.",
+      "text3": "Die verbleibenden 20% der aufgebrachten Mittel werden als Reserve für unerwartete Situationen aufbewahrt.",
+      "box": {
+        "address": "Vertragsadresse",
+        "btnBuyWithUSDT": "Mit USDT kaufen",
+        "btnBuyWithMatic": "Mit Matic kaufen"
+      }
+    },
+    "GARArunning": {
+      "header": "GARA läuft auf der Polygon Blockchain",
+      "text": "Polygon (ehemals bekannt als Matic Network) ist eine Blockchain-Plattform, die das Ethereum-Netzwerk erweitert und verbessert. Sie hat mehrere Vorteile, darunter:",
+      "box1": {
+        "header": "Skalierbarkeit",
+        "text": "Polygon ermöglicht eine schnelle und effiziente Skalierung des Ethereum-Netzwerks. Durch sogenannte Skalierungsschichten kann es viel mehr Transaktionen pro Sekunde verarbeiten als die Ethereum-Basis-Blockchain."
+      },
+      "box2": {
+        "header": "Niedrige Gebühren",
+        "text": "Dank der Skalierbarkeit und der Optimierung des Transaktionsprozesses bietet Polygon niedrige Gebühren für Transaktionen. Dies ist vorteilhaft für Nutzer, die häufige und kostengünstige Transaktionen durchführen möchten."
+      },
+      "box3": {
+        "header": "Interoperabilität",
+        "text": "Polygon ist mit Ethereum kompatibel, das bedeutet, dass dApps und Smart Contracts, die für Ethereum entwickelt wurden, einfach auf Polygon übertragen werden können. Dies ermöglicht Entwicklern, die Vorteile von Polygon zu nutzen, ohne neuen Code schreiben zu müssen."
+      },
+      "box4": {
+        "header": "Sicherheit",
+        "text": "Polygon basiert auf der Sicherheit des Ethereum-Netzwerks und nutzt dessen Proof of Stake (PoS) Konsens. Das bedeutet, dass Inhaber des Polygon-Tokens ihre Tokens staken können, um das Netzwerk zu sichern und Belohnungen dafür zu erhalten."
+      },
+      "btnGARAOnPolygon": "GARA auf Polygonscan"
+    }
   }
 }

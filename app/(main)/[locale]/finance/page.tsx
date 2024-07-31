@@ -119,7 +119,7 @@ const IconFigure = ({
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
           <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all hover:shadow-md hover:shadow-primary dark:border-none dark:bg-[#282930]">
-            <div className="ju flex flex-row-reverse">
+            <div className="flex flex-row-reverse">
               {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
             </div>
             <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
@@ -128,7 +128,7 @@ const IconFigure = ({
         </a>
       ) : (
         <figure className="w-[144px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#282930]">
-          <div className="ju flex flex-row-reverse">
+          <div className="flex flex-row-reverse">
             {icon ? icon : <Image src={statusImage} width={18} height={18} alt="" />}
           </div>
           <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>

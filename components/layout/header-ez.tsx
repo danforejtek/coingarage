@@ -37,7 +37,7 @@ export default function Header() {
               <Image src="/images/eezy-trader/logo/logo.png" width={206} height={31} alt="logo" />
             </div>
           </Link>
-          <div className="hidden max-w-[746px] flex-row gap-2 lg:flex">
+          <div className="hidden max-w-[752px] flex-row gap-2 lg:flex">
             <Button variant="ghost" className={cn("text-sm")} asChild>
               <a href="https://trade.coingarage.io/login">{tEz("knowledgeBase")}</a>
             </Button>
