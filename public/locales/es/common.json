@@ -674,6 +674,7 @@
         "placeholder1": "Full Name",
         "placeholder2": "Phone Number",
         "placeholder3": "Email",
+        "consent": "I agree to the processing of personal data",
         "sendBtn": "Send"
       },
       "subheader": "How Can We Achieve Such High Investment Returns?",
@@ -969,5 +970,9 @@
       },
       "btnGARAOnPolygon": "GARA en Polygonscan"
     }
+  },
+  "widget": {
+    "header": "Estaremos encantados de responder a todas sus preguntas",
+    "text": "No dude en enviarnos su correo electrónico y número de teléfono y un representante de ventas se pondrá en contacto con usted para responder a cualquier pregunta que pueda tener."
   }
 }

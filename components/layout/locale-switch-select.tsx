@@ -22,7 +22,6 @@ type Props = {
 }
 
 export default function LocaleSwitcherSelect({ children, defaultValue, label, locales }: Props) {
-  console.log(locales)
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
   const pathname = usePathname()

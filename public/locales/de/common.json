@@ -672,6 +672,7 @@
         "placeholder1": "Voller Name",
         "placeholder2": "Telefonnummer",
         "placeholder3": "E-Mail",
+        "consent": "Ich stimme der Verarbeitung meiner persönlichen Daten zu.",
         "sendBtn": "Senden"
       },
       "subheader": "Wie erreichen wir so hohe Investitionsrenditen?",
@@ -978,5 +979,9 @@
       },
       "btnGARAOnPolygon": "GARA auf Polygonscan"
     }
+  },
+  "widget": {
+    "header": "Wir beantworten gerne alle Ihre Fragen",
+    "text": "Bitte senden Sie uns Ihre E-Mail und Telefonnummer, und ein Vertriebsmitarbeiter wird Sie kontaktieren, um Ihre Fragen zu beantworten."
   }
 }
