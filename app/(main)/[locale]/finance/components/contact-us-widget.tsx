@@ -60,9 +60,9 @@ export function ContactUsWidget() {
       <Drawer open={isOpen} onOpenChange={(isOpen) => setIsOpen(isOpen)}>
         <DrawerTrigger
           onClick={toggleOpen}
-          className="relative mr-0 flex h-[44px] w-screen flex-row items-center justify-center rounded-t-3xl bg-primary text-background lg:mr-4 lg:w-[400px]"
+          className="relative mr-0 flex h-[44px] w-screen flex-row items-center justify-center rounded-t-3xl bg-primary text-background lg:mr-4 lg:min-w-[400px] lg:max-w-min"
         >
-          Chci se dozvědět více
+          {t("button")}
           <ChevronUp className="absolute right-8 top-2.5 h-6 w-6" />
         </DrawerTrigger>
         <DrawerContent className="max-h-[96%] px-8 pb-2 lg:bottom-4 lg:left-[unset] lg:right-4 lg:w-[400px] lg:!rounded-xl">
