@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -52,7 +52,7 @@
   }
 
   .dark {
-    --background: 240 11% 11%;
+    --background: 240 13% 9%;
     --foreground: 210 40% 98%;
 
     --background-muted: 233 12% 13%;
@@ -132,6 +132,10 @@
   li {
     margin-bottom: 0.5rem;
   }
+}
+
+* {
+  color: hsl(var(--foreground));
 }
 
 .primary-gradient {
