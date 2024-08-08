@@ -1,7 +1,7 @@
 "use client"
 
 import { ChangeEvent, ReactNode, useTransition } from "react"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname, useRouter } from "@/navigation"
 import { cn } from "@/lib/utils"
 import {
   Select,
@@ -27,9 +27,8 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label, lo
   const pathname = usePathname()
 
   function onSelectChange(value: any) {
-    const nextLocale = value
     startTransition(() => {
-      router.push(`/${nextLocale}${pathname.substring(3)}`, { locale: nextLocale })
+      router.replace(`/${pathname}`, { locale: value })
     })
   }
 

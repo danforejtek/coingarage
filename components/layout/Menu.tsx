@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl"
 import * as React from "react"
 import Link from "next/link"
+// import { usePathname } from "@/navigation"
 import { useParams, usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"

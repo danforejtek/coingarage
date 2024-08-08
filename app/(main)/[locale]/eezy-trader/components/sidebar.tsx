@@ -3,17 +3,18 @@ import { Button } from "@/components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { cn } from "@/lib/utils"
 import { ChevronRight, BookOpen } from "lucide-react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "@/navigation"
 
 const activeLinkStyle = "text-primary hover:text-primary"
 
 export function Sidebar() {
   const currentPath = usePathname()
+  const locale = useLocale()
   const t = useTranslations("knowledgeBase")
-  const tSub = useTranslations("eezy-trader.subscription.plans")
+  // const tSub = useTranslations("eezy-trader.subscription.plans")
   const tEzNav = useTranslations("eezy-trader.nav")
   return (
     <aside className="sticky top-[0px] -mb-24 hidden h-[calc(100vh)] w-[284px] border-r px-4 pt-4 shadow-sm md:shrink-0 md:flex-col lg:flex">
@@ -43,7 +44,7 @@ export function Sidebar() {
               <Button variant="ghost" size="sm" className="justify-start" asChild>
                 <Link
                   className={cn(currentPath.endsWith("/eezy-trader/knowledge-base") ? activeLinkStyle : "")}
-                  href="/eezy-trader/knowledge-base"
+                  href={"/" + locale + "/eezy-trader/knowledge-base"}
                 >
                   {t("general.name")}
                 </Link>
@@ -51,7 +52,7 @@ export function Sidebar() {
               <Button variant="ghost" size="sm" className="justify-start" asChild>
                 <Link
                   className={cn(currentPath.includes("/eezy-trader/knowledge-base/grid-bot") ? activeLinkStyle : "")}
-                  href="/eezy-trader/knowledge-base/grid-bot"
+                  href={"/" + locale + "/eezy-trader/knowledge-base/grid-bot"}
                 >
                   Grid bot
                 </Link>
@@ -59,7 +60,7 @@ export function Sidebar() {
               <Button variant="ghost" size="sm" className="justify-start" asChild>
                 <Link
                   className={cn(currentPath.includes("/eezy-trader/knowledge-base/dca-bot") ? activeLinkStyle : "")}
-                  href="/eezy-trader/knowledge-base/dca-bot"
+                  href={"/" + locale + "/eezy-trader/knowledge-base/dca-bot"}
                 >
                   DCA bot
                 </Link>
