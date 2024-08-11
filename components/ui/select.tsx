@@ -16,7 +16,6 @@ const SelectTrigger = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger> & { hideIcon?: boolean }
 >(({ className, children, hideIcon = false, ...props }, ref) => {
-  console.log(hideIcon)
   return (
     <SelectPrimitive.Trigger
       ref={ref}

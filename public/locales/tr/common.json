@@ -670,6 +670,7 @@
         "placeholder1": "Tam Adı",
         "placeholder2": "Telefon Numarası",
         "placeholder3": "E-posta",
+        "consent": "Kişisel verilerin işlenmesine ilişkin rıza",
         "sendBtn": "Gönder"
       },
       "subheader": "Bu Kadar Yüksek Yatırım Getirilerini Nasıl Elde Edebiliriz?",
@@ -965,5 +966,10 @@
       },
       "btnGARAOnPolygon": "Polygonscan'da GARA"
     }
+  },
+  "widget": {
+    "button": "Daha fazla öğrenmek istiyorum",
+    "header": "Tüm sorularınızı yanıtlamaktan mutluluk duyarız",
+    "text": "Bize e-posta ve telefon numaranızı gönderin, bir satış temsilcisi sizinle iletişime geçerek sorularınızı yanıtlayacaktır."
   }
 }

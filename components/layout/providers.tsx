@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { MetaMaskProvider } from "@metamask/sdk-react"
+// import { MetaMaskProvider } from "@metamask/sdk-react"
 
 type ProvidersProps = {
   children: React.ReactNode
@@ -35,7 +35,9 @@ export function Providers({ children, locale }: ProvidersProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-        <MetaMaskProvider sdkOptions={sdkOptions}>{children}</MetaMaskProvider>
+        {/* <MetaMaskProvider sdkOptions={sdkOptions}> */}
+        {children}
+        {/* </MetaMaskProvider> */}
       </ThemeProvider>
     </QueryClientProvider>
   )

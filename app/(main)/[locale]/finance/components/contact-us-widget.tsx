@@ -14,16 +14,16 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { ChevronDown, ChevronUp } from "lucide-react"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { cn } from "@/lib/utils"
-import { useViewportSize } from "@mantine/hooks"
+import { useTranslations } from "next-intl"
+// import { useViewportSize } from "@mantine/hooks"
 
 export function ContactUsWidget() {
+  const t = useTranslations("widget")
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const { width } = useViewportSize()
+  // const { width } = useViewportSize()
 
   const toggleOpen = () => {
-    console.log("toggleOpen")
     setIsOpen((prev) => !prev)
   }
   const handleClose = () => {
@@ -57,26 +57,25 @@ export function ContactUsWidget() {
         isOpen ? "translate-y-12" : "translate-y-0 delay-500"
       )}
     >
-      <Drawer open={isOpen} onDrag={toggleOpen}>
+      <Drawer open={isOpen} onOpenChange={(isOpen) => setIsOpen(isOpen)}>
         <DrawerTrigger
           onClick={toggleOpen}
-          className="relative mr-0 flex h-[44px] w-screen flex-row items-center justify-center rounded-t-3xl bg-primary px-4 text-background lg:mr-4 lg:w-[400px]"
+          className="relative mr-0 flex h-[44px] w-screen flex-row items-center justify-center rounded-t-3xl bg-primary text-background lg:mr-4 lg:min-w-[400px] lg:max-w-min"
         >
-          Chci se dozvědět více
+          {t("button")}
           <ChevronUp className="absolute right-8 top-2.5 h-6 w-6" />
         </DrawerTrigger>
-        <DrawerContent className="px-8 pb-2 lg:bottom-4 lg:left-[unset] lg:right-4 lg:w-[400px] lg:!rounded-b-lg">
-          <DrawerHeader className="pt-6">
-            <DrawerTitle>Rádi zodpovíme všechny vaše dotazy</DrawerTitle>
-            <DrawerDescription className="mt-6">
-              Nezávazně nám pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a
-              zodpoví vám všechny vaše dotazy.
-            </DrawerDescription>
-          </DrawerHeader>
-          <div>
-            <GetMoreInfoForm onSuccess={handleClose} />
+        <DrawerContent className="max-h-[96%] px-8 pb-2 lg:bottom-4 lg:left-[unset] lg:right-4 lg:w-[400px] lg:!rounded-xl">
+          <div className="mb-3 overflow-auto">
+            <DrawerHeader className="pt-6">
+              <DrawerTitle>{t("header")}</DrawerTitle>
+              <DrawerDescription className="mt-2">{t("text")}</DrawerDescription>
+            </DrawerHeader>
+            <div>
+              <GetMoreInfoForm onSuccess={handleClose} type="widget" className="mt-4" />
+            </div>
           </div>
-          <DrawerFooter className="mt-4 p-0">
+          <DrawerFooter className="hidden !p-2 lg:mt-0 lg:flex">
             <DrawerClose className="flex flex-row justify-center">
               <Button variant="ghost" size="sm" className="w-full" onClick={handleClose}>
                 <ChevronDown className="h-6 w-6" />

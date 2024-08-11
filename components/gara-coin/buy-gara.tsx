@@ -13,23 +13,22 @@ import { useState } from "react"
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
-  const { sdk, connected, connecting, account, chainId } = useSDK()
-  const [hovered, setHovered] = useState(false)
+  // const { sdk, connected, connecting, account, chainId } = useSDK()
 
-  const connect = async () => {
-    try {
-      const address = await sdk?.connect()
-      console.log(address)
-    } catch (err) {
-      console.warn("failed to connect..", err)
-    }
-  }
+  // const connect = async () => {
+  //   try {
+  //     const address = await sdk?.connect()
+  //     console.log(address)
+  //   } catch (err) {
+  //     console.warn("failed to connect..", err)
+  //   }
+  // }
 
-  const disconnect = () => {
-    if (sdk) {
-      sdk.terminate()
-    }
-  }
+  // const disconnect = () => {
+  //   if (sdk) {
+  //     sdk.terminate()
+  //   }
+  // }
 
   return (
     <section className="max-w-[480px] flex-1 rounded-2xl bg-background p-6 shadow-md">
@@ -63,7 +62,7 @@ export function BuyGara() {
         <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
         <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
       </div>
-      <div className="mt-8 grid grid-cols-2 justify-between gap-4">
+      {/* <div className="mt-8 grid grid-cols-2 justify-between gap-4">
         {!connected ? (
           <Button variant="default" disabled={connecting} onClick={connect}>
             {t("btnConnectWallet")}
@@ -86,7 +85,7 @@ export function BuyGara() {
         )}
 
         <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
-      </div>
+      </div> */}
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
           <a

@@ -668,9 +668,10 @@
       "table2": {
         "header": "Chcete získat více informací?",
         "subtext": "Pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a zodpoví všechny vaše dotazy.",
-        "placeholder1": "Celé Jméno",
-        "placeholder2": "Telefonní Číslo",
+        "placeholder1": "Jméno a příjmení",
+        "placeholder2": "Telefonní číslo",
         "placeholder3": "Email",
+        "consent": "Souhlasím se zpracováním osobních údajů",
         "sendBtn": "Poslat"
       },
       "subheader": "Jak je možné, že dosáhneme tak vysokých investičních výnosů?",
@@ -967,5 +968,10 @@
       },
       "btnGARAOnPolygon": "GARA na Polygonscanu"
     }
+  },
+  "widget": {
+    "button": "Chci se dozvědět více",
+    "header": "Rádi zodpovíme všechny vaše dotazy",
+    "text": "Nezávazně nám pošlete svůj e-mail a telefonní číslo. Náš obchodní zástupce vás bude kontaktovat a zodpoví vám všechny vaše dotazy."
   }
 }

@@ -671,6 +671,7 @@
         "placeholder1": "Nome Completo",
         "placeholder2": "Numero di Telefono",
         "placeholder3": "Email",
+        "consent": "Acconsento al trattamento dei miei dati personali",
         "sendBtn": "Invia"
       },
       "subheader": "Come Possiamo Ottenere Ritorni di Investimento Così Elevati?",
@@ -966,5 +967,10 @@
       },
       "btnGARAOnPolygon": "GARA su Polygonscanu"
     }
+  },
+  "widget": {
+    "button": "Voglio saperne di più",
+    "header": "Saremo felici di rispondere a tutte le tue domande",
+    "text": "Sentiti libero di inviarci la tua email e il tuo numero di telefono e un rappresentante commerciale ti contatterà per rispondere a tutte le tue domande."
   }
 }

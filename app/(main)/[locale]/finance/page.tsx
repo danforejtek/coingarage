@@ -592,7 +592,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               </p>
               <div className="pt-8 lg:px-8">
                 <p className="text-center font-heading text-lg">{t("yourValuation.table2.subtext")}</p>
-                <GetMoreInfoForm />
+                <GetMoreInfoForm className="mt-12" />
               </div>
             </div>
           </div>
