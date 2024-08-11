@@ -30,5 +30,8 @@ export default function RootLayout({
   params: { locale: string }
 }) {
   unstable_setRequestLocale(locale)
-  return <div>{children}</div>
+  return <div>
+    <div className="primary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
+    {children}
+    </div>
 }

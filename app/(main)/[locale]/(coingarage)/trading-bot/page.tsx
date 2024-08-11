@@ -8,7 +8,7 @@ import Figure from "@/components/figure"
 import { TopPerformers } from "@/components/eezy-trader/top-performers"
 import { SubscriptionPlans } from "@/components/eezy-trader/subscription-plans"
 import Link from "next/link"
-import EezyTrader from "./components/EezyTrader"
+import EezyTrader from "@/components/eezy-trader/EezyTrader"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -17,9 +17,16 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative">
-      <section>
+      <section className="h-[1110px]">
         <EezyTrader />
+        <div className="absolute -z-10 right-0 w-[789px] max-w-[96vw] xl:-top-[68px]">
+          <Image
+            width={1011} height={708} src="/images/eezy-trader/images/red-vector.svg" alt="red vector" 
+            className='absolute top-44'
+          /> 
+        </div>
       </section>
+
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
         <div className="w-full max-w-[500px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">{t("main.header")}</h1>
@@ -38,10 +45,12 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           <Image src="/logo/coingarage_eezytrader.svg" alt="" width={260} height={600} />
         </div>
       </section>
+
       <section className="flex flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("start.header")}</p>
         <p className="text-center">{t("start.subText")}</p>
       </section>
+
       <section className="container mx-auto mt-20 flex flex-col items-center lg:flex-row">
         <div className="relative flex flex-col flex-wrap justify-center gap-8 lg:w-1/2 xl:justify-between">
           <span className="absolute left-[94px] top-0 h-full w-1 bg-tertiary/20"></span>
@@ -92,6 +101,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           <TopPerformers heading={t("results.topPerformers")} />
         </div>
       </section>
+
       <div className="mt-12 bg-tertiary/25 py-12 dark:bg-tertiary/10 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="w-full max-w-[500px] p-4">
@@ -116,9 +126,11 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </div>
         </section>
       </div>
+
       <section className="container mx-auto my-24">
         <SubscriptionPlans />
       </section>
+
       <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
         <p className="text-center font-heading text-lg font-bold">{t("trusting.subHeader")}</p>
         <p className="text-center font-heading text-4xl font-bold text-primary">{t("trusting.header")}</p>
