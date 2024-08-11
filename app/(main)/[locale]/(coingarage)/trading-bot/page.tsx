@@ -8,6 +8,7 @@ import Figure from "@/components/figure"
 import { TopPerformers } from "@/components/eezy-trader/top-performers"
 import { SubscriptionPlans } from "@/components/eezy-trader/subscription-plans"
 import Link from "next/link"
+import EezyTrader from "./components/EezyTrader"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -16,6 +17,9 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative">
+      <section>
+        <EezyTrader />
+      </section>
       <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
         <div className="w-full max-w-[500px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">{t("main.header")}</h1>
