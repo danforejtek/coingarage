@@ -17,9 +17,9 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative">
-      <section className="h-[1110px]">
+      <section className="lg:h-[1110px] h-[1680px]">
         <EezyTrader />
-        <div className="absolute -z-10 right-0 w-[789px] max-w-[96vw] xl:-top-[68px]">
+        <div className="absolute -z-10 right-0 w-[409px] max-w-[96vw] -top-[68px] xl:w-[789px] lg:w-[509px]">
           <Image
             width={1011} height={708} src="/images/eezy-trader/images/red-vector.svg" alt="red vector" 
             className='absolute top-44'
