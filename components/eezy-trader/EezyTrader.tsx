@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import { Card } from '../ui/card'
 
 type IProps = {}
 
@@ -28,9 +29,49 @@ const EezyTrader = (props: IProps) => {
         </div>
       </div>
 
-      <div>
-        <div>
-          obrazky
+      <div className='relative'>
+        <div className='flex gap-4 absolute -top-5'>
+          <Card className='w-64 h-72 flex flex-col pt-8 pb-10 px-7 gap-4 text-center border-white'> 
+            <Image
+              width={50} height={50} src="/images/eezy-trader/icons/finance.svg" alt="finance"
+              className='mx-auto'
+            />
+            <p className='text-primary'>Plná kontrola nad vašemi financemi</p>
+            <p>Robot obchoduje na vašem účtu. Vklad i zisky můžete kdykoliv vybrat.</p>
+          </Card>
+          <Card className='w-64 h-72 flex flex-col pt-8 pb-10 px-7 gap-4 text-center border-white'> 
+            <Image
+              width={50} height={50} src="/images/eezy-trader/icons/efectivity.svg" alt="finance"
+              className='mx-auto'
+            />
+            <p className='text-primary'>Maximalizuje efektivitu obchodování</p>
+            <p>Nezmeškáte žádnou lukrativní příležitost, i když jste pryč od obrazovky.</p>
+          </Card>
+          <Card className='w-64 h-72 flex flex-col pt-8 pb-10 px-7 gap-4 text-center border-white'> 
+            <Image
+              width={50} height={50} src="/images/eezy-trader/icons/neverSleep.svg" alt="finance"
+              className='mx-auto'
+            />
+            <p className='text-primary'>Peníze nikdy nespí, obchodujte 24/7</p>
+            <p>Trh s kryptoměnami nikdy nespí a náš robot také ne, obchoduje neustále.</p>
+          </Card>
+          <Card className='w-64 h-72 flex flex-col pt-8 pb-10 px-7 gap-4 text-center border-white'> 
+            <Image
+              width={50} height={50} src="/images/eezy-trader/icons/emotional.svg" alt="finance"
+              className='mx-auto'
+            />
+            <p className='text-primary'>Eliminuje emocionální obchodování</p>
+            <p>Robot na emoce netrpí a proto nedělá chyby v důsledků strachu nebo chamtivosti.</p>
+          </Card>
+          <Card className='w-64 h-72 flex flex-col pt-8 pb-10 px-7 gap-4 text-center border-white'> 
+            <Image
+              width={50} height={50} src="/images/eezy-trader/icons/strategy.svg" alt="finance"
+              className='mx-auto'
+            />
+            <p className='text-primary'>Přizpůsobíte vše na míru vaší strategii </p>
+            <p>Nastavte obchodní strategie robota přesně podle svých cílů a  toleranci k riziku.</p>
+          </Card>
+
         </div>
       </div>
     </div>
