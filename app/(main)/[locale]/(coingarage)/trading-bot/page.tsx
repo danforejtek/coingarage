@@ -9,6 +9,8 @@ import { TopPerformers } from "@/components/eezy-trader/top-performers"
 import { SubscriptionPlans } from "@/components/eezy-trader/subscription-plans"
 import Link from "next/link"
 import EezyTrader from "@/components/eezy-trader/EezyTrader"
+import BestTraders from "@/components/eezy-trader/BestTraders"
+import Reviews from "@/components/eezy-trader/Reviews"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -28,8 +30,14 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
-      <section>
-        
+      {/* Best traders component */}
+      <section className="w-full pt-32 pb-20 bg-tertiary/25">
+        <BestTraders />
+      </section>
+
+      {/* What they say - reviews */}
+      <section className="container mx-auto">
+        <Reviews />
       </section>
 
       {/* <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
