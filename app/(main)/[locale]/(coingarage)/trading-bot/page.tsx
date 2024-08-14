@@ -17,9 +17,10 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative">
+      {/* Easy trader main section with robot */}
       <section className="lg:h-[1110px] h-[1680px]">
         <EezyTrader />
-        <div className="absolute -z-10 right-0 w-[409px] max-w-[96vw] -top-[68px] xl:w-[789px] lg:w-[509px]">
+        <div className="absolute -z-10 right-0 w-[360px] max-w-[96vw] -top-[68px] xl:w-[789px] lg:w-[509px]">
           <Image
             width={1011} height={708} src="/images/eezy-trader/images/red-vector.svg" alt="red vector" 
             className='absolute top-44'
@@ -27,7 +28,11 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
-      <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
+      <section>
+        
+      </section>
+
+      {/* <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
         <div className="w-full max-w-[500px] p-4">
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-5xl font-bold">{t("main.header")}</h1>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
@@ -44,12 +49,12 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
           <Image src="/logo/coingarage_eezytrader.svg" alt="" width={260} height={600} />
         </div>
-      </section>
+      </section> */}
 
-      <section className="flex flex-col items-center px-8">
+     {/*  <section className="flex flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("start.header")}</p>
         <p className="text-center">{t("start.subText")}</p>
-      </section>
+      </section> */}
 
       <section className="container mx-auto mt-20 flex flex-col items-center lg:flex-row">
         <div className="relative flex flex-col flex-wrap justify-center gap-8 lg:w-1/2 xl:justify-between">
