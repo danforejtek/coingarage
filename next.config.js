@@ -8,6 +8,11 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: "http",
+        hostname: "localhost",
+        port: "1338",
+      },
+      {
         protocol: "https",
         hostname: "coinicons-api.vercel.app",
         port: "",

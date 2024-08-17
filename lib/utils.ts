@@ -109,3 +109,8 @@ export const formatChainAsNum = (chainIdHex: string) => {
 export const formatAddress = (addr: string | undefined) => {
   return `${addr?.substring(0, 12)}...`
 }
+
+export const formatDateString = (date: string) => {
+  if (!date) return ""
+  return new Date(date).toLocaleDateString()
+}

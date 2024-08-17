@@ -18,7 +18,7 @@ const BlogContent = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogPerex = ({ children }: { children: ReactNode }) => {
-  return <div className="line-clamp-6 max-h-[144px] text-sm text-neutral-500">{children}</div>
+  return <div className="line-clamp-6 max-h-[144px] text-sm text-neutral-500 dark:text-neutral-300">{children}</div>
 }
 
 const BlogDate = ({ children }: { children: ReactNode }) => {

@@ -1,0 +1,97 @@
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
+import type { Metadata } from "next"
+import { unstable_setRequestLocale } from "next-intl/server"
+import { formatDateString } from "@/lib/utils"
+import BlockRendererClient from "@/lib/strapi/block-renderer"
+
+type Article = {
+  heading: string
+  perex: string
+  image: string
+  slug: string
+  date: string
+  author: string
+  content: Content[]
+}
+
+type Content = {
+  type: string
+  content: string | string[]
+}
+
+type Articles = Article[]
+
+type Props = {
+  params: { slug: string; locale: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+// export async function generateMetadata({ params }: Props): Promise<Metadata> {
+//   // read route params
+//   const slug = params.slug
+//   const locale = params.locale
+//   const jsonData = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
+//   const data = JSON.parse(jsonData).find((item: Article) => item.slug === slug)
+//   const { heading, perex, image, author } = data
+
+//   return {
+//     title: heading,
+//     description: perex,
+//     authors: [author],
+//     openGraph: {
+//       images: [`/images/blog/${image}`],
+//     },
+//   }
+// }
+
+// export async function generateStaticParams({ params }: { params: { slug: string; locale: string } }) {
+//   const locale = params.locale
+//   const data = await fs.readFile(path.join(process.cwd(), "static", `articles_${locale}.json`), "utf-8")
+//   const slugs = JSON.parse(data).map((item: { slug: string }) => item.slug)
+//   return slugs
+// }
+
+const getData = async ({ slug, locale }: { slug: string; locale: string }) => {
+  const response = await fetch(`${process.env.STRAPI_URL}/api/articles?populate=*&filters[slug][$eq]=${slug}`, {
+    headers: {
+      Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+    },
+  })
+  const responseData = await response.json()
+  const data = responseData?.data
+  return data[0]
+}
+
+export default async function Page({ params }: { params: { slug: string; locale: string } }) {
+  const slug = params.slug
+  const locale = params.locale
+  unstable_setRequestLocale(locale)
+  const data: Article = await getData({ slug, locale })
+  const { title, perex, image, publishedAt, author, content } = data?.attributes
+  const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
+  const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
+
+  return (
+    <div className="mt-12">
+      <Link href="/blog/v2" className="inline-flex items-center text-primary">
+        <ArrowLeft className="mr-2" size={16} />
+        Back
+      </Link>
+      <h1 className="mb-12 mt-4 font-heading text-4xl">{title}</h1>
+      <p className="font-heading">{perex}</p>
+      <div className="relative mt-12 h-[302px] w-full">
+        <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+      </div>
+      <div className="mt-10">
+        <BlockRendererClient content={content} />
+      </div>
+      <div className="mt-12 flex flex-row justify-between">
+        <p className="font-heading text-primary">{formatDateString(publishedAt)}</p>
+        <p className="font-heading text-primary">{authorName}</p>
+      </div>
+      <div className="ml-4 mt-6 hidden list-inside list-decimal pl-4"></div>
+    </div>
+  )
+}
