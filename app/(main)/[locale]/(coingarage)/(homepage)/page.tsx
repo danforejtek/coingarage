@@ -11,7 +11,7 @@ import GetGara from "@/components/promo/get-gara"
 import GetApp from "@/components/promo/get-app"
 import Advantages from "@/components/promo/advantages"
 import Motivation from "@/components/promo/motivation"
-import NewsFeed from "@/components/news-feed"
+// import NewsFeed from "@/components/news-feed"
 import CryptoStats from "@/components/crypto-stats"
 import GeniusTrader from "@/components/genius-trader"
 import { GetAppHp } from "@/components/promo/get-app-hp"
@@ -56,7 +56,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         </div>
         <div className="grid-col-2 grid">
           <GetApp />
-          <NewsFeed className="mt-8" />
+          {/* <NewsFeed className="mt-8" /> */}
         </div>
       </section>
       <Motivation />
