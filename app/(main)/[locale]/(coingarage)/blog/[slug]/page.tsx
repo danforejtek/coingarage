@@ -5,6 +5,7 @@ import type { Metadata } from "next"
 import { unstable_setRequestLocale } from "next-intl/server"
 import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
+import { notFound } from "next/navigation"
 
 type Article = {
   heading: string
@@ -89,6 +90,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
   const locale = params.locale
   unstable_setRequestLocale(locale)
   const data: Article = await getData({ slug, locale })
+  if (!data?.title) return <>Not found</>
   const { title, perex, image, publishedAt, author, content } = data?.attributes
   const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
