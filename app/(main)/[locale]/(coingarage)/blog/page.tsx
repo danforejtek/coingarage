@@ -3,6 +3,7 @@ import Image from "next/image"
 import type { Metadata } from "next"
 import { formatDateString } from "@/lib/utils"
 import { Pagination } from "@/app/(main)/[locale]/(coingarage)/blog/components/pagination"
+import { getArticles } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 
 type Article = {
   attributes: {
@@ -19,17 +20,8 @@ export const metadata: Metadata = {
 
 export default async function Page({ params }: { params: { locale: string } }) {
   const { locale } = params
-  const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?locale=${locale}&sort[0]=publishedAt:desc&populate=*`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      },
-    }
-  )
-  const responseData = await response.json()
-  const data = responseData?.data
-  const pagination = responseData?.meta?.pagination
+  const articles = await getArticles({ params })
+  const { data, pagination } = articles
 
   return (
     <main>

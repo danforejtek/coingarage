@@ -6,6 +6,7 @@ import { unstable_setRequestLocale } from "next-intl/server"
 import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
 import { notFound } from "next/navigation"
+import { getArticle, getArticleSlugs, getArtileMetadata } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 
 type Article = {
   heading: string
@@ -28,68 +29,20 @@ type Props = {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug, locale } = params
-  const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$eq]=${slug}&locale=${locale}`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      },
-    }
-  )
-  const responseData = await response.json()
-  const data = responseData?.data
-  if (data?.length === 0) return {}
-  const { title, perex, image, author } = data[0]?.attributes
-  const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
-  const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
-
-  return {
-    title: title,
-    description: perex,
-    authors: [authorName],
-    openGraph: {
-      images: [imageSrc],
-    },
-  }
+  const data = await getArtileMetadata({ params })
+  return data as Metadata
 }
 
 export async function generateStaticParams({ params }: { params: { slug: string; locale: string } }) {
-  const { locale } = params
-  const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?locale=${locale}&fields[0]=slug&pagination[pageSize]=100`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      },
-    }
-  )
-  const responseData = await response.json()
-  const data = responseData?.data
-  if (!data || data?.length === 0) return []
-  const slugs = data.map((item) => item?.attributes?.slug)
+  const slugs = await getArticleSlugs({ params })
   return slugs
-}
-
-const getData = async ({ slug, locale }: { slug: string; locale: string }) => {
-  const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?locale=${locale}&populate=*&filters[slug][$eq]=${slug}`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      },
-    }
-  )
-  const responseData = await response.json()
-  const data = responseData?.data
-  return data[0]
 }
 
 export default async function Page({ params }: { params: { slug: string; locale: string } }) {
   const slug = params.slug
   const locale = params.locale
   unstable_setRequestLocale(locale)
-  const data: Article = await getData({ slug, locale })
+  const data: Article = await getArticle({ params })
   if (!data?.title) return <>Not found</>
   const { title, perex, image, publishedAt, author, content } = data?.attributes
   const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
