@@ -11,9 +11,10 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Coingarage Finance | Crypto, Banking & Trading, Exchange",
+  title: "Crypto Simply & Safely | Coingarage",
   description:
-    "Coingarage Finance is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",
+    "Discover a higher level of financial privacy and freedom than traditional banking systems offer In the simple and secure environment of our exchange. We are an exchange based in the heart of European union. The first to introduce regulation That will make crypto explode here!",
+  keywords: "crypto, exchange, bitcoin, ethereum, crypto exchange, crypto trading, crypto wallet, crypto",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

@@ -211,12 +211,12 @@ export const navItems: NavItem[] = [
       //   href: "/garys-poster-wall",
       //   icon: "poster_wall",
       // },
-      // {
-      //   title: "Blog",
-      //   key: "blog",
-      //   href: "/blog",
-      //   icon: "blog",
-      // },
+      {
+        title: "Blog",
+        key: "blog",
+        href: "/blog",
+        icon: "blog",
+      },
       {
         title: "Knowdledge Base",
         key: "knowledgeBase",

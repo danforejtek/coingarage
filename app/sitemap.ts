@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next"
-import { promises as fs } from "fs"
-import path from "path"
+// import { promises as fs } from "fs"
+// import path from "path"
 
 type Article = {
   slug: string
@@ -12,31 +12,31 @@ const baseUrlFinance =
   process.env.NODE_ENV !== "production" ? "http://localhost:4200/finance" : `https://${process.env.FINANCE_DOMAIN}`
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
-  const jsonData_en = await fs.readFile(path.join(process.cwd(), "static", `articles_${"en"}.json`), "utf-8")
-  const jsonData_de = await fs.readFile(path.join(process.cwd(), "static", `articles_${"de"}.json`), "utf-8")
-  const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"es"}.json`), "utf-8")
-  const data_cs = JSON.parse(jsonData_cs)
-  const data_en = JSON.parse(jsonData_en)
-  const data_de = JSON.parse(jsonData_de)
-  const data_es = JSON.parse(jsonData_es)
+  // const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
+  // const jsonData_en = await fs.readFile(path.join(process.cwd(), "static", `articles_${"en"}.json`), "utf-8")
+  // const jsonData_de = await fs.readFile(path.join(process.cwd(), "static", `articles_${"de"}.json`), "utf-8")
+  // const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"es"}.json`), "utf-8")
+  // const data_cs = JSON.parse(jsonData_cs)
+  // const data_en = JSON.parse(jsonData_en)
+  // const data_de = JSON.parse(jsonData_de)
+  // const data_es = JSON.parse(jsonData_es)
 
-  const posts_cs = data_cs.map((post: Article) => ({
-    url: `${baseUrl}/cs/blog/${post.slug}`,
-    lastModified: new Date(post.date).toISOString(),
-  }))
-  const posts_en = data_en.map((post: Article) => ({
-    url: `${baseUrl}/en/blog/${post.slug}`,
-    lastModified: new Date(post.date).toISOString(),
-  }))
-  const posts_de = data_de.map((post: Article) => ({
-    url: `${baseUrl}/de/blog/${post.slug}`,
-    lastModified: new Date(post.date).toISOString(),
-  }))
-  const posts_es = data_es.map((post: Article) => ({
-    url: `${baseUrl}/es/blog/${post.slug}`,
-    lastModified: new Date(post.date).toISOString(),
-  }))
+  // const posts_cs = data_cs.map((post: Article) => ({
+  //   url: `${baseUrl}/cs/blog/${post.slug}`,
+  //   lastModified: new Date(post.date).toISOString(),
+  // }))
+  // const posts_en = data_en.map((post: Article) => ({
+  //   url: `${baseUrl}/en/blog/${post.slug}`,
+  //   lastModified: new Date(post.date).toISOString(),
+  // }))
+  // const posts_de = data_de.map((post: Article) => ({
+  //   url: `${baseUrl}/de/blog/${post.slug}`,
+  //   lastModified: new Date(post.date).toISOString(),
+  // }))
+  // const posts_es = data_es.map((post: Article) => ({
+  //   url: `${baseUrl}/es/blog/${post.slug}`,
+  //   lastModified: new Date(post.date).toISOString(),
+  // }))
 
   return [
     {
@@ -87,10 +87,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-    ...posts_cs,
-    ...posts_en,
-    ...posts_de,
-    ...posts_es,
     {
       url: `${baseUrlFinance}`,
       lastModified: new Date(),

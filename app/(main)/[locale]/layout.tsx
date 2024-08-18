@@ -9,12 +9,20 @@ import { Toaster } from "@/components/ui/sonner"
 import GoogleAnalytics from "@/components/google-analytics"
 // import UmamiAnalytics from "@/components/UmamiAnalytics"
 
-import { locales } from "@/config"
+import { locales, metaLanguagePaths } from "@/config"
 import GoogleTagManager from "@/components/google-tag-manager"
 import { Suspense } from "react"
 import { headers } from "next/headers"
 import { SmartlookScript } from "@/components/smartlook-script"
 import { Providers } from "@/components/layout/providers"
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://coingarage.io"),
+  alternates: {
+    canonical: "/",
+    languages: metaLanguagePaths,
+  },
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))

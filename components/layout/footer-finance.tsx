@@ -108,11 +108,11 @@ export default function FooterFinance() {
                     {t("hotCoins")}
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link href="/blog" className="hover:text-primary">
                     {t("blog")}
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link href="/#faq" className="hover:text-primary">
                     {t("faqs")}

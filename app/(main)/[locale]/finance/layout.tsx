@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 import HeaderFinance from "@/components/layout/header-finance"
 import FooterFinance from "@/components/layout/footer-finance"
 
-import { locales } from "@/config"
+import { locales, metaLanguagePaths } from "@/config"
 import { ContactUsWidget } from "@/app/(main)/[locale]/finance/components/contact-us-widget"
 
 export function generateStaticParams() {
@@ -13,6 +13,11 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://coingarage-finance.com"),
+  alternates: {
+    canonical: "/",
+    languages: metaLanguagePaths,
+  },
   title: "Coingarage Finance | Crypto, Banking & Trading, Exchange",
   description:
     "Coingarage is your gateway to the future of finance, offering a seamless and secure way to buy, sell, and trade cryptocurrencies.",

@@ -9,3 +9,12 @@ export const localesLabel = {
   gr: "GR",
   tr: "TR",
 }
+export const metaLanguagePaths = {
+  "en-US": "/en",
+  "cs-CZ": "/cs",
+  "de-DE": "/de",
+  "es-ES": "/es",
+  "it-IT": "/it",
+  "gr-GR": "/gr",
+  "tr-TR": "/tr",
+}
