@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   )
   const responseData = await response.json()
   const data = responseData?.data
+  if (data?.length === 0) return {}
   const { title, perex, image, author } = data[0]?.attributes
   const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
@@ -64,6 +65,7 @@ export async function generateStaticParams({ params }: { params: { slug: string;
   )
   const responseData = await response.json()
   const data = responseData?.data
+  if (data?.length === 0) return []
   const slugs = data.map((item) => item.attributes?.slug)
   return slugs
 }
