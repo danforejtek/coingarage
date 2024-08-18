@@ -14,12 +14,12 @@ type PaginationProps = {
 }
 
 export const Pagination = ({ pagination, className }: PaginationProps) => {
-  if (pagination.pageCount === 1) return null
-  if (pagination.pageCount === pagination.page) return null
-
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const { replace } = useRouter()
+  if (pagination.pageCount === 1) return null
+  if (pagination.pageCount === pagination.page) return null
+
   const currentPage = Number(searchParams.get("page")) || 1
 
   const handleLoadMore = () => {
