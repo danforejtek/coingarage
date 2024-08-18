@@ -66,8 +66,8 @@ export async function generateStaticParams({ params }: { params: { slug: string;
   )
   const responseData = await response.json()
   const data = responseData?.data
-  if (data?.length === 0) return []
-  const slugs = data.map((item) => item.attributes?.slug)
+  if (!data || data?.length === 0) return []
+  const slugs = data.map((item) => item?.attributes?.slug)
   return slugs
 }
 
