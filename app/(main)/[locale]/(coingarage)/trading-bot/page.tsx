@@ -11,6 +11,9 @@ import Link from "next/link"
 import EezyTrader from "@/components/eezy-trader/EezyTrader"
 import BestTraders from "@/components/eezy-trader/BestTraders"
 import Reviews from "@/components/eezy-trader/Reviews"
+import FiveSteps from "@/components/eezy-trader/FiveSteps"
+import FunctionsAndSettings from "@/components/eezy-trader/FunctionsAndSettings"
+import EasySettings from "@/components/eezy-trader/EasySettings"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -20,24 +23,37 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   return (
     <main className="relative">
       {/* Easy trader main section with robot */}
-      <section className="lg:h-[1110px] h-[1680px]">
+      <section className="h-[1680px] lg:h-[1110px] mb-64 md:mb-0">
         <EezyTrader />
-        <div className="absolute -z-10 right-0 w-[360px] max-w-[96vw] -top-[68px] xl:w-[789px] lg:w-[509px]">
+        <div className="absolute -top-[68px] right-0 -z-10 w-[360px] max-w-[96vw] lg:w-[509px] xl:w-[789px]">
           <Image
-            width={1011} height={708} src="/images/eezy-trader/images/red-vector.svg" alt="red vector" 
-            className='absolute top-44'
-          /> 
+            width={1011}
+            height={708}
+            src="/images/eezy-trader/images/red-vector.svg"
+            alt="red vector"
+            className="absolute top-44"
+          />
         </div>
       </section>
 
       {/* Best traders component */}
-      <section className="w-full pt-32 pb-20 bg-tertiary/25">
+      <section className="w-full bg-tertiary/25 pb-20 pt-32 lg:mt-0 md:mt-16 mt-32">
         <BestTraders />
       </section>
 
       {/* What they say - reviews */}
-      <section className="container mx-auto">
+      <section className="container mx-auto mb-8">
         <Reviews />
+      </section>
+
+      {/* Lots of functions and settings */}
+      <section className="container">
+        <FunctionsAndSettings />
+      </section>
+
+      {/* EasySettings settings */}
+      <section className="w-full bg-tertiary/25">
+        <EasySettings />
       </section>
 
       {/* <section className="container mx-auto mt-12 flex flex-col flex-wrap items-center justify-center lg:flex-row xl:mt-28 xl:justify-between">
@@ -59,12 +75,12 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section> */}
 
-     {/*  <section className="flex flex-col items-center px-8">
+      {/*  <section className="flex flex-col items-center px-8">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("start.header")}</p>
         <p className="text-center">{t("start.subText")}</p>
       </section> */}
 
-      <section className="container mx-auto mt-20 flex flex-col items-center lg:flex-row">
+      {/*  <section className="container mx-auto mt-20 flex flex-col items-center lg:flex-row">
         <div className="relative flex flex-col flex-wrap justify-center gap-8 lg:w-1/2 xl:justify-between">
           <span className="absolute left-[94px] top-0 h-full w-1 bg-tertiary/20"></span>
           <span className="absolute bottom-0 left-[102px] h-[18px] w-1 rotate-45 bg-tertiary/20"></span>
@@ -113,13 +129,27 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         <div className="mt-24 w-full lg:mt-0 lg:w-[450px]">
           <TopPerformers heading={t("results.topPerformers")} />
         </div>
+      </section> */}
+
+      {/* Five steps */}
+      <section className="container mx-auto mt-12 flex flex-col items-center pb-4">
+        <FiveSteps />
       </section>
 
+      {/* Subscribtions */}
+      <section className="container mx-auto my-24">
+        <SubscriptionPlans />
+      </section>
+
+      {/* Referal program */}
       <div className="mt-12 bg-tertiary/25 py-12 dark:bg-tertiary/10 xl:mt-28">
-        <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+        <section className="container mx-auto flex flex-col-reverse flex-wrap items-center justify-center lg:flex-row xl:justify-between">
+          <div className="mt-16 flex lg:w-1/2 w-full flex-col items-center justify-start xl:mt-0">
+            <Image src="/images/eezy-trader/images/referalMain.svg" alt="" width={675} height={497} />
+          </div>
           <div className="w-full max-w-[500px] p-4">
             <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
-              <div className="text-4xl text-primary">{tAfi("main.header1")}</div>
+              <div className="text-3xl text-primary">{tAfi("main.header1")}</div>
               <div>{tAfi("main.header2")}</div>
             </h1>
             <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
@@ -133,18 +163,10 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
               </Button>
             </div>
           </div>
-
-          <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
-            <Image src="/images/affiliate-levels.png" alt="" width={600} height={600} />
-          </div>
         </section>
       </div>
 
-      <section className="container mx-auto my-24">
-        <SubscriptionPlans />
-      </section>
-
-      <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
+      {/* <section className="container relative mx-auto my-32 max-w-[1000px] xl:mt-36">
         <p className="text-center font-heading text-lg font-bold">{t("trusting.subHeader")}</p>
         <p className="text-center font-heading text-4xl font-bold text-primary">{t("trusting.header")}</p>
         <div className="z-10 mt-24 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 rounded-lg bg-tertiary/20 p-8 dark:bg-tertiary/20">
@@ -185,13 +207,14 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             <Image src="/images/eezy-trader/icons/99bots.svg" width={28} height={28} alt="" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
-        <div className="w-full max-w-[600px] p-4">
+        <div className="w-full max-w-[800px] p-4">
+          <h1 className=" text-primary font-heading text-2xl font-bold">Knowledge Base</h1>
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-3xl">{tAfi("setupTradingBot.name")}</div>
-            <div className="text-primary">{tAfi("setupTradingBot.claim")}</div>
+            <div className="text-3xl">{tAfi("setupTradingBot.claim")}</div>
           </h1>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             {tAfi.rich("setupTradingBot.text1", {
@@ -204,7 +227,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             </Button>
           </div>
         </div>
-        <div className="mt-16 flex w-1/2 flex-col items-center justify-start xl:mt-0">
+        <div className="mt-16 flex w-[450px] flex-col items-center justify-start xl:mt-0">
           <Image src="/images/eezy-trader/images/setupTradingBot.svg" alt="" width={450} height={450} />
         </div>
       </section>

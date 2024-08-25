@@ -984,5 +984,199 @@
     "button": "Ich möchte mehr erfahren",
     "header": "Wir beantworten gerne alle Ihre Fragen",
     "text": "Bitte senden Sie uns Ihre E-Mail und Telefonnummer, und ein Vertriebsmitarbeiter wird Sie kontaktieren, um Ihre Fragen zu beantworten."
+  },
+  "eezyTrader": {
+    "main": {
+      "header": "Verdienen Sie einfach mit unserem automatischen Krypto-Handelsroboter EEZY Trader",
+      "text": "Nutzen Sie die neuen Technologien voll aus und lassen Sie den automatischen Handelsroboter für sich handeln, der niemals schläft und keine Handelsmöglichkeit verpasst. Aktivieren Sie EEZY Trader kostenlos für 7 Tage und probieren Sie es selbst aus, um zu sehen, wie es funktioniert und wie viel es Ihr Geld schätzen kann.",
+      "startBtn": "Starten Sie die 7-tägige KOSTENLOSE Testversion",
+      "cards": {
+        "1": {
+          "header": "Volle Kontrolle über Ihre Finanzen",
+          "text": "Der Roboter handelt auf Ihrem Konto. Sie können Ihre Einzahlung und Gewinne jederzeit abheben."
+        },
+        "2": {
+          "header": "Maximiert die Handelseffizienz",
+          "text": "Sie verpassen keine lukrative Gelegenheit, selbst wenn Sie nicht am Bildschirm sind."
+        },
+        "3": {
+          "header": "Schläft nie, handelt 24/7",
+          "text": "Der Kryptowährungsmarkt schläft nie und unser Roboter auch nicht; er handelt kontinuierlich."
+        },
+        "4": {
+          "header": "Beseitigt emotionales Handeln",
+          "text": "Der Roboter leidet nicht unter Emotionen und macht daher keine Fehler aufgrund von Angst oder Gier."
+        },
+        "5": {
+          "header": "Passen Sie alles an Ihre Strategie an",
+          "text": "Stellen Sie die Handelsstrategien des Roboters genau nach Ihren Zielen und Ihrer Risikotoleranz ein."
+        }
+      }
+    },
+    "results": {
+      "subheader": "EEZY Trader Ergebnisse",
+      "header": "Top Händler",
+      "text1": "Sehen Sie sich die Ergebnisse unserer erfolgreichsten Händler an, die das Potenzial des automatisierten Handelsroboters EEZY Trader jeden Tag voll ausschöpfen, um ihre Gewinne zu realisieren.",
+      "text2": "Schließen Sie sich unseren erfolgreichen EEZY Trader-Nutzern an und beginnen Sie noch heute mit unserem automatischen Handelsroboter zu verdienen.",
+      "options": {
+        "monthly": "Monatlich",
+        "weekly": "Wöchentlich",
+        "daily": "Täglich"
+      },
+      "startBtn": "Starten"
+    },
+    "references": {
+      "subheader": "Referenzen",
+      "header": "Was EEZY Trader Nutzer sagen",
+      "referends": {
+        "1": {
+          "name": "Antonín Sulovský",
+          "text": "Ich schätze die gute Gesamtübersicht und die Möglichkeit, andere Händler mit EEZY Trader zu kopieren. Und vor allem kann EEZY Trader die Investition erheblich schätzen."
+        },
+        "2": {
+          "name": "Jakub Hasalík",
+          "text": "Ich mag, dass der Bot auch funktioniert, wenn ich schlafe. Ich arbeite nicht für Geld, sondern Geld arbeitet für mich. Oder besser gesagt, der Roboter schätzt mein Geld für mich, und das ist, wonach ich mein ganzes Leben gesucht habe, und ich habe es bei Coingarage gefunden."
+        },
+        "3": {
+          "name": "Roman Balajka",
+          "text": "Was ich am meisten am Handelsroboter von Coingarage schätze, ist seine Einfachheit und die klare Benutzeroberfläche im Vergleich zu anderen Robotern."
+        },
+        "4": {
+          "name": "Jana D'Antoni",
+          "text": "Ich sende mein Geld nirgendwohin; alle Trades werden vom Bot auf meinem Konto durchgeführt, sodass ich die volle Kontrolle über mein Geld habe."
+        },
+        "5": {
+          "name": "Jaroslava Němečková",
+          "text": "Ich bin zufrieden mit EEZY Trader, sein Hauptvorteil für mich ist, dass es mir wirklich Geld bringt."
+        },
+        "6": {
+          "name": "Vojtěch Nedělník",
+          "text": "Der Hauptvorteil des Roboters ist natürlich seine Funktionalität. Der Roboter führt Trades schnell und ohne zu zögern aus. Ich bin persönlich sehr zufrieden."
+        },
+        "7": {
+          "name": "Petr Sliwka",
+          "text": "Ich gehöre nicht zu denen, die den Roboter im Detail studieren und bewerten würden. Als normaler Benutzer schätze ich jedoch, dass ich mir keine Sorgen um meine Einzahlung machen muss und immer auf einen Gewinn zählen kann."
+        },
+        "8": {
+          "name": "Jaroslav Balajka",
+          "text": "Meiner Meinung nach funktioniert EEZY Trader gut; es gibt nicht viel mehr hinzuzufügen."
+        },
+        "9": {
+          "name": "Ivan Štěp",
+          "text": "Ich bin beschäftigt und habe keine Zeit, selbst zu handeln, daher bin ich froh, dass ich EEZY Trader habe, der für mich handelt und Geld verdient, sodass ich mich auf andere Aktivitäten konzentrieren kann."
+        },
+        "10": {
+          "name": "Petr Janhuba",
+          "text": "Der Bot ist mehr oder weniger völlig unabhängig und benötigt keine Überwachung seiner Trades. Er führt Trades schnell und genau aus und arbeitet wirklich rund um die Uhr."
+        }
+      }
+    },
+    "functions": {
+      "header": "Viele Funktionen und verschiedene Einstellungen",
+      "text": "EEZY Trader bietet viele Funktionen, damit Sie es nach Ihren Bedürfnissen und Ihrer Handelsstrategie einrichten können. Sie können auch unseren Roboter einfach mit der Auto-Trade-Funktion starten oder die Strategien anderer erfolgreicher Händler kopieren.",
+      "startBtn": "Starten Sie die 7-tägige KOSTENLOSE Testversion",
+      "functionFields": {
+        "1": "DCA",
+        "2": "GRID",
+        "3": "99 Roboter",
+        "4": "Long",
+        "5": "Short",
+        "6": "Empfehlungsprogramm",
+        "7": "100 Paare",
+        "8": "Trades kopieren",
+        "9": "Strategie speichern",
+        "10": "Wissensdatenbank"
+      }
+    },
+    "environment": {
+      "header": "Klare Umgebung und einfache Einrichtung",
+      "checkmarks": {
+        "1": "Einfache Umgebung und Start",
+        "2": "Ideale Einführung in den automatischen Handel",
+        "3": "Automatische Einstellungsoption (Auto-Trade)",
+        "4": "Strategien von erfahreneren Händlern kopieren",
+        "5": "Aktiver Support und Wissensdatenbank"
+      }
+    },
+    "activation": {
+      "header": "Aktivieren Sie Ihren EEZY Trader in 5 einfachen Schritten",
+      "steps": {
+        "1": "Registrieren Sie sich auf der Coingarage-Börse",
+        "2": "Schließen Sie die Verifizierung ab (KYC)",
+        "3": "Zahlen Sie Geld auf Ihr Konto ein",
+        "4": "Kaufen Sie einen Plan und EEZY Coin",
+        "5": "Stellen Sie Ihre Strategie ein und beginnen Sie zu verdienen"
+      },
+      "registerBtn": "Registrieren"
+    },
+    "subscription": {
+      "btnBuy": "Abonnement kaufen",
+      "disclaimer": "Nach Abschluss der Registrierung können Sie einen Abonnementplan wählen.",
+      "header": "Was ist ein Abonnement?",
+      "subText": "Ein Abonnement gibt Ihnen vollen Zugriff auf unsere Dienstleistungen. <b>Mit einem Abonnement erhalten Sie Zugriff auf unseren revolutionären Handelsroboter</b>, der Ihnen den Handel auf den Märkten mit absoluter Leichtigkeit und Effizienz ermöglicht.",
+      "plans": {
+        "header": "Abonnement",
+        "subText": "Sind Sie sich nicht sicher, ob unser Abonnement das Richtige für Sie ist? Kein Problem! Wir bieten eine Testversion an, in der Sie unseren Roboter ausprobieren und seine Fähigkeiten aus erster Hand erleben können.",
+        "trial": {
+          "header": "Testversion",
+          "free": "Kostenlos",
+          "package": {
+            "header": "Probieren und genießen Sie den Handelsroboter",
+            "1": "Bis zu 10 Roboter",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Trailing Take Profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Am häufigsten genutzt",
+          "header": "Basis Monat",
+          "competitionPrice": "$45/Monat",
+          "price": "$15/Monat",
+          "package": {
+            "header": "Probieren und genießen Sie den Handelsroboter",
+            "1": "Bis zu 50 Roboter",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Trailing Take Profit",
+            "5": "Automatische Verlängerung"
+          }
+        },
+        "year": {
+          "header": "Basis Jahr",
+          "competitionPrice": "$384/Jahr",
+          "price": "$120/Jahr",
+          "save60": "Sparen Sie $60",
+          "package": {
+            "header": "Entfesseln Sie das volle Potenzial des Handelsroboters",
+            "1": "Bis zu 99 Roboter",
+            "2": "Alle Strategien",
+            "3": "Handelsterminals",
+            "4": "Trailing Take Profit",
+            "5": "Automatische Verlängerung"
+          }
+        },
+        "fee": "Eine Erfolgsgebühr von 10% in EEZY Coin wird von jedem Gewinn abgezogen."
+      }
+    },
+    "referralEEZY": {
+      "subHeader": "Empfehlungsprogramm",
+      "header": "Verdienen Sie bis zu 30% der Handelsgebühren Ihrer Partner",
+      "subText": "Mühelose monatliche Belohnungen. Stellen Sie sich die Freude vor, wie Geld hereinströmt, ohne einen Finger zu rühren. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsame Gewinne!</b>",
+      "startBtn": "Starten"
+    },
+    "knowledgeBase": {
+      "subHeader": "Wissen Sie nicht, wie Sie den Handelsroboter einrichten?",
+      "Header": "Keine Sorge, wir haben eine Wissensdatenbank erstellt",
+      "text": "Hier finden Sie vollständige Anleitungen zur Einrichtung und Bedienung des Handelsroboters, die alle grundlegenden Aspekte abdecken."
+    },
+    "faq": {
+      "question1": "Wie kann ich mit Ihrer Plattform starten?",
+      "answer1": "Der Einstieg ist einfach! Registrieren Sie sich einfach, schließen Sie den Verifizierungsprozess ab, zahlen Sie Geld auf Ihr Konto ein und beginnen Sie mit unserer intuitiven Plattform und leistungsstarken Handelstools zu handeln.",
+      "question2": "Welche Kryptowährungen unterstützen Sie?",
+      "answer2": "Wir unterstützen eine breite Palette von Kryptowährungen. Überprüfen Sie unsere Plattform für die vollständige Liste der unterstützten digitalen Assets.",
+      "question3": "Wie sicher ist Ihre Plattform?",
+      "answer3": "Wir priorisieren die Sicherheit der Gelder und Daten unserer Nutzer. Unsere Plattform verwendet fortschrittliche Verschlüsselungsmethoden und Sicherheitsprotokolle, um eine sichere Handelsumgebung zu gewährleisten."
+    }
   }
 }

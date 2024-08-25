@@ -86,6 +86,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "slow-bounce": "slow-bounce 4s infinite",
       },
+      backgroundImage: {
+        'tablet': "url('/images/eezy-trader/easySettings/tablet.jpg')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
