@@ -453,7 +453,6 @@
         "profit": {
           "header": "DCA Stratejisi ile Kâr Elde Etme:",
           "subText": "DCA stratejisinin güzelliği, ortalama düşürme kavramından yararlanma yeteneğinde yatmaktadır. DCA botları, kısa vadeli fiyat hareketlerinden bağımsız olarak düzenli aralıklarla sürekli olarak varlık satın alarak, yatırımcıların zaman içinde ortalama bir maliyetle varlık biriktirmelerini sağlar. Bu yaklaşım, varlıkları tek ve potansiyel olarak şişirilmiş bir fiyat noktasından satın alma riskini azalttığı için piyasa oynaklığı dönemlerinde önemli karlar sağlayabilir."
-
         },
         "risk": {
           "header": "DCA Stratejisi ile İlişkili Riskler:",
@@ -462,8 +461,6 @@
         "conclusion": {
           "header": "Sonuç",
           "subText": "DCA stratejisi, yatırımcılara kripto ve forex piyasalarına yatırım yapmak için disiplinli ve sistematik bir yaklaşım sağlar. DCA botları, düzenli aralıklarla tutarlı bir şekilde varlık satın alarak yatırımcıların piyasa oynaklığının etkisini azaltmasını ve zaman içinde potansiyel olarak önemli getiriler elde etmesini sağlar. Bununla birlikte, performansı optimize etmek ve uzun vadeli yatırım hedeflerine ulaşmak için ilgili riskleri anlamak ve uygun risk yönetimi stratejilerini uygulamak çok önemlidir."
-
-
         }
       },
       "setupDcaBot": {
@@ -481,7 +478,6 @@
           "header": "Kısa Pozisyonda:",
           "subtext1": "Tersine, Kısa pozisyonda, bot satış çabalarına girişir ve temel para biriminde kar elde etmeye çalışır.",
           "subtext2": "Botunuz temel para birimini satarak bir pozisyon başlatacaktır. Bu işlemin üzerine DCA (satış) emirleri ve altına bir Kâr Al (alış) emri yerleştirecektir. Fiyat yükselirse, bot daha fazla temel para birimi satacak ve DCA seviyelerinde teklif para birimini tedarik edecektir. Tersine, fiyat düştüğünde, botunuz temel para birimini Kâr Al ile geri satın alacaktır. Döngünün tamamlanmasının ardından bot, ilk temel para birimi yatırımıyla yeni bir döngü başlatır.",
-
 
           "subtext3": "Açılış Uzun ve Kısa DCA botunuzu oluşturmak ve yürütmek için lütfen aşağıda verilen adım adım talimatlara uyun."
         },
@@ -614,7 +610,7 @@
           "name": "Paul Vigna, The Wall Street Journal Piyasalar Muhabiri"
         },
         "claim3": {
-          "text": "<birincil>Gerçek:</primary> “Merkezi olmayan blockchain protokolleri, mevcut İnternet'e hakim olan merkezi web hizmetlerinin yerini almaya başladığında, gerçek internet tabanlı egemenliği görmeye başlayacağız. Gelecekteki İnternet merkezi olmayan bir yapıya sahip olacak.”",
+          "text": "<primary>Gerçek:</primary> “Merkezi olmayan blockchain protokolleri, mevcut İnternet'e hakim olan merkezi web hizmetlerinin yerini almaya başladığında, gerçek internet tabanlı egemenliği görmeye başlayacağız. Gelecekteki İnternet merkezi olmayan bir yapıya sahip olacak.”",
           "name": "Olaf Carlson-Wee"
         },
         "claim4": {
