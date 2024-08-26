@@ -5,7 +5,6 @@ import type { Metadata } from "next"
 import { unstable_setRequestLocale } from "next-intl/server"
 import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
-import { notFound } from "next/navigation"
 import { getArticle, getArticleSlugs, getArtileMetadata } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 
 type Article = {
@@ -30,11 +29,13 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getArtileMetadata({ params })
+  console.log({ metadata: data })
   return data as Metadata
 }
 
 export async function generateStaticParams({ params }: { params: { slug: string; locale: string } }) {
   const slugs = await getArticleSlugs({ params })
+  console.log({ slugs })
   return slugs
 }
 

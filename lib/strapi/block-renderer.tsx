@@ -4,7 +4,6 @@ import Image from "next/image"
 import { BlocksRenderer, type BlocksContent } from "@strapi/blocks-react-renderer"
 import Link from "next/link"
 export default function BlockRendererClient({ content }: { readonly content: BlocksContent }) {
-  console.log(content)
   if (!content) return null
   return (
     <BlocksRenderer
