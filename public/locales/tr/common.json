@@ -972,5 +972,10 @@
       },
       "btnGARAOnPolygon": "Çokgen taramasında GARA"
     }
+  },
+  "widget": {
+    "button": "Daha fazla öğrenmek istiyorum",
+    "header": "Tüm sorularınızı yanıtlamaktan mutluluk duyarız",
+    "text": "Bize e-posta ve telefon numaranızı gönderin, bir satış temsilcisi sizinle iletişime geçerek sorularınızı yanıtlayacaktır."
   }
 }
