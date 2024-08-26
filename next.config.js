@@ -27,6 +27,11 @@ const nextConfig = {
         hostname: "via.assets.so",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "graceful-hope-03323ffb1e.media.strapiapp.com",
+        port: "",
+      },
     ],
   },
   typescript: {

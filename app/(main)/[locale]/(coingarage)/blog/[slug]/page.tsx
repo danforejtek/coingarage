@@ -43,9 +43,9 @@ export default async function Page({ params }: { params: { slug: string; locale:
   const locale = params.locale
   unstable_setRequestLocale(locale)
   const data: Article = await getArticle({ params })
-  if (!data?.title) return <>Not found</>
+  if (!data?.attributes?.title) return <>Not found</>
   const { title, perex, image, publishedAt, author, content } = data?.attributes
-  const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
+  const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
 
   return (

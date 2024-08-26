@@ -1,4 +1,4 @@
-import { Blog } from "@/components/blog"
+import { Blog } from "@/app/(main)/[locale]/(coingarage)/blog/components/blog"
 import Image from "next/image"
 import type { Metadata } from "next"
 import { formatDateString } from "@/lib/utils"
@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
           {data
             ? data.map((item: Article, index: number) => {
                 const { title, perex, image, author, publishedAt, slug } = item?.attributes
-                const imageSrc = process.env.STRAPI_URL + image?.data?.[0]?.attributes?.url
+                const imageSrc = image?.data?.[0]?.attributes?.url
                 const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
                 return (
                   <Blog.Item key={index}>
@@ -39,9 +39,11 @@ export default async function Page({ params }: { params: { locale: string } }) {
                       <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
                     </Blog.Image>
                     <Blog.Content>
-                      <Blog.Author>{authorName}</Blog.Author>
-                      <Blog.Heading>{title}</Blog.Heading>
-                      <Blog.Perex>{perex}</Blog.Perex>
+                      <div className="flex flex-col justify-between gap-4">
+                        <Blog.Author>{authorName}</Blog.Author>
+                        <Blog.Heading>{title}</Blog.Heading>
+                        <Blog.Perex>{perex}</Blog.Perex>
+                      </div>
                       <Blog.Footer>
                         <Blog.Date>{formatDateString(publishedAt)}</Blog.Date>
                         <Blog.Link href={`/${locale}/blog/${slug}`}>Read more...</Blog.Link>
@@ -50,10 +52,15 @@ export default async function Page({ params }: { params: { locale: string } }) {
                   </Blog.Item>
                 )
               })
-            : "No articles found"}
+            : null}
         </article>
         <Pagination pagination={pagination} />
       </section>
+      {!data || data.length === 0 ? (
+        <div className="container mx-auto">
+          <p>No articles found</p>
+        </div>
+      ) : null}
     </main>
   )
 }

@@ -74,3 +74,18 @@ export const getArticles = async ({ params }: { params: { locale: string } }) =>
   const pagination = responseData?.meta?.pagination
   return { data, pagination }
 }
+
+export const getLatestArticles = async ({ params }: { params: Partial<{ locale: string; slug: string }> }) => {
+  const { locale, slug } = params
+  const response = await fetch(
+    `${process.env.STRAPI_URL}/api/articles?locale=${locale}&fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$ne]=${slug}&sort[0]=publishedAt:desc&pagination[pageSize]=3`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+      },
+    }
+  )
+  const responseData = await response.json()
+  const data = responseData?.data
+  return data
+}

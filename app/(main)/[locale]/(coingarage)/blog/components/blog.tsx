@@ -14,7 +14,7 @@ const BlogAuthor = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogContent = ({ children }: { children: ReactNode }) => {
-  return <div className="flex flex-col gap-4 p-6">{children}</div>
+  return <div className="flex h-[342px] flex-col justify-between gap-4 p-6">{children}</div>
 }
 
 const BlogPerex = ({ children }: { children: ReactNode }) => {
@@ -38,7 +38,7 @@ const BlogLink = ({ children, href }: { children: ReactNode; href: string }) => 
 }
 
 const BlogFooter = ({ children }: { children: ReactNode }) => {
-  return <div className="mt-4 flex flex-row justify-between">{children}</div>
+  return <div className="mt-4 flex w-full flex-row justify-between">{children}</div>
 }
 
 export const Blog = {
