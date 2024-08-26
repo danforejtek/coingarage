@@ -1,114 +1,114 @@
 {
   "Menu": {
-    "buyCrypto": "Kripto Satın Al",
-    "depositFiat": "Fiat Para Yatırma",
-    "depositFiatViaSepa": "SEPA ile Fiat Para Yatırma",
+    "buyCrypto": "Kripto satın alın",
+    "depositFiat": "FIAT yatırım",
+    "depositFiatViaSepa": "SEPA aracılığıyla FIAT yatırım",
     "trade": "Ticaret",
-    "spotTrading": "Spot Ticaret",
-    "launchpad": "Başlatıcı",
+    "spotTrading": "Spot Ticareti",
+    "launchpad": "fırlatma rampası",
     "tradingBot": "Ticaret Botu",
     "convert": "Dönüştür",
-    "earn": "Kazanç",
-    "becomeAShareholder": "Gizli Ortak Ol",
-    "affiliate": "Referans",
-    "stake": "Stake",
-    "more": "Daha Fazla",
+    "earn": "Kazan",
+    "becomeAShareholder": "Gizli Ortak Olun",
+    "affiliate": "Yönlendirme",
+    "stake": "hisse",
+    "more": "Daha fazlası",
     "aboutUs": "Hakkımızda",
     "partners": "Ortaklar",
     "blog": "Blog",
-    "garageCoinPreSale": "GARAGECoin Ön Satış",
+    "garageCoinPreSale": "GARAGECoin Satış Öncesi",
     "buyGarageCoin": "GARAGECoin Satın Al",
-    "whitepaperEn": "Whitepaper EN",
-    "whitepaperCz": "Whitepaper CZ",
-    "whitepaperDe": "Whitepaper DE",
-    "login": "Giriş Yap",
-    "signUp": "Kaydol",
+    "whitepaperEn": "Ürün bilgisi EN",
+    "whitepaperCz": "Ürün bilgisi CZ",
+    "whitepaperDe": "Ürün bilgisi DE",
+    "login": "Giriş Yapın",
+    "signUp": "Kayıt Olun",
     "radio": "Coingarage FM",
     "knowledgeBase": "Bilgi Tabanı",
-    "contacts": "İletişim",
+    "contacts": "İletişim Bilgileri",
     "mode": {
-      "light": "Açık",
-      "dark": "Koyu",
-      "system": "Sistem"
+      "light": "aydınlık",
+      "dark": "karanlık",
+      "system": "sistem"
     }
   },
   "CryptoLandingPage": {
-    "nameLine1": "Kripto",
-    "nameLine2": "Basit ve Güvenli",
-    "nameLine3": "Değişim",
-    "mainText": "<b>Geleneksel bankacılık sistemlerinin sunduğundan daha yüksek bir finansal gizlilik ve özgürlük seviyesi keşfedin</b> Basit ve güvenli ortamımızda. <b>Avrupa Birliği</b>'nin kalbinde yer alan bir borsayız. <b>Kriptonun burada patlamasını sağlayacak</b> düzenlemeyi ilk kez tanıtıyoruz!",
+    "nameLine1": "şifre",
+    "nameLine2": "Basitçe & Güvenle",
+    "nameLine3": "Borsa",
+    "mainText": "<b>Borsamızın basit ve güvenli ortamında</b> geleneksel bankacılık sistemlerinin sunduğundan daha yüksek seviyede <b> finansal gizliliği ve  özgürlüğü</b> keşfedin. <b>Avrupa Birliği'nin</b> kalbinde yer alan bir borsayız. Burada <b>kriptoyu patlatacak!</b> düzenlemeyi <b>ilk yapan biziz!</b>",
     "register": {
-      "content": "Kaydolun ve GARAGECoin (GARA) ile 100 USDT'ye kadar ödül kazanın",
+      "content": "Kayıt olun ve GARAGECoin'de (GARA) 100 USDT'ye kadar ödül kazanın",
       "limitedOffer": "Sınırlı Teklif",
       "mark": {
-        "option1": "Borsadaki her yeni kullanıcı GARA borsa tokenında 10 USDT alacak.",
-        "option2": "Her 50. kullanıcı GARA borsa tokenında 50 USDT alacak.",
-        "option3": "Her 100. kullanıcı GARA borsa tokenında 100 USDT alacak.",
-        "option4": "Yeni bir kullanıcıyı yönlendirin ve yönlendirdiğiniz her yeni kullanıcıyla aynı ödülü kazanın."
+        "option1": "Borsadaki her yeni kullanıcı GARA borsa tokenı olarak 10 USDT alacaktır.",
+        "option2": "Her 50. kullanıcı GARA borsa tokeninde 50 USDT alacak.",
+        "option3": "Her 100. kullanıcı GARA borsa tokenı olarak 100 USDT alacak.",
+        "option4": "Referansınızla hesap oluşturacak her yeni kullanıcı ile aynı ödülü alın."
       }
     },
-    "signUp": "Kaydol",
-    "becomeAShareholder": "Gizli Ortak Ol",
-    "howToSignUp": "Nasıl Kaydolunur?",
-    "scanQrCode": "QR Kodunu Tara",
+    "signUp": "Kayıt Olun",
+    "becomeAShareholder": "Gizli Ortak Olun",
+    "howToSignUp": "Nasıl kayıt olunur?",
+    "scanQrCode": "QR Kodunu Tarayın",
     "toDownloadApp": "Uygulamayı İndirmek için"
   },
   "App": {
-    "name": "Her Zaman Her Yerde Basit",
-    "text": "Coingarage Mobil Ticaret Uygulaması ile küresel finansal piyasaların gücünü avucunuzun içinde açın. Hızın, kolaylığın ve hassasiyetin birleştiği ticaretin geleceğini deneyimleyin.",
+    "name": "Basitçe Her Yerde ve Her Zaman",
+    "text": "Coingarage Mobil Alım Satım Uygulaması ile küresel finans piyasalarının gücünü avucunuzun içinden keşfedin. Hız, kolaylık ve hassasiyetin birleştiği bu uygulamada ticaretin geleceğini deneyimleyin.",
     "appStore": "App Store",
     "googlePlay": "Google Play",
-    "scanQrCode": "QR Kodunu Tara",
+    "scanQrCode": "QR Kodunu Tarayın",
     "toDownloadApp": "Uygulamayı İndirmek için"
   },
   "CryptoMarket": {
     "name": "Kripto Piyasası",
     "currency": "Para Birimi",
     "price": "Fiyat",
-    "24hChange": "24 Saat Değişim",
-    "24hVolume": "24 Saat Hacim",
-    "marketCap": "Piyasa Değeri"
+    "24hChange": "24 saat Değişim",
+    "24hVolume": "24 saat Ses",
+    "marketCap": "piyasa değeri"
   },
   "CryptoStats": {
-    "trending": "Trend",
-    "topGainers": "En Çok Kazananlar",
-    "recentlyAdded": "Yeni Eklenenler"
+    "trending": "Trending",
+    "topGainers": "En Çok Kazandıranlar",
+    "recentlyAdded": "Son Eklenenler"
   },
   "Statistics": {
     "icon1": "100 Para Birimi Listelendi",
-    "icon2": "100+ Katılımcı Ülke",
-    "icon3": "Yakında gelecek 12 varlık staking için",
-    "icon4": "Kripto Satın Al",
-    "icon5": "Sepa veya Kart ile EUR Yatır"
+    "icon2": "100'den Fazla Katılımcı Ülke",
+    "icon3": "12 Hisse (stake) için değerler yakında geliyor",
+    "icon4": "Kripto Satın Alın",
+    "icon5": "Sepa veya Kart ile EUR yatırın"
   },
   "DiscoverMoreProducts": {
-    "name": "Daha Fazla Ürünü Keşfedin",
+    "name": "Daha Fazla Ürün Keşfedin",
     "eezyTrader": {
-      "name": "EEZY Trader",
-      "text": "AI Bot'un sizin için çalışmasına izin verin.",
-      "masterTraders": "Usta Trader'lar",
+      "name": "EEZY Tüccar",
+      "text": "Bırakın Yapay Zeka Botu sizin için çalışsın.",
+      "masterTraders": "Usta Tüccarlar",
       "followers": "Takipçiler",
       "bestTraders": {
-        "7DROI": "7GROI",
-        "7DFollowersPnL": "7G Takipçiler PnL",
-        "copy": "Kopyala"
+        "7DROI": "7DROI",
+        "7DFollowersPnL": "7D Takipçiler PnL",
+        "copy": "Kopya"
       },
       "features": {
         "tradingBot": {
-          "name": "Ticaret Botu",
-          "text": "Grid ve DCA botları. Uzun, kısa strateji ve daha fazlası."
+          "name": "TicaretBotu",
+          "text": "Grid ve DCA botları. Uzun, kısa stratejisi ve daha fazlası."
         },
         "takeProfit": {
-          "name": "Kar Al",
-          "text": "Kripto servetinizi akıllıca, etkili bir şekilde büyütün."
+          "name": "Kar elde edin",
+          "text": "Kripto servetinizi basitçe akıllıca, etkili bir şekilde büyütün."
         },
         "copyTrading": {
-          "name": "Kopya Ticaret",
-          "text": "En iyi trader'ı sizin için çalıştırın, sadece onları kopyalayın"
+          "name": "Kopya Ticareti                    ",
+          "text": "En iyi tüccarın sizin için çalışmasına izin verin, sadece onları kopyalayın"
         },
         "bargain": {
           "name": "Pazarlık",
-          "text": "Piyasadaki En İyi Teklif"
+          "text": "Piyasadaki en iyi teklif"
         }
       }
     }
@@ -116,48 +116,48 @@
   "Faq": {
     "question1": {
       "question": "Sitedeki 'Coin' ve 'Token' arasındaki fark nedir?",
-      "answer": "Bir coin, bağımsız olarak çalışabilen bir kripto para birimidir. Bir token ise çalışmak için başka bir kripto para birimine bağımlı olan bir kripto para birimidir. Daha fazla bilgi için blog yazımıza göz atın."
+      "answer": "Coin, bağımsız olarak çalışabilen bir kripto para birimidir. Token, çalışması için bir platform olarak başka bir kripto paraya bağlı olan bir kripto paradır. Daha fazla bilgi için blog yazımıza göz atın."
     },
     "question2": {
       "question": "Bitcoin (BTC) nedir?",
-      "answer": "Bitcoin, 2009 yılında Satoshi Nakamoto tarafından oluşturulan ilk kripto paradır. Merkezi olmayan bir dijital para birimidir ve kullanıcıdan kullanıcıya aracılar olmadan gönderilebilir."
+      "answer": "Bitcoin, 2009 yılında Satoshi Nakamoto tarafından oluşturulan ilk kripto para birimidir. Aracılara ihtiyaç duymadan eşler arası bitcoin ağında kullanıcıdan kullanıcıya gönderilebilen merkezi olmayan bir dijital para birimidir."
     },
     "question3": {
       "question": "USDT Coin (USDT) nedir?",
-      "answer": "Tether (USDT), ABD dolarının değerini yansıtacak şekilde tasarlanmış bir kripto para birimidir. Fikr, dijital dolarlar gibi kullanılabilecek sabit bir kripto para birimi oluşturmaktı. Bu amaca hizmet eden coin'lere “sabit coin” denir. USDT, en popüler sabit coin'dir ve birçok popüler borsada dolar yerine geçer!"
+      "answer": "Tether (USDT), ABD dolarının değerini yansıtmayı amaçlayan bir değere sahip bir kripto para birimidir. Buradaki fikir, dijital dolar gibi kullanılabilecek istikrarlı bir kripto para birimi yaratmaktı. Bu amaca hizmet eden ve istikrarlı bir dolar alternatifi olan coinlere sabit coin denir. USDT en popüler sabit coin'dir ve hatta birçok popüler borsada dolar yerine geçmektedir!"
     },
     "question4": {
-      "question": "Kripto para nasıl satın alabilirim?",
-      "answer": "Coingarage'da kripto para satın alabilirsiniz: 1. Coingarage hesabına kaydolun. 2. Hesabınızı doğrulayın. 3. EUR veya desteklenen diğer kripto paraları yatırın. 4. Favori kripto paralarınızı satın alın."
+      "question": "Nasıl kripto para satın alabilirim?",
+      "answer": "Aşağıdaki üç adımı izleyerek Coingarage üzerinden kripto para satın alabilirsiniz: 1. Bir Coingarage hesabı için kayıt olun. 2. Hesabınızı doğrulayın. 3. EUR veya desteklenen diğer kripto para birimlerini yatırın. 4. En sevdiğiniz kripto para birimlerini satın alın."
     },
     "question5": {
       "question": "Kişisel hesabımı nasıl doğrulayabilirim?",
-      "answer": "Kişisel hesabınızı doğrulamak için şu üç adımı takip edebilirsiniz: 1. Coingarage hesabınıza giriş yapın. 2. Hesap ayarlarınıza gidin. 3. Doğrulama sekmesine tıklayın. 4. Talimatları izleyin ve gerekli belgeleri yükleyin. 5. Doğrulamanızın işlenmesini bekleyin. 6. Ticaret yapmaya başlayın!"
+      "answer": "Aşağıdaki üç adımı izleyerek kişisel hesabınızı doğrulayabilirsiniz: 1. Coingarage hesabınıza giriş yapın. 2. Hesap ayarlarınıza gidin. 3. Doğrulama sekmesine tıklayın. 4. Talimatları izleyin ve gerekli belgeleri yükleyin. 5. Doğrulama işleminizin yapılmasını bekleyin. 6. Ticarete başlayın!"
     }
   },
   "Footer": {
     "aboutUs": "Hakkımızda",
-    "contactUs": "Bize Ulaşın",
+    "contactUs": "Bizimle İletişime Geçin",
     "fees": "Ücretler",
-    "hotCoins": "Popüler Coin'ler",
+    "hotCoins": "Hot Coins",
     "blog": "Blog",
-    "faqs": "SSS",
+    "faqs": "SSS'ler",
     "coinListing": "Coin Listesi",
     "markets": "Piyasalar",
     "trade": "Ticaret",
     "buyCrypto": "Kripto Satın Al",
-    "staking": "Stake",
+    "staking": "Staking",
     "login": "Giriş Yap",
     "legal": {
-      "termsOfService": "Hizmet Şartları",
-      "privacyPolicy": "Gizlilik Politikası",
-      "cookiePolicy": "Çerez Politikası",
-      "sportTradingTerms": "Spot Piyasa Şartları"
+      "termsOfService": "Hizmet Koşulları",
+      "privacyPolicy": "Gizlilik Politikamız",
+      "cookiePolicy": "Çerez Politikamız",
+      "sportTradingTerms": "Spot piyasa dışı koşullar"
     }
   },
   "Contact": {
-    "street": "Revoluční&nbsp;1082/8",
-    "city": "Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+    "street": "Revoluční 1082/8",
+    "city": " Nové Město (Praha 1)",
     "postalCode": "110 00",
     "country": "Prag, Çek Cumhuriyeti",
     "phone": "+420 778 116 516",
@@ -165,49 +165,51 @@
     "companyID": "IČ: 11667974"
   },
   "Affiliate": {
-    "name": "Ortaklık Programı",
-    "claim": "Coingarage'a Katıl",
-    "text1": "Kripto paraların ve blockchain teknolojisinin dünyayı daha iyi bir yer haline getirebileceğine inanıyor musunuz?",
-    "text2": "Evet ise, Coingarage Ortaklık programına katılın ve özel ödüller kazanın. Arkadaşlarınıza Coingarage'ı tanıtın, tam lisanslı bir Kripto Borsası Avrupa'nın kalbinde.",
-    "reward": "3 Seviyeli Ödüller Kazanabilirsiniz",
-    "warning": "*Çok önemli: Lütfen ortaklık programınızın sadece doğrudan referanslarınızla sınırlı olmadığını unutmayın, eğer doğrudan referanslarınız çalışmaya başlarsa ve doğrudan referanslarınızdan gelen referanslar sonraki ödülleri alacaktır."
+    "name": "Ortaklık programı",
+    "claim": "Coingarage'a katılın",
+    "text1": "Kripto para birimleri ve blok zinciri teknolojisinin dünyayı daha iyi hale getirebileceğine inanıyor musunuz?",
+    "text2": "Cevabınız evet ise, Coingarage Ortaklık programına katılın ve özel ödüller kazanın. Arkadaşlarınıza Avrupa'nın kalbinde tam lisanslı bir Kripto Borsası olan Coingarage'ı tanıtın.",
+    "reward": "Seviye 3 Ödülleri Alabilirsiniz",
+    "warning": "*Çok önemli: Doğrudan yönlendirmeleriniz çalışmaya başlarsa ve doğrudan yönlendirmelerinizden gelen referanslar bir sonraki ödülleri alırsa, Satış Ortaklığınızın yalnızca doğrudan referanslarınızla bitmediğini lütfen unutmayın."
   },
   "AboutUs": {
     "weAreCoingarage": "Biz Coingarage'ız",
-    "text1": "Vergi cennetlerindeki uzak adalarda değil, Avrupa'nın kalbinde, kripto para tutmak ve ticaret yapmak için tam lisansa sahip ilk kripto borsası <b>Prag</b>'da kuruldu.",
-    "text2": "Tüm faaliyetler <b>AB yasalarına</b> ve düzenleyicilerin ve yetkililerin gözetimine tabidir. Burada fiat para birimi ile kripto para satın alabilir, tutabilir ve en modern platformlardan birinde ticaret yapabilirsiniz.",
+    "text1": "Vergi cennetlerindeki uzak adalarda değil, Avrupa'nın kalbinde, kripto para birimlerini tutmak ve ticaretini yapmak için tam lisansa sahip olan <b>Prag</b>'da ilk kripto borsası kuruldu.",
+    "text2": "Tüm faaliyetler tamamen <b>AB yasalarına</b> ve düzenleyicilerin ve yetkililerin denetimine tabidir. Burada fiat karşılığında kripto satın alabilir, tutabilir ve eksiksizliğe ve basitliğe vurgu yapan en modern platformlardan birinde ticaret yapabilirsiniz",
     "elements": {
-      "text1": "Platformumuzun ana unsuru hizmetlerin bütünlüğüdür",
-      "text2": "Bir yerde, banka kartınızla veya hesabınızdan transferle fiat para birimi karşılığında kripto para satın alabilir, burada tutabilir ve ticaret yapabilirsiniz.",
-      "text3": "Burada spot ticaret bulabilirsiniz, ancak aynı zamanda Vadeli İşlemler de vardır.",
-      "text4": "Ticaret için yapay zeka kullanan profesyonel ticaret DCA, GRID, Futures botlarımızı kullanabileceksiniz.",
-      "text5": "En popüler coin'leri stake ederek borsada kazanç sağlayabilirsiniz.",
-      "text6": "Borsamız ayrıca kendi NFT platformunu, pazar yeri dahil olmak üzere sunacak.",
-      "text7": "Ayrıca borsada coin'leri P2P prensibi ile takas edebilirsiniz.",
-      "text8": "Tüm bu işlevler eğitim programları ve videolarla tamamlanacaktır."
+      "text1": "Platformumuzun temel unsurlarından biri hizmetlerin kapsamlılığıdır",
+      "text2": "Tek bir yerden banka kartınızla veya hesabınızdan havale yoluyla fiat para birimi karşılığında kripto satın alabilir, daha sonra burada tutabilir ve ticaretini yapabilirsiniz.",
+      "text3": "Burada spot ticaretin yanı sıra Vadeli İşlemleri de bulabilirsiniz",
+      "text4": "İşlemler için yapay zeka ile profesyonel ticaret DCA, GRID, Vadeli İşlem Botlarımızı kullanabileceksiniz",
+      "text5": "En popüler coinleri stake ederek borsada kazanabilirsiniz",
+      "text6": "Borsamız ayrıca bir piyasa yeri de dahil olmak üzere kendi NFT platformunu sunacaktır",
+      "text7": "Ayrıca eşler arası prensibini kullanarak borsada coin alışverişi yapabilirsiniz",
+      "text8": "Tüm bu işlevler eğitim programları ve videolarla desteklenecektir"
     },
     "financialWorld": {
-      "name": "Kripto paraların Avrupa'da finansal dünyanın yaygın ve saygın bir parçası olmasını istiyoruz.",
-      "text1": "Kripto paraların Avrupa'da benimsenmesine katkıda bulunmak ve AB yasaları ve düzenlemelerine uygun, tamamen şeffaf ve güvenli bir ortam sunmak istiyoruz.",
-      "text2": "Böylece insanlar kripto dünyasından ne bekleyebileceklerini bilir ve bu endüstrinin faydalarının yanı sıra risklerinin de farkında olurlar. Kriptoya yatırım yapmanın sadece kısa vadeli bir spekülasyon olmadığını, uzun vadeli ve anlamlı bir yatırım olduğunu bilirler.",
-      "text3": "Vizyonumuz dört temel değere dayanmaktadır: şeffaflık, kapsamlılık, güvenlik ve sadelik. Bu vizyonda bu değerlerin gerçekleştirilmesine ulaşırsak, kripto dünyasından insanlara uzun vadeli düzenli kazanç sağlama yolunda olacağız."
+      "name": "Kripto para birimlerinin Avrupa'da finans dünyasının yaygın ve saygın bir parçası haline gelmesini istiyoruz.",
+      "text1": "Avrupa'da kripto para birimlerinin benimsenmesine katkıda bulunmak ve AB yasaları ve düzenlemelerine uygun, tamamen şeffaf ve güvenli bir ortam sunmak istiyoruz.",
+      "text2": "Böylece insanlar kripto dünyasından neler bekleyebileceklerini bilebilir ve bu sektörün faydalarının yanı sıra risklerinin de farkına varabilirler. Böylece kriptoya yatırım yapmanın sadece kısa vadeli bir spekülasyon değil, uzun vadeli ve anlamlı bir yatırım olduğunu öğrenebilecekler.",
+      "text3": "Vizyonumuz dört temel değere dayanmaktadır: şeffaflık, kapsamlılık, güvenlik ve basitlik. Vizyonumuzdaki bu değerleri yerine getirmeyi başarırsak, insanlara kripto dünyasından uzun vadeli düzenli kar getirme yönünde ilerleyeceğiz.",
+      "text4": ""
     }
   },
   "security": {
     "security": "Borsa Güvenliği",
-    "securityText": "Platformumuz, sağlam ve verimli bir sistem sağlamak için en son teknolojileri kullanmaktadır. Veri iletimi ve depolaması için en yeni veri şifreleme sürümlerini kullanıyoruz. Yapay zekaya dayalı gelişmiş koruma özellikleri de kullanarak kullanıcılarımız için güvenli ve emniyetli bir ortam sağlıyoruz.",
+    "securityText": "Platformumuz, sağlam ve verimli bir sistem sağlamak için çeşitli son teknolojileri kullanır. Hem aktarım hem de depolama için veri şifrelemenin en son sürümlerini kullanıyoruz. Yapay zekaya dayalı gelişmiş koruma özellikleri de kullanarak kullanıcılarımız için güvenli ve emniyetli bir ortam sağlıyoruz.",
     "protection": "Müşteri Koruması",
-    "protectionText": "Coingarage'ın müşteri koruma önlemleri, kişisel bilgilerinizi korumak için güçlü politikalar ve teknolojiler uygulayarak sektör normlarının ötesine geçmektedir. Gizliliğiniz en öncelikli konumuzdur.",
+    "protectionText": "Coingarage'ın müşteri koruma önlemleri, kişisel bilgilerinizi korumak için sağlam politikalar ve teknolojiler uygulayarak endüstri normlarının ötesine geçer. İçiniz rahat olsun, gizliliğiniz bizim önceliğimizdir.",
     "fundsSecurity": "Fonların Güvenliği",
-    "fundsSecurityText": "Fon Güvenliğimiz, blockchain ve web endüstrisinin gazileri tarafından inşa edilmiştir. Banka sınıfı güvenlik uyum değerlendirmelerini ve yüksek kalite standartlarını geçen yeni nesil bir bulut platformu oluşturduk.",
+    "fundsSecurityText": "Fon Güvenliğimiz, blockchain ve web endüstrisinin tecrübeli uzmanları tarafından oluşturulmuştur. Banka sınıfı güvenlik uyumluluk değerlendirmelerini ve çok aranan kalite standartlarını geçen yeni nesil bir bulut platformu oluşturduk.",
     "monitoring": "Gerçek Zamanlı İzleme",
-    "monitoringText": "Gerçek zamanlı izleme sistemlerimiz, platformumuzdaki faaliyetleri aktif olarak izler ve analiz eder, şüpheli davranışları hızlı bir şekilde tespit edip yanıt vermemizi sağlar. Bu proaktif yaklaşım, varlıklarınızın ve verilerinizin sürekli olarak korunmasını sağlar.",
-    "secureByDesign": "Tasarım Gereği Güvenli",
-    "secureByDesignText": "Gizlilik koruma önlemlerimiz, kişisel bilgilerinizi korumak için güçlü politikalar ve teknolojiler uygulayarak sektör normlarının ötesine geçmektedir. Gizliliğiniz en öncelikli konumuzdur.",
-    "heading": "Güvenli Bir Sığınak: Gizlilik, Tasarım ve Gerçek Zamanlı İzlemenin Buluştuğu Yer",
+    "monitoringText": "Gerçek zamanlı izleme sistemlerimiz, platformumuzdaki etkinlikleri aktif olarak izleyip analiz ederek şüpheli davranışları derhal tespit etmemize ve bunlara yanıt vermemize olanak tanır. Bu proaktif yaklaşım, varlıklarınızın ve verilerinizin sürekli koruma altında olmasını sağlar.",
+    "secureByDesign": "Tasarımla Güvenlik",
+    "secureByDesignText": "Gizlilik koruma önlemlerimiz, kişisel bilgilerinizi korumak için sağlam politikalar ve teknolojiler uygulayarak endüstri normlarının ötesine geçmektedir. İçiniz rahat olsun, gizliliğiniz bizim önceliğimizdir.",
+    "heading": "Güvenli Bir Cennet: Gizlilik, Tasarım ve Gerçek Zamanlı İzlemenin sizin rahatlığınız İçin Birleştiği Yer",
     "newDesign": "Yeni tasarım üzerinde çalışıyoruz",
-    "continueToTrader": "EEZY Trader'a Devam Et"
+    "continueToTrader": "EEZY Tüccar' da devam edin"
   },
+
   "eezy-trader": {
     "nav": {
       "knowledgeBase": "Bilgi Tabanı",
@@ -215,47 +217,47 @@
       "payments": "Ödemeler ve Abonelikler"
     },
     "homepage": {
-      "trialBtn": "7 GÜNLÜK ÜCRETSİZ DENEYİMİ BAŞLAT",
+      "trialBtn": "7 GÜNLÜK ÜCRETSIZ DENEMEYE BAŞLAYIN",
       "main": {
-        "header": "En iyi yapay zeka destekli kripto ticaret botu",
+        "header": "Yapay zeka destekli en iyi kripto ticaret botu",
         "noCreditCard": "*Kredi kartı gerekmez"
       },
       "results": {
-        "header": "Coingarage’ın EEZY Trader kripto botunun gelişmiş yeteneklerinden yararlanarak ticaret stratejinizin tüm potansiyelini ortaya çıkarın, en yüksek ticaret performansına ulaşın ve karları maksimize edin.",
+        "header": "Coingarage'ın EEZY Tüccar kripto botunun gelişmiş yeteneklerinden yararlanarak ticaret stratejinizin tüm potansiyelini gerçekleştirin, en yüksek ticaret performansına ulaşmanızı ve karınızı en üst düzeye çıkarmanızı sağlayın.",
         "topPerformers": "En İyi Performans Gösterenler",
         "topPairs": "En İyi Çiftler",
         "name": "İsim",
         "pair": "Çift"
       },
       "trusting": {
-        "subHeader": "Binlerce trader tarafından güveniliyor, destekleyen",
-        "header": "Coingarage “Basit ve güvenli Borsa”",
+        "subHeader": "Binlerce tüccar tarafından güvenilen, tarafından desteklenen",
+        "header": "Coingarage, Basit ve Güvenli Borsa”",
         "columns": {
           "1": "Uzun / Kısa",
-          "2": "Ticaret Karı",
+          "2": "Ticaret Kârı",
           "3": "DCA/ GRID",
           "4": "Stratejiyi Kaydet",
-          "5": "AI ile Başlatma",
-          "6": "Kopya Ticaret",
-          "7": "Ticaret Yapmak için 100 Çift",
+          "5": "Yapay Zeka ile Başlayın",
+          "6": "Kopya Ticareti",
+          "7": "İşlem Yapılacak 100 Çift",
           "8": "Teknik Göstergeler",
           "9": "90 Bot"
         }
       },
       "investment": {
-        "header": "Kripto para yatırımlarınızın 24/7 büyümesini izleyin, günün her saati, nerede olursanız olun",
-        "free7Days": "7 gün ücretsiz deneyin",
+        "header": "Arkanıza yaslanın ve kripto para yatırımlarınızın büyümesini izleyin, gece gündüz, 7/24, nerede olursanız olun",
+        "free7Days": "7 gün boyunca ücretsiz deneyin",
         "howToConnect": {
-          "register": "Kaydol",
-          "connect": "Bağlan",
-          "startTrading": "Ticarete Başla"
+          "register": "Kayıt Olun",
+          "connect": "Bağlanın",
+          "startTrading": "Ticarete Başlayın"
         }
       },
       "login": {
-        "header": "<span>Coingarage’ın Trader Bot</span><span class='text-violet'> ile Kazanmaya</span><span>Bugün Başlayın</span>",
-        "subText": "Coingarage'a kaydolun ve tüm gelişmiş bot özelliklerini test etmek için tamamen işlevsel <b>7 günlük PRO deneme</b> süresine sahip olun.",
+        "header": "<span>Start Earning with</span><span class='text-violet'>Coingarage’s Trader</span><span><span class='text-violet'>Bot</span> Today</span>",
+        "subText": "Coingarage'a kaydolun ve botun tüm gelişmiş özelliklerini test etmek için tamamen işlevsel <b>7 günlük PRO deneme</b> süresine sahip olun.",
         "loginForm": {
-          "login": "Giriş Yap",
+          "login": "Giriş Yapın",
           "yourEmail": "E-posta adresiniz",
           "password": "Şifre",
           "forgotPassword": "Şifrenizi mi unuttunuz?",
@@ -263,51 +265,51 @@
         }
       },
       "start": {
-        "header": "EEZY TRADER'ı 5 Kolay Adımda Başlatın",
-        "subText": "EEZY ticaret botunuzu zahmetsizce beş basit adımda başlatın: ticareti başlatın ve bugün Coingarage ile karlarınızı optimize edin.",
+        "header": "EEZY Tüccar'ı 5 Kolay Adımda Başlatın",
+        "subText": "EEZY ticaret botunuzu beş basit adımda kolayca başlatın: Coingarage ile bugün ticarete başlayın ve kârınızı optimize edin..",
         "steps": {
-          "1": "Coingarage'a kun ",
-          "2": "Bir Borsaya Giriş Yapın",
-          "3": "Alt hesaba gidin ve menüde EEZY Trader'ı seçin",
+          "1": "Coingarage'a kaydolun",
+          "2": "Bir Borsada oturum açın",
+          "3": "Alt hesaba gidin ve menüden EEZY Tüccar'ı seçin",
           "4": "Bir strateji oluşturun",
-          "5": "Botu çalıştırın ve karlarını izleyin!"
+          "5": "Botu çalıştırın ve kazancınızı izleyin!"
         }
       },
       "faq": {
-        "question1": "Platformunuza nasıl başlayabilirim?",
-        "answer1": "Başlamak kolay! Basitçe bir hesap oluşturun, doğrulama sürecini tamamlayın, hesabınıza fon yatırın ve sezgisel platformumuz ve güçlü ticaret araçlarımızı kullanarak ticarete başlayın.",
+        "question1": "Platformunuzu kullanmaya nasıl başlayabilirim?",
+        "answer1": "Başlamak çok kolay! Bir hesap için kayıt olun, doğrulama sürecini tamamlayın, hesabınıza para yatırın ve kolay anlaşılır platformumuzu ve güçlü yatırım araçlarımızı kullanarak yatırım yapmaya başlayın.",
         "question2": "Fonlarımın ve kişisel bilgilerimin güvenliğini nasıl sağlıyorsunuz?",
-        "answer2": "Fonlarınızı ve kişisel verilerinizi korumak için şifreleme, iki faktörlü kimlik doğrulama (2FA) ve düzenli güvenlik denetimleri gibi sektör standartlarında güvenlik önlemleri kullanıyoruz. Ayrıca, yetkisiz erişim ve sahtecilik faaliyetlerine karşı koruma sağlamak için platformumuz sıkı uyumluluk standartlarına uymaktadır.",
+        "answer2": "Fonlarınızı ve kişisel verilerinizi korumak için şifreleme, iki faktörlü kimlik doğrulama (2FA) ve düzenli güvenlik denetimleri dahil olmak üzere endüstri standardı güvenlik önlemleri kullanıyoruz. Ayrıca, platformumuz yetkisiz erişim ve dolandırıcılık faaliyetlerine karşı koruma sağlamak için katı uyumluluk standartlarına bağlıdır.",
         "question3": "DCA kullanmanın faydaları nelerdir?",
-        "answer3": "Dolar maliyet ortalaması (DCA), bir yatırımcının belirli bir yatırımı düzenli aralıklarla sabit bir dolar miktarında satın almasını içeren bir stratejidir. Bu stratejinin temel faydaları, piyasa zamanlamasıyla ilişkili riski azaltma, zaman içinde ortalama hisse başına maliyeti potansiyel olarak düşürme ve disiplinli yatırım davranışını teşvik etmeyi içerir."
+        "answer3": "Dolar-maliyet ortalaması (DCA), bir yatırımcının volatilitenin toplam satın alma üzerindeki etkisini azaltmak amacıyla yatırım yapılacak toplam tutarı bir hedef varlığın periyodik satın alımlarına böldüğü bir stratejidir. DCA kullanmanın temel faydaları arasında piyasa zamanlamasıyla ilişkili riskin azaltılması, zaman içinde hisse başına ortalama maliyetin potansiyel olarak düşürülmesi ve disiplinli yatırım davranışının teşvik edilmesi yer alır."
       }
     },
     "affiliate": {
-      "btnAffiliate": "Başlayın",
+      "btnAffiliate": "Başlarken",
       "main": {
         "header1": "Referans Programı",
-        "header2": "Ortaklarınızın her ticaret ücretinden %15'e kadar kazanın",
-        "subText": "Aylık ödüller, zahmetsiz. Para akışının hiçbir şey yapmadan gelmesinin tadını çıkarın. <b>Arkadaşlarınızı davet edin ve birlikte paylaşılan kazançların keyfini çıkarın!</b>"
+        "header2": "Ortaklarınızın her işleminin ücretlerinden %15'e kadar kazanın",
+        "subText": "Zahmet gerektirmeyen aylık ödüller. Parmağınızı bile kıpırdatmadan akan paranın keyfini hayal edin. <b>Arkadaşlarınızı davet edin ve ortak kazancın tadını birlikte çıkarın!</b>"
       },
       "getStarted": {
-        "header": "Nasıl Başlanır",
-        "header1": "Coingarage'a Kaydolun",
-        "subText1": "Coingarage'da bir hesap oluşturun, giriş yapın ve ardından Ortaklık bölümüne gidin.",
+        "header": "Nasıl başlanır",
+        "header1": "Coingarage'a Kayıt Olun",
+        "subText1": "Coingarage'da Hesap Oluşturun, Giriş Yapın ve ardından Ortaklık bölümüne gidin.",
         "header2": "Arkadaşlarınızı ve Ortaklarınızı Davet Edin",
-        "subText2": "Ortaklık Bağlantınızı kopyalayın ve arkadaşlarınıza veya ortaklarınıza gönderin.",
-        "header3": "Kazançlarınızın Keyfini Çıkarın",
-        "subText3": "Onlar bir hesap oluşturduktan ve ticarete başladıktan sonra ödüllerinizi kazanacaksınız.",
-        "disclaimer": "Giriş sayfasına yönlendirileceksiniz. Hesabınıza giriş yaptıktan sonra referans kodunuzu My -> Referral bölümünde bulabilirsiniz."
+        "subText2": "Satış Ortaklığı Bağlantınızı kopyalayın ve arkadaşlarınıza veya ortaklarınıza gönderin.",
+        "header3": "Kazancınızın Tadını Çıkarın",
+        "subText3": "Bir hesap oluşturduktan ve ticarete başladıktan sonra ödüllerinizi kazanacaksınız.",
+        "disclaimer": "Giriş sayfasına yönlendirileceksiniz. Hesabınıza giriş yaptıktan sonra, tavsiye kodunuzu Benim -> Tavsiye bölümünde bulabilirsiniz"
       },
       "faq": {
-        "question1": "Ortaklık programı nasıl çalışır?",
-        "answer1": "Bir ortak olarak, paylaşabileceğiniz benzersiz bir referans bağlantısı veya kodu alırsınız. Birisi bağlantınıza tıklayıp bir satın alma veya kaydolma işlemi gerçekleştirdiğinde, satış veya kaydolma işleminden komisyon kazanırsınız.",
-        "question2": "Ortaklık programı ile ne kadar kazanabileceğim konusunda bir limit var mı?",
-        "answer2": "Ortaklık programımız ile ne kadar kazanabileceğiniz konusunda bir limit yoktur. Kazançlarınız, oluşturduğunuz referansların sayısına ve onların satın alma veya kaydolma değerine bağlıdır.",
-        "question3": "Referanslarımı ve komisyonlarımı nasıl takip edebilirim?",
-        "answer3": "Ortaklık programımız, referanslarınızı takip edebileceğiniz, satış veya kaydolmaları izleyebileceğiniz ve komisyon kazançlarınızı gerçek zamanlı olarak görüntüleyebileceğiniz bir kontrol paneli veya portal sağlar.",
-        "question4": "Ortaklık programının komisyon yapısı nedir?",
-        "answer4": "Ortaklık programımız, referans seviyelerine dayalı olarak komisyon yüzdeleri sunan çok seviyeli bir komisyon yapısı sunar:",
+        "question1": "Ortaklık programı nasıl işliyor?",
+        "answer1": "As an affiliate, you'll receive a unique referral link or code thast you can share with your audience. When someone clicks on your link or uses your code to make a purchase or sign up, you'll earn a commission on the sale or sign-up.",
+        "question2": "Ortaklık programı aracılığıyla ne kadar kazanabileceğime dair bir sınır var mı?",
+        "answer2": "Ortaklık programımız aracılığıyla ne kadar kazanabileceğinizin bir sınırı yoktur. Kazancınız, oluşturduğunuz yönlendirmelerin sayısına ve satın alma veya kayıt işlemlerinin değerine bağlıdır.",
+        "question3": " Yönlendirmelerimi ve komisyonlarımı nasıl takip edebilirim?",
+        "answer3": "Ortaklık programımız, yönlendirmelerinizi takip edebileceğiniz, satışları veya kayıtları izleyebileceğiniz ve komisyon kazançlarınızı gerçek zamanlı olarak görüntüleyebileceğiniz bir kontrol paneline veya portala erişim sağlar",
+        "question4": "Ortaklık programı için komisyon yapısı nedir?",
+        "answer4": "Ortaklık programımız, referansların seviyesine göre komisyon yüzdeleri ile çok seviyeli bir komisyon yapısı sunar:",
         "levels": {
           "1": "Seviye 1: %15 komisyon",
           "2": "Seviye 2: %10 komisyon",
@@ -317,24 +319,24 @@
       "setupTradingBot": {
         "name": "Ticaret Botunu Nasıl Kuracağınızı Bilmiyor musunuz?",
         "claim": "Endişelenmeyin, bir bilgi tabanı oluşturduk",
-        "text1": "Burada, ticaret botunu kurma ve çalıştırma konusunda kapsamlı rehberler bulacaksınız, tüm temel unsurları kapsayacaktır."
+        "text1": "Burada, bir ticaret botunun kurulması ve işletilmesine ilişkin tüm temel hususları kapsayan kapsamlı bir rehber bulacaksınız."
       },
-      "example": "Örnek",
+      "example": "Örneğin",
       "levels": {
-        "text1": "John, referans zincirindeki ilk kişidir. John, Alice'i referans gösterirse, Alice'in kaydı için toplam ödülün %15'ini kazanır.",
-        "text2": "Alice, John'un altına kaydedilmiştir ve bu nedenle ikinci seviyededir. Alice, Peter'ı referans gösterirse, John (birinci seviye) Peter'in hesabı için toplam ödülün %10'unu kazanır.",
-        "text3": "Peter, Alice'in altına kaydedilmiştir ve bu nedenle üçüncü seviyededir. Peter başka bir kullanıcıyı referans gösterirse, John (birinci seviye) Peter tarafından kaydedilen yeni kullanıcı için toplam ödülün %5'ini kazanır."
+        "text1": "John, referans zincirindeki ilk kişidir ve Alice'i yönlendirirse Alice'in kaydı için toplam ödülün %15'ini kazanır.",
+        "text2": "Alice, John'un altında, yani ikinci seviyede kayıtlıdır. Alice Peter'ı yönlendirirse, John (birinci seviye) Peter'ın hesabı için toplam ödülün %10'unu kazanır.",
+        "text3": "Peter, Alice'in altında, yani üçüncü seviyede kayıtlıdır. Peter başka bir kullanıcıyı yönlendirirse, John (birinci seviye) Peter tarafından kaydedilen yeni kullanıcı için toplam ödülün %5'ini kazanır"
       },
-      "disclaimer": "Ödüller, referanslarınız tarafından ödenen ücretlerden oluşturulur"
+      "disclaimer": "Ödüller, referanslarınız tarafından ödenen ücretlerden elde edilir"
     },
     "subscription": {
-      "disclaimer": "Kaydınızı tamamladıktan sonra bir abonelik planı seçebileceksiniz",
-      "btnBuy": "Abonelik Satın Al",
-      "header": "Abonelik Planı Nedir?",
-      "subText": "Abonelik planı, hizmetlerimize tam kapasitede erişim sağlar. <b>Abonelikle, devrim niteliğindeki ticaret robotumuza erişim kazanırsınız</b>, bu da piyasada ticaret yapmanıza mutlak kolaylık ve verimlilik sağlar.",
+      "disclaimer": "Kaydınızı tamamladıktan sonra, bir abonelik planı seçebileceksiniz",
+      "btnBuy": "Abonelik Satın Alın",
+      "header": "Abonelik planı nedir?",
+      "subText": "Abonelik planı, hizmetlerimize tam kapasite ile erişmenizi sağlar.<b>Abonelik ile, piyasalarda mutlak kolaylık ve verimlilikle ticaret yapmanızı sağlayan devrim niteliğindeki ticaret robotumuza </b> erişim kazanırsınız.",
       "plans": {
         "header": "Abonelik",
-        "subText": "Aboneliğimizin sizin için uygun olup olmadığından emin değil misiniz? Sorun değil! Botumuzu test edebileceğiniz ve yeteneklerini ilk elden deneyimleyebileceğiniz bir deneme sürümü sunuyoruz.",
+        "subText": "Aboneliğimizin sizin için uygun olup olmadığından emin değil misiniz? Hiç sorun değil! Botumuzu test edebileceğiniz ve yeteneklerini ilk elden deneyimleyebileceğiniz bir deneme sürümü sunuyoruz.",
         "trial": {
           "header": "Deneme",
           "free": "Ücretsiz",
@@ -343,7 +345,7 @@
             "1": "10 Bot'a kadar",
             "2": "Tüm Stratejiler",
             "3": "Ticaret Terminalleri",
-            "4": "Trailing Kar Al"
+            "4": "Takip eden Kâr alın"
           }
         },
         "month": {
@@ -356,7 +358,7 @@
             "1": "50 Bot'a kadar",
             "2": "Tüm Stratejiler",
             "3": "Ticaret Terminalleri",
-            "4": "Trailing Kar Al",
+            "4": "Takip eden Kâr alın",
             "5": "Otomatik Yenileme"
           }
         },
@@ -364,24 +366,24 @@
           "header": "Temel Yıl",
           "competitionPrice": "$384/yıl",
           "price": "$120/yıl",
-          "save60": "$60 Tasarruf",
+          "save60": "60$ tasarruf edin",
           "package": {
-            "header": "Ticaret Botunun Tüm Potansiyelini Açın",
+            "header": "Ticaret Botunun Tam Potansiyelinin Açığa Çıkarın",
             "1": "99 Bot'a kadar",
             "2": "Tüm Stratejiler",
             "3": "Ticaret Terminalleri",
-            "4": "Trailing Kar Al",
+            "4": "Takip eden Kâr alın",
             "5": "Otomatik Yenileme"
           }
         },
-        "fee": "Her kardan %10 başarı ücreti EEZY Coin olarak kesilir."
+        "fee": "EEZY Coin'de %10 başarı ücreti her kârdan düşülür."
       }
     }
   },
   "knowledgeBase": {
     "general": {
       "name": "Genel",
-      "activation": "Aktivasyon",
+      "activation": "Etkinleştirme",
       "subscription": "Abonelik",
       "features": "Özellikler",
       "activationYoutubeId": "m5HTNiSygck",
@@ -391,53 +393,53 @@
         "name": "Giriş",
         "overview": {
           "header": "Genel Bakış",
-          "subText": "Bot ticareti, otomatik ticaret olarbilinir,tüccarlar adına işlemleri gerçekleştirmek için önceden programlanmış yazılımlar kullanır.Bu ticaret yöntemi,işlemleri hız ve hassasiyetle gerçekleştirme yeteneği,24 / 7,insan müdahalesine gerek kalmadan,popülerlik kazanmıştır."
+          "subText": "Otomatik ticaret olarak da bilinen bot ticareti, tüccarlar adına alım satım yapmak için önceden programlanmış yazılımları kullanır. Bu alım satım yöntemi, insan müdahalesine gerek kalmadan 7/24 hızlı ve hassas bir şekilde alım satım gerçekleştirme kabiliyeti nedeniyle popülerlik kazanmıştır."
         },
         "advantages": {
-          "header": "Avantajlar",
-          "subText1": "Hız: Botlar milisaniyeler içinde işlemleri gerçekleştirebilir, piyasa hareketlerinden insan tüccarlardan daha hızlı yararlanabilir.",
-          "subText2": "Duygusuz Ticaret: Botlar, insan kararlarını etkileyebilecek korku ve açgözlülük gibi duyguları ortadan kaldırarak önceden belirlenmiş kurallara göre ticaret yapar.",
-          "subText3": "24/7 Ticaret: Botlar, küresel piyasalardaki fırsatlardan yararlanmak için kesintisiz çalışabilir, tüccarlar uyurken veya çevrimdışıyken bile.",
-          "subText4": "Geriye Dönük Test ve Optimizasyon: Tüccarlar, bot stratejilerini geçmiş verilerle geriye dönük test edebilir, performansı değerlendirebilir ve daha iyi sonuçlar için stratejileri optimize edebilir.",
-          "subText5": "Çeşitlendirme: Botlar, aynı anda birden fazla varlıkta ticaret yapabilir, ticaret portföylerinin daha fazla çeşitlendirilmesine olanak tanır."
+          "header": "Avantajları",
+          "subText1": "Hız: Botlar milisaniyeler içinde işlem gerçekleştirebilir ve piyasa hareketlerinden insan tüccarlardan daha hızlı yararlanabilir.",
+          "subText2": "Hissiz Ticaret: Botlar önceden tanımlanmış kurallara göre işlem yapar ve insan karar verme sürecini etkileyebilecek korku ve açgözlülük gibi duyguları ortadan kaldırır.",
+          "subText3": "7/24 Ticaret: Botlar, yatırımcılar uykuda veya çevrimdışı olsa bile küresel piyasalardaki fırsatlardan yararlanarak günün her saati çalışabilir.",
+          "subText4": "Geriye Dönük Test ve Optimizasyon: Yatırımcılar, performansı değerlendirmek ve daha iyi sonuçlar almak üzere stratejileri optimize etmek için geçmiş verileri kullanarak bot stratejilerini geriye dönük test edebilir.",
+          "subText5": "Çeşitlendirme: Botlar aynı anda birden fazla yatırım aracında işlem yapabilir ve böylece yatırım portföylerinin daha fazla çeşitlendirilmesine olanak tanır."
         },
         "conclusion": {
           "header": "Sonuç",
-          "subText": "Bu giriş şeması, bot ticaretine, avantajlarına, farklı strateji türlerine, dikkate alınması gereken konulara genel bir bakış sağlar ve botları ticaret faaliyetlerinde kullanmanın potansiyel faydaları ile sonuçlanır."
+          "subText": "Bu giriş şeması, bot ticaretine, avantajlarına, farklı strateji türlerine, dikkat edilmesi gereken hususlara genel bir bakış sağlar ve yatırımcıların ticaret faaliyetlerinde botları kullanarak elde edebilecekleri potansiyel faydalarla sonuçlanır."
         }
       },
       "slang": {
         "name": "Argo",
-        "GRID": "Belirli bir aralıkta önceden belirlenmiş fiyat aralıklarında alım ve satım emirleri verme stratejisi. Grid ticaretinin amacı, belirlenen aralıktaki fiyat dalgalanmalarından kâr elde etmektir.",
-        "DCA": "Dolar-Maliyet Ortalaması (DCA), bir yatırımcının belirli bir varlığı düzenli aralıklarla sabit bir dolar miktarında satın almasını içeren bir yatırım stratejisidir. Bu strateji, piyasa dalgalanmalarının etkisini zaman içinde satın alma fiyatına yayarak azaltmayı amaçlar.",
-        "TP": "Kar Al (TP), bir tüccarın kar elde etmek için pozisyonunun tamamını veya bir kısmını satmayı düşündüğü önceden belirlenmiş bir fiyat seviyesidir. Kar Al emirleri, uzun pozisyonlar için mevcut piyasa fiyatının üzerinde ve kısa pozisyonlar için mevcut piyasa fiyatının altında ayarlanır.",
-        "SL": "Zarar Durdur (SL), bir tüccarın potansiyel kayıpları sınırlamak için pozisyonunun tamamını veya bir kısmını satmayı düşündüğü önceden belirlenmiş bir fiyat seviyesidir. Zarar Durdur emirleri, uzun pozisyonlar için mevcut piyasa fiyatının altında ve kısa pozisyonlar için mevcut piyasa fiyatının üzerinde ayarlanır.",
-        "SHORT": "Bir tüccarın, fiyatının düşmesini beklediği bir varlığı sattığı bir ticaret pozisyonu. Tüccarlar, varlığı sattıkları fiyattan daha düşük bir fiyata geri alarak kısa pozisyonlardan kar elde ederler. Yalnızca uzun vadeli olarak güvendiğiniz ve tuttuğunuz coin'ler için burada kullanın. USDT düşüşlerinden kâr edersiniz, ancak onları orijinal fiyatlarına dönmeden önce satarsanız zarar edersiniz.",
-        "LONG": "Bir tüccarın, fiyatının artmasını beklediği bir varlığı satın aldığı bir ticaret pozisyonu. Tüccarlar, varlığı satın aldıkları fiyattan daha yüksek bir fiyata satarak uzun pozisyonlardan kar elde ederler.",
-        "START_BY_AI": "Yapay zeka (AI) algoritmaları veya platformlarını kullanarak ticaret faaliyetlerine başlama veya başlatma. Bu, piyasa verilerini analiz eden ve önceden belirlenmiş kurallara veya algoritmalara göre işlemleri gerçekleştiren otomatik ticaret stratejilerini içerebilir.",
-        "DCA_Auto": "DCA Auto ile borsamız tarafından seçilen değerler tanıtılır ve belirli aralıklarla otomatik alım işlemlerinin gerçekleştirilmesini sağlar. Bu, manuel müdahale gereksinimini ortadan kaldırır, çünkü platform, önceden belirlenmiş parametrelere dayalı olarak otomatik olarak alım işlemlerini gerçekleştirir, yatırımcıların sürekli izlemeye gerek kalmadan varlıkları zaman içinde biriktirmelerine olanak tanır.",
-        "GRID_Auto": "GRID Auto ile platformumuz tarafından seçilen değerler tanıtılır ve bu önceden belirlenmiş parametrelere dayalı olarak işlemlerin otomatik olarak gerçekleştirilmesini sağlar. Bu, tüccarların belirli aralıktaki piyasa dalgalanmalarından manuel müdahale gerektirmeden yararlanmalarını sağlar."
+        "GRID": "Belirli bir aralıkta önceden belirlenmiş fiyat aralıklarında alım ve satım emirleri vermeyi içeren bir ticaret stratejisi. Izgara ticaretinin amacı, belirlenen aralıktaki fiyat dalgalanmalarından kar elde etmektir.",
+        "DCA": "Dolar-Maliyet Ortalaması (DCA), bir yatırımcının varlığın fiyatından bağımsız olarak düzenli bir program dahilinde belirli bir yatırımdan sabit bir dolar tutarında satın aldığı bir yatırım stratejisidir. Bu strateji, satın alma fiyatını zamana yayarak piyasa oynaklığının etkisini azaltmayı amaçlar.",
+        "TP": "Kâr Al (TP), bir yatırımcının kâr elde etmek için pozisyonunun bir kısmını veya tamamını satmaya karar verdiği önceden belirlenmiş bir fiyat seviyesidir. Kâr Al emirleri genellikle uzun pozisyonlar için mevcut piyasa fiyatının üzerinde, kısa pozisyonlar için ise mevcut piyasa fiyatının altında belirlenir.",
+        "SL": "Zararı Durdur (SL), bir yatırımcının potansiyel kayıplarını sınırlamak için pozisyonunun bir kısmını veya tamamını satmaya karar verdiği önceden belirlenmiş bir fiyat seviyesidir. Zararı Durdur emirleri genellikle uzun pozisyonlar için mevcut piyasa fiyatının altında ve kısa pozisyonlar için mevcut piyasa fiyatının üzerinde belirlenir.",
+        "SHORT": "Bir yatırımcının fiyatının düşeceği beklentisiyle bir varlığı sattığı alım satım pozisyonu. Yatırımcılar, varlığı sattıklarından daha düşük bir fiyattan geri alarak kısa pozisyonlardan kar elde eder. Burada yalnızca güvendiğiniz ve uzun vadede elinizde tuttuğunuz coinleri kullanın. USDT düşüşlerinden kar edersiniz, ancak orijinal fiyatlarına dönmeden önce satarsanız, bir zarar gerçekleştirirsiniz.",
+        "LONG": "Bir yatırımcının fiyatının artacağı beklentisiyle bir varlığı satın aldığı alım satım pozisyonu. Yatırımcılar, varlığı satın aldıklarından daha yüksek bir fiyata satarak uzun pozisyonlardan kar elde ederler.",
+        "START_BY_AI": "Yapay zeka (AI) algoritmaları veya platformları kullanarak alım satım faaliyetlerinin tetiklenmesi veya başlatılması. Bu, yapay zekanın piyasa verilerini analiz ettiği ve önceden tanımlanmış kurallara veya algoritmalara dayalı olarak alım satımları gerçekleştirdiği otomatik alım satım stratejilerini içerebilir.",
+        "DCA_Auto": "DCA Auto ile borsamız tarafından seçilen değerler tanıtılmakta ve alımların belirli aralıklarla otomatik olarak gerçekleştirilmesi sağlanmaktadır. Platform, önceden belirlenmiş parametrelere göre alımları otomatik olarak gerçekleştirdiğinden, manuel müdahale ihtiyacını ortadan kaldırır ve yatırımcıların sürekli izlemeye gerek kalmadan zaman içinde varlık biriktirmesine olanak tanır.",
+        "GRID_Auto": "GRID Auto ile, platformumuz tarafından seçilen döviz değerleri tanıtılır ve bu önceden belirlenmiş parametrelere dayalı olarak işlemlerin otomatik olarak yürütülmesini kolaylaştırır. Bu, yatırımcıların manuel müdahale gerektirmeden belirtilen aralıktaki piyasa dalgalanmalarından yararlanmasına olanak tanır."
       }
     },
     "gridBot": {
       "gridStrategy": {
         "name": "Grid Stratejisi",
         "strategy": {
-          "subText1": "GRID stratejisi, hem kripto hem de forex ticaret alanlarında köşe taşıdır. Belirli fiyat aralıklarında ertelenmiş limit alım ve satım emirleri yoluyla çalışır. Seçilen fiyat aralığını birden çok seviyeye bölerek bir emir ağı oluşturulur, bu nedenle adı GRID stratejisidir.",
-          "subText2": "GRID botlarımız, bu stratejiye dayalı olarak işlemleri gerçekleştirmek için tasarlanmıştır, işlemlerinizi aktif olarak izlemediğinizde bile piyasa hareketlerinden kâr elde ederler. Her ağ, birbirinin yerine işlev görür: bir alım emri tamamlandığında, bot derhal bu işlemin üzerinde bir satış emri başlatır ve tersi de geçerlidir. Tüm ticaret faaliyetleriniz Bitsgap platformu aracılığıyla verimli bir şekilde yönetilir."
+          "subText1": "GRID stratejisi, hem kripto hem de forex ticaret alanlarında bir mihenk taşı olarak duruyor. Önceden belirlenmiş fiyat aralıklarında ertelenmiş limit alım ve satım emirleri aracılığıyla çalışır. Seçilen fiyat aralığını birden fazla seviyeye bölerek, bir emir ağı oluşturulur, dolayısıyla adı GRID stratejisidir",
+          "subText2": "GRID botlarımız, işlemlerinizi aktif olarak izlemeseniz bile piyasa hareketlerinden yorulmadan kâr elde ederek bu stratejiye dayalı işlemler gerçekleştirmek üzere tasarlanmıştır. Her grid birbirinin yerine çalışır: bir satın alma emri tamamlandığında, bot derhal gerçekleştirilen fiyatın üzerinde bir satış emri başlatır ve bunun tersi de geçerlidir. Tüm alım satım faaliyetleriniz Bitsgap platformu üzerinden verimli bir şekilde yönetilir."
         },
         "profit": {
-          "header": "GRID Stratejisi ile Kar Üretimi:",
-          "subText": "GRID stratejisinin ilginç yönü, varlık fiyatlarının doğal dalgalanmalarından yararlanma yeteneğidir. Piyasa hareketlerini zamanlamak için sayısız saatler harcamak yerine, GRID botları uygun anlarda işlemleri gerçekleştirir, düşük fiyatlardan alım yapar ve yüksek fiyatlardan satar. Karmaşık algoritmalara güvenmeden, sadece belirlediğiniz ağ parametrelerine uyarak sürekli olarak kar sağlarlar."
+          "header": "GRID Stratejisi ile Kâr Elde Etme:",
+          "subText": "GRID stratejisinin ilgi çekici yönü, varlık fiyatlarının doğal dalgalanmalarından yararlanma becerisinde yatmaktadır. GRID botları, piyasa hareketlerini zamanlamak için grafikleri inceleyerek sayısız saatler harcamak yerine, düşük fiyatlardan alım ve yüksek fiyatlardan satış yaparak uygun anlarda işlem gerçekleştirir. Karmaşık algoritmalara dayanmadan, sadece belirlediğiniz grid parametrelerine bağlı kalarak sürekli olarak kâr sağlarlar."
         },
         "risk": {
           "header": "Grid Stratejisi ile İlişkili Riskler:",
-          "subText1": "GRID stratejisinin otomasyonu, özellikle olumsuz piyasa koşullarında içsel riskler taşır. Beklenmedik fiyat dalgalanmaları, ticaret sonuçlarınızı önemli ölçüde etkileyebilir. Yatırımınızı korumak için Zarar Durdur veya Trailing gibi özellikleri kullanmak faydalı olabilir.",
-          "subText2": "Risklere rağmen, grid ticareti en basit ve zamanla test edilmiş ticaret yöntemlerinden biridir. Zamanla, önemli sonuçlar elde etme potansiyeline sahiptir. Ancak, güçlü trend ters dönüşleri sırasında etkinliği azalır. Bu nedenle, bot işlemlerini başlatma veya durdurma zamanını ayırt etmek önemlidir."
+          "subText1": "GRID stratejisini otomatikleştirmek, özellikle olumsuz piyasa koşullarında doğal riskler içerir. Beklenmedik fiyat dalgalanmaları alım satım sonuçlarınızı önemli ölçüde etkileyebilir. Yatırımınızı korumak için Zararı Durdur veya Takip gibi özellikleri kullanmak faydalı olabilir.",
+          "subText2": "Risklerine rağmen, grid ticareti en basit ve zaman içinde test edilmiş ticaret yöntemlerinden biridir. Zaman içinde önemli sonuçlar verme potansiyeline sahiptir. Ancak, güçlü trend dönüşleri sırasında etkinliği azalır. Bu nedenle, bot işlemlerinizi ne zaman başlatacağınızı veya durduracağınızı ayırt etmek çok önemlidir."
         }
       },
-      "setupGridBot": "Grid Botu Kur",
-      "customizeGridBot": "Grid Botunu Özelleştir",
+      "setupGridBot": "Izgara Botu Kurulumu",
+      "customizeGridBot": "Grid Bot'u Özelleştirin",
       "setupGridBotYoutubeIdLong": "168caz6BLv8",
       "setupGridBotYoutubeIdShort": "dYD9YkndroU"
     },
@@ -445,95 +447,100 @@
       "dcaStrategy": {
         "name": "DCA Stratejisi",
         "strategy": {
-          "subText1": "DCA (Dolar-Maliyet Ortalaması) stratejisi, hem kripto hem de forex ticaret alanlarında yaygın olarak benimsenmiş bir yaklaşımdır. Varlığın fiyat dalgalanmalarına bakılmaksızın, belirli aralıklarla sabit bir miktarda varlık satın almayı içerir. Bu disiplinli strateji, zaman içinde yatırım getirileri üzerindeki piyasa dalgalanmalarının etkisini azaltmayı amaçlar.",
-          "subText2": "DCA botlarımız, bu stratejiyi uygulamak için titizlikle tasarlanmıştır, tüccarların zaman içinde sürekli olarak varlık biriktirmelerine ve sürekli manuel müdahale gerektirmeden portföy büyümesini ve risk yönetimini sağlamalarına olanak tanır. Bu botlar, önceden belirlenmiş parametrelere göre işlemleri gerçekleştirir, sorunsuz portföy büyümesi ve risk yönetimi sağlar."
+          "subText1": "DCA (Dolar Maliyet Ortalaması) stratejisi, hem kripto hem de forex ticareti alanlarında yaygın olarak benimsenen bir yaklaşımdır. Fiyat dalgalanmalarından bağımsız olarak, düzenli aralıklarla sabit miktarda bir varlığın sistematik olarak satın alınmasını içerir. Bu disiplinli strateji, piyasa oynaklığının zaman içinde yatırım getirileri üzerindeki etkisini azaltmayı amaçlar.",
+          "subText2": "DCA botlarımız bu stratejiyi uygulamak için titizlikle hazırlanmıştır ve yatırımcıların sürekli manuel müdahaleye ihtiyaç duymadan zaman içinde istikrarlı bir şekilde varlık biriktirmelerini sağlar. Bu botlar, işlemleri önceden belirlenmiş parametrelere göre gerçekleştirerek sorunsuz portföy büyümesi ve risk yönetimini kolaylaştırır."
         },
         "profit": {
-          "header": "DCA Stratejisi ile Kar Üretimi:",
-          "subText": "DCA stratejisinin güzelliği, aşağıya doğru ortalama yapma konseptinden yararlanma yeteneğidir. Kısa vadeli fiyat hareketlerine bakılmaksızın düzenli aralıklarla sürekli olarak varlık satın alarak,DCA botları,tüccarların zaman içinde ortalama bir maliyetle varlık biriktirmelerine olanak tanır.Bu yaklaşım,tek bir,potansiyel olarak şişirilmiş fiyat noktasında varlık satın alma riskini azaltarak,piyasa dalgalanmaları sırasında önemli karlar sağlayabilir."
+          "header": "DCA Stratejisi ile Kâr Elde Etme:",
+          "subText": "DCA stratejisinin güzelliği, ortalama düşürme kavramından yararlanma yeteneğinde yatmaktadır. DCA botları, kısa vadeli fiyat hareketlerinden bağımsız olarak düzenli aralıklarla sürekli olarak varlık satın alarak, yatırımcıların zaman içinde ortalama bir maliyetle varlık biriktirmelerini sağlar. Bu yaklaşım, varlıkları tek ve potansiyel olarak şişirilmiş bir fiyat noktasından satın alma riskini azalttığı için piyasa oynaklığı dönemlerinde önemli karlar sağlayabilir."
+
         },
         "risk": {
           "header": "DCA Stratejisi ile İlişkili Riskler:",
-          "subText": "DCA stratejisi, sistematik bir yatırım yaklaşımı sunsa da, risklerden yoksun değildir. Piyasa düşüşleri veya uzun süreli varlık değer kaybı, stratejinin genel performansını etkileyebilir. Ayrıca, tüccarların getiri optimize etmek ve riski etkili bir şekilde yönetmek için alım sıklığı ve yatırım süresi gibi faktörleri dikkatlice değerlendirmeleri gerekmektedir."
+          "subText": "DCA stratejisi yatırım için sistematik bir yaklaşım sunarken, risksiz değildir. Piyasa gerilemeleri veya uzun süreli varlık değer kaybı dönemleri stratejinin genel performansını etkileyebilir. Ayrıca, yatırımcılar getirileri optimize etmek ve riski etkin bir şekilde yönetmek için alımların sıklığı ve yatırım ufkunun süresi gibi faktörleri dikkatle değerlendirmelidir."
         },
         "conclusion": {
           "header": "Sonuç",
-          "subText": "DCA stratejisi, tüccarlara kripto ve forex piyasalarında disiplinli ve sistematik bir yatırım yaklaşımı sunar. Düzenli aralıklarla sürekli olarak varlık satın alarak, DCA botları tüccarların piyasa dalgalanmalarının etkisini azaltmalarına ve zaman içinde potansiyel olarak önemli getiriler elde etmelerine olanak tanır. Ancak, ilişkili riskleri anlamak ve performansı optimize etmek ve uzun vadeli yatırım hedeflerine ulaşmak için uygun risk yönetimi stratejilerini uygulamak önemlidir."
+          "subText": "DCA stratejisi, yatırımcılara kripto ve forex piyasalarına yatırım yapmak için disiplinli ve sistematik bir yaklaşım sağlar. DCA botları, düzenli aralıklarla tutarlı bir şekilde varlık satın alarak yatırımcıların piyasa oynaklığının etkisini azaltmasını ve zaman içinde potansiyel olarak önemli getiriler elde etmesini sağlar. Bununla birlikte, performansı optimize etmek ve uzun vadeli yatırım hedeflerine ulaşmak için ilgili riskleri anlamak ve uygun risk yönetimi stratejilerini uygulamak çok önemlidir."
+
+
         }
       },
       "setupDcaBot": {
-        "name": "DCA Botu Kur",
+        "name": "DCA Bot Kurulumu",
         "started": {
-          "header": "Başlarken:",
-          "subText": "DCA Bot'u başlatırken, ticaret yönünü seçme ve uzun veya kısa bir pozisyon oluşturma seçeneğiniz vardır."
+          "header": "Başlangıç:",
+          "subText": "Bir DCA Botu başlatırken, bir ticaret yönü seçme ve bir Uzun veya Kısa pozisyon oluşturma seçeneğiniz vardır."
         },
         "long": {
-          "header": "Uzun Pozisyon:",
-          "subText1": "Uzun bir pozisyonda, bot, teklif para biriminde kar elde etmeyi hedefleyerek alım faaliyetlerine katılır.",
-          "subText2": "Botunuz, baz para birimini satın alarak bir pozisyon başlatacaktır. Daha sonra, bu ticaretin altında DCA (alım) emirleri ve bunun üzerinde bir Kar Al (satış) emri yerleştirir. Fiyat arttıkça, botunuz tüm satın alınan baz para birimini Kar Al seviyesinde satarak kar elde eder. Bu noktada döngü sona erer ve bot, başlangıç yatırımı ile yeni bir döngü başlatır."
+          "header": "Uzun pozisyonda:",
+          "subText1": "Uzun pozisyonda bot, teklif edilen para biriminde kar biriktirmeyi amaçlayarak satın alma faaliyetlerinde bulunur.",
+          "subText2": "Botunuz temel para birimini satın alarak bir pozisyon başlatacaktır. Daha sonra, DCA (alış) emirlerini bu işlemin altına ve bir Kâr Al (satış) emrini üzerine yerleştirecektir. Fiyat yükseldikçe, botunuz elde edilen tüm temel para birimini Kar Al seviyesinde satacak ve böylece kar elde edecektir. Bu noktada döngü sona erer ve bot ilk yatırım tutarıyla yeni bir döngü başlatır."
         },
         "short": {
-          "header": "Kısa Pozisyon:",
-          "subtext1": "Buna karşılık, kısa bir pozisyonda, bot satış faaliyetlerine girer ve baz para biriminde kar elde etmeyi hedefler.",
-          "subtext2": "Botunuz, baz para birimini satarak bir pozisyon başlatacaktır. Bu ticaretin üzerinde DCA (satış) emirleri ve bunun altında bir Kar Al (alım) emri yerleştirir. Fiyat arttıkça, bot daha fazla baz para birimini satacak ve DCA seviyelerinde teklif para birimini satın alacaktır. Fiyat düştüğünde, botunuz Kar Al ile baz para birimini geri alacaktır. Döngü tamamlandığında, bot, başlangıç baz para birimi yatırımı ile yeni bir döngü başlatır.",
-          "subtext3": "İlk uzun ve kısa DCA botunuzu oluşturmak ve çalıştırmak için aşağıdaki adım adım talimatları takip edin."
+          "header": "Kısa Pozisyonda:",
+          "subtext1": "Tersine, Kısa pozisyonda, bot satış çabalarına girişir ve temel para biriminde kar elde etmeye çalışır.",
+          "subtext2": "Botunuz temel para birimini satarak bir pozisyon başlatacaktır. Bu işlemin üzerine DCA (satış) emirleri ve altına bir Kâr Al (alış) emri yerleştirecektir. Fiyat yükselirse, bot daha fazla temel para birimi satacak ve DCA seviyelerinde teklif para birimini tedarik edecektir. Tersine, fiyat düştüğünde, botunuz temel para birimini Kâr Al ile geri satın alacaktır. Döngünün tamamlanmasının ardından bot, ilk temel para birimi yatırımıyla yeni bir döngü başlatır.",
+
+
+          "subtext3": "Açılış Uzun ve Kısa DCA botunuzu oluşturmak ve yürütmek için lütfen aşağıda verilen adım adım talimatlara uyun."
         },
         "setupDcaBotYoutubeIdLong": "jv8L4_Njuu8",
         "setupDcaBotYoutubeIdShort": "x00-x6uMfas"
       },
       "setupDcaStrategy": {
-        "name": "DCA Stratejisi Kur"
+        "name": "DCA Stratejisi Kurulumu"
       }
     }
   },
   "finance": {
     "main": {
-      "text1": "Yatırım Yapın",
-      "text2": "Dünyanın",
-      "text3": "En Hızlı Büyüyen Sektörüne.",
-      "subText": "Dijital para birimleri ve blockchain teknolojisi ile pazar, bugün en hızlı büyüyen sektördür. Küresel kripto Borsası'nın gizli ortağı olarak bu sektöre yatırım yapma konusunda benzersiz bir fırsat elde ediyorsunuz.",
-      "exchangeBtn": "Borsaya Gir",
-      "shareholderBtn": "Gizli Ortak Ol"
+      "text1": "Dünyadaki",
+      "text2": "En Hızlı yükselen Endüstrisine",
+      "text3": "Yatırım yapın.",
+      "subText": "Dijital para birimleri ve blockchain teknolojisi günümüzün en hızlı büyüyen endüstrisidir. Artık küresel kripto borsasının sessiz ortağı olarak bu sektöre yatırım yapmak için eşsiz bir fırsat elde ediyorsunuz.",
+      "exchangeBtn": "Takasa dahil ol",
+      "shareholderBtn": "Sessiz ortak ol"
     },
     "developement": {
-      "header": "Coingarage Borsasının Mevcut Gelişimi",
-      "subtext": "Coingarage, girişimci Ota Janda tarafından 2021 yılında kurulan yeni bir Avrupa kripto para borsasıdır. İki yıllık hazırlık ve gerekli yazılımın geliştirilmesinin ardından, 2023 yılında borsayı başlattık. O zamandan beri kullanıcılarımız için birçok yeni özellik ekledik ve daha fazlasını geliştirmeye devam ediyoruz.",
-      "done": "Tamamlandı",
-      "developement": "Geliştiriliyor",
-      "planned": "Planlanmış",
+      "header": "Coingarage Değiş-tokuşunun güncel gelişimi",
+      "subtext": "Coingarage, girişimci Ota Janda tarafından 2021 yılında kurulan yeni bir Avrupa kripto para borsasıdır. İki yıllık hazırlık ve gerekli yazılımın geliştirilmesinden sonra borsayı 2023 yılında faaliyete geçirdik. O tarihten bu yana kullanıcılarımız için çok sayıda yeni özellik ekledik ve geliştirmeye devam ediyoruz.",
+      "done": "Tamamlamak",
+      "developement": "Geliştirme aşamasında",
+      "planned": "Planlanan",
       "list": {
-        "box1": "Ticaret v 1.0",
-        "box2": "Ticaret Botu",
+        "box1": "Değiş-tokuş v 1.0",
+        "box2": "Değiş-tokuş Botu",
         "box3": "Mobil Uygulama",
-        "box4": "GARA Coin",
-        "box5": "Coin Listesi",
-        "box6": "Referans",
+        "box4": "GARA Para",
+        "box5": "Para Listeleme",
+        "box6": "Yönlendirme",
         "box7": "Bitcoin Tasarrufu",
-        "box8": "Ticaret v 2.0",
+        "box8": "Değiş-tokuş v 2.0",
         "box9": "Akademi",
-        "box10": "Stake",
-        "box11": "NFT'ler",
+        "box10": "Staking",
+        "box11": "NFT's",
         "box12": "Kripto Kartı"
       }
     },
     "estimatedValuation": {
-      "header": "2030 Yılına Kadar Tahmini Değerleme",
-      "subText": "Şirketin değerini hesaplamak için dünya genelindeki rakip borsaların değerlemeleri örneklerine ve EBITDA adlı tanınmış bir göstergeye dayanarak referanslar kullanıyoruz.",
+      "header": "2030 yılına kadar Tahmini Değerleme",
+      "subText": "Şirketin değerini hesaplamak için, FAVÖK adı verilen tanınmış bir göstergeye ek olarak, dünya çapındaki rakip borsaların referanslarını ve değerleme örneklerini kullanıyoruz.",
       "estimated": {
         "text1": "2.4B USD",
         "text2": "Coingarage s.r.o. şirketinin tahmini değeri",
-        "investBtn": "Yatırım Yapmaya Başlayın"
+        "investBtn": "Yatırım yapmaya başlayın"
       },
-      "tableHeader": "Rakiplerin Değerlemeleri",
+      "tableHeader": "Rakiplerin Değerlemesi",
       "table": {
         "header": {
-          "column1": "Borsa",
+          "column1": "Değiş-tokuş",
           "column2": "Kullanıcı Sayısı",
           "column3": "Şirket Değeri"
         },
         "rows": {
           "row1": {
-            "exchange": "Gemini",
+            "exchange": "İkizler",
             "users": "2 Milyon",
             "value": "7 Milyar Dolar"
           },
@@ -566,122 +573,121 @@
       }
     },
     "revolution": {
-      "header": "Bu yeni teknolojik devrimde hangi tarafta olmak istersiniz?",
+      "header": "Bu yeni teknolojik devrimin hangi tarafında olmak istiyorsunuz?",
       "negativeClaims": {
         "claim1": {
-          "text": "<grey>2017:</grey> “Kripto para gerçek bir şey değil, sonunda kapatılacak.”",
+          "text": "<grey>2017:</grey> Kripto para birimi gerçek bir şey değil, eninde sonunda kapanacak.",
           "name": "Jamie Dimon"
         },
         "claim2": {
-          "text": "<grey>1997:</grey> “Evlerinde bilgisayar isteyecek kimse yok.”",
-          "name": "Ken Olsen, Digital Equipment Corporation kurucu ortağı"
+          "text": "<grey>1997:</grey> “Birinin evinde bilgisayar istemesi için hiçbir neden yok.”",
+          "name": "Ken Olsen, Digital Equipment Corporation'ın kurucu ortağı"
         },
         "claim3": {
-          "text": "<grey>1995:</grey> “İnternetin yakında süpernova gibi patlayacağını ve 1996'da çökerek yok olacağını tahmin ediyorum.”",
-          "name": "Ethernet'in mucidi Robert Metcalfe"
+          "text": "<grey>1995:</grey> “İnternetin yakında muhteşem bir süpernovaya dönüşeceğini ve 1996'da felaketle çökeceğini tahmin ediyorum.”",
+          "name": " Robert Metcalfe (Ethernet'in mucidi)"
         },
         "claim4": {
-          "text": "<grey>1989:</grey> “32-bit işletim sistemi yapmayacağız.”",
-          "name": "Microsoft'un Kurucusu Bill Gates"
+          "text": "<grey>1989:</grey> “Asla 32 bitlik bir işletim sistemi yapmayacağız.”",
+          "name": "Bill Gates, Microsoft'un Kurucusu"
         },
         "claim5": {
-          "text": "<grey>1961:</grey> “İletişim uyduları, Amerika Birleşik Devletleri içindeki telefon, telgraf, televizyon veya radyo hizmetini iyileştirmek için kullanılma şansı pratik olarak yok.”",
-          "name": "FCC Komiseri T.A.M. Craven"
+          "text": "<grey>1961:</grey> “Amerika Birleşik Devletleri'nde daha iyi telefon, telgraf, televizyon veya radyo hizmeti sağlamak için iletişim alanı uydularının kullanılması ihtimali neredeyse yok.”",
+          "name": "T.A.M. Craven, FCC komiseri"
         },
         "claim6": {
-          "text": "<grey>1946:</grey> “Televizyon, yakaladığı her pazarı ilk altı aydan sonra elinde tutamayacak. İnsanlar her gece bir kontrplak kutuya bakmaktan yakında bıkacak.”",
-          "name": "20th Century Fox'tan Darryl Zanuck"
+          "text": "<grey>1946:</grey> “Televizyon ilk altı aydan sonra yakaladığı hiçbir pazarda tutunamayacak. İnsanlar yakında her gece kontrplak kutuya bakmaktan yorulacaklar.”",
+          "name": "Darryl Zanuck, 20. Yüzyıl Fox'u"
         },
         "claim7": {
-          "text": "<grey>1903:</grey> “At burada kalacak, ama otomobil sadece bir yenilik - bir moda.”",
+          "text": "<grey>1903:</grey> “At burada kalacak ama otomobil yalnızca bir yenilik, geçici bir heves.”",
           "name": "Michigan Bankası Başkanı"
         }
       },
       "positiveClaims": {
         "claim1": {
-          "text": "<primary>Güncel:</primary> “Bitcoin'in yapısı çok zekice. Kağıt para ortadan kayboluyor ve kripto paralar, değerleri bir parça kağıttan çok daha iyi transfer etmenin bir yolu, bu kesin.”",
-          "name": "Tesla ve SpaceX'in kurucusu Elon Musk"
+          "text": "<primary>Gerçek:</primary> “Bitcoin'in yapısı çok ustaca. Kağıt para ortadan kayboluyor ve kripto para birimleri, değerleri aktarmanın bir kağıt parçasından çok daha iyi bir yol olduğu kesin.”",
+          "name": "Elon Mask Tesla ve SpaceX'in kurucusu"
         },
         "claim2": {
-          "text": "<primary>Güncel:</primary> “Özünde, kripto paralar evrensel, dokunulmaz bir defter ilkesine dayanır, tamamen halka açıktır ve bu yüksek güçlü bilgisayarlar tarafından sürekli olarak doğrulanır, her biri diğerlerinden bağımsız olarak çalışır.”",
-          "name": "Wall Street Journal için Pazar muhabiri Paul Vigna"
+          "text": "<primary>Gerçek:</primary> “Kripto para birimleri özünde evrensel, dokunulmaz bir defter ilkesi etrafında inşa edilmiştir; bu defter tamamen halka açıktır ve bu yüksek güçlü bilgisayarlar tarafından sürekli olarak doğrulanır; her biri temelde bağımsız olarak hareket eder. diğerleri.”",
+          "name": "Paul Vigna, The Wall Street Journal Piyasalar Muhabiri"
         },
         "claim3": {
-          "text": "<primary>Güncel:</primary> “Merkezi olmayan blockchain protokolleri, mevcut İnterneti domine eden merkezi web hizmetlerini yerinden etmeye başladığında, gerçek internet tabanlı egemenliği görmeye başlayacağız. Gelecekteki İnternet merkezi olmayacak.”",
+          "text": "<birincil>Gerçek:</primary> “Merkezi olmayan blockchain protokolleri, mevcut İnternet'e hakim olan merkezi web hizmetlerinin yerini almaya başladığında, gerçek internet tabanlı egemenliği görmeye başlayacağız. Gelecekteki İnternet merkezi olmayan bir yapıya sahip olacak.”",
           "name": "Olaf Carlson-Wee"
         },
         "claim4": {
-          "text": "<primary>Güncel:</primary> “Burada olmamızın nedeni, mevcut finansal sistemin modasının geçmiş olmasıdır.”",
-          "name": "Bitinstant Kurucusu ve CEO'su Charlie Shrem"
+          "text": "<primary>Gerçek:</primary> “Hepimizin burada olmasının nedeni, mevcut finansal sistemin güncelliğini yitirmiş olmasıdır.“",
+          "name": "Bitinstant'ın Kurucusu ve CEO'su Charlie Shrem"
         },
         "claim5": {
-          "text": "<primary>Güncel:</primary> “Blockchain teknolojidir. Bitcoin, potansiyelinin ilk ana akım tezahürüdür.”",
+          "text": "<primary>Gerçek:</primary> “Blockchain teknolojidir. Bitcoin, potansiyelinin yalnızca ilk ana akım tezahürüdür.”",
           "name": "Marc Kenigsber"
         },
         "claim6": {
-          "text": "<primary>Güncel:</primary> “Şu anda olanlar, Nobel ödüllü ekonomist Robert Mundell'in hayali olacaktı: kimsenin kontrolünde olmayan küresel bir para sistemi tanıtmak.”",
-          "name": "Ark Invest CEO'su ve fon yöneticisi Cathie Wood"
+          "text": "<primary>Gerçek:</primary> “Şu anda olup bitenler Nobel ödüllü ekonomist Robert Mundell'in hayaliydi: kimsenin kontrolü altında olmayan küresel bir para sistemi getirmek.”",
+          "name": "Cathie Wood — Ark Invest CEO'su ve fon yöneticisi"
         }
       },
-      "ps": "<bold>PS:</bold> Jamie Dimon'un Bitcoin eleştirisine rağmen, JPMorgan'ın duruşu değişti, banka şimdi kripto para ve blockchain teknolojisiyle ilgileniyor. Hatta JPM Coin adında blockchain tabanlı bir ödeme sistemi geliştirdiler."
+      "ps": "<bold>PS:</bold> Jamie Dimon'un Bitcoin'e yönelik eleştirilerine rağmen, JPMorgan'ın tutumu bankanın artık kripto para birimleri ve blockchain teknolojisiyle ilgilenmesiyle değişti. JPM Coin adı verilen kendi blockchain tabanlı ödeme sistemlerini bile geliştirdiler."
     },
     "oppurtunities": {
-      "header": "500 USD'den Yatırım Fırsatları",
-      "subtext": "Perakende yatırımcılar için ilk turu açtık. Bir sonraki turlar sadece büyük yatırım şirketlerine yönelik olacak!",
+      "header": "500 USD'den Başlayan Güncel Yatırım Fırsatları",
+      "subtext": "Bireysel yatırımcılara yönelik ilk turu açtık. Sonraki turlar yalnızca büyük yatırım şirketlerine yönelik olacak!",
       "bonuses": "Yatırım Bonusları",
-      "investment1": "2,200 USD'den itibaren, yatırımınızın %50'si kadar GARA Coin alacaksınız.",
-      "investment2": "4,400 USD'den itibaren, yatırımınızın %100'ü kadar GARA Coin alacaksınız.",
-      "visitBtn": "Launchpad'i Ziyaret Edin",
-      "round1": "1. tur",
+      "investment1": "2.200 USD'den itibaren yatırımınızın %50'si değerinde GARA Coin alacaksınız.",
+      "investment2": "4.400 USD'den yatırımınızın %100'ü değerinde GARA Coin alacaksınız.",
+      "visitBtn": "Launchpad'i ziyaret edin",
+      "round1": "1.tur",
       "money": "6,4M USD",
-      "shareholderBtn": "Gizli Ortak Ol"
+      "shareholderBtn": "Sessiz Ortak Olun"
     },
     "simpleSteps": {
-      "header": "Yatırım Yapmak için 5 Basit Adım",
-      "subtext": "Coingarage, küresel bir proje olup, yatırım fırsatlarını sadece bir ülke veya bölge ile sınırlamak istemiyoruz. Hukuk uzmanları ve ortaklarla işbirliği içinde, her yatırımcının dünyanın herhangi bir yerinden evinden rahatça yatırım yapabileceği basit bir beş adımlık sistem geliştirdik. Ayrıca, hesap oluşturduktan sonra, her yatırımcı yatırımını yönetebileceği ve projenin gelişimi hakkında yeni bilgiler alabileceği yatırım platformumuza erişim kazanacaktır.",
+      "header": "Yatırım Yapmanın 5 Basit Adımı",
+      "subtext": "Coingarage küresel bir projedir ve bu nedenle yatırım fırsatlarını yalnızca bir ülke veya bölgeyle sınırlamak istemiyoruz. Hukuk uzmanları ve ortaklarımızla işbirliği içinde, her yatırımcının dünyanın herhangi bir yerindeki evinden rahatça yatırım yapabileceği beş adımlı basit bir sistem geliştirdik. Ayrıca, hesap oluşturduktan sonra her yatırımcı, yatırımlarını yönetebilecekleri ve projenin gelişimi hakkında yeni bilgiler alabilecekleri yatırım platformumuza erişim kazanacaktır.",
       "box1": "Kayıt",
-      "box2": "Kişisel Veriler",
+      "box2": "Kişisel Veri",
       "box3": "KYC",
       "box4": "Ödeme",
       "box5": "Sözleşme",
       "download": "Sözleşme şablonunu indirin"
     },
     "yourValuation": {
-      "header": "Yatırımınızın Değerlemesi Ne Olacak?",
+      "header": "Yatırımınızın Değerlemesi Ne Olacak",
       "investment": "Yatırım",
       "table": {
         "header": {
           "column1": "Bilgi",
-          "column2": "1. tur",
-          "column3": "2. tur",
-          "column4": "3. tur"
+          "column2": "1.tur",
+          "column3": "2.tur",
+          "column4": "3.tur"
         },
         "rows": {
-          "row1": "Dağıtılan kardan pay:",
-          "row2": "Coingarage Finance s.r.o. Karı:",
+          "row1": "Dağıtılan kar payı:",
+          "row2": "Kar Coingarage Finance s.r.o.:",
           "row3": "Değerlendirme:",
-          "row4": "Toplam ödenecek:"
+          "row4": "Toplam tutar şu şekilde ödenecektir:"
         },
-        "concluision": "Model hesaplama, Coingarage s.r.o. USD 2.4 MLD değerlemesini varsayar. Model hesaplama, depozitonun seçilen değerlemesine ulaşmayı garanti etmez. Varsayılan değerleme, 7 yıllık bir ufukta CZK, EUR veya USD olarak ödenecektir."
+        "concluision": "Model hesaplamasında Coingarage s.r.o. varsayılmaktadır. 2,4 MLD USD değerlemesi Model hesaplaması, mevduatta seçilen değer artışının elde edilmesini garanti etmez. Varsayılan değer artışı 7 yıllık bir süre içerisinde CZK, EUR veya USD cinsinden ödenecektir."
       },
       "table2": {
-        "header": "Daha Fazla Bilgi Almak İster Misiniz?",
-        "subtext": "E-posta adresinizi ve telefon numaranızı gönderin, satış temsilcimiz sizinle iletişime geçecek ve tüm sorularınızı yanıtlayacaktır.",
-        "placeholder1": "Tam Adı",
-        "placeholder2": "Telefon Numarası",
-        "placeholder3": "E-posta",
-        "consent": "Kişisel verilerin işlenmesine ilişkin rıza",
+        "header": "Daha Fazla Bilgi Almak İster misiniz?",
+        "subtext": "Bize e-posta adresinizi ve telefon numaranızı gönderin; satış temsilcimiz sizinle iletişime geçerek tüm sorularınızı yanıtlayacaktır.",
+        "placeholder1": "Ad Soyad",
+        "placeholder2": "Telefon numarası",
+        "placeholder3": "Email",
         "sendBtn": "Gönder"
       },
       "subheader": "Bu Kadar Yüksek Yatırım Getirilerini Nasıl Elde Edebiliriz?",
-      "subtext1": "Borsanın kendisi varlık ticareti yapmaz, ticaret işlemlerini kolaylaştırma, varlık transferleri ve diğer hizmetler için alınan ücretlerle para kazanır. Bu nedenle piyasa koşullarından doğrudan etkilenmez ve varlık fiyatları yükselse de düşse de kazanır. Ayrıca, kripto para piyasasının diğer borsalar gibi açılış saatleri yoktur, haftasonları kapalıdır. Dijital para birimleriyle ticaret, küresel olarak 24/7 kesintisiz olarak gerçekleşir.",
-      "subtext2": "Ayrıca, kripto piyasası bugün en hızlı büyüyen piyasadır, son 6 yılda her yıl ortalama %56.4 büyümüştür. Bu, yeni sermaye akışını önemli ölçüde etkiler ve bu sektörde faaliyet gösteren tüm şirketler üzerinde güçlü bir olumlu etki yapar. Bu sayede hızla büyüyebilir ve belirtilen %1100 değerlemeye ulaşabiliriz. Bu rakamlar ve web sitemizde bulacağınız tüm hesaplamalar, rakiplerden alınan güncel ve tarihi verilere dayanmaktadır ve kullanılan standart ekonomik hesaplamaların sonuçlarıdır.",
-      "investBtn": "Yatırım Yapmaya Başlayın"
+      "subtext1": "Borsanın kendisi varlık ticareti yapmaz; ticareti kolaylaştırmak, varlıkları aktarmak ve diğer hizmetlerden alınan ücretler yoluyla para kazanır. Dolayısıyla piyasa koşullarından doğrudan etkilenmez ve varlıkların fiyatının yükselmesinden veya düşmesinden kazanç sağlar. Ayrıca kripto para piyasasının diğer borsalar gibi hafta sonları kapalı olan açılış saatleri bulunmuyor. Dijital para birimleriyle ticaret, küresel olarak 7/24 kesintisiz olarak gerçekleşir.",
+      "subtext2": "Ayrıca kripto pazarı, son 6 yılda her yıl ortalama %56,4 oranında büyüyen, günümüzün en hızlı büyüyen pazarıdır. Bu, yeni sermaye akışını önemli ölçüde etkiler ve bu sektörde faaliyet gösteren tüm şirketler üzerinde güçlü bir olumlu etkiye sahiptir. Bu sayede hızla büyüyüp belirtilen değerlenme olan %1100'e ulaşabiliyoruz. Bu rakamlar ve web sitemizde bulacağınız tüm hesaplamalar, rakiplerin güncel ve geçmiş verilerine dayanmaktadır ve kullanılan standart ekonomik hesaplamaların sonuçlarıdır.",
+      "investBtn": "Yatırıma başlayın"
     },
     "taxHeavens": {
       "header": "Vergi cennetlerinde değil, Avrupa'nın kalbinde.",
-      "subtext1": "Mevcut kripto para borsalarının çoğu, vergi cennetlerinde ve AB yasalarının yargı yetkisi dışında yer almaktadır. Borsamız, doğrudan Avrupa'nın kalbinde, Çek Cumhuriyeti'nde bulunmaktadır ve kripto para ticaretini düzenleyen yerel ve Avrupa yasalarına ve düzenlemelerine tabidir.",
-      "subtext2": "Amacımız, dijital para birimi piyasasını düzeltmek ve Avrupa'daki tüm kullanıcılara güvenli ve düzenlenmiş bir ticaret ortamı sağlamaktır. Bu nedenle, avukatlar ve kripto düzenleme uzmanları ile işbirliği yapıyoruz ve yeni Avrupa düzenlemesi MiCA'ya aktif olarak hazırlanıyoruz."
+      "subtext1": "Mevcut kripto para birimi borsalarının çoğu, vergi cennetlerinde ve AB yasalarının yetki alanı dışındaki ülkelerde bulunmaktadır. Borsamız doğrudan Avrupa'nın kalbinde, Çek Cumhuriyeti'nde bulunmaktadır ve kripto para birimi ticaretini düzenleyen yerel ve Avrupa yasalarına ve düzenlemelerine göre faaliyet göstermektedir.",
+      "subtext2": "Amacımız dijital para piyasasını düzeltmek ve Avrupa'daki tüm kullanıcılara işlemleri için güvenli ve düzenlenmiş bir ortam sağlamaktır. Bu nedenle kripto düzenlemesinde avukatlar ve uzmanlarla işbirliği yapıyoruz ve yeni Avrupa düzenlemesi MiCA'ya aktif olarak hazırlanıyoruz."
     },
     "partnersImages": {
       "header": "Ortaklar",
@@ -689,207 +695,207 @@
     },
     "partnersMain": {
       "partner1": {
-        "header": "Blockchain Legal",
-        "subtext": "Dijital teknolojiler, blockchain ve kripto para birimleri (bitcoin, litecoin, ethereum, monero ve diğerleri) alanında hukuk hizmetleri sağlayan avukatlar. Bize tüm uyumluluk gündemini sağlıyorlar (hukuki standartlara uygunluk). Onlarla işbirliği içinde, bir MiCA lisansı almak için adımlar başlattık."
+        "header": "Blockchain Yasal",
+        "subtext": "Dijital teknolojiler, blockchain ve kripto para birimleri (bitcoin, litecoin, ethereum, monero ve diğerleri) alanında hukuki hizmet veren avukatlar. Bize tüm uyum gündemini (yasal standartlara uyum) sağlarlar. Onlarla işbirliği yaparak bir MiCA lisansı almak için gerekli adımları zaten başlattık."
       },
       "partner2": {
         "header": "FINROCK GLOBAL LTD",
-        "subtext": "Londra merkezli olan Finrock,bize zengin özelliklere sahip dijital varlık saklama hizmetleri sunar ve askeri sınıf şifreleme sağlar."
+        "subtext": "Londra merkezli Finrock, askeri düzeyde şifreleme sunarken, bize zengin özelliklere sahip dijital varlık saklama hizmetleri sağlıyor."
       },
       "partner3": {
-        "header": "Simplex by NUVEI",
-        "subtext": "Kripto endüstrisine tam fiat altyapısı sağlar. Bu şirketle işbirliği sayesinde, Coingarage'da kredi kartları kullanarak doğrudan fiat karşılığında kripto para satın almak mümkündür."
+        "header": "NUVEI'den Simplex",
+        "subtext": "Kripto endüstrisini tam fiat altyapısıyla güçlendirir. Bu şirketle yapılan iş birliği sayesinde Coingarage üzerinden kredi kartlarını kullanarak doğrudan FIAT için kripto para satın almak mümkün."
       },
       "partner4": {
         "header": "ZEN",
-        "subtext": "Bize dijital ödemeler ve finansal işlemler alanında hizmetler sağlar, ödeme geçidi dahil. Bireyler ve işletmeler için çevrimiçi ödemeleri basitleştirmeyi ve hızlandırmayı amaçlayan birçok özellik ve ürün sunar. ZEN.COM ile işbirliği sayesinde, bir EUR cüzdanı ve EUR/BTC ticaret çifti oluşturduk. Aynı zamanda, hizmetleri sayesinde EUR'yu Coingarage'a transfer edebilir ve çekebilirsiniz."
+        "subtext": "Ödeme ağ geçidi de dahil olmak üzere dijital ödemeler ve finansal işlemler alanında us hizmetleri sağlar. Bireyler ve işletmeler için çevrimiçi ödemeleri basitleştirmeyi ve hızlandırmayı amaçlayan bir dizi özellik ve ürün sunar. ZEN.COM ile işbirliği, bir EUR cüzdanı ve bir EUR/BTC işlem çifti oluşturmamıza olanak sağladı. Aynı zamanda hizmetleri sayesinde Coingarage'a EUR transferi ve çekimi yapabilirsiniz."
       },
       "partner5": {
-        "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
-        "subtext": "Delhi (Hindistan) merkezli, İngiltere ve BAE'de satış ofisleri bulunan Efficacious, dünya çapında işletmelere IT ve Blockchain hizmetleri sunmada on yıllık deneyime sahiptir. Hizmetleri, iş danışmanlığı sağlamaktan karmaşık Blockchain çözümlerinin uygulanmasına kadar geniş bir yelpazeyi kapsar, kapsamlı teknik destek dahil."
+        "header": "ETKİLİ ÇÖZÜMLER GİZLİ SINIRLAR",
+        "subtext": "Merkezi Delhi'de (Hindistan) bulunan ve Birleşik Krallık ve BAE'de satış ofisleri bulunan Efficacious, dünya çapındaki işletmelere BT ve Blockchain hizmetleri sağlama konusunda on yıldan fazla deneyime sahiptir. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
       },
       "partner6": {
-        "header": "Creative Heroes",
-        "subtext": "Pazarlamaya alışılmadık bir yaklaşıma sahip yaratıcı bir ajans. İyi fikirler, performans, yenilik ve orijinallik arayan herkes için buradayız! Creative Heroes, Coingarage markasının arkasındadır. Birlikte, marka oluşturma kampanyalarına odaklanan, aynı zamanda SM, SEO, PPC, e-posta pazarlama alanında performans kampanyaları planlıyoruz. Ayrıca, etkinlik pazarlamasını ve influencerların yardımını da unutmayız. Avrupa organizasyonlarının önemli bir ortağı olarak spor ve kültür alanına birlikte girmek istiyoruz."
+        "header": "Yaratıcı Kahramanlar",
+        "subtext": "Pazarlamaya alışılmadık bir yaklaşıma sahip yaratıcı bir ajans. İyi fikir, performans, yenilik ve özgünlük arayan herkes için buradayız! Creative Heroes Coingarage markasının arkasındadır. Birlikte marka oluşturmaya odaklanan pazarlama kampanyaları planlıyoruz, aynı zamanda SM, SEO, PPC, e-posta pazarlaması alanındaki performans kampanyalarını da planlıyoruz. Ayrıca etkinlik pazarlamasını ve etkileyicilerin yardımını da unutmuyoruz. Avrupa organizasyonlarının önemli bir ortağı olarak spor ve kültür alanına ortak girmek istiyoruz."
       },
-      "exchangeBtn": "Borsaya Gir"
+      "exchangeBtn": "Değiş-tokuşa katıl"
     },
     "investorPlatform": {
-      "header": "Yatırımcı Platformunun Önizlemesi",
-      "createAccountBtn": "Hesap Oluştur"
+      "header": "Yatırımcı platformunun önizlemesi",
+      "createAccountBtn": "Bir hesap oluşturun"
     },
     "faq": {
       "header": "Sıkça Sorulan Sorular",
       "section1": "Genel sorular",
-      "section2": "Gizli ortaklık",
-      "section3": "Vizyon",
+      "section2": "Sessiz ortaklık",
+      "section3": "Görüş",
       "section4": "Diğer",
       "generalQuestions": {
         "question1": {
-          "text": "Yatırabileceğim minimum tutar nedir?",
-          "answer": "Minimum yatırım tutarı 2 200 USD (veya başka bir para biriminde eşdeğer) olup, Coingarage Finance s.r.o.'nun dağıtılan karının %0.00075'ine tekabül eder."
+          "text": "Yatırım yapabileceğim minimum tutar nedir?",
+          "answer": "Minimum yatırım tutarı, Coingarage Finance s.r.o.'nun dağıtılan kârının %0,00075'ine karşılık gelen 2 200 ABD Doları (veya başka bir para birimindeki eşdeğeri) olarak belirlenmiştir."
         },
         "question2": {
-          "text": "Dağıtılan kar nedir?",
-          "answer": "Dağıtılan kar, Coingarage Finance s.r.o.'nun toplam karının %90'ına eşittir. Kalan %10, Coingarage s.r.o. ekibine aittir."
+          "text": "Dağıtılan kar ne anlama geliyor?",
+          "answer": "dağıtılan kâr Coingarage Finance s.r.o.'nun toplam kârının %90'ına eşittir. Geriye kalan %10 ise Coingarage s.r.o.'ya aittir. takım."
         },
         "question3": {
-          "text": "Bu proje Çek Ulusal Bankası'nın denetimine tabi midir?",
-          "answer": "Gizli ortaklık, borç ilişkisidir. Sunulan iş modeli ve sözleşme ilişkileri, ZISIF'in madde kapsamına girmez, zira bu faaliyet, finansal olmayan ticaret faaliyetlerini finanse etmek amacıyla fon toplama faaliyetidir. Bu nedenle, şirketin tanımlanan faaliyeti, CNB'nin denetimine tabi değildir."
+          "text": "Bu proje Çek Ulusal Bankası'nın denetimine tabi mi?",
+          "answer": "Sessiz ortaklık, sözleşmeye dayalı bir yükümlülük ilişkisidir. Sunulan iş modeli ve sözleşmeye dayalı ilişkiler, yatırım şirketleri ve yatırım fonlarına ilişkin 240/2013 Sayılı Kanun'un (bundan böyle 'ZISIF' olarak anılacaktır) maddi kapsamı kapsamında değildir; ZISIF'in 2. Bölümü uyarınca kalkınma muafiyeti olarak adlandırılan koşulları karşılayan, finansal olmayan nitelikteki ticari faaliyetlerin finansmanı amacıyla fonlar ve söz konusu faaliyet - sessiz ortaklık anlaşması yapma teklifi - dikkate alınmaz. Bölüm 34 ve devamı uyarınca halka arz. 256/2004 Sayılı Kanun uyarınca, yukarıda belirtilenler dikkate alındığında, şirketin açıklanan faaliyeti CNB'nin denetimine tabi değildir."
         },
         "question4": {
-          "text": "Coingarage s.r.o.'nun planlanan değeri nedir?",
-          "answer": "Coingarage s.r.o.'nun planlanan değeri, 2030 yılı sonuna kadar 10 milyar USD olarak belirlenmiştir. Şirketin değeri, yalnızca maddi olmayan varlıkların değeri üzerine değil, aynı zamanda resmi değerleme verilerine de dayanmaktadır."
+          "text": "Coingarage s.r.o.'nun amaçlanan değeri nedir?",
+          "answer": "Coingarage s.r.o.'nun amaçlanan değeri. 2030 sonu itibarıyla 10 milyar ABD doları olarak belirlendi. Şirketin değerinin hesaplanmasında yalnızca maddi olmayan varlıkların değeri esas alınmıyor, aynı zamanda uluslararası kabul görmüş FAVÖK'ün çekicilik çarpanı ve rekabet çarpanı ile çarpımı da kullanılıyor. Aynı zamanda, kayıtlı kullanıcı sayısı ve işlem hacimleri gibi temel göstergeleri dikkate alarak, rakip borsalardan gelen resmi değerleme verilerine güveniyoruz."
         },
         "question5": {
           "text": "Coingarage Finance s.r.o. nedir?",
-          "answer": "Coingarage Finance s.r.o., Coingarage s.r.o.'nun gelecekteki satışı durumunda, gizli ortağın da fayda sağlamasını garanti eder. Bu modelle, gizli ortak hem kar payı hem de Coingarage s.r.o.'nun planlanan satışından bir pay alacaktır."
+          "answer": "Coingarage Finance s.r.o. Coingarage s.r.o.'nun gelecekteki herhangi bir satışının yasal bir garantisi olarak hizmet eder. sessiz ortak aracılığıyla mevduat sahiplerine de fayda sağlayacak. Sessiz ortak Coingarage s.r.o.'ya doğrudan fon bağışında bulunmuş olsaydı, sessiz ortağa yasal olarak Coingarage s.r.o.'nun herhangi bir satışından pay ödenemezdi, ancak yalnızca Coingarage s.r.o.'nun kârından bir pay ödenebilirdi. yıl boyunca normal iş akışında. Bu modelle sessiz ortak, hem kârdan hem de Coingarage s.r.o.'nun planlanan satışından pay alacak."
         },
         "question6": {
           "text": "Yatırımımı denetleyebilecek miyim?",
-          "answer": "Gizli ortak, yatırımını özel yatırımcı platformumuz üzerinden izleyebilir. Platformda, gelişim planının ilerlemesini, önemli ticari faaliyetleri, mevcut şirket değerini, CEO ve yönetim ekibinden gelen bilgileri, muhasebe belgelerini ve Coingarage Finance Ltd. ve Coingarage s.r.o. haber özetini görebilir. Ayrıca, şirketin yönetimi ile doğrudan iletişim kurma fırsatı da olacaktır."
+          "answer": "Sessiz ortak, geliştirme planının ilerleyişini, önemli iş faaliyetlerini, mevcut şirket değerini, CEO ve yönetim ekibinden gelen bilgileri, muhasebe belgelerini ve Coingarage Finance Ltd.'nin özetini görebileceği özel yatırımcı platformumuz aracılığıyla yatırımlarını denetleyebilir. ve Coingarage s.r.o.. haberleri. Ayrıca yatırımcı iç platformu aracılığıyla şirketin yönetimiyle doğrudan iletişim kurma fırsatına da sahip olacak."
         }
       },
       "silentPartnershipQuestions": {
         "question1": {
-          "text": "Kanunen gizli ortak ne anlama gelir, yasal mıdır?",
-          "answer": "Gizli ortak, başka bir kişinin işine katkıda bulunan gerçek veya tüzel kişi, girişimci veya girişimci olmayan bir kişidir. Birçok gelişmiş ülkede, gizli ortaklıklar, başkalarının işine katılmanın yaygın bir şeklidir. Çek Cumhuriyeti'nin hukuki sistemi içinde, gizli ortaklık ilk olarak Ticaret Kanunu (1989 sonrası) ile düzenlenmiş olup, 1 Ocak 2014'ten itibaren yasal düzenlemesi Medeni Kanun'a dahil edilmiştir. 89/2012 sayılı Kanun'un 2747. Maddesi uyarınca, gizli ortak, şirkete katkıda bulunacak bir katkı yapmayı ve şirketin kar payını ödemeyi taahhüt eder."
+          "text": "Sessiz ortak yasaya göre ne anlama geliyor, yasal mı?",
+          "answer": " Sessiz ortak, başka bir kişinin işine katkıda bulunan gerçek veya tüzel kişi, girişimci veya girişimci olmayan kişi olabilir. Dünyanın birçok gelişmiş ülkesinde sessiz ortaklıklar, başkalarının işlerine katılmanın yaygın bir şeklidir. Çek Cumhuriyeti hukuk sisteminde sessiz ortaklık ilk olarak Ticaret Kanunu'nda (1989'dan sonra) düzenlenmiştir, ancak 1 Ocak 2014'ten itibaren yasal düzenleme Medeni Kanun'a dahil edilmiştir. 89/2012 Sayılı Kanun'un 2747. Maddesi hükümleri uyarınca, Medeni Kanun, değiştirilmiş şekliyle, sessiz ortak, sessiz ortak, sessiz ortağın tüm süresi boyunca şirketin iş sonuçlarına katkıda bulunacak bir katkı sağlamayı taahhüt eder. ortaklık kurulur ve şirket sessiz ortağa kârdan bir pay ödemeyi taahhüt eder."
         },
         "question2": {
-          "text": "Gizli ortağın hakları ve yükümlülükleri nelerdir?",
-          "answer": "Gizli ortak, Coingarage Finance s.r.o. ve Coingarage s.r.o.'nun yayınlanan tüm iş belgelerini ve muhasebe kayıtlarını inceleme hakkına sahiptir. Ayrıca, her mali tablo, her gelir vergisi beyanı ve her denetim raporunun birer kopyasını alma hakkına sahiptir. Gizli ortak, mali tabloların tarihi itibariyle yatırımının miktarı kadar kar payı almaya hak kazanır."
+          "text": "Sessiz bir ortağın hangi hakları ve yükümlülükleri vardır?",
+          "answer": "Sessiz bir ortak, Coingarage Finance s.r.o.'nun yayınlanmış tüm ticari belgelerini ve muhasebe kayıtlarını inceleme hakkına sahiptir. ve Coingarage s.r.o. özel platformumuz aracılığıyla. Sessiz ortak ayrıca her mali tablonun, her gelir vergisi beyannamesinin, bunlara ilişkin çizelgeler de dahil olmak üzere kopyalarını ve Coingarage Finance s.r.o.'nun mali tablolarının denetimine ilişkin her denetçi raporunun kopyalarını alma hakkına sahiptir. Sessiz ortağın şirketteki hizmeti sırasında veya süresince yapılacak özel platform aracılığıyla. Sessiz ortak, dağıtılan kardan, mali tablo tarihi itibarıyla yaptığı yatırım tutarı kadar pay alma hakkına sahip olacaktır. ve ayrıca Coingarage Finance Ltd.r.o.'nun genel kurul kararı uyarınca ödenmesi gereken diğer kârlar. Uygun depozito ve gizliliğin yanı sıra sessiz ortak, ödenmeyen kâr payından elde edilen gelirlere ilişkin vergiden de sorumludur. Coingarage Finance s.r.o tarafından sessiz ortaktan ücretlendirilmez ve sessiz ortak adına da ödeme yapılmaz."
         },
         "question3": {
-          "text": "Gizli ortaklığın diğer yatırım türlerine göre avantajları nelerdir?",
-          "answer": "<ul><li>Coingarage Finance s.r.o. karından ve Coingarage s.r.o.'nun eventual satışından elde edilen kardan pay almak.</li><li>Ön ödeme veya sürekli ücretler yok, doğrudan projeye yatırım yaparsınız.</li><li>Coingarage Finance s.r.o.'nun performansıyla ilgili belgeleri inceleme yeteneği.</li><li>Projenin başlangıcından itibaren katılarak, birçok katı değerleme elde edersiniz.</li></ul>"
+          "text": "Sessiz ortaklığın şirketlerdeki diğer yatırım türlerine göre avantajları nelerdir?",
+          "answer": "<ul><li>Coingarage Finance s.r.o.'nun kârından pay alın. ve Coingarage s.r.o.'nun nihai satışından elde edilecek kârdan pay alacaksınız; bu, örneğin yıllık sabit bir yüzde getirisi olan tahvillerden daha yüksek bir değer artışı elde edebilir.</li><li>Peşin veya devam eden ücret yok, yatırım yaparsınız herhangi bir aracı olmadan doğrudan projede yer alabilirsiniz.</li><li>Coingarage Finance s.r.o.'nun özel platformu aracılığıyla şirketin performansıyla ilgili yayınlanmış belgeleri görüntüleme olanağı.</li><li>Projeye başlangıcından itibaren girebilirsiniz. fikrinden çok memnun kaldım ve birçok kez takdir aldım</li></ul>"
         },
         "question4": {
-          "text": "Nasıl gizli ortak olabilirim?",
-          "answer": "app.coingarage-finance.com özel yatırımcı platformumuzdan kaydolabilirsiniz. Kendi yetkili bir kişi veya girişimci olup, doğrulama sürecini başarıyla tamamlayan ve Coingarage Finance Ltd. genel toplantısında onaylanan herkes gizli ortak olabilir."
+          "text": "Nasıl sessiz ortak olabilirim?",
+          "answer": "Özel yatırımcı platformumuz app.coingarage-finance.com aracılığıyla kaydolarak. Doğrulama sürecini başarıyla geçen, gerekli fonları Coingarage Finance Ltd.'ye yatıran ve Coingarage Finance Ltd.'nin genel kurulunda onaylanan, kendi kendine yeten bir kişi veya iş adamı sessiz ortak olabilir."
         },
         "question5": {
-          "text": "Doğrulama süreci (KYC, AML vb.) nedir?",
-          "answer": "Her ne kadar AML Kanunu kapsamında yükümlü kişi olmasak da, her gizli ortağı en az bir kimlik belgesi ile tanımlar ve temel bir arka plan kontrolü (PEP, uluslararası yaptırımlar, olumsuz medya haberleri vb.) yaparız. Bu, veriff.com tarafından gerçekleştirilir."
+          "text": "Doğrulama süreci nedir (KYC, AML vb.)?",
+          "answer": "Değiştirilmiş şekliyle suç gelirlerinin yasallaştırılmasına ve terörün finansmanına karşı belirli tedbirlere ilişkin 253/2008 Sayılı Kanun'un (bundan sonra 'AML Kanunu' olarak anılacaktır) 2. Maddesi anlamında yükümlü bir kişi olmasak da ), yani AML Yasası kapsamında müşterilerin tanımlanması ve kontrolüne ilişkin yükümlülüklere tabi değiliz, ancak yine de her sessiz ortağı en az bir kimlik belgesi ve temel bir geçmiş kontrolü (PEP, uluslararası yaptırımlar, medyada olumsuz ifadeler vb.) kullanarak belirliyoruz. .) yatırım yapmak istediğiniz şirketimizin korunması için. Bu bizim için Avrupa Birliği merkezli bir uygulama olan veriff.com tarafından gerçekleştirilir, dolayısıyla GetID Ltd, GDPR dahil katı Avrupa mevzuatına tabi olduğundan kişisel verileriniz konusunda endişelenmenize gerek yoktur."
         },
         "question6": {
-          "text": "Gizli ortaklık katkısıyla ilgili herhangi bir ücret var mı?",
-          "answer": "Her şey ücretsizdir, doğrudan projeye yatırım yaparsınız. Ücretler sadece işlem sırasında, bankanız veya ödeme geçidiniz tarafından alınabilir."
+          "text": "Sessiz ortaklık katkısıyla ilgili herhangi bir ücret var mı?",
+          "answer": "Her şey ücretsizdir, aracı olmadan doğrudan projeye yatırım yaparsınız. Ücretler yalnızca işlemin bir parçası olarak tahakkuk edebilir ve bankanız veya ödeme ağ geçidiniz tarafından tahsil edilebilir."
         },
         "question7": {
-          "text": "Gizli ortak, dağıtılan kar payı alma hakkına ne zaman ve hangi koşullar altında sahiptir?",
-          "answer": "Kar payı ödeme hakkı, Coingarage Finance s.r.o. genel toplantısı tarafından onaylandığında ortaya çıkar ve kar payı tutarı, satın alınan dağıtılan kar payına karşılık gelir."
+          "text": "Sessiz ortak ne zaman ve hangi koşullar altında dağıtılan kârdan pay almaya hak kazanır?",
+          "answer": "Kâr ödemesine ilişkin hak, Coingarage Finance s.r.o.'nun genel kurulu tarafından onaylandığında doğar. bundan sonraki kar payı tutarı ise dağıtılan kardan satın alınan pay kadardır. Daha fazla bilgiyi bu web sitesinin ana sayfasındaki tahmini takdir hesaplayıcısında bulabilirsiniz."
         },
         "question8": {
-          "text": "Gizli ortaklık yatırım anlaşması ne kadar sürer ? ",
-          "answer": "Gizli ortaklık yatırım anlaşması, 7 yıl süreyle yapılır ve bu sürede gelişim aşamasının tamamlanması ve Coingarage s.r.o.'nun küresel düzeyde büyümesi beklenir."
+          "text": "Sessiz ortaklık yatırım sözleşmesi ne kadar sürer?",
+          "answer": "Sessiz ortak yatırım sözleşmesi 7 yıllık bir süre için geçerli olup, bu süre zarfında geliştirme aşamasının tamamlanması ve Coingarage s.r.o.'nun büyümesi beklenmektedir. küresel düzeyde olacak."
         }
       },
       "visionQuestions": {
         "question1": {
-          "text": "Hedef grubunuz kimdir?",
-          "answer": "Avrupa'da çalışma çağındaki yaklaşık 480 milyon insan var ve sadece %9'u - yaklaşık 43 milyon - kripto paralarla bir deneyime sahip. Asya, Amerika, Afrika ve Latin Amerika ile karşılaştırıldığında, bu yaklaşık %16 daha az. Bu, önümüzdeki yedi yıl içinde en az 77 milyon yeni insanın kripto para sahibi olmaya veya ticaret yapmaya başlaması için büyük bir potansiyel olduğu anlamına gelir."
+          "text": "Hedef grubunuz kim?",
+          "answer": "Avrupa'da yaklaşık 480 milyon çalışma çağında insan var ve bunların yalnızca %9'u, yani yaklaşık 43 milyonunun kripto paralarla ilgili deneyimi var. Asya, Amerika, Afrika ve Latin Amerika ile karşılaştırıldığında bu oran yaklaşık %16 daha azdır. Bu, önümüzdeki yedi yıl içinde bu 43 milyona ek olarak en az 77 milyon yeni kişinin kripto tutmaya veya ticaretine başlama potansiyeli olduğu anlamına geliyor."
         },
         "question2": {
-          "text": "Neden kripto ve kripto borsası?",
-          "answer": "Blockchain teknolojisi ve ilgili kripto paralar, kullanıcılara birçok fayda sağlar ve küresel finansal ekosistemi dönüştürme potansiyeline sahiptir. 2032 yılına kadar, dünya genelinde 1 milyar insanın dijital varlık ekosistemine dahil olacağını ve gayri safi yurtiçi hasılanın önemli bir kısmının bitcoin ekonomisinde olacağını düşünüyoruz."
+          "text": "Neden kripto ve kripto alışverişi?",
+          "answer": "Blockchain teknolojisi ve bununla ilgili kripto para birimleri, kullanıcılara bir takım faydalar sunmakta ve küresel finansal ekosistemde devrim yaratma potansiyeline sahiptir. 2032 yılına kadar 1 milyar insanın küresel dijital varlık ekosistemine dahil olacağına ve gayri safi yurtiçi hasılanın önemli bir kısmının Bitcoin ekonomisinde olacağına inanıyoruz."
         },
         "question3": {
           "text": "Neden Avrupa'da bir borsa? Ve neden Avrupa'ya odaklanmak istiyorsunuz?",
-          "answer": "Bugün büyük borsaların çoğu, vergi cennetlerinde veya %100 şeffaflık ve güvenlik garantisi olmayan ülkelerde bulunmaktadır. Aynı zamanda, Avrupa'da kripto ile tanışan kişi yüzdesini diğer kıtalarla karşılaştırdığımızda, Avrupa pazarında büyük bir fırsat görüyoruz."
+          "answer": "Günümüzde büyük borsaların çoğu vergi cennetlerinde veya %100 şeffaflığın ve güvenliğin garanti edilmediği ülkelerde bulunmaktadır. Aynı zamanda Avrupa'da kripto ile temasa geçen kişilerin yüzdesini diğer kıtalarla karşılaştırırsak Avrupa pazarında büyük bir fırsat görüyoruz."
         },
         "question4": {
           "text": "10 milyon aktif kullanıcıya nasıl ulaşacaksınız?",
-          "answer": "Bu, kripto dünyasının büyümesi ve Avrupa'daki kullanıcı yüzdesinin ABD ve Asya seviyelerine çıkması varsayımına dayanmaktadır. Aynı zamanda, yakında sektördeki tüm mevcut işlevleri sunacak bir platformda birleşeceğimiz teknolojik avantajımızın farkındayız. Pazarlama da önemli bir rol oynar, spor, kültür vb. dünyasında birçok önemli faaliyet planlıyoruz."
+          "answer": "Bu, yukarıda belirtilen tüm kripto dünyasının büyümesi ve Avrupa'daki kullanıcı yüzdesinin ör. ABD ve Asya. Aynı zamanda, sektördeki mevcut tüm fonksiyonları sunmak üzere yakında tek bir platformda birleştireceğimiz teknolojik avantajımızın da farkındayız. Alışılmış araçlara ek olarak, endüstri liderleriyle birlikte spor, kültür vb. dünyasında bir dizi önemli aktivite planladığımız pazarlama da önemli bir rol oynuyor."
         },
         "question5": {
           "text": "Sürekli kar elde etmeyi nasıl başaracaksınız?",
-          "answer": "Ücretlerin kar elde etmede kilit bir rol oynadığı sır değildir. Borsamızda herhangi bir ticaret veya işlem gerçekleştiğinde, depozit dışında, bununla ilişkili ücretler vardır. Borsa, yirmi dört saat, yedi gün kar elde eder."
+          "answer": "Ücretlerin kâr elde etmede önemli bir rol oynadığı bir sır değil. Borsamızda depozito dışında herhangi bir ticaret veya işlem gerçekleştiğinde, bununla ilgili ücretler vardır. Borsa, haftanın yedi günü, günün yirmi dört saati kar elde ediyor."
         },
         "question6": {
-          "text": "Şirketin 7 yıl içinde 10 milyar USD değerine ulaşacağını nasıl başaracaksınız?",
-          "answer": "Şirketin değeri, tüm cihazlarda mevcut olacak sağlam ve basit bir kripto borsası biçiminde benzersiz bir çözüm olacaktır. Sonra büyük kullanıcı topluluğu, yıllık milyarlarca kar, marka ve deneyimli ekip. Şirketimizin değerini Kraken, KuCoin, Binance gibi benzer şirketlerle karşılaştırdık ve Coingarage s.r.o. hala değeri düşüktür."
+          "text": "Şirketin 7 yılda öngörülen 10 milyar ABD doları değerine nasıl ulaşacaksınız?",
+          "answer": "Şirketin değeri, tüm cihazlarda kullanılabilecek sağlam ama basit bir kripto borsası şeklinde benzersiz bir çözüm olacak. Daha sonra geniş bir kullanıcı topluluğu, milyarlarca yıllık kâr, marka ve deneyimli ekip var. Şirketimizin değerini Kraken, KuCoin, Binance gibi benzer şirketlerle karşılaştırdık ancak yine de Coingarage s.r.o. şirketimizin değeri yeterince düşük."
         }
       },
       "otherQuestions": {
         "question1": {
-          "text": "Coingarage s.r.o. kim tarafından sahiplenilecek ve yönetilecek?",
-          "answer": "Coingarage s.r.o. sahipleri, Coingarage Finance s.r.o. (%30) ve Ota Janda (%70)'dir. Yakın gelecekte, teknoloji uzmanları ve yabancı yatırımcılar şirkete katılacaktır."
+          "text": "Coingarage s.r.o.'nun sahibi ve işletmecisi kim olacak?",
+          "answer": "Coingarage s.r.o.'nun sahipleri Coingarage Finance s.r.o. (%30) ve Ota Janda (%70). Yakın gelecekte teknoloji uzmanlarının ve yabancı yatırımcıların şirkete katılmasıyla ortaklık yapısında bir düzenleme yapılması bekleniyor. Bireysel sahipler ve yönetim hakkında daha fazla bilgi için lütfen Hakkımızda bölümüne bakın."
         },
         "question2": {
-          "text": "Neden fonlara ihtiyacınız var ve fonları nasıl kullanacaksınız?",
-          "answer": "Tüm fonlar, Coingarage s.r.o.'nun istikrarlı büyüme ve genişleme faaliyetleri için kullanılacaktır. Özellikle borsa ve bileşenlerinin geliştirilmesi için kullanılacaktır. Marka bilinirliği oluşturmak için aktif pazarlama ve satış faaliyetlerine de yatırım yapacağız."
+          "text": "Neden paraya ihtiyacınız var ve parayı ne için kullanacaksınız?",
+          "answer": "Tüm bağışlar Coingarage s.r.o.'nun istikrarlı büyümesi ve genişlemesine yönelik faaliyetler için kullanılacak. Özellikle borsa ve bileşenlerinin gelişimi konusunda. Ayrıca marka bilinirliğimize, yani aktif pazarlama ve satış faaliyetlerine de yatırım yapacağız."
         },
         "question3": {
           "text": "Kendi kripto tokenlerinizi çıkarmayı planlıyor musunuz?",
-          "answer": "Evet, Binance'deki BNB gibi benzer bir işlev görecek kendi yardımcı tokenimizi çıkarmayı planlıyoruz."
+          "answer": "Evet, Binance'te BNB'ye benzer bir işlev görecek kendi yardımcı tokenimizi çıkarmayı planlıyoruz. Ayrıca mevcut topluluk tokenlerini de bu yardımcı token altında birleştireceğiz."
         },
         "question4": {
-          "text": "Neden gizli ortak ve risk sermayesi fonları değil?",
-          "answer": "Risk sermayesi fonları ile yolculuk genellikle uzun bir yolculuktur, projeyi geciktirmek istemiyoruz, bu yüzden özellikle ilk yatırım turu, halktan gizli ortaklar içindir. Gelecek yatırım turlarından itibaren risk sermayesi fonları birincil odak olacaktır."
+          "text": "Neden risk sermayesi bağışları değil de sessiz bir ortak?",
+          "answer": "Risk sermayesi bağışlarıyla yolculuk genellikle uzun bir yolculuktur ve projeyi geciktirmek istemiyoruz, bu nedenle özellikle 1. yatırım turu halktan sessiz ortaklar içindir. Plan, bir sonraki yatırım turlarından itibaren risk sermayesi bağışlarının öncelikli odak noktası olması yönünde."
         }
       }
     }
   },
   "GARA": {
     "main": {
-      "header": "GARAGE Coin <span>GARA</span>",
-      "text1": "GARA, borsamız Coingarage'ın tokenıdır ve borsa ekosistemini geliştirmemize yardımcı olur. Bu token, maksimum 900 milyon birimle oluşturulmuş olup artırılamaz. Ancak, yakma mekanizmamız nedeniyle GARA tokenlarının sayısı zamanla kademeli olarak azalacaktır.",
-      "text2": "GARA'nın ana kullanımı borsadaki çeşitli ücretlerin ödenmesidir. Bu ücretlerin ödenmesi için kullanıldığında, kullanıcılarımız bu ücretlerin miktarı üzerinden %20 indirim alır. Ayrıca, GARA kullanıcılarımıza ödül olarak da hizmet eder.",
+      "header": "GARAJ Parası <span>GARA</span>",
+      "text1": "GARA coingarage değiş-tokuş sistemimizin Tokenidir, ve bize değiştokuş sistemini kodlamamızda yardımcı olur. Bu token yalnızca 900 milyon adetlik sabit maksimum birim ile oluşturulmuştur ve artırılamaz. Ancak yakma mekanizmamız nedeniyle GARA tokenlarının sayısı zamanla giderek azalacaktır.",
+      "text2": "GARA'nın ana kullanımı borsadaki çeşitli ücretleri ödemektir. Bu ücretleri öderken kullanılınca kullanıcılarımıza ayrıca bu ücretler üzerinden %20 indirim uygulanır. Ayrıca GARA, kullanıcılarımız için bir nevi ödül işlevi görüyor.",
       "buyGARA": {
-        "header": "GARA Satın Al",
-        "totalTokens": "Toplam GARA Tokenı",
-        "distributedTokens": "Toplam Dağıtılan GARA Tokenları",
-        "soldTokens": "Satılan Tokenlar",
-        "btnConnectWallet": "Cüzdanı Bağla",
-        "btnBuyGARA": "GARA Satın Al",
-        "buyWith": "İle Satın Al",
-        "linkGoToLaunchapad": "Launchpad'e Git",
-        "poweredBy": "Tarafından Sağlanmaktadır"
+        "header": "GARA al",
+        "totalTokens": "Toplam GARA tokeni miktarı",
+        "distributedTokens": "Toplam dağıtılan GARA tokenleri",
+        "soldTokens": "Tokenler satıldı",
+        "btnConnectWallet": "Cüzdanını Bağla",
+        "btnBuyGARA": "GARA al",
+        "buyWith": "İle al",
+        "linkGoToLaunchapad": "Launchpad'e git",
+        "poweredBy": "Tarafından çalıştırılır"
       }
     },
     "usage": {
-      "header": "GARA Kullanım Planlaması",
-      "usage1": "Listeleme Ücretleri",
-      "usage2": "Kart İşlemleri Ücretleri",
-      "usage3": "Transfer için Gerekli Gas",
-      "usage4": "Başarı Ücreti",
-      "usage5": "Çekim Ücreti",
-      "usage6": "EEZY Trader için Gas Ücreti",
-      "usage7": "Alım Ücretleri",
+      "header": "GARA Planlama Kullanımı",
+      "usage1": "Listeleme ücretleri",
+      "usage2": "Kart işlemlerinden alınan ücretler",
+      "usage3": "Transfer için gerekli gaz",
+      "usage4": "Başarı ücreti",
+      "usage5": "Para çekme ücreti",
+      "usage6": "EEZY Trader için gaz ücreti",
+      "usage7": "Satın alma ücreti",
       "usage8": "Reklam"
     },
     "burnMechanism": {
-      "header": "GARA Yakma Mekanizması",
+      "header": "GARA Yanık Mekanizması",
       "box1": {
-        "text": "Her ay alınan ücretlerin %20'sini yakıyoruz",
-        "subText": ""
+        "text": "Her ay GARA'nın yüzde 20'sini yakıyoruz",
+        "subText": "alınan ücretler hakkında"
       },
       "box2": {
-        "text": "900 milyon orijinalden",
-        "subText": "200 milyon GARA kalana kadar."
+        "text": "200 milyon GARA kalana kadar",
+        "subText": "  orijinal 900 milyondan."
       }
     },
     "roadmap": {
       "header": "Yol Haritası",
-      "btnBuyGARA": "GARA Satın Al",
-      "text1": "Borsa Başladı",
+      "btnBuyGARA": "GARA'yı satın al",
+      "text1": "Değişim Başladı",
       "text2": "GARA Oluşturuldu",
-      "text3": "EEZY Trader ticaret botu başlatıldı",
-      "text4": "GARA Ön Satışı",
-      "text5": "Uniswap'ta listeleme",
-      "text6": "Coinmarketcap ve Coingecko'da GARA listeleme",
-      "text7": "Coingarage'da GARA ticaretinin başlatılması",
-      "text8": "İlk GARA airdropu",
-      "text9": "GARA ücretlerinin uygulanması ve GARA yakma",
-      "text10": "İkinci GARA airdropu",
-      "text11": "GARA staking ve geri ödeme",
-      "text12": "Kripto kart ve GARA geri ödeme"
+      "text3": "Ticaret Robotu EEZY Trader'ı piyasaya sürdü",
+      "text4": "GARA'nın ön satışı",
+      "text5": "Uniswap'te listeleme",
+      "text6": "Coinmarketcap ve Coingecko'da GARA Listelemesi",
+      "text7": "Coingarage borsasında GARA ticaretinin başlatılması",
+      "text8": "İlk GARA Airdrop'u",
+      "text9": "GARA ücretlerinin uygulanması ve GARA yakılması",
+      "text10": "İkinci GARA Airdrop'u",
+      "text11": "GARA'da stake etme ve para iadesi",
+      "text12": "GARA'da kripto kartı ve nakit iadesi"
     },
     "alocation": {
-      "header": "Tahsisat",
+      "header": "Paylaştırma",
       "IEO": {
         "text": "50% (450M GARA)",
-        "subText": "Halka Açık Ön Satış IEO"
+        "subText": "IEO Halka Açık Ön Satış"
       },
       "baseTeam": {
         "text": "20% (180M GARA)",
@@ -897,7 +903,7 @@
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "5/1/2024 tarihinde yakılacaktır"
+        "subText": "5/1/2024de yakılacak"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
@@ -905,16 +911,16 @@
       },
       "marketing": {
         "text": "5% (45M GARA)",
-        "subText": "Borsanın yeni kullanıcıları için pazarlama"
+        "subText": "Yeni exchange kullanıcılarının pazarlanması"
       },
-      "limit": " 900 milyon GARA sınırı oluşturulmuş olup asla artırılmayacaktır."
+      "limit": " Toplam limit 900 milyon GARA'dır, ancak bu sınır dışıdır."
     },
     "release": {
-      "header": "Takım İçin GARA Sürümü",
+      "header": "Takım için GARA Sürümü",
       "subHeader": "180 Milyon GARA",
-      "text": "Takım için ayrılan 180 milyon GARA, 5 yıl boyunca her yıl %20'si (36 milyon) serbest bırakılacak şekilde kademeli olarak serbest bırakılacaktır.",
+      "text": "Takım için ayrılan 180 milyon GARA, kademeli olarak serbest bırakılacak ve 5 yıllık bir süre boyunca her yıl %20'si (36 milyon) serbest bırakılacak.",
       "box1": {
-        "text": "Ön Satışın Başlangıcında",
+        "text": "Satış Öncesi Lansmanda",
         "subText": "20% (36M.)"
       },
       "box2": {
@@ -935,41 +941,36 @@
       }
     },
     "IEO": {
-      "header": "Halka Açık Ön Satış IEO",
-      "text1": "GARA ön satışından toplanan fonların %40'ı, iş planına uygun olarak Coingarage platformunu inşa etmek ve iyileştirmek için kullanılacaktır.",
-      "text2": "Başka bir %40, borsanın hızla büyümesini sağlamak ve mümkün olduğunca çok sayıda kullanıcı çekmek için Coingarage markasının pazarlanması ve oluşturulması için kullanılacaktır. Bu kullanıcılar, Coingarage hizmetlerini ve araçlarını kullanarak GARA ile ödeme yapacak, böylece kullanımını artıracak ve yakılma hızını hızlandıracaktır.",
-      "text3": "Toplanan fonların geri kalan %20'si, öngörülemeyen durumlar için yedekte tutulacaktır.",
+      "header": "IEO Halka Açık Ön Satış",
+      "text1": "GARA ön satışından elde edilen fonların %40'ı, Coingarage platformunu iş planına uygun olarak inşa etmek ve geliştirmek için kullanılacak.",
+      "text2": "Diğer %40'lık kısım ise borsanın hızla büyümesini ve mümkün olduğunca çok kullanıcı çekmesini sağlamak amacıyla Coingarage markasını pazarlamak ve oluşturmak için kullanılacak. Bu kullanıcılar Coingarage'ın hizmetlerinden ve araçlarından yararlanacak, GARA ile ödeme yapacak, böylece kullanımını artıracak ve yanma oranını hızlandıracak.",
+      "text3": "Toplanan bütçenin kalan %20'lik kısmı beklenmedik durumlara karşı yedek olarak tutulacaktır.",
       "box": {
         "address": "Sözleşme Adresi",
-        "btnBuyWithUSDT": "USDT ile Satın Al",
-        "btnBuyWithMatic": "Matic ile Satın Al"
+        "btnBuyWithUSDT": "USDT ile satın al",
+        "btnBuyWithMatic": "Matic ile satın alın"
       }
     },
     "GARArunning": {
-      "header": "GARA Polygon Blockchain Üzerinde Çalışıyor",
-      "text": "Polygon (eski adıyla Matic Network), Ethereum ağını genişleten ve iyileştiren bir blockchain platformudur. Birçok avantajı vardır, bunlar arasında:",
+      "header": "GARA, Çokgen Blockchain Üzerinde Çalışıyor",
+      "text": "Çokgen (eskiden Matic Ağı olarak bilinen), Ethereum ağını genişleten ve geliştiren bir blockchain platformudur. Aşağıdakiler de dahil olmak üzere çeşitli avantajları vardır:",
       "box1": {
         "header": "Ölçeklenebilirlik",
-        "text": "Polygon, Ethereum ağının hızlı ve verimli bir şekilde ölçeklenmesini sağlar. Ölçeklenebilir katmanlar aracılığıyla, temel Ethereum blockchain'inden çok daha fazla işlemi saniyede işleyebilir."
+        "text": "Çokgen, Ethereum ağının hızlı ve verimli ölçeklenebilirliğini sağlar. Ölçeklendirme katmanları adı verilen katmanlar aracılığıyla, Ethereum tabanlı blok zincirinden saniyede çok daha fazla işlem gerçekleştirebilir."
       },
       "box2": {
-        "header": "Düşük Ücretler",
-        "text": "İşlem sürecinin ölçeklenebilirliği ve optimize edilmesi sayesinde, Polygon işlemler için düşük ücretler sunar. Bu, sık ve ekonomik işlemler yapmak isteyen kullanıcılar için avantajlıdır."
+        "header": "Düşük fiyatlar",
+        "text": "Ölçeklenebilirlik ve işlem süreci optimizasyonu sayesinde, Çokgen işlemlerde düşük ücretler sunar. Bu durum sık ve ucuz işlem yapmak isteyen kullanıcılar için avantajlıdır."
       },
       "box3": {
-        "header": "İş Birliği",
-        "text": "Polygon, Ethereum ile uyumludur, bu da Ethereum için geliştirilen dApp'lerin ve akıllı sözleşmelerin kolayca Polygon'a taşınabileceği anlamına gelir. Bu, geliştiricilerin Polygon'un avantajlarından faydalanmalarını sağlar."
+        "header": "Uyumluluk",
+        "text": "Çokgen Ethereum ile uyumludur, bu, Ethereum için geliştirilen dApp'lerin ve akıllı sözleşmelerin kolayca Çokgene aktarılabileceği anlamına gelir. Bu, geliştiricilerin yeni bir kod yazmaya gerek kalmadan Çokgenin avantajlarından yararlanmasına olanak tanır."
       },
       "box4": {
         "header": "Güvenlik",
-        "text": "Polygon, Ethereum ağının güvenliğine dayanır ve Proof of Stake (PoS) konsensüsünü kullanır. Bu, Polygon token sahiplerinin tokenlarını stake ederek ağın güvenliğine katkıda bulunabilecekleri ve bunun için ödül kazanabilecekleri anlamına gelir."
+        "text": "Çokgen, Ethereum ağının güvenliğine güveniyor ve Hisse kanıtını kullanıyor (PoS) konsensüs. Bu, Çokgen token sahiplerinin ağın güvenliğini sağlamaya yardımcı olmak için tokenlerini feda edebilecekleri ve bunun karşılığında ödüller kazanabilecekleri anlamına geliyor."
       },
-      "btnGARAOnPolygon": "Polygonscan'da GARA"
+      "btnGARAOnPolygon": "Çokgen taramasında GARA"
     }
-  },
-  "widget": {
-    "button": "Daha fazla öğrenmek istiyorum",
-    "header": "Tüm sorularınızı yanıtlamaktan mutluluk duyarız",
-    "text": "Bize e-posta ve telefon numaranızı gönderin, bir satış temsilcisi sizinle iletişime geçerek sorularınızı yanıtlayacaktır."
   }
 }
