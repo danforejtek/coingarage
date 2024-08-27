@@ -60,7 +60,7 @@ export const getArtileMetadata = async ({
   const data = responseData?.data
   if (data?.length === 0) return {}
   const { title, perex, image, author } = data[0]?.attributes
-  const imageSrc = API_URL + image?.data?.[0]?.attributes?.url
+  const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
 
   return {

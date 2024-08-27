@@ -18,8 +18,8 @@ export const Pagination = ({ pagination, className }: PaginationProps) => {
   const pathname = usePathname()
   const { replace } = useRouter()
   if (!pagination) return null
-  if (pagination.pageCount === 1) return null
-  if (pagination.pageCount === pagination.page) return null
+  if (pagination?.pageCount === 1) return null
+  if (pagination?.pageCount === pagination?.page) return null
 
   const currentPage = Number(searchParams.get("page")) || 1
 
