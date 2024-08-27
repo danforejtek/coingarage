@@ -11,6 +11,9 @@ export const getArticleSlugs = async ({ params }: { params: { locale: string } }
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
     },
+    next: {
+      revalidate: 43200,
+    },
   })
   const responseData = await response.json()
   const data = responseData?.data
@@ -26,6 +29,9 @@ export const getArticle = async ({ params }: { params: { slug: string; locale: s
   const response = await fetch(`${API_URL}/api/articles?locale=${locale}&populate=*&filters[slug][$eq]=${slug}`, {
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
+    },
+    next: {
+      revalidate: 43200,
     },
   })
   const responseData = await response.json()
@@ -44,6 +50,9 @@ export const getArtileMetadata = async ({
     {
       headers: {
         Authorization: `Bearer ${API_TOKEN}`,
+      },
+      next: {
+        revalidate: 43200,
       },
     }
   )
@@ -70,6 +79,9 @@ export const getArticles = async ({ params }: { params: { locale: string } }) =>
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
     },
+    next: {
+      revalidate: 43200,
+    },
   })
   const responseData = await response.json()
   const data = responseData?.data
@@ -84,6 +96,9 @@ export const getLatestArticles = async ({ params }: { params: Partial<{ locale: 
     {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+      },
+      next: {
+        revalidate: 43200,
       },
     }
   )
