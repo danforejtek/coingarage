@@ -5,10 +5,11 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Button } from "../ui/button"
 import Image from "next/image"
 import { useMediaQuery } from "@mantine/hooks"
+import BestTradersResult from "../best-trader-results"
 
 type Props = {}
 
-const partners = [
+const traders = [
   "/images/eezy-trader/images/graphLight.svg",
   "/images/eezy-trader/images/graphLight.svg",
   "/images/eezy-trader/images/graphLight.svg",
@@ -42,10 +43,12 @@ const BestTraders = (props: Props) => {
             orientation="horizontal"
           >
             <CarouselContent className="h-[435px] w-[768px] flex">
-              {partners.map((src, index) => (
+              {traders.map((src, index) => (
                 <div key={index} className="">
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="flex flex-row items-center justify-center w-[234px] h-[201px] border-2 border-rose-600">
+                    <BestTradersResult />
+                    <BestTradersResult />
+                    {/* <div className="flex flex-row items-center justify-center w-[234px] h-[201px] border-2 border-rose-600">
                       <div className="relative h-[144px] w-[288px]"> {index}
                         <Image src={src} alt="" fill className="object-contain" />
                       </div>
@@ -54,7 +57,7 @@ const BestTraders = (props: Props) => {
                       <div className="relative h-[144px] w-[288px]"> {index}
                         <Image src={src} alt="" fill className="object-contain" />
                       </div>
-                    </div>
+                    </div> */}
                   </CarouselItem>
                 </div>
               ))}
