@@ -6,7 +6,9 @@ export async function POST(request: Request) {
       return new Response("Unauthorized", { status: 401 })
     }
     const data = await request.json()
-    const { uid, locale, slug } = data.entry
+    const { uid } = data
+    const { locale, slug } = data.entry
+    console.log(`Received webhook for ${uid} in ${locale} with slug ${slug}`)
     if (uid === "api::article.article") {
       console.log(`Revalidating /${locale}/blog`)
       revalidatePath(`/${locale}/blog`)
