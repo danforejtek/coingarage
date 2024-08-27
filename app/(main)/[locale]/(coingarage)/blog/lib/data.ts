@@ -15,7 +15,9 @@ export const getArticleSlugs = async ({ params }: { params: { locale: string } }
   const responseData = await response.json()
   const data = responseData?.data
   if (!data || data?.length === 0) return []
-  const slugs = data.map((item) => item?.attributes?.slug)
+  const slugs = data.map((item) => ({
+    slug: item?.attributes?.slug,
+  }))
   return slugs
 }
 

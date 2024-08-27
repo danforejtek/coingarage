@@ -29,13 +29,11 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getArtileMetadata({ params })
-  console.log({ metadata: data })
   return data as Metadata
 }
 
 export async function generateStaticParams({ params }: { params: { slug: string; locale: string } }) {
   const slugs = await getArticleSlugs({ params })
-  console.log({ slugs })
   return slugs
 }
 
