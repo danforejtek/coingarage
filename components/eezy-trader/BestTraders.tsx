@@ -24,25 +24,20 @@ const BestTraders = (props: Props) => {
   const t = useTranslations("eezyTrader.results")
   const isTablet = useMediaQuery("(max-width: 1280px)")
 
-
   return (
-    <div className="container flex justify-between flex-col xl:flex-row">
-      <div className="xl:w-[440px] mx-24 xl:mx-8 mb-14">
+    <div className="container flex flex-col justify-between xl:flex-row">
+      <div className="mx-24 mb-14 xl:mx-8 xl:w-[440px]">
         <h4 className="mb-2 text-[28px] text-primary">{t("subheader")}</h4>
         <h3 className="mb-6 text-4xl font-bold">{t("header")}</h3>
         <p className="mb-4 text-base font-normal">{t("text1")}</p>
         <p>{t("text2")}</p>
-        <Button className="mt-8 w-32 hidden xl:block">{t("startBtn")}</Button>
+        <Button className="mt-8 hidden w-32 xl:block">{t("startBtn")}</Button>
       </div>
 
-      <div className="mx-24 xl:mx-0">
+      <div className="lg:mx-24 xl:mx-0">
         <div className="w-[768px]">
-          <Carousel
-            opts={{ align: "start", loop: true }}
-            className="w-full"
-            orientation="horizontal"
-          >
-            <CarouselContent className="h-[435px] w-[768px] flex">
+          <Carousel opts={{ align: "start", loop: true }} className="w-full" orientation="horizontal">
+            <CarouselContent className="flex h-[435px] w-[768px]">
               {traders.map((src, index) => (
                 <div key={index} className="">
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -62,11 +57,11 @@ const BestTraders = (props: Props) => {
                 </div>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="ml-4 !bg-transparent text-primary" />
-            <CarouselNext className="mr-4 !bg-transparent text-primary" />
+            <CarouselPrevious className="!bg-transparent text-primary lg:ml-4" />
+            <CarouselNext className="!bg-transparent text-primary lg:mr-4" />
           </Carousel>
         </div>
-        <Button className="xl:mt-8 mt-16 w-32 mx-auto xl:hidden block">{t("startBtn")}</Button>
+        <Button className="mx-auto mt-16 block w-32 xl:mt-8 xl:hidden">{t("startBtn")}</Button>
       </div>
     </div>
   )

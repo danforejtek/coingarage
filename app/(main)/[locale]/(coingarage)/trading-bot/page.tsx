@@ -23,7 +23,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   return (
     <main className="relative">
       {/* Easy trader main section with robot */}
-      <section className="h-[1680px] lg:h-[1110px] mb-64 md:mb-0">
+      <section className="mb-64 h-[1680px] md:mb-0 lg:h-[1110px]">
         <EezyTrader />
         <div className="absolute -top-[68px] right-0 -z-10 w-[360px] max-w-[96vw] lg:w-[509px] xl:w-[789px]">
           <Image
@@ -37,7 +37,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section>
 
       {/* Best traders component */}
-      <section className="w-full bg-tertiary/25 pb-20 pt-32 lg:mt-0 md:mt-16 mt-32">
+      <section className="mt-32 w-full overflow-x-hidden bg-tertiary/25 pb-20 pt-32 md:mt-16 lg:mt-0">
         <BestTraders />
       </section>
 
@@ -144,7 +144,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       {/* Referal program */}
       <div className="mt-12 bg-tertiary/25 py-12 dark:bg-tertiary/10 xl:mt-28">
         <section className="container mx-auto flex flex-col-reverse flex-wrap items-center justify-center lg:flex-row xl:justify-between">
-          <div className="mt-16 flex lg:w-1/2 w-full flex-col items-center justify-start xl:mt-0">
+          <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
             <Image src="/images/eezy-trader/images/referalMain.svg" alt="" width={675} height={497} />
           </div>
           <div className="w-full max-w-[500px] p-4">
@@ -211,7 +211,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
       <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
         <div className="w-full max-w-[800px] p-4">
-          <h1 className=" text-primary font-heading text-2xl font-bold">Knowledge Base</h1>
+          <h1 className=" font-heading text-2xl font-bold text-primary">Knowledge Base</h1>
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-3xl">{tAfi("setupTradingBot.name")}</div>
             <div className="text-3xl">{tAfi("setupTradingBot.claim")}</div>
