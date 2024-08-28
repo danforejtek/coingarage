@@ -7,7 +7,8 @@ const API_TOKEN = process.env.STRAPI_API_TOKEN
 
 export const getArticleSlugs = async ({ params }: { params: { locale: string } }) => {
   const { locale } = params
-  const response = await fetch(`${API_URL}/api/articles?locale=${locale}&fields[0]=slug&pagination[pageSize]=100`, {
+  const _locale = locale === "cs" ? "cs" : "en"
+  const response = await fetch(`${API_URL}/api/articles?locale=${_locale}&fields[0]=slug&pagination[pageSize]=100`, {
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
     },
@@ -26,7 +27,8 @@ export const getArticleSlugs = async ({ params }: { params: { locale: string } }
 
 export const getArticle = async ({ params }: { params: { slug: string; locale: string } }) => {
   const { slug, locale } = params
-  const response = await fetch(`${API_URL}/api/articles?locale=${locale}&populate=*&filters[slug][$eq]=${slug}`, {
+  const _locale = locale === "cs" ? "cs" : "en"
+  const response = await fetch(`${API_URL}/api/articles?locale=${_locale}&populate=*&filters[slug][$eq]=${slug}`, {
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
     },
@@ -45,8 +47,9 @@ export const getArtileMetadata = async ({
   params: { slug: string; locale: string }
 }): Promise<Metadata> => {
   const { slug, locale } = params
+  const _locale = locale === "cs" ? "cs" : "en"
   const response = await fetch(
-    `${API_URL}/api/articles?fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$eq]=${slug}&locale=${locale}`,
+    `${API_URL}/api/articles?fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$eq]=${slug}&locale=${_locale}`,
     {
       headers: {
         Authorization: `Bearer ${API_TOKEN}`,
@@ -75,7 +78,8 @@ export const getArtileMetadata = async ({
 
 export const getArticles = async ({ params }: { params: { locale: string } }) => {
   const { locale } = params
-  const response = await fetch(`${API_URL}/api/articles?locale=${locale}&sort[0]=publishedAt:desc&populate=*`, {
+  const _locale = locale === "cs" ? "cs" : "en"
+  const response = await fetch(`${API_URL}/api/articles?locale=${_locale}&sort[0]=publishedAt:desc&populate=*`, {
     headers: {
       Authorization: `Bearer ${API_TOKEN}`,
     },
@@ -91,8 +95,9 @@ export const getArticles = async ({ params }: { params: { locale: string } }) =>
 
 export const getLatestArticles = async ({ params }: { params: Partial<{ locale: string; slug: string }> }) => {
   const { locale, slug } = params
+  const _locale = locale === "cs" ? "cs" : "en"
   const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?locale=${locale}&fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$ne]=${slug}&sort[0]=publishedAt:desc&pagination[pageSize]=3`,
+    `${process.env.STRAPI_URL}/api/articles?locale=${_locale}&fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$ne]=${slug}&sort[0]=publishedAt:desc&pagination[pageSize]=3`,
     {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
