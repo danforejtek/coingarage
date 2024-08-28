@@ -152,7 +152,8 @@
       "termsOfService": "Nutzungsbedingungen",
       "privacyPolicy": "Datenschutzbestimmungen",
       "cookiePolicy": "Cookie-Richtlinie",
-      "sportTradingTerms": "Bedingungen für den Spothandel"
+      "sportTradingTerms": "Bedingungen für den Spothandel",
+      "btcSavingPlanTerms": "Bedingungen für den BTC-Sparplan"
     }
   },
   "Contact": {
