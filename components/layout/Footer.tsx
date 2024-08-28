@@ -203,6 +203,16 @@ export default function Footer() {
                     {t("legal.sportTradingTerms")}
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/legal/btc-saving-plan-terms"
+                    className="hover:text-primary"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {t("legal.btcSavingPlanTerms")}
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
