@@ -4,13 +4,11 @@ import React from "react"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 import { useTranslations } from "next-intl"
-import data from "../../public/locales/cs/common.json"
 
 type IProps = {}
 
 const EezyTrader = (props: IProps) => {
   const etMain = useTranslations("eezyTrader.main")
-  //console.log("X", data.eezyTrader.references)
 
   return (
     <div className="container">
