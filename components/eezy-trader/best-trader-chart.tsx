@@ -26,7 +26,23 @@ export const BestTraderChart = ({ data }: BestTradersResultProps) => {
         height={64}
         margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
       >
-        <Area dataKey="pnl" type="natural" fill="green" fillOpacity={0.4} stroke="green" legendType="none" />
+        <defs>
+          <linearGradient id="colorPnl" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#3FCC88" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#3FCC88" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <Area
+          dataKey="pnl"
+          type="linear"
+          // fill="#3FCC88"
+          // fillOpacity={0.4}
+          fillOpacity={1}
+          fill="url(#colorPnl)"
+          stroke="#3FCC88"
+          strokeWidth={2}
+          legendType="none"
+        />
       </AreaChart>
     </ChartContainer>
   )
