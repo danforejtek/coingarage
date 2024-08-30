@@ -2,7 +2,7 @@ import Link from "next/link"
 import { ReactNode } from "react"
 
 const BlogItem = ({ children }: { children: ReactNode }) => {
-  return <div className=" h-[626px] overflow-hidden rounded-lg border">{children}</div>
+  return <div className=" h-[626px] overflow-hidden rounded-lg border transition-all hover:shadow-md">{children}</div>
 }
 
 const BlogHeading = ({ children }: { children: ReactNode }) => {
@@ -38,7 +38,7 @@ const BlogLink = ({ children, href }: { children: ReactNode; href: string }) => 
 }
 
 const BlogFooter = ({ children }: { children: ReactNode }) => {
-  return <div className="mt-4 flex w-full flex-row justify-between">{children}</div>
+  return <div className="mt-4 flex w-full flex-row items-end justify-between">{children}</div>
 }
 
 export const Blog = {
