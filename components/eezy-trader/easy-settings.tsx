@@ -17,24 +17,19 @@ const EasySettings = (): ReactElement => {
   const t = useTranslations("eezyTrader.environment")
 
   return (
-    <div className="container flex flex-col-reverse justify-between pt-20 mt-36 lg:flex-row lg:h-[556px] items-center">
+    <div className="container mt-36 flex flex-col-reverse items-center justify-between pt-20 lg:h-[556px] lg:flex-row">
       <div className="relative h-[544px] w-[428px] rounded-lg">
-          <Image
-            src="/images/eezy-trader/easySettings/tablet.png"
-            width={428}
-            height={544}
-            alt="Tablet Background"
-            className="absolute inset-0"
-            style={{ objectFit: "cover" }}
-          />
-
+        <Image
+          src="/images/eezy-trader/easySettings/tablet.png"
+          width={428}
+          height={544}
+          alt="Tablet Background"
+          className="absolute inset-0"
+          style={{ objectFit: "cover" }}
+        />
 
         <div className="absolute inset-0 px-6">
-          <Carousel
-            opts={{ align: "start", loop: true }}
-            plugins={[Autoplay({ delay: 4000 })]}
-            className="w-full"
-          >
+          <Carousel opts={{ align: "start", loop: true }} plugins={[Autoplay({ delay: 4000 })]} className="w-full">
             <CarouselContent className="h-[544px]">
               {SAMPLE_IMAGES.map((src, index) => (
                 <CarouselItem key={index} className="relative h-full">
@@ -50,13 +45,13 @@ const EasySettings = (): ReactElement => {
         </div>
       </div>
 
-      <div className="max-w-[546px] mb-14 lg:mb-0 ml-0 md:-ml-44">
-        <h3 className="text-[38px] mb-9">{t("header")}</h3>
+      <div className="mb-14 ml-0 max-w-[546px] md:-ml-44 lg:mb-0">
+        <h3 className="mb-9 text-[38px]">{t("header")}</h3>
 
         <div>
           {Array.from({ length: CHECK_MARKS }, (_, i) => (
-            <span key={i} className="flex items-center space-x-2 mb-6">
-              <Check className="text-primary mr-4" />
+            <span key={i} className="mb-6 flex items-center space-x-2">
+              <Check className="mr-4 text-primary" />
               <span className="text-xl">{t(`checkmarks.${i + 1}`)}</span>
             </span>
           ))}
