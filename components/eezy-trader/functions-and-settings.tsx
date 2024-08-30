@@ -9,11 +9,13 @@ import { Button } from "../ui/button"
 const FunctionsAndSettings = () => {
   const { resolvedTheme } = useTheme()
   const [theme, setTheme] = useState("")
+
   useEffect(() => {
-    setTheme(resolvedTheme !== "dark" ? "" : "dark/")
+    setTheme(resolvedTheme !== "dark" ? "light" : "dark")
   }, [resolvedTheme])
   const t = useTranslations("eezyTrader.functions")
 
+  console.log("resolved theme >>>>", theme)
   return (
     <div className="mt-28 lg:flex lg:justify-between">
       <div className="mt-8 max-w-[507px]">
@@ -25,12 +27,12 @@ const FunctionsAndSettings = () => {
       <div className="mt-24 flex flex-row flex-wrap justify-center gap-4 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-5">
         <div className="flex flex-col gap-6 lg:mt-14">
           <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-            <Image width={65} height={65} src="/images/eezy-trader/functions/dca.svg" alt="dca" />
+            <Image width={65} height={65} src={`/images/eezy-trader/functions/${theme}-dca.svg`} alt="dca" />
             <p className="text-lg">{t("functionFields.1")}</p>
           </Card>
 
           <Card className="flex h-40 w-32 flex-col items-center justify-between py-3">
-            <Image width={65} height={65} src="/images/eezy-trader/functions/referral.svg" alt="referral" />
+            <Image width={65} height={65} src={`/images/eezy-trader/functions/${theme}-referral.svg`} alt="referral" />
             <p className="mt-4 text-center text-lg">{t("functionFields.6")}</p>
           </Card>
         </div>
