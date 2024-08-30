@@ -1,6 +1,6 @@
 import Image from "next/image"
 import React from "react"
-import type { TraderData } from "@/components/eezy-trader/BestTraders"
+import type { TraderData } from "@/components/eezy-trader/best-traders"
 import { formatCurrency, formatPercentage } from "@/lib/utils"
 import { BestTraderChart } from "@/components/eezy-trader/best-trader-chart"
 
