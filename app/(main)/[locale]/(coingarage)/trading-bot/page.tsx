@@ -11,7 +11,7 @@ import BestTraders from "@/components/eezy-trader/best-traders"
 import FiveSteps from "@/components/eezy-trader/five-steps"
 import FunctionsAndSettings from "@/components/eezy-trader/functions-and-settings"
 import EasySettings from "@/components/eezy-trader/easy-settings"
-import Reviews from "@/components/eezy-trader/Reviews"
+import Reviews from "@/components/eezy-trader/reviews"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)

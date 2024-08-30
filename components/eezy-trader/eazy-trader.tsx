@@ -1,13 +1,19 @@
 "use client"
 import Image from "next/image"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Button } from "../ui/button"
 import { Card } from "../ui/card"
 import { useTranslations } from "next-intl"
+import { useTheme } from "next-themes"
 
-type IProps = {}
+const EezyTrader = () => {
+  const { resolvedTheme } = useTheme()
+  const [theme, setTheme] = useState("")
 
-const EezyTrader = (props: IProps) => {
+  useEffect(() => {
+    setTheme(resolvedTheme !== "dark" ? "light" : "dark")
+  }, [resolvedTheme])
+
   const etMain = useTranslations("eezyTrader.main")
 
   return (
@@ -36,7 +42,7 @@ const EezyTrader = (props: IProps) => {
             <Image
               width={50}
               height={50}
-              src="/images/eezy-trader/icons/finance.svg"
+              src={`/images/eezy-trader/icons/${theme}-finance.svg`}
               alt="finance"
               className="mx-auto"
             />
@@ -47,7 +53,7 @@ const EezyTrader = (props: IProps) => {
             <Image
               width={50}
               height={50}
-              src="/images/eezy-trader/icons/efectivity.svg"
+              src={`/images/eezy-trader/icons/${theme}-effectivity.svg`}
               alt="finance"
               className="mx-auto"
             />
@@ -58,7 +64,7 @@ const EezyTrader = (props: IProps) => {
             <Image
               width={50}
               height={50}
-              src="/images/eezy-trader/icons/neverSleep.svg"
+              src={`/images/eezy-trader/icons/${theme}-never-sleep.svg`}
               alt="finance"
               className="mx-auto"
             />
@@ -69,7 +75,7 @@ const EezyTrader = (props: IProps) => {
             <Image
               width={50}
               height={50}
-              src="/images/eezy-trader/icons/emotional.svg"
+              src={`/images/eezy-trader/icons/${theme}-emotional.svg`}
               alt="finance"
               className="mx-auto"
             />
@@ -80,7 +86,7 @@ const EezyTrader = (props: IProps) => {
             <Image
               width={50}
               height={50}
-              src="/images/eezy-trader/icons/strategy.svg"
+              src={`/images/eezy-trader/icons/${theme}-strategy.svg`}
               alt="finance"
               className="mx-auto"
             />
