@@ -67,7 +67,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
   return (
     <div className="container flex flex-col justify-between xl:flex-row">
-      <div className="mx-24 mb-14 xl:mx-8 xl:w-[440px]">
+      <div className="mx-24 mb-14 xl:mx-8 xl:mt-14 xl:w-[440px]">
         <h4 className="mb-2 text-[28px] text-primary">{t("subheader")}</h4>
         <h3 className="mb-6 text-4xl font-bold">{t("header")}</h3>
         <p className="mb-4 text-base font-normal">{t("text1")}</p>
