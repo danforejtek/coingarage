@@ -18,6 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Skeleton } from "../ui/skeleton"
 
 type BestTradersProps = {
   interval: "D" | "W" | "M"
@@ -45,9 +46,24 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
   const half = Math.ceil(traders.length / 2)
   const t = useTranslations("eezyTrader.results")
   const isTablet = useMediaQuery("(max-width: 1280px)")
+  const isMobile = useMediaQuery("(max-width: 1024px)")
   const handleChangeInterval = (value: "D" | "W" | "M") => {
     setSelectedInterval(value)
   }
+
+  const SkeletonLoader = ({ count }: { count: number }) => (
+    <div className="flex flex-wrap">
+      {Array.from({ length: count }, (_, index) => (
+        <div key={index} className="mb-16 h-[176px] w-full px-4 md:w-1/2 lg:mb-12 lg:w-1/3 lg:p-2">
+          <Skeleton className="h-[140px] w-full rounded-xl" />
+          <div className="space-y-2">
+            <Skeleton className="mt-4 h-4 w-full" />
+            <Skeleton className="h-4 w-[80%]" />
+          </div>
+        </div>
+      ))}
+    </div>
+  )
 
   return (
     <div className="container flex flex-col justify-between xl:flex-row">
@@ -59,8 +75,8 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
         <Button className="mt-8 hidden w-32 xl:block">{t("startBtn")}</Button>
       </div>
 
-      <div className="lg:mx-24 xl:mx-0">
-        <div className="w-[768px]">
+      <div className="mx-auto xl:mx-0">
+        <div className="w-[468px] md:w-[768px]">
           <div className="mb-4 mr-4 flex flex-row-reverse">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
               <SelectTrigger className="w-[180px]">
@@ -86,24 +102,30 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             className="w-full"
             orientation="horizontal"
           >
-            <CarouselContent className="flex h-[434px] w-[768px]">
-              {Array(half)
-                .fill("")
-                .map((_, index) => {
-                  const item1 = traders[index]
-                  const item2 = traders[index + half]
-                  const itemData1 = data?.[item1 as keyof typeof data]
-                  const itemData2 = data?.[item2 as keyof typeof data]
+            <CarouselContent className="mx-auto flex h-[434px] w-[768px]">
+              {isLoading ? (
+                <CarouselItem className="">
+                  <SkeletonLoader count={isMobile ? 4 : 6} />
+                </CarouselItem>
+              ) : (
+                Array(half)
+                  .fill("")
+                  .map((_, index) => {
+                    const item1 = traders[index]
+                    const item2 = traders[index + half]
+                    const itemData1 = data?.[item1 as keyof typeof data]
+                    const itemData2 = data?.[item2 as keyof typeof data]
 
-                  return (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="flex flex-col gap-5">
-                        <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
-                        <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
-                      </div>
-                    </CarouselItem>
-                  )
-                })}
+                    return (
+                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                        <div className="flex flex-col gap-5">
+                          <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
+                          <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
+                        </div>
+                      </CarouselItem>
+                    )
+                  })
+              )}
             </CarouselContent>
             <CarouselPrevious className="!bg-transparent text-primary" />
             <CarouselNext className="!bg-transparent text-primary" />
