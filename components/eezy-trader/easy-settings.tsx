@@ -18,7 +18,7 @@ const EasySettings = (): ReactElement => {
 
   return (
     <div className="container mt-36 flex flex-col-reverse items-center justify-between pt-20 lg:h-[556px] lg:flex-row">
-      <div className="relative h-[544px] w-[428px] rounded-lg">
+      <div className="relative h-[344px] w-80 rounded-lg sm:h-[460px] sm:w-[428px]">
         <Image
           src="/images/eezy-trader/easySettings/tablet.png"
           width={428}
@@ -33,7 +33,7 @@ const EasySettings = (): ReactElement => {
             <CarouselContent className="h-[544px]">
               {SAMPLE_IMAGES.map((src, index) => (
                 <CarouselItem key={index} className="relative h-full">
-                  <div className="flex h-full items-center justify-center">
+                  <div className="-mt-16 flex h-full items-center justify-center sm:mt-0">
                     <div className="relative h-[346px] w-[325px]">
                       <Image src={src} alt={`Carousel image ${index + 1}`} fill className="" />
                     </div>

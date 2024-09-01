@@ -118,7 +118,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
                     return (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="ml-24 flex flex-col gap-8 lg:ml-0">
+                        <div className="flex flex-col gap-8 sm:ml-24 lg:ml-0">
                           <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
                           <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
                         </div>

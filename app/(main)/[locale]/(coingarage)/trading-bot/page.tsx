@@ -131,7 +131,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section> */}
 
       {/* Five steps */}
-      <section className="container mx-auto mt-12 flex flex-col items-center pb-4">
+      <section className="container mx-auto mt-16 flex flex-col items-center pb-4 sm:mt-28">
         <FiveSteps />
       </section>
 
