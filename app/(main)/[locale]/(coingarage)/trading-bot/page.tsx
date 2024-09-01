@@ -36,7 +36,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section>
 
       {/* Best traders component */}
-      <section className="mt-32 w-full overflow-x-hidden bg-tertiary/25 pb-20 pt-32 md:mt-16 lg:mt-0">
+      <section className="mt-20 w-full overflow-x-hidden bg-tertiary/25 pb-20 pt-20 md:mt-16 lg:mt-0">
         <BestTraders />
       </section>
 
@@ -143,7 +143,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       {/* Referal program */}
       <div className="mt-12 bg-tertiary/25 py-12 dark:bg-tertiary/10 xl:mt-28">
         <section className="container mx-auto flex flex-col-reverse flex-wrap items-center justify-center lg:flex-row xl:justify-between">
-          <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">
+          <div className="mt-16 flex w-full flex-col items-center justify-start pl-4 lg:w-1/2 xl:mt-0">
             <Image src="/images/eezy-trader/images/referalMain.svg" alt="" width={675} height={497} />
           </div>
           <div className="w-full max-w-[500px] p-4">
@@ -231,7 +231,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
-      <section id="faq" className="container mx-auto my-24 max-w-[1000px] xl:mt-24">
+      <section id="faq" className="container mx-auto my-16 max-w-[1000px] xl:mt-24">
         <p className="text-center text-3xl font-bold">FAQ</p>
         <Accordion type="multiple" className="mt-12">
           <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">

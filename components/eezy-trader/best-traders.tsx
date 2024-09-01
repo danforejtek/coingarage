@@ -67,7 +67,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
   return (
     <div className="container flex flex-col justify-between xl:flex-row">
-      <div className="mb-14 lg:mx-24 xl:mx-8 xl:mt-14 xl:max-w-[440px]">
+      <div className="mb-14 lg:mx-24 xl:mx-8 xl:mt-14 xl:max-w-[400px]">
         <h4 className="mb-2 text-center font-heading text-xl text-primary lg:text-start lg:text-2xl">
           {t("subheader")}
         </h4>
@@ -77,8 +77,8 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
         <Button className="mt-8 hidden w-32 xl:block">{t("startBtn")}</Button>
       </div>
 
-      <div className="mx-auto xl:mx-0">
-        <div className="w-[468px] md:w-[768px]">
+      <div className="mx-auto xl:mx-0 xl:mr-10">
+        <div className="w-[268px] sm:w-[568px] md:w-[748px]">
           <div className="mb-4 mr-4 flex flex-row-reverse">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
               <SelectTrigger className="w-[180px]">
@@ -104,7 +104,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             className="w-full"
             orientation="horizontal"
           >
-            <CarouselContent className="mx-auto flex h-[434px] w-[768px]">
+            <CarouselContent className="mx-auto flex h-[434px] w-[568px] md:-ml-4 md:w-full">
               {isLoading ? (
                 <CarouselItem className="">
                   <SkeletonLoader count={isMobile ? 4 : 6} />
@@ -119,8 +119,8 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
                     const itemData2 = data?.[item2 as keyof typeof data]
 
                     return (
-                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="flex flex-col gap-8 sm:ml-24 lg:ml-0">
+                      <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/3">
+                        <div className="flex flex-col gap-8 sm:ml-2 lg:ml-0">
                           <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
                           <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
                         </div>

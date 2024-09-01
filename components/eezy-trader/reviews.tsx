@@ -32,9 +32,9 @@ const Reviews = () => {
 
       <div className="">
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
-          <CarouselContent className="mb-4 h-full pb-8">
+          <CarouselContent className="h-full pb-8">
             {referencesArray.map((src, index) => (
-              <CarouselItem key={index} className="basis-1/2 md:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
+              <CarouselItem key={index} className="-pb-8 -mb-3 sm:basis-1/2 md:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
                 <Card className="mx-auto flex h-1/2 w-full flex-col p-6 md:min-h-96">
                   <div className="flex justify-between">
                     <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
@@ -49,7 +49,7 @@ const Reviews = () => {
                   </div>
                 </Card>
                 {isTablet && (
-                  <Card className="mx-auto flex h-1/2 w-full flex-col p-6 md:min-h-96">
+                  <Card className="mx-auto mt-4 flex h-1/2 w-full flex-col p-6 md:min-h-96">
                     <div className="flex justify-between">
                       <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                       <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
