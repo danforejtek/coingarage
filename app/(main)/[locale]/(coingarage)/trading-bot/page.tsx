@@ -21,7 +21,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   return (
     <main className="relative">
       {/* Easy trader main section with robot */}
-      <section className="mb-64 h-[1680px] md:mb-0 lg:h-[1110px]">
+      <section className="mb-64 h-[1680px] sm:mb-12 md:-mb-12 lg:h-[1110px]">
         <EezyTrader />
         <div className="absolute -top-[68px] right-0 -z-10 w-[360px] max-w-[96vw] lg:w-[509px] xl:w-[789px]">
           <Image
@@ -40,7 +40,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section>
 
       {/* What they say - reviews */}
-      <section className="container mx-auto mb-8">
+      <section className="container mx-auto mb-8 px-4 md:px-8 lg:px-16">
         <Reviews />
       </section>
 
