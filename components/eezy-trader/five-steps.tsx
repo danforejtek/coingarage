@@ -75,7 +75,7 @@ const FiveSteps = (): ReactElement => {
       <div className="relative mt-12 flex w-full grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:grid lg:flex-row lg:pl-8">
         <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-6 lg:w-[calc(100%+24px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
         {steps.map((step, index) => (
-          <div key={step.id} className="flex flex-col items-center gap-4 lg:flex-row">
+          <div key={step.id} className="flex flex-col items-center gap-4 font-heading lg:flex-row">
             <IconFigure
               status="done"
               caption={t(step.caption)}
@@ -88,7 +88,7 @@ const FiveSteps = (): ReactElement => {
         ))}
       </div>
       <div className="mt-12">
-        <Button variant="default">
+        <Button variant="default" className="px-14">
           <a href="https://coingarage.io" target="_blank" rel="noreferrer noopener">
             {t("registerBtn")}
           </a>

@@ -26,8 +26,8 @@ const Reviews = () => {
   return (
     <div className="mt-28">
       <div className="mb-12 text-center">
-        <h3 className="text-2xl text-primary">{t("subheader")}</h3>
-        <h3 className="text-4xl">{t("header")}</h3>
+        <h3 className="font-heading text-3xl text-primary">{t("subheader")}</h3>
+        <h3 className="font-heading text-4xl">{t("header")}</h3>
       </div>
 
       <div className="">

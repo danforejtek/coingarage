@@ -207,20 +207,20 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section> */}
 
-      <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
-        <div className="w-full max-w-[800px] p-4">
-          <h1 className=" font-heading text-2xl font-bold text-primary">Knowledge Base</h1>
+      <section className="container mx-auto mt-2 flex flex-col flex-wrap items-center justify-center md:mt-16 lg:flex-row xl:justify-between">
+        <div className="mt-20 w-full max-w-[800px] p-4">
+          <h1 className="font-heading text-3xl font-bold text-primary">Knowledge Base</h1>
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
-            <div className="text-3xl">{tAfi("setupTradingBot.name")}</div>
-            <div className="text-3xl">{tAfi("setupTradingBot.claim")}</div>
+            <div className="text-4xl">{tAfi("setupTradingBot.name")}</div>
+            <div className="text-4xl">{tAfi("setupTradingBot.claim")}</div>
           </h1>
           <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
             {tAfi.rich("setupTradingBot.text1", {
-              b: (text) => <span className="font-bold text-primary">{text}</span>,
+              b: (text) => <span className="font-heading text-primary">{text}</span>,
             })}
           </p>
           <div>
-            <Button variant="default" size="lg" className="mt-8" asChild>
+            <Button variant="default" size="lg" className="mt-8 px-10" asChild>
               <Link href="/eezy-trader/knowledge-base">{tAfi("btnAffiliate")}</Link>
             </Button>
           </div>
@@ -230,7 +230,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
-      <section id="faq" className="container mx-auto my-32 max-w-[1000px] xl:mt-36">
+      <section id="faq" className="container mx-auto my-24 max-w-[1000px] xl:mt-24">
         <p className="text-center text-3xl font-bold">FAQ</p>
         <Accordion type="multiple" className="mt-12">
           <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">

@@ -28,8 +28,8 @@ const FunctionsAndSettings = () => {
   return (
     <div className="mt-28 lg:flex lg:justify-between">
       <div className="mt-8 max-w-[507px]">
-        <h3 className="mb-5 max-w-[396px] text-4xl font-bold">{t("header")}</h3>
-        <p className="mb-10">{t("text")}</p>
+        <h3 className="mb-5 max-w-[396px] font-heading text-4xl font-bold">{t("header")}</h3>
+        <p className="mb-10 font-heading">{t("text")}</p>
         <Button className="w-64">{t("startBtn")}</Button>
       </div>
 
