@@ -20,19 +20,19 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
   const t = useTranslations("eezy-trader.homepage")
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden">
+      <div className="absolute -right-[40px] top-[216px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[120px]">
+        <Image src="/images/eezy-trader/images/robotcomputer.png" alt="" fill={true} style={{ objectFit: "cover" }} />
+      </div>
+      {/* <div className="absolute right-0 top-[300px] -z-10 h-[260px] w-[290px] max-w-[96vw] lg:top-[300px] lg:w-[509px] xl:w-[789px]">
+        <Image src="/images/eezy-trader/images/red-vector.svg" fill={true} style={{ objectFit: "cover" }} alt="" />
+      </div> */}
+      <div className="absolute right-[-100px] top-[206px] -z-50 h-[470px] w-[774px] max-w-[96vw] overflow-hidden md:-right-[200px] md:top-[90px] lg:top-[24px] lg:h-[577px] lg:w-[843px]">
+        <Image src="/images/eezy-trader/images/red-vector.svg" alt="" className="object-contain" fill={true} />
+      </div>
       {/* Easy trader main section with robot */}
-      <section className="mb-64 h-[1680px] sm:mb-12 md:-mb-12 lg:h-[1110px]">
+      <section className="mb-8">
         <EezyTrader />
-        <div className="absolute -top-[68px] right-0 -z-10 w-[360px] max-w-[96vw] lg:w-[509px] xl:w-[789px]">
-          <Image
-            width={1011}
-            height={708}
-            src="/images/eezy-trader/images/red-vector.svg"
-            alt="red vector"
-            className="absolute top-44"
-          />
-        </div>
       </section>
 
       {/* Best traders component */}

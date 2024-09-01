@@ -23,52 +23,42 @@ const EezyTrader = () => {
 
   return (
     <div className="container">
-      <div className="flex pl-12 xl:pl-2">
-        <div className="mt-6 flex w-1/2 flex-col gap-4 lg:mt-56">
+      <div className="">
+        <div className="mt-6 flex flex-col gap-4 lg:mt-16 lg:w-1/2">
           <h3 className="text-left font-heading text-3xl md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
-          <p> {etMain("text")} </p>
-          <Button className="mt-12 w-64 md:mt-4">{etMain("startBtn")}</Button>
-        </div>
-
-        <div className="mt-40 w-1/3 xl:w-1/2">
-          <Image
-            width={612}
-            height={574}
-            src="/images/eezy-trader/images/robotcomputer.png"
-            alt="robot"
-            className="z-5"
-          />
+          <p className="pr-[40%] md:pr-[30%] lg:pr-0">{etMain("text")}</p>
+          <div className="mt-16 flex w-full flex-row justify-center">
+            <Button className="min-w-64 md:mt-4">{etMain("startBtn")}</Button>
+          </div>
         </div>
       </div>
 
-      <div className="relative">
-        <div className="absolute -top-5 mt-12 flex w-full flex-col gap-6 px-8 md:px-12 lg:flex-row lg:px-4 xl:mt-0">
-          <Card className="flex w-full flex-col gap-4 border-white px-7 pb-10 pt-8 text-center lg:min-h-72">
-            <FinanceSvg className="mx-auto dark:fill-white" />
-            <p className="text-primary">{etMain("cards.1.header")}</p>
-            <p>{etMain("cards.1.text")}</p>
-          </Card>
-          <Card className="flex w-full flex-col gap-4 border-white px-7 pb-10 pt-8 text-center lg:min-h-72">
-            <EffectivitySvg className="mx-auto dark:fill-white" />
-            <p className="text-primary">{etMain("cards.2.header")}</p>
-            <p>{etMain("cards.2.text")}</p>
-          </Card>
-          <Card className="flex w-full flex-col gap-4 border-white px-7 pb-10 pt-8 text-center lg:min-h-72">
-            <NeverSleepSvg className="mx-auto dark:fill-white" />
-            <p className="text-primary">{etMain("cards.3.header")}</p>
-            <p>{etMain("cards.3.text")}</p>
-          </Card>
-          <Card className="flex w-full flex-col gap-4 border-white px-7 pb-10 pt-8 text-center lg:min-h-72">
-            <Emotional className="mx-auto dark:fill-white" />
-            <p className="text-primary">{etMain("cards.4.header")}</p>
-            <p>{etMain("cards.4.text")}</p>
-          </Card>
-          <Card className="flex w-full flex-col gap-4 border-white px-7 pb-10 pt-8 text-center lg:min-h-72">
-            <Strategy className="mx-auto dark:fill-white" />
-            <p className="text-primary">{etMain("cards.5.header")} </p>
-            <p>{etMain("cards.5.text")}</p>
-          </Card>
-        </div>
+      <div className="mt-20 flex w-full flex-row flex-wrap items-center justify-center gap-6 lg:mt-28">
+        <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
+          <FinanceSvg className="mx-auto dark:fill-white" />
+          <p className="text-primary">{etMain("cards.1.header")}</p>
+          <p>{etMain("cards.1.text")}</p>
+        </Card>
+        <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
+          <EffectivitySvg className="mx-auto dark:fill-white" />
+          <p className="text-primary">{etMain("cards.2.header")}</p>
+          <p>{etMain("cards.2.text")}</p>
+        </Card>
+        <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
+          <NeverSleepSvg className="mx-auto dark:fill-white" />
+          <p className="text-primary">{etMain("cards.3.header")}</p>
+          <p>{etMain("cards.3.text")}</p>
+        </Card>
+        <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
+          <Emotional className="mx-auto dark:fill-white" />
+          <p className="text-primary">{etMain("cards.4.header")}</p>
+          <p>{etMain("cards.4.text")}</p>
+        </Card>
+        <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
+          <Strategy className="mx-auto dark:fill-white" />
+          <p className="text-primary">{etMain("cards.5.header")} </p>
+          <p>{etMain("cards.5.text")}</p>
+        </Card>
       </div>
     </div>
   )
