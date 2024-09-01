@@ -21,7 +21,7 @@ import {
 import { Skeleton } from "../ui/skeleton"
 
 type BestTradersProps = {
-  interval: "D" | "W" | "M"
+  interval?: "D" | "W" | "M"
 }
 
 export type TraderData = {
@@ -67,7 +67,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
   return (
     <div className="container flex flex-col justify-between xl:flex-row">
-      <div className="mx-24 mb-14 xl:mx-8 xl:mt-14 xl:w-[440px]">
+      <div className="mb-14 lg:mx-24 xl:mx-8 xl:mt-14 xl:max-w-[440px]">
         <h4 className="mb-2 font-heading text-[28px] text-primary">{t("subheader")}</h4>
         <h3 className="mb-6 font-heading text-4xl font-bold">{t("header")}</h3>
         <p className="mb-4 font-heading text-base font-normal">{t("text1")}</p>
@@ -95,7 +95,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             opts={{ align: "start", loop: false }}
             plugins={[
               Autoplay({
-                delay: 4000000,
+                delay: 4000,
                 // stopOnMouseEnter: true,
               }),
             ]}
