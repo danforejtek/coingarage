@@ -35,8 +35,8 @@ const Reviews = () => {
           <CarouselContent className="mb-4 h-full pb-8">
             {referencesArray.map((src, index) => (
               <CarouselItem key={index} className="basis-1/2 md:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
-                <Card className="mx-auto flex h-1/2 w-full flex-col py-2 pl-6 pr-4 pt-5 md:min-h-96">
-                  <div className="mt-5 flex justify-between">
+                <Card className="mx-auto flex h-1/2 w-full flex-col p-6 md:min-h-96">
+                  <div className="flex justify-between">
                     <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                     <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
                       <p>4,7</p>
@@ -49,8 +49,8 @@ const Reviews = () => {
                   </div>
                 </Card>
                 {isTablet && (
-                  <Card className="mx-auto mt-4 flex h-1/2 w-full flex-col py-2 pl-6 pr-4 pt-5 md:min-h-96">
-                    <div className="mt-5 flex justify-between">
+                  <Card className="mx-auto flex h-1/2 w-full flex-col p-6 md:min-h-96">
+                    <div className="flex justify-between">
                       <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                       <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
                         <p>4,7</p>

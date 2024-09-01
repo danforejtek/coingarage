@@ -27,13 +27,15 @@ const FunctionsAndSettings = () => {
 
   return (
     <div className="mt-28 lg:flex lg:justify-between">
-      <div className="mt-8 max-w-[507px]">
-        <h3 className="mb-5 max-w-[396px] font-heading text-4xl font-bold">{t("header")}</h3>
-        <p className="mb-10 font-heading">{t("text")}</p>
-        <Button className="w-64">{t("startBtn")}</Button>
+      <div className="max-w-[508px]">
+        <h3 className="mb-5 max-w-[396px] text-center font-heading text-4xl font-bold lg:text-start">{t("header")}</h3>
+        <p className="mb-10 text-center font-heading lg:text-start">{t("text")}</p>
+        <div className="flex w-full flex-row justify-center">
+          <Button className="min-w-64">{t("startBtn")}</Button>
+        </div>
       </div>
 
-      <div className="mt-24 flex flex-row flex-wrap justify-center gap-4 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-5">
+      <div className="mt-6 flex flex-row flex-wrap justify-center gap-4 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-5">
         <div className="flex flex-col gap-6 lg:mt-14">
           <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
             <DcaSvg className="dark:fill-white" />

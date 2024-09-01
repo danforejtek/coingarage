@@ -46,8 +46,7 @@ const EasySettings = (): ReactElement => {
       </div>
 
       <div className="mb-14 ml-0 max-w-[546px] md:-ml-44 lg:mb-0">
-        <h3 className="mb-9 pr-10 font-heading text-4xl">{t("header")}</h3>
-
+        <h3 className="mb-9 text-center font-heading text-4xl font-bold lg:pr-10 lg:text-start">{t("header")}</h3>
         <div>
           {Array.from({ length: CHECK_MARKS }, (_, i) => (
             <span key={i} className="mb-6 flex items-center space-x-2">
