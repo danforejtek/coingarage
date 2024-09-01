@@ -67,19 +67,17 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
   return (
     <div className="container flex flex-col justify-between xl:flex-row">
-      <div className="mb-14 lg:mx-24 xl:mx-8 xl:mt-14 xl:max-w-[400px]">
-        <h4 className="mb-2 text-center font-heading text-xl text-primary lg:text-start lg:text-2xl">
-          {t("subheader")}
-        </h4>
-        <h3 className="mb-6 text-center font-heading text-4xl font-bold lg:text-start">{t("header")}</h3>
-        <p className="mb-4 text-center font-heading font-normal lg:text-start">{t("text1")}</p>
-        <p className="text-center font-heading lg:text-start">{t("text2")}</p>
+      <div className="mb-14 ml-4 lg:mx-24 xl:mx-8 xl:mt-14 xl:max-w-[400px]">
+        <h4 className="mb-2 text-left font-heading text-xl text-primary lg:text-start lg:text-2xl">{t("subheader")}</h4>
+        <h3 className="mb-6 text-left font-heading text-4xl font-bold lg:text-start">{t("header")}</h3>
+        <p className="mb-4 text-left font-heading font-normal lg:text-start">{t("text1")}</p>
+        <p className="text-left font-heading lg:text-start">{t("text2")}</p>
         <Button className="mt-8 hidden w-32 xl:block">{t("startBtn")}</Button>
       </div>
 
       <div className="mx-auto xl:mx-0 xl:mr-10">
         <div className="w-[268px] sm:w-[568px] md:w-[748px]">
-          <div className="mb-4 mr-4 flex flex-row-reverse">
+          <div className="mb-4 mr-4 flex flex-row-reverse sm:mr-6 md:mr-2 lg:mr-8">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
               <SelectTrigger className="w-[180px]">
                 <SelectValue />
