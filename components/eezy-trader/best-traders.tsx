@@ -95,7 +95,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             opts={{ align: "start", loop: false }}
             plugins={[
               Autoplay({
-                delay: 4000,
+                delay: 4000000,
                 // stopOnMouseEnter: true,
               }),
             ]}
@@ -118,7 +118,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
                     return (
                       <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="flex flex-col gap-5">
+                        <div className="ml-24 flex flex-col gap-8 lg:ml-0">
                           <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
                           <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
                         </div>

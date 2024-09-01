@@ -12,6 +12,7 @@ import FiveSteps from "@/components/eezy-trader/five-steps"
 import FunctionsAndSettings from "@/components/eezy-trader/functions-and-settings"
 import EasySettings from "@/components/eezy-trader/easy-settings"
 import Reviews from "@/components/eezy-trader/reviews"
+import KnowledgeSvg from "../../../../../public/images/eezy-trader/images/setupTradingBot.svg"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -225,8 +226,8 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             </Button>
           </div>
         </div>
-        <div className="mt-16 flex w-[450px] flex-col items-center justify-start xl:mt-0">
-          <Image src="/images/eezy-trader/images/setupTradingBot.svg" alt="" width={450} height={450} />
+        <div className="mt-16 flex h-80 w-80 flex-col items-center justify-start sm:h-[450px] sm:w-[450px] xl:mt-0">
+          <KnowledgeSvg />
         </div>
       </section>
 
