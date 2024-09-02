@@ -25,7 +25,7 @@ const EezyTrader = () => {
     <div className="container">
       <div className="">
         <div className="mt-6 flex flex-col gap-4 lg:mt-16 lg:w-1/2">
-          <h3 className="text-left font-heading text-3xl md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
+          <h3 className="text-left font-heading text-3xl font-bold md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
           <p className="pr-[40%] md:pr-[30%] lg:pr-0">{etMain("text")}</p>
           <div className="mt-16 flex w-full flex-row justify-center">
             <Button className="min-w-64 md:mt-4">{etMain("startBtn")}</Button>

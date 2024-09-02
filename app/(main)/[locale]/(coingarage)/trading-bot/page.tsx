@@ -12,7 +12,7 @@ import FiveSteps from "@/components/eezy-trader/five-steps"
 import FunctionsAndSettings from "@/components/eezy-trader/functions-and-settings"
 import EasySettings from "@/components/eezy-trader/easy-settings"
 import Reviews from "@/components/eezy-trader/reviews"
-import KnowledgeSvg from "../../../../../public/images/eezy-trader/images/setupTradingBot.svg"
+import KnowledgeSvg from "@/public/images/eezy-trader/images/setupTradingBot.svg"
 
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
