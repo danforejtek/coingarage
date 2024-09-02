@@ -16,7 +16,7 @@ interface ReferencesData {
   [key: string]: Reference
 }
 
-const Reviews = () => {
+export default function CustomerReviews() {
   const t = useTranslations("eezyTrader.references")
   const interimData = data.eezyTrader.references.referends as ReferencesData
   const referencesArray: Array<Reference> = Object.keys(interimData).map((key) => interimData[key])
@@ -26,8 +26,8 @@ const Reviews = () => {
   return (
     <div className="mt-28">
       <div className="mb-12 text-center">
-        <h3 className="font-heading text-3xl text-primary">{t("subheader")}</h3>
-        <h3 className="font-heading text-4xl">{t("header")}</h3>
+        <h3 className="font-heading text-3xl font-bold text-primary">{t("subheader")}</h3>
+        <h3 className="font-heading text-4xl font-bold">{t("header")}</h3>
       </div>
 
       <div className="mt-0">
@@ -44,8 +44,8 @@ const Reviews = () => {
                     </div>
                   </div>
                   <div className="mt-4">
-                    <p className="mb-4 text-[24px]"> {src.name} </p>
-                    <p className="italic"> {src.text} </p>
+                    <p className="mb-4 min-h-14 text-xl font-bold leading-tight">{src.name}</p>
+                    <p className="italic">{src.text}</p>
                   </div>
                 </Card>
                 {isTablet && (
@@ -58,8 +58,8 @@ const Reviews = () => {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <p className="mb-4 text-[24px]"> {src.name} </p>
-                      <p className="italic"> {src.text} </p>
+                      <p className="mb-4 min-h-14 text-xl font-bold leading-tight">{src.name}</p>
+                      <p className="italic">{src.text}</p>
                     </div>
                   </Card>
                 )}
@@ -73,5 +73,3 @@ const Reviews = () => {
     </div>
   )
 }
-
-export default Reviews

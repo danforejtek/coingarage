@@ -17,7 +17,7 @@ const EasySettings = (): ReactElement => {
   const t = useTranslations("eezyTrader.environment")
 
   return (
-    <div className="container mt-36 flex flex-col-reverse items-center justify-between pt-20 lg:h-[556px] lg:flex-row">
+    <div className="container mt-12 flex flex-col-reverse items-center justify-between pt-20 lg:mt-36 lg:h-[556px] lg:flex-row">
       <div className="relative h-[344px] w-80 rounded-lg sm:h-[460px] sm:w-[428px]">
         <Image
           src="/images/eezy-trader/easySettings/tablet.png"

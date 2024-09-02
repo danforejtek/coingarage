@@ -11,10 +11,10 @@ import BestTraders from "@/components/eezy-trader/best-traders"
 import FiveSteps from "@/components/eezy-trader/five-steps"
 import FunctionsAndSettings from "@/components/eezy-trader/functions-and-settings"
 import EasySettings from "@/components/eezy-trader/easy-settings"
-import Reviews from "@/components/eezy-trader/reviews"
+import CustomerReviews from "@/components/eezy-trader/customer-reviews"
 import KnowledgeSvg from "@/public/images/eezy-trader/images/setupTradingBot.svg"
 
-export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
+export default function Page({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
   // const t = useTranslations("Affiliate")
   const t = useTranslations("eezy-trader.homepage")
@@ -42,7 +42,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
       {/* What they say - reviews */}
       <section className="container mx-auto mb-8 px-4 md:px-8 lg:px-16">
-        <Reviews />
+        <CustomerReviews />
       </section>
 
       {/* Lots of functions and settings */}
