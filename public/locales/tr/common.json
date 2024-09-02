@@ -974,5 +974,199 @@
     "button": "Daha fazla öğrenmek istiyorum",
     "header": "Tüm sorularınızı yanıtlamaktan mutluluk duyarız",
     "text": "Bize e-posta ve telefon numaranızı gönderin, bir satış temsilcisi sizinle iletişime geçerek sorularınızı yanıtlayacaktır."
+  },
+  "eezyTrader": {
+    "main": {
+      "header": "EEZY Trader otomatik kripto ticaret robotu ile kolayca kazanın",
+      "text": "Yeni teknolojilerden tam anlamıyla yararlanın ve uyumayan ve hiçbir ticaret fırsatını kaçırmayan otomatik ticaret robotumuzun sizin için ticaret yapmasına izin verin. EEZY Trader'ı 7 gün boyunca ücretsiz olarak etkinleştirin ve nasıl çalıştığını ve paranızı ne kadar değerlendirebileceğini kendiniz görün.",
+      "startBtn": "7 Günlük ÜCRETSİZ Denemeyi Başlat",
+      "cards": {
+        "1": {
+          "header": "Finanslarınız üzerinde tam kontrol",
+          "text": "Robot, hesabınızda ticaret yapar. Yatırımınızı ve kazançlarınızı istediğiniz zaman çekebilirsiniz."
+        },
+        "2": {
+          "header": "Ticaret verimliliğini maksimize eder",
+          "text": "Ekranın önünde olmasanız bile kazançlı fırsatları kaçırmazsınız."
+        },
+        "3": {
+          "header": "Hiç uyumaz, 24/7 ticaret yapar",
+          "text": "Kripto para piyasası hiç uyumaz ve robotumuz da öyle; sürekli olarak ticaret yapar."
+        },
+        "4": {
+          "header": "Duygusal ticareti ortadan kaldırır",
+          "text": "Robot duygulardan etkilenmez ve bu nedenle korku veya açgözlülük nedeniyle hata yapmaz."
+        },
+        "5": {
+          "header": "Her şeyi stratejinize göre özelleştirin",
+          "text": "Robotun ticaret stratejilerini tam olarak hedeflerinize ve risk toleransınıza göre ayarlayın."
+        }
+      }
+    },
+    "results": {
+      "subheader": "EEZY Trader Sonuçları",
+      "header": "En İyi Trader'lar",
+      "text1": "Otomatik ticaret robotu EEZY Trader'ın potansiyelinden tam olarak yararlanan en başarılı trader'larımızın sonuçlarına göz atın.",
+      "text2": "Başarılı EEZY Trader kullanıcılarımıza katılın ve otomatik ticaret robotumuz ile bugün kazanmaya başlayın.",
+      "options": {
+        "monthly": "Aylık",
+        "weekly": "Haftalık",
+        "daily": "Günlük"
+      },
+      "startBtn": "Başla"
+    },
+    "references": {
+      "subheader": "Referanslar",
+      "header": "EEZY Trader kullanıcıları ne diyor",
+      "referends": {
+        "1": {
+          "name": "Antonín Sulovský",
+          "text": "EEZY Trader'da diğer trader'ları kopyalama imkanı ve genel açıklık konusunda takdir ediyorum. Ve en önemlisi, EEZY Trader yatırımınızı önemli ölçüde değerlendirebilir."
+        },
+        "2": {
+          "name": "Jakub Hasalík",
+          "text": "Botun uyurken bile çalışması hoşuma gidiyor. Ben para için çalışmıyorum, para benim için çalışıyor. Yani, robot paramı benim için değerlendiriyor ve bunu hayatım boyunca aradım ve coingarage'de buldum."
+        },
+        "3": {
+          "name": "Roman Balajka",
+          "text": "Coingarage'in ticaret robotunda en çok takdir ettiğim şey, diğer robotlara kıyasla basitliği ve net arayüzü."
+        },
+        "4": {
+          "name": "Jana D'Antoni",
+          "text": "Paramı hiçbir yere göndermiyorum; tüm işlemler bot tarafından hesabımda yapılıyor, bu yüzden param üzerinde tam kontrolüm var."
+        },
+        "5": {
+          "name": "Jaroslava Němečková",
+          "text": "EEZY Trader'dan memnunum, benim için en büyük avantajı gerçekten para kazandırması."
+        },
+        "6": {
+          "name": "Vojtěch Nedělník",
+          "text": "Robotun ana avantajı, tabii ki, işlevselliğidir. Robot işlemleri hızlı ve tereddütsüz gerçekleştirir. Kişisel olarak çok memnunum."
+        },
+        "7": {
+          "name": "Petr Sliwka",
+          "text": "Robotu ayrıntılı olarak inceleyen biri değilim. Ancak sıradan bir kullanıcı olarak, yatırımımla ilgili endişelenmem gerekmediğini ve her zaman bir kazanç bekleyebileceğimi takdir ediyorum."
+        },
+        "8": {
+          "name": "Jaroslav Balajka",
+          "text": "Bana göre EEZY Trader iyi çalışıyor; ekleyecek pek bir şey yok."
+        },
+        "9": {
+          "name": "Ivan Štěp",
+          "text": "Meşgulüm ve kendim ticaret yapacak zamanım yok, bu yüzden EEZY Trader'a sahip olmaktan mutluyum; ticaret yapıyor ve para kazanıyor, bu da diğer aktivitelerime odaklanmamı sağlıyor."
+        },
+        "10": {
+          "name": "Petr Janhuba",
+          "text": "Bot neredeyse tamamen bağımsızdır ve ticaretlerinin denetlenmesine ihtiyaç duymaz. İşlemleri hızlı ve doğru bir şekilde gerçekleştirir ve gerçekten 24/7 çalışır."
+        }
+      }
+    },
+    "functions": {
+      "header": "Birçok işlev ve farklı ayarlar",
+      "text": "EEZY Trader, ihtiyaçlarınıza ve ticaret stratejinize göre ayarlamanız için birçok işlev sunar. Ayrıca, Auto trade işlevini kullanarak veya diğer başarılı trader'ların stratejilerini kopyalayarak robotumuzu kolayca başlatabilirsiniz.",
+      "startBtn": "7 Günlük ÜCRETSİZ Denemeyi Başlat",
+      "functionFields": {
+        "1": "DCA",
+        "2": "GRID",
+        "3": "99 Robot",
+        "4": "Uzun",
+        "5": "Kısa",
+        "6": "Yönlendirme Programı",
+        "7": "100 Çift",
+        "8": "Ticaretleri Kopyala",
+        "9": "Stratejiyi Kaydet",
+        "10": "Bilgi Tabanı"
+      }
+    },
+    "environment": {
+      "header": "Temiz ortam ve kolay kurulum",
+      "checkmarks": {
+        "1": "Basit ortam ve başlatma",
+        "2": "Otomatik ticarete ideal giriş",
+        "3": "Otomatik ayar seçeneği (auto trade)",
+        "4": "Daha deneyimli trader'lardan stratejileri kopyalayın",
+        "5": "Aktif destek ve bilgi tabanı"
+      }
+    },
+    "activation": {
+      "header": "EEZY Trader'ı 5 basit adımda etkinleştirin",
+      "steps": {
+        "1": "Coingarage borsa platformunda kayıt olun",
+        "2": "Doğrulama işlemini tamamlayın (KYC)",
+        "3": "Hesabınıza fon yatırın",
+        "4": "Bir plan ve EEZY Coin satın alın",
+        "5": "Stratejinizi ayarlayın ve kazanmaya başlayın"
+      },
+      "registerBtn": "Kayıt Ol"
+    },
+    "subscription": {
+      "btnBuy": "Abonelik Satın Al",
+      "disclaimer": "Kayıt işlemini tamamladıktan sonra, bir abonelik planı seçebilirsiniz.",
+      "header": "Abonelik nedir?",
+      "subText": "Bir abonelik, hizmetlerimize tam erişim sağlar. <b>Bir abonelik ile devrim niteliğindeki ticaret robotumuza erişim sağlarsınız</b>, bu da piyasada ticareti son derece kolay ve verimli bir şekilde yapmanızı sağlar.",
+      "plans": {
+        "header": "Abonelik",
+        "subText": "Aboneliğimizin size uygun olup olmadığından emin değil misiniz? Sorun değil! Robotumuzu deneyebileceğiniz ve yeteneklerini ilk elden deneyimleyebileceğiniz bir deneme sürümü sunuyoruz.",
+        "trial": {
+          "header": "Deneme Sürümü",
+          "free": "Ücretsiz",
+          "package": {
+            "header": "Ticaret robotunu deneyin ve keyfini çıkarın",
+            "1": "En fazla 10 robot",
+            "2": "Tüm stratejiler",
+            "3": "Ticaret terminalleri",
+            "4": "Trailing Take profit"
+          }
+        },
+        "month": {
+          "mostUsed": "En Çok Kullanılan",
+          "header": "Temel Aylık",
+          "competitionPrice": "$45/ay",
+          "price": "$15/ay",
+          "package": {
+            "header": "Ticaret robotunu deneyin ve keyfini çıkarın",
+            "1": "En fazla 50 robot",
+            "2": "Tüm stratejiler",
+            "3": "Ticaret terminalleri",
+            "4": "Trailing Take profit",
+            "5": "Otomatik yenileme"
+          }
+        },
+        "year": {
+          "header": "Temel Yıllık",
+          "competitionPrice": "$384/yıl",
+          "price": "$120/yıl",
+          "save60": "$60 Tasarruf",
+          "package": {
+            "header": "Ticaret robotunun tüm potansiyelini açığa çıkarın",
+            "1": "En fazla 99 robot",
+            "2": "Tüm stratejiler",
+            "3": "Ticaret terminalleri",
+            "4": "Trailing Take profit",
+            "5": "Otomatik yenileme"
+          }
+        },
+        "fee": "Her kazançtan %10 başarı ücreti EEZY Coin olarak kesilir."
+      }
+    },
+    "referralEEZY": {
+      "subHeader": "Yönlendirme Programı",
+      "header": "Ortaklarınızın ticaret ücretlerinden %30'a kadar kazanın",
+      "subText": "Zahmetsiz aylık ödüller. Parmak bile kıpırdatmadan para akışını hayal edin. <b>Arkadaşlarınızı davet edin ve birlikte paylaşılan kazançların tadını çıkarın!</b>",
+      "startBtn": "Başla"
+    },
+    "knowledgeBase": {
+      "subHeader": "Ticaret robotunu nasıl ayarlayacağınızı mı bilmiyorsunuz?",
+      "Header": "Endişelenmeyin, bir bilgi tabanı oluşturduk",
+      "text": "Burada, ticaret robotunun kurulumu ve işletilmesi hakkında kapsamlı kılavuzlar bulabilirsiniz, tüm temel konuları kapsar."
+    },
+    "faq": {
+      "question1": "Platformunuzu nasıl kullanmaya başlayabilirim?",
+      "answer1": "Başlamak kolay! Tek yapmanız gereken kayıt olmak, doğrulama sürecini tamamlamak, hesabınıza fon yatırmak ve sezgisel platformumuzu ve güçlü ticaret araçlarımızı kullanarak ticaret yapmaya başlamaktır.",
+      "question2": "Hangi kripto paraları destekliyorsunuz?",
+      "answer2": "Geniş bir kripto para yelpazesini destekliyoruz. Desteklenen dijital varlıkların tam listesi için platformumuzu kontrol edin.",
+      "question3": "Platformunuz ne kadar güvenli?",
+      "answer3": "Kullanıcılarımızın fonlarının ve verilerinin güvenliğine öncelik veriyoruz. Platformumuz, güvenli bir ticaret ortamı sağlamak için gelişmiş şifreleme yöntemleri ve güvenlik protokolleri kullanır."
+    }
   }
 }

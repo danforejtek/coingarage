@@ -974,5 +974,199 @@
     "button": "Chci se dozvědět více",
     "header": "Rádi zodpovíme všechny vaše dotazy",
     "text": "Nezávazně nám pošlete svůj e-mail a telefonní číslo. Náš obchodní zástupce vás bude kontaktovat a zodpoví vám všechny vaše dotazy."
+  },
+  "eezyTrader": {
+    "main": {
+      "header": "Vydělávejte snadno s naším automatickým crypto obchodním robotem EEZY Trader",
+      "text": "Využíjte nové technologie naplno a nechte za sebe obchodovat automatického obchodní robota, který nikdy nespí a neunikne mu žádná obchodní příležitost. Aktivujte si EEZY Trader zdarma na  7 dní a sami si vyzkoušejte, jak pracuje a o kolik dokáže zhodnotit vaše peníze.",
+      "startBtn": "Začít na 7-Dní ZDARMA",
+      "cards": {
+        "1": {
+          "header": "Plná kontrola nad vašemi financemi",
+          "text": "Robot obchoduje na vašem účtu. Vklad i zisky můžete kdykoliv vybrat."
+        },
+        "2": {
+          "header": "Maximalizuje efektivitu obchodování",
+          "text": "Nezmeškáte žádnou lukrativní příležitost, i když jste pryč od obrazovky."
+        },
+        "3": {
+          "header": "Nikdy nespí, obchodujte 24/7",
+          "text": "Trh s kryptoměnami nikdy nespí a náš robot také ne, obchoduje neustále."
+        },
+        "4": {
+          "header": "Eliminuje emocionální obchodování",
+          "text": "Robot na emoce netrpí a proto nedělá chyby v důsledků strachu nebo chamtivosti."
+        },
+        "5": {
+          "header": "Přizpůsobíte vše na míru vaší strategii",
+          "text": "Nastavte obchodní strategie robota přesně podle svých cílů a  toleranci k riziku."
+        }
+      }
+    },
+    "results": {
+      "subheader": "Výsledky EEZY Tradera",
+      "header": "Nejlepší obchodníci",
+      "text1": "Podívejte se na výsledky našich nejúspěšnějších obchodníků, kteří na plno využívají potenciál automatizovaného obchodního robota EEZY Tradera každý de k realizaci svých zisků.",
+      "text2": "Přidejte se i vy k našim úspěšným uživatelům EEZY Tradera a začněte i vydělávat s naším automatickým obchodním robotem ještě dnes.",
+      "options": {
+        "monthly": "Měsíční",
+        "weekly": "Týdenní",
+        "daily": "Denní"
+      },
+      "startBtn": "Začít"
+    },
+    "references": {
+      "subheader": "Reference",
+      "header": "Co o EEZY Traderovi říkají jeho uživatelé",
+      "referends": {
+        "1": {
+          "name": "Antonín Sulovský",
+          "text": "U EEZY Tradera oceňuji dobrou celkovou přehlednost a možnost kopírování ostatních obchodníků. A to hlavní, EEZY Trader dokáže výborně zhodnotit investici."
+        },
+        "2": {
+          "name": "Jakub Hasalík",
+          "text": "Líbí se mi, že bot pracuje i když spím. Nepracuji tak pro peníze, ale peníze pracojí pro mě. Nebo spíše robot zhodnocuje moje peníze pro mě a to hledám celý život a u coingarage jsem to našel."
+        },
+        "3": {
+          "name": "Roman Balajka",
+          "text": "U obchodního robota od Coingarage oceňuji nejvíc jeho jednoduchosti a přehledné rozhraní v porovnání s jinými roboty."
+        },
+        "4": {
+          "name": "Jana D'Antoni",
+          "text": "Své peníze nikam neposílám, veškeré obchody provádí bot na mém účtu a mám tak své peníze plně pod kontrolou."
+        },
+        "5": {
+          "name": "Jaroslava Němečková",
+          "text": "S EEZY Traderem jsem spokojena, jeho hlavní předností pro mě je, že skutečně mi ty peníze vydělává."
+        },
+        "6": {
+          "name": "Vojtěch Nedělník",
+          "text": "Hlavní předností je robota je samozřejmě jeho funkčnost. Robot provádí obchody rychle a a bez váhání. Osobně jsem velice spokojen."
+        },
+        "7": {
+          "name": "Petr Sliwka",
+          "text": "Nepatřím k lidem, kteří by robota nějak dopodrobna studovali a vyhodnocovali. Avšak jako běžný uživatel kvituju, že o svůj vklad se nemusím bát a vždy můžu počítat s nějakým profitem."
+        },
+        "8": {
+          "name": "Jaroslav Balajka",
+          "text": "EEZY Trader dle mého názoru to funguje dobře, víc k tomu není co dodat."
+        },
+        "9": {
+          "name": "Ivan Štěp",
+          "text": "Jsem vytížený a nemám čas sám obchodovat, proto jsme rád, že mám EEZY Tradera, který obchoduje a vydělává peníze za mě a já se tak mohu věnovat jiným činnostem. "
+        },
+        "10": {
+          "name": "Petr Janhuba",
+          "text": "Bot je více méně zcela samostatný a není třeba jeho obchody nějak korigovat. Obchody realizuje rychle a přesně a skutečně pracuje 24/7."
+        }
+      }
+    },
+    "functions": {
+      "header": "Spousta funkcí a různé druhy nastavení",
+      "text": "EEZY Trader nabízí spoustu funkcí tak, aby jste si ho mohli nastavit podle svých potřeb a obchodní strategie. Našeho robota můžete také snadno spustit pomocí funkce Auto trade nebo můžete kopírovat strategie ostatních úspěšných obchodníků.",
+      "startBtn": "Začít na 7-Dní ZDARMA",
+      "functionFields": {
+        "1": "DCA",
+        "2": "GRID",
+        "3": "99 Robotů",
+        "4": "Long",
+        "5": "Short",
+        "6": "Referral Program",
+        "7": "100 Párů",
+        "8": "Kopírování Obchodů",
+        "9": "Uložit Strategii",
+        "10": "Báze Znalostí"
+      }
+    },
+    "environment": {
+      "header": "Přehledné prostředí a jednoduché nastavení",
+      "checkmarks": {
+        "1": "Jednoduché prostředí a spuštění",
+        "2": "Ideální úvod do automatického obchodování",
+        "3": "Možnost automatického nastavení (auto trade)",
+        "4": "Kopírování strategií od zkušenějších obchodníků",
+        "5": "Aktivní podpora a báze znalostí"
+      }
+    },
+    "activation": {
+      "header": "Aktivujte svého EEZY Tradera v 5ti jednoduchých krocích",
+      "steps": {
+        "1": "Zaregistrujte se na burze Coingarage",
+        "2": "Udělejte si verifikaci (KYC)",
+        "3": "Vložte si na účet prostředky",
+        "4": "Kupte si plán a EEZY Coin",
+        "5": "Nastavte si strategii a začněte vydělávat"
+      },
+      "registerBtn": "Register"
+    },
+    "subscription": {
+      "btnBuy": "Koupit předplatné",
+      "disclaimer": "Po dokončení registrace si budete moci vybrat plán předplatného.",
+      "header": "Co je to předplatné?",
+      "subText": "Předplatné vám poskytuje přístup k našim službám v plném rozsahu. <b>S předplatným získáte přístup k našemu revolučnímu obchodnímu robotovi</b>, který vám umožní obchodovat na trzích s absolutní lehkostí a efektivitou.",
+      "plans": {
+        "header": "Předplatné",
+        "subText": "Nejste si jisti, zda je naše předplatné pro vás to pravé? Žádný problém! Nabízíme zkušební verzi, kde si můžete vyzkoušet našeho robota a zažít jeho schopnosti na vlastní kůži.",
+        "trial": {
+          "header": "Zkušební verze",
+          "free": "Zdarma",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 10 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Nejvíce používané",
+          "header": "Základní měsíc",
+          "competitionPrice": "$45/měsíc",
+          "price": "$15/měsíc",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 50 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "year": {
+          "header": "Základní rok",
+          "competitionPrice": "$384/rok",
+          "price": "$120/rok",
+          "save60": "Ušetříte $60",
+          "package": {
+            "header": "Odemkněte plný potenciál obchodního robota",
+            "1": "Až 99 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "fee": "Z každého zisku je odečten úspěšný poplatek ve výši 10 % v EEZY Coin."
+      }
+    },
+    "referralEEZY": {
+      "subHeader": "Referral program",
+      "header": "Vydělávejte až 30% z poplatků z obchodů svých partnerů",
+      "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>",
+      "startBtn": "Začít"
+    },
+    "knowledgeBase": {
+      "subHeader": "Nevíte Jak Nastavit Obchodního Robota?",
+      "Header": "Žádné Starosti, Vytvořili Jsme Bázi Znalostí",
+      "text": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
+    },
+    "faq": {
+      "question1": "Jak mohu začít s vaší platformou?",
+      "answer1": "Začátek je snadný! Stačí se zaregistrovat, dokončit proces ověření, vložit prostředky na svůj účet a začít obchodovat pomocí naší intuitivní platformy a silných obchodních nástrojů.",
+      "question2": "Jak zajistíte bezpečnost mých prostředků a osobních údajů?",
+      "answer2": "Používáme standardní bezpečnostní opatření, včetně šifrování, dvoufaktorové autentizace (2FA) a pravidelných bezpečnostních auditů, abychom ochránili vaše prostředky a osobní údaje. Kromě toho náš systém dodržuje přísné standardy shody, aby chránil proti neoprávněnému přístupu a podvodným činnostem.",
+      "question3": "Jaké jsou výhody používání DCA?",
+      "answer3": "Dollar-cost averaging (DCA) je strategie, kdy investor rozdělí celkovou částku určenou k investici mezi periodické nákupy cílového aktiva s cílem snížit dopad volatility na celkový nákup. Hlavní výhody používání DCA zahrnují snížení rizika spojeného s časováním trhu, potenciální snížení průměrné ceny akcie v čase a podporu disciplinovaného investování."
+    }
   }
 }
