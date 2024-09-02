@@ -30,7 +30,7 @@ const Reviews = () => {
         <h3 className="font-heading text-4xl">{t("header")}</h3>
       </div>
 
-      <div className="">
+      <div className="mt-0">
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent className="h-full pb-8">
             {referencesArray.map((src, index) => (
