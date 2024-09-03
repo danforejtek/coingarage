@@ -45,7 +45,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
   unstable_setRequestLocale(locale)
   const data: Article = await getArticle({ params })
   if (!data?.attributes?.title) return <>Not found</>
-  const { title, perex, image, publishedAt, author, content } = data?.attributes
+  const { title, perex, image, date_created, author, content } = data?.attributes
   const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
 
@@ -55,7 +55,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
         <ArrowLeft className="mr-2" size={16} />
         Back
       </Link>
-      <p className="mt-12 font-heading text-primary">{formatDateString(publishedAt)}</p>
+      <p className="mt-12 font-heading text-primary">{formatDateString(date_created)}</p>
       <h1 className="mt-4 font-heading text-4xl">{title}</h1>
       <div className="mt-6 flex flex-col">
         <span className="text-xs text-neutral-400">Posted by</span>

@@ -2,11 +2,15 @@ import Link from "next/link"
 import type { ReactNode } from "react"
 
 const BlogItem = ({ children }: { children: ReactNode }) => {
-  return <div className=" h-[526px] overflow-hidden rounded-lg border transition-all hover:shadow-md">{children}</div>
+  return (
+    <div className="h-full max-h-[526px] overflow-hidden rounded-lg border transition-all hover:shadow-md">
+      {children}
+    </div>
+  )
 }
 
 const BlogHeading = ({ children }: { children: ReactNode }) => {
-  return <h2 className="line-clamp-2 font-heading text-lg font-bold">{children}</h2>
+  return <h2 className="line-clamp-2 h-12 font-heading text-lg font-bold leading-6">{children}</h2>
 }
 
 const BlogAuthor = ({ children }: { children: ReactNode }) => {
@@ -14,7 +18,7 @@ const BlogAuthor = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogContent = ({ children }: { children: ReactNode }) => {
-  return <div className="flex h-[242px] flex-col justify-between gap-4 p-6">{children}</div>
+  return <div className="flex h-[252px] flex-col justify-between gap-4 p-6">{children}</div>
 }
 
 const BlogPerex = ({ children }: { children: ReactNode }) => {
@@ -22,11 +26,15 @@ const BlogPerex = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogDate = ({ children }: { children: ReactNode }) => {
-  return <div className="font-heading">{children}</div>
+  return (
+    <div className="font-heading" suppressHydrationWarning>
+      {children}
+    </div>
+  )
 }
 
 const BlogImage = ({ children }: { children: ReactNode }) => {
-  return <div className="relative h-[284px] w-[auto]">{children}</div>
+  return <div className="relative h-[224px] w-[auto]">{children}</div>
 }
 
 const BlogLink = ({ children, href }: { children: ReactNode; href: string }) => {
@@ -38,7 +46,7 @@ const BlogLink = ({ children, href }: { children: ReactNode; href: string }) => 
 }
 
 const BlogFooter = ({ children }: { children: ReactNode }) => {
-  return <div className="mt-4 flex w-full flex-row items-end justify-between">{children}</div>
+  return <div className="flex w-full flex-row items-end justify-between">{children}</div>
 }
 
 export const Blog = {

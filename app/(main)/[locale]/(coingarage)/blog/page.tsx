@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
         <article className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
           {data
             ? data.map((item: Article, index: number) => {
-                const { title, perex, image, author, publishedAt, slug } = item?.attributes
+                const { title, perex, image, author, date_created, slug } = item?.attributes
                 const imageSrc = image?.data?.[0]?.attributes?.url?.startsWith("http")
                   ? image?.data?.[0]?.attributes?.url
                   : strapiUrl + image?.data?.[0]?.attributes?.url
@@ -52,7 +52,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
                         <Blog.Footer>
                           <div className="flex flex-col">
                             <Blog.Author>{authorName}</Blog.Author>
-                            <Blog.Date>{formatDateString(publishedAt)}</Blog.Date>
+                            <Blog.Date>{formatDateString(date_created)}</Blog.Date>
                           </div>
                           <Blog.Link href={`/${locale}/blog/${slug}`}>Read more...</Blog.Link>
                         </Blog.Footer>

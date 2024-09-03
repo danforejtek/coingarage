@@ -97,7 +97,7 @@ export const getLatestArticles = async ({ params }: { params: Partial<{ locale: 
   const { locale, slug } = params
   const _locale = locale === "cs" ? "cs" : "en"
   const response = await fetch(
-    `${process.env.STRAPI_URL}/api/articles?locale=${_locale}&fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$ne]=${slug}&sort[0]=publishedAt:desc&pagination[pageSize]=3`,
+    `${process.env.STRAPI_URL}/api/articles?locale=${_locale}&fields[0]=title&fields[1]=date_created&fields[2]=perex&fields[3]=slug&populate[0]=author&populate[1]=image&filters[slug][$ne]=${slug}&sort[0]=publishedAt:desc&pagination[pageSize]=3`,
     {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
