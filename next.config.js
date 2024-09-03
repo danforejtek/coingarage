@@ -69,6 +69,14 @@ const nextConfig = {
         source: `/${lang}/legal/btc-saving-plan-terms`,
         destination: "/legal-files/btc_saving_plan_terms_en.pdf",
       })),
+      ...["en", "de", "es", "it", "gr", "tr"].map((lang) => ({
+        source: `/${lang}/legal/gara-stake-terms`,
+        destination: "/legal-files/gara_stake_terms_en.pdf",
+      })),
+      {
+        source: "/cs/legal/gara-stake-terms",
+        destination: "/legal-files/gara_stake_terms_cz.pdf",
+      },
       {
         source: "/cs/legal/general-terms-and-conditions",
         destination: "/legal-files/general_terms_and_conditions_cz.pdf",
