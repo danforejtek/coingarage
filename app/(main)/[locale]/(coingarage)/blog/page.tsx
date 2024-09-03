@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   title: "Blog | Coingarage",
 }
 
+const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL
+
 export default async function Page({ params }: { params: { locale: string } }) {
   const { locale } = params
   const articles = await getArticles({ params })
@@ -32,7 +34,9 @@ export default async function Page({ params }: { params: { locale: string } }) {
           {data
             ? data.map((item: Article, index: number) => {
                 const { title, perex, image, author, publishedAt, slug } = item?.attributes
-                const imageSrc = image?.data?.[0]?.attributes?.url
+                const imageSrc = image?.data?.[0]?.attributes?.url?.startsWith("http")
+                  ? image?.data?.[0]?.attributes?.url
+                  : strapiUrl + image?.data?.[0]?.attributes?.url
                 const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
                 return (
                   <Link href={`/blog/${slug}`} key={index}>
@@ -59,7 +63,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
               })
             : null}
         </article>
-        <Pagination pagination={pagination} />
+        {data && data.length !== 0 ? <Pagination pagination={pagination} /> : null}
       </section>
       {!data || data.length === 0 ? (
         <div className="container mx-auto">

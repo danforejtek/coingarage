@@ -1,8 +1,8 @@
 import Link from "next/link"
-import { ReactNode } from "react"
+import type { ReactNode } from "react"
 
 const BlogItem = ({ children }: { children: ReactNode }) => {
-  return <div className=" h-[626px] overflow-hidden rounded-lg border transition-all hover:shadow-md">{children}</div>
+  return <div className=" h-[526px] overflow-hidden rounded-lg border transition-all hover:shadow-md">{children}</div>
 }
 
 const BlogHeading = ({ children }: { children: ReactNode }) => {
@@ -14,11 +14,11 @@ const BlogAuthor = ({ children }: { children: ReactNode }) => {
 }
 
 const BlogContent = ({ children }: { children: ReactNode }) => {
-  return <div className="flex h-[342px] flex-col justify-between gap-4 p-6">{children}</div>
+  return <div className="flex h-[242px] flex-col justify-between gap-4 p-6">{children}</div>
 }
 
 const BlogPerex = ({ children }: { children: ReactNode }) => {
-  return <div className="line-clamp-6 max-h-[144px] text-sm text-neutral-500 dark:text-neutral-300">{children}</div>
+  return <div className="line-clamp-4 max-h-[144px] text-sm text-neutral-500 dark:text-neutral-300">{children}</div>
 }
 
 const BlogDate = ({ children }: { children: ReactNode }) => {

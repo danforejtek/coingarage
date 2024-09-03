@@ -27,6 +27,8 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
+const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = await getArtileMetadata({ params })
   return data as Metadata
@@ -62,7 +64,11 @@ export default async function Page({ params }: { params: { slug: string; locale:
       {/* <p className="mt-4 font-heading">{perex}</p> */}
       <div className="my-4 h-[1px] w-full bg-neutral-200 dark:bg-neutral-800"></div>
       <div className="relative mt-12 h-[302px] w-full">
-        <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+        {imageSrc.startsWith("http") ? (
+          <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+        ) : (
+          <Image src={strapiUrl + imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+        )}
       </div>
       <div className="mt-10">
         <BlockRendererClient content={content} />
