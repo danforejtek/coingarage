@@ -27,7 +27,7 @@ import {
 } from "lucide-react"
 
 export const Icons = {
-  logo: ({ ...props }) => <Image src={"/logo/coingarage_icon_white_1.svg"} width={25} height={25} alt="" {...props} />,
+  logo: ({ ...props }) => <Image src={"/logo/coingarage_icon_white_1.svg"} width={25} height={25} alt=" " {...props} />,
   menu: Menu,
   close: X,
   spinner: Loader2,

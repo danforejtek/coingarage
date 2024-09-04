@@ -8,6 +8,7 @@ export default function Advantages({ className }: { className?: string }) {
 
   return (
     <section className={cn("container mx-auto mt-16 flex flex-row justify-between lg:mt-28", className)}>
+      <></>
       <div className="flex w-full flex-row flex-wrap justify-center gap-8 xl:justify-between">
         <Figure icon="/icons/exchange.svg" caption={t("icon1")} />
         <Figure icon="/icons/globe.svg" caption={t("icon2")} />
