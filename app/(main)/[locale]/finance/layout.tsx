@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <>
       <div className="tertiary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
-      <HeaderFinance />
+      <HeaderFinance locale={locale} />
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
         <ContactUsWidget />

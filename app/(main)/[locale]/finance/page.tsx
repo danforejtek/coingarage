@@ -173,12 +173,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </div>
           <div className="w-full max-w-[500px]">
             <div className="mt-8 flex flex-row flex-wrap gap-4">
-              <Button
-                variant="outlinePrimary"
-                size="lg"
-                className="text-md w-full font-bold leading-[1.2] sm:w-max"
-                asChild
-              >
+              <Button variant="default" size="lg" className="text-md w-full font-bold leading-[1.2] sm:w-max" asChild>
                 <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
               {/* <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
@@ -334,7 +329,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 {t("estimatedValuation.estimated.text1")}
               </span>
               <span className="font-heading text-sm text-primary">{t("estimatedValuation.estimated.text2")}</span>
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <Button variant="default" size="lg" asChild>
                   <a
                     href=" https://app.coingarage-finance.com/accounts/signup"
@@ -344,7 +339,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                     {t("estimatedValuation.estimated.investBtn")}
                   </a>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="mt-16 flex w-full flex-col items-center justify-start lg:w-1/2 xl:mt-0">

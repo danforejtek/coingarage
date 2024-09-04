@@ -168,24 +168,24 @@ export const navItems: NavItem[] = [
     href: "/earn",
     icon: "stake",
     subItems: [
-      {
-        title: "Become a Shareholder",
-        key: "becomeAShareholder",
-        href: "https://coingarage-finance.com",
-        icon: "shareholder",
-      },
+      // {
+      //   title: "Become a Shareholder",
+      //   key: "becomeAShareholder",
+      //   href: "https://coingarage-finance.com",
+      //   icon: "shareholder",
+      // },
       {
         title: "Affiliate",
         key: "affiliate",
         href: "/earn",
         icon: "affiliate",
       },
-      {
-        title: "Stake",
-        key: "stake",
-        href: "/earn/staking",
-        icon: "stake",
-      },
+      // {
+      //   title: "Stake",
+      //   key: "stake",
+      //   href: "/earn/staking",
+      //   icon: "stake",
+      // },
     ],
   },
   {
