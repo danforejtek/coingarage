@@ -15,11 +15,11 @@ import NftIcon from "@/public/images/finance/icons/nft.svg"
 import ReferralIcon from "@/public/images/finance/icons/referral.svg"
 import TradingBotIcon from "@/public/images/finance/icons/tradingBot.svg"
 import StakingIcon from "@/public/images/finance/icons/staking.svg"
-import ContractIcon from "@/public/images/finance/icons/contract.svg"
-import KycIcon from "@/public/images/finance/icons/kyc.svg"
-import PaymentIcon from "@/public/images/finance/icons/payment.svg"
-import PersonalDataIcon from "@/public/images/finance/icons/personalData.svg"
-import RegistrationIcon from "@/public/images/finance/icons/registration.svg"
+// import ContractIcon from "@/public/images/finance/icons/contract.svg"
+// import KycIcon from "@/public/images/finance/icons/kyc.svg"
+// import PaymentIcon from "@/public/images/finance/icons/payment.svg"
+// import PersonalDataIcon from "@/public/images/finance/icons/personalData.svg"
+// import RegistrationIcon from "@/public/images/finance/icons/registration.svg"
 
 import {
   Table,
@@ -31,14 +31,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { FinanceProgress } from "./components/progress"
+// import { FinanceProgress } from "./components/progress"
 
-import { GetMoreInfoForm } from "@/app/(main)/[locale]/finance/components/get-more-info-form"
-import { ChevronDown } from "lucide-react"
+// import { GetMoreInfoForm } from "@/app/(main)/[locale]/finance/components/get-more-info-form"
+// import { ChevronDown } from "lucide-react"
 import { PartnerCarousel } from "@/app/(main)/[locale]/finance/components/partner-carousel"
 import { FaqTabs } from "@/app/(main)/[locale]/finance/components/faq-tabs"
-import { fetchFinanceData } from "@/app/(main)/[locale]/finance/lib/data"
-import { ValuationTable } from "@/app/(main)/[locale]/finance/components/valuation-table"
+// import { fetchFinanceData } from "@/app/(main)/[locale]/finance/lib/data"
+// import { ValuationTable } from "@/app/(main)/[locale]/finance/components/valuation-table"
 
 const IS_PROD = process.env.NODE_ENV === "production"
 const COINGARAGE_PREFIX = IS_PROD ? "https://coingarage.io" : ""
@@ -151,11 +151,11 @@ const Claim = ({ claim, author }: { claim: string; author: string }) => {
 export default async function Page({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
   const t = await getTranslations("finance")
-  const financialData = await fetchFinanceData()
-  const activeRoundIndex: number =
-    financialData.status === "ok" ? financialData.data.rounds.findIndex((round) => round.active === "true") : 0
-  const currentRoundPercentage: number =
-    financialData.status === "ok" ? financialData.data.round_percentage[activeRoundIndex] : 0
+  // const financialData = await fetchFinanceData()
+  // const activeRoundIndex: number =
+  //   financialData.status === "ok" ? financialData.data.rounds.findIndex((round) => round.active === "true") : 0
+  // const currentRoundPercentage: number =
+  //   financialData.status === "ok" ? financialData.data.round_percentage[activeRoundIndex] : 0
 
   return (
     <main className="relative overflow-hidden">
@@ -181,9 +181,9 @@ export default async function Page({ params: { locale } }: { params: { locale: s
               >
                 <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
-              <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
+              {/* <Button variant="default" size="lg" className="text-md w-full leading-[1.2] sm:w-max" asChild>
                 <a href="https://app.coingarage-finance.com/accounts/signup">{t("main.shareholderBtn")}</a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -395,10 +395,10 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </div>
           </div>
           <div className="mt-16 w-full rounded-2xl bg-background p-6 py-12 dark:bg-[#1D1E25] md:p-12">
-            <h3 className="hyphens-auto break-words text-center font-heading text-4xl font-bold lg:text-start">
+            <h3 className="hyphens-auto break-words text-center font-heading text-4xl font-bold lg:text-center">
               {t("oppurtunities.header")}
             </h3>
-            <div className="mt-12 flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-start">
+            {/* <div className="mt-12 flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-start">
               <div className="lg:w-1/2">
                 <p className="text-justify text-base md:text-start">{t("oppurtunities.subtext")}</p>
                 <h4 className="mt-10 font-heading text-xl font-bold text-primary">{t("oppurtunities.bonuses")}</h4>
@@ -423,7 +423,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
                 <FinanceProgress value={currentRoundPercentage} />
                 <h4 className="mt-4 text-center font-heading text-base text-primary">{t("oppurtunities.money")}</h4>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
@@ -551,7 +551,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       {/*
        * INVESTMENT VALUATION
        */}
-      <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
+      {/* <div className="mt-12 w-full bg-tertiary/25 py-16 dark:bg-tertiary/20 xl:mt-28">
         <section className="container mx-auto flex flex-col flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="mx-auto">
             <p className="text-center font-heading text-4xl font-bold">{t("yourValuation.header")}</p>
@@ -582,8 +582,8 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             </div>
           </div>
         </section>
-      </div>
-      <div className="container z-10 mx-auto">
+      </div> */}
+      {/* <div className="container z-10 mx-auto">
         <div className="flex flex-row lg:gap-8">
           <div className="-mt-[40px] rounded-2xl bg-background p-8 shadow-md dark:bg-[#1D1E25] lg:-mt-[300px] lg:w-2/3">
             <div className="p-0 md:p-4">
@@ -598,11 +598,11 @@ export default async function Page({ params: { locale } }: { params: { locale: s
           </div>
           <div className="lg:w-1/3"></div>
         </div>
-      </div>
+      </div> */}
       {/*
        * INVESTMENT STEPS
        */}
-      <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8 pb-4">
+      {/* <section className="mx-auto mt-12 flex max-w-[1200px] flex-col items-center px-8 pb-4">
         <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("simpleSteps.header")}</p>
         <p className="text-justify text-base lg:text-center">{t("simpleSteps.subtext")}</p>
         <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row lg:pl-8 xl:grid">
@@ -667,7 +667,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
             {t("simpleSteps.download")}
           </a>
         </div>
-      </section>
+      </section> */}
       {/*
        * PARTNERS
        */}

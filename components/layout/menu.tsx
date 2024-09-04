@@ -252,7 +252,6 @@ export function Menu() {
 
   return (
     <NavigationMenu>
-      <></>
       <NavigationMenuList>
         {navItems.map(({ title, href, subItems, icon, key }, index) => {
           const hasActiveSubItem = subItems?.some(({ href }) => pathnameWithoutLocale.endsWith(href))

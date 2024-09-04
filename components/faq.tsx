@@ -29,7 +29,6 @@ export default function Faq() {
 
   return (
     <Accordion type="multiple" className="w-full">
-      <></>
       {faqs.map(({ title, content }, index) => (
         <AccordionItem
           key={index}

@@ -30,7 +30,6 @@ export default function Header() {
         scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50" : null
       )}
     >
-      <></>
       <div className="grid h-full grid-cols-[1fr_40px] xl:flex xl:flex-row xl:justify-between">
         <nav className="flex items-center gap-10" aria-label="Global">
           <Link href="/">
