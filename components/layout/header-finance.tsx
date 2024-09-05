@@ -43,8 +43,11 @@ export default function HeaderFinance({ locale }: { locale: string }) {
         <div className="flex h-full items-center justify-end">
           <div className="hidden xl:block">
             <div className="flex gap-2">
-              <Button variant="default" size="default" asChild>
+              <Button variant="ghost" size="default" asChild>
                 <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
+              </Button>
+              <Button variant="default" className={cn("text-sm")} asChild>
+                <a href="https://app.coingarage-finance.com/accounts/login">{t("login")}</a>
               </Button>
               <ModeToggle />
               <LocaleSwitcher isFinance={true} />
