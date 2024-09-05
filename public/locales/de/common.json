@@ -525,8 +525,8 @@
       "header": "Geschätzter Unternehmenswert im Jahr 2030",
       "subText": "Zur Berechnung des Unternehmenswerts verwenden wir Referenzen und Bewertungsbeispiele von konkurrierenden Börsen weltweit sowie den anerkannten Indikator EBITDA.",
       "estimated": {
-        "text1": "2,4 Milliarden USD",
-        "text2": "Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2,5 Millionen Nutzern in 6 Jahren.",
+        "text1": "2.4 Milliarden USD",
+        "text2": "Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2.5 Millionen Nutzern in 6 Jahren.",
         "investBtn": "Jetzt investieren"
       },
       "tableHeader": "Bewertung der Konkurrenz",
@@ -743,7 +743,7 @@
         },
         "question4": {
           "text": "Was ist der beabsichtigte Wert der Firma Coingarage s.r.o.?",
-          "answer": "Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 10 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
+          "answer": "Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 2.4 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
         },
         "question5": {
           "text": "Wofür dient und was ist Coingarage Finance s.r.o. eigentlich?",
