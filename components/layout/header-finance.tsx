@@ -14,6 +14,7 @@ import { MenuFinance } from "@/components/layout/menu-finance"
 
 export default function HeaderFinance({ locale }: { locale: string }) {
   const t = useTranslations("finance")
+  const tMenu = useTranslations("Menu")
   const scrollPosition = useScrollPosition()
   const [scrolledVariant, setScrolledVariant] = useState(false)
 
@@ -46,8 +47,8 @@ export default function HeaderFinance({ locale }: { locale: string }) {
               <Button variant="ghost" size="default" asChild>
                 <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
-              <Button variant="default" className={cn("text-sm")} asChild>
-                <a href="https://app.coingarage-finance.com/accounts/login">{t("login")}</a>
+              <Button variant="default" className={cn("text-sm mr-2")} asChild>
+                <a href="https://app.coingarage-finance.com/accounts/login">{tMenu("login")}</a>
               </Button>
               <ModeToggle />
               <LocaleSwitcher isFinance={true} />
