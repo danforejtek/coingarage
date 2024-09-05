@@ -21,17 +21,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute -right-[40px] top-[216px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[120px]">
+      <div className="absolute -right-[110px] top-[216px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]">
         <Image src="/images/eezy-trader/images/robotcomputer.png" alt="" fill={true} style={{ objectFit: "cover" }} />
       </div>
       {/* <div className="absolute right-0 top-[300px] -z-10 h-[260px] w-[290px] max-w-[96vw] lg:top-[300px] lg:w-[509px] xl:w-[789px]">
         <Image src="/images/eezy-trader/images/red-vector.svg" fill={true} style={{ objectFit: "cover" }} alt="" />
       </div> */}
-      <div className="absolute right-[-100px] top-[206px] -z-50 h-[470px] w-[774px] max-w-[96vw] overflow-hidden md:-right-[200px] md:top-[90px] lg:top-[24px] lg:h-[577px] lg:w-[843px]">
+      <div className="absolute right-[-150px] top-[326px] -z-50 h-[270px] w-[774px] max-w-[96vw] overflow-hidden sm:right-[-200px] sm:top-[320px] sm:h-[300px] md:-right-[260px] md:top-[190px] lg:top-[24px] lg:h-[577px] lg:w-[843px]">
         <Image src="/images/eezy-trader/images/red-vector.svg" alt="" className="object-contain" fill={true} />
       </div>
       {/* Easy trader main section with robot */}
-      <section className="mb-8">
+      <section className="mb-20">
         <EezyTrader />
       </section>
 

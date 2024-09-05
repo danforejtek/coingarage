@@ -18,7 +18,7 @@ const EasySettings = (): ReactElement => {
 
   return (
     <div className="container mt-12 flex flex-col-reverse items-center justify-between pt-20 lg:mt-36 lg:h-[556px] lg:flex-row">
-      <div className="relative h-[344px] w-80 rounded-lg sm:h-[460px] sm:w-[428px]">
+      <div className="relative mx-auto h-[344px] w-80 rounded-lg sm:h-[460px] sm:w-[428px]">
         <Image
           src="/images/eezy-trader/easySettings/tablet.png"
           width={428}
@@ -45,7 +45,7 @@ const EasySettings = (): ReactElement => {
         </div>
       </div>
 
-      <div className="mb-14 ml-0 max-w-[546px] md:-ml-44 lg:mb-0">
+      <div className="mb-14 ml-0 max-w-[546px] lg:mb-0">
         <h3 className="mb-9 text-center font-heading text-4xl font-bold lg:pr-10 lg:text-start">{t("header")}</h3>
         <div>
           {Array.from({ length: CHECK_MARKS }, (_, i) => (
