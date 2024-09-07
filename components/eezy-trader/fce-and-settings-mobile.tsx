@@ -15,6 +15,19 @@ import { useTranslations } from "next-intl"
 
 type Props = {}
 
+const functionCards = [
+  { svg: DcaSvg, titleKey: "functionFields.1" },
+  { svg: ReferralSvg, titleKey: "functionFields.6" },
+  { svg: GridSvg, titleKey: "functionFields.2" },
+  { svg: PairsSvg, titleKey: "functionFields.7" },
+  { svg: BotSvg, titleKey: "functionFields.3" },
+  { svg: FileSvg, titleKey: "functionFields.8" },
+  { svg: LongSvg, titleKey: "functionFields.4" },
+  { svg: SaveStrategySvg, titleKey: "functionFields.9" },
+  { svg: ShortSvg, titleKey: "functionFields.5" },
+  { svg: KnowledgeBaseSvg, titleKey: "functionFields.10" },
+]
+
 const FceAndSettingsMobile = (props: Props) => {
   const { resolvedTheme } = useTheme()
   const [theme, setTheme] = useState("")
@@ -25,66 +38,13 @@ const FceAndSettingsMobile = (props: Props) => {
   const t = useTranslations("eezyTrader.functions")
 
   return (
-    <div>
-      <div className="">
-        <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-          <DcaSvg className="dark:fill-white" />
-          <p className="text-lg">{t("functionFields.1")}</p>
+    <div className="mt-4 flex flex-wrap justify-center gap-6">
+      {functionCards.map((card, index) => (
+        <Card key={index} className="flex h-[150px] w-32 flex-col items-center justify-between py-3 dark:bg-[#1D1E25]">
+          <card.svg className="dark:fill-white" />
+          <p className="mt-1 px-2 text-center text-lg md:mt-4">{t(card.titleKey)}</p>
         </Card>
-
-        <Card className="flex h-40 w-32 flex-col items-center justify-between py-3">
-          <ReferralSvg className="dark:fill-white" />
-          <p className="mt-4 text-center text-lg">{t("functionFields.6")}</p>
-        </Card>
-      </div>
-
-      <div className="flex flex-col gap-6">
-        <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-          <GridSvg className="dark:fill-white" />
-          <p className="text-lg">{t("functionFields.2")}</p>
-        </Card>
-
-        <Card className="flex h-40 w-32 flex-col items-center justify-between py-3 lg:h-32">
-          <PairsSvg className="dark:fill-white" />
-          <p className="mt-4 text-center text-lg">{t("functionFields.7")}</p>
-        </Card>
-      </div>
-
-      <div className="flex flex-col gap-6 lg:mt-14">
-        <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-          <BotSvg className="dark:fill-white" />
-          <p className="text-lg">{t("functionFields.3")}</p>
-        </Card>
-
-        <Card className="flex h-40 w-32 flex-col items-center justify-between py-3">
-          <FileSvg className="dark:fill-white" />
-          <p className="mt-4 text-center text-lg">{t("functionFields.8")}</p>
-        </Card>
-      </div>
-
-      <div className="flex flex-col gap-6 lg:mt-28">
-        <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-          <LongSvg className="dark:fill-white" />
-          <p className="text-lg">{t("functionFields.4")}</p>
-        </Card>
-
-        <Card className="flex w-32 flex-col items-center justify-between py-3">
-          <SaveStrategySvg className="dark:fill-white" />
-          <p className="mt-4 px-1 text-center text-lg">{t("functionFields.9")}</p>
-        </Card>
-      </div>
-
-      <div className="flex flex-col gap-6 lg:mt-14">
-        <Card className="flex h-32 w-32 flex-col items-center justify-between py-3">
-          <ShortSvg className="dark:fill-white" />
-          <p className="text-lg">{t("functionFields.5")}</p>
-        </Card>
-
-        <Card className="flex h-40 w-32 flex-col items-center justify-between py-3 lg:h-32">
-          <KnowledgeBaseSvg className="dark:fill-white" />
-          <p className="mt-4 text-center text-lg">{t("functionFields.10")}</p>
-        </Card>
-      </div>
+      ))}
     </div>
   )
 }
