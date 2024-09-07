@@ -28,12 +28,12 @@ const EezyTrader = () => {
           <h3 className="text-left font-heading text-3xl font-bold md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
           <p className="pr-[40%] md:pr-[30%] lg:pr-0">{etMain("text")}</p>
           <div className="justify-left mt-16 flex w-full flex-row">
-            <Button className="mt-8 min-w-64 border-white md:mt-4 ">{etMain("startBtn")}</Button>
+            <Button className="mx-auto mt-8 min-w-64 border-white md:mt-4 ">{etMain("startBtn")}</Button>
           </div>
         </div>
       </div>
 
-      <div className="mt-40 flex w-full flex-row flex-wrap items-center justify-center gap-6 sm:mt-48 md:mt-36">
+      <div className="mt-20 flex w-full flex-row flex-wrap items-center justify-center gap-6 sm:mt-48 md:mt-32">
         <Card className="flex w-full max-w-[244px] flex-col gap-4 border bg-background px-7 pb-10 pt-8 text-center lg:min-h-72">
           <FinanceSvg className="mx-auto dark:fill-white" />
           <p className="text-primary">{etMain("cards.1.header")}</p>

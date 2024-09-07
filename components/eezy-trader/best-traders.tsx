@@ -78,7 +78,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
       </div>
 
       <div className="mx-auto xl:mx-0 xl:mr-10">
-        <div className="w-[268px] sm:w-[568px] md:w-[748px]">
+        <div className="w-[268px] sm:w-[568px] md:w-[710px] lg:w-[768px]">
           <div className="mb-4 mr-4 flex flex-row-reverse sm:mr-6 md:mr-2 lg:mr-8">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
               <SelectTrigger className="w-[180px]">
@@ -97,14 +97,14 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             opts={{ align: "start", loop: false }}
             plugins={[
               Autoplay({
-                delay: 4000,
+                delay: 40000,
                 // stopOnMouseEnter: true,
               }),
             ]}
             className="w-full"
             orientation="horizontal"
           >
-            <CarouselContent className="mx-auto flex h-[434px] w-[568px] md:-ml-4 md:w-full">
+            <CarouselContent className="mx-auto flex h-[434px] w-[568px] md:-ml-8 md:w-full lg:-ml-4">
               {isLoading ? (
                 <CarouselItem className="">
                   <SkeletonLoader count={isMobile ? 4 : 6} />
@@ -120,7 +120,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
 
                     return (
                       <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/3">
-                        <div className="flex flex-col gap-8 sm:ml-2 lg:ml-0">
+                        <div className="flex flex-col gap-8 sm:ml-4 lg:ml-0">
                           <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
                           <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
                         </div>

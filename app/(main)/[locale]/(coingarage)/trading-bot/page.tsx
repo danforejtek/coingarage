@@ -41,7 +41,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </section>
 
       {/* What they say - reviews */}
-      <section className="container mx-auto mb-8 px-4 md:px-8 lg:px-16">
+      <section className="container mx-auto mb-8 px-5 md:px-8 lg:px-16">
         <CustomerReviews />
       </section>
 
@@ -208,8 +208,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </div>
       </section> */}
 
-      <section className="container mx-auto mt-2 flex flex-col flex-wrap items-center justify-center md:mt-16 lg:flex-row xl:justify-between">
-        <div className="mt-20 w-full max-w-[800px] p-4">
+      <section className="container mx-auto mt-2 flex flex-col flex-wrap items-center justify-center md:mt-8 lg:flex-row xl:justify-between">
+        <div className="mt-12 w-full max-w-[800px] p-4">
           <h1 className="font-heading text-3xl font-bold text-primary">Knowledge Base</h1>
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-4xl">{tAfi("setupTradingBot.name")}</div>

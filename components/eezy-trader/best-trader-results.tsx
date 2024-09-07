@@ -16,7 +16,7 @@ const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
   return (
     <div
       data-index={index}
-      className="flex h-[200px] w-[234px] flex-col items-center justify-between rounded-xl bg-background p-4"
+      className="flex h-[200px] w-[234px] flex-col items-center justify-between rounded-xl bg-background p-4 dark:bg-[#1D1E25]"
     >
       <div className="flex h-[34px] w-full justify-between">
         <div className="w-40">
