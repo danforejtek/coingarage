@@ -1,5 +1,6 @@
-import "@/styles/globals.scss"
+import "@rainbow-me/rainbowkit/styles.css"
 import type { Metadata } from "next"
+import { WalletProviders } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/wallet-providers"
 
 export const metadata: Metadata = {
   title: "Garage coin - GARA | Coingarage",
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
   manifest: `/site.webmanifest`,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children, locale }: { children: React.ReactNode, locale: string }) {
   return (
-    <div>
+    <WalletProviders locale={locale}>
       <div className="primary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
       {children}
-    </div>
+    </WalletProviders>
   )
 }

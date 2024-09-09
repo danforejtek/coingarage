@@ -1,7 +1,7 @@
 "use client"
 import { useTheme } from "next-themes"
-import { AlocationChart } from "@/components/gara-coin/alocation-chart"
-import { BuyGara } from "@/components/gara-coin/buy-gara"
+import { AlocationChart } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/alocation-chart"
+import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara"
 import Heading from "@/components/heading"
 import { Button } from "@/components/ui/button"
 import { useTranslations } from "next-intl"
@@ -14,7 +14,7 @@ import Security from "@/public/images/gara-coin/security.svg"
 import Document from "@/public/images/gara-coin/document.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import Present from "@/public/images/gara-coin/present.svg"
-import { PolygonAddressCopyToClipboard } from "@/components/gara-coin/polygon-address-copy-to-clipboard"
+import { PolygonAddressCopyToClipboard } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/polygon-address-copy-to-clipboard"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (

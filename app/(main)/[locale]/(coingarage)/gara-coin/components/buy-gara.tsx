@@ -1,9 +1,10 @@
 "use client"
 
 import { useTranslations } from "next-intl"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
 import { useSDK, MetaMaskProvider } from "@metamask/sdk-react"
 import Image from "next/image"
-import { CoinInput } from "@/components/gara-coin/coin-input"
+import { CoinInput } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/coin-input"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
@@ -62,6 +63,7 @@ export function BuyGara() {
         <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
         <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
       </div>
+      <ConnectButton label={t("btnConnectWallet")} />
       {/* <div className="mt-8 grid grid-cols-2 justify-between gap-4">
         {!connected ? (
           <Button variant="default" disabled={connecting} onClick={connect}>
