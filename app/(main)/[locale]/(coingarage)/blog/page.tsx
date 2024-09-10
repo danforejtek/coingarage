@@ -1,10 +1,7 @@
-import { Blog } from "@/app/(main)/[locale]/(coingarage)/blog/components/blog"
-import Image from "next/image"
 import type { Metadata } from "next"
-import { formatDateString } from "@/lib/utils"
 import { Pagination } from "@/app/(main)/[locale]/(coingarage)/blog/components/pagination"
 import { getArticles } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
-import { Link } from "@/navigation"
+import { Post } from "@/app/(main)/[locale]/(coingarage)/blog/components/post"
 
 type Article = {
   attributes: {
@@ -39,26 +36,15 @@ export default async function Page({ params }: { params: { locale: string } }) {
                   : strapiUrl + image?.data?.[0]?.attributes?.url
                 const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
                 return (
-                  <Link href={`/blog/${slug}`} key={index}>
-                    <Blog.Item key={index}>
-                      <Blog.Image>
-                        <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
-                      </Blog.Image>
-                      <Blog.Content>
-                        <div className="flex flex-col justify-between gap-4">
-                          <Blog.Heading>{title}</Blog.Heading>
-                          <Blog.Perex>{perex}</Blog.Perex>
-                        </div>
-                        <Blog.Footer>
-                          <div className="flex flex-col">
-                            <Blog.Author>{authorName}</Blog.Author>
-                            <Blog.Date>{formatDateString(date_created)}</Blog.Date>
-                          </div>
-                          <Blog.Link href={`/${locale}/blog/${slug}`}>Read more...</Blog.Link>
-                        </Blog.Footer>
-                      </Blog.Content>
-                    </Blog.Item>
-                  </Link>
+                  <Post
+                    key={index}
+                    imageSrc={imageSrc}
+                    title={title}
+                    perex={perex}
+                    authorName={authorName}
+                    date_created={date_created}
+                    href={`/blog/${slug}`}
+                  />
                 )
               })
             : null}

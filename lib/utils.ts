@@ -112,5 +112,6 @@ export const formatAddress = (addr: string | undefined) => {
 
 export const formatDateString = (date: string) => {
   if (!date) return ""
+  if (typeof window === "undefined") return new Date(date).toLocaleDateString("en-US")
   return new Date(date).toLocaleDateString()
 }
