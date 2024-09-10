@@ -28,6 +28,7 @@ export default function Figure({
         className
       )}
     >
+      <></>
       {icon ? <Image src={icon} alt={caption} width={iconSize} height={iconSize} className="select-none" /> : null}
       <figcaption
         className={cn(
