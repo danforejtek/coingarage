@@ -153,7 +153,8 @@
       "privacyPolicy": "Datenschutzbestimmungen",
       "cookiePolicy": "Cookie-Richtlinie",
       "sportTradingTerms": "Bedingungen für den Spothandel",
-      "btcSavingPlanTerms": "Bedingungen für den BTC-Sparplan"
+      "btcSavingPlanTerms": "Bedingungen für den BTC-Sparplan",
+      "garaStakeTerms": "Bedingungen für den GARA Stake"
     }
   },
   "Contact": {
@@ -524,8 +525,8 @@
       "header": "Geschätzter Unternehmenswert im Jahr 2030",
       "subText": "Zur Berechnung des Unternehmenswerts verwenden wir Referenzen und Bewertungsbeispiele von konkurrierenden Börsen weltweit sowie den anerkannten Indikator EBITDA.",
       "estimated": {
-        "text1": "2,4 Milliarden USD",
-        "text2": "Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2,5 Millionen Nutzern in 6 Jahren.",
+        "text1": "2.4 Milliarden USD",
+        "text2": "Geschätzter Wert des Unternehmens Coingarage s.r.o. bei Erreichen von 2.5 Millionen Nutzern in 6 Jahren.",
         "investBtn": "Jetzt investieren"
       },
       "tableHeader": "Bewertung der Konkurrenz",
@@ -630,7 +631,7 @@
       "ps": "<bold>PS:</bold> Trotz der Kritik an Bitcoin von Jamie Dimon hat sich die Haltung von JPMorgan geändert, die Bank ist jetzt im Bereich Kryptowährungen und Blockchain-Technologie tätig. Sie haben sogar ihr eigenes auf Blockchain basierendes Zahlungssystem namens JPM Coin entwickelt."
     },
     "oppurtunities": {
-      "header": "Aktuelle Investitionsmöglichkeiten ab 10.000 CZK",
+      "header": "Die Investitionsmöglichkeit wurde geschlossen",
       "subtext": "Wir haben die erste Investitionsrunde eröffnet, die nur für Einzelpersonen bestimmt ist. Weitere Runden, die folgen werden, sind nur für Investmentgesellschaften vorgesehen.",
       "bonuses": "Bonusse zu Ihrer Investition",
       "investment1": "Ab 50.000 CZK erhalten Sie *GARA Coin im Wert von 50% Ihrer Investition.",
@@ -742,7 +743,7 @@
         },
         "question4": {
           "text": "Was ist der beabsichtigte Wert der Firma Coingarage s.r.o.?",
-          "answer": "Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 10 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
+          "answer": "Der beabsichtigte Wert der Firma Coingarage s.r.o. wird bis Ende 2030 auf 2.4 Mrd. USD geschätzt. Die Berechnung des Firmenwerts basiert nicht nur auf dem immateriellen Vermögenswert, sondern nutzt auch den international anerkannten EBITDA-Multiplikator und den Wettbewerbskoeffizienten. Zusätzlich berücksichtigen wir offizielle Bewertungsdaten anderer Börsen unter Berücksichtigung wichtiger Kennzahlen wie der Anzahl registrierter Benutzer und Handelsvolumina."
         },
         "question5": {
           "text": "Wofür dient und was ist Coingarage Finance s.r.o. eigentlich?",

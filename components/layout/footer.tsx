@@ -213,6 +213,16 @@ export default function Footer() {
                     {t("legal.btcSavingPlanTerms")}
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/legal/gara-stake-terms"
+                    className="hover:text-primary"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {t("legal.garaStakeTerms")}
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

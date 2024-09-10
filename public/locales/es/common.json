@@ -153,7 +153,8 @@
       "privacyPolicy": "Política de privacidad",
       "cookiePolicy": "Política de cookies",
       "sportTradingTerms": "Condiciones al contadocomerciales",
-      "btcSavingPlanTerms": "Condiciones del Plan de Ahorro de BTC"
+      "btcSavingPlanTerms": "Condiciones del Plan de Ahorro de BTC",
+      "garaStakeTerms": "Condiciones de la Apuesta de GARA"
     }
   },
   "Contact": {
@@ -631,7 +632,7 @@
       "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
     },
     "oppurtunities": {
-      "header": "Current Investment Opportunities from 500 USD",
+      "header": "La oportunidad de inversión se ha cerrado",
       "subtext": "We have opened the first round, which is for retail investors. The next rounds will be for large investment companies only!",
       "bonuses": "Investment Bonuses",
       "investment1": "From 2,200 USD, you will receive GARA Coin worth 50% of your investment.",
@@ -744,7 +745,7 @@
         },
         "question4": {
           "text": "What is the intended value of Coingarage s.r.o.?",
-          "answer": "The intended value of Coingarage s.r.o. is set at USD 10 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
+          "answer": "The intended value of Coingarage s.r.o. is set at USD 2.4 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
         },
         "question5": {
           "text": "What is Coingarage Finance s.r.o.?",

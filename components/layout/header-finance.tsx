@@ -12,8 +12,9 @@ import { useTranslations } from "next-intl"
 import LocaleSwitcher from "@/components/layout/locale-switch"
 import { MenuFinance } from "@/components/layout/menu-finance"
 
-export default function HeaderFinance() {
-  const t = useTranslations("Menu")
+export default function HeaderFinance({ locale }: { locale: string }) {
+  const t = useTranslations("finance")
+  const tMenu = useTranslations("Menu")
   const scrollPosition = useScrollPosition()
   const [scrolledVariant, setScrolledVariant] = useState(false)
 
@@ -43,11 +44,11 @@ export default function HeaderFinance() {
         <div className="flex h-full items-center justify-end">
           <div className="hidden xl:block">
             <div className="flex gap-2">
-              <Button variant="ghost" className={cn("text-sm")} asChild>
-                <a href="https://app.coingarage-finance.com/accounts/login">{t("login")}</a>
+              <Button variant="ghost" size="default" asChild>
+                <a href={`https://coingarage.io/${locale}`}>{t("main.exchangeBtn")}</a>
               </Button>
-              <Button className="mr-2 text-center text-sm leading-none" asChild>
-                <a href="https://app.coingarage-finance.com/accounts/signup">{t("becomeAShareholder")}</a>
+              <Button variant="default" className={cn("text-sm mr-2")} asChild>
+                <a href="https://app.coingarage-finance.com/accounts/login">{tMenu("login")}</a>
               </Button>
               <ModeToggle />
               <LocaleSwitcher isFinance={true} />

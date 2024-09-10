@@ -45,9 +45,9 @@ export default function Home({ params: { locale } }: { params: { locale: string 
               <Button variant="default" size="lg" className="text-md w-full sm:w-max" asChild>
                 <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
               </Button>
-              <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
+              {/* <Button variant="outlinePrimary" size="lg" className="text-md w-full font-bold sm:w-max" asChild>
                 <a href="https://coingarage-finance.com">{t("becomeAShareholder")}</a>
-              </Button>
+              </Button> */}
             </div>
             <div className="mt-4 inline-flex justify-center">
               <RegistrationHelp />

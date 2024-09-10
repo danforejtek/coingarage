@@ -153,7 +153,8 @@
       "privacyPolicy": "Politica sulla Privacy",
       "cookiePolicy": "Politica sui Cookie",
       "sportTradingTerms": "Termini del mercato spot",
-      "btcSavingPlanTerms": "Termini del Piano di Risparmio BTC"
+      "btcSavingPlanTerms": "Termini del Piano di Risparmio BTC",
+      "garaStakeTerms": "Termini del GARA Stake"
     }
   },
   "Contact": {
@@ -628,7 +629,7 @@
       "ps": "<bold>PS:</bold> Nonostante le critiche di Jamie Dimon a Bitcoin, la posizione di JPMorgan è cambiata, con la banca ora coinvolta nelle criptovalute e nella tecnologia blockchain. Hanno persino sviluppato il proprio sistema di pagamento basato su blockchain chiamato JPM Coin."
     },
     "oppurtunities": {
-      "header": "Opportunità di Investimento Attuali da 500 USD",
+      "header": "L'opportunità di investimento è stata chiusa",
       "subtext": "Abbiamo aperto il primo round, che è per investitori al dettaglio. I prossimi round saranno solo per grandi società di investimento!",
       "bonuses": "Bonus di Investimento",
       "investment1": "Da 2.200 USD, riceverai GARA Coin per il 50% del tuo investimento.",
@@ -741,7 +742,7 @@
         },
         "question4": {
           "text": "Qual è il valore previsto di Coingarage s.r.o.?",
-          "answer": "Il valore previsto di Coingarage s.r.o. è fissato a 10 miliardi di USD entro la fine del 2030. Il calcolo del valore della società si basa non solo sul valore degli asset intangibili, ma utilizziamo anche l'EBITDA riconosciuto a livello internazionale moltiplicato per un moltiplicatore di attrattività e un moltiplicatore competitivo. Allo stesso tempo, ci basiamo su dati ufficiali di valutazione di exchange concorrenti, tenendo conto di indicatori chiave come il numero di utenti registrati e i volumi di scambio."
+          "answer": "Il valore previsto di Coingarage s.r.o. è fissato a 2.4 miliardi di USD entro la fine del 2030. Il calcolo del valore della società si basa non solo sul valore degli asset intangibili, ma utilizziamo anche l'EBITDA riconosciuto a livello internazionale moltiplicato per un moltiplicatore di attrattività e un moltiplicatore competitivo. Allo stesso tempo, ci basiamo su dati ufficiali di valutazione di exchange concorrenti, tenendo conto di indicatori chiave come il numero di utenti registrati e i volumi di scambio."
         },
         "question5": {
           "text": "Che cos'è Coingarage Finance s.r.o.?",
