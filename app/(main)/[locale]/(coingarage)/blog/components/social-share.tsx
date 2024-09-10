@@ -36,7 +36,7 @@ export const SocialShare = ({ title }: SocialShareProps) => {
   return (
     <div className="mt-24 flex flex-row flex-wrap items-center gap-4 rounded-md border border-tertiary bg-tertiary/10 p-4 md:justify-center">
       <div className="w-full text-center md:w-fit md:text-start">Share shis article:</div>
-      <div className="flex w-full flex-row flex-wrap items-center justify-center gap-4 md:w-fit md:justify-start">
+      <div className="flex w-full flex-row flex-wrap items-center justify-center gap-2 md:w-fit md:justify-start md:gap-4">
         <SocialShareButton social="facebook" url={url} title={title} theme={resolvedTheme} />
         <SocialShareButton social="x" url={url} title={title} theme={resolvedTheme} />
         <SocialShareButton social="telegram" url={url} title={title} theme={resolvedTheme} />
