@@ -180,12 +180,6 @@ export const navItems: NavItem[] = [
         href: "/earn",
         icon: "affiliate",
       },
-      // {
-      //   title: "Stake",
-      //   key: "stake",
-      //   href: "/earn/staking",
-      //   icon: "stake",
-      // },
     ],
   },
   {
