@@ -2,9 +2,28 @@
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { SocialShareButton } from "@/app/(main)/[locale]/(coingarage)/blog/components/social-share-button"
+import { Button } from "@/components/ui/button"
+import { Share2Icon } from "lucide-react"
 
 type SocialShareProps = {
   title: string
+}
+
+const handleShareButton = ({ url, title }: { url: string; title: string }) => {
+  if (navigator.share) {
+    console.log("Congrats! Your browser supports Web Share API")
+    navigator
+      .share({
+        url: url,
+        title: title,
+      })
+      .then(() => {
+        console.log("Sharing successfull")
+      })
+      .catch(() => {
+        console.log("Sharing failed")
+      })
+  }
 }
 
 export const SocialShare = ({ title }: SocialShareProps) => {
@@ -22,6 +41,13 @@ export const SocialShare = ({ title }: SocialShareProps) => {
         <SocialShareButton social="x" url={url} title={title} theme={resolvedTheme} />
         <SocialShareButton social="telegram" url={url} title={title} theme={resolvedTheme} />
         <SocialShareButton social="linkedin" url={url} title={title} theme={resolvedTheme} />
+        <Button
+          variant="ghost"
+          onClick={() => handleShareButton({ url, title })}
+          className="border border-transparent hover:border-primary hover:bg-primary/10 hover:shadow-md hover:shadow-primary"
+        >
+          <Share2Icon className="size-6" />
+        </Button>
       </div>
     </div>
   )
