@@ -6,6 +6,7 @@ import { unstable_setRequestLocale } from "next-intl/server"
 import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
 import { getArticle, getArticleSlugs, getArtileMetadata } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
+import { SocialShare } from "@/app/(main)/[locale]/(coingarage)/blog/components/social-share"
 
 type Article = {
   heading: string
@@ -73,7 +74,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
       <div className="mt-10">
         <BlockRendererClient content={content} />
       </div>
-      <div className="ml-4 mt-6 hidden list-inside list-decimal pl-4"></div>
+      <SocialShare title={title} />
     </div>
   )
 }
