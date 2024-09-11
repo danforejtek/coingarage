@@ -46,9 +46,10 @@ export default async function Page({ params }: { params: { slug: string; locale:
   unstable_setRequestLocale(locale)
   const data: Article = await getArticle({ params })
   if (!data?.attributes?.title) return <>Not found</>
-  const { title, perex, image, date_created, author, content } = data?.attributes
+  const { title, perex, image, date_created, author, content, seo } = data?.attributes
   const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
+  const metaTitle = seo?.metaTitle || title
 
   return (
     <div className="mt-12">
@@ -74,7 +75,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
       <div className="mt-10">
         <BlockRendererClient content={content} />
       </div>
-      <SocialShare title={title} />
+      <SocialShare title={metaTitle} />
     </div>
   )
 }

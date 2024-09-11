@@ -28,14 +28,17 @@ export const getArticleSlugs = async ({ params }: { params: { locale: string } }
 export const getArticle = async ({ params }: { params: { slug: string; locale: string } }) => {
   const { slug, locale } = params
   const _locale = locale === "cs" ? "cs" : "en"
-  const response = await fetch(`${API_URL}/api/articles?locale=${_locale}&populate=*&filters[slug][$eq]=${slug}`, {
-    headers: {
-      Authorization: `Bearer ${API_TOKEN}`,
-    },
-    next: {
-      revalidate: 43200,
-    },
-  })
+  const response = await fetch(
+    `${API_URL}/api/articles?locale=${_locale}&populate[0]=image&populate[1]=author&populate[2]=seo.*&filters[slug][$eq]=${slug}`,
+    {
+      headers: {
+        Authorization: `Bearer ${API_TOKEN}`,
+      },
+      next: {
+        revalidate: 43200,
+      },
+    }
+  )
   const responseData = await response.json()
   const data = responseData?.data
   return data[0]
@@ -49,7 +52,7 @@ export const getArtileMetadata = async ({
   const { slug, locale } = params
   const _locale = locale === "cs" ? "cs" : "en"
   const response = await fetch(
-    `${API_URL}/api/articles?fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&filters[slug][$eq]=${slug}&locale=${_locale}`,
+    `${API_URL}/api/articles?fields[0]=title&fields[1]=date_created&fields[2]=perex&populate[0]=author&populate[1]=image&populate[2]=seo.*&populate[3]=seo.metaSocial&populate[4]=seo.metaImage&populate[5]=seo.metaSocial.image&filters[slug][$eq]=${slug}&locale=${_locale}`,
     {
       headers: {
         Authorization: `Bearer ${API_TOKEN}`,
@@ -65,14 +68,30 @@ export const getArtileMetadata = async ({
   const { title, perex, image, author } = data[0]?.attributes
   const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
+  const seo = data[0]?.attributes?.seo
+  const metaTitle = seo?.metaTitle || title
+  const metaDescription = seo?.metaDescription || perex
+  const metaImage = seo?.metaImage?.data?.[0]?.attributes?.url || imageSrc
+  const metaSocial = seo?.metaSocial
+  const metaTwitter = metaSocial.find((item) => item?.socialNetwork === "Twitter") || null
+  const twitter = {
+    card: "summary_largemetaImage",
+    title: metaTwitter?.title || metaTitle,
+    description: metaTwitter?.description || metaDescription,
+    siteId: "1582689248574115841",
+    creator: "@Coingaragesro",
+    creatorId: "1582689248574115841",
+    images: metaTwitter?.data?.[0]?.attributes?.url || metaImage,
+  }
 
   return {
-    title: title,
-    description: perex,
+    title: metaTitle,
+    description: metaDescription,
     authors: [authorName],
     openGraph: {
-      images: [imageSrc],
+      images: [imageSrc || metaImage],
     },
+    twitter,
   }
 }
 
