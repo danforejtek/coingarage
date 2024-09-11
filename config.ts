@@ -15,6 +15,6 @@ export const metaLanguagePaths = {
   "de-DE": "/de",
   "es-ES": "/es",
   "it-IT": "/it",
-  "gr-GR": "/gr",
+  "el-GR": "/gr",
   "tr-TR": "/tr",
 }

@@ -18,8 +18,12 @@ import { Providers } from "@/components/layout/providers"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coingarage.io"),
+  title: {
+    template: "%s | Coingarage",
+    default: "Coingarage",
+  },
   alternates: {
-    canonical: "/",
+    canonical: "./",
     languages: metaLanguagePaths,
   },
 }
