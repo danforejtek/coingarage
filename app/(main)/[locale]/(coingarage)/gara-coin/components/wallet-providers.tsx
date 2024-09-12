@@ -2,14 +2,18 @@
 
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit"
 import { ReactNode } from "react"
-import { WagmiProvider, type Locale } from "wagmi"
-import { mainnet, polygon, optimism, arbitrum, base } from "wagmi/chains"
+import { WagmiProvider, cookieStorage, createConfig, createStorage, http, type Locale } from "wagmi"
+import { polygon, mainnet } from "wagmi/chains"
 
 const config = getDefaultConfig({
   appName: "Coingarage",
   projectId: process.env.NEXT_PUBLIC_CONNECT_WALLET_PROJECT_ID,
-  chains: [polygon],
+  chains: [polygon, mainnet],
   ssr: true, // If your dApp uses server side rendering (SSR)
+  logging: true, // Enable logging for debugging
+  storage: createStorage({
+    storage: cookieStorage,
+  }),
 })
 
 export const WalletProviders = ({ children, locale }: { children: ReactNode; locale: Locale }) => {

@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 import { ConnectButton } from "@rainbow-me/rainbowkit"
 import { useSDK, MetaMaskProvider } from "@metamask/sdk-react"
@@ -10,26 +11,54 @@ import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import { formatAddress } from "@/lib/utils"
-import { useState } from "react"
+import { useAccount, useBalance, useSendTransaction, useWaitForTransactionReceipt } from "wagmi"
+import { parseEther } from "viem"
+import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm, useWatch } from "react-hook-form"
+
+const formSchema = z.object({
+  to: z.string().refine((value) => isAddress(value), {
+    message: "Invalid Address",
+  }),
+  value: z.string(),
+})
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
-  // const { sdk, connected, connecting, account, chainId } = useSDK()
+  const { address } = useAccount()
+  const { data: balance } = useBalance({ address })
+  const { sendTransaction, data: hash } = useSendTransaction()
+  const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
+    hash,
+  })
 
-  // const connect = async () => {
-  //   try {
-  //     const address = await sdk?.connect()
-  //     console.log(address)
-  //   } catch (err) {
-  //     console.warn("failed to connect..", err)
-  //   }
-  // }
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      to: "",
+      value: "",
+    },
+  })
 
-  // const disconnect = () => {
-  //   if (sdk) {
-  //     sdk.terminate()
-  //   }
-  // }
+  const value = useWatch({
+    control: form.control,
+    name: "value",
+  })
+
+  useEffect(() => {
+    const isInsufficientBalance = balance && balance?.value < parseEther(value)
+
+    if (isInsufficientBalance) {
+      form.setError("value", { message: "Insufficient balance" })
+    } else {
+      form.clearErrors("value")
+    }
+  }, [value, balance, form])
+
+  function onSubmit({ to, value }: z.infer<typeof formSchema>) {
+    sendTransaction({ to: to as `0x${string}`, value: parseEther(value) })
+  }
 
   return (
     <section className="max-w-[480px] flex-1 rounded-2xl bg-background p-6 shadow-md">
@@ -59,11 +88,17 @@ export function BuyGara() {
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
-      <div>
-        <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
-        <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
-      </div>
-      <ConnectButton label={t("btnConnectWallet")} />
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <div>
+          <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
+          <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
+        </div>
+        <div className="mt-8 flex flex-col gap-4">
+          <ConnectButton label={t("btnConnectWallet")} />
+          <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
+        </div>
+        <div>{address}</div>
+      </form>
       {/* <div className="mt-8 grid grid-cols-2 justify-between gap-4">
         {!connected ? (
           <Button variant="default" disabled={connecting} onClick={connect}>
