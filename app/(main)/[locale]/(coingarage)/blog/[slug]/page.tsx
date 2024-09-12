@@ -65,7 +65,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
       </div>
       {/* <p className="mt-4 font-heading">{perex}</p> */}
       <div className="my-4 h-[1px] w-full bg-neutral-200 dark:bg-neutral-800"></div>
-      <div className="relative mt-12 h-[302px] w-full">
+      <div className="aspect-2/1 relative mt-12 w-full">
         {imageSrc.startsWith("http") ? (
           <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
         ) : (
