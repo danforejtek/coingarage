@@ -73,7 +73,7 @@ export const getArtileMetadata = async ({
   const metaDescription = seo?.metaDescription || perex
   const metaImage = seo?.metaImage?.data?.[0]?.attributes?.url || imageSrc
   const metaSocial = seo?.metaSocial
-  const metaTwitter = metaSocial.find((item) => item?.socialNetwork === "Twitter") || null
+  const metaTwitter = (metaSocial && metaSocial?.find((item) => item?.socialNetwork === "Twitter")) || null
   const twitter = {
     card: "summary_largemetaImage",
     title: metaTwitter?.title || metaTitle,
