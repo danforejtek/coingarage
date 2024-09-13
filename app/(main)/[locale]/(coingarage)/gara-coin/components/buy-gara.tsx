@@ -15,12 +15,17 @@ import { useAccount, useBalance, useSendTransaction, useWaitForTransactionReceip
 import { parseEther } from "viem"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm, useWatch } from "react-hook-form"
+import { Form, useForm, useWatch } from "react-hook-form"
+import { watch } from "fs"
+import { ArrowDown } from "lucide-react"
+
+const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
 
 const formSchema = z.object({
   to: z.string().refine((value) => isAddress(value), {
     message: "Invalid Address",
   }),
+  garaEstimate: z.string(),
   value: z.string(),
 })
 
@@ -34,30 +39,46 @@ export function BuyGara() {
   })
 
   const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+    mode: "onSubmit",
+    // resolver: zodResolver(formSchema),
     defaultValues: {
+      garaEstimate: usdcToGara(10).toString(),
+      value: "10",
       to: "",
-      value: "",
     },
   })
+
+  const { register, control, handleSubmit, setValue, watch } = form
 
   const value = useWatch({
     control: form.control,
     name: "value",
   })
 
+  console.log(watch())
+
   useEffect(() => {
-    const isInsufficientBalance = balance && balance?.value < parseEther(value)
+    const garaEstimate = usdcToGara(Number(value))
+    setValue("garaEstimate", garaEstimate.toString())
+  }, [value])
 
-    if (isInsufficientBalance) {
-      form.setError("value", { message: "Insufficient balance" })
-    } else {
-      form.clearErrors("value")
-    }
-  }, [value, balance, form])
+  useEffect(() => {
+    setValue("to", address)
+  }, [address])
 
-  function onSubmit({ to, value }: z.infer<typeof formSchema>) {
-    sendTransaction({ to: to as `0x${string}`, value: parseEther(value) })
+  // useEffect(() => {
+  //   const isInsufficientBalance = balance && balance?.value < parseEther(value)
+
+  //   if (isInsufficientBalance) {
+  //     form.setError("value", { message: "Insufficient balance" })
+  //   } else {
+  //     form.clearErrors("value")
+  //   }
+  // }, [value, balance, form])
+
+  function onSubmit(data: z.infer<typeof formSchema>) {
+    console.log(data)
+    // sendTransaction({ to: to as `0x${string}`, value: parseEther(value) })
   }
 
   return (
@@ -88,16 +109,29 @@ export function BuyGara() {
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <CoinInput coin="GARA" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
-          <CoinInput coin="USDC" name="buy" type="number" placeholder="0" className="mt-4 w-full" />
+          <CoinInput coin="USDC" type="number" placeholder="0" {...register("value")} />
+          <div className="my-4 flex flex-row justify-center">
+            <ArrowDown className="stroke-black dark:stroke-white" />
+          </div>
+          <CoinInput
+            coin="GARA"
+            type="number"
+            placeholder="0"
+            className="cursor-disabled pointer-events-none text-neutral-700 dark:text-neutral-400"
+            {...register("garaEstimate")}
+            readOnly
+          />
+          <input type="hidden" {...register("to")} />
         </div>
         <div className="mt-8 flex flex-col gap-4">
           <ConnectButton label={t("btnConnectWallet")} />
-          <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
+          <Button type="submit" variant="outlinePrimary">
+            {t("btnBuyGARA")}
+          </Button>
         </div>
-        <div>{address}</div>
+        {/* <div>{address}</div> */}
       </form>
       {/* <div className="mt-8 grid grid-cols-2 justify-between gap-4">
         {!connected ? (
