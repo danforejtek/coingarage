@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ethers } from "ethers"
 import {
   isAddress,
   parseEther,
@@ -13,14 +12,7 @@ import {
   getAddress,
   parseAbi,
 } from "viem"
-import {
-  useAccount,
-  useBalance,
-  // useSendTransaction,
-  // useWaitForTransactionReceipt,
-  // usePrepareTransactionRequest,
-  useWalletClient,
-} from "wagmi"
+import { useAccount, useBalance, useWalletClient } from "wagmi"
 import { ConnectButton } from "@rainbow-me/rainbowkit"
 
 import { useTranslations } from "next-intl"
@@ -36,10 +28,12 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, useForm, useWatch } from "react-hook-form"
 import { ArrowDown } from "lucide-react"
 import { polygon } from "viem/chains"
+import { usdcToGara } from "@/lib/api/utils"
+import { BigNumberish, HexAddress } from "@/types"
 
 type Address = `0x${string}`
-const USDC_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
-// const USDC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
+// const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
+const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
 // const USDC_ABI = [
 //   {
 //     name: "transfer",
@@ -55,18 +49,28 @@ const USDC_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0
 
 const USDC_ABI = parseAbi([
   "function transfer(address to, uint256 value) external returns (bool)",
-  "function balanceOf(address account) public view returns (uint256)",
+  // "function balanceOf(address account) public view returns (uint256)",
 ])
 
 type SendUSDCProps = {
   senderAddress: Address
   recipientAddress: Address
-  amount: ethers.BigNumberish
+  amount: BigNumberish
   walletClient: ReturnType<typeof createWalletClient>
 }
 
+type SendUSDCResponse = {
+  txHash: HexAddress
+  receipt: object
+}
+
 // Function to send USDC using viem
-const sendUSDC = async ({ senderAddress, recipientAddress, amount, walletClient }: SendUSDCProps) => {
+const sendUSDC = async ({
+  senderAddress,
+  recipientAddress,
+  amount,
+  walletClient,
+}: SendUSDCProps): Promise<SendUSDCResponse> => {
   try {
     const checksummedRecipientAddress = getAddress(recipientAddress)
     // Initialize the public client for interacting with the Polygon network
@@ -78,35 +82,12 @@ const sendUSDC = async ({ senderAddress, recipientAddress, amount, walletClient 
     // Convert the amount to the correct decimal (USDC has 6 decimals)
     const amountInWei = parseUnits(amount.toString(), 6) // Converts amount to 6 decimals
 
-    // Encode the function data for the transfer
-    const data = encodeFunctionData({
+    const hash = await walletClient.writeContract({
+      address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // USDC contract address
       abi: USDC_ABI,
       functionName: "transfer",
       args: [checksummedRecipientAddress, amountInWei],
-    })
-
-    // Estimate gas required for the transaction
-    const estimatedGas = await client.estimateGas({
-      to: checksummedRecipientAddress,
-      data,
-    })
-    console.log("Estimated gas:", estimatedGas.toString())
-
-    // Get current gas price (may need to query a separate provider)
-    const gasPrice = await client.getGasPrice()
-    console.log("Current gas price:", gasPrice.toString())
-    // Add a 10% buffer to the estimated gas using bigint arithmetic
-    const gasPriceBigInt = BigInt(gasPrice.toString())
-    const gasPriceWithBuffer = (gasPriceBigInt * BigInt(110)) / BigInt(100) // Adding 10% buffer
-    console.log("Gas limit with 10% buffer:", gasPriceWithBuffer.toString())
-
-    // Send the transaction using the walletClient
-    const hash = await walletClient.sendTransaction({
-      to: checksummedRecipientAddress,
-      data,
       account: senderAddress,
-      gasLimit: estimatedGas + BigInt(50000),
-      gasPrice: gasPriceWithBuffer,
       chain: polygon, // Add the chain property
     })
 
@@ -115,13 +96,14 @@ const sendUSDC = async ({ senderAddress, recipientAddress, amount, walletClient 
     // Wait for the transaction to be mined (optional)
     const receipt = await client.waitForTransactionReceipt({ hash })
     console.log("Transaction confirmed:", receipt)
-    return receipt
+    return {
+      txHash: hash,
+      receipt,
+    }
   } catch (error) {
     console.error("Error sending USDC:", error)
   }
 }
-
-const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
 
 const formSchema = z.object({
   to: z.string().refine((value) => isAddress(value), {
@@ -131,7 +113,7 @@ const formSchema = z.object({
     message: "Invalid Address",
   }),
   garaEstimate: z.string(),
-  value: z.string(),
+  amount: z.string(),
 })
 
 export function BuyGara() {
@@ -139,6 +121,7 @@ export function BuyGara() {
   const { address } = useAccount()
   const { data: balance } = useBalance({ address })
   const { data: walletClient } = useWalletClient()
+  // const { writeContractAsync } = useWriteContract()
 
   // const { sendTransaction, data: hash, isPending, error } = useSendTransaction()
   // const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
@@ -151,54 +134,63 @@ export function BuyGara() {
     // resolver: zodResolver(formSchema),
     defaultValues: {
       garaEstimate: usdcToGara(10).toString(),
-      value: "10",
-      to: USDC_CONTRACT_ADDRESS,
+      amount: "10",
+      to: COINGARAGE_CONTRACT_ADDRESS,
       from: address,
     },
   })
 
   const { register, control, handleSubmit, setValue, watch } = form
 
-  const value = useWatch({
+  const amount = useWatch({
     control: form.control,
-    name: "value",
+    name: "amount",
   })
 
-  // const result = usePrepareTransactionRequest({
-  //   chainId: polygon.id,
-  //   account: address,
-  //   to: USDC_CONTRACT_ADDRESS,
-  //   value: parseUnits(value, 6),
-  // })
-
   useEffect(() => {
-    const garaEstimate = usdcToGara(Number(value))
+    const garaEstimate = usdcToGara(Number(amount))
     setValue("garaEstimate", garaEstimate.toString())
-  }, [value])
+  }, [amount, form])
 
   useEffect(() => {
     setValue("from", address as `0x${string}`)
-  }, [address])
+  }, [address, form])
 
-  // useEffect(() => {
-  //   const isInsufficientBalance = balance && balance?.value < parseEther(value)
+  useEffect(() => {
+    const isInsufficientBalance = balance && balance?.value < parseEther(amount)
 
-  //   if (isInsufficientBalance) {
-  //     form.setError("value", { message: "Insufficient balance" })
-  //   } else {
-  //     form.clearErrors("value")
-  //   }
-  // }, [value, balance, form])
+    if (isInsufficientBalance) {
+      form.setError("amount", { message: "Insufficient balance" })
+    } else {
+      form.clearErrors("amount")
+    }
+  }, [amount, balance, form])
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     console.log(data)
-    const { to, value } = data
+    const { to, amount } = data
     const response = await sendUSDC({
-      amount: value,
+      amount: amount,
       recipientAddress: to,
       senderAddress: address,
       walletClient,
     })
+    if (!response.txHash) return
+
+    const garaTransactionResponse = await fetch("/api/gara/exchange", {
+      method: "POST",
+      body: JSON.stringify({
+        txHash: response.txHash,
+        from: address,
+        to: to,
+        amount,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+
+    console.log("GARA Transaction Response:", garaTransactionResponse)
   }
 
   return (
@@ -231,7 +223,7 @@ export function BuyGara() {
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <CoinInput coin="USDC" type="number" placeholder="0" {...register("value")} />
+          <CoinInput coin="USDC" type="number" placeholder="0.000" {...register("amount")} />
           <div className="my-4 flex flex-row justify-center">
             <ArrowDown className="stroke-black dark:stroke-white" />
           </div>
