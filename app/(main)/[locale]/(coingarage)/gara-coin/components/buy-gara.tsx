@@ -1,9 +1,29 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useTranslations } from "next-intl"
+import { ethers } from "ethers"
+import {
+  isAddress,
+  parseEther,
+  parseUnits,
+  createPublicClient,
+  createWalletClient,
+  http,
+  encodeFunctionData,
+  getAddress,
+  parseAbi,
+} from "viem"
+import {
+  useAccount,
+  useBalance,
+  // useSendTransaction,
+  // useWaitForTransactionReceipt,
+  // usePrepareTransactionRequest,
+  useWalletClient,
+} from "wagmi"
 import { ConnectButton } from "@rainbow-me/rainbowkit"
-import { useSDK, MetaMaskProvider } from "@metamask/sdk-react"
+
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { CoinInput } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/coin-input"
 import { Button } from "@/components/ui/button"
@@ -11,18 +31,103 @@ import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import { formatAddress } from "@/lib/utils"
-import { useAccount, useBalance, useSendTransaction, useWaitForTransactionReceipt } from "wagmi"
-import { parseEther } from "viem"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, useForm, useWatch } from "react-hook-form"
-import { watch } from "fs"
 import { ArrowDown } from "lucide-react"
+import { polygon } from "viem/chains"
+
+type Address = `0x${string}`
+const USDC_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
+// const USDC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
+// const USDC_ABI = [
+//   {
+//     name: "transfer",
+//     type: "function",
+//     stateMutability: "nonpayable",
+//     inputs: [
+//       { name: "to", type: "address" },
+//       { name: "value", type: "uint256" },
+//     ],
+//     outputs: [{ name: "", type: "bool" }],
+//   },
+// ]
+
+const USDC_ABI = parseAbi([
+  "function transfer(address to, uint256 value) external returns (bool)",
+  "function balanceOf(address account) public view returns (uint256)",
+])
+
+type SendUSDCProps = {
+  senderAddress: Address
+  recipientAddress: Address
+  amount: ethers.BigNumberish
+  walletClient: ReturnType<typeof createWalletClient>
+}
+
+// Function to send USDC using viem
+const sendUSDC = async ({ senderAddress, recipientAddress, amount, walletClient }: SendUSDCProps) => {
+  try {
+    const checksummedRecipientAddress = getAddress(recipientAddress)
+    // Initialize the public client for interacting with the Polygon network
+    const client = createPublicClient({
+      chain: polygon,
+      transport: http(),
+    })
+
+    // Convert the amount to the correct decimal (USDC has 6 decimals)
+    const amountInWei = parseUnits(amount.toString(), 6) // Converts amount to 6 decimals
+
+    // Encode the function data for the transfer
+    const data = encodeFunctionData({
+      abi: USDC_ABI,
+      functionName: "transfer",
+      args: [checksummedRecipientAddress, amountInWei],
+    })
+
+    // Estimate gas required for the transaction
+    const estimatedGas = await client.estimateGas({
+      to: checksummedRecipientAddress,
+      data,
+    })
+    console.log("Estimated gas:", estimatedGas.toString())
+
+    // Get current gas price (may need to query a separate provider)
+    const gasPrice = await client.getGasPrice()
+    console.log("Current gas price:", gasPrice.toString())
+    // Add a 10% buffer to the estimated gas using bigint arithmetic
+    const gasPriceBigInt = BigInt(gasPrice.toString())
+    const gasPriceWithBuffer = (gasPriceBigInt * BigInt(110)) / BigInt(100) // Adding 10% buffer
+    console.log("Gas limit with 10% buffer:", gasPriceWithBuffer.toString())
+
+    // Send the transaction using the walletClient
+    const hash = await walletClient.sendTransaction({
+      to: checksummedRecipientAddress,
+      data,
+      account: senderAddress,
+      gasLimit: estimatedGas + BigInt(50000),
+      gasPrice: gasPriceWithBuffer,
+      chain: polygon, // Add the chain property
+    })
+
+    console.log("Transaction sent:", hash)
+
+    // Wait for the transaction to be mined (optional)
+    const receipt = await client.waitForTransactionReceipt({ hash })
+    console.log("Transaction confirmed:", receipt)
+    return receipt
+  } catch (error) {
+    console.error("Error sending USDC:", error)
+  }
+}
 
 const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
 
 const formSchema = z.object({
   to: z.string().refine((value) => isAddress(value), {
+    message: "Invalid Address",
+  }),
+  from: z.string().refine((value) => isAddress(value), {
     message: "Invalid Address",
   }),
   garaEstimate: z.string(),
@@ -33,10 +138,13 @@ export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
   const { address } = useAccount()
   const { data: balance } = useBalance({ address })
-  const { sendTransaction, data: hash } = useSendTransaction()
-  const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
-    hash,
-  })
+  const { data: walletClient } = useWalletClient()
+
+  // const { sendTransaction, data: hash, isPending, error } = useSendTransaction()
+  // const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
+  //   hash,
+  // })
+  console.log({ balance })
 
   const form = useForm<z.infer<typeof formSchema>>({
     mode: "onSubmit",
@@ -44,7 +152,8 @@ export function BuyGara() {
     defaultValues: {
       garaEstimate: usdcToGara(10).toString(),
       value: "10",
-      to: "",
+      to: USDC_CONTRACT_ADDRESS,
+      from: address,
     },
   })
 
@@ -55,7 +164,12 @@ export function BuyGara() {
     name: "value",
   })
 
-  console.log(watch())
+  // const result = usePrepareTransactionRequest({
+  //   chainId: polygon.id,
+  //   account: address,
+  //   to: USDC_CONTRACT_ADDRESS,
+  //   value: parseUnits(value, 6),
+  // })
 
   useEffect(() => {
     const garaEstimate = usdcToGara(Number(value))
@@ -63,7 +177,7 @@ export function BuyGara() {
   }, [value])
 
   useEffect(() => {
-    setValue("to", address)
+    setValue("from", address as `0x${string}`)
   }, [address])
 
   // useEffect(() => {
@@ -76,9 +190,15 @@ export function BuyGara() {
   //   }
   // }, [value, balance, form])
 
-  function onSubmit(data: z.infer<typeof formSchema>) {
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
     console.log(data)
-    // sendTransaction({ to: to as `0x${string}`, value: parseEther(value) })
+    const { to, value } = data
+    const response = await sendUSDC({
+      amount: value,
+      recipientAddress: to,
+      senderAddress: address,
+      walletClient,
+    })
   }
 
   return (
@@ -123,6 +243,7 @@ export function BuyGara() {
             {...register("garaEstimate")}
             readOnly
           />
+          <input type="hidden" {...register("from")} />
           <input type="hidden" {...register("to")} />
         </div>
         <div className="mt-8 flex flex-col gap-4">
@@ -133,30 +254,6 @@ export function BuyGara() {
         </div>
         {/* <div>{address}</div> */}
       </form>
-      {/* <div className="mt-8 grid grid-cols-2 justify-between gap-4">
-        {!connected ? (
-          <Button variant="default" disabled={connecting} onClick={connect}>
-            {t("btnConnectWallet")}
-          </Button>
-        ) : (
-          <Button
-            variant="default"
-            disabled={connecting}
-            onClick={disconnect}
-            data-connected={connected}
-            className="group"
-          >
-            <span data-connected={connected} className="hidden group-data-[connected]:group-hover:block">
-              Disconnect
-            </span>
-            <span data-connected={connected} className="block group-data-[connected]:group-hover:hidden">
-              {formatAddress(account)}
-            </span>
-          </Button>
-        )}
-
-        <Button variant="outlinePrimary">{t("btnBuyGARA")}</Button>
-      </div> */}
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
           <a
