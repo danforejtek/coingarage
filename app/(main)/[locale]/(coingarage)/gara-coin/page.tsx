@@ -248,7 +248,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("alocation.header")}</h2>
         <AlocationChart />
         <p className="mt-12 w-full text-center font-heading text-sm font-bold">{t("alocation.limit")}</p>
-        <div className="mx-4 mt-20 bg-tertiary/10 p-12 dark:bg-tertiary/20 lg:mx-10">
+        <div className="mx-4 mt-20 bg-tertiary/10 p-6 dark:bg-tertiary/20 md:p-12 lg:mx-10">
           <div className="flex flex-row justify-between gap-6">
             <div>
               <h2 className="mb-6 hidden font-heading text-3xl font-bold lg:block">
@@ -263,10 +263,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
               <Present className="fill-black dark:fill-white" width="100" height="104" />
             </div>
-            <div className="relative flex min-w-[100px] lg:hidden">
-              {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
+            {/* <div className="relative flex min-w-[100px] lg:hidden">
               <Present className="fill-black dark:fill-white" width="100" height="104" />
-            </div>
+            </div> */}
           </div>
           <p className="mb-6 pt-6 text-justify text-sm lg:pt-0 lg:text-left">{t("release.text")}</p>
           <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row xl:grid">
@@ -320,8 +319,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </p>
             </div>
           </div>
-          <div className="flex justify-end px-4">
-            <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
+          <div className="mx-4 md:flex md:justify-end">
+            <div className="flex w-full max-w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <PolygonAddressCopyToClipboard />
@@ -350,7 +349,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             {t("GARArunning.text")}
           </p>
         </div>
-        <div className="grid w-full grid-flow-row gap-8 px-10 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
+        <div className="grid w-full grid-flow-row gap-8 px-2 md:grid-cols-2 md:px-10 lg:grid-cols-4 lg:px-0">
           <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box1.header")}</h5>

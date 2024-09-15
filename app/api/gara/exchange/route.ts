@@ -4,12 +4,12 @@ import { createPublicClient, createWalletClient, http } from "viem"
 import { polygon } from "viem/chains"
 import { parseUnits } from "viem/utils"
 import { HexAddress } from "@/types"
-import { validateTransaction } from "@/lib/api/utils"
+import { getChainByName, validateTransaction } from "@/lib/api/utils"
 import { usdcToGara } from "@/lib/api/utils"
 
 // Infura API key and URL
-const privateKey = process.env.NEXT_PUBLIC_INFURA_API_KEY
-const infuraUrl = process.env.NEXT_PUBLIC_INFURA_URL
+const privateKey = process.env.INFURA_API_KEY
+const infuraUrl = process.env.INFURA_URL
 
 // GARA token contract address and ABI
 const garaTokenContractAddress = (process.env.NEXT_PUBLIC_GARA_CONTRACT_ADDRESS || "") as HexAddress
@@ -25,13 +25,19 @@ const garaAbi = [
   },
 ]
 
+const allowedChains = ["Polygon", "Ethereum", "BNB Smart Chain"] // Add more chains if needed
+
 export async function POST(req: NextRequest) {
   try {
     // amount in USDC
-    const { txHash, from, to, amount } = await req.json()
+    const { txHash, from, to, amount, chain } = await req.json()
 
+    if (!allowedChains.includes(chain)) {
+      return NextResponse.json({ success: false, message: "Invalid chain" }, { status: 400 })
+    }
     // Validate the transaction
     const validation = await validateTransaction({
+      chain,
       txHash,
       from,
       to,
@@ -64,7 +70,6 @@ export async function POST(req: NextRequest) {
       chain: polygon,
       transport: http(infuraUrl),
     })
-    const publicClient = createPublicClient({ chain: polygon, transport: http() })
 
     // Writing to a contract using writeContract
     const garaTxHash = await walletClient.writeContract({
@@ -78,10 +83,11 @@ export async function POST(req: NextRequest) {
     console.log("Transaction hash:", garaTxHash)
 
     // Wait for the transaction to be mined (optional)
+    const publicClient = createPublicClient({ chain: polygon, transport: http() })
     const receipt = await publicClient.waitForTransactionReceipt({ hash: garaTxHash })
     console.log("Transaction confirmed:", receipt)
 
-    return NextResponse.json({ success: true, transactionHash: garaTxHash, status: receipt.status })
+    return NextResponse.json({ success: true, txHash: garaTxHash, status: receipt.status })
   } catch (error) {
     console.error("Error sending GARA token:", error)
     return NextResponse.json({ success: false, message: error?.message }, { status: 500 })

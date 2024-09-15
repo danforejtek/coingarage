@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { ClipboardCopy } from "lucide-react"
 import { useClipboard } from "@mantine/hooks"
 import { toast } from "sonner"
+import { formatAddress } from "@/lib/utils"
 
 export function PolygonAddressCopyToClipboard() {
   const clipboard = useClipboard({ timeout: 500 })
@@ -16,7 +17,7 @@ export function PolygonAddressCopyToClipboard() {
     <Button variant="ghost" onClick={handleClick}>
       <span className="inline-flex items-center gap-2 font-heading text-xs md:text-sm">
         <ClipboardCopy className="size-4 stroke-primary" />
-        0x0B258A4ECC4Ac7a15fEdb882DB5d13F6EF23B02F
+        {formatAddress("0x0B258A4ECC4Ac7a15fEdb882DB5d13F6EF23B02F", 20)}
       </span>
     </Button>
   )

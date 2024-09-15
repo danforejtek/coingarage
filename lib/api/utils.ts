@@ -1,8 +1,21 @@
+import { polygon, mainnet, bsc, type Chain } from "viem/chains"
 import { BigNumberish, HexAddress } from "@/types"
-import { createPublicClient, decodeFunctionData, http, parseUnits } from "viem"
-import { polygon } from "viem/chains"
+import { type Chain, createPublicClient, decodeFunctionData, http, parseUnits } from "viem"
 
 export const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
+
+export const getChainByName = (chain: string): Chain => {
+  switch (chain) {
+    case "Polygon":
+      return polygon
+    case "Ethereum":
+      return mainnet
+    case "BNB Smart Chain":
+      return bsc
+    default:
+      return polygon
+  }
+}
 
 // The ABI of the ERC-20 contract (relevant parts for the `transfer` function)
 const erc20Abi = [
@@ -27,11 +40,13 @@ function toLowerCase(address: string) {
 }
 
 export async function validateTransaction({
+  chain,
   txHash,
   from,
   to,
   amount,
 }: {
+  chain: string
   txHash: HexAddress
   from: HexAddress
   to: HexAddress
@@ -41,7 +56,9 @@ export async function validateTransaction({
     if (!validateTransactionHash(txHash)) {
       throw new Error("Invalid transaction hash")
     }
-    const publicClient = createPublicClient({ chain: polygon, transport: http() })
+    const _chain = getChainByName(chain)
+    console.log({ chain, _chain })
+    const publicClient = createPublicClient({ chain: _chain, transport: http() })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
     const transaction = await publicClient.getTransaction({ hash: txHash })
     const decoded = decodeFunctionData({

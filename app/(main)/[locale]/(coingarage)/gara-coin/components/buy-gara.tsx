@@ -12,8 +12,11 @@ import {
   getAddress,
   parseAbi,
 } from "viem"
+// @ts-ignore
 import { useAccount, useBalance, useWalletClient } from "wagmi"
-import { ConnectButton } from "@rainbow-me/rainbowkit"
+// @ts-ignore
+import { useAddRecentTransaction } from "@rainbow-me/rainbowkit"
+import { ConnectButton } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/connect-button"
 
 import { useTranslations } from "next-intl"
 import Image from "next/image"
@@ -30,22 +33,14 @@ import { ArrowDown } from "lucide-react"
 import { polygon } from "viem/chains"
 import { usdcToGara } from "@/lib/api/utils"
 import { BigNumberish, HexAddress } from "@/types"
+import { useGaraStore } from "@/lib/store/provider"
+import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-model"
+import { sendUsdc } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-usdc"
 
 type Address = `0x${string}`
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
-const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
-// const USDC_ABI = [
-//   {
-//     name: "transfer",
-//     type: "function",
-//     stateMutability: "nonpayable",
-//     inputs: [
-//       { name: "to", type: "address" },
-//       { name: "value", type: "uint256" },
-//     ],
-//     outputs: [{ name: "", type: "bool" }],
-//   },
-// ]
+const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
+const USDC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
 
 const USDC_ABI = parseAbi([
   "function transfer(address to, uint256 value) external returns (bool)",
@@ -53,10 +48,15 @@ const USDC_ABI = parseAbi([
 ])
 
 type SendUSDCProps = {
+  chain: any
   senderAddress: Address
   recipientAddress: Address
   amount: BigNumberish
   walletClient: ReturnType<typeof createWalletClient>
+  setTransactionStatus: (status: { process: string; status: string }) => void
+  setOutcomingTransaction: (transaction: { txHash?: HexAddress; done?: boolean; receipt?: any; error?: any }) => void
+  setIncomingTransaction: (transaction: { txHash?: HexAddress; done?: boolean; receipt?: any; error?: any }) => void
+  resetState: () => void
 }
 
 type SendUSDCResponse = {
@@ -65,45 +65,59 @@ type SendUSDCResponse = {
 }
 
 // Function to send USDC using viem
-const sendUSDC = async ({
-  senderAddress,
-  recipientAddress,
-  amount,
-  walletClient,
-}: SendUSDCProps): Promise<SendUSDCResponse> => {
-  try {
-    const checksummedRecipientAddress = getAddress(recipientAddress)
-    // Initialize the public client for interacting with the Polygon network
-    const client = createPublicClient({
-      chain: polygon,
-      transport: http(),
-    })
+// const sendUSDC = async ({
+//   chain,
+//   senderAddress,
+//   recipientAddress,
+//   amount,
+//   walletClient,
+//   setTransactionStatus,
+//   setOutcomingTransaction,
+//   setIncomingTransaction,
+//   resetState,
+// }: SendUSDCProps): Promise<SendUSDCResponse | undefined> => {
+//   try {
+//     const checksummedRecipientAddress = getAddress(recipientAddress)
+//     // Initialize the public client for interacting with the Polygon network
 
-    // Convert the amount to the correct decimal (USDC has 6 decimals)
-    const amountInWei = parseUnits(amount.toString(), 6) // Converts amount to 6 decimals
+//     const client = createPublicClient({
+//       chain: chain,
+//       transport: http(),
+//     })
 
-    const hash = await walletClient.writeContract({
-      address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // USDC contract address
-      abi: USDC_ABI,
-      functionName: "transfer",
-      args: [checksummedRecipientAddress, amountInWei],
-      account: senderAddress,
-      chain: polygon, // Add the chain property
-    })
+//     // Convert the amount to the correct decimal (USDC has 6 decimals)
+//     const amountInWei = parseUnits(amount.toString(), 6) // Converts amount to 6 decimals
 
-    console.log("Transaction sent:", hash)
+//     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
+//     const hash = await walletClient.writeContract({
+//       address: USDC_CONTRACT_ADDRESS, // USDC contract address
+//       abi: USDC_ABI,
+//       functionName: "transfer",
+//       args: [checksummedRecipientAddress, amountInWei],
+//       account: senderAddress,
+//       chain: chain,
+//     })
+//     console.log("Transaction sent:", hash)
+//     setTransactionStatus({ process: "sendPayment", status: "contractCreated" })
+//     setOutcomingTransaction({ txHash: hash })
 
-    // Wait for the transaction to be mined (optional)
-    const receipt = await client.waitForTransactionReceipt({ hash })
-    console.log("Transaction confirmed:", receipt)
-    return {
-      txHash: hash,
-      receipt,
-    }
-  } catch (error) {
-    console.error("Error sending USDC:", error)
-  }
-}
+//     // Wait for the transaction to be mined (optional)
+//     setTransactionStatus({ process: "sendPayment", status: "waitingForReceipt" })
+//     const receipt = await client.waitForTransactionReceipt({ hash })
+//     setTransactionStatus({ process: "sendPayment", status: "receiptReceived" })
+//     setOutcomingTransaction({ receipt, done: true })
+//     console.log("Transaction confirmed:", receipt)
+//     return {
+//       txHash: hash,
+//       receipt,
+//     }
+//   } catch (error) {
+//     setTransactionStatus({ process: "sendPayment", status: "transactionError" })
+//     setOutcomingTransaction({ error, done: true })
+//     setIncomingTransaction({ error, done: true })
+//     console.error("Error sending USDC:", error)
+//   }
+// }
 
 const formSchema = z.object({
   to: z.string().refine((value) => isAddress(value), {
@@ -118,29 +132,36 @@ const formSchema = z.object({
 
 export function BuyGara() {
   const t = useTranslations("GARA.main.buyGARA")
-  const { address } = useAccount()
+  const {
+    transactionStatus,
+    setTransactionStatus,
+    setOutcomingTransaction,
+    setIncomingTransaction,
+    reset: resetState,
+  } = useGaraStore((state) => state)
+  const [open, setOpen] = useState(false)
+  const toggleOpen = () => setOpen(!open)
+  const handleOnOpenChange = () => {
+    setOpen(!open)
+    resetState()
+  }
+  const { address, chain } = useAccount()
   const { data: balance } = useBalance({ address })
   const { data: walletClient } = useWalletClient()
-  // const { writeContractAsync } = useWriteContract()
-
-  // const { sendTransaction, data: hash, isPending, error } = useSendTransaction()
-  // const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
-  //   hash,
-  // })
-  console.log({ balance })
+  const addRecentTransaction = useAddRecentTransaction()
 
   const form = useForm<z.infer<typeof formSchema>>({
     mode: "onSubmit",
     // resolver: zodResolver(formSchema),
     defaultValues: {
       garaEstimate: usdcToGara(10).toString(),
-      amount: "10",
+      amount: "10.000",
       to: COINGARAGE_CONTRACT_ADDRESS,
       from: address,
     },
   })
 
-  const { register, control, handleSubmit, setValue, watch } = form
+  const { register, control, handleSubmit, setValue, watch, reset } = form
 
   const amount = useWatch({
     control: form.control,
@@ -149,7 +170,13 @@ export function BuyGara() {
 
   useEffect(() => {
     const garaEstimate = usdcToGara(Number(amount))
-    setValue("garaEstimate", garaEstimate.toString())
+    setValue(
+      "garaEstimate",
+      garaEstimate.toLocaleString(undefined, {
+        minimumFractionDigits: 3,
+        maximumFractionDigits: 3,
+      })
+    )
   }, [amount, form])
 
   useEffect(() => {
@@ -167,16 +194,36 @@ export function BuyGara() {
   }, [amount, balance, form])
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    console.log(data)
-    const { to, amount } = data
-    const response = await sendUSDC({
+    const { amount } = data
+    const to = COINGARAGE_CONTRACT_ADDRESS
+    if (!address || !walletClient) {
+      setTransactionStatus({ process: "sendPayment", status: "walletError" })
+      return
+      // handle state
+    }
+    handleOnOpenChange()
+    setTransactionStatus({ process: "sendPayment", status: "submitting" })
+    const response = await sendUsdc({
+      chain,
       amount: amount,
       recipientAddress: to,
       senderAddress: address,
       walletClient,
+      setTransactionStatus,
+      setOutcomingTransaction,
+      setIncomingTransaction,
+      resetState,
     })
-    if (!response.txHash) return
+    if (!response?.txHash) {
+      setTransactionStatus({ process: "sendPayment", status: "transactionError" })
+      return
+    }
+    addRecentTransaction({
+      hash: response.txHash,
+      description: "Exchange USDC to GARA",
+    })
 
+    setTransactionStatus({ process: "receivePayment", status: "pending" })
     const garaTransactionResponse = await fetch("/api/gara/exchange", {
       method: "POST",
       body: JSON.stringify({
@@ -184,17 +231,34 @@ export function BuyGara() {
         from: address,
         to: to,
         amount,
+        chain: chain?.name,
       }),
       headers: {
         "Content-Type": "application/json",
       },
     })
-
-    console.log("GARA Transaction Response:", garaTransactionResponse)
+    const responseData = await garaTransactionResponse.json()
+    console.log("GARA Transaction Response:", responseData)
+    if (!garaTransactionResponse.ok) {
+      setTransactionStatus({ process: "receivePayment", status: "transactionError" })
+      setIncomingTransaction({ done: true, error: responseData.message })
+      return
+    }
+    addRecentTransaction({
+      hash: responseData?.txHash,
+      description: "Incoming GARA",
+    })
+    setIncomingTransaction({
+      done: true,
+      txHash: responseData?.txHash,
+      // receipt: responseData?.status,
+    })
+    setTransactionStatus({ process: "receivePayment", status: "paymentSent" })
+    reset()
   }
 
   return (
-    <section className="max-w-[480px] flex-1 rounded-2xl bg-background p-6 shadow-md">
+    <section className="w-full max-w-full flex-1 overflow-x-hidden rounded-2xl bg-background p-6 shadow-md lg:max-w-[480px]">
       <h3 className="mb-6 text-center font-heading text-3xl font-bold">{t("header")}</h3>
       <Table className="text-sm">
         <TableBody className="text-sm">
@@ -229,22 +293,23 @@ export function BuyGara() {
           </div>
           <CoinInput
             coin="GARA"
-            type="number"
-            placeholder="0"
+            type="text"
+            placeholder="0.000"
             className="cursor-disabled pointer-events-none text-neutral-700 dark:text-neutral-400"
             {...register("garaEstimate")}
             readOnly
           />
           <input type="hidden" {...register("from")} />
           <input type="hidden" {...register("to")} />
+          <input type="hidden" name="chain" value={chain?.name} />
         </div>
         <div className="mt-8 flex flex-col gap-4">
-          <ConnectButton label={t("btnConnectWallet")} />
-          <Button type="submit" variant="outlinePrimary">
+          <ConnectButton label={t("btnConnectWallet")} showBalance={false} />
+          <Button type="submit" variant={address ? "default" : "outlinePrimary"} disabled={!address}>
             {t("btnBuyGARA")}
           </Button>
         </div>
-        {/* <div>{address}</div> */}
+        <TransactionStatusModal open={open} toggleOpen={handleOnOpenChange} setOpen={setOpen} />
       </form>
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>

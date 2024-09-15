@@ -1,9 +1,10 @@
 "use client"
 
-import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit"
+import { getDefaultConfig, RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit"
 import { ReactNode } from "react"
 import { WagmiProvider, cookieStorage, createConfig, createStorage, http, type Locale } from "wagmi"
 import { polygon, mainnet, bsc } from "wagmi/chains"
+import { GaraStoreProvider } from "@/lib/store/provider"
 
 const config = getDefaultConfig({
   appName: "Coingarage",
@@ -18,8 +19,12 @@ const config = getDefaultConfig({
 
 export const WalletProviders = ({ children, locale }: { children: ReactNode; locale: Locale }) => {
   return (
-    <WagmiProvider config={config}>
-      <RainbowKitProvider locale={locale}>{children}</RainbowKitProvider>
-    </WagmiProvider>
+    <GaraStoreProvider>
+      <WagmiProvider config={config}>
+        <RainbowKitProvider theme={darkTheme()} locale={locale}>
+          {children}
+        </RainbowKitProvider>
+      </WagmiProvider>
+    </GaraStoreProvider>
   )
 }
