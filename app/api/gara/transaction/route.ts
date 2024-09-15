@@ -23,6 +23,8 @@ const erc20Abi = [
   },
 ]
 
+const customRpcUrl = "https://ethereum-rpc.publicnode.com"
+
 export async function POST(req: NextRequest) {
   try {
     const { txHash, chain } = await req.json()
@@ -33,8 +35,7 @@ export async function POST(req: NextRequest) {
     }
 
     const _chain = getChainByName(chain)
-    console.log({ chain: JSON.stringify(_chain) })
-    const publicClient = createPublicClient({ chain: _chain, transport: http() })
+    const publicClient = createPublicClient({ chain: _chain, transport: http(customRpcUrl) })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
     const transaction = await publicClient.getTransaction({ hash: txHash })
     const decoded = decodeFunctionData({
@@ -47,8 +48,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       transactionHash: txHash,
-      from: functionTo,
-      to: functionValue,
+      to: functionTo,
+      amount: functionValue.toString,
       status: receipt.status,
     })
   } catch (error) {

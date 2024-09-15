@@ -4,8 +4,10 @@ import { createPublicClient, createWalletClient, http } from "viem"
 import { polygon } from "viem/chains"
 import { parseUnits } from "viem/utils"
 import { HexAddress } from "@/types"
-import { getChainByName, validateTransaction } from "@/lib/api/utils"
+import { validateTransaction } from "@/lib/api/utils"
 import { usdcToGara } from "@/lib/api/utils"
+import { sendMail } from "@/lib/mailer"
+import { universal } from "@/lib/email-templates/universal"
 
 export const maxDuration = 300
 export const dynamic = "force-dynamic"
@@ -88,11 +90,30 @@ export async function POST(req: NextRequest) {
     // Wait for the transaction to be mined (optional)
     const publicClient = createPublicClient({ chain: polygon, transport: http() })
     const receipt = await publicClient.waitForTransactionReceipt({ hash: garaTxHash })
-    console.log("Transaction confirmed:", receipt)
+    // console.log("Transaction confirmed:", receipt)
+
+    await sendMail({
+      recipients: ["d.forejtek@gmail.com"],
+      subject: `GARA Coin - New transaction`,
+      content: universal({
+        data: {
+          usdChain: chain,
+          usdTxHash: txHash,
+          to: garaTo,
+          amount: `${amount} USDC`,
+          garaTxHash,
+        },
+      }),
+    })
 
     return NextResponse.json({ success: true, txHash: garaTxHash, status: receipt.status })
   } catch (error) {
     console.error("Error sending GARA token:", error)
+    await sendMail({
+      recipients: ["d.forejtek@gmail.com", "office@coingarage.io"],
+      subject: `GARA Coin - Error in sending GARA`,
+      content: JSON.stringify({ error: error?.message }, undefined, 2),
+    })
     return NextResponse.json({ success: false, message: error?.message }, { status: 500 })
   }
 }

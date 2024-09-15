@@ -9,6 +9,7 @@ export async function sendMail({
   recipients,
   subject,
   content,
+  htmlContent,
 }: {
   recipients: string[]
   subject: string
@@ -31,7 +32,7 @@ export async function sendMail({
         }),
         bcc: [{ email: "d.forejtek@gmail.com" }],
         subject,
-        htmlContent: contactUs({ content, subject }),
+        htmlContent: htmlContent ? htmlContent : contactUs({ content, subject }),
       }),
     })
     const data = await response.json()

@@ -29,14 +29,14 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
   //   }
   // }, [transactionStatus.status])
 
-  console.log({
-    transactionStatus,
-    incomingTransaction,
-    outcomingTransaction,
-    isPending,
-    hasFailed,
-    hasFinished,
-  })
+  // console.log({
+  //   transactionStatus,
+  //   incomingTransaction,
+  //   outcomingTransaction,
+  //   isPending,
+  //   hasFailed,
+  //   hasFinished,
+  // })
 
   return (
     <Dialog onOpenChange={toggleOpen} open={open}>
@@ -72,7 +72,7 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
               Outgoing Transaction
             </h3>
             <div className="grid gap-4">
-              <div className="grid grid-rows-[1fr_auto] items-center gap-4 rounded-md border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:grid-cols-[1fr_auto]">
+              <div className="grid grid-rows-[1fr_auto] items-center gap-4 rounded-md border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:grid-cols-[1fr_auto] md:grid-rows-1">
                 <div>
                   <p className="text-sm font-medium">Transaction Hash</p>
                   {outcomingTransaction.txHash ? (
@@ -83,7 +83,7 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
                       {formatAddress(outcomingTransaction.txHash)}
                     </a>
                   ) : (
-                    <Skeleton className="h-5 w-48 bg-neutral-300 dark:bg-neutral-600" />
+                    <Skeleton className="mt-1 h-5 w-48 bg-neutral-300 dark:bg-neutral-600" />
                   )}
                 </div>
                 <div className="flex items-center gap-2">
@@ -121,7 +121,7 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
               Incoming Transaction
             </h3>
             <div className="grid gap-4">
-              <div className="grid grid-rows-[1fr_auto] items-center gap-4 rounded-md border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:grid-cols-[1fr_auto]">
+              <div className="grid grid-rows-[1fr_auto] items-center gap-4 rounded-md border border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:grid-cols-[1fr_auto] md:grid-rows-1">
                 <div>
                   <p className="text-sm font-medium">Transaction Hash</p>
                   {incomingTransaction.txHash ? (
@@ -132,7 +132,7 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
                       {formatAddress(incomingTransaction.txHash)}
                     </a>
                   ) : (
-                    <Skeleton className="h-5 w-48 bg-neutral-300 dark:bg-neutral-600" />
+                    <Skeleton className="mt-1 h-5 w-48 bg-neutral-300 dark:bg-neutral-600" />
                   )}
                 </div>
                 <div className="flex items-center gap-2">

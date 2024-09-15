@@ -61,7 +61,8 @@ export const sendUsdc = async ({
     })
 
     // Convert the amount to the correct decimal (USDC has 6 decimals)
-    const amountInWei = parseUnits(amount.toString(), 6) // Converts amount to 6 decimals
+    const amountInWei =
+      chain?.name !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18) // Converts amount to 6 decimals
 
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
     const hash = await walletClient.writeContract({

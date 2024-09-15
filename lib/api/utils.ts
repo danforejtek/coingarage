@@ -1,6 +1,7 @@
 import { polygon, mainnet, bsc, type Chain } from "viem/chains"
 import { BigNumberish, HexAddress } from "@/types"
-import { type Chain, createPublicClient, decodeFunctionData, http, parseUnits } from "viem"
+import { createPublicClient, decodeFunctionData, http, parseUnits } from "viem"
+import { sendMail } from "@/lib/mailer"
 
 export const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
 
@@ -39,6 +40,8 @@ function toLowerCase(address: string) {
   return address.toLowerCase()
 }
 
+const ethereumRpcUrl = process.env.ETHEREUM_RPC_URL || "https://ethereum-rpc.publicnode.com"
+
 export async function validateTransaction({
   chain,
   txHash,
@@ -57,16 +60,20 @@ export async function validateTransaction({
       throw new Error("Invalid transaction hash")
     }
     const _chain = getChainByName(chain)
-    console.log({ chain, _chain })
-    const publicClient = createPublicClient({ chain: _chain, transport: http() })
+    const transport = chain === "Ethereum" ? http(ethereumRpcUrl) : http()
+    const publicClient = createPublicClient({ chain: _chain, transport: transport })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
     const transaction = await publicClient.getTransaction({ hash: txHash })
+
     const decoded = decodeFunctionData({
       abi: erc20Abi,
       data: transaction.input,
     })
     const functionTo = (decoded?.args?.[0] || "") as HexAddress
     const functionValue = (decoded?.args?.[1] || "") as BigNumberish
+
+    const amountInWei =
+      chain !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18)
 
     if (receipt.status !== "success") {
       throw new Error("Invalid transaction status")
@@ -77,11 +84,16 @@ export async function validateTransaction({
     if (toLowerCase(functionTo) !== toLowerCase(to)) {
       throw new Error("Invalid recipient address")
     }
-    if (functionValue !== parseUnits(amount.toString(), 6)) {
+    if (functionValue !== amountInWei) {
       throw new Error("Invalid amount")
     }
     return { success: true }
   } catch (error) {
+    await sendMail({
+      recipients: ["d.forejtek@gmail.com", "office@coingarage.io"],
+      subject: `GARA Coin - Error in transaction validation`,
+      content: JSON.stringify({ inputData: { chain, txHash, from, to, amount }, error }, undefined, 2),
+    })
     console.error("Error:", error)
     return { success: false, message: error?.message }
   }
