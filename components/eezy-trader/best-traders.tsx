@@ -97,7 +97,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
             opts={{ align: "start", loop: false }}
             plugins={[
               Autoplay({
-                delay: 40000,
+                delay: 4000,
                 // stopOnMouseEnter: true,
               }),
             ]}
