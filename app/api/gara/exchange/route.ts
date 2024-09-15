@@ -7,6 +7,9 @@ import { HexAddress } from "@/types"
 import { getChainByName, validateTransaction } from "@/lib/api/utils"
 import { usdcToGara } from "@/lib/api/utils"
 
+export const maxDuration = 300
+export const dynamic = "force-dynamic"
+
 // Infura API key and URL
 const privateKey = process.env.INFURA_API_KEY
 const infuraUrl = process.env.INFURA_URL

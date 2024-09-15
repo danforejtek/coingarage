@@ -2,8 +2,9 @@ import { getChainByName } from "@/lib/api/utils"
 import { BigNumberish, HexAddress } from "@/types"
 import { NextRequest, NextResponse } from "next/server"
 import { createPublicClient, http, decodeFunctionData } from "viem"
-import { privateKeyToAccount } from "viem/accounts"
-import { polygon } from "viem/chains"
+
+// import { privateKeyToAccount } from "viem/accounts"
+// import { polygon } from "viem/chains"
 
 // Infura API key and URL
 // const privateKey = process.env.INFURA_API_KEY
