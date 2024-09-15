@@ -2,7 +2,7 @@ const createNextIntlPlugin = require("next-intl/plugin")
 const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
-const rebuild = 0.03
+const rebuild = 0.04
 
 const nextConfig = {
   images: {
