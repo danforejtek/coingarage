@@ -57,7 +57,7 @@ const IconFigure = ({
         : "/images/finance/icons/planned.svg"
 
   return (
-    <figure className="h-[192px] w-[256px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#282930] lg:w-[146px] xl:w-[186px]">
+    <figure className="h-[192px] w-[256px] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#1D1E25] lg:w-[146px] xl:w-[186px]">
       <div className="flex flex-row-reverse">{icon || <Image src={statusImage} width={18} height={18} alt="" />}</div>
       <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
       <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>

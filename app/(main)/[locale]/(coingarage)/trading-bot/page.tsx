@@ -36,7 +36,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </section>
 
       {/* Best traders component */}
-      <section className="mt-20 w-full overflow-x-hidden bg-tertiary/25 pb-20 pt-20 md:mt-16 lg:mt-0">
+      <section className="mt-20 w-full overflow-x-hidden bg-tertiary/25 pb-20 pt-20 dark:bg-[#26272B] md:mt-16 lg:mt-0">
         <BestTraders />
       </section>
 
@@ -51,7 +51,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </section>
 
       {/* EasySettings settings */}
-      <section className="w-full bg-tertiary/25">
+      <section className="w-full bg-tertiary/25 dark:bg-[#26272B]">
         <EasySettings />
       </section>
 
@@ -141,7 +141,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </section>
 
       {/* Referal program */}
-      <div className="mt-12 bg-tertiary/25 py-12 dark:bg-tertiary/10 xl:mt-28">
+      <div className="mt-12 bg-tertiary/25 py-12 dark:bg-[#26272B] xl:mt-28">
         <section className="container mx-auto flex flex-col-reverse flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="mt-16 flex w-full flex-col items-center justify-start pl-4 lg:w-1/2 xl:mt-0">
             <Image src="/images/eezy-trader/images/referalMain.svg" alt="" width={675} height={497} />
