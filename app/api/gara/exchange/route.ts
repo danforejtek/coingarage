@@ -35,7 +35,7 @@ const allowedChains = ["Polygon", "Ethereum", "BNB Smart Chain"] // Add more cha
 export async function POST(req: NextRequest) {
   try {
     // amount in USDC
-    const { txHash, from, to, amount, chain } = await req.json()
+    const { txHash, from, to, amount, chain, token } = await req.json()
 
     if (!allowedChains.includes(chain)) {
       return NextResponse.json({ success: false, message: "Invalid chain" }, { status: 400 })
@@ -100,7 +100,8 @@ export async function POST(req: NextRequest) {
           usdChain: chain,
           usdTxHash: txHash,
           to: garaTo,
-          amount: `${amount} USDC`,
+          token,
+          amount: `${amount} ${token}`,
           garaTxHash,
         },
       }),
