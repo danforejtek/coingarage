@@ -14,6 +14,7 @@ type Article = {
 
 export const metadata: Metadata = {
   title: "Blog | Coingarage",
+  description: "New from the world of cryptocurrencies and blockchain technology.",
 }
 
 const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL

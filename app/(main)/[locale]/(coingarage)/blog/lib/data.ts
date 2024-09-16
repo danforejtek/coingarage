@@ -65,7 +65,7 @@ export const getArtileMetadata = async ({
   const responseData = await response.json()
   const data = responseData?.data
   if (data?.length === 0) return {}
-  const { title, perex, image, author } = data[0]?.attributes
+  const { title, perex, image, author, date_created } = data[0]?.attributes
   const imageSrc = image?.data?.[0]?.attributes?.url
   const authorName = `${author?.data?.attributes?.name} ${author?.data?.attributes?.surname}`
   const seo = data[0]?.attributes?.seo
@@ -92,7 +92,13 @@ export const getArtileMetadata = async ({
       images: [imageSrc || metaImage],
     },
     twitter,
-  }
+    type: "article",
+    article: {
+      publishedTime: date_created,
+      modifiedTime: date_created,
+      authors: [authorName],
+    },
+  } as Metadata
 }
 
 export const getArticles = async ({ params }: { params: { locale: string } }) => {
