@@ -90,14 +90,15 @@ export const getArtileMetadata = async ({
     authors: [authorName],
     openGraph: {
       images: [imageSrc || metaImage],
+      type: "article",
+      article: {
+        publishedTime: date_created,
+        modifiedTime: date_created,
+        authors: [authorName],
+      },
     },
     twitter,
-    type: "article",
-    article: {
-      publishedTime: date_created,
-      modifiedTime: date_created,
-      authors: [authorName],
-    },
+    
   } as Metadata
 }
 
