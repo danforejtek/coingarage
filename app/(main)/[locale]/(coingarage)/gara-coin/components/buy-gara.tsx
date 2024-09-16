@@ -25,17 +25,10 @@ import { usdcToGara } from "@/lib/api/utils"
 import { BigNumberish, HexAddress } from "@/types"
 import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-modal"
-import { sendUsdc } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-usdc"
+import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-payment"
 
-type Address = `0x${string}`
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
-const USDC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
-
-const USDC_ABI = parseAbi([
-  "function transfer(address to, uint256 value) external returns (bool)",
-  // "function balanceOf(address account) public view returns (uint256)",
-])
 
 const formSchema = z.object({
   to: z.string().refine((value) => isAddress(value), {
@@ -46,6 +39,7 @@ const formSchema = z.object({
   }),
   garaEstimate: z.string(),
   amount: z.string(),
+  token: z.string(),
 })
 
 export function BuyGara() {
@@ -76,10 +70,13 @@ export function BuyGara() {
       amount: "10.000",
       to: COINGARAGE_CONTRACT_ADDRESS,
       from: address,
+      token: "USDT",
     },
   })
 
   const { register, control, handleSubmit, setValue, watch, reset } = form
+
+  console.log(watch())
 
   const amount = useWatch({
     control: form.control,
@@ -112,7 +109,7 @@ export function BuyGara() {
   }, [amount, balance, form])
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const { amount } = data
+    const { amount, token } = data
     const to = COINGARAGE_CONTRACT_ADDRESS
     if (!address || !walletClient) {
       setTransactionStatus({ process: "sendPayment", status: "walletError" })
@@ -121,7 +118,8 @@ export function BuyGara() {
     }
     handleOnOpenChange()
     setTransactionStatus({ process: "sendPayment", status: "submitting" })
-    const response = await sendUsdc({
+    const response = await sendPayment({
+      token,
       chain,
       amount: amount,
       recipientAddress: to,

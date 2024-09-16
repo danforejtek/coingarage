@@ -12,18 +12,19 @@ import {
 // @ts-ignore
 import { useAccount, useBalance, useWalletClient } from "wagmi"
 // @ts-ignore
-import { BigNumberish, HexAddress } from "@/types"
-import { getUsdcOnChain } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
+import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/types"
+import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
 
 type Address = `0x${string}`
 
-const USDC_ABI = parseAbi([
+const AbiFunction = parseAbi([
   "function transfer(address to, uint256 value) external returns (bool)",
   // "function balanceOf(address account) public view returns (uint256)",
 ])
 
-type SendUSDCProps = {
-  chain: any
+type SendPaymentProps = {
+  token: SupportedTokens
+  chain: SupportedChains
   senderAddress: Address
   recipientAddress: Address
   amount: BigNumberish
@@ -34,13 +35,14 @@ type SendUSDCProps = {
   resetState: () => void
 }
 
-type SendUSDCResponse = {
+type SendPaymentResponse = {
   txHash: HexAddress
   receipt: object
 }
 
 // Function to send USDC using viem
-export const sendUsdc = async ({
+export const sendPayment = async ({
+  token,
   chain,
   senderAddress,
   recipientAddress,
@@ -50,8 +52,9 @@ export const sendUsdc = async ({
   setOutcomingTransaction,
   setIncomingTransaction,
   resetState,
-}: SendUSDCProps): Promise<SendUSDCResponse | undefined> => {
+}: SendPaymentProps): Promise<SendPaymentResponse | undefined> => {
   try {
+    if (!token || !chain || !senderAddress || !recipientAddress || !amount || !walletClient) return
     const checksummedRecipientAddress = getAddress(recipientAddress)
     // Initialize the public client for interacting with the Polygon network
 
@@ -66,8 +69,8 @@ export const sendUsdc = async ({
 
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
     const hash = await walletClient.writeContract({
-      address: getUsdcOnChain(chain.name), // USDC contract address
-      abi: USDC_ABI,
+      address: contractAddresses[token][chain] as HexAddress,
+      abi: AbiFunction,
       functionName: "transfer",
       args: [checksummedRecipientAddress, amountInWei],
       account: senderAddress,
