@@ -215,7 +215,7 @@ export function BuyGara() {
         </div>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
-        <div className="mt-4 grid w-full grid-cols-[1fr_150px] gap-2 ">
+        <div className="mt-4 grid w-full grid-cols-2 gap-2 md:grid-cols-[1fr_150px] ">
           <CoinInput coin="USDC" type="number" placeholder="0.000" {...register("amount")} showIcon={false} />
           <CurrencySelect name="token" form={form} />
         </div>
