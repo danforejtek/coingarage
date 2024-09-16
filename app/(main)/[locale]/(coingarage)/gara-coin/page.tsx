@@ -172,15 +172,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <li>{t("usage.usage4")}</li>
           </ul>
         </div>
-        <div
-          className="mt-24 py-12 lg:!bg-none"
-          style={{
-            backgroundImage: `linear-gradient(to top, ${theme === "dark" ? "rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5))" : "rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))"}, url(/images/gara-coin/fire.svg)`,
-            backgroundPosition: "bottom",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+        <div className="flame-gara mt-24 py-12 lg:!bg-none">
           <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("burnMechanism.header")}</h2>
           <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-24">
             <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">

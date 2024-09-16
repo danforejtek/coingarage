@@ -13,12 +13,13 @@ export const CoinInput = forwardRef<
     type: string
     readOnly?: boolean
     className?: string
+    showIcon?: boolean
   } & React.InputHTMLAttributes<HTMLInputElement>
->(({ coin, className, ...rest }, ref) => {
+>(({ coin, className, showIcon = true, ...rest }, ref) => {
   return (
     <div
       className={cn(
-        "mt-4 flex w-full flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2 ring-neutral-200 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800"
+        "flex w-full flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2 ring-neutral-200 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800"
       )}
     >
       <input
@@ -32,10 +33,12 @@ export const CoinInput = forwardRef<
         )}
         {...rest}
       />
-      <div className="flex flex-row items-center justify-end gap-4 font-heading text-base font-semibold text-neutral-900 dark:text-white">
-        <Image src={`/icons/coins/${coin?.toLowerCase()}.png`} alt={coin} width={32} height={32} />
-        <span className="w-[46px]">{coin}</span>
-      </div>
+      {showIcon ? (
+        <div className="mr-3 flex flex-row items-center justify-end gap-4 font-heading text-base font-semibold text-neutral-900 dark:text-white">
+          <Image src={`/icons/coins/${coin?.toLowerCase()}.png`} alt={coin} width={32} height={32} />
+          <span className="w-[46px]">{coin}</span>
+        </div>
+      ) : null}
     </div>
   )
 })

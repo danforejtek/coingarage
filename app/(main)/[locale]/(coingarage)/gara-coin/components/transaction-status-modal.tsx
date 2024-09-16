@@ -12,7 +12,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { ArrowDownRight, ArrowUpRight, Check, Loader2Icon, X } from "lucide-react"
+import { ArrowDownRight, ArrowUpRight, Check, ExternalLink, Loader2Icon, X } from "lucide-react"
 import { useGaraStore } from "@/lib/store/provider"
 import { Skeleton } from "@/components/ui/skeleton"
 import { formatAddress } from "@/lib/utils"
@@ -78,7 +78,9 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
                   {outcomingTransaction.txHash ? (
                     <a
                       href={`https://polygonscan.com/tx/${outcomingTransaction.txHash}`}
-                      className="text-sm text-muted-foreground"
+                      className="inline-flex items-center text-sm text-tertiary/80 underline hover:text-tertiary"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {formatAddress(outcomingTransaction.txHash)}
                     </a>
@@ -127,7 +129,9 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
                   {incomingTransaction.txHash ? (
                     <a
                       href={`https://polygonscan.com/tx/${incomingTransaction.txHash}`}
-                      className="text-sm text-muted-foreground"
+                      className="inline-flex items-center text-sm text-tertiary/80 underline hover:text-tertiary"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {formatAddress(incomingTransaction.txHash)}
                     </a>

@@ -8,6 +8,7 @@ import {
   encodeFunctionData,
   getAddress,
   parseAbi,
+  Chain,
 } from "viem"
 // @ts-ignore
 import { useAccount, useBalance, useWalletClient } from "wagmi"
@@ -24,7 +25,7 @@ const AbiFunction = parseAbi([
 
 type SendPaymentProps = {
   token: SupportedTokens
-  chain: SupportedChains
+  chain: Chain
   senderAddress: Address
   recipientAddress: Address
   amount: BigNumberish
@@ -63,13 +64,14 @@ export const sendPayment = async ({
       transport: http(),
     })
 
+    const chainName = chain?.name as SupportedChains
     // Convert the amount to the correct decimal (USDC has 6 decimals)
     const amountInWei =
-      chain?.name !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18) // Converts amount to 6 decimals
+      chainName !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18) // Converts amount to 6 decimals
 
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
     const hash = await walletClient.writeContract({
-      address: contractAddresses[token][chain] as HexAddress,
+      address: contractAddresses[token][chainName] as HexAddress,
       abi: AbiFunction,
       functionName: "transfer",
       args: [checksummedRecipientAddress, amountInWei],

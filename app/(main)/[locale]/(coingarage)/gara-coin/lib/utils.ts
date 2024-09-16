@@ -1,4 +1,4 @@
-import { SupportedChains, SupportedTokens } from "@/types"
+import { HexAddress, SupportedChains, SupportedTokens } from "@/types"
 
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
 const USDC_POLYGON_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_POLYGON_CONTRACT_ADDRESS as `0x${string}`
@@ -10,7 +10,7 @@ const USDT_BSC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDT_BSC_CONTRACT_ADDR
 
 export type ContractAddresses = {
   [token in SupportedTokens]: {
-    [chain in SupportedChains]: string
+    [chain in SupportedChains]: HexAddress
   }
 }
 

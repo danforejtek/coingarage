@@ -5,7 +5,7 @@ import { isAddress, parseEther, parseAbi } from "viem"
 // @ts-ignore
 import { useAccount, useBalance, useWalletClient } from "wagmi"
 // @ts-ignore
-import { useAddRecentTransaction } from "@rainbow-me/rainbowkit"
+import { useAddRecentTransaction, useChainModal } from "@rainbow-me/rainbowkit"
 import { ConnectButton } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/connect-button"
 
 import { useTranslations } from "next-intl"
@@ -18,7 +18,8 @@ import Polygon from "@/public/icons/polygon.svg"
 import { formatAddress } from "@/lib/utils"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Form, useForm, useWatch } from "react-hook-form"
+import { useForm, useWatch } from "react-hook-form"
+import { Form } from "@/components/ui/form"
 import { ArrowDown } from "lucide-react"
 import { polygon } from "viem/chains"
 import { usdcToGara } from "@/lib/api/utils"
@@ -26,6 +27,7 @@ import { BigNumberish, HexAddress } from "@/types"
 import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-modal"
 import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-payment"
+import { CurrencySelect } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/currency-select"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
@@ -61,6 +63,7 @@ export function BuyGara() {
   const { data: balance } = useBalance({ address })
   const { data: walletClient } = useWalletClient()
   const addRecentTransaction = useAddRecentTransaction()
+  const { openChainModal } = useChainModal()
 
   const form = useForm<z.infer<typeof formSchema>>({
     mode: "onSubmit",
@@ -76,11 +79,14 @@ export function BuyGara() {
 
   const { register, control, handleSubmit, setValue, watch, reset } = form
 
-  console.log(watch())
-
   const amount = useWatch({
     control: form.control,
     name: "amount",
+  })
+
+  const token = useWatch({
+    control: form.control,
+    name: "token",
   })
 
   useEffect(() => {
@@ -107,6 +113,12 @@ export function BuyGara() {
       form.clearErrors("amount")
     }
   }, [amount, balance, form])
+
+  useEffect(() => {
+    if (token === "ETH" && chain?.name !== "Ethereum") {
+      openChainModal()
+    }
+  }, [token, chain, openChainModal])
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     const { amount, token } = data
@@ -148,6 +160,7 @@ export function BuyGara() {
         to: to,
         amount,
         chain: chain?.name,
+        token,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -201,24 +214,29 @@ export function BuyGara() {
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <CoinInput coin="USDC" type="number" placeholder="0.000" {...register("amount")} />
-          <div className="my-4 flex flex-row justify-center">
-            <ArrowDown className="stroke-black dark:stroke-white" />
-          </div>
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
+        <div className="mt-4 grid w-full grid-cols-[1fr_150px] gap-2 ">
+          <CoinInput coin="USDC" type="number" placeholder="0.000" {...register("amount")} showIcon={false} />
+          <CurrencySelect name="token" form={form} />
+        </div>
+
+        <div className="my-4 flex flex-row justify-center">
+          <ArrowDown className="stroke-black dark:stroke-white" />
+        </div>
+        <div className=" mt-4">
           <CoinInput
             coin="GARA"
             type="text"
             placeholder="0.000"
-            className="cursor-disabled pointer-events-none text-neutral-700 dark:text-neutral-400"
+            className="cursor-disabled pointer-events-none text-neutral-700 dark:text-neutral-400 "
             {...register("garaEstimate")}
             readOnly
           />
-          <input type="hidden" {...register("from")} />
-          <input type="hidden" {...register("to")} />
-          <input type="hidden" name="chain" value={chain?.name} />
         </div>
+        <input type="hidden" {...register("from")} />
+        <input type="hidden" {...register("to")} />
+        <input type="hidden" name="chain" value={chain?.name} />
+
         <div className="mt-8 flex flex-col gap-4">
           <ConnectButton label={t("btnConnectWallet")} showBalance={false} />
           <Button type="submit" variant={address ? "default" : "outlinePrimary"} disabled={!address}>
