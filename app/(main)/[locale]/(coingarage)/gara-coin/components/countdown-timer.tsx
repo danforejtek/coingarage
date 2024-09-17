@@ -38,33 +38,33 @@ const CountdownTimer = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex items-center justify-start space-x-2", className)}>
       {/* Days */}
-      <div className="flex min-w-[102px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
+      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
         <div className="text-3xl font-bold text-primary">{String(timeLeft.days).padStart(2, "0")}</div>
-        <div className="text-lg font-medium">DNÍ</div>
+        <div className="text-base font-medium">DNÍ</div>
       </div>
 
       {/* Hours */}
       <div className="pb-8 text-3xl font-bold text-primary">:</div>
 
-      <div className="flex min-w-[102px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
+      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
         <div className="text-3xl font-bold text-primary">{String(timeLeft.hours).padStart(2, "0")}</div>
-        <div className="text-lg font-medium">HODIN</div>
+        <div className="text-base font-medium">HODIN</div>
       </div>
 
       {/* Minutes */}
       <div className="pb-8 text-3xl font-bold text-primary">:</div>
 
-      <div className="flex min-w-[102px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
+      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
         <div className="text-3xl font-bold text-primary">{String(timeLeft.minutes).padStart(2, "0")}</div>
-        <div className="text-lg font-medium">MINUT</div>
+        <div className="text-base font-medium">MINUT</div>
       </div>
 
       {/* Seconds */}
       <div className="pb-8 text-3xl font-bold text-primary">:</div>
 
-      <div className="flex min-w-[102px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
+      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
         <div className="text-3xl font-bold text-primary">{String(timeLeft.seconds).padStart(2, "0")}</div>
-        <div className="text-lg font-medium">SEKUND</div>
+        <div className="text-base font-medium">SEKUND</div>
       </div>
     </div>
   )
