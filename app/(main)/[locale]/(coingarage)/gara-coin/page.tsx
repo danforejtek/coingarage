@@ -200,25 +200,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="mb-6 flex flex-1 flex-col items-center md:mb-0">
             <Image src="/images/gara-coin/garaDepo.svg" className="" alt="" width={500} height={479} />
             <div className="my-6 flex flex-col justify-center gap-4 md:gap-4 lg:flex-row">
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <EasyIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.1")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <SecureIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.2")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <EarnIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.3")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <DayIcon className="size-8 stroke-primary stroke-2" />
                 </p>
