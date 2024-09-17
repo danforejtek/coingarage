@@ -862,16 +862,40 @@
       "usage7": "Purchase fees",
       "usage8": "Advertisement"
     },
-    "burnMechanism": {
-      "header": "GARA Burn Mechanism",
-      "box1": {
-        "text": "Every month we burn 20% of GARA",
-        "subText": "on fees received"
+    "garaDepo": {
+      "header": "GARA Deposit",
+      "subHeader": "Current return of 30% p.a.",
+      "text1": "Park your purchased Garage coins (GARA) in our Deposit program and let them grow. We regularly pay interest on your deposited GARA to your Coingarage account every day. You don’t have to worry about anything, everything is fully automatic.",
+      "text2": "Now an introductory offer <span>only until 30.9.2024, with a fixed interest rate of 30% p.a.</span> for the entire staking period. Take advantage of this unique opportunity and let your GARA grow.",
+      "timer": {
+        "header": "TIME REMAINING UNTIL THE END OF THE OFFER",
+        "day": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS",
+        "disclaimer": "*After this date, it will still be possible to deposit GARA, but with a lower return, which will dynamically change depending on the total deposited amount of GARA."
       },
-      "box2": {
-        "text": "Until 200 million GARA remains",
-        "subText": "  from the original 900 million."
+      "boxes": {
+        "1": "Easy and worry-free",
+        "2": "Safe and transparent",
+        "3": "High returns",
+        "4": "Daily earnings payout"
       }
+    },
+    "burnMechanism": {
+      "header": "GARA Burning Mechanism",
+      "text1": "To ensure a smoother value development of GARA, we have decided to implement a burning mechanism that will gradually burn GARA tokens based on their increasing use.",
+      "boxes": {
+        "1": {
+          "header": "Until only 200 million GARA remain",
+          "text": "from the original 900 million"
+        },
+        "2": {
+          "header": "Every month we will burn 20% of GARA",
+          "text": "received in fees"
+        }
+      },
+      "disclaimer": "*Token burning is a method of managing the total supply of a cryptocurrency in the market to reduce the available amount and thereby potentially increase the value of the cryptocurrency. This concept is similar to share buybacks in the traditional finance world."
     },
     "roadmap": {
       "header": "Roadmap",

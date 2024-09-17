@@ -873,16 +873,40 @@
       "usage7": "Kaufgebühren",
       "usage8": "Werbung"
     },
+    "garaDepo": {
+      "header": "GARA Einzahlung",
+      "subHeader": "Aktuelle Rendite von 30% p.a.",
+      "text1": "Parken Sie Ihre gekauften Garage Coins (GARA) in unserem Einzahlungsprogramm und lassen Sie sie wachsen. Wir zahlen täglich Zinsen auf Ihre eingezahlten GARA auf Ihr Coingarage-Konto. Sie müssen sich um nichts kümmern, alles ist vollständig automatisiert.",
+      "text2": "Jetzt ein Einführungsangebot <span>nur bis 30.9.2024, mit einem festen Zinssatz von 30% p.a.</span> für die gesamte Staking-Periode. Nutzen Sie diese einzigartige Gelegenheit und lassen Sie Ihr GARA wachsen.",
+      "timer": {
+        "header": "ZEIT BIS ZUM ENDE DES ANGEBOTS",
+        "day": "TAGE",
+        "hours": "STUNDEN",
+        "minutes": "MINUTEN",
+        "seconds": "SEKUNDEN",
+        "disclaimer": "*Nach diesem Datum wird es weiterhin möglich sein, GARA einzuzahlen, jedoch mit einer geringeren Rendite, die sich dynamisch je nach der insgesamt eingezahlten GARA-Menge ändert."
+      },
+      "boxes": {
+        "1": "Einfach und sorgenfrei",
+        "2": "Sicher und transparent",
+        "3": "Hohe Renditen",
+        "4": "Tägliche Gewinnauszahlung"
+      }
+    },
     "burnMechanism": {
       "header": "GARA Verbrennungsmechanismus",
-      "box1": {
-        "text": "Jeden Monat verbrennen wir 20% von GARA",
-        "subText": "auf erhaltenen Gebühren"
+      "text1": "Um eine reibungslosere Wertentwicklung von GARA zu gewährleisten, haben wir beschlossen, einen Verbrennungsmechanismus zu implementieren, der GARA-Token schrittweise basierend auf ihrer zunehmenden Nutzung verbrennt.",
+      "boxes": {
+        "1": {
+          "header": "Bis nur noch 200 Millionen GARA übrig bleiben",
+          "text": "von ursprünglich 900 Millionen"
+        },
+        "2": {
+          "header": "Jeden Monat verbrennen wir 20% der GARA",
+          "text": "die aus Gebühren erhalten wurden"
+        }
       },
-      "box2": {
-        "text": "Bis 200 Millionen GARA übrig bleiben",
-        "subText": " von den ursprünglichen 900 Millionen."
-      }
+      "disclaimer": "*Tokenverbrennung ist eine Methode zur Verwaltung des Gesamtangebots einer Kryptowährung auf dem Markt, um die verfügbare Menge zu reduzieren und dadurch möglicherweise den Wert der Kryptowährung zu steigern. Dieses Konzept ähnelt Aktienrückkäufen in der traditionellen Finanzwelt."
     },
     "roadmap": {
       "header": "Fahrplan",

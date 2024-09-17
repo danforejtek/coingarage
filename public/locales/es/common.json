@@ -864,16 +864,40 @@
       "usage7": "Tarifas de compra",
       "usage8": "Publicidad"
     },
-    "burnMechanism": {
-      "header": "Mecanismo de quema de GARA",
-      "box1": {
-        "text": "Cada mes quemamos el 20% de GARA",
-        "subText": "en tarifas recibidas"
+    "garaDepo": {
+      "header": "Depósito GARA",
+      "subHeader": "Rendimiento actual del 30% anual",
+      "text1": "Estaciona tus monedas Garage compradas (GARA) en nuestro programa de Depósito y déjalas crecer. Pagamos intereses regularmente en tu GARA depositada a tu cuenta de Coingarage cada día. No tienes que preocuparte por nada, todo es completamente automático.",
+      "text2": "Ahora oferta introductoria <span>solo hasta el 30.9.2024, con una tasa de interés fija del 30% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
+      "timer": {
+        "header": "TIEMPO RESTANTE HASTA EL FIN DE LA OFERTA",
+        "day": "DÍAS",
+        "hours": "HORAS",
+        "minutes": "MINUTOS",
+        "seconds": "SEGUNDOS",
+        "disclaimer": "*Después de esta fecha, aún será posible depositar GARA, pero con un rendimiento más bajo, que cambiará dinámicamente dependiendo de la cantidad total depositada de GARA."
       },
-      "box2": {
-        "text": "Hasta que queden 200 millones de GARA",
-        "subText": "de los 900 millones originales."
+      "boxes": {
+        "1": "Fácil y sin preocupaciones",
+        "2": "Seguro y transparente",
+        "3": "Altos rendimientos",
+        "4": "Pago diario de ganancias"
       }
+    },
+    "burnMechanism": {
+      "header": "Mecanismo de Quema de GARA",
+      "text1": "Para garantizar un desarrollo más fluido del valor de GARA, hemos decidido implementar un mecanismo de quema que quemará gradualmente los tokens de GARA en función de su uso creciente.",
+      "boxes": {
+        "1": {
+          "header": "Hasta que queden solo 200 millones de GARA",
+          "text": "de los 900 millones originales"
+        },
+        "2": {
+          "header": "Cada mes quemaremos el 20% de GARA",
+          "text": "recibidos en tarifas"
+        }
+      },
+      "disclaimer": "*La quema de tokens es un método para gestionar la oferta total de una criptomoneda en el mercado para reducir la cantidad disponible y así potencialmente aumentar el valor de la criptomoneda. Este concepto es similar a las recompras de acciones en el mundo financiero tradicional."
     },
     "roadmap": {
       "header": "Hoja de ruta",

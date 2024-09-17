@@ -861,16 +861,40 @@
       "usage7": "Commissioni di acquisto",
       "usage8": "Pubblicità"
     },
-    "burnMechanism": {
-      "header": "Meccanismo di burning di GARA",
-      "box1": {
-        "text": "Ogni mese bruciamo il 20% di GARA",
-        "subText": "sulle commissioni ricevute"
+    "garaDepo": {
+      "header": "Deposito GARA",
+      "subHeader": "Rendimento attuale del 30% p.a.",
+      "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
+      "text2": "Ora offerta introduttiva <span>solo fino al 30.9.2024, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+      "timer": {
+        "header": "TEMPO RIMASTO FINO ALLA FINE DELL'OFFERTA",
+        "day": "GIORNI",
+        "hours": "ORE",
+        "minutes": "MINUTI",
+        "seconds": "SECONDI",
+        "disclaimer": "*Dopo questa data sarà ancora possibile depositare GARA, ma con un rendimento inferiore, che cambierà dinamicamente in base all'importo totale depositato di GARA."
       },
-      "box2": {
-        "text": "Fino a quando rimangono 200 milioni di GARA",
-        "subText": "  dai 900 milioni originali."
+      "boxes": {
+        "1": "Facile e senza preoccupazioni",
+        "2": "Sicuro e trasparente",
+        "3": "Alti rendimenti",
+        "4": "Pagamento giornaliero dei guadagni"
       }
+    },
+    "burnMechanism": {
+      "header": "Meccanismo di Bruciatura GARA",
+      "text1": "Per garantire uno sviluppo più regolare del valore di GARA, abbiamo deciso di implementare un meccanismo di bruciatura che brucerà gradualmente i token GARA in base al loro crescente utilizzo.",
+      "boxes": {
+        "1": {
+          "header": "Fino a quando rimarranno solo 200 milioni di GARA",
+          "text": "dai 900 milioni originali"
+        },
+        "2": {
+          "header": "Ogni mese bruceremo il 20% di GARA",
+          "text": "ricevuti dalle commissioni"
+        }
+      },
+      "disclaimer": "*La bruciatura di token è un metodo per gestire l'offerta totale di una criptovaluta sul mercato per ridurre la quantità disponibile e quindi potenzialmente aumentare il valore della criptovaluta. Questo concetto è simile ai riacquisti di azioni nel mondo finanziario tradizionale."
     },
     "roadmap": {
       "header": "Roadmap",

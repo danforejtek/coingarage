@@ -1,9 +1,11 @@
 "use client"
 
 import { cn } from "@/lib/utils"
+import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
 const CountdownTimer = ({ className }: { className: string }) => {
+  const t = useTranslations("GARA.garaDepo.timer")
   // Set the target date/time
   const targetDate = new Date().getTime() + 7 * 24 * 60 * 60 * 1000 // 7 days from now
 
@@ -38,33 +40,33 @@ const CountdownTimer = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex items-center justify-start space-x-2", className)}>
       {/* Days */}
-      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
-        <div className="text-3xl font-bold text-primary">{String(timeLeft.days).padStart(2, "0")}</div>
-        <div className="text-base font-medium">DNÍ</div>
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+        <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.days).padStart(2, "0")}</div>
+        <div className="text-sm font-medium md:text-base">{t("day")}</div>
       </div>
 
       {/* Hours */}
-      <div className="pb-8 text-3xl font-bold text-primary">:</div>
+      <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
-        <div className="text-3xl font-bold text-primary">{String(timeLeft.hours).padStart(2, "0")}</div>
-        <div className="text-base font-medium">HODIN</div>
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+        <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.hours).padStart(2, "0")}</div>
+        <div className="text-sm font-medium md:text-base">{t("hours")}</div>
       </div>
 
       {/* Minutes */}
-      <div className="pb-8 text-3xl font-bold text-primary">:</div>
+      <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
-        <div className="text-3xl font-bold text-primary">{String(timeLeft.minutes).padStart(2, "0")}</div>
-        <div className="text-base font-medium">MINUT</div>
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+        <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.minutes).padStart(2, "0")}</div>
+        <div className="text-sm font-medium md:text-base">{t("minutes")}</div>
       </div>
 
       {/* Seconds */}
-      <div className="pb-8 text-3xl font-bold text-primary">:</div>
+      <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex min-w-[80px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg">
-        <div className="text-3xl font-bold text-primary">{String(timeLeft.seconds).padStart(2, "0")}</div>
-        <div className="text-base font-medium">SEKUND</div>
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+        <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.seconds).padStart(2, "0")}</div>
+        <div className="text-sm font-medium md:text-base">{t("seconds")}</div>
       </div>
     </div>
   )

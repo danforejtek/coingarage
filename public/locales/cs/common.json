@@ -833,7 +833,6 @@
       }
     }
   },
-
   "GARA": {
     "main": {
       "header": "GARAGE Coin <span>GARA</span>",
@@ -862,16 +861,40 @@
       "usage7": "Poplatky za nákup",
       "usage8": "Reklama"
     },
+    "garaDepo": {
+      "header": "GARA Depo",
+      "subHeader": "Aktuální zhodnocení 30% p.a.",
+      "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
+      "text2": "Nyní zaváděcí akce <span>jen do 30.9.2024, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
+      "timer": {
+        "header": "DO KONCE AKCE ZBÝVÁ",
+        "day": "DNÍ",
+        "hours": "HODIN",
+        "minutes": "MINUT",
+        "seconds": "SEKUND",
+        "disclaimer": "*Po tomto datu bude stále možné vložit GARA, ale již s nižším zhodnocením, které se bude dynamicky měnit podle celkového vloženého objemu GARA."
+      },
+      "boxes": {
+        "1": "Snadné a bez starostí",
+        "2": "Bezpečné a transparentní",
+        "3": "Vysoké zhodnocení",
+        "4": "Vyplácení výdělku každý den"
+      }
+    },
     "burnMechanism": {
       "header": "Spalovací mechanismus GARA",
-      "box1": {
-        "text": "Každý měsíc spálíme 20 % GARA",
-        "subText": "na přijatých na poplatcích"
+      "text1": "Za účelem hladšího vývoje hodnoty GARA jsme se rozhodli implementovat spalovací mechanismus, který bude postupně spalovat GARA tokeny na základě jejich zvyšujícího se využití.",
+      "boxes": {
+        "1": {
+          "header": "Dokud nezůstane  200 milionů GARA",
+          "text": "z původních 900 milionů"
+        },
+        "2": {
+          "header": "Každý měsíc spálíme 20% GARA",
+          "text": "přijatých na poplatcích"
+        }
       },
-      "box2": {
-        "text": "Dokud nezůstane  200 milionů GARA",
-        "subText": " z původních 900 milionů."
-      }
+      "disclaimer": "*Spalování tokenů je metoda řízení celkové nabídky určité kryptoměny na trhu za účelem snížení dostupného množství  a tím potenciálně zvýšení hodnoty dané kryptoměny. Tento koncept je podobný zpětnému odkupu akcií v tradičním světě financí."
     },
     "roadmap": {
       "header": "Roadmapa",
