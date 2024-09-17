@@ -1,4 +1,4 @@
-import { getChainByName } from "@/lib/api/utils"
+import { getChainByName } from "@/app/api/gara/lib/utils"
 import { BigNumberish, HexAddress } from "@/types"
 import { NextRequest, NextResponse } from "next/server"
 import { createPublicClient, http, decodeFunctionData } from "viem"

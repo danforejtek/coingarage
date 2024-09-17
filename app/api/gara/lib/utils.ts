@@ -95,6 +95,6 @@ export async function validateTransaction({
       content: JSON.stringify({ inputData: { chain, txHash, from, to, amount }, error }, undefined, 2),
     })
     console.error("Error:", error)
-    return { success: false, message: error?.message }
+    return { success: false, message: error?.message || "Unknown error" }
   }
 }
