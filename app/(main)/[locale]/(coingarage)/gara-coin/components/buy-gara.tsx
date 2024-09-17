@@ -255,20 +255,16 @@ export function BuyGara() {
           >
             {t("buyWith")}
             <span className="mx-2 inline-flex">
-              <Image src="/icons/coins/usdt.png" width="18" height="18" alt="USDT" />
+              <Image src="/icons/coins/eur.png" width="18" height="18" alt="EUR" />
             </span>
-            USDT
+            EUR
           </a>
         </Button>
         <div className="flex items-center justify-center">
           <Arrow className="stroke-black dark:stroke-white" />
         </div>
         <Button variant="link" size="sm" className="p-0">
-          <a
-            href="https://trade.coingarage.io/launchpad/project-details?project=GARA"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
             {t("linkGoToLaunchapad")}
           </a>
         </Button>

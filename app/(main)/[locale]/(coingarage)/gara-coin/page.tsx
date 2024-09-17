@@ -15,6 +15,7 @@ import Document from "@/public/images/gara-coin/document.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import Present from "@/public/images/gara-coin/present.svg"
 import { PolygonAddressCopyToClipboard } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/polygon-address-copy-to-clipboard"
+import CountdownTimer from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/countdown-timer"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (
@@ -172,19 +173,67 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <li>{t("usage.usage4")}</li>
           </ul>
         </div>
-        <div className="flame-gara mt-24 py-12 lg:!bg-none">
-          <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("burnMechanism.header")}</h2>
-          <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-24">
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
-              <p className="font-heading text-lg font-bold">{t("burnMechanism.box1.text")}</p>
-              <p className="font-heading text-sm text-primary">{t("burnMechanism.box1.subText")}</p>
+      </section>
+      <section className="container mx-auto mt-16 max-w-[1200px] py-12">
+        <div className="flex flex-col md:mx-12 md:flex-row md:gap-32">
+          <div className="flex max-w-[500px] flex-1 flex-col">
+            <p className="font-heading text-4xl font-bold">Gara stake</p>
+            <p className="font-heading text-2xl text-green-500">
+              Aktuální zhodnocení <span className="ml-2 text-3xl">30% p.a.</span>
+            </p>
+            <p className="mt-4">
+              Zaparkujte svoje nakoupené Cingarage tokeny (GARA) v našem programu GARA Stake a nechte je růst. Z vaší
+              uložené GARA vám pravidelně vyplácíme úroky na váš účet u Coingarage a to každý den. O nic se nemusíte
+              starat, vše je plně automatické.
+            </p>
+            <hr className="my-4" />
+            <p className="mt-4">
+              Nyní zaváděcí akce{" "}
+              <span className="font-bold text-primary">jen do 30.10.2024, s úrokem 30% p.a. fixně</span> po celou dobu
+              vkladu. Využijte této jedinečné možnosti a nechte svoji GARA růst
+            </p>
+            <div>
+              <p className="mt-4 font-heading text-xl font-bold">DO KONCE AKCE ZBÝVÁ</p>
+              <CountdownTimer className="mt-4" />
+              <p className="mt-4 text-sm italic">
+                *Po tomto datu bude stále možné vložit GARA, ale již s nižším zhodnocením, které se bude dynamicky měnit
+                podle celkového vloženého objemu GARA.
+              </p>
             </div>
-            <Image src="/images/gara-coin/fire.svg" alt="" width="92" height="145" className="hidden lg:block" />
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
-              <p className="font-heading text-lg font-bold">{t("burnMechanism.box2.text")}</p>
-              <p className="font-heading text-sm text-primary">{t("burnMechanism.box2.subText")}</p>
+          </div>
+          <div className="flex flex-1 flex-row justify-end">
+            <Image src="/images/gara-coin/garaDepo.svg" className="" alt="" width={500} height={479} />
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto mt-16 max-w-[1200px] py-12">
+        <div className="flex flex-col md:mx-12 md:flex-row md:gap-32">
+          <div className="flex flex-1 justify-center">
+            <Image src="/images/gara-coin/fire.svg" className="" alt="" width={460} height={507} />
+          </div>
+          <div className="flex max-w-[500px] flex-1 flex-col items-center justify-center">
+            <div>
+              <p className="font-heading text-4xl font-bold">Spalovací mechanismus GARA</p>
+              <p className="mt-4">
+                Za účelem hladšího vývoje hodnoty GARA jsme se rozhodli implementovat spalovací mechanismus, který bude
+                postupně spalovat GARA tokeny na základě jejich zvyšujícího se využití.
+              </p>
+              <div className="my-6 flex flex-row justify-center gap-8">
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                  <p className="font-heading text-lg font-bold">{t("burnMechanism.box2.text")}</p>
+                  <p className="mt-2 font-heading  text-primary">z původních 900 milionů</p>
+                </div>
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                  <p className="font-heading text-lg font-bold">{t("burnMechanism.box1.text")}</p>
+                  <p className="mt-2 font-heading  text-primary">přijatých na poplatcích</p>
+                </div>
+              </div>
+              <p className="mt-4 text-sm italic">
+                *Spalování tokenů je metoda řízení celkové nabídky určité kryptoměny na trhu za účelem snížení
+                dostupného množství a tím potenciálně zvýšení hodnoty dané kryptoměny. Tento koncept je podobný zpětnému
+                odkupu akcií v tradičním světě financí.
+              </p>
             </div>
-            <div className="block h-12 lg:hidden"></div>
           </div>
         </div>
       </section>
