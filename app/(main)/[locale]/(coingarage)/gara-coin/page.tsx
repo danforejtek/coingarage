@@ -105,25 +105,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="-mr-10 flex flex-col justify-center gap-4">
             <ul className="flex flex-col gap-10 font-heading font-bold">
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage5")}
+                {t("usage.usage1")}
                 <span className="flex items-center">
                   <ArrowLeft width={120} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage5")}
+                {t("usage.usage2")}
                 <span className="flex items-center">
                   <ArrowLeft width={160} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage7")}
+                {t("usage.usage3")}
                 <span className="flex items-center">
                   <ArrowLeft width={140} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage8")}
+                {t("usage.usage4")}
                 <span className="flex items-center">
                   <ArrowLeft width={120} />
                 </span>
@@ -139,25 +139,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 <span className="flex items-center">
                   <ArrowRight width={130} />
                 </span>
-                {t("usage.usage1")}
+                {t("usage.usage5")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={170} />
                 </span>
-                {t("usage.usage2")}
+                {t("usage.usage6")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={150} />
                 </span>
-                {t("usage.usage3")}
+                {t("usage.usage7")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={130} />
                 </span>
-                {t("usage.usage4")}
+                {t("usage.usage8")}
               </li>
             </ul>
           </div>

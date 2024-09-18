@@ -914,27 +914,41 @@
     },
     "alocation": {
       "header": "Κατανομή",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "Δημόσια Προπώληση IEO"
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Ανταμοιβή staking"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Εταιρεία"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
-        "subText": "Ομάδα Ιδρυτών"
+        "text": "11% (99M GARA)",
+        "subText": "Ιδρυτική ομάδα"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "Θα καεί στις 5/1/2024"
+        "subText": "Θα καεί την 1η Μαρτίου 2024"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Μάρκετινγκ για νέους χρήστες του ανταλλακτηρίου"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
-        "subText": "Επενδυτές Angel"
+        "subText": "Επενδυτές αγγέλων"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Μάρκετινγκ για νέους χρήστες του ανταλλακτηρίου"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Κρατείται για δημόσια προπώληση και",
+        "subText1": "διατίθεται για αγορά στο www.coingarage.io."
       },
-      "limit": " Έχει δημιουργηθεί όριο 900 εκατομμυρίων GARA, το οποίο δεν θα αυξηθεί ποτέ."
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA σε εξωχρηματιστηριακή μορφή μετά",
+        "subText1": "την εισαγωγή στην πλατφόρμα συναλλαγών του εκδότη"
+      },
+      "limit": "Ορίζεται όριο 900 εκατομμυρίων GARA, το οποίο δεν θα αυξηθεί ποτέ."
     },
     "release": {
       "header": "Κυκλοφορία του GARA για την Ομάδα",

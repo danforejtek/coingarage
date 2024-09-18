@@ -914,27 +914,41 @@
     },
     "alocation": {
       "header": "Allocazione",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "Prevendita pubblica IEO"
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Ricompensa per lo staking"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Azienda"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
+        "text": "11% (99M GARA)",
         "subText": "Team fondatore"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "Sarà bruciato il 5/1/2024"
+        "subText": "Sarà bruciato il 1 marzo 2024"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Marketing nuovi utenti dell'exchange"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
-        "subText": "Investitori Angel"
+        "subText": "Investitori angelici"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Marketing per nuovi utenti dell'exchange"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Riservato per la prevendita pubblica",
+        "subText1": "e offerto all'acquisto su www.coingarage.io."
       },
-      "limit": " È stato creato un limite di 900 milioni di GARA, che non sarà mai aumentato."
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA in forma OTC dopo l'ammissione alla",
+        "subText1": "negoziazione sulla piattaforma di trading dell'emittente"
+      },
+      "limit": " È fissato un limite di 900 milioni di GARA, che non sarà mai aumentato."
     },
     "release": {
       "header": "Rilascio di GARA per il Team",

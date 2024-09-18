@@ -914,25 +914,39 @@
     },
     "alocation": {
       "header": "Alokace",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "IEO Veřejný Předprodej"
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Odměna za stakování"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Společnost"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
-        "subText": "Zakládající Team"
+        "text": "11% (99M GARA)",
+        "subText": "Zakládající team"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "Bude spáleno 5/1/2024"
+        "subText": "Bude spáleno 1. března 2024"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Marketing noví uživatelé burzy"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
-        "subText": "Andělští Investoři"
+        "subText": "Andělští investoři"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Marketing noví uživatelé burzy"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Rezervováno pro veřejný předprodej",
+        "subText1": "a nabízeno ke koupi na www.coingarage.io."
+      },
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA v mimoburzovní formě po přijetí",
+        "subText1": "k obchodování na obchodní platformě emitenta"
       },
       "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
     },

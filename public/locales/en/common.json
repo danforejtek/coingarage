@@ -914,26 +914,40 @@
       "text12": "Crypto card and cash back in GARA"
     },
     "alocation": {
-      "header": "Allocation",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "IEO Public Presale"
+      "header": "Alokace",
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Stake rewards"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Company"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
-        "subText": "Founder Team"
+        "text": "11% (99M GARA)",
+        "subText": "Founding Team"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "Will be burned 5/1/2024"
+        "subText": "To be burned 1st March 2024"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Marketing new users of the exchange"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
-        "subText": "Angel Investors"
+        "subText": "Angel lnvestors"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Marketing new exchange users"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Reserved for public pre-sale offered for",
+        "subText1": "purchase on www.coingarage.io."
+      },
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA in OTC form after admission",
+        "subText1": "to trading on the issuer's trading platform"
       },
       "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
     },

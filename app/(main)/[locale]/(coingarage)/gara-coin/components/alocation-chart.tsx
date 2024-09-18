@@ -15,43 +15,64 @@ export function AlocationChart() {
   const chartConfig = useMemo(() => {
     return {
       1: {
-        label: t("IEO.text"),
-        description: t("IEO.subText"),
+        label: t("rewards.text"),
+        description: t("rewards.subText"),
         color: "hsl(var(--chart-1))",
-        value: 450,
+        value: 99,
       },
       2: {
-        label: t("baseTeam.text"),
-        description: t("baseTeam.subText"),
+        label: t("company.text"),
+        description: t("company.subText"),
         color: "hsl(var(--chart-2))",
-        value: 180,
+        value: 198,
       },
       3: {
-        label: t("burnedAt.text"),
-        description: t("burnedAt.subText"),
+        label: t("baseTeam.text"),
+        description: t("baseTeam.subText"),
         color: "hsl(var(--chart-3))",
-        value: 135,
+        value: 99,
       },
       4: {
-        label: t("angelInvestors.text"),
-        description: t("angelInvestors.subText"),
+        label: t("burnedAt.text"),
+        description: t("burnedAt.subText"),
         color: "hsl(var(--chart-4))",
-        value: 90,
+        value: 135,
       },
       5: {
         label: t("marketing.text"),
         description: t("marketing.subText"),
         color: "hsl(var(--chart-5))",
-        value: 45,
+        value: 90,
+      },
+      6: {
+        label: t("angelInvestors.text"),
+        description: t("angelInvestors.subText"),
+        color: "hsl(var(--chart-6))",
+        value: 90,
+      },
+      7: {
+        label: t("reserved.text"),
+        description: t("reserved.subText"),
+        description2: t("reserved.subText1"),
+        color: "hsl(var(--chart-7))",
+        value: 99,
+      },
+      8: {
+        label: t("nonExchange.text"),
+        description: t("nonExchange.subText"),
+        description2: t("nonExchange.subText1"),
+        color: "hsl(var(--chart-8))",
+        value: 90,
       },
     }
   }, []) satisfies ChartConfig
 
-  const chartData = Object.entries(chartConfig).map(([key, { label, color, value, description }]) => ({
+  const chartData = Object.entries(chartConfig).map(([key, { label, color, value, description, description2 }]) => ({
     label,
     value,
     fill: color,
     description,
+    description2,
   }))
 
   const total = useMemo(() => {
@@ -116,6 +137,16 @@ export function AlocationChart() {
                   >
                     {chartData[index].description}
                   </text>
+                  <text
+                    x={ex}
+                    y={ey}
+                    dy={40}
+                    textAnchor={textAnchor}
+                    fill={theme === "dark" ? "white" : "black"}
+                    className="font-heading text-base"
+                  >
+                    {chartData[index]?.description2}
+                  </text>
                 </g>
               )
             }}
@@ -179,13 +210,15 @@ export function AlocationChart() {
       </ChartContainer>
       <div className="block xl:hidden">
         <div className="mt-8 flex flex-col flex-wrap justify-center gap-6">
-          {chartData.map(({ label, description, fill }) => (
+          {chartData.map(({ label, description, description2, fill }) => (
             <div key={label} className="flex justify-center">
               <div>
                 <p className="text-center font-heading text-2xl font-bold" style={{ color: fill }}>
                   {label}
                 </p>
-                <p className="text-center font-heading text-xl text-neutral-700 dark:text-neutral-200">{description}</p>
+                <p className="text-center font-heading text-xl text-neutral-700 dark:text-neutral-200">
+                  {description} {description2}
+                </p>
               </div>
             </div>
           ))}

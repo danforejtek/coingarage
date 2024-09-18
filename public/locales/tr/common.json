@@ -914,28 +914,42 @@
       "text12": "GARA'da kripto kartı ve nakit iadesi"
     },
     "alocation": {
-      "header": "Paylaştırma",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "IEO Halka Açık Ön Satış"
+      "header": "Tahsis",
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Staking ödülü"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Şirket"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
-        "subText": "Kurucu Ekip"
+        "text": "11% (99M GARA)",
+        "subText": "Kurucu ekip"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "5/1/2024de yakılacak"
+        "subText": "1 Mart 2024'te yakılacak"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Borsanın yeni kullanıcıları için pazarlama"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
-        "subText": "Melek Yatırımcılar"
+        "subText": "Melek yatırımcılar"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Yeni exchange kullanıcılarının pazarlanması"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Halka açık ön satış için ayrılmıştır",
+        "subText1": "ve www.coingarage.io adresinden satın alınabilir."
       },
-      "limit": " Toplam limit 900 milyon GARA'dır, ancak bu sınır dışıdır."
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "İhraççının ticaret platformunda",
+        "subText1": "işlem görmeye başladıktan sonra borsadışı formda GARA"
+      },
+      "limit": "900 milyon GARA ile sınırlıdır ve bu limit asla artırılmayacaktır."
     },
     "release": {
       "header": "Takım için GARA Sürümü",

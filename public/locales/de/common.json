@@ -926,27 +926,41 @@
     },
     "alocation": {
       "header": "Zuweisung",
-      "IEO": {
-        "text": "50% (450M GARA)",
-        "subText": "Öffentlicher IEO-Vorverkauf"
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Staking-Belohnung"
+      },
+      "company": {
+        "text": "22% (198M GARA)",
+        "subText": "Unternehmen"
       },
       "baseTeam": {
-        "text": "20% (180M GARA)",
-        "subText": "Gründerteam"
+        "text": "11% (99M GARA)",
+        "subText": "Gründungsteam"
       },
       "burnedAt": {
         "text": "15% (135M GARA)",
-        "subText": "Wird am 01.05.2024 verbrannt"
+        "subText": "Wird am 1. März 2024 verbrannt"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Marketing neue Börsennutzer"
       },
       "angelInvestors": {
         "text": "10% (90M GARA)",
         "subText": "Angel-Investoren"
       },
-      "marketing": {
-        "text": "5% (45M GARA)",
-        "subText": "Marketing für neue Börsennutzer"
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Reserviert für den öffentlichen Vorverkauf",
+        "subText1": "und zum Kauf angeboten auf www.coingarage.io."
       },
-      "limit": " Es wurde ein Limit von 900 Millionen GARA erstellt, das nie erhöht wird."
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA in OTC-Form nach der Zulassung zum Handel",
+        "subText1": "auf der Handelsplattform des Emittenten"
+      },
+      "limit": " Es gibt ein Limit von 900 Millionen GARA, das nie erhöht wird."
     },
     "release": {
       "header": "GARA-Freigabe für das Team",
