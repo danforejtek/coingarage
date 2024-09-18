@@ -98,7 +98,6 @@ export const getArtileMetadata = async ({
       },
     },
     twitter,
-    
   } as Metadata
 }
 
@@ -136,4 +135,43 @@ export const getLatestArticles = async ({ params }: { params: Partial<{ locale: 
   const responseData = await response.json()
   const data = responseData?.data
   return data
+}
+
+export const getArticlesForSitemap = async ({ locale }: { locale: string }) => {
+  let page = 1
+  const pageSize = 100
+  let allSlugs: { locale: string; slug: string; updatedAt: string; createdAt: string }[] = []
+  let totalPages = 1
+
+  do {
+    const response = await fetch(
+      `${API_URL}/api/articles?fields[0]=slug&fields[1]=createdAt&fields[2]=updatedAt&fields[3]=locale&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${locale}`,
+      {
+        headers: {
+          Authorization: `Bearer ${API_TOKEN}`,
+        },
+        next: {
+          revalidate: 43200,
+        },
+      }
+    )
+    const responseData = await response.json()
+    const data = responseData?.data
+    const pagination = responseData?.meta?.pagination
+
+    if (!data || data.length === 0) return []
+
+    const slugs = data.map((item) => ({
+      slug: item?.attributes?.slug,
+      locale: item?.attributes?.locale,
+      createdAt: item?.attributes?.createdAt,
+      updatedAt: item?.attributes?.updatedAt,
+    }))
+
+    allSlugs = [...allSlugs, ...slugs]
+    totalPages = pagination.pageCount
+    page++
+  } while (page <= totalPages)
+
+  return allSlugs
 }

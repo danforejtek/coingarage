@@ -1,103 +1,118 @@
+import { getArticlesForSitemap } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 import { MetadataRoute } from "next"
-// import { promises as fs } from "fs"
-// import path from "path"
+import { locales } from "@/config"
 
-type Article = {
-  slug: string
-  date: string
+const baseUrl = process.env.VERCEL_URL as string
+const baseUrlFinance =
+  process.env.NODE_ENV !== "production" ? `${baseUrl}/finance` : `https://${process.env.FINANCE_DOMAIN}`
+
+const staticPages = [
+  {
+    url: `/`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 1,
+  },
+  {
+    url: `/earn`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `/blog`,
+    lastModified: new Date(),
+    changeFrequency: "daily",
+    priority: 1,
+  },
+  {
+    url: `/about-us`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.5,
+  },
+  {
+    url: `/partners`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    url: `/legal/terms-of-service`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    url: `/legal/privacy-policy`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+  {
+    url: `/legal/cookie-policy`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.3,
+  },
+]
+
+const staticPagesFinance = [
+  {
+    isFinance: true,
+    url: `${baseUrlFinance}`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 1,
+  },
+  {
+    isFinance: true,
+    url: `${baseUrlFinance}/contacts`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.5,
+  },
+]
+
+const addLocalesToUrls = (
+  baseUrl: string,
+  urlArray: { url: string; lastModified: Date; changeFrequency: string; priority: number }[],
+  locales: string[]
+) => {
+  const localizedUrls = []
+
+  urlArray.forEach((item) => {
+    locales.forEach((locale) => {
+      localizedUrls.push({
+        url: `${baseUrl}/${locale}${item.url}`,
+        lastModified: item.lastModified,
+        changeFrequency: item.changeFrequency,
+        priority: item.priority,
+      })
+    })
+  })
+
+  return localizedUrls
 }
 
-const baseUrl = process.env.NODE_ENV !== "production" ? "http://localhost:4200" : "https://coingarage.io"
-const baseUrlFinance =
-  process.env.NODE_ENV !== "production" ? "http://localhost:4200/finance" : `https://${process.env.FINANCE_DOMAIN}`
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // const jsonData_cs = await fs.readFile(path.join(process.cwd(), "static", `articles_${"cs"}.json`), "utf-8")
-  // const jsonData_en = await fs.readFile(path.join(process.cwd(), "static", `articles_${"en"}.json`), "utf-8")
-  // const jsonData_de = await fs.readFile(path.join(process.cwd(), "static", `articles_${"de"}.json`), "utf-8")
-  // const jsonData_es = await fs.readFile(path.join(process.cwd(), "static", `articles_${"es"}.json`), "utf-8")
-  // const data_cs = JSON.parse(jsonData_cs)
-  // const data_en = JSON.parse(jsonData_en)
-  // const data_de = JSON.parse(jsonData_de)
-  // const data_es = JSON.parse(jsonData_es)
+  const articlesEn = await getArticlesForSitemap({ locale: "en" })
+  const articlesCs = await getArticlesForSitemap({ locale: "cs" })
 
-  // const posts_cs = data_cs.map((post: Article) => ({
-  //   url: `${baseUrl}/cs/blog/${post.slug}`,
-  //   lastModified: new Date(post.date).toISOString(),
-  // }))
-  // const posts_en = data_en.map((post: Article) => ({
-  //   url: `${baseUrl}/en/blog/${post.slug}`,
-  //   lastModified: new Date(post.date).toISOString(),
-  // }))
-  // const posts_de = data_de.map((post: Article) => ({
-  //   url: `${baseUrl}/de/blog/${post.slug}`,
-  //   lastModified: new Date(post.date).toISOString(),
-  // }))
-  // const posts_es = data_es.map((post: Article) => ({
-  //   url: `${baseUrl}/es/blog/${post.slug}`,
-  //   lastModified: new Date(post.date).toISOString(),
-  // }))
+  const articleUrls = [...articlesCs, ...articlesEn].map((article) => ({
+    url: `${baseUrl}/${article.locale}/blog/${article.slug}`,
+    lastModified: new Date(article.updatedAt),
+    changeFrequency: "daily",
+    priority: 0.8,
+  }))
+
+  const localizedUrls = addLocalesToUrls(baseUrl, staticPages, locales)
+  const localizedUrlsFinance = addLocalesToUrls(baseUrlFinance, staticPagesFinance, locales)
 
   return [
-    {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/earn`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/about-us`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/partners`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/legal/terms-of-service`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/legal/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/legal/cookie-policy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrlFinance}`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrlFinance}/contacts`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
+    ...articleUrls,
+    ...localizedUrls,
+    ...localizedUrlsFinance,
+    // ...otherStaticPages,
   ]
 }
