@@ -75,7 +75,7 @@ export const getArtileMetadata = async ({
   const metaSocial = seo?.metaSocial
   const metaTwitter = (metaSocial && metaSocial?.find((item) => item?.socialNetwork === "Twitter")) || null
   const twitter = {
-    card: "summary_largemetaImage",
+    card: "summary_large_image",
     title: metaTwitter?.title || metaTitle,
     description: metaTwitter?.description || metaDescription,
     siteId: "1582689248574115841",
