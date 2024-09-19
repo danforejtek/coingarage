@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
     let amountInGara = usdcToGara(amount)
 
     // security measure for test, if amount is greater than 1, set to 1
-    if (amount > 1) amountInGara = 1
+    // if (amount > 1) amountInGara = 1
 
     // naming convention cahnge due to form on FE is customer -> coingarage
     // change from -> to logic
