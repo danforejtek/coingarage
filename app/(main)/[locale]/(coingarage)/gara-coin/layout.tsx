@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, locale }: { children: React.ReactNode; locale: string }) {
   return (
     <WalletProviders locale={locale}>
-      <div className="primary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-screen overflow-x-hidden"></div>
+      <div className="primary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full overflow-x-hidden"></div>
       {children}
     </WalletProviders>
   )
