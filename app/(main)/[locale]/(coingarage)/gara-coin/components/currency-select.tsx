@@ -9,8 +9,8 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import Image from "next/image"
 
 const tokens = [
-  { label: "USDC", value: "USDC" },
   { label: "USDT", value: "USDT" },
+  { label: "USDC", value: "USDC" },
   // { label: "ETH", value: "ETH" },
 ] as const
 
@@ -48,7 +48,7 @@ export function CurrencySelect({ form }: { form: any }) {
               </PopoverTrigger>
               <PopoverContent className="w-[150px] p-0">
                 <Command>
-                  <CommandInput placeholder="Search token..." />
+                  {/* <CommandInput placeholder="Search token..." /> */}
                   <CommandList>
                     <CommandEmpty>No coin found.</CommandEmpty>
                     <CommandGroup>

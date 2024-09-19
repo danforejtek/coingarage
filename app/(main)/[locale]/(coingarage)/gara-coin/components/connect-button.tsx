@@ -1,26 +1,23 @@
 import { Button } from "@/components/ui/button"
 import { formatAddress } from "@/lib/utils"
 import { ConnectButton as RainbowkitConnectButton } from "@rainbow-me/rainbowkit"
+import { Loader2 } from "lucide-react"
 export const ConnectButton = ({ label, showBalance }) => {
   return (
     <RainbowkitConnectButton.Custom>
-      {({ account, chain, openAccountModal, openChainModal, openConnectModal, authenticationStatus, mounted }) => {
-        console.log(account)
-        // Note: If your app doesn't use authentication, you
-        // can remove all 'authenticationStatus' checks
+      {({ account, chain, openAccountModal, openChainModal, openConnectModal, mounted }) => {
         const ready = mounted
         const connected = ready && account && chain
+
+        if (!ready) {
+          return (
+            <Button disabled>
+              <Loader2 className="animate-spin" />
+            </Button>
+          )
+        }
         return (
-          <div
-            {...(!ready && {
-              "aria-hidden": true,
-              style: {
-                opacity: 0,
-                pointerEvents: "none",
-                userSelect: "none",
-              },
-            })}
-          >
+          <div>
             {(() => {
               if (!connected) {
                 return (

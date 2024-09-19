@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { isAddress, parseEther, parseAbi } from "viem"
 // @ts-ignore
 import { useAccount, useBalance, useWalletClient } from "wagmi"
@@ -248,7 +248,7 @@ export function BuyGara() {
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
           <a
-            href="https://trade.coingarage.io/launchpad/project-details?project=GARA"
+            href="https://trade.coingarage.io/exchange/GARA-EUR"
             target="_blank"
             rel="noreferrer noopener"
             className="flex items-center"

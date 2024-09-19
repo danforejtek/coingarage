@@ -55,15 +55,15 @@ const ArrowRight = ({ width = 300 }) => {
     </svg>
   )
 }
-const whitepaperLink = {
-  en: "https://drive.google.com/file/d/1SyCoYZfPiy8rmH7-UKEogmxrW7ztfbwH/view",
-  cs: "https://drive.google.com/file/d/1lOZVIrVbaX08d-j3V1iiMEC9O8u1s6SG/view",
-  de: "https://drive.google.com/file/d/1k1B95gX09dpDdquhW8DJC2eoqHpqzHaD/view",
-} as const
+// const whitepaperLink = {
+//   en: "https://graceful-hope-03323ffb1e.media.strapiapp.com/Whitepaper_4d17d687d2.pdf",
+//   cs: "https://drive.google.com/file/d/1lOZVIrVbaX08d-j3V1iiMEC9O8u1s6SG/view",
+//   de: "https://drive.google.com/file/d/1k1B95gX09dpDdquhW8DJC2eoqHpqzHaD/view",
+// } as const
 
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
   // unstable_setRequestLocale(locale)
-  const { theme } = useTheme()
+  // const { theme } = useTheme()
   const t = useTranslations("GARA")
 
   return (
@@ -86,7 +86,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <Button variant="link" className="!px-0 font-heading text-xl text-primary" asChild>
             <a
               // @ts-ignore
-              href={whitepaperLink?.[locale] ? whitepaperLink?.[locale] : whitepaperLink?.en}
+              href="https://graceful-hope-03323ffb1e.media.strapiapp.com/Whitepaper_4d17d687d2.pdf"
               target="_blank"
               rel="noopener"
             >
@@ -387,11 +387,13 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <PolygonAddressCopyToClipboard />
               <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
-                <Button variant="default" className="min-w-[200px]">
+                <Button variant="default" className="min-w-[200px]" onClick={() => window?.scrollTo(0, 60)}>
                   {t("IEO.box.btnBuyWithUSDT")}
                 </Button>
-                <Button variant="default" className="min-w-[200px]">
-                  {t("IEO.box.btnBuyWithMatic")}
+                <Button variant="default" className="min-w-[200px]" asChild>
+                  <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
+                    {t("main.buyGARA.buyWith")} EUR
+                  </a>
                 </Button>
               </div>
             </div>

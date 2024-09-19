@@ -211,7 +211,7 @@ export function AlocationChart() {
       <div className="block xl:hidden">
         <div className="mt-8 flex flex-col flex-wrap justify-center gap-6">
           {chartData.map(({ label, description, description2, fill }) => (
-            <div key={label} className="flex justify-center">
+            <div key={description} className="flex justify-center">
               <div>
                 <p className="text-center font-heading text-2xl font-bold" style={{ color: fill }}>
                   {label}
