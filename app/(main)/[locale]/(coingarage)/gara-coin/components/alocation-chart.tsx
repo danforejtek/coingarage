@@ -10,6 +10,7 @@ import { useTheme } from "next-themes"
 
 export function AlocationChart() {
   const { theme } = useTheme()
+  console.log(theme)
   const { width } = useViewportSize()
   const t = useTranslations("GARA.alocation")
   const chartConfig = useMemo(() => {
@@ -132,8 +133,7 @@ export function AlocationChart() {
                     y={ey}
                     dy={20}
                     textAnchor={textAnchor}
-                    fill={theme === "dark" ? "white" : "black"}
-                    className="font-heading text-base"
+                    className="fill-foreground font-heading text-base"
                   >
                     {chartData[index].description}
                   </text>
@@ -142,8 +142,7 @@ export function AlocationChart() {
                     y={ey}
                     dy={40}
                     textAnchor={textAnchor}
-                    fill={theme === "dark" ? "white" : "black"}
-                    className="font-heading text-base"
+                    className="fill-foreground font-heading text-base"
                   >
                     {chartData[index]?.description2}
                   </text>
