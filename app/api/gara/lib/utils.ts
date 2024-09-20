@@ -41,6 +41,18 @@ function toLowerCase(address: string) {
 }
 
 const ethereumRpcUrl = process.env.ETHEREUM_RPC_URL || "https://ethereum-rpc.publicnode.com"
+const polygonRpcUrl = process.env.POLYGON_RPC_URL || "https://polygon-bor-rpc.publicnode.com"
+
+const getRpcNode = (chain: string) => {
+  switch (chain) {
+    case "Ethereum":
+      return http(ethereumRpcUrl)
+    case "Polygon":
+      return http(polygonRpcUrl)
+    default:
+      return http()
+  }
+}
 
 export async function validateTransaction({
   chain,
@@ -60,7 +72,7 @@ export async function validateTransaction({
       throw new Error("Invalid transaction hash")
     }
     const _chain = getChainByName(chain)
-    const transport = chain === "Ethereum" ? http(ethereumRpcUrl) : http()
+    const transport = getRpcNode(chain)
     const publicClient = createPublicClient({ chain: _chain, transport: transport })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
     const transaction = await publicClient.getTransaction({ hash: txHash })

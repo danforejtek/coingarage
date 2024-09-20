@@ -165,6 +165,8 @@ export async function POST(req: NextRequest) {
           },
         },
       })
+      await updateTransactionByTxHash(txHash, { status: "failed" })
+      throw new Error("Error sending GARA token")
     }
 
     try {
@@ -195,6 +197,7 @@ export async function POST(req: NextRequest) {
           },
         },
       })
+      throw new Error("Error waiting for transaction receipt")
     }
     // console.log("Transaction confirmed:", receipt)
 

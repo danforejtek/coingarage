@@ -10,7 +10,6 @@ import { useTheme } from "next-themes"
 
 export function AlocationChart() {
   const { theme } = useTheme()
-  console.log(theme)
   const { width } = useViewportSize()
   const t = useTranslations("GARA.alocation")
   const chartConfig = useMemo(() => {
