@@ -193,7 +193,7 @@ export function BuyGara() {
         <TableBody className="text-sm">
           <TableRow className="!border-none">
             <TableCell className="!p-1 font-heading font-semibold">{t("totalTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-heading font-bold text-primary">450M GARA</TableCell>
+            <TableCell className="!p-1 text-end font-heading font-bold text-primary">900M GARA</TableCell>
           </TableRow>
           <TableRow className="!border-none">
             <TableCell className="!p-1 font-heading font-semibold">{t("distributedTokens")}</TableCell>
@@ -201,7 +201,7 @@ export function BuyGara() {
           </TableRow>
           <TableRow className="!border-none">
             <TableCell className="!p-1 font-heading font-semibold">{t("soldTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-heading font-bold text-primary">30M GARA</TableCell>
+            <TableCell className="!p-1 text-end font-heading font-bold text-primary">2M GARA</TableCell>
           </TableRow>
         </TableBody>
       </Table>

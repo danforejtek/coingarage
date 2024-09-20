@@ -225,6 +225,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.4")}</p>
               </div>
             </div>
+            <div className="flex w-full flex-row justify-center">
+              <Button variant="default" className="mt-12 min-w-[200px]" asChild>
+                <a
+                  href="https://trade.coingarage.io/stake"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {t("garaDepo.garaStakebtn")}
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

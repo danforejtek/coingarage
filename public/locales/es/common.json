@@ -1,1019 +1,1020 @@
 {
-  "Menu": {
-    "buyCrypto": "Comprar Cripto",
-    "depositFiat": "Depositar FIAT",
-    "depositFiatViaSepa": "Depositar FIAT a través de SEPA",
-    "trade": "Comercio",
-    "spotTrading": "Comercio en el lugar",
-    "launchpad": "Lanzadera",
-    "tradingBot": "Robot de Comercio",
-    "convert": "Convertir",
-    "earn": "Ganar",
-    "becomeAShareholder": "Convertirse en Accionista",
-    "affiliate": "Referral",
-    "stake": "Apostar",
-    "more": "Más",
-    "aboutUs": "Acerca de Nosotros",
-    "partners": "Socios",
-    "blog": "Blog",
-    "garageCoinPreSale": "Preventa de GARAGECoin",
-    "buyGarageCoin": "Comprar GARAGECoin",
-    "whitepaperEn": "Whitepaper (Inglés)",
-    "whitepaperCz": "Whitepaper (Checo)",
-    "whitepaperDe": "Whitepaper (Alemán)",
-    "login": "Iniciar sesión",
-    "signUp": "Registrarse",
-    "radio": "Coingarage FM",
-    "knowledgeBase": "Base de conocimientos",
-    "contacts": "Contactos",
-    "mode": {
-      "light": "Claro",
-      "dark": "Oscuro",
-      "system": "Sistema"
-    }
-  },
-  "CryptoLandingPage": {
-    "nameLine1": "Cripto",
-    "nameLine2": "Simple y Seguro",
-    "nameLine3": "Bolsa",
-    "mainText": "Descubre un nivel superior de privacidad financiera y libertad que los sistemas bancarios tradicionales ofrecen en el entorno simple y seguro de nuestro intercambio. Somos un intercambio basado en el corazón de la Unión Europea. ¡Los primeros en introducir regulaciones que harán explotar las criptomonedas aquí!",
-    "register": {
-      "content": "Regístrate y obtén hasta 100 USDT de recompensa en GARAGECoin (GARA)",
-      "limitedOffer": "Oferta limitada",
-      "mark": {
-        "option1": "Cada nuevo usuario en el intercambio recibirá 10 USDT en el token de intercambio GARA.",
-        "option2": "Cada 50º usuario recibirá 50 USDT en el token de intercambio GARA.",
-        "option3": "Cada 100º usuario recibirá 100 USDT en el token de intercambio GARA.",
-        "option4": "Refiere a un nuevo usuario y recibirás la misma recompensa que cada nuevo usuario al que te hayas referido."
-      }
-    },
-    "signUp": "Registrarse",
-    "becomeAShareholder": "Conviértete en Accionista",
-    "howToSignUp": "¿Cómo registrarse?",
-    "scanQrCode": "Escanear el código QR",
-    "toDownloadApp": "para descargar la aplicación"
-  },
-  "App": {
-    "name": "Simplemente en cualquier lugar y en cualquier momento",
-    "text": "Desbloquea el poder de los mercados financieros globales directamente desde la palma de tu mano con la aplicación móvil de comercio de Coingarage. Experimenta el futuro del trading, donde la velocidad, la conveniencia y la precisión convergen.",
-    "appStore": "App Store",
-    "googlePlay": "Google Play",
-    "scanQrCode": "Escanear el código QR",
-    "toDownloadApp": "para descargar la aplicación"
-  },
-  "CryptoMarket": {
-    "name": "Mercado de Criptomonedas",
-    "currency": "Moneda",
-    "price": "Precio",
-    "24hChange": "Cambios en 24 horas",
-    "24hVolume": "Volumen en 24 horas",
-    "marketCap": "Capitalización de mercado"
-  },
-  "CryptoStats": {
-    "trending": "Trending",
-    "topGainers": "Principales Ganadores",
-    "recentlyAdded": "Recientemente Agregados"
-  },
-  "Statistics": {
-    "icon1": "100 Monedas Listadas",
-    "icon2": "Más de 100 Países Participantes",
-    "icon3": "Próximamente: 12 Activos para el staking",
-    "icon4": "Comprar Cripto",
-    "icon5": "Depositar EUR a través de Sepa o Tarjeta"
-  },
-  "DiscoverMoreProducts": {
-    "name": "Descubre Más Productos",
-    "eezyTrader": {
-      "name": "EEZY Trader",
-      "text": "Deje que el Bot de IA trabaje por usted.",
-      "masterTraders": "Operadores Maestros",
-      "followers": "Seguidores",
-      "bestTraders": {
-        "7DROI": "Rendimiento en 7 días (7DROI)",
-        "7DFollowersPnL": "Ganancias y Pérdidas de Seguidores en 7 días (7D Followers PnL)",
-        "copy": "Copiar"
-      },
-      "features": {
-        "tradingBot": {
-          "name": "Robot de Comercio (TradingBot)",
-          "text": "Bots de 'Grid' y 'DCA' (Costo Promedio en Dólares). Estrategias largas, cortas y más."
-        },
-        "takeProfit": {
-          "name": "Tomar Ganancias",
-          "text": "Haz crecer tu riqueza criptográfica de manera simple, inteligente y efectiva."
-        },
-        "copyTrading": {
-          "name": "Copiar Trading",
-          "text": "Deja que los mejores traders trabajen para ti, simplemente cópialos."
-        },
-        "bargain": {
-          "name": "Oferta",
-          "text": "La mejor oferta en el mercado."
+    "Menu": {
+        "buyCrypto": "Comprar Cripto",
+        "depositFiat": "Depositar FIAT",
+        "depositFiatViaSepa": "Depositar FIAT a través de SEPA",
+        "trade": "Comercio",
+        "spotTrading": "Comercio en el lugar",
+        "launchpad": "Lanzadera",
+        "tradingBot": "Robot de Comercio",
+        "convert": "Convertir",
+        "earn": "Ganar",
+        "becomeAShareholder": "Convertirse en Accionista",
+        "affiliate": "Referral",
+        "stake": "Apostar",
+        "more": "Más",
+        "aboutUs": "Acerca de Nosotros",
+        "partners": "Socios",
+        "blog": "Blog",
+        "garageCoinPreSale": "Preventa de GARAGECoin",
+        "buyGarageCoin": "Comprar GARAGECoin",
+        "whitepaperEn": "Whitepaper (Inglés)",
+        "whitepaperCz": "Whitepaper (Checo)",
+        "whitepaperDe": "Whitepaper (Alemán)",
+        "login": "Iniciar sesión",
+        "signUp": "Registrarse",
+        "radio": "Coingarage FM",
+        "knowledgeBase": "Base de conocimientos",
+        "contacts": "Contactos",
+        "mode": {
+            "light": "Claro",
+            "dark": "Oscuro",
+            "system": "Sistema"
         }
-      }
-    }
-  },
-  "Faq": {
-    "question1": {
-      "question": "¿Cuál es la diferencia entre una 'Moneda' y un 'Token' en el sitio?",
-      "answer": "Una moneda es una criptomoneda que puede operar de forma independiente. Un token es una criptomoneda que depende de otra criptomoneda como plataforma para operar. Consulta nuestro artículo en el blog para obtener más información."
     },
-    "question2": {
-      "question": "¿Qué es Bitcoin (BTC)?",
-      "answer": "Bitcoin es la primera criptomoneda creada en 2009 por Satoshi Nakamoto. Es una moneda digital descentralizada que puede ser enviada de usuario a usuario en la red peer-to-peer de Bitcoin sin necesidad de intermediarios."
+    "CryptoLandingPage": {
+        "nameLine1": "Cripto",
+        "nameLine2": "Simple y Seguro",
+        "nameLine3": "Bolsa",
+        "mainText": "Descubre un nivel superior de privacidad financiera y libertad que los sistemas bancarios tradicionales ofrecen en el entorno simple y seguro de nuestro intercambio. Somos un intercambio basado en el corazón de la Unión Europea. ¡Los primeros en introducir regulaciones que harán explotar las criptomonedas aquí!",
+        "register": {
+            "content": "Regístrate y obtén hasta 100 USDT de recompensa en GARAGECoin (GARA)",
+            "limitedOffer": "Oferta limitada",
+            "mark": {
+                "option1": "Cada nuevo usuario en el intercambio recibirá 10 USDT en el token de intercambio GARA.",
+                "option2": "Cada 50º usuario recibirá 50 USDT en el token de intercambio GARA.",
+                "option3": "Cada 100º usuario recibirá 100 USDT en el token de intercambio GARA.",
+                "option4": "Refiere a un nuevo usuario y recibirás la misma recompensa que cada nuevo usuario al que te hayas referido."
+            }
+        },
+        "signUp": "Registrarse",
+        "becomeAShareholder": "Conviértete en Accionista",
+        "howToSignUp": "¿Cómo registrarse?",
+        "scanQrCode": "Escanear el código QR",
+        "toDownloadApp": "para descargar la aplicación"
     },
-    "question3": {
-      "question": "¿Qué es la moneda USDT (USDT)?",
-      "answer": "Tether (USDT) es una criptomoneda con un valor destinado a reflejar el valor del dólar estadounidense. La idea era crear una criptomoneda estable que pueda utilizarse como dólares digitales. Las monedas que sirven para este propósito de ser un sustituto estable del dólar se llaman 'stablecoins'. USDT es la stablecoin más popular e incluso actúa como un reemplazo del dólar en muchas de las principales bolsas."
+    "App": {
+        "name": "Simplemente en cualquier lugar y en cualquier momento",
+        "text": "Desbloquea el poder de los mercados financieros globales directamente desde la palma de tu mano con la aplicación móvil de comercio de Coingarage. Experimenta el futuro del trading, donde la velocidad, la conveniencia y la precisión convergen.",
+        "appStore": "App Store",
+        "googlePlay": "Google Play",
+        "scanQrCode": "Escanear el código QR",
+        "toDownloadApp": "para descargar la aplicación"
     },
-    "question4": {
-      "question": "¿Cómo puedo comprar criptomonedas?",
-      "answer": "Puedes comprar criptomonedas en Coingarage siguiendo estos tres pasos: 1. Regístrate en una cuenta de Coingarage. 2. Verifica tu cuenta. 3. Deposita EUR u otras criptomonedas admitidas. 4. Compra tus criptomonedas favoritas."
+    "CryptoMarket": {
+        "name": "Mercado de Criptomonedas",
+        "currency": "Moneda",
+        "price": "Precio",
+        "24hChange": "Cambios en 24 horas",
+        "24hVolume": "Volumen en 24 horas",
+        "marketCap": "Capitalización de mercado"
     },
-    "question5": {
-      "question": "¿Cómo puedo verificar mi cuenta personal?",
-      "answer": "Puedes verificar tu cuenta personal siguiendo estos tres pasos: 1. Inicia sesión en tu cuenta de Coingarage. 2. Ve a la configuración de tu cuenta. 3. Haz clic en la pestaña de verificación. 4. Sigue las instrucciones y carga los documentos requeridos. 5. Espera a que se procese tu verificación. 6. ¡Comienza a operar!"
-    }
-  },
-  "Footer": {
-    "aboutUs": "Sobre nosotros",
-    "contactUs": "Contáctenos",
-    "fees": "Tarifas",
-    "hotCoins": "Criptomonedas Calientes",
-    "blog": "Blog",
-    "faqs": "Preguntas frecuentes",
-    "coinListing": "Listado de Criptomonedas",
-    "markets": "Mercados",
-    "trade": "Comercio",
-    "buyCrypto": "Comprar Criptomonedas",
-    "staking": "Apostar",
-    "login": "Iniciar sesión",
-    "legal": {
-      "termsOfService": "Términos de servicio",
-      "privacyPolicy": "Política de privacidad",
-      "cookiePolicy": "Política de cookies",
-      "sportTradingTerms": "Condiciones al contadocomerciales",
-      "btcSavingPlanTerms": "Condiciones del Plan de Ahorro de BTC",
-      "garaStakeTerms": "Condiciones de la Apuesta de GARA"
-    }
-  },
-  "Contact": {
-    "street": "Revoluční&nbsp;1082/8",
-    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
-    "postalCode": "110 00",
-    "country": "Prague, Czech Republic",
-    "phone": "+420 778 116 516",
-    "email": "support@coingarage.io",
-    "companyID": "IČ: 11667974"
-  },
-  "Affiliate": {
-    "name": "Programa de Referidos",
-    "claim": "Únete a Coingarage",
-    "reward": "Puede Obtener 3 Niveles de Recompensas",
-    "text1": "¿Crees que las criptomonedas y la tecnología blockchain pueden cambiar el mundo para mejor?",
-    "text2": "Si es así, únete al programa de afiliados de Coingarage y gana recompensas especiales. Presenta a tus amigos Coingarage, un intercambio de criptomonedas completamente licenciado en el corazón de Europa.",
-    "warning": "*Muy importante: Ten en cuenta que tu afiliación no termina solo con tus referidos directos. Si tus referidos directos comienzan a trabajar y obtienen referidos de tus referidos directos, recibirás las siguientes recompensas de esos referidos directos."
-  },
-  "AboutUs": {
-    "weAreCoingarage": "Somos coingarage",
-    "name": "Sobre nosotros",
-    "text1": "No en islas lejanas en paraísos fiscales, sino en el corazón de Europa, se estableció en Praga la primera bolsa de criptomonedas con licencia completa para poseer y comerciar con criptomonedas.",
-    "text2": "Toda la actividad está completamente subordinada a las leyes de la UE y a la supervisión de reguladores y autoridades. Aquí puedes comprar cripto por fiat, mantenerlo y comerciar en una de las plataformas más modernas con énfasis en la completitud y simplicidad",
-    "elements": {
-      "text1": "Un elemento clave de nuestra plataforma es la simplicidad.",
-      "text2": "Aquí encontrarás comercio al contado, pero también Futuros en el futuro",
-      "text3": "En la bolsa podrás ganar haciendo staking de las monedas más populares",
-      "text4": "También será posible intercambiar monedas en la bolsa utilizando el principio P2P",
-      "text5": "En un solo lugar puedes comprar cripto por moneda fiat a través de tu tarjeta de débito o por transferencia desde tu cuenta, luego puedes mantenerlo aquí y comerciar con él.",
-      "text6": "A partir de enero de 2024, podrás utilizar nuestros profesionales DCA, GRID, Futures Boots con inteligencia artificial para el comercio",
-      "text7": "Nuestra bolsa también ofrecerá su propia plataforma NFT, incluyendo un mercado",
-      "text8": "Todas estas funciones se complementarán con programas educativos y videos"
+    "CryptoStats": {
+        "trending": "Trending",
+        "topGainers": "Principales Ganadores",
+        "recentlyAdded": "Recientemente Agregados"
     },
-    "financialWorld": {
-      "name": "Queremos que las criptomonedas se conviertan en una parte común y respetada del mundo financiero en Europa.",
-      "text1": "Queremos contribuir a la adopción de criptomonedas en Europa y ofrecer un entorno completamente transparente y seguro que esté en línea con la ley y las regulaciones de la UE.",
-      "text2": "Para que la gente sepa qué esperar del mundo cripto y sea consciente de los beneficios, pero también de los riesgos de esta industria. Para que sepan que invertir en cripto no es solo una especulación a corto plazo, sino una inversión a largo plazo y significativa",
-      "text3": "Nuestra visión se basa en cuatro valores fundamentales: transparencia, completitud, seguridad y simplicidad. Si logramos cumplir con estos valores en nuestra visión, entonces estaremos en camino de traer a la gente ganancias regulares a largo plazo del mundo cripto.",
-      "text4": ""
+    "Statistics": {
+        "icon1": "100 Monedas Listadas",
+        "icon2": "Más de 100 Países Participantes",
+        "icon3": "Próximamente: 12 Activos para el staking",
+        "icon4": "Comprar Cripto",
+        "icon5": "Depositar EUR a través de Sepa o Tarjeta"
     },
-    "getStarted": "Empezar"
-  },
-  "security": {
-    "security": "Seguridad del Intercambio",
-    "securityText": "Nuestra plataforma utiliza varias tecnologías de última generación para garantizar un sistema sólido y eficiente. Utilizamos las últimas versiones de cifrado de datos tanto para la transmisión como para el almacenamiento. También utilizamos funciones avanzadas de protección basadas en inteligencia artificial, asegurando un entorno seguro para nuestros usuarios.",
-    "protection": "Protección al Cliente",
-    "protectionText": "Las medidas de protección al cliente de Coingarage van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
-    "fundsSecurity": "Seguridad de Fondos",
-    "fundsSecurityText": "Nuestra Seguridad de Fondos está creada por veteranos de la industria de blockchain y web. Creamos una plataforma en la nube de próxima generación que cumple con evaluaciones de seguridad de calidad de grado bancario.",
-    "monitoring": "Monitoreo en Tiempo Real",
-    "monitoringText": "Nuestros sistemas de monitoreo en tiempo real rastrean y analizan activamente las actividades en nuestra plataforma, lo que nos permite detectar y responder rápidamente a cualquier comportamiento sospechoso. Este enfoque proactivo garantiza la constante protección de sus activos y datos.",
-    "secureByDesign": "Seguridad por Diseño",
-    "secureByDesignText": "Nuestras medidas de protección de la privacidad van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
-    "heading": "Un Refugio Seguro: Donde la Privacidad, el Diseño y el Monitoreo en Tiempo Real Convergen para su Tranquilidad",
-    "newDesign": "Estamos trabajando en un nuevo diseño",
-    "continueToTrader": "Continuar a EEZY Trader"
-  },
-  "eezy-trader": {
-    "nav": {
-      "knowledgeBase": "Base de conocimientos",
-      "affiliateProgram": "Programa de afiliados",
-      "payments": "Pagos y suscripciones"
-    },
-    "homepage": {
-      "trialBtn": "COMIENZA LA PRUEBA GRATUITA DE 7 DÍAS",
-      "main": {
-        "header": "El mejor bot de trading de criptomonedas impulsado por IA",
-        "noCreditCard": "*No se requiere tarjeta de crédito"
-      },
-      "results": {
-        "header": "Realiza todo el potencial de tu estrategia de trading aprovechando las capacidades avanzadas del bot de criptomonedas EEZY Trader de Coingarage, lo que te permite alcanzar el máximo rendimiento comercial y maximizar los beneficios.",
-        "topPerformers": "Mejores rendimientos",
-        "topPairs": "Mejores pares",
-        "name": "Nombre",
-        "pair": "Par"
-      },
-      "trusting": {
-        "subHeader": "Confiado por miles de traders, impulsado por",
-        "header": "Coingarage “Simply & safely Exchange”",
-        "columns": {
-          "1": "Largo / Corto",
-          "2": "Beneficio de trading",
-          "3": "DCA/GRID",
-          "4": "Guardar estrategia",
-          "5": "Inicio por IA",
-          "6": "Copiar trading",
-          "7": "100 Pares para comerciar",
-          "8": "Indicadores técnicos",
-          "9": "90 Bots"
+    "DiscoverMoreProducts": {
+        "name": "Descubre Más Productos",
+        "eezyTrader": {
+            "name": "EEZY Trader",
+            "text": "Deje que el Bot de IA trabaje por usted.",
+            "masterTraders": "Operadores Maestros",
+            "followers": "Seguidores",
+            "bestTraders": {
+                "7DROI": "Rendimiento en 7 días (7DROI)",
+                "7DFollowersPnL": "Ganancias y Pérdidas de Seguidores en 7 días (7D Followers PnL)",
+                "copy": "Copiar"
+            },
+            "features": {
+                "tradingBot": {
+                    "name": "Robot de Comercio (TradingBot)",
+                    "text": "Bots de 'Grid' y 'DCA' (Costo Promedio en Dólares). Estrategias largas, cortas y más."
+                },
+                "takeProfit": {
+                    "name": "Tomar Ganancias",
+                    "text": "Haz crecer tu riqueza criptográfica de manera simple, inteligente y efectiva."
+                },
+                "copyTrading": {
+                    "name": "Copiar Trading",
+                    "text": "Deja que los mejores traders trabajen para ti, simplemente cópialos."
+                },
+                "bargain": {
+                    "name": "Oferta",
+                    "text": "La mejor oferta en el mercado."
+                }
+            }
         }
-      },
-      "investment": {
-        "header": "Siéntate y observa cómo crecen tus inversiones en criptomonedas, día y noche, 24/7, estés donde estés",
-        "free7Days": "Prueba gratuita de 7 días",
-        "howToConnect": {
-          "register": "Registrarse",
-          "connect": "Conectar",
-          "startTrading": "Comenzar a operar"
-        }
-      },
-      "login": {
-        "header": "<span>Comienza a ganar con</span><span class='text-violet'>Trader de Coingarage</span><span><span class='text-violet'>Bot</span> hoy</span>",
-        "subText": "Regístrate en Coingarage y obtén un período de prueba <b>PRO de 7 días</b> totalmente funcional para probar todas las funciones avanzadas del bot.",
-        "loginForm": {
-          "login": "Iniciar sesión",
-          "yourEmail": "Tu correo electrónico",
-          "password": "Contraseña",
-          "forgotPassword": "¿Olvidaste la contraseña?",
-          "noAccount": "¿No tienes una cuenta? Regístrate aquí"
-        }
-      },
-      "start": {
-        "header": "Inicia el EEZY TRADER en 5 sencillos pasos",
-        "subText": "Lance su bot de trading EEZY sin esfuerzo en cinco sencillos pasos: empiece a operar y optimice sus beneficios hoy mismo con Coingarage.",
-        "steps": {
-          "1": "Regístrate en Coingarage",
-          "2": "Inicia sesión en un Exchange",
-          "3": "Ve a la subcuenta y elige en el menú EEZY Trader",
-          "4": "Crea una estrategia",
-          "5": "¡Ejecuta el bot y observa cómo genera ganancias!"
-        }
-      },
-      "faq": {
-        "question1": "¿Cómo puedo empezar con su plataforma?",
-        "answer1": "¡Empezar es fácil! Simplemente regístrate para obtener una cuenta, completa el proceso de verificación, deposita fondos en tu cuenta y comienza a operar utilizando nuestra plataforma intuitiva y poderosas herramientas de trading.",
-        "question2": "¿Cómo aseguran la seguridad de mis fondos e información personal?",
-        "answer2": "Implementamos medidas de seguridad estándar de la industria, incluyendo cifrado, autenticación de dos factores (2FA) y auditorías de seguridad regulares, para proteger tus fondos e información personal. Además, nuestra plataforma cumple con estrictos estándares de cumplimiento para proteger contra el acceso no autorizado y actividades fraudulentas.",
-        "question3": "¿Cuáles son los beneficios de usar DCA?",
-        "answer3": "El promedio de costo en dólares (DCA) es una estrategia donde un inversor divide el monto total a invertir entre compras periódicas de un activo objetivo en un esfuerzo por reducir el impacto de la volatilidad en la compra total. Los principales beneficios de usar DCA incluyen reducir el riesgo asociado con el momento del mercado, potencialmente reducir el costo promedio por acción con el tiempo y promover un comportamiento de inversión disciplinado."
-      }
     },
-    "affiliate": {
-      "btnAffiliate": "Empezar",
-      "main": {
-        "header1": "Programa de Referidos",
-        "header2": "Gana hasta un 15% de comisión de cada operación de tus socios",
-        "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>¡Invita a tus amigos y disfruten de ganancias compartidas juntos!</b>"
-      },
-      "getStarted": {
-        "header": "Cómo empezar",
-        "header1": "Regístrate en Coingarage",
-        "subText1": "Cree una cuenta en Coingarage, inicie sesión y luego vaya a la sección de Programa de Referidos.",
-        "header2": "Invita a tus amigos y socios",
-        "subText2": "Copie su enlace de afiliado y envíelo a sus amigos o socios.",
-        "header3": "Disfruta tus ganancias",
-        "subText3": "Después de que creen una cuenta y comiencen a operar, ganará sus recompensas.",
-        "disclaimer": "Será redirigido a la página de inicio de sesión. Después de iniciar sesión en su cuenta, puede encontrar su código de referencia en Mi -> Referido"
-      },
-      "faq": {
-        "question1": "¿Cómo funciona el programa de afiliados?",
-        "answer1": "Como afiliado, recibirás un enlace o código de referencia único que puedes compartir con tu audiencia. Cuando alguien hace clic en tu enlace o usa tu código para realizar una compra o registrarse, recibirás una comisión por la venta o inscripción.",
-        "question2": "¿Hay un límite en cuánto puedo ganar a través del programa de afiliados?",
-        "answer2": "No hay límite en cuánto puedes ganar a través de nuestro programa de afiliados. Tus ganancias dependen del número de referencias que generes y el valor de sus compras o inscripciones.",
-        "question3": "¿Cómo puedo rastrear mis referencias y comisiones?",
-        "answer3": "Nuestro programa de afiliados proporciona acceso a un panel donde puedes rastrear tus referencias, monitorear ventas o inscripciones y ver tus ganancias de comisión en tiempo real.",
-        "question4": "¿Cuál es la estructura de comisiones para el programa de afiliados?",
-        "answer4": "Nuestro programa de afiliados ofrece una estructura de comisiones multinivel, con porcentajes de comisión basados en el nivel de referencias:",
-        "levels": {
-          "1": "Nivel 1: comisión del 15%",
-          "2": "Nivel 2: comisión del 10%",
-          "3": "Nivel 3: comisión del 5%"
-        }
-      },
-      "setupTradingBot": {
-        "name": "¿No sabes cómo configurar un robot de trading?",
-        "claim": "No se preocupe, hemos creado una base de conocimientos",
-        "text1": "Aquí encontrará una guía completa para establecer y operar un robot de trading, que cubre todos los aspectos esenciales."
-      },
-      "example": "Ejemplo",
-      "levels": {
-        "text1": "John es la primera persona en la cadena de referencia. Si John refiere a Alice, gana el 15% de la recompensa total por el registro de Alice.",
-        "text2": "Alice está registrada bajo John, por lo tanto, en el segundo nivel. Si Alice refiere a Peter, John (primer nivel) gana el 10% de la recompensa total por la cuenta de Peter.",
-        "text3": "Peter está registrado bajo Alice, por lo tanto, en el tercer nivel. Si Peter refiere a otro usuario, John (primer nivel) gana el 5% de la recompensa total por el nuevo usuario registrado por Peter."
-      },
-      "disclaimer": "Las recompensas se generan a partir de las tarifas pagadas por sus referencias.",
-      "warning": "*Muy importante: Tenga en cuenta que su programa de afiliados no termina solo con sus referencias directas, si sus referencias directas comienzan a trabajar y las referencias de sus referencias directas recibirán las próximas recompensas."
-    },
-    "subscription": {
-      "disclaimer": "Una vez finalizado el registro, podrá seleccionar un plan de suscripción",
-      "btnBuy": "Comprar Suscripción",
-      "header": "¿Qué es un plan de suscripción?",
-      "subText": "Un plan de suscripción te concede acceso a nuestros servicios a plena capacidad. <b>Con una suscripción, obtienes acceso a nuestro revolucionario robot de trading</b>, que te permite operar en los mercados con absoluta facilidad y eficiencia.",
-      "plans": {
-        "header": "Suscripción",
-        "subText": "¿No estás seguro si nuestra suscripción es adecuada para ti? ¡No hay problema! Ofrecemos una versión de prueba donde puedes probar nuestro bot y experimentar sus capacidades de primera mano.",
-        "trial": {
-          "header": "Prueba",
-          "free": "Gratis",
-          "package": {
-            "header": "Prueba y Disfruta del Bot de Trading",
-            "1": "Hasta 10 Bots",
-            "2": "Todas las Estrategias",
-            "3": "Terminales de Trading",
-            "4": "Trailing Take Profit"
-          }
-        },
-        "month": {
-          "mostUsed": "Más utilizado",
-          "header": "Básico Mensual",
-          "competitionPrice": "$45/mes",
-          "price": "$15/mes",
-          "package": {
-            "header": "Prueba y Disfruta del Bot de Trading",
-            "1": "Hasta 50 Bots",
-            "2": "Todas las Estrategias",
-            "3": "Terminales de Trading",
-            "4": "Trailing Take Profit",
-            "5": "Renovación Automática"
-          }
-        },
-        "year": {
-          "header": "Básico Anual",
-          "competitionPrice": "$384/año",
-          "price": "$120/año",
-          "save60": "Ahorra $60",
-          "package": {
-            "header": "Desbloquea el Potencial Completo del Bot de Trading",
-            "1": "Hasta 99 Bots",
-            "2": "Todas las Estrategias",
-            "3": "Terminales de Trading",
-            "4": "Trailing Take Profit",
-            "5": "Renovación Automática"
-          }
-        },
-        "fee": "Se deduce una tarifa de éxito del 10% en EEZY Coin de cada ganancia."
-      }
-    }
-  },
-  "knowledgeBase": {
-    "general": {
-      "name": "General",
-      "activation": "Activación",
-      "subscription": "Suscripción",
-      "features": "Características",
-      "activationYoutubeId": "hJF5oCmLSvo",
-      "subscriptionYoutubeId": "F69rUJvCc9o",
-      "featuresYoutubeId": "C1swS8rtA2w",
-      "introduction": {
-        "name": "Introducción",
-        "overview": {
-          "header": "Visión general",
-          "subText": "El trading de bots, también conocido como trading automatizado, utiliza software preprogramado para ejecutar operaciones en nombre de los traders. Este método de trading ha ganado popularidad debido a su capacidad para ejecutar operaciones con velocidad y precisión, las 24 horas del día, los 7 días de la semana, sin necesidad de intervención humana."
-        },
-        "advantages": {
-          "header": "Ventajas",
-          "subText1": "Velocidad: Los bots pueden ejecutar operaciones en milisegundos, aprovechando los movimientos del mercado más rápido que los traders humanos.",
-          "subText2": "Trading sin emociones: Los bots operan en base a reglas predefinidas, eliminando emociones como el miedo y la avaricia que pueden afectar la toma de decisiones humanas.",
-          "subText3": "Trading las 24 horas del día, los 7 días de la semana: Los bots pueden operar todo el día, aprovechando las oportunidades en los mercados globales incluso cuando los traders están dormidos o fuera de línea.",
-          "subText4": "Backtesting y optimización: Los traders pueden probar las estrategias de los bots utilizando datos históricos para evaluar el rendimiento y optimizar las estrategias para obtener mejores resultados.",
-          "subText5": "Diversificación: Los bots pueden operar en múltiples activos simultáneamente, permitiendo una mayor diversificación de las carteras de trading."
-        },
-        "conclusion": {
-          "header": "Conclusión",
-          "subText": "Este esquema de introducción proporciona una visión general del trading de bots, sus ventajas, diferentes tipos de estrategias, consideraciones y concluye con los beneficios potenciales que los traders pueden obtener al utilizar bots en sus actividades de trading."
-        }
-      },
-      "slang": {
-        "name": "Slang",
-        "GRID": "Una estrategia de trading que implica colocar órdenes de compra y venta en intervalos de precios predefinidos dentro de un rango especificado. El objetivo del trading por grillas es obtener ganancias de las fluctuaciones de precios dentro del rango establecido.",
-        "DCA": "El promedio del costo en dólares (DCA) es una estrategia de inversión en la que un inversor compra una cantidad fija de una inversión particular en un horario regular, independientemente del precio del activo. Esta estrategia tiene como objetivo reducir el impacto de la volatilidad del mercado al distribuir el precio de compra a lo largo del tiempo.",
-        "TP": "El Take Profit (TP) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para realizar ganancias. Las órdenes de Take Profit generalmente se establecen por encima del precio de mercado actual para posiciones largas y por debajo del precio de mercado actual para posiciones cortas.",
-        "SL": "El Stop Loss (SL) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para limitar pérdidas potenciales. Las órdenes de Stop Loss generalmente se establecen por debajo del precio de mercado actual para posiciones largas y por encima del precio de mercado actual para posiciones cortas.",
-        "SHORT": "Una posición de trading en la que un trader vende un activo con la expectativa de que su precio disminuya. Los traders obtienen ganancias de las posiciones cortas comprando de nuevo el activo a un precio más bajo del que lo vendieron. Utilícelo sólo para monedas en las que confíe y que mantenga a largo plazo. Te beneficias de su caída en USDT, pero si las vendes antes de que vuelvan a su precio original, tendrás pérdidas.",
-        "LONG": "Una posición de trading en la que un trader compra un activo con la expectativa de que su precio aumente. Los traders obtienen ganancias de las posiciones largas vendiendo el activo a un precio más alto del que lo compraron.",
-        "START_BY_AI": "Iniciar o comenzar actividades de trading utilizando algoritmos o plataformas de inteligencia artificial (IA). Esto puede implicar estrategias de trading automatizadas, donde la IA analiza datos del mercado y ejecuta operaciones basadas en reglas o algoritmos predefinidos.",
-        "DCA_Auto": "Con DCA Auto, se introducen los valores elegidos por nuestro exchange, lo que permite la ejecución automatizada de compras en intervalos especificados. Esto elimina la necesidad de intervención manual, ya que la plataforma ejecuta automáticamente las compras en función de los parámetros preestablecidos, permitiendo a los inversores acumular activos con el tiempo sin necesidad de monitoreo continuo.",
-        "GRID_Auto": "Con GRID Auto, se introducen los valores del exchange seleccionados por nuestra plataforma, facilitando la ejecución automatizada de operaciones basadas en estos parámetros predefinidos. Esto permite a los traders capitalizar las fluctuaciones del mercado dentro del rango especificado sin necesidad de intervención manual."
-      }
-    },
-    "gridBot": {
-      "gridStrategy": {
-        "name": "Estrategia Grid",
-        "strategy": {
-          "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
-          "subText2": "Nuestros bots GRID están diseñados para ejecutar operaciones basadas en esta estrategia, generando beneficios incansablemente a partir de los movimientos del mercado incluso cuando no estás monitoreando activamente tus operaciones. Cada grilla funciona de manera intercambiable: una vez que se completa una orden de compra, el bot inicia rápidamente una orden de venta por encima del precio ejecutado, y viceversa. Todas tus actividades comerciales se gestionan eficientemente a través de la plataforma Bitsgap."
-        },
-        "profit": {
-          "header": "Generación de beneficios con la estrategia GRID:",
-          "subText": "El aspecto intrigante de la estrategia GRID radica en su capacidad para capitalizar las fluctuaciones naturales de los precios de los activos. En lugar de pasar horas incontables escudriñando gráficos para cronometrar movimientos del mercado, los bots GRID ejecutan operaciones en momentos oportunos, comprando a precios bajos y vendiendo a precios altos. Entregan consistentemente beneficios sin depender de algoritmos complejos, simplemente adhiriéndose a los parámetros de la grilla que estableces."
-        },
-        "risk": {
-          "header": "Riesgos asociados con la estrategia GRID:",
-          "subText1": "Automatizar la estrategia GRID conlleva riesgos inherentes, especialmente durante condiciones de mercado adversas. Las fluctuaciones de precios inesperadas pueden impactar significativamente los resultados de tus operaciones. Para proteger tu inversión, emplear funciones como Stop Loss o Trailing puede resultar beneficioso.",
-          "subText2": "A pesar de los riesgos, el trading con grillas presenta una de las metodologías comerciales más sencillas y probadas con el tiempo. Con el tiempo, tiene el potencial de generar resultados sustanciales. Sin embargo, su eficacia disminuye durante fuertes reversos de tendencia. Por lo tanto, es crucial discernir cuándo iniciar o detener las operaciones de tu bot."
-        }
-      },
-      "setupGridBot": "Configurar Robot Grid",
-      "customizeGridBot": "Personalizar El Robot Grid",
-      "setupGridBotYoutubeIdLong": "5acdsw-wlzc",
-      "setupGridBotYoutubeIdShort": "CFBiNV_0Lkk"
-    },
-    "dcaBot": {
-      "dcaStrategy": {
-        "name": "Estrategia DCA",
-        "strategy": {
-          "subText1": "La estrategia DCA (promedio de costos en dólares) es un enfoque ampliamente aceptado tanto en el ámbito del comercio de criptomonedas como en el de divisas. Consiste en comprar sistemáticamente una cantidad fija de un activo en intervalos regulares, independientemente de sus fluctuaciones de precio. Esta estrategia disciplinada tiene como objetivo reducir el impacto de la volatilidad del mercado en los rendimientos de la inversión con el tiempo.",
-          "subText2": "Nuestros bots DCA están meticulosamente diseñados para implementar esta estrategia, lo que permite a los traders acumular activos de manera constante con el tiempo sin necesidad de intervención manual constante. Estos bots ejecutan operaciones según parámetros predefinidos, facilitando así el crecimiento continuo de la cartera y la gestión de riesgos."
-        },
-        "profit": {
-          "header": "Generación de ganancias con la estrategia DCA:",
-          "subText": "La belleza de la estrategia DCA radica en su capacidad para capitalizar el concepto de promedio a la baja. Al comprar activos de manera constante en intervalos regulares, independientemente de los movimientos de precio a corto plazo, los bots DCA permiten a los traders acumular activos a un costo promedio con el tiempo. Este enfoque puede conducir a ganancias significativas durante períodos de volatilidad del mercado, ya que mitiga el riesgo de comprar activos a un solo punto de precio potencialmente inflado."
-        },
-        "risk": {
-          "header": "Riesgos asociados con la estrategia DCA:",
-          "subText": "Si bien la estrategia DCA ofrece un enfoque sistemático para invertir, no está exenta de riesgos. Las caídas del mercado o períodos prolongados de depreciación de activos pueden afectar el rendimiento general de la estrategia. Además, los traders deben considerar cuidadosamente factores como la frecuencia de compras y la duración del horizonte de inversión para optimizar los rendimientos y gestionar el riesgo de manera efectiva."
-        },
-        "conclusion": {
-          "header": "Conclusión",
-          "subText": "La estrategia DCA proporciona a los traders un enfoque disciplinado y sistemático para invertir en los mercados de criptomonedas y divisas. Al comprar activos constantemente en intervalos regulares, los bots DCA permiten a los traders mitigar el impacto de la volatilidad del mercado y potencialmente generar ganancias significativas con el tiempo. Sin embargo, es esencial comprender los riesgos asociados e implementar estrategias adecuadas de gestión del riesgo para optimizar el rendimiento y alcanzar los objetivos de inversión a largo plazo."
-        }
-      },
-      "setupDcaBot": {
-        "name": "Configurar robot DCA",
-        "started": {
-          "header": "Empezando:",
-          "subText": "Al iniciar un Bot DCA, tienes la opción de seleccionar una dirección comercial y establecer una posición larga o corta."
-        },
-        "long": {
-          "header": "Posición Larga:",
-          "subText1": "En una posición larga, el bot se dedica a actividades de compra, con el objetivo de acumular ganancias en la moneda de cotización.",
-          "subText2": "Tu bot iniciará una posición comprando la moneda base. Posteriormente, colocará órdenes de DCA (compra) debajo de este comercio y una orden de Take Profit (venta) encima de él. A medida que el precio aumenta, tu bot venderá toda la moneda base adquirida en el nivel de Take Profit, generando así ganancias. En este punto, el ciclo concluye y el bot inicia uno nuevo con la cantidad de inversión inicial."
-        },
-        "short": {
-          "header": "Posición Corta:",
-          "subtext1": "Por el contrario, en una posición corta, el bot se embarca en actividades de venta, buscando acumular ganancias en la moneda base.",
-          "subtext2": "Tu bot iniciará una posición vendiendo la moneda base. Encima de este comercio, colocará órdenes de DCA (venta) y una orden de Take Profit (compra) debajo de él. Si el precio aumenta, el bot venderá más moneda base y adquirirá la moneda de cotización en los niveles de DCA. Por el contrario, cuando el precio disminuye, tu bot recomprará la moneda base con el Take Profit. Al completarse el ciclo, el bot inicia uno nuevo con la inversión inicial en moneda base.",
-          "subtext3": "Para crear y ejecutar tu primer bot DCA largo y corto, sigue las siguientes instrucciones paso a paso que se proporcionan a continuación."
-        },
-        "setupDcaBotYoutubeIdLong": "qkqeSk14VMQ",
-        "setupDcaBotYoutubeIdShort": "5x_v6rsMQj8"
-      },
-      "setupDcaStrategy": {
-        "name": "Personalice La Estrategia DCA"
-      }
-    }
-  },
-  "finance": {
-    "main": {
-      "text1": "Invest In The",
-      "text2": "Fastest-growing Industry",
-      "text3": "In The World.",
-      "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a shareholder of the global crypto Exchange.",
-      "exchangeBtn": "Enter the Exchange",
-      "shareholderBtn": "Become a Shareholder"
-    },
-    "developement": {
-      "header": "Current development of Coingarage Exchange",
-      "subtext": "Coingarage is a new European cryptocurrency exchange founded by entrepreneur Ota Janda in 2021. After two years of preparation and development of the necessary software, we launched the exchange in 2023. Since then, we have added numerous new features for our users and continue to develop more.",
-      "done": "Done",
-      "developement": "In Developement",
-      "planned": "Planned",
-      "list": {
-        "box1": "Trading v 1.0",
-        "box2": "Trading Bot",
-        "box3": "Mobile App",
-        "box4": "GARA Coin",
-        "box5": "Coin Listing",
-        "box6": "Referral",
-        "box7": "Bitcoin Saving",
-        "box8": "Trading v 2.0",
-        "box9": "Academy",
-        "box10": "Staking",
-        "box11": "NFT's",
-        "box12": "Crypto Card"
-      }
-    },
-    "estimatedValuation": {
-      "header": "Estimated Valuation by 2030",
-      "subText": "To calculate the company's value, we use references and examples of valuations of competing exchanges across the world, in addition to a recognized indicator called EBITDA.",
-      "estimated": {
-        "text1": "2.4B USD",
-        "text2": "the estimated value of the company Coingarage s.r.o.",
-        "investBtn": "Start Investing"
-      },
-      "tableHeader": "Valuation of Competitors",
-      "table": {
-        "header": {
-          "column1": "Exchange",
-          "column2": "Number of Users",
-          "column3": "Company Value"
-        },
-        "rows": {
-          "row1": {
-            "exchange": "Gemini",
-            "users": "2 Million",
-            "value": "7 Billion Dollars"
-          },
-          "row2": {
-            "exchange": "Kraken",
-            "users": "9 Million",
-            "value": "20 Billion Dollars"
-          },
-          "row3": {
-            "exchange": "BYBIT",
-            "users": "15 Million",
-            "value": "19 Billion Dollars"
-          },
-          "row4": {
-            "exchange": "KuCoin",
-            "users": "20 Million",
-            "value": "20 Billion Dollars"
-          },
-          "row5": {
-            "exchange": "Coinbase",
-            "users": "56 Million",
-            "value": "100 Billion Dollars"
-          },
-          "row6": {
-            "exchange": "Binance",
-            "users": "120 Million",
-            "value": "300 Billion Dollars"
-          }
-        }
-      }
-    },
-    "revolution": {
-      "header": "At which side in this new technological revolution you want to be?",
-      "negativeClaims": {
-        "claim1": {
-          "text": "<grey>2017:</grey> “Cryptocurrency is just not a real thing, eventually it will be closed.”",
-          "name": "Jamie Dimon"
-        },
-        "claim2": {
-          "text": "<grey>1997:</grey> “There is no reason anyone would want a computer in their home.”",
-          "name": "Ken Olsen, co-founder Digital Equipment Corporation"
-        },
-        "claim3": {
-          "text": "<grey>1995:</grey> “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
-          "name": " Robert Metcalfe (the inventor of Ethernet)"
-        },
-        "claim4": {
-          "text": "<grey>1989:</grey> “We will never make a 32-bit operating system.”",
-          "name": "Bill Gates, Founder of Microsoft"
-        },
-        "claim5": {
-          "text": "<grey>1961:</grey> “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
-          "name": "T.A.M. Craven,  FCC commissioner"
-        },
-        "claim6": {
-          "text": "<grey>1946:</grey> “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
-          "name": "Darryl Zanuck, 20th Century Fox"
-        },
-        "claim7": {
-          "text": "<grey>1903:</grey> “The horse is here to stay but the automobile is only a novelty – a fad.”",
-          "name": "President of the Michigan Bank"
-        }
-      },
-      "positiveClaims": {
-        "claim1": {
-          "text": "<primary>Actual:</primary> “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
-          "name": "Elon Mask founder of Tesla nad SpaceX"
-        },
-        "claim2": {
-          "text": "<primary>Actual:</primary> “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
-          "name": "Paul Vigna, Markets reporter for The Wall Street Journal"
-        },
-        "claim3": {
-          "text": "<primary>Actual:</primary> “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
-          "name": "Olaf Carlson-Wee"
-        },
-        "claim4": {
-          "text": "<primary>Actual:</primary> “The reason we are all here is that the current financial system is outdated.“",
-          "name": "Charlie Shrem, Founder & CEO of Bitinstant"
-        },
-        "claim5": {
-          "text": "<primary>Actual:</primary> “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
-          "name": "Marc Kenigsber"
-        },
-        "claim6": {
-          "text": "<primary>Actual:</primary> “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
-          "name": "Cathie Wood — Ark Invest CEO & fund manager"
-        }
-      },
-      "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
-    },
-    "oppurtunities": {
-      "header": "La oportunidad de inversión se ha cerrado",
-      "subtext": "We have opened the first round, which is for retail investors. The next rounds will be for large investment companies only!",
-      "bonuses": "Investment Bonuses",
-      "investment1": "From 2,200 USD, you will receive GARA Coin worth 50% of your investment.",
-      "investment2": "From 4,400 USD, you will receive GARA Coin worth 100% of your investment.",
-      "visitBtn": "Visit Launchpad",
-      "round1": "1.round",
-      "money": "6,4M USD",
-      "shareholderBtn": "Become a Shareholder"
-    },
-    "simpleSteps": {
-      "header": "5 Simple Steps to Investing",
-      "subtext": "Coingarage is a global project, and therefore, we don't want to limit investment opportunities to just one country or region. In collaboration with legal experts and partners, we have developed a simple five-step system where every investor can invest comfortably from their home anywhere in the world. Additionally, after creating account, each investor will gain access to our investment platform, where they can manage their investment and receive new information about the project's development.",
-      "box1": "Registration",
-      "box2": "Personal Data",
-      "box3": "KYC",
-      "box4": "Payment",
-      "box5": "Contract",
-      "download": "Download the contract template"
-    },
-    "yourValuation": {
-      "header": "What Will be Valuation of Your Investment",
-      "investment": "Investment",
-      "table": {
-        "header": {
-          "column1": "Info",
-          "column2": "1.round",
-          "column3": "2.round",
-          "column4": "3.round"
-        },
-        "rows": {
-          "row1": "Share of distributed profit:",
-          "row2": "Profit Coingarage Finance s.r.o.:",
-          "row3": "Evaluation:",
-          "row4": "The total will be paid:"
-        },
-        "concluision": "Model calculation assumes Coingarage s.r.o. Valuation of USD 2.4 MLD The model calculation does not guarantee the achievement of the selected appreciation on the deposit. The assumed appreciation will be paid over a 7-year horizon in CZK, EUR or USD."
-      },
-      "table2": {
-        "header": "Would You Like to Get More Information?",
-        "subtext": "Send us your email and phone number and our sales representative will contact you and answer all your questions.",
-        "placeholder1": "Full Name",
-        "placeholder2": "Phone Number",
-        "placeholder3": "Email",
-        "consent": "I agree to the processing of personal data",
-        "sendBtn": "Send"
-      },
-      "subheader": "How Can We Achieve Such High Investment Returns?",
-      "subtext1": "The exchange itself does not trade assets, it earns money through fees for facilitating trades, transferring assets, and other services. Therefore, it is not directly influenced by market conditions and earns whether the price of assets goes up or down. Additionally, the cryptocurrency market does not have opening hours like other exchanges, which are closed on weekends. Trading with digital currencies occurs globally 24/7 without interruption.",
-      "subtext2": "Furthermore, the crypto market is the fastest-growing market today, growing on average by 56.4% each year over the last 6 years. This significantly affects the influx of new capital and has a strong positive impact on all companies operating in this industry. Thanks to this, we are able to grow rapidly and achieve the stated appreciation of 1100%. These figures, as well as all calculations you will find on our website, are based on current and historical data from competitors and are the results of standard economic calculations used.",
-      "investBtn": "Start Investing"
-    },
-    "taxHeavens": {
-      "header": "Not in tax havens, but in the heart of Europe.",
-      "subtext1": "Most of the current cryptocurrency exchanges are based in tax havens and countries outside the jurisdiction of EU laws. Our exchange is located directly in the heart of Europe in the Czech Republic and operates under local and European laws and regulations governing cryptocurrency trading.",
-      "subtext2": "Our aim is to rectify the digital currency market and provide all users in Europe with a safe and regulated environment for their trades. That's why we collaborate with lawyers and experts in crypto regulation and actively prepare for the new European regulation MiCA."
-    },
-    "partnersImages": {
-      "header": "Partners",
-      "infoBtn": "Click For More Information"
-    },
-    "partnersMain": {
-      "partner1": {
-        "header": "Blockchain Legal",
-        "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
-      },
-      "partner2": {
-        "header": "FINROCK GLOBAL LTD",
-        "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
-      },
-      "partner3": {
-        "header": "Simplex by NUVEI",
-        "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
-      },
-      "partner4": {
-        "header": "ZEN",
-        "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
-      },
-      "partner5": {
-        "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
-        "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
-      },
-      "partner6": {
-        "header": "Creative Heroes",
-        "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
-      },
-      "exchangeBtn": "Enter the Exchange"
-    },
-    "investorPlatform": {
-      "header": "Preview of the investor platform",
-      "createAccountBtn": "Create an Account"
-    },
-    "faq": {
-      "header": "Frequently Asked Questions",
-      "section1": "General questions",
-      "section2": "The silent partnership",
-      "section3": "Vision",
-      "section4": "Other",
-      "generalQuestions": {
+    "Faq": {
         "question1": {
-          "text": "What is the minimum ammount I can invest?",
-          "answer": "The minimum investment amount is set at 2 200 USD (or equivalent in another currency) corresponding to 0.00075% of the distributed profit of Coingarage Finance s.r.o."
+            "question": "¿Cuál es la diferencia entre una 'Moneda' y un 'Token' en el sitio?",
+            "answer": "Una moneda es una criptomoneda que puede operar de forma independiente. Un token es una criptomoneda que depende de otra criptomoneda como plataforma para operar. Consulta nuestro artículo en el blog para obtener más información."
         },
         "question2": {
-          "text": "What does distributed profit mean?",
-          "answer": "istributed profit is equal to 90% of the total profit of Coingarage Finance s.r.o. The remaining 10% belongs to the Coingarage s.r.o. team."
+            "question": "¿Qué es Bitcoin (BTC)?",
+            "answer": "Bitcoin es la primera criptomoneda creada en 2009 por Satoshi Nakamoto. Es una moneda digital descentralizada que puede ser enviada de usuario a usuario en la red peer-to-peer de Bitcoin sin necesidad de intermediarios."
         },
         "question3": {
-          "text": "Is this project subject to the supervision of the Czech National Bank?",
-          "answer": "A silent partnership is a contractual relationship of obligation. The presented business model and contractual relationships are not covered by the material scope of Act No. 240/2013 Coll, on investment companies and investment funds, as amended (hereinafter referred to as 'ZISIF'), as it is an activity consisting in raising funds for the purpose of financing business activities of a non-financial nature, which fulfils the conditions of the so-called development exemption under Section 2 of ZISIF, and the activity in question - the offer to conclude a silent partnership agreement - is not considered a public offer under Section 34 et seq. of Act No. 256/2004 Coll, in view of the above, the described activity of the company is not subject to the supervision of the CNB."
+            "question": "¿Qué es la moneda USDT (USDT)?",
+            "answer": "Tether (USDT) es una criptomoneda con un valor destinado a reflejar el valor del dólar estadounidense. La idea era crear una criptomoneda estable que pueda utilizarse como dólares digitales. Las monedas que sirven para este propósito de ser un sustituto estable del dólar se llaman 'stablecoins'. USDT es la stablecoin más popular e incluso actúa como un reemplazo del dólar en muchas de las principales bolsas."
         },
         "question4": {
-          "text": "What is the intended value of Coingarage s.r.o.?",
-          "answer": "The intended value of Coingarage s.r.o. is set at USD 2.4 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
+            "question": "¿Cómo puedo comprar criptomonedas?",
+            "answer": "Puedes comprar criptomonedas en Coingarage siguiendo estos tres pasos: 1. Regístrate en una cuenta de Coingarage. 2. Verifica tu cuenta. 3. Deposita EUR u otras criptomonedas admitidas. 4. Compra tus criptomonedas favoritas."
         },
         "question5": {
-          "text": "What is Coingarage Finance s.r.o.?",
-          "answer": "Coingarage Finance s.r.o. serves as a legal guarantee that any future sale of Coingarage s.r.o. will also benefit the depositors through the silent partner. If the silent partner had contributed funds directly to Coingarage s.r.o., then the silent partner would not legally be able to be paid a share of any sale of Coingarage s.r.o., but only a share of the profits of Coingarage s.r.o. in the normal course of business during the year. With this model, the silent partner will receive a share of the profits and also a share of the planned sale of Coingarage s.r.o."
-        },
-        "question6": {
-          "text": "Will I be able to supervise my investment?",
-          "answer": "The silent partner has oversight of their investment through our private investor platform where they can see the progress of the development plan, significant business activity, current company value, information from the CEO and management team, accounting documents and a summary of Coingarage Finance Ltd. and Coingarage s.r.o.. news. He will also have the opportunity to communicate directly with the management of the company via the investor internal platform."
+            "question": "¿Cómo puedo verificar mi cuenta personal?",
+            "answer": "Puedes verificar tu cuenta personal siguiendo estos tres pasos: 1. Inicia sesión en tu cuenta de Coingarage. 2. Ve a la configuración de tu cuenta. 3. Haz clic en la pestaña de verificación. 4. Sigue las instrucciones y carga los documentos requeridos. 5. Espera a que se procese tu verificación. 6. ¡Comienza a operar!"
         }
-      },
-      "silentPartnershipQuestions": {
-        "question1": {
-          "text": "What does a silent partner mean under the law, is it legal?",
-          "answer": " silent partner may be a natural or legal person, entrepreneur or nonentrepreneur, who contributes to the business of another person. In many developed countries of the world, silent partnerships are a common form of participation in the business of other persons. Within the legal system of the Czech Republic, the silent partnership was first regulated by the Commercial Code (after 1989), however, since 1 January 2014 its legal regulation has been included in the Civil Code. In accordance with the provisions of Section 2747 of Act No. 89/2012 Coll., the Civil Code, as amended, the silent partner undertakes to make a contribution that will contribute to the results of the company's business for the entire duration of the silent partnership, and the company undertakes to pay the silent partner a share of the profits."
-        },
-        "question2": {
-          "text": "What rights and obligations does a silent partner have?",
-          "answer": "A silent partner has the right to inspect all published business documents and accounting records of Coingarage Finance s.r.o. and Coingarage s.r.o. through our private platform. The silent partner also has the right to receive copies of each financial statement, each income tax return, including the schedules thereto, and each auditor's report on the audit of the financial statements of Coingarage Finance s.r.o. through the private platform, which shall be made during or for the period of the silent partner's service with the company.The silent partner shall be entitled to a share of the distributed profits in the amount of his investment as at the date of the financial statements and also of any other profits determined to be payable pursuant to a resolution of the general meeting of Coingarage Finance Ltd.r.o.In addition to the proper deposit and confidentiality, the silent partner is also liable for tax on any income from the profit share not paid by Coingarage Finance s.r.o, nor does it charge it to the silent partner, nor does it pay it on behalf of the silent partner."
-        },
-        "question3": {
-          "text": "What are the advantages of a silent partnership over other types of investment in companies?",
-          "answer": "<ul><li>Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.</li><li>No upfront or ongoing fees, you invest directly in the project without an intermediary.</li><li>Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.</li><li>You can enter the project right from the inception of the idea, and get many times the appreciation</li></ul>"
-        },
-        "question4": {
-          "text": "How can I become a silent partner?",
-          "answer": "By registering through our private investor platform app.coingarage-finance.com. A self-empowered person or businessman who successfully passes the verification process, invests the required funds in Coingarage Finance Ltd. and is approved at a general meeting of Coingarage Finance Ltd. can become a silent partner."
-        },
-        "question5": {
-          "text": "What is the verification process (KYC, AML, etc.)?",
-          "answer": "Even though we are not an obliged person within the meaning of Section 2 of Act No. 253/2008 Coll., on certain measures against the legalization of proceeds of crime and terrorist financing, as amended (hereinafter referred to as the 'AML Act'), i.e. we are not subject to the obligations regarding the identification and control of clients under the AML Act, we nevertheless identify each silent partner using at least one identity document and a basic background check (PEP, international sanctions, negative media mentions, etc.) for the protection of our company in which you wish to invest. This is handled for us by veriff.com, an application based in the European Union, so you don't have to worry about your personal data as GetID Ltd is subject to strict European legislation including GDPR."
-        },
-        "question6": {
-          "text": "Are there any fees associated with the silent partnership contribution?",
-          "answer": "Everything is free of charge, you invest directly in the project without intermediaries. Fees may only be incurred as part of the transaction itself, which may be charged by your bank or payment gateway."
-        },
-        "question7": {
-          "text": "When and under what conditions is a silent partner entitled to a share of the distributed profit?",
-          "answer": "The entitlement to the payment of profits arises when approved by the general meeting of Coingarage Finance s.r.o. and the subsequent amount of the profit share corresponds to the purchased share of the distributed profits. Further information is available in the projected appreciation calculator on the main page of this website."
-        },
-        "question8": {
-          "text": "How long is the silent partnership investment agreement?",
-          "answer": "The silent partner investment agreement is for a period of 7 years, at which time it is anticipated that the development phase will be completed and the growth of Coingarage s.r.o. will be at a global level."
+    },
+    "Footer": {
+        "aboutUs": "Sobre nosotros",
+        "contactUs": "Contáctenos",
+        "fees": "Tarifas",
+        "hotCoins": "Criptomonedas Calientes",
+        "blog": "Blog",
+        "faqs": "Preguntas frecuentes",
+        "coinListing": "Listado de Criptomonedas",
+        "markets": "Mercados",
+        "trade": "Comercio",
+        "buyCrypto": "Comprar Criptomonedas",
+        "staking": "Apostar",
+        "login": "Iniciar sesión",
+        "legal": {
+            "termsOfService": "Términos de servicio",
+            "privacyPolicy": "Política de privacidad",
+            "cookiePolicy": "Política de cookies",
+            "sportTradingTerms": "Condiciones al contadocomerciales",
+            "btcSavingPlanTerms": "Condiciones del Plan de Ahorro de BTC",
+            "garaStakeTerms": "Condiciones de la Apuesta de GARA"
         }
-      },
-      "visionQuestions": {
-        "question1": {
-          "text": "Who is your target group?",
-          "answer": "There are about 480 million people of working age in Europe and only 9% - about 43 million of them have some experience with cryptos. Compared to Asia, the Americas, Africa and Latin America, this is about 16% less. This means that in addition to these 43 million, there is a potential for at least 77 million new people to start holding or trading crypto in the next seven years."
+    },
+    "Contact": {
+        "street": "Revoluční&nbsp;1082/8",
+        "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+        "postalCode": "110 00",
+        "country": "Prague, Czech Republic",
+        "phone": "+420 778 116 516",
+        "email": "support@coingarage.io",
+        "companyID": "IČ: 11667974"
+    },
+    "Affiliate": {
+        "name": "Programa de Referidos",
+        "claim": "Únete a Coingarage",
+        "reward": "Puede Obtener 3 Niveles de Recompensas",
+        "text1": "¿Crees que las criptomonedas y la tecnología blockchain pueden cambiar el mundo para mejor?",
+        "text2": "Si es así, únete al programa de afiliados de Coingarage y gana recompensas especiales. Presenta a tus amigos Coingarage, un intercambio de criptomonedas completamente licenciado en el corazón de Europa.",
+        "warning": "*Muy importante: Ten en cuenta que tu afiliación no termina solo con tus referidos directos. Si tus referidos directos comienzan a trabajar y obtienen referidos de tus referidos directos, recibirás las siguientes recompensas de esos referidos directos."
+    },
+    "AboutUs": {
+        "weAreCoingarage": "Somos coingarage",
+        "name": "Sobre nosotros",
+        "text1": "No en islas lejanas en paraísos fiscales, sino en el corazón de Europa, se estableció en Praga la primera bolsa de criptomonedas con licencia completa para poseer y comerciar con criptomonedas.",
+        "text2": "Toda la actividad está completamente subordinada a las leyes de la UE y a la supervisión de reguladores y autoridades. Aquí puedes comprar cripto por fiat, mantenerlo y comerciar en una de las plataformas más modernas con énfasis en la completitud y simplicidad",
+        "elements": {
+            "text1": "Un elemento clave de nuestra plataforma es la simplicidad.",
+            "text2": "Aquí encontrarás comercio al contado, pero también Futuros en el futuro",
+            "text3": "En la bolsa podrás ganar haciendo staking de las monedas más populares",
+            "text4": "También será posible intercambiar monedas en la bolsa utilizando el principio P2P",
+            "text5": "En un solo lugar puedes comprar cripto por moneda fiat a través de tu tarjeta de débito o por transferencia desde tu cuenta, luego puedes mantenerlo aquí y comerciar con él.",
+            "text6": "A partir de enero de 2024, podrás utilizar nuestros profesionales DCA, GRID, Futures Boots con inteligencia artificial para el comercio",
+            "text7": "Nuestra bolsa también ofrecerá su propia plataforma NFT, incluyendo un mercado",
+            "text8": "Todas estas funciones se complementarán con programas educativos y videos"
         },
-        "question2": {
-          "text": "Why crypto and crypto exchange?",
-          "answer": "Blockchain technology and its related cryptocurrencies offer a number of benefits to users and have the potential to revolutionise the global financial ecosystem. We believe that by 2032, 1 billion people will be involved in the global ecosystem of digital assets and a significant portion of gross domestic product will be in the bitcoin economy."
+        "financialWorld": {
+            "name": "Queremos que las criptomonedas se conviertan en una parte común y respetada del mundo financiero en Europa.",
+            "text1": "Queremos contribuir a la adopción de criptomonedas en Europa y ofrecer un entorno completamente transparente y seguro que esté en línea con la ley y las regulaciones de la UE.",
+            "text2": "Para que la gente sepa qué esperar del mundo cripto y sea consciente de los beneficios, pero también de los riesgos de esta industria. Para que sepan que invertir en cripto no es solo una especulación a corto plazo, sino una inversión a largo plazo y significativa",
+            "text3": "Nuestra visión se basa en cuatro valores fundamentales: transparencia, completitud, seguridad y simplicidad. Si logramos cumplir con estos valores en nuestra visión, entonces estaremos en camino de traer a la gente ganancias regulares a largo plazo del mundo cripto.",
+            "text4": ""
         },
-        "question3": {
-          "text": "Why a stock exchange in Europe? And why do you want to focus on Europe?",
-          "answer": "Most of the major stock exchanges today are based in tax havens or in countries where 100% transparency and security are not guaranteed. At the same time, if we compare the percentage of people who have come into contact with crypto in Europe with other continents, we see a great opportunity in the European market."
+        "getStarted": "Empezar"
+    },
+    "security": {
+        "security": "Seguridad del Intercambio",
+        "securityText": "Nuestra plataforma utiliza varias tecnologías de última generación para garantizar un sistema sólido y eficiente. Utilizamos las últimas versiones de cifrado de datos tanto para la transmisión como para el almacenamiento. También utilizamos funciones avanzadas de protección basadas en inteligencia artificial, asegurando un entorno seguro para nuestros usuarios.",
+        "protection": "Protección al Cliente",
+        "protectionText": "Las medidas de protección al cliente de Coingarage van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
+        "fundsSecurity": "Seguridad de Fondos",
+        "fundsSecurityText": "Nuestra Seguridad de Fondos está creada por veteranos de la industria de blockchain y web. Creamos una plataforma en la nube de próxima generación que cumple con evaluaciones de seguridad de calidad de grado bancario.",
+        "monitoring": "Monitoreo en Tiempo Real",
+        "monitoringText": "Nuestros sistemas de monitoreo en tiempo real rastrean y analizan activamente las actividades en nuestra plataforma, lo que nos permite detectar y responder rápidamente a cualquier comportamiento sospechoso. Este enfoque proactivo garantiza la constante protección de sus activos y datos.",
+        "secureByDesign": "Seguridad por Diseño",
+        "secureByDesignText": "Nuestras medidas de protección de la privacidad van más allá de las normas de la industria, implementando políticas y tecnologías robustas para salvaguardar su información personal. Tenga la seguridad de que su privacidad es nuestra máxima prioridad.",
+        "heading": "Un Refugio Seguro: Donde la Privacidad, el Diseño y el Monitoreo en Tiempo Real Convergen para su Tranquilidad",
+        "newDesign": "Estamos trabajando en un nuevo diseño",
+        "continueToTrader": "Continuar a EEZY Trader"
+    },
+    "eezy-trader": {
+        "nav": {
+            "knowledgeBase": "Base de conocimientos",
+            "affiliateProgram": "Programa de afiliados",
+            "payments": "Pagos y suscripciones"
         },
-        "question4": {
-          "text": "How do you reach 10 million active users?",
-          "answer": "This is based on the aforementioned assumption of the growth of the entire crypto world and an increase in the percentage of users in Europe to the level of e.g. the USA and Asia. At the same time, we are aware of our technological advantage, where we will soon combine on one platform to offer all the available functions of the industry. Marketing also plays an important role, where we are planning a number of important activities in the world of sports, culture, etc. in conjunction with the industry leaders, in addition to the usual tools."
+        "homepage": {
+            "trialBtn": "COMIENZA LA PRUEBA GRATUITA DE 7 DÍAS",
+            "main": {
+                "header": "El mejor bot de trading de criptomonedas impulsado por IA",
+                "noCreditCard": "*No se requiere tarjeta de crédito"
+            },
+            "results": {
+                "header": "Realiza todo el potencial de tu estrategia de trading aprovechando las capacidades avanzadas del bot de criptomonedas EEZY Trader de Coingarage, lo que te permite alcanzar el máximo rendimiento comercial y maximizar los beneficios.",
+                "topPerformers": "Mejores rendimientos",
+                "topPairs": "Mejores pares",
+                "name": "Nombre",
+                "pair": "Par"
+            },
+            "trusting": {
+                "subHeader": "Confiado por miles de traders, impulsado por",
+                "header": "Coingarage “Simply & safely Exchange”",
+                "columns": {
+                    "1": "Largo / Corto",
+                    "2": "Beneficio de trading",
+                    "3": "DCA/GRID",
+                    "4": "Guardar estrategia",
+                    "5": "Inicio por IA",
+                    "6": "Copiar trading",
+                    "7": "100 Pares para comerciar",
+                    "8": "Indicadores técnicos",
+                    "9": "90 Bots"
+                }
+            },
+            "investment": {
+                "header": "Siéntate y observa cómo crecen tus inversiones en criptomonedas, día y noche, 24/7, estés donde estés",
+                "free7Days": "Prueba gratuita de 7 días",
+                "howToConnect": {
+                    "register": "Registrarse",
+                    "connect": "Conectar",
+                    "startTrading": "Comenzar a operar"
+                }
+            },
+            "login": {
+                "header": "<span>Comienza a ganar con</span><span class='text-violet'>Trader de Coingarage</span><span><span class='text-violet'>Bot</span> hoy</span>",
+                "subText": "Regístrate en Coingarage y obtén un período de prueba <b>PRO de 7 días</b> totalmente funcional para probar todas las funciones avanzadas del bot.",
+                "loginForm": {
+                    "login": "Iniciar sesión",
+                    "yourEmail": "Tu correo electrónico",
+                    "password": "Contraseña",
+                    "forgotPassword": "¿Olvidaste la contraseña?",
+                    "noAccount": "¿No tienes una cuenta? Regístrate aquí"
+                }
+            },
+            "start": {
+                "header": "Inicia el EEZY TRADER en 5 sencillos pasos",
+                "subText": "Lance su bot de trading EEZY sin esfuerzo en cinco sencillos pasos: empiece a operar y optimice sus beneficios hoy mismo con Coingarage.",
+                "steps": {
+                    "1": "Regístrate en Coingarage",
+                    "2": "Inicia sesión en un Exchange",
+                    "3": "Ve a la subcuenta y elige en el menú EEZY Trader",
+                    "4": "Crea una estrategia",
+                    "5": "¡Ejecuta el bot y observa cómo genera ganancias!"
+                }
+            },
+            "faq": {
+                "question1": "¿Cómo puedo empezar con su plataforma?",
+                "answer1": "¡Empezar es fácil! Simplemente regístrate para obtener una cuenta, completa el proceso de verificación, deposita fondos en tu cuenta y comienza a operar utilizando nuestra plataforma intuitiva y poderosas herramientas de trading.",
+                "question2": "¿Cómo aseguran la seguridad de mis fondos e información personal?",
+                "answer2": "Implementamos medidas de seguridad estándar de la industria, incluyendo cifrado, autenticación de dos factores (2FA) y auditorías de seguridad regulares, para proteger tus fondos e información personal. Además, nuestra plataforma cumple con estrictos estándares de cumplimiento para proteger contra el acceso no autorizado y actividades fraudulentas.",
+                "question3": "¿Cuáles son los beneficios de usar DCA?",
+                "answer3": "El promedio de costo en dólares (DCA) es una estrategia donde un inversor divide el monto total a invertir entre compras periódicas de un activo objetivo en un esfuerzo por reducir el impacto de la volatilidad en la compra total. Los principales beneficios de usar DCA incluyen reducir el riesgo asociado con el momento del mercado, potencialmente reducir el costo promedio por acción con el tiempo y promover un comportamiento de inversión disciplinado."
+            }
         },
-        "question5": {
-          "text": "How will you achieve ongoing profits?",
-          "answer": "It's no secret that fees play a key role in generating profits. Whenever any trade or transaction takes place on our exchange outside of a deposit, there are fees associated with it. The exchange makes a profit twenty-four hours a day, seven days a week."
+        "affiliate": {
+            "btnAffiliate": "Empezar",
+            "main": {
+                "header1": "Programa de Referidos",
+                "header2": "Gana hasta un 15% de comisión de cada operación de tus socios",
+                "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>¡Invita a tus amigos y disfruten de ganancias compartidas juntos!</b>"
+            },
+            "getStarted": {
+                "header": "Cómo empezar",
+                "header1": "Regístrate en Coingarage",
+                "subText1": "Cree una cuenta en Coingarage, inicie sesión y luego vaya a la sección de Programa de Referidos.",
+                "header2": "Invita a tus amigos y socios",
+                "subText2": "Copie su enlace de afiliado y envíelo a sus amigos o socios.",
+                "header3": "Disfruta tus ganancias",
+                "subText3": "Después de que creen una cuenta y comiencen a operar, ganará sus recompensas.",
+                "disclaimer": "Será redirigido a la página de inicio de sesión. Después de iniciar sesión en su cuenta, puede encontrar su código de referencia en Mi -> Referido"
+            },
+            "faq": {
+                "question1": "¿Cómo funciona el programa de afiliados?",
+                "answer1": "Como afiliado, recibirás un enlace o código de referencia único que puedes compartir con tu audiencia. Cuando alguien hace clic en tu enlace o usa tu código para realizar una compra o registrarse, recibirás una comisión por la venta o inscripción.",
+                "question2": "¿Hay un límite en cuánto puedo ganar a través del programa de afiliados?",
+                "answer2": "No hay límite en cuánto puedes ganar a través de nuestro programa de afiliados. Tus ganancias dependen del número de referencias que generes y el valor de sus compras o inscripciones.",
+                "question3": "¿Cómo puedo rastrear mis referencias y comisiones?",
+                "answer3": "Nuestro programa de afiliados proporciona acceso a un panel donde puedes rastrear tus referencias, monitorear ventas o inscripciones y ver tus ganancias de comisión en tiempo real.",
+                "question4": "¿Cuál es la estructura de comisiones para el programa de afiliados?",
+                "answer4": "Nuestro programa de afiliados ofrece una estructura de comisiones multinivel, con porcentajes de comisión basados en el nivel de referencias:",
+                "levels": {
+                    "1": "Nivel 1: comisión del 15%",
+                    "2": "Nivel 2: comisión del 10%",
+                    "3": "Nivel 3: comisión del 5%"
+                }
+            },
+            "setupTradingBot": {
+                "name": "¿No sabes cómo configurar un robot de trading?",
+                "claim": "No se preocupe, hemos creado una base de conocimientos",
+                "text1": "Aquí encontrará una guía completa para establecer y operar un robot de trading, que cubre todos los aspectos esenciales."
+            },
+            "example": "Ejemplo",
+            "levels": {
+                "text1": "John es la primera persona en la cadena de referencia. Si John refiere a Alice, gana el 15% de la recompensa total por el registro de Alice.",
+                "text2": "Alice está registrada bajo John, por lo tanto, en el segundo nivel. Si Alice refiere a Peter, John (primer nivel) gana el 10% de la recompensa total por la cuenta de Peter.",
+                "text3": "Peter está registrado bajo Alice, por lo tanto, en el tercer nivel. Si Peter refiere a otro usuario, John (primer nivel) gana el 5% de la recompensa total por el nuevo usuario registrado por Peter."
+            },
+            "disclaimer": "Las recompensas se generan a partir de las tarifas pagadas por sus referencias.",
+            "warning": "*Muy importante: Tenga en cuenta que su programa de afiliados no termina solo con sus referencias directas, si sus referencias directas comienzan a trabajar y las referencias de sus referencias directas recibirán las próximas recompensas."
         },
-        "question6": {
-          "text": "How will you achieve the projected value of the company of USD 10 billion in 7 years?",
-          "answer": "The value of the company will be a unique solution in the form of a robust yet simple crypto exchange that will be available on all devices. Then there is the large community of users, billions in annual profits, brand, and experienced team. We have compared the value of our company with similar companies such as Kraken, KuCoin, Binance and yet the value of our company Coingarage s.r.o.. is undervalued"
+        "subscription": {
+            "disclaimer": "Una vez finalizado el registro, podrá seleccionar un plan de suscripción",
+            "btnBuy": "Comprar Suscripción",
+            "header": "¿Qué es un plan de suscripción?",
+            "subText": "Un plan de suscripción te concede acceso a nuestros servicios a plena capacidad. <b>Con una suscripción, obtienes acceso a nuestro revolucionario robot de trading</b>, que te permite operar en los mercados con absoluta facilidad y eficiencia.",
+            "plans": {
+                "header": "Suscripción",
+                "subText": "¿No estás seguro si nuestra suscripción es adecuada para ti? ¡No hay problema! Ofrecemos una versión de prueba donde puedes probar nuestro bot y experimentar sus capacidades de primera mano.",
+                "trial": {
+                    "header": "Prueba",
+                    "free": "Gratis",
+                    "package": {
+                        "header": "Prueba y Disfruta del Bot de Trading",
+                        "1": "Hasta 10 Bots",
+                        "2": "Todas las Estrategias",
+                        "3": "Terminales de Trading",
+                        "4": "Trailing Take Profit"
+                    }
+                },
+                "month": {
+                    "mostUsed": "Más utilizado",
+                    "header": "Básico Mensual",
+                    "competitionPrice": "$45/mes",
+                    "price": "$15/mes",
+                    "package": {
+                        "header": "Prueba y Disfruta del Bot de Trading",
+                        "1": "Hasta 50 Bots",
+                        "2": "Todas las Estrategias",
+                        "3": "Terminales de Trading",
+                        "4": "Trailing Take Profit",
+                        "5": "Renovación Automática"
+                    }
+                },
+                "year": {
+                    "header": "Básico Anual",
+                    "competitionPrice": "$384/año",
+                    "price": "$120/año",
+                    "save60": "Ahorra $60",
+                    "package": {
+                        "header": "Desbloquea el Potencial Completo del Bot de Trading",
+                        "1": "Hasta 99 Bots",
+                        "2": "Todas las Estrategias",
+                        "3": "Terminales de Trading",
+                        "4": "Trailing Take Profit",
+                        "5": "Renovación Automática"
+                    }
+                },
+                "fee": "Se deduce una tarifa de éxito del 10% en EEZY Coin de cada ganancia."
+            }
         }
-      },
-      "otherQuestions": {
-        "question1": {
-          "text": "Who will own and run Coingarage s.r.o.?",
-          "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (30%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
+    },
+    "knowledgeBase": {
+        "general": {
+            "name": "General",
+            "activation": "Activación",
+            "subscription": "Suscripción",
+            "features": "Características",
+            "activationYoutubeId": "hJF5oCmLSvo",
+            "subscriptionYoutubeId": "F69rUJvCc9o",
+            "featuresYoutubeId": "C1swS8rtA2w",
+            "introduction": {
+                "name": "Introducción",
+                "overview": {
+                    "header": "Visión general",
+                    "subText": "El trading de bots, también conocido como trading automatizado, utiliza software preprogramado para ejecutar operaciones en nombre de los traders. Este método de trading ha ganado popularidad debido a su capacidad para ejecutar operaciones con velocidad y precisión, las 24 horas del día, los 7 días de la semana, sin necesidad de intervención humana."
+                },
+                "advantages": {
+                    "header": "Ventajas",
+                    "subText1": "Velocidad: Los bots pueden ejecutar operaciones en milisegundos, aprovechando los movimientos del mercado más rápido que los traders humanos.",
+                    "subText2": "Trading sin emociones: Los bots operan en base a reglas predefinidas, eliminando emociones como el miedo y la avaricia que pueden afectar la toma de decisiones humanas.",
+                    "subText3": "Trading las 24 horas del día, los 7 días de la semana: Los bots pueden operar todo el día, aprovechando las oportunidades en los mercados globales incluso cuando los traders están dormidos o fuera de línea.",
+                    "subText4": "Backtesting y optimización: Los traders pueden probar las estrategias de los bots utilizando datos históricos para evaluar el rendimiento y optimizar las estrategias para obtener mejores resultados.",
+                    "subText5": "Diversificación: Los bots pueden operar en múltiples activos simultáneamente, permitiendo una mayor diversificación de las carteras de trading."
+                },
+                "conclusion": {
+                    "header": "Conclusión",
+                    "subText": "Este esquema de introducción proporciona una visión general del trading de bots, sus ventajas, diferentes tipos de estrategias, consideraciones y concluye con los beneficios potenciales que los traders pueden obtener al utilizar bots en sus actividades de trading."
+                }
+            },
+            "slang": {
+                "name": "Slang",
+                "GRID": "Una estrategia de trading que implica colocar órdenes de compra y venta en intervalos de precios predefinidos dentro de un rango especificado. El objetivo del trading por grillas es obtener ganancias de las fluctuaciones de precios dentro del rango establecido.",
+                "DCA": "El promedio del costo en dólares (DCA) es una estrategia de inversión en la que un inversor compra una cantidad fija de una inversión particular en un horario regular, independientemente del precio del activo. Esta estrategia tiene como objetivo reducir el impacto de la volatilidad del mercado al distribuir el precio de compra a lo largo del tiempo.",
+                "TP": "El Take Profit (TP) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para realizar ganancias. Las órdenes de Take Profit generalmente se establecen por encima del precio de mercado actual para posiciones largas y por debajo del precio de mercado actual para posiciones cortas.",
+                "SL": "El Stop Loss (SL) es un nivel de precio predeterminado en el que un trader decide vender una parte o la totalidad de su posición para limitar pérdidas potenciales. Las órdenes de Stop Loss generalmente se establecen por debajo del precio de mercado actual para posiciones largas y por encima del precio de mercado actual para posiciones cortas.",
+                "SHORT": "Una posición de trading en la que un trader vende un activo con la expectativa de que su precio disminuya. Los traders obtienen ganancias de las posiciones cortas comprando de nuevo el activo a un precio más bajo del que lo vendieron. Utilícelo sólo para monedas en las que confíe y que mantenga a largo plazo. Te beneficias de su caída en USDT, pero si las vendes antes de que vuelvan a su precio original, tendrás pérdidas.",
+                "LONG": "Una posición de trading en la que un trader compra un activo con la expectativa de que su precio aumente. Los traders obtienen ganancias de las posiciones largas vendiendo el activo a un precio más alto del que lo compraron.",
+                "START_BY_AI": "Iniciar o comenzar actividades de trading utilizando algoritmos o plataformas de inteligencia artificial (IA). Esto puede implicar estrategias de trading automatizadas, donde la IA analiza datos del mercado y ejecuta operaciones basadas en reglas o algoritmos predefinidos.",
+                "DCA_Auto": "Con DCA Auto, se introducen los valores elegidos por nuestro exchange, lo que permite la ejecución automatizada de compras en intervalos especificados. Esto elimina la necesidad de intervención manual, ya que la plataforma ejecuta automáticamente las compras en función de los parámetros preestablecidos, permitiendo a los inversores acumular activos con el tiempo sin necesidad de monitoreo continuo.",
+                "GRID_Auto": "Con GRID Auto, se introducen los valores del exchange seleccionados por nuestra plataforma, facilitando la ejecución automatizada de operaciones basadas en estos parámetros predefinidos. Esto permite a los traders capitalizar las fluctuaciones del mercado dentro del rango especificado sin necesidad de intervención manual."
+            }
         },
-        "question2": {
-          "text": "Why do you need and what will you use the funds for?",
-          "answer": "All funds will be used for activities for the stable growth and expansion of Coingarage s.r.o. Especially on the development of the stock exchange and its components. We will also invest in our brand awareness, i.e. in active marketing and sales activities."
+        "gridBot": {
+            "gridStrategy": {
+                "name": "Estrategia Grid",
+                "strategy": {
+                    "subText1": "La estrategia GRID se erige como una piedra angular en los ámbitos del trading de criptomonedas y forex. Opera mediante órdenes de compra y venta limitadas diferidas dentro de intervalos de precios predefinidos. Al dividir el rango de precios seleccionado en múltiples niveles, se establece una grilla de órdenes, de ahí su nombre, la estrategia GRID.",
+                    "subText2": "Nuestros bots GRID están diseñados para ejecutar operaciones basadas en esta estrategia, generando beneficios incansablemente a partir de los movimientos del mercado incluso cuando no estás monitoreando activamente tus operaciones. Cada grilla funciona de manera intercambiable: una vez que se completa una orden de compra, el bot inicia rápidamente una orden de venta por encima del precio ejecutado, y viceversa. Todas tus actividades comerciales se gestionan eficientemente a través de la plataforma Bitsgap."
+                },
+                "profit": {
+                    "header": "Generación de beneficios con la estrategia GRID:",
+                    "subText": "El aspecto intrigante de la estrategia GRID radica en su capacidad para capitalizar las fluctuaciones naturales de los precios de los activos. En lugar de pasar horas incontables escudriñando gráficos para cronometrar movimientos del mercado, los bots GRID ejecutan operaciones en momentos oportunos, comprando a precios bajos y vendiendo a precios altos. Entregan consistentemente beneficios sin depender de algoritmos complejos, simplemente adhiriéndose a los parámetros de la grilla que estableces."
+                },
+                "risk": {
+                    "header": "Riesgos asociados con la estrategia GRID:",
+                    "subText1": "Automatizar la estrategia GRID conlleva riesgos inherentes, especialmente durante condiciones de mercado adversas. Las fluctuaciones de precios inesperadas pueden impactar significativamente los resultados de tus operaciones. Para proteger tu inversión, emplear funciones como Stop Loss o Trailing puede resultar beneficioso.",
+                    "subText2": "A pesar de los riesgos, el trading con grillas presenta una de las metodologías comerciales más sencillas y probadas con el tiempo. Con el tiempo, tiene el potencial de generar resultados sustanciales. Sin embargo, su eficacia disminuye durante fuertes reversos de tendencia. Por lo tanto, es crucial discernir cuándo iniciar o detener las operaciones de tu bot."
+                }
+            },
+            "setupGridBot": "Configurar Robot Grid",
+            "customizeGridBot": "Personalizar El Robot Grid",
+            "setupGridBotYoutubeIdLong": "5acdsw-wlzc",
+            "setupGridBotYoutubeIdShort": "CFBiNV_0Lkk"
         },
-        "question3": {
-          "text": "Do you plan to release your own crypto tokens?",
-          "answer": "Yes, we are planning to release our own utility token, which will perform a similar function to BNB on Binance. We will also combine existing community tokens under this utility token."
-        },
-        "question4": {
-          "text": "Why a silent partner and not venture capital funds?",
-          "answer": "The journey with venture capital funds is usually a long one, we don't want to hold up the project, so the 1st investment round in particular is for silent partners from the public. The plan is that from the next investment rounds onwards, venture capital funds will be the primary focus."
+        "dcaBot": {
+            "dcaStrategy": {
+                "name": "Estrategia DCA",
+                "strategy": {
+                    "subText1": "La estrategia DCA (promedio de costos en dólares) es un enfoque ampliamente aceptado tanto en el ámbito del comercio de criptomonedas como en el de divisas. Consiste en comprar sistemáticamente una cantidad fija de un activo en intervalos regulares, independientemente de sus fluctuaciones de precio. Esta estrategia disciplinada tiene como objetivo reducir el impacto de la volatilidad del mercado en los rendimientos de la inversión con el tiempo.",
+                    "subText2": "Nuestros bots DCA están meticulosamente diseñados para implementar esta estrategia, lo que permite a los traders acumular activos de manera constante con el tiempo sin necesidad de intervención manual constante. Estos bots ejecutan operaciones según parámetros predefinidos, facilitando así el crecimiento continuo de la cartera y la gestión de riesgos."
+                },
+                "profit": {
+                    "header": "Generación de ganancias con la estrategia DCA:",
+                    "subText": "La belleza de la estrategia DCA radica en su capacidad para capitalizar el concepto de promedio a la baja. Al comprar activos de manera constante en intervalos regulares, independientemente de los movimientos de precio a corto plazo, los bots DCA permiten a los traders acumular activos a un costo promedio con el tiempo. Este enfoque puede conducir a ganancias significativas durante períodos de volatilidad del mercado, ya que mitiga el riesgo de comprar activos a un solo punto de precio potencialmente inflado."
+                },
+                "risk": {
+                    "header": "Riesgos asociados con la estrategia DCA:",
+                    "subText": "Si bien la estrategia DCA ofrece un enfoque sistemático para invertir, no está exenta de riesgos. Las caídas del mercado o períodos prolongados de depreciación de activos pueden afectar el rendimiento general de la estrategia. Además, los traders deben considerar cuidadosamente factores como la frecuencia de compras y la duración del horizonte de inversión para optimizar los rendimientos y gestionar el riesgo de manera efectiva."
+                },
+                "conclusion": {
+                    "header": "Conclusión",
+                    "subText": "La estrategia DCA proporciona a los traders un enfoque disciplinado y sistemático para invertir en los mercados de criptomonedas y divisas. Al comprar activos constantemente en intervalos regulares, los bots DCA permiten a los traders mitigar el impacto de la volatilidad del mercado y potencialmente generar ganancias significativas con el tiempo. Sin embargo, es esencial comprender los riesgos asociados e implementar estrategias adecuadas de gestión del riesgo para optimizar el rendimiento y alcanzar los objetivos de inversión a largo plazo."
+                }
+            },
+            "setupDcaBot": {
+                "name": "Configurar robot DCA",
+                "started": {
+                    "header": "Empezando:",
+                    "subText": "Al iniciar un Bot DCA, tienes la opción de seleccionar una dirección comercial y establecer una posición larga o corta."
+                },
+                "long": {
+                    "header": "Posición Larga:",
+                    "subText1": "En una posición larga, el bot se dedica a actividades de compra, con el objetivo de acumular ganancias en la moneda de cotización.",
+                    "subText2": "Tu bot iniciará una posición comprando la moneda base. Posteriormente, colocará órdenes de DCA (compra) debajo de este comercio y una orden de Take Profit (venta) encima de él. A medida que el precio aumenta, tu bot venderá toda la moneda base adquirida en el nivel de Take Profit, generando así ganancias. En este punto, el ciclo concluye y el bot inicia uno nuevo con la cantidad de inversión inicial."
+                },
+                "short": {
+                    "header": "Posición Corta:",
+                    "subtext1": "Por el contrario, en una posición corta, el bot se embarca en actividades de venta, buscando acumular ganancias en la moneda base.",
+                    "subtext2": "Tu bot iniciará una posición vendiendo la moneda base. Encima de este comercio, colocará órdenes de DCA (venta) y una orden de Take Profit (compra) debajo de él. Si el precio aumenta, el bot venderá más moneda base y adquirirá la moneda de cotización en los niveles de DCA. Por el contrario, cuando el precio disminuye, tu bot recomprará la moneda base con el Take Profit. Al completarse el ciclo, el bot inicia uno nuevo con la inversión inicial en moneda base.",
+                    "subtext3": "Para crear y ejecutar tu primer bot DCA largo y corto, sigue las siguientes instrucciones paso a paso que se proporcionan a continuación."
+                },
+                "setupDcaBotYoutubeIdLong": "qkqeSk14VMQ",
+                "setupDcaBotYoutubeIdShort": "5x_v6rsMQj8"
+            },
+            "setupDcaStrategy": {
+                "name": "Personalice La Estrategia DCA"
+            }
         }
-      }
+    },
+    "finance": {
+        "main": {
+            "text1": "Invest In The",
+            "text2": "Fastest-growing Industry",
+            "text3": "In The World.",
+            "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a shareholder of the global crypto Exchange.",
+            "exchangeBtn": "Enter the Exchange",
+            "shareholderBtn": "Become a Shareholder"
+        },
+        "developement": {
+            "header": "Current development of Coingarage Exchange",
+            "subtext": "Coingarage is a new European cryptocurrency exchange founded by entrepreneur Ota Janda in 2021. After two years of preparation and development of the necessary software, we launched the exchange in 2023. Since then, we have added numerous new features for our users and continue to develop more.",
+            "done": "Done",
+            "developement": "In Developement",
+            "planned": "Planned",
+            "list": {
+                "box1": "Trading v 1.0",
+                "box2": "Trading Bot",
+                "box3": "Mobile App",
+                "box4": "GARA Coin",
+                "box5": "Coin Listing",
+                "box6": "Referral",
+                "box7": "Bitcoin Saving",
+                "box8": "Trading v 2.0",
+                "box9": "Academy",
+                "box10": "Staking",
+                "box11": "NFT's",
+                "box12": "Crypto Card"
+            }
+        },
+        "estimatedValuation": {
+            "header": "Estimated Valuation by 2030",
+            "subText": "To calculate the company's value, we use references and examples of valuations of competing exchanges across the world, in addition to a recognized indicator called EBITDA.",
+            "estimated": {
+                "text1": "2.4B USD",
+                "text2": "the estimated value of the company Coingarage s.r.o.",
+                "investBtn": "Start Investing"
+            },
+            "tableHeader": "Valuation of Competitors",
+            "table": {
+                "header": {
+                    "column1": "Exchange",
+                    "column2": "Number of Users",
+                    "column3": "Company Value"
+                },
+                "rows": {
+                    "row1": {
+                        "exchange": "Gemini",
+                        "users": "2 Million",
+                        "value": "7 Billion Dollars"
+                    },
+                    "row2": {
+                        "exchange": "Kraken",
+                        "users": "9 Million",
+                        "value": "20 Billion Dollars"
+                    },
+                    "row3": {
+                        "exchange": "BYBIT",
+                        "users": "15 Million",
+                        "value": "19 Billion Dollars"
+                    },
+                    "row4": {
+                        "exchange": "KuCoin",
+                        "users": "20 Million",
+                        "value": "20 Billion Dollars"
+                    },
+                    "row5": {
+                        "exchange": "Coinbase",
+                        "users": "56 Million",
+                        "value": "100 Billion Dollars"
+                    },
+                    "row6": {
+                        "exchange": "Binance",
+                        "users": "120 Million",
+                        "value": "300 Billion Dollars"
+                    }
+                }
+            }
+        },
+        "revolution": {
+            "header": "At which side in this new technological revolution you want to be?",
+            "negativeClaims": {
+                "claim1": {
+                    "text": "<grey>2017:</grey> “Cryptocurrency is just not a real thing, eventually it will be closed.”",
+                    "name": "Jamie Dimon"
+                },
+                "claim2": {
+                    "text": "<grey>1997:</grey> “There is no reason anyone would want a computer in their home.”",
+                    "name": "Ken Olsen, co-founder Digital Equipment Corporation"
+                },
+                "claim3": {
+                    "text": "<grey>1995:</grey> “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
+                    "name": " Robert Metcalfe (the inventor of Ethernet)"
+                },
+                "claim4": {
+                    "text": "<grey>1989:</grey> “We will never make a 32-bit operating system.”",
+                    "name": "Bill Gates, Founder of Microsoft"
+                },
+                "claim5": {
+                    "text": "<grey>1961:</grey> “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
+                    "name": "T.A.M. Craven,  FCC commissioner"
+                },
+                "claim6": {
+                    "text": "<grey>1946:</grey> “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
+                    "name": "Darryl Zanuck, 20th Century Fox"
+                },
+                "claim7": {
+                    "text": "<grey>1903:</grey> “The horse is here to stay but the automobile is only a novelty – a fad.”",
+                    "name": "President of the Michigan Bank"
+                }
+            },
+            "positiveClaims": {
+                "claim1": {
+                    "text": "<primary>Actual:</primary> “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
+                    "name": "Elon Mask founder of Tesla nad SpaceX"
+                },
+                "claim2": {
+                    "text": "<primary>Actual:</primary> “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
+                    "name": "Paul Vigna, Markets reporter for The Wall Street Journal"
+                },
+                "claim3": {
+                    "text": "<primary>Actual:</primary> “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
+                    "name": "Olaf Carlson-Wee"
+                },
+                "claim4": {
+                    "text": "<primary>Actual:</primary> “The reason we are all here is that the current financial system is outdated.“",
+                    "name": "Charlie Shrem, Founder & CEO of Bitinstant"
+                },
+                "claim5": {
+                    "text": "<primary>Actual:</primary> “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
+                    "name": "Marc Kenigsber"
+                },
+                "claim6": {
+                    "text": "<primary>Actual:</primary> “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
+                    "name": "Cathie Wood — Ark Invest CEO & fund manager"
+                }
+            },
+            "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
+        },
+        "oppurtunities": {
+            "header": "La oportunidad de inversión se ha cerrado",
+            "subtext": "We have opened the first round, which is for retail investors. The next rounds will be for large investment companies only!",
+            "bonuses": "Investment Bonuses",
+            "investment1": "From 2,200 USD, you will receive GARA Coin worth 50% of your investment.",
+            "investment2": "From 4,400 USD, you will receive GARA Coin worth 100% of your investment.",
+            "visitBtn": "Visit Launchpad",
+            "round1": "1.round",
+            "money": "6,4M USD",
+            "shareholderBtn": "Become a Shareholder"
+        },
+        "simpleSteps": {
+            "header": "5 Simple Steps to Investing",
+            "subtext": "Coingarage is a global project, and therefore, we don't want to limit investment opportunities to just one country or region. In collaboration with legal experts and partners, we have developed a simple five-step system where every investor can invest comfortably from their home anywhere in the world. Additionally, after creating account, each investor will gain access to our investment platform, where they can manage their investment and receive new information about the project's development.",
+            "box1": "Registration",
+            "box2": "Personal Data",
+            "box3": "KYC",
+            "box4": "Payment",
+            "box5": "Contract",
+            "download": "Download the contract template"
+        },
+        "yourValuation": {
+            "header": "What Will be Valuation of Your Investment",
+            "investment": "Investment",
+            "table": {
+                "header": {
+                    "column1": "Info",
+                    "column2": "1.round",
+                    "column3": "2.round",
+                    "column4": "3.round"
+                },
+                "rows": {
+                    "row1": "Share of distributed profit:",
+                    "row2": "Profit Coingarage Finance s.r.o.:",
+                    "row3": "Evaluation:",
+                    "row4": "The total will be paid:"
+                },
+                "concluision": "Model calculation assumes Coingarage s.r.o. Valuation of USD 2.4 MLD The model calculation does not guarantee the achievement of the selected appreciation on the deposit. The assumed appreciation will be paid over a 7-year horizon in CZK, EUR or USD."
+            },
+            "table2": {
+                "header": "Would You Like to Get More Information?",
+                "subtext": "Send us your email and phone number and our sales representative will contact you and answer all your questions.",
+                "placeholder1": "Full Name",
+                "placeholder2": "Phone Number",
+                "placeholder3": "Email",
+                "consent": "I agree to the processing of personal data",
+                "sendBtn": "Send"
+            },
+            "subheader": "How Can We Achieve Such High Investment Returns?",
+            "subtext1": "The exchange itself does not trade assets, it earns money through fees for facilitating trades, transferring assets, and other services. Therefore, it is not directly influenced by market conditions and earns whether the price of assets goes up or down. Additionally, the cryptocurrency market does not have opening hours like other exchanges, which are closed on weekends. Trading with digital currencies occurs globally 24/7 without interruption.",
+            "subtext2": "Furthermore, the crypto market is the fastest-growing market today, growing on average by 56.4% each year over the last 6 years. This significantly affects the influx of new capital and has a strong positive impact on all companies operating in this industry. Thanks to this, we are able to grow rapidly and achieve the stated appreciation of 1100%. These figures, as well as all calculations you will find on our website, are based on current and historical data from competitors and are the results of standard economic calculations used.",
+            "investBtn": "Start Investing"
+        },
+        "taxHeavens": {
+            "header": "Not in tax havens, but in the heart of Europe.",
+            "subtext1": "Most of the current cryptocurrency exchanges are based in tax havens and countries outside the jurisdiction of EU laws. Our exchange is located directly in the heart of Europe in the Czech Republic and operates under local and European laws and regulations governing cryptocurrency trading.",
+            "subtext2": "Our aim is to rectify the digital currency market and provide all users in Europe with a safe and regulated environment for their trades. That's why we collaborate with lawyers and experts in crypto regulation and actively prepare for the new European regulation MiCA."
+        },
+        "partnersImages": {
+            "header": "Partners",
+            "infoBtn": "Click For More Information"
+        },
+        "partnersMain": {
+            "partner1": {
+                "header": "Blockchain Legal",
+                "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
+            },
+            "partner2": {
+                "header": "FINROCK GLOBAL LTD",
+                "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
+            },
+            "partner3": {
+                "header": "Simplex by NUVEI",
+                "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
+            },
+            "partner4": {
+                "header": "ZEN",
+                "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
+            },
+            "partner5": {
+                "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
+                "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
+            },
+            "partner6": {
+                "header": "Creative Heroes",
+                "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
+            },
+            "exchangeBtn": "Enter the Exchange"
+        },
+        "investorPlatform": {
+            "header": "Preview of the investor platform",
+            "createAccountBtn": "Create an Account"
+        },
+        "faq": {
+            "header": "Frequently Asked Questions",
+            "section1": "General questions",
+            "section2": "The silent partnership",
+            "section3": "Vision",
+            "section4": "Other",
+            "generalQuestions": {
+                "question1": {
+                    "text": "What is the minimum ammount I can invest?",
+                    "answer": "The minimum investment amount is set at 2 200 USD (or equivalent in another currency) corresponding to 0.00075% of the distributed profit of Coingarage Finance s.r.o."
+                },
+                "question2": {
+                    "text": "What does distributed profit mean?",
+                    "answer": "istributed profit is equal to 90% of the total profit of Coingarage Finance s.r.o. The remaining 10% belongs to the Coingarage s.r.o. team."
+                },
+                "question3": {
+                    "text": "Is this project subject to the supervision of the Czech National Bank?",
+                    "answer": "A silent partnership is a contractual relationship of obligation. The presented business model and contractual relationships are not covered by the material scope of Act No. 240/2013 Coll, on investment companies and investment funds, as amended (hereinafter referred to as 'ZISIF'), as it is an activity consisting in raising funds for the purpose of financing business activities of a non-financial nature, which fulfils the conditions of the so-called development exemption under Section 2 of ZISIF, and the activity in question - the offer to conclude a silent partnership agreement - is not considered a public offer under Section 34 et seq. of Act No. 256/2004 Coll, in view of the above, the described activity of the company is not subject to the supervision of the CNB."
+                },
+                "question4": {
+                    "text": "What is the intended value of Coingarage s.r.o.?",
+                    "answer": "The intended value of Coingarage s.r.o. is set at USD 2.4 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
+                },
+                "question5": {
+                    "text": "What is Coingarage Finance s.r.o.?",
+                    "answer": "Coingarage Finance s.r.o. serves as a legal guarantee that any future sale of Coingarage s.r.o. will also benefit the depositors through the silent partner. If the silent partner had contributed funds directly to Coingarage s.r.o., then the silent partner would not legally be able to be paid a share of any sale of Coingarage s.r.o., but only a share of the profits of Coingarage s.r.o. in the normal course of business during the year. With this model, the silent partner will receive a share of the profits and also a share of the planned sale of Coingarage s.r.o."
+                },
+                "question6": {
+                    "text": "Will I be able to supervise my investment?",
+                    "answer": "The silent partner has oversight of their investment through our private investor platform where they can see the progress of the development plan, significant business activity, current company value, information from the CEO and management team, accounting documents and a summary of Coingarage Finance Ltd. and Coingarage s.r.o.. news. He will also have the opportunity to communicate directly with the management of the company via the investor internal platform."
+                }
+            },
+            "silentPartnershipQuestions": {
+                "question1": {
+                    "text": "What does a silent partner mean under the law, is it legal?",
+                    "answer": " silent partner may be a natural or legal person, entrepreneur or nonentrepreneur, who contributes to the business of another person. In many developed countries of the world, silent partnerships are a common form of participation in the business of other persons. Within the legal system of the Czech Republic, the silent partnership was first regulated by the Commercial Code (after 1989), however, since 1 January 2014 its legal regulation has been included in the Civil Code. In accordance with the provisions of Section 2747 of Act No. 89/2012 Coll., the Civil Code, as amended, the silent partner undertakes to make a contribution that will contribute to the results of the company's business for the entire duration of the silent partnership, and the company undertakes to pay the silent partner a share of the profits."
+                },
+                "question2": {
+                    "text": "What rights and obligations does a silent partner have?",
+                    "answer": "A silent partner has the right to inspect all published business documents and accounting records of Coingarage Finance s.r.o. and Coingarage s.r.o. through our private platform. The silent partner also has the right to receive copies of each financial statement, each income tax return, including the schedules thereto, and each auditor's report on the audit of the financial statements of Coingarage Finance s.r.o. through the private platform, which shall be made during or for the period of the silent partner's service with the company.The silent partner shall be entitled to a share of the distributed profits in the amount of his investment as at the date of the financial statements and also of any other profits determined to be payable pursuant to a resolution of the general meeting of Coingarage Finance Ltd.r.o.In addition to the proper deposit and confidentiality, the silent partner is also liable for tax on any income from the profit share not paid by Coingarage Finance s.r.o, nor does it charge it to the silent partner, nor does it pay it on behalf of the silent partner."
+                },
+                "question3": {
+                    "text": "What are the advantages of a silent partnership over other types of investment in companies?",
+                    "answer": "<ul><li>Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.</li><li>No upfront or ongoing fees, you invest directly in the project without an intermediary.</li><li>Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.</li><li>You can enter the project right from the inception of the idea, and get many times the appreciation</li></ul>"
+                },
+                "question4": {
+                    "text": "How can I become a silent partner?",
+                    "answer": "By registering through our private investor platform app.coingarage-finance.com. A self-empowered person or businessman who successfully passes the verification process, invests the required funds in Coingarage Finance Ltd. and is approved at a general meeting of Coingarage Finance Ltd. can become a silent partner."
+                },
+                "question5": {
+                    "text": "What is the verification process (KYC, AML, etc.)?",
+                    "answer": "Even though we are not an obliged person within the meaning of Section 2 of Act No. 253/2008 Coll., on certain measures against the legalization of proceeds of crime and terrorist financing, as amended (hereinafter referred to as the 'AML Act'), i.e. we are not subject to the obligations regarding the identification and control of clients under the AML Act, we nevertheless identify each silent partner using at least one identity document and a basic background check (PEP, international sanctions, negative media mentions, etc.) for the protection of our company in which you wish to invest. This is handled for us by veriff.com, an application based in the European Union, so you don't have to worry about your personal data as GetID Ltd is subject to strict European legislation including GDPR."
+                },
+                "question6": {
+                    "text": "Are there any fees associated with the silent partnership contribution?",
+                    "answer": "Everything is free of charge, you invest directly in the project without intermediaries. Fees may only be incurred as part of the transaction itself, which may be charged by your bank or payment gateway."
+                },
+                "question7": {
+                    "text": "When and under what conditions is a silent partner entitled to a share of the distributed profit?",
+                    "answer": "The entitlement to the payment of profits arises when approved by the general meeting of Coingarage Finance s.r.o. and the subsequent amount of the profit share corresponds to the purchased share of the distributed profits. Further information is available in the projected appreciation calculator on the main page of this website."
+                },
+                "question8": {
+                    "text": "How long is the silent partnership investment agreement?",
+                    "answer": "The silent partner investment agreement is for a period of 7 years, at which time it is anticipated that the development phase will be completed and the growth of Coingarage s.r.o. will be at a global level."
+                }
+            },
+            "visionQuestions": {
+                "question1": {
+                    "text": "Who is your target group?",
+                    "answer": "There are about 480 million people of working age in Europe and only 9% - about 43 million of them have some experience with cryptos. Compared to Asia, the Americas, Africa and Latin America, this is about 16% less. This means that in addition to these 43 million, there is a potential for at least 77 million new people to start holding or trading crypto in the next seven years."
+                },
+                "question2": {
+                    "text": "Why crypto and crypto exchange?",
+                    "answer": "Blockchain technology and its related cryptocurrencies offer a number of benefits to users and have the potential to revolutionise the global financial ecosystem. We believe that by 2032, 1 billion people will be involved in the global ecosystem of digital assets and a significant portion of gross domestic product will be in the bitcoin economy."
+                },
+                "question3": {
+                    "text": "Why a stock exchange in Europe? And why do you want to focus on Europe?",
+                    "answer": "Most of the major stock exchanges today are based in tax havens or in countries where 100% transparency and security are not guaranteed. At the same time, if we compare the percentage of people who have come into contact with crypto in Europe with other continents, we see a great opportunity in the European market."
+                },
+                "question4": {
+                    "text": "How do you reach 10 million active users?",
+                    "answer": "This is based on the aforementioned assumption of the growth of the entire crypto world and an increase in the percentage of users in Europe to the level of e.g. the USA and Asia. At the same time, we are aware of our technological advantage, where we will soon combine on one platform to offer all the available functions of the industry. Marketing also plays an important role, where we are planning a number of important activities in the world of sports, culture, etc. in conjunction with the industry leaders, in addition to the usual tools."
+                },
+                "question5": {
+                    "text": "How will you achieve ongoing profits?",
+                    "answer": "It's no secret that fees play a key role in generating profits. Whenever any trade or transaction takes place on our exchange outside of a deposit, there are fees associated with it. The exchange makes a profit twenty-four hours a day, seven days a week."
+                },
+                "question6": {
+                    "text": "How will you achieve the projected value of the company of USD 10 billion in 7 years?",
+                    "answer": "The value of the company will be a unique solution in the form of a robust yet simple crypto exchange that will be available on all devices. Then there is the large community of users, billions in annual profits, brand, and experienced team. We have compared the value of our company with similar companies such as Kraken, KuCoin, Binance and yet the value of our company Coingarage s.r.o.. is undervalued"
+                }
+            },
+            "otherQuestions": {
+                "question1": {
+                    "text": "Who will own and run Coingarage s.r.o.?",
+                    "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (30%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
+                },
+                "question2": {
+                    "text": "Why do you need and what will you use the funds for?",
+                    "answer": "All funds will be used for activities for the stable growth and expansion of Coingarage s.r.o. Especially on the development of the stock exchange and its components. We will also invest in our brand awareness, i.e. in active marketing and sales activities."
+                },
+                "question3": {
+                    "text": "Do you plan to release your own crypto tokens?",
+                    "answer": "Yes, we are planning to release our own utility token, which will perform a similar function to BNB on Binance. We will also combine existing community tokens under this utility token."
+                },
+                "question4": {
+                    "text": "Why a silent partner and not venture capital funds?",
+                    "answer": "The journey with venture capital funds is usually a long one, we don't want to hold up the project, so the 1st investment round in particular is for silent partners from the public. The plan is that from the next investment rounds onwards, venture capital funds will be the primary focus."
+                }
+            }
+        }
+    },
+    "GARA": {
+        "main": {
+            "header": "Moneda GARAGE <span>GARA</span>",
+            "text1": "Es el token de nuestro intercambio Coingarage, ayudándonos a desarrollar nuestro ecosistema de intercambio. Este token se creó con un máximo fijo de solo 900 millones de unidades, y no se puede aumentar.",
+            "text2": "GARA se utilizará como una forma de recompensa para nuestros usuarios. También se puede usar para pagar una variedad de tarifas en el intercambio. Al usarlo para pagar estas tarifas, nuestros usuarios recibirán además un descuento del 20% en el monto de estas tarifas.",
+            "buyGARA": {
+                "header": "Comprar GARA",
+                "totalTokens": "Cantidad total de tokens GARA",
+                "distributedTokens": "Total de tokens GARA distribuidos",
+                "soldTokens": "Tokens vendidos",
+                "btnConnectWallet": "Conectar cartera",
+                "btnBuyGARA": "Comprar GARA",
+                "buyWith": "Comprar con",
+                "linkGoToLaunchapad": "Comprar en Coingarage",
+                "poweredBy": "Impulsado por"
+            }
+        },
+        "usage": {
+            "header": "Planificación del uso de GARA",
+            "usage1": "Tarifas de listado",
+            "usage2": "Tarifas de transacciones con tarjeta",
+            "usage3": "Gas requerido para transferencia",
+            "usage4": "Tarifa de éxito",
+            "usage5": "Tarifa de retiro",
+            "usage6": "Tarifa de gas para EEZY Trader",
+            "usage7": "Tarifas de compra",
+            "usage8": "Publicidad"
+        },
+        "garaDepo": {
+            "header": "GARA Stake",
+            "subHeader": "Rendimiento actual del 30% anual",
+            "text1": "Estaciona tus monedas Garage compradas (GARA) en nuestro programa de Depósito y déjalas crecer. Pagamos intereses regularmente en tu GARA depositada a tu cuenta de Coingarage cada día. No tienes que preocuparte por nada, todo es completamente automático.",
+            "text2": "Ahora oferta introductoria <span>solo hasta el 27.10.2024, con una tasa de interés fija del 30% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
+            "timer": {
+                "header": "TIEMPO RESTANTE HASTA EL FIN DE LA OFERTA",
+                "day": "DÍAS",
+                "hours": "HORAS",
+                "minutes": "MINUTOS",
+                "seconds": "SEGUNDOS",
+                "disclaimer": "*Después de esta fecha, aún será posible depositar GARA, pero con un rendimiento más bajo, que cambiará dinámicamente dependiendo de la cantidad total depositada de GARA."
+            },
+            "boxes": {
+                "1": "Fácil y sin preocupaciones",
+                "2": "Seguro y transparente",
+                "3": "Altos rendimientos",
+                "4": "Pago diario de ganancias"
+            },
+            "garaStakebtn": "Ver planes de stake"
+        },
+        "burnMechanism": {
+            "header": "Mecanismo de Quema de GARA",
+            "text1": "Para garantizar un desarrollo más fluido del valor de GARA, hemos decidido implementar un mecanismo de quema que quemará gradualmente los tokens de GARA en función de su uso creciente.",
+            "boxes": {
+                "1": {
+                    "header": "Hasta que queden solo 200 millones de GARA",
+                    "text": "de los 900 millones originales"
+                },
+                "2": {
+                    "header": "Cada mes quemaremos el 20% de GARA",
+                    "text": "recibidos en tarifas"
+                }
+            },
+            "disclaimer": "*La quema de tokens es un método para gestionar la oferta total de una criptomoneda en el mercado para reducir la cantidad disponible y así potencialmente aumentar el valor de la criptomoneda. Este concepto es similar a las recompras de acciones en el mundo financiero tradicional."
+        },
+        "roadmap": {
+            "header": "Hoja de ruta",
+            "btnBuyGARA": "Comprar GARA",
+            "text1": "Intercambio iniciado",
+            "text2": "GARA creado",
+            "text3": "Lanzamiento del robot de trading EEZY Trader",
+            "text4": "Preventa de GARA",
+            "text5": "Listado en Uniswap",
+            "text6": "Listado de GARA en Coinmarketcap y Coingecko",
+            "text7": "Lanzamiento del trading de GARA en el intercambio Coingarage",
+            "text8": "GARA Stake",
+            "text9": "Aplicación de tarifas GARA y quema de GARA",
+            "text10": "Segundo airdrop de GARA",
+            "text11": "Primer airdrop de GARA",
+            "text12": "Tarjeta de criptomonedas y reembolso en GARA"
+        },
+        "alocation": {
+            "header": "Asignación",
+            "rewards": {
+                "text": "11% (99M GARA)",
+                "subText": "Recompensa por staking"
+            },
+            "company": {
+                "text": "22% (198M GARA)",
+                "subText": "Empresa"
+            },
+            "baseTeam": {
+                "text": "11% (99M GARA)",
+                "subText": "Equipo fundador"
+            },
+            "burnedAt": {
+                "text": "15% (135M GARA)",
+                "subText": "Será quemado el 1 de marzo de 2024"
+            },
+            "marketing": {
+                "text": "10% (90M GARA)",
+                "subText": "Marketing nuevos usuarios de la plataforma"
+            },
+            "angelInvestors": {
+                "text": "10% (90M GARA)",
+                "subText": "Inversores ángel"
+            },
+            "reserved": {
+                "text": "11% (99M GARA)",
+                "subText": "Reservado para la preventa pública",
+                "subText1": "y ofrecido para la compra en www.coingarage.io."
+            },
+            "nonExchange": {
+                "text": "10% (90M GARA)",
+                "subText": "GARA en forma OTC tras la admisión ",
+                "subText1": "a la negociación en la plataforma del emisor"
+            },
+            "limit": " Se ha fijado un límite de 900 millones de GARA, que nunca se incrementará."
+        },
+        "release": {
+            "header": "Liberación de GARA para el equipo",
+            "subHeader": "99 millones de GARA",
+            "text": "Los 99 millones de GARA asignados para el equipo se liberarán gradualmente, con un 20% (19.8 millones) liberado cada año durante un período de 5 años.",
+            "box1": {
+                "text": "En el lanzamiento de la preventa",
+                "subText": "20% (19.8M.)"
+            },
+            "box2": {
+                "text": "Después de 2 años",
+                "subText": "20% (19.8M.)"
+            },
+            "box3": {
+                "text": "Después de 3 años",
+                "subText": "20% (19.8M.)"
+            },
+            "box4": {
+                "text": "Después de 4 años",
+                "subText": "20% (19.8M.)"
+            },
+            "box5": {
+                "text": "Después de 5 años",
+                "subText": "20% (19.8M.)"
+            }
+        },
+        "IEO": {
+            "header": "Preventa pública de IEO",
+            "text1": "El 40% de los fondos recaudados en la preventa de GARA se utilizarán para construir y mejorar la plataforma Coingarage de acuerdo con el plan de negocios.",
+            "text2": "Otro 40% se utilizará para marketing y construcción de la marca Coingarage para asegurar que el intercambio crezca rápidamente y atraiga a la mayor cantidad de usuarios posible. Estos usuarios utilizarán los servicios y herramientas de Coingarage, pagando con GARA, aumentando así su uso y acelerando su tasa de quema.",
+            "text3": "El 20% restante de los fondos recaudados se mantendrá en reserva para situaciones imprevistas.",
+            "box": {
+                "address": "Dirección del contrato",
+                "btnBuyWithUSDT": "Comprar con USDT",
+                "btnBuyWithMatic": "Comprar con Matic"
+            }
+        },
+        "GARArunning": {
+            "header": "GARA funciona en la Blockchain de Polygon",
+            "text": "Polygon (anteriormente conocida como Matic Network) es una plataforma blockchain que expande y mejora la red Ethereum. Tiene varias ventajas, incluyendo:",
+            "box1": {
+                "header": "Escalabilidad",
+                "text": "Polygon permite una escalabilidad rápida y eficiente de la red Ethereum. A través de las llamadas capas de escalado, puede procesar muchas más transacciones por segundo que la blockchain base de Ethereum."
+            },
+            "box2": {
+                "header": "Bajas tarifas",
+                "text": "Gracias a la escalabilidad y la optimización del proceso de transacciones, Polygon ofrece tarifas bajas para transacciones. Esto es ventajoso para los usuarios que desean realizar transacciones frecuentes y económicas."
+            },
+            "box3": {
+                "header": "Interoperabilidad",
+                "text": "Polygon es compatible con Ethereum, lo que significa que las aplicaciones descentralizadas (dApps) y los contratos inteligentes desarrollados para Ethereum se pueden transferir fácilmente a Polygon. Esto permite a los desarrolladores aprovechar las ventajas de Polygon sin necesidad de escribir un nuevo código."
+            },
+            "box4": {
+                "header": "Seguridad",
+                "text": "Polygon se basa en la seguridad de la red Ethereum y utiliza su consenso de Proof of Stake (PoS). Esto significa que los poseedores del token de Polygon pueden hacer staking de sus tokens para ayudar a asegurar la red y ganar recompensas por hacerlo."
+            },
+            "btnGARAOnPolygon": "GARA en Polygonscan"
+        }
+    },
+    "widget": {
+        "button": "",
+        "header": "Estaremos encantados de responder a todas sus preguntas",
+        "text": "No dude en enviarnos su correo electrónico y número de teléfono y un representante de ventas se pondrá en contacto con usted para responder a cualquier pregunta que pueda tener."
     }
-  },
-  "GARA": {
-    "main": {
-      "header": "Moneda GARAGE <span>GARA</span>",
-      "text1": "Es el token de nuestro intercambio Coingarage, ayudándonos a desarrollar nuestro ecosistema de intercambio. Este token se creó con un máximo fijo de solo 900 millones de unidades, y no se puede aumentar.",
-      "text2": "GARA se utilizará como una forma de recompensa para nuestros usuarios. También se puede usar para pagar una variedad de tarifas en el intercambio. Al usarlo para pagar estas tarifas, nuestros usuarios recibirán además un descuento del 20% en el monto de estas tarifas.",
-      "buyGARA": {
-        "header": "Comprar GARA",
-        "totalTokens": "Cantidad total de tokens GARA",
-        "distributedTokens": "Total de tokens GARA distribuidos",
-        "soldTokens": "Tokens vendidos",
-        "btnConnectWallet": "Conectar cartera",
-        "btnBuyGARA": "Comprar GARA",
-        "buyWith": "Comprar con",
-        "linkGoToLaunchapad": "Comprar en Coingarage",
-        "poweredBy": "Impulsado por"
-      }
-    },
-    "usage": {
-      "header": "Planificación del uso de GARA",
-      "usage1": "Tarifas de listado",
-      "usage2": "Tarifas de transacciones con tarjeta",
-      "usage3": "Gas requerido para transferencia",
-      "usage4": "Tarifa de éxito",
-      "usage5": "Tarifa de retiro",
-      "usage6": "Tarifa de gas para EEZY Trader",
-      "usage7": "Tarifas de compra",
-      "usage8": "Publicidad"
-    },
-    "garaDepo": {
-      "header": "Depósito GARA",
-      "subHeader": "Rendimiento actual del 30% anual",
-      "text1": "Estaciona tus monedas Garage compradas (GARA) en nuestro programa de Depósito y déjalas crecer. Pagamos intereses regularmente en tu GARA depositada a tu cuenta de Coingarage cada día. No tienes que preocuparte por nada, todo es completamente automático.",
-      "text2": "Ahora oferta introductoria <span>solo hasta el 27.10.2024, con una tasa de interés fija del 30% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
-      "timer": {
-        "header": "TIEMPO RESTANTE HASTA EL FIN DE LA OFERTA",
-        "day": "DÍAS",
-        "hours": "HORAS",
-        "minutes": "MINUTOS",
-        "seconds": "SEGUNDOS",
-        "disclaimer": "*Después de esta fecha, aún será posible depositar GARA, pero con un rendimiento más bajo, que cambiará dinámicamente dependiendo de la cantidad total depositada de GARA."
-      },
-      "boxes": {
-        "1": "Fácil y sin preocupaciones",
-        "2": "Seguro y transparente",
-        "3": "Altos rendimientos",
-        "4": "Pago diario de ganancias"
-      }
-    },
-    "burnMechanism": {
-      "header": "Mecanismo de Quema de GARA",
-      "text1": "Para garantizar un desarrollo más fluido del valor de GARA, hemos decidido implementar un mecanismo de quema que quemará gradualmente los tokens de GARA en función de su uso creciente.",
-      "boxes": {
-        "1": {
-          "header": "Hasta que queden solo 200 millones de GARA",
-          "text": "de los 900 millones originales"
-        },
-        "2": {
-          "header": "Cada mes quemaremos el 20% de GARA",
-          "text": "recibidos en tarifas"
-        }
-      },
-      "disclaimer": "*La quema de tokens es un método para gestionar la oferta total de una criptomoneda en el mercado para reducir la cantidad disponible y así potencialmente aumentar el valor de la criptomoneda. Este concepto es similar a las recompras de acciones en el mundo financiero tradicional."
-    },
-    "roadmap": {
-      "header": "Hoja de ruta",
-      "btnBuyGARA": "Comprar GARA",
-      "text1": "Intercambio iniciado",
-      "text2": "GARA creado",
-      "text3": "Lanzamiento del robot de trading EEZY Trader",
-      "text4": "Preventa de GARA",
-      "text5": "Listado en Uniswap",
-      "text6": "Listado de GARA en Coinmarketcap y Coingecko",
-      "text7": "Lanzamiento del trading de GARA en el intercambio Coingarage",
-      "text8": "Primer airdrop de GARA",
-      "text9": "Aplicación de tarifas GARA y quema de GARA",
-      "text10": "Segundo airdrop de GARA",
-      "text11": "Staking y reembolso en GARA",
-      "text12": "Tarjeta de criptomonedas y reembolso en GARA"
-    },
-    "alocation": {
-      "header": "Asignación",
-      "rewards": {
-        "text": "11% (99M GARA)",
-        "subText": "Recompensa por staking"
-      },
-      "company": {
-        "text": "22% (198M GARA)",
-        "subText": "Empresa"
-      },
-      "baseTeam": {
-        "text": "11% (99M GARA)",
-        "subText": "Equipo fundador"
-      },
-      "burnedAt": {
-        "text": "15% (135M GARA)",
-        "subText": "Será quemado el 1 de marzo de 2024"
-      },
-      "marketing": {
-        "text": "10% (90M GARA)",
-        "subText": "Marketing nuevos usuarios de la plataforma"
-      },
-      "angelInvestors": {
-        "text": "10% (90M GARA)",
-        "subText": "Inversores ángel"
-      },
-      "reserved": {
-        "text": "11% (99M GARA)",
-        "subText": "Reservado para la preventa pública",
-        "subText1": "y ofrecido para la compra en www.coingarage.io."
-      },
-      "nonExchange": {
-        "text": "10% (90M GARA)",
-        "subText": "GARA en forma OTC tras la admisión ",
-        "subText1": "a la negociación en la plataforma del emisor"
-      },
-      "limit": " Se ha fijado un límite de 900 millones de GARA, que nunca se incrementará."
-    },
-    "release": {
-      "header": "Liberación de GARA para el equipo",
-      "subHeader": "180 millones de GARA",
-      "text": "Los 180 millones de GARA asignados para el equipo se liberarán gradualmente, con un 20% (36 millones) liberado cada año durante un período de 5 años.",
-      "box1": {
-        "text": "En el lanzamiento de la preventa",
-        "subText": "20% (36M.)"
-      },
-      "box2": {
-        "text": "Después de 2 años",
-        "subText": "20% (36M.)"
-      },
-      "box3": {
-        "text": "Después de 3 años",
-        "subText": "20% (36M.)"
-      },
-      "box4": {
-        "text": "Después de 4 años",
-        "subText": "20% (36M.)"
-      },
-      "box5": {
-        "text": "Después de 5 años",
-        "subText": "20% (36M.)"
-      }
-    },
-    "IEO": {
-      "header": "Preventa pública de IEO",
-      "text1": "El 40% de los fondos recaudados en la preventa de GARA se utilizarán para construir y mejorar la plataforma Coingarage de acuerdo con el plan de negocios.",
-      "text2": "Otro 40% se utilizará para marketing y construcción de la marca Coingarage para asegurar que el intercambio crezca rápidamente y atraiga a la mayor cantidad de usuarios posible. Estos usuarios utilizarán los servicios y herramientas de Coingarage, pagando con GARA, aumentando así su uso y acelerando su tasa de quema.",
-      "text3": "El 20% restante de los fondos recaudados se mantendrá en reserva para situaciones imprevistas.",
-      "box": {
-        "address": "Dirección del contrato",
-        "btnBuyWithUSDT": "Comprar con USDT",
-        "btnBuyWithMatic": "Comprar con Matic"
-      }
-    },
-    "GARArunning": {
-      "header": "GARA funciona en la Blockchain de Polygon",
-      "text": "Polygon (anteriormente conocida como Matic Network) es una plataforma blockchain que expande y mejora la red Ethereum. Tiene varias ventajas, incluyendo:",
-      "box1": {
-        "header": "Escalabilidad",
-        "text": "Polygon permite una escalabilidad rápida y eficiente de la red Ethereum. A través de las llamadas capas de escalado, puede procesar muchas más transacciones por segundo que la blockchain base de Ethereum."
-      },
-      "box2": {
-        "header": "Bajas tarifas",
-        "text": "Gracias a la escalabilidad y la optimización del proceso de transacciones, Polygon ofrece tarifas bajas para transacciones. Esto es ventajoso para los usuarios que desean realizar transacciones frecuentes y económicas."
-      },
-      "box3": {
-        "header": "Interoperabilidad",
-        "text": "Polygon es compatible con Ethereum, lo que significa que las aplicaciones descentralizadas (dApps) y los contratos inteligentes desarrollados para Ethereum se pueden transferir fácilmente a Polygon. Esto permite a los desarrolladores aprovechar las ventajas de Polygon sin necesidad de escribir un nuevo código."
-      },
-      "box4": {
-        "header": "Seguridad",
-        "text": "Polygon se basa en la seguridad de la red Ethereum y utiliza su consenso de Proof of Stake (PoS). Esto significa que los poseedores del token de Polygon pueden hacer staking de sus tokens para ayudar a asegurar la red y ganar recompensas por hacerlo."
-      },
-      "btnGARAOnPolygon": "GARA en Polygonscan"
-    }
-  },
-  "widget": {
-    "button": "",
-    "header": "Estaremos encantados de responder a todas sus preguntas",
-    "text": "No dude en enviarnos su correo electrónico y número de teléfono y un representante de ventas se pondrá en contacto con usted para responder a cualquier pregunta que pueda tener."
-  }
 }

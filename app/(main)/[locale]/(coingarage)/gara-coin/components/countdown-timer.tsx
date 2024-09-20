@@ -40,7 +40,7 @@ const CountdownTimer = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex items-center justify-start space-x-2", className)}>
       {/* Days */}
-      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-md md:min-w-[80px]">
         <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.days).padStart(2, "0")}</div>
         <div className="text-sm font-medium md:text-base">{t("day")}</div>
       </div>
@@ -48,7 +48,7 @@ const CountdownTimer = ({ className }: { className: string }) => {
       {/* Hours */}
       <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-md md:min-w-[80px]">
         <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.hours).padStart(2, "0")}</div>
         <div className="text-sm font-medium md:text-base">{t("hours")}</div>
       </div>
@@ -56,7 +56,7 @@ const CountdownTimer = ({ className }: { className: string }) => {
       {/* Minutes */}
       <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-md md:min-w-[80px]">
         <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.minutes).padStart(2, "0")}</div>
         <div className="text-sm font-medium md:text-base">{t("minutes")}</div>
       </div>
@@ -64,7 +64,7 @@ const CountdownTimer = ({ className }: { className: string }) => {
       {/* Seconds */}
       <div className="pb-8 text-2xl font-bold text-primary md:text-3xl">:</div>
 
-      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-lg md:min-w-[80px]">
+      <div className="flex w-[74px] flex-col items-center rounded-xl border p-2 font-heading shadow-md md:min-w-[80px]">
         <div className="text-2xl font-bold text-primary md:text-3xl">{String(timeLeft.seconds).padStart(2, "0")}</div>
         <div className="text-sm font-medium md:text-base">{t("seconds")}</div>
       </div>
