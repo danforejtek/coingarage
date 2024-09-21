@@ -40,15 +40,18 @@ function toLowerCase(address: string) {
   return address.toLowerCase()
 }
 
-const ethereumRpcUrl = process.env.ETHEREUM_RPC_URL || "https://ethereum-rpc.publicnode.com"
-const polygonRpcUrl = process.env.POLYGON_RPC_URL || "https://polygon-bor-rpc.publicnode.com"
+export const ethereumRpcUrl = process.env.NEXT_PUBLIC_ETHEREUM_RPC_URL || "https://ethereum-rpc.publicnode.com"
+export const polygonRpcUrl = process.env.NEXT_PUBLIC_POLYGON_RPC_URL || "https://polygon-bor-rpc.publicnode.com"
+export const bscRpcUrl = process.env.NEXT_PUBLIC_BSC_RPC_URL || "https://bsc-rpc.publicnode.com"
 
-const getRpcNode = (chain: string) => {
+export const getRpcNode = (chain: string) => {
   switch (chain) {
     case "Ethereum":
       return http(ethereumRpcUrl)
     case "Polygon":
       return http(polygonRpcUrl)
+    case "BNB Smart Chain":
+      return http(bscRpcUrl)
     default:
       return http()
   }
