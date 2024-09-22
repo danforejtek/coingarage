@@ -227,11 +227,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </div>
             <div className="flex w-full flex-row justify-center">
               <Button variant="default" className="mt-12 min-w-[200px]" asChild>
-                <a
-                  href="https://trade.coingarage.io/stake"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
+                <a href="https://trade.coingarage.io/stake" target="_blank" rel="noreferrer noopener">
                   {t("garaDepo.garaStakebtn")}
                 </a>
               </Button>

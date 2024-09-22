@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/icons/polygon.svg"
-import { formatAddress } from "@/lib/utils"
+import { cn, formatAddress } from "@/lib/utils"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm, useWatch } from "react-hook-form"
@@ -44,7 +44,7 @@ const formSchema = z.object({
   token: z.string(),
 })
 
-export function BuyGara() {
+export function BuyGara({ className }: { className?: string }) {
   const t = useTranslations("GARA.main.buyGARA")
   const {
     transactionStatus,
@@ -187,7 +187,12 @@ export function BuyGara() {
   }
 
   return (
-    <section className="w-full max-w-full flex-1 overflow-x-hidden rounded-2xl bg-background p-6 shadow-md lg:max-w-[480px]">
+    <section
+      className={cn(
+        "w-full max-w-full flex-1 overflow-x-hidden rounded-2xl bg-background p-6 shadow-md lg:max-w-[480px]",
+        className
+      )}
+    >
       <h3 className="mb-6 text-center font-heading text-3xl font-bold">{t("header")}</h3>
       <Table className="text-sm">
         <TableBody className="text-sm">
