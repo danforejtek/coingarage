@@ -20,6 +20,7 @@ import SecureIcon from "@/public/images/gara-coin/box/secure.svg"
 import DayIcon from "@/public/images/gara-coin/box/day.svg"
 import EasyIcon from "@/public/images/gara-coin/box/easy.svg"
 import EarnIcon from "@/public/images/gara-coin/box/earn.svg"
+import { Link } from "@/navigation"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (
@@ -307,8 +308,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </ul>
           </div>
           <div className="flex w-full justify-center">
-            <Button variant="default" className="min-w-[200px]">
-              {t("roadmap.btnBuyGARA")}
+            <Button variant="default" className="min-w-[200px]" asChild>
+              <Link href="/gara-coin/buy">{t("roadmap.btnBuyGARA")}</Link>
             </Button>
           </div>
         </section>
@@ -394,8 +395,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <PolygonAddressCopyToClipboard />
               <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
-                <Button variant="default" className="min-w-[200px]" onClick={() => window?.scrollTo(0, 60)}>
-                  {t("IEO.box.btnBuyWithUSDT")}
+                <Button variant="default" className="min-w-[200px]" asChild>
+                  <Link href="/gara-coin/buy">{t("IEO.box.btnBuyWithUSDT")}</Link>
                 </Button>
                 <Button variant="default" className="min-w-[200px]" asChild>
                   <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
