@@ -17,26 +17,12 @@ import { useGaraStore } from "@/lib/store/provider"
 import { Skeleton } from "@/components/ui/skeleton"
 import { formatAddress } from "@/lib/utils"
 
-export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
+export default function TransactionStatusModal({ open, setOpen, toggleOpen, senderChainTxUrl }) {
   const { transactionStatus, incomingTransaction, outcomingTransaction, reset } = useGaraStore((state) => state)
   const isPending = !incomingTransaction.done || !outcomingTransaction.done
   const hasFailed = incomingTransaction.error || outcomingTransaction.error
   const hasFinished =
     incomingTransaction.done && !incomingTransaction.error && outcomingTransaction.done && !outcomingTransaction.error
-  // useEffect(() => {
-  //   if (transactionStatus.status === "submitting") {
-  //     setOpen(true)
-  //   }
-  // }, [transactionStatus.status])
-
-  // console.log({
-  //   transactionStatus,
-  //   incomingTransaction,
-  //   outcomingTransaction,
-  //   isPending,
-  //   hasFailed,
-  //   hasFinished,
-  // })
 
   return (
     <Dialog onOpenChange={toggleOpen} open={open}>
@@ -77,7 +63,7 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen }) {
                   <p className="text-sm font-medium">Transaction Hash</p>
                   {outcomingTransaction.txHash ? (
                     <a
-                      href={`https://polygonscan.com/tx/${outcomingTransaction.txHash}`}
+                      href={`${senderChainTxUrl}${outcomingTransaction.txHash}`}
                       className="inline-flex items-center text-sm text-tertiary/80 underline hover:text-tertiary"
                       target="_blank"
                       rel="noopener noreferrer"

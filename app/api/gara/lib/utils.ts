@@ -56,6 +56,21 @@ export const getRpcNode = (chain: string) => {
       return http()
   }
 }
+// Helper function for retrying with a delay
+const retryWithDelay = async (fn: () => Promise<any>, retries: number, delay: number) => {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await fn()
+    } catch (error) {
+      if (i < retries - 1) {
+        console.log(`Retry ${i + 1}/${retries} failed, retrying in ${delay / 1000} seconds...`)
+        await new Promise((resolve) => setTimeout(resolve, delay))
+      } else {
+        throw error // If all retries fail, throw the error
+      }
+    }
+  }
+}
 
 export async function validateTransaction({
   chain,
@@ -77,7 +92,10 @@ export async function validateTransaction({
     const _chain = getChainByName(chain)
     const transport = getRpcNode(chain)
     const publicClient = createPublicClient({ chain: _chain, transport: transport })
-    const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
+
+    // Retry mechanism for getTransactionReceipt with a 5-second delay and 3 retries
+    const receipt = await retryWithDelay(() => publicClient.getTransactionReceipt({ hash: txHash }), 3, 5000)
+
     const transaction = await publicClient.getTransaction({ hash: txHash })
 
     const decoded = decodeFunctionData({
@@ -102,6 +120,7 @@ export async function validateTransaction({
     if (functionValue !== amountInWei) {
       throw new Error("Invalid amount")
     }
+
     return { success: true }
   } catch (error) {
     await sendMail({

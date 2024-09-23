@@ -7,6 +7,8 @@ import {
   transactionsTable,
   transactionLogsTable,
   SelectTransaction,
+  InsertClientTransactionLog,
+  clientTransactionLogsTable,
 } from "@/lib/db/schema"
 
 export async function createTransaction(data: InsertTransaction) {
@@ -32,4 +34,8 @@ export async function updateTransactionByTxHash(
 
 export async function createTransactionLog(data: InsertTransactionLog) {
   await db.insert(transactionLogsTable).values(data)
+}
+
+export async function createClientTransactionLog(data: InsertClientTransactionLog) {
+  await db.insert(clientTransactionLogsTable).values(data)
 }

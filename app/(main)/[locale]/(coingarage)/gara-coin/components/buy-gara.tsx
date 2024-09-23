@@ -15,15 +15,11 @@ import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/icons/polygon.svg"
-import { cn, formatAddress } from "@/lib/utils"
+import { cn } from "@/lib/utils"
 import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm, useWatch } from "react-hook-form"
-import { Form } from "@/components/ui/form"
 import { ArrowDown } from "lucide-react"
-import { polygon } from "viem/chains"
 import { usdcToGara } from "@/app/api/gara/lib/utils"
-import { BigNumberish, HexAddress } from "@/types"
 import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-modal"
 import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-payment"
@@ -64,6 +60,7 @@ export function BuyGara({ className }: { className?: string }) {
   const { data: walletClient } = useWalletClient()
   const addRecentTransaction = useAddRecentTransaction()
   const { openChainModal } = useChainModal()
+  const chainTxUrl = `${chain?.blockExplorers?.default?.url}/tx/`
 
   const form = useForm<z.infer<typeof formSchema>>({
     mode: "onSubmit",
@@ -248,7 +245,12 @@ export function BuyGara({ className }: { className?: string }) {
             {t("btnBuyGARA")}
           </Button>
         </div>
-        <TransactionStatusModal open={open} toggleOpen={handleOnOpenChange} setOpen={setOpen} />
+        <TransactionStatusModal
+          open={open}
+          toggleOpen={handleOnOpenChange}
+          setOpen={setOpen}
+          senderChainTxUrl={chainTxUrl}
+        />
       </form>
       <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>

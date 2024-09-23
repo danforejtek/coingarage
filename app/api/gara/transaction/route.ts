@@ -23,8 +23,6 @@ const erc20Abi = [
   },
 ]
 
-const customRpcUrl = "https://ethereum-rpc.publicnode.com"
-
 export async function POST(req: NextRequest) {
   try {
     const { txHash, chain } = await req.json()

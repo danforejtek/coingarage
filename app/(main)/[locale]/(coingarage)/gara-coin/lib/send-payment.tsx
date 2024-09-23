@@ -16,6 +16,7 @@ import { useAccount, useBalance, useWalletClient } from "wagmi"
 import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/types"
 import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
 import { getRpcNode } from "@/app/api/gara/lib/utils"
+import { writeClientTransactionLog } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/actions"
 
 type Address = `0x${string}`
 
@@ -41,8 +42,22 @@ type SendPaymentResponse = {
   txHash: HexAddress
   receipt: object
 }
+// Helper function for retrying with a delay
+const retryWithDelay = async (fn: () => Promise<any>, retries: number, delay: number) => {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await fn()
+    } catch (error) {
+      if (i < retries - 1) {
+        console.log(`Retry ${i + 1}/${retries} failed, retrying in ${delay / 1000} seconds...`)
+        await new Promise((resolve) => setTimeout(resolve, delay))
+      } else {
+        throw error // If all retries fail, throw the error
+      }
+    }
+  }
+}
 
-// Function to send USDC using viem
 export const sendPayment = async ({
   token,
   chain,
@@ -58,7 +73,7 @@ export const sendPayment = async ({
   try {
     if (!token || !chain || !senderAddress || !recipientAddress || !amount || !walletClient) return
     const checksummedRecipientAddress = getAddress(recipientAddress)
-    // Initialize the public client for interacting with the Polygon network
+    let receipt: any
 
     const client = createPublicClient({
       chain: chain,
@@ -66,9 +81,19 @@ export const sendPayment = async ({
     })
 
     const chainName = chain?.name as SupportedChains
-    // Convert the amount to the correct decimal (USDC has 6 decimals)
+    // Converts amount to 6 decimals for Polygon and Ethereum, and 18 decimals for BNB Smart Chain
     const amountInWei =
-      chainName !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18) // Converts amount to 6 decimals
+      chainName !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18)
+
+    await writeClientTransactionLog({
+      account_address: senderAddress,
+      chain: chainName,
+      token: token,
+      log: {
+        message: "Transaction initiated",
+        amount: amount,
+      },
+    })
 
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
     const hash = await walletClient.writeContract({
@@ -79,16 +104,47 @@ export const sendPayment = async ({
       account: senderAddress,
       chain: chain,
     })
+    await writeClientTransactionLog({
+      account_address: senderAddress,
+      transaction_tx_hash: hash,
+      chain: chainName,
+      token: token,
+      log: {
+        message: "Transaction created",
+        amount: amount,
+      },
+    })
     console.log("Transaction sent:", hash)
     setTransactionStatus({ process: "sendPayment", status: "contractCreated" })
     setOutcomingTransaction({ txHash: hash })
 
-    // Wait for the transaction to be mined (optional)
     setTransactionStatus({ process: "sendPayment", status: "waitingForReceipt" })
-    const receipt = await client.waitForTransactionReceipt({ hash })
+
+    // Wait for transaction receipt with retry mechanism
+    try {
+      receipt = await retryWithDelay(() => client.waitForTransactionReceipt({ hash }), 3, 5000) // 3 retries, 5 seconds delay
+    } catch (error) {
+      console.error("Error waiting for transaction receipt after retries:", error)
+      setTransactionStatus({ process: "sendPayment", status: "receiptError" })
+      await writeClientTransactionLog({
+        account_address: senderAddress,
+        transaction_tx_hash: hash,
+        chain: chainName,
+        token: token,
+        log: {
+          message: "Error waiting for transaction receipt",
+          metadata: {
+            error: error?.message,
+          },
+        },
+      })
+      throw error // Re-throw the error to handle it in the outer catch block
+    }
+
     setTransactionStatus({ process: "sendPayment", status: "receiptReceived" })
     setOutcomingTransaction({ receipt, done: true })
     console.log("Transaction confirmed:", receipt)
+
     return {
       txHash: hash,
       receipt,
