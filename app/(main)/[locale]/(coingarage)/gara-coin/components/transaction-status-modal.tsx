@@ -29,7 +29,13 @@ export default function TransactionStatusModal({ open, setOpen, toggleOpen, send
       {/* <DialogTrigger asChild>
         <Button variant="outline">View Transactions</Button>
       </DialogTrigger> */}
-      <DialogContent className="sm:max-w-[600px]" showClose={false} onEscapeKeyDown={() => null}>
+      <DialogContent
+        className="sm:max-w-[600px]"
+        showClose={false}
+        onEscapeKeyDown={() => null}
+        onPointerDown={(e) => (isPending ? e.preventDefault() : null)}
+        onInteractOutside={(e) => (isPending ? e.preventDefault() : null)}
+      >
         <DialogHeader>
           <DialogTitle className="sr-only">Transaction</DialogTitle>
           {/* <DialogDescription>View the status of your outgoing and incoming transactions.</DialogDescription> */}
