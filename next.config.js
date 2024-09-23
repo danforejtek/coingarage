@@ -2,7 +2,7 @@ const createNextIntlPlugin = require("next-intl/plugin")
 const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
-const rebuild = 0.02
+const rebuild = 0.03
 
 const nextConfig = {
   images: {
@@ -42,6 +42,8 @@ const nextConfig = {
       test: /\.svg$/i,
       use: ["@svgr/webpack"],
     })
+    config.resolve.fallback = { fs: false, net: false, tls: false }
+    config.externals.push("pino-pretty", "lokijs", "encoding")
     return config
   },
   async headers() {

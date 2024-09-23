@@ -7,7 +7,9 @@
     "dev2": "next dev -p 4200",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
@@ -33,12 +35,16 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@strapi/blocks-react-renderer": "^1.0.1",
+    "@rainbow-me/rainbowkit": "^2.1.5",
     "@tailwindcss/typography": "^0.5.10",
     "@tanstack/react-query": "^5.51.15",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "cmdk": "1.0.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
     "embla-carousel-autoplay": "^8.0.2",
     "embla-carousel-react": "^8.0.2",
     "graphql": "^16.9.0",
@@ -48,6 +54,7 @@
     "next": "^14.2.3",
     "next-intl": "^3.12.2",
     "next-themes": "^0.2.1",
+    "postgres": "^3.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.48.2",
@@ -63,7 +70,10 @@
     "tailwindcss-animate": "^1.0.7",
     "telegram": "^2.19.10",
     "vaul": "^0.9.1",
-    "zod": "^3.22.4"
+    "viem": "~2.21.3",
+    "wagmi": "^2.12.9",
+    "zod": "^3.22.4",
+    "zustand": "5.0.0-rc.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
@@ -72,6 +82,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "drizzle-kit": "^0.24.2",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "input": "^1.0.1",

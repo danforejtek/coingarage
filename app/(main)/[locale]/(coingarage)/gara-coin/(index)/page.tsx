@@ -1,7 +1,7 @@
 "use client"
 import { useTheme } from "next-themes"
-import { AlocationChart } from "@/components/gara-coin/alocation-chart"
-import { BuyGara } from "@/components/gara-coin/buy-gara"
+import { AlocationChart } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/alocation-chart"
+import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara"
 import Heading from "@/components/heading"
 import { Button } from "@/components/ui/button"
 import { useTranslations } from "next-intl"
@@ -14,7 +14,13 @@ import Security from "@/public/images/gara-coin/security.svg"
 import Document from "@/public/images/gara-coin/document.svg"
 import Polygon from "@/public/icons/polygon.svg"
 import Present from "@/public/images/gara-coin/present.svg"
-import { PolygonAddressCopyToClipboard } from "@/components/gara-coin/polygon-address-copy-to-clipboard"
+import { PolygonAddressCopyToClipboard } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/polygon-address-copy-to-clipboard"
+import CountdownTimer from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/countdown-timer"
+import SecureIcon from "@/public/images/gara-coin/box/secure.svg"
+import DayIcon from "@/public/images/gara-coin/box/day.svg"
+import EasyIcon from "@/public/images/gara-coin/box/easy.svg"
+import EarnIcon from "@/public/images/gara-coin/box/earn.svg"
+import { Link } from "@/navigation"
 
 const ArrowLeft = ({ width = 300 }) => {
   return (
@@ -50,15 +56,15 @@ const ArrowRight = ({ width = 300 }) => {
     </svg>
   )
 }
-const whitepaperLink = {
-  en: "https://drive.google.com/file/d/1SyCoYZfPiy8rmH7-UKEogmxrW7ztfbwH/view",
-  cs: "https://drive.google.com/file/d/1lOZVIrVbaX08d-j3V1iiMEC9O8u1s6SG/view",
-  de: "https://drive.google.com/file/d/1k1B95gX09dpDdquhW8DJC2eoqHpqzHaD/view",
-} as const
+// const whitepaperLink = {
+//   en: "https://graceful-hope-03323ffb1e.media.strapiapp.com/Whitepaper_4d17d687d2.pdf",
+//   cs: "https://drive.google.com/file/d/1lOZVIrVbaX08d-j3V1iiMEC9O8u1s6SG/view",
+//   de: "https://drive.google.com/file/d/1k1B95gX09dpDdquhW8DJC2eoqHpqzHaD/view",
+// } as const
 
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
   // unstable_setRequestLocale(locale)
-  const { theme } = useTheme()
+  // const { theme } = useTheme()
   const t = useTranslations("GARA")
 
   return (
@@ -81,7 +87,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <Button variant="link" className="!px-0 font-heading text-xl text-primary" asChild>
             <a
               // @ts-ignore
-              href={whitepaperLink?.[locale] ? whitepaperLink?.[locale] : whitepaperLink?.en}
+              href="https://graceful-hope-03323ffb1e.media.strapiapp.com/Whitepaper_4d17d687d2.pdf"
               target="_blank"
               rel="noopener"
             >
@@ -100,25 +106,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="-mr-10 flex flex-col justify-center gap-4">
             <ul className="flex flex-col gap-10 font-heading font-bold">
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage5")}
+                {t("usage.usage1")}
                 <span className="flex items-center">
                   <ArrowLeft width={120} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage5")}
+                {t("usage.usage2")}
                 <span className="flex items-center">
                   <ArrowLeft width={160} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage7")}
+                {t("usage.usage3")}
                 <span className="flex items-center">
                   <ArrowLeft width={140} />
                 </span>
               </li>
               <li className="flex flex-row justify-end gap-4">
-                {t("usage.usage8")}
+                {t("usage.usage4")}
                 <span className="flex items-center">
                   <ArrowLeft width={120} />
                 </span>
@@ -134,25 +140,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
                 <span className="flex items-center">
                   <ArrowRight width={130} />
                 </span>
-                {t("usage.usage1")}
+                {t("usage.usage5")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={170} />
                 </span>
-                {t("usage.usage2")}
+                {t("usage.usage6")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={150} />
                 </span>
-                {t("usage.usage3")}
+                {t("usage.usage7")}
               </li>
               <li className="flex flex-row justify-start gap-4">
                 <span className="flex items-center">
                   <ArrowRight width={130} />
                 </span>
-                {t("usage.usage4")}
+                {t("usage.usage8")}
               </li>
             </ul>
           </div>
@@ -172,27 +178,91 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <li>{t("usage.usage4")}</li>
           </ul>
         </div>
-        <div
-          className="mt-24 py-12 lg:!bg-none"
-          style={{
-            backgroundImage: `linear-gradient(to top, ${theme === "dark" ? "rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5))" : "rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))"}, url(/images/gara-coin/fire.svg)`,
-            backgroundPosition: "bottom",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("burnMechanism.header")}</h2>
-          <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-24">
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
-              <p className="font-heading text-lg font-bold">{t("burnMechanism.box1.text")}</p>
-              <p className="font-heading text-sm text-primary">{t("burnMechanism.box1.subText")}</p>
+      </section>
+      <section className="container mx-auto mt-16 max-w-[1200px] lg:py-6">
+        <div className="flex flex-col-reverse md:flex-row md:gap-12 lg:gap-20">
+          <div className="flex max-w-[500px] flex-1 flex-col">
+            <p className="font-heading text-4xl font-bold">{t("garaDepo.header")}</p>
+            <p className="font-heading text-2xl text-green-500">
+              {t("garaDepo.subHeader")}
+              {/* <span className="ml-2 text-3xl">30% p.a.</span> */}
+            </p>
+            <p className="mt-4">{t("garaDepo.text1")}</p>
+            <hr className="my-4" />
+            <p className="mt-4">
+              {t.rich("garaDepo.text2", { span: (text) => <span className="font-bold text-primary">{text}</span> })}
+            </p>
+            <div>
+              <p className="mt-4 font-heading text-xl font-bold">{t("garaDepo.timer.header")}</p>
+              <CountdownTimer className="mt-4" />
+              <p className="mt-4 text-sm italic">{t("garaDepo.timer.disclaimer")}</p>
             </div>
-            <Image src="/images/gara-coin/fire.svg" alt="" width="92" height="145" className="hidden lg:block" />
-            <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[480px]">
-              <p className="font-heading text-lg font-bold">{t("burnMechanism.box2.text")}</p>
-              <p className="font-heading text-sm text-primary">{t("burnMechanism.box2.subText")}</p>
+          </div>
+          <div className="mb-6 flex flex-1 flex-col items-center md:mb-0">
+            <Image src="/images/gara-coin/garaDepo.svg" className="" alt="" width={500} height={479} />
+            <div className="my-6 flex flex-col justify-center gap-4 md:gap-4 lg:flex-row">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+                <p className="font-heading text-lg font-bold">
+                  <EasyIcon className="size-8 stroke-primary stroke-2" />
+                </p>
+                <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.1")}</p>
+              </div>
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+                <p className="font-heading text-lg font-bold">
+                  <SecureIcon className="size-8 stroke-primary stroke-2" />
+                </p>
+                <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.2")}</p>
+              </div>
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+                <p className="font-heading text-lg font-bold">
+                  <EarnIcon className="size-8 stroke-primary stroke-2" />
+                </p>
+                <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.3")}</p>
+              </div>
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+                <p className="font-heading text-lg font-bold">
+                  <DayIcon className="size-8 stroke-primary stroke-2" />
+                </p>
+                <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.4")}</p>
+              </div>
             </div>
-            <div className="block h-12 lg:hidden"></div>
+            <div className="flex w-full flex-row justify-center">
+              <Button variant="default" className="mt-12 min-w-[200px]" asChild>
+                <a href="https://trade.coingarage.io/stake" target="_blank" rel="noreferrer noopener">
+                  {t("garaDepo.garaStakebtn")}
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto mt-16 max-w-[1200px] lg:py-6">
+        <div className="flex flex-col md:mx-12 md:flex-row md:gap-12 lg:gap-32">
+          <div className="mb-8 flex flex-1 justify-center md:mb-0">
+            <Image
+              src="/images/gara-coin/fire.svg"
+              className="h-auto w-[300px] md:w-[460px]"
+              alt=""
+              width={460}
+              height={507}
+            />
+          </div>
+          <div className="flex max-w-[500px] flex-1 flex-col items-center justify-center">
+            <div>
+              <p className="font-heading text-4xl font-bold">{t("burnMechanism.header")}</p>
+              <p className="mt-4">{t("burnMechanism.text1")}</p>
+              <div className="my-6 flex flex-row justify-center gap-4 md:gap-8">
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                  <p className="font-heading text-lg font-bold">{t("burnMechanism.boxes.1.header")}</p>
+                  <p className="mt-2 font-heading  text-primary">{t("burnMechanism.boxes.1.text")}</p>
+                </div>
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                  <p className="font-heading text-lg font-bold">{t("burnMechanism.boxes.2.header")}</p>
+                  <p className="mt-2 font-heading  text-primary">{t("burnMechanism.boxes.2.text")}</p>
+                </div>
+              </div>
+              <p className="mt-4 text-sm italic">{t("burnMechanism.disclaimer")}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -238,8 +308,8 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </ul>
           </div>
           <div className="flex w-full justify-center">
-            <Button variant="default" className="min-w-[200px]">
-              {t("roadmap.btnBuyGARA")}
+            <Button variant="default" className="min-w-[200px]" asChild>
+              <Link href="/gara-coin/buy">{t("roadmap.btnBuyGARA")}</Link>
             </Button>
           </div>
         </section>
@@ -248,7 +318,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("alocation.header")}</h2>
         <AlocationChart />
         <p className="mt-12 w-full text-center font-heading text-sm font-bold">{t("alocation.limit")}</p>
-        <div className="mx-4 mt-20 bg-tertiary/10 p-12 dark:bg-tertiary/20 lg:mx-10">
+        <div className="mx-4 mt-20 bg-tertiary/10 p-6 dark:bg-tertiary/20 md:p-12 lg:mx-10">
           <div className="flex flex-row justify-between gap-6">
             <div>
               <h2 className="mb-6 hidden font-heading text-3xl font-bold lg:block">
@@ -263,10 +333,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
               <Present className="fill-black dark:fill-white" width="100" height="104" />
             </div>
-            <div className="relative flex min-w-[100px] lg:hidden">
-              {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
+            {/* <div className="relative flex min-w-[100px] lg:hidden">
               <Present className="fill-black dark:fill-white" width="100" height="104" />
-            </div>
+            </div> */}
           </div>
           <p className="mb-6 pt-6 text-justify text-sm lg:pt-0 lg:text-left">{t("release.text")}</p>
           <div className="relative mt-12 flex grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:flex-row xl:grid">
@@ -305,7 +374,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </div>
       </section>
       <div className="mt-12 bg-tertiary/10 py-16 dark:bg-tertiary/20 xl:mt-28">
-        <section className="container mx-auto flex flex-wrap items-center justify-center gap-12 px-10 lg:flex-row lg:items-start xl:justify-between xl:gap-6">
+        <section className="container mx-auto flex flex-wrap items-center justify-center gap-12 px-10 md:flex-row lg:items-start xl:justify-between xl:gap-6">
           <div className="max-w-[500px]">
             <Heading tag="h2">{t("IEO.header")}</Heading>
             <div className="mt-16">
@@ -320,17 +389,19 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               </p>
             </div>
           </div>
-          <div className="flex justify-end px-4">
-            <div className="flex w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
+          <div className="mx-4 md:flex md:justify-end">
+            <div className="flex w-full max-w-full flex-col items-center gap-8 rounded-2xl border border-neutral-100 bg-background p-8 shadow-md dark:border-transparent dark:shadow-neutral-900 lg:w-[480px]">
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <PolygonAddressCopyToClipboard />
               <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
-                <Button variant="default" className="min-w-[200px]">
-                  {t("IEO.box.btnBuyWithUSDT")}
+                <Button variant="default" className="min-w-[200px]" asChild>
+                  <Link href="/gara-coin/buy">{t("IEO.box.btnBuyWithUSDT")}</Link>
                 </Button>
-                <Button variant="default" className="min-w-[200px]">
-                  {t("IEO.box.btnBuyWithMatic")}
+                <Button variant="default" className="min-w-[200px]" asChild>
+                  <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
+                    {t("main.buyGARA.buyWith")} EUR
+                  </a>
                 </Button>
               </div>
             </div>
@@ -339,18 +410,18 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </div>
       <section className="container mx-auto mt-24 flex flex-wrap items-center justify-between gap-12 px-10 lg:flex-row lg:items-start xl:justify-between xl:gap-6">
         <div className="flex w-full flex-col">
-          <div className="flex w-full justify-between">
+          <div className="flex w-full flex-col justify-between md:flex-row">
             <Heading tag="h2">{t("GARArunning.header")}</Heading>
-            <div className="flex lg:max-w-[480px]">
+            <div className="flex w-[100px] md:w-auto lg:max-w-[480px]">
               {/* <Image src="/images/gara-coin/polygon.svg" alt="" width="302" height="57" /> */}
               <Polygon className="fill-black dark:fill-white" width="auto" height="57" />
             </div>
           </div>
-          <p className="text-md mb-6 max-w-[600px] pt-6 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
+          <p className="text-md mb-6 max-w-[600px] pt-6 text-center text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
             {t("GARArunning.text")}
           </p>
         </div>
-        <div className="grid w-full grid-flow-row gap-8 px-10 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
+        <div className="grid w-full grid-flow-row gap-8 px-2 md:grid-cols-2 md:px-10 lg:grid-cols-4 lg:px-0">
           <div className="flex min-h-[236px] flex-col gap-4 rounded-xl border border-neutral-300/30 px-8 py-10 shadow-md transition-all hover:shadow-primary dark:shadow-neutral-900 md:min-h-[280px]">
             <div className="flex items-start justify-between gap-4">
               <h5 className="font-heading text-2xl font-bold">{t("GARArunning.box1.header")}</h5>

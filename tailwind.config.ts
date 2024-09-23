@@ -85,6 +85,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "slow-bounce": "slow-bounce 4s infinite",
+        "slow-pulse": "pulse 10s infinite",
       },
       aspectRatio: {
         "2/1": "2 / 1",
