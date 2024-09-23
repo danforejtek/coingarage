@@ -1,4 +1,4 @@
-import { getChainByName } from "@/app/api/gara/lib/utils"
+import { getChainByName, getRpcNode } from "@/app/api/gara/lib/utils"
 import { BigNumberish, HexAddress } from "@/types"
 import { NextRequest, NextResponse } from "next/server"
 import { createPublicClient, http, decodeFunctionData } from "viem"
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
     }
 
     const _chain = getChainByName(chain)
-    const publicClient = createPublicClient({ chain: _chain, transport: http(customRpcUrl) })
+    const publicClient = createPublicClient({ chain: _chain, transport: getRpcNode(chain) })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
     const transaction = await publicClient.getTransaction({ hash: txHash })
     const decoded = decodeFunctionData({

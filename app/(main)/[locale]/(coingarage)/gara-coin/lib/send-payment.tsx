@@ -15,6 +15,7 @@ import { useAccount, useBalance, useWalletClient } from "wagmi"
 // @ts-ignore
 import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/types"
 import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
+import { getRpcNode } from "@/app/api/gara/lib/utils"
 
 type Address = `0x${string}`
 
@@ -61,7 +62,7 @@ export const sendPayment = async ({
 
     const client = createPublicClient({
       chain: chain,
-      transport: http(),
+      transport: getRpcNode(chain?.name),
     })
 
     const chainName = chain?.name as SupportedChains
