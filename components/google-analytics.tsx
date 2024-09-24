@@ -1,7 +1,5 @@
-"use client"
-
-import Script from "next/script"
-import * as gtag from "@/lib/gtag"
+import { GoogleAnalytics as GoogleAnalyticsLoader } from "@next/third-parties/google"
+import { FINANCE_GA_TRACKING_ID, GA_TRACKING_ID } from "@/lib/gtag"
 
 const GoogleAnalytics = ({ isFinance }: { isFinance: boolean }) => {
   if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
@@ -10,24 +8,7 @@ const GoogleAnalytics = ({ isFinance }: { isFinance: boolean }) => {
 
   return (
     <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${isFinance ? gtag.FINANCE_GA_TRACKING_ID : gtag.GA_TRACKING_ID}`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${isFinance ? gtag.FINANCE_GA_TRACKING_ID : gtag.GA_TRACKING_ID}', {
-            page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+      <GoogleAnalyticsLoader gaId={(isFinance ? FINANCE_GA_TRACKING_ID : GA_TRACKING_ID) as string} />
     </>
   )
 }
