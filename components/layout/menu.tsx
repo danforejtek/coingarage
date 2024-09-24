@@ -48,6 +48,8 @@ import PartnersDark from "@/public/icons/main/dark/partners.svg"
 import PosterWallDark from "@/public/icons/main/dark/poster_wall.svg"
 import BlogDark from "@/public/icons/main/dark/blog.svg"
 import AcademyDark from "@/public/icons/main/dark/academy.svg"
+import ApiDocs from "@/public/icons/main/api_docs.svg"
+import TradingFees from "@/public/icons/main/trading_fees.svg"
 import { RadioTower } from "lucide-react"
 import { BookOpen } from "lucide-react"
 
@@ -77,6 +79,8 @@ const icons = {
   academy: Academy,
   radio: <RadioTower className="fill-primary stroke-1" />,
   knowledge_base: <BookOpen className="fill-white stroke-2" />,
+  api_docs: ApiDocs,
+  trading_fees: TradingFees,
 }
 
 const iconsDark = {
@@ -94,8 +98,10 @@ const iconsDark = {
   poster_wall: PosterWallDark,
   blog: BlogDark,
   academy: AcademyDark,
-  radio: <RadioTower className=" fill-primary stroke-1" />,
+  radio: <RadioTower className="fill-primary stroke-1" />,
   knowledge_base: <BookOpen className="fill-transparent stroke-2" />,
+  api_docs: <ApiDocs className="h-[24px] w-[24px] fill-white" />,
+  trading_fees: <TradingFees className="fill-white" />,
 }
 
 export const navItems: NavItem[] = [
@@ -168,12 +174,12 @@ export const navItems: NavItem[] = [
     href: "/earn",
     icon: "stake",
     subItems: [
-      // {
-      //   title: "Become a Shareholder",
-      //   key: "becomeAShareholder",
-      //   href: "https://coingarage-finance.com",
-      //   icon: "shareholder",
-      // },
+      {
+        title: "Stake",
+        key: "stake",
+        href: "https://coingarage-finance.com",
+        icon: "stake",
+      },
       {
         title: "Affiliate",
         key: "affiliate",
@@ -218,17 +224,23 @@ export const navItems: NavItem[] = [
         icon: "knowledge_base",
       },
       {
-        title: "Coingarage FM",
-        key: "radio",
-        href: "/coingarage-fm",
-        icon: "radio",
+        title: "Fees",
+        key: "fees",
+        href: "https://trade.coingarage.io/exchange-fee/deposit-withdrawal-fee",
+        icon: "trading_fees",
+      },
+      {
+        title: "API Docs",
+        key: "api_docs",
+        href: "https://rest-api-doc.netlify.app/#websocket-api",
+        icon: "api_docs",
       },
       // {
       //   title: "Academy",
       //   href: "/academy",
       //   icon: "academy",
       // },
-      // {
+      // {s
       //   title: "Whitepaper",
       //   href: "/whitepaper",
       //   icon: "whitepaper",
@@ -268,7 +280,7 @@ export function Menu() {
                   {t(`Menu.${key}`)}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-4 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
+                  <ul className="grid gap-2 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
                     <li
                       // TODO: write this like a normal person
                       className={cn(
