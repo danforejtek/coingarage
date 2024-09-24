@@ -35,7 +35,7 @@ export default function RootLayout({
   unstable_setRequestLocale(locale)
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="flex min-h-screen flex-col justify-between">
         <div className="flex-1">{children}</div>
         <Footer />
