@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Bilgi Tabanı",
         "contacts": "İletişim Bilgileri",
+        "fees": "Ticaret ücretleri",
+        "api_docs": "API Belgeleri",
         "mode": {
             "light": "aydınlık",
             "dark": "karanlık",

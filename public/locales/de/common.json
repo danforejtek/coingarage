@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Lexikon",
         "contacts": "Kontakte",
+        "fees": "Handelsgebühren",
+        "api_docs": "API-Dokumentation",
         "mode": {
             "light": "Hell",
             "dark": "Dunkel",

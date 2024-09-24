@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Bilgi Tabanı",
         "contacts": "İletişim Bilgileri",
+        "fees": "Commissioni di trading",
+        "api_docs": "Documentazione API",
         "mode": {
             "light": "aydınlık",
             "dark": "karanlık",

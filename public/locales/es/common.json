@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Base de conocimientos",
         "contacts": "Contactos",
+        "fees": "Tarifas de negociación",
+        "api_docs": "Documentación API",
         "mode": {
             "light": "Claro",
             "dark": "Oscuro",
