@@ -1,3 +1,4 @@
+import { FormattedDate } from "@/app/(main)/[locale]/(coingarage)/blog/components/formatted-date"
 import { formatDateString } from "@/lib/utils"
 import { Link } from "@/navigation"
 import Image from "next/image"
@@ -20,7 +21,7 @@ export const Post = ({
   return (
     <Link href={href}>
       <div className="h-full max-h-[526px] overflow-hidden rounded-lg border transition-all hover:shadow-md">
-        <div className="aspect-2/1 relative w-full">
+        <div className="relative aspect-2/1 w-full">
           <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
         </div>
         <div className="flex h-[252px] flex-col justify-between gap-4 p-6">
@@ -30,9 +31,7 @@ export const Post = ({
             <div className="flex w-full flex-row items-end justify-between">
               <div className="flex flex-col">
                 <div className="font-heading text-primary">{authorName}</div>
-                <div className="font-heading" suppressHydrationWarning>
-                  {formatDateString(date_created)}
-                </div>
+                <FormattedDate date={date_created} className="font-heading" />
               </div>
               <span className="font-heading text-primary">Read more...</span>
             </div>

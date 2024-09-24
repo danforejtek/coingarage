@@ -7,6 +7,7 @@ import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
 import { getArticle, getArticleSlugs, getArtileMetadata } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 import { SocialShare } from "@/app/(main)/[locale]/(coingarage)/blog/components/social-share"
+import { FormattedDate } from "@/app/(main)/[locale]/(coingarage)/blog/components/formatted-date"
 
 type Article = {
   heading: string
@@ -57,7 +58,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
         <ArrowLeft className="mr-2" size={16} />
         Back
       </Link>
-      <p className="mt-12 font-heading text-primary">{formatDateString(date_created)}</p>
+      <FormattedDate date={date_created} className="mt-12 text-primary" />
       <h1 className="mt-4 font-heading text-4xl">{title}</h1>
       <div className="mt-6 flex flex-col">
         <span className="text-xs text-neutral-400">Posted by</span>
@@ -65,7 +66,7 @@ export default async function Page({ params }: { params: { slug: string; locale:
       </div>
       {/* <p className="mt-4 font-heading">{perex}</p> */}
       <div className="my-4 h-[1px] w-full bg-neutral-200 dark:bg-neutral-800"></div>
-      <div className="aspect-2/1 relative mt-12 w-full">
+      <div className="relative mt-12 aspect-2/1 w-full">
         {imageSrc.startsWith("http") ? (
           <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
         ) : (
