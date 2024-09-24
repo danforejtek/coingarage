@@ -12,13 +12,11 @@ import { ModeToggle } from "./mode-toggle"
 import { GarageCoinPresale } from "@/components/promo/garage-coin-presale"
 import { useTranslations } from "next-intl"
 import LocaleSwitcher from "@/components/layout/locale-switch"
+import { useIsClient } from "@/hooks/use-is-clients"
 
 export default function Header() {
   const t = useTranslations("Menu")
-  const [isClient, setIsClient] = useState(false)
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+  const isClient = useIsClient()
 
   const scrollPosition = useScrollPosition()
   const [scrolledVariant, setScrolledVariant] = useState(false)
