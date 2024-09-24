@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Báze znalostí",
         "contacts": "Kontakty",
+        "fees": "Obchodní poplatky",
+        "api_docs": "Dokumentace API",
         "mode": {
             "light": "Světlý",
             "dark": "Tmavý",

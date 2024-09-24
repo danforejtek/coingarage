@@ -26,6 +26,8 @@
         "radio": "Coingarage FM",
         "knowledgeBase": "Knowledge Base",
         "contacts": "Contacts",
+        "fees": "Trading Fees",
+        "api_docs": "Api Docs",
         "mode": {
             "light": "Light",
             "dark": "Dark",
