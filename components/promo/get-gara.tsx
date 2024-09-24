@@ -65,7 +65,7 @@ export default function GetGara({ className }: { className?: string }) {
         </div>
         <div className="flex flex-col sm:flex-row">
           <span className="font-heading font-bold">{t("register.limitedOffer")}</span>
-          <span className="font-heading text-neutral-500 sm:ml-5">
+          <span className="font-heading text-neutral-500 sm:ml-5" suppressHydrationWarning>
             {hours > 0 ? (hours < 10 ? `0${hours}` : hours) : "00"}
             {" : "}
             {minutes > 0 ? (minutes < 10 ? `0${minutes}` : minutes) : "00"}

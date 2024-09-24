@@ -22,7 +22,7 @@ export const Post = ({
     <Link href={href}>
       <div className="h-full max-h-[526px] overflow-hidden rounded-lg border transition-all hover:shadow-md">
         <div className="relative aspect-2/1 w-full">
-          <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+          <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} sizes="300px" />
         </div>
         <div className="flex h-[252px] flex-col justify-between gap-4 p-6">
           <div className="flex flex-col justify-between gap-4">

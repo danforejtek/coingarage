@@ -3,7 +3,6 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 import { unstable_setRequestLocale } from "next-intl/server"
-import { formatDateString } from "@/lib/utils"
 import BlockRendererClient from "@/lib/strapi/block-renderer"
 import { getArticle, getArticleSlugs, getArtileMetadata } from "@/app/(main)/[locale]/(coingarage)/blog/lib/data"
 import { SocialShare } from "@/app/(main)/[locale]/(coingarage)/blog/components/social-share"
@@ -68,9 +67,21 @@ export default async function Page({ params }: { params: { slug: string; locale:
       <div className="my-4 h-[1px] w-full bg-neutral-200 dark:bg-neutral-800"></div>
       <div className="relative mt-12 aspect-2/1 w-full">
         {imageSrc.startsWith("http") ? (
-          <Image src={imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+          <Image
+            src={imageSrc}
+            alt=""
+            fill={true}
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         ) : (
-          <Image src={strapiUrl + imageSrc} alt="" fill={true} style={{ objectFit: "cover" }} />
+          <Image
+            src={strapiUrl + imageSrc}
+            alt=""
+            fill={true}
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         )}
       </div>
       <div className="mt-10">
