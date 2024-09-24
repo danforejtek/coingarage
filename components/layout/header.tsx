@@ -15,22 +15,22 @@ import LocaleSwitcher from "@/components/layout/locale-switch"
 
 export default function Header() {
   const t = useTranslations("Menu")
-  // const isClient = typeof window !== "undefined"
-  // const scrollPosition = useScrollPosition()
-  // const [scrolledVariant, setScrolledVariant] = useState(false)
+  const isClient = typeof window !== "undefined"
+  const scrollPosition = useScrollPosition()
+  const [scrolledVariant, setScrolledVariant] = useState(false)
 
-  // useEffect(() => {
-  //   if (isClient && scrollPosition) {
-  //     if (scrollPosition > 64) setScrolledVariant(true)
-  //     if (scrollPosition === 0) setScrolledVariant(false)
-  //   }
-  // }, [scrollPosition])
+  useEffect(() => {
+    if (isClient && scrollPosition) {
+      if (scrollPosition > 64) setScrolledVariant(true)
+      if (scrollPosition === 0) setScrolledVariant(false)
+    }
+  }, [scrollPosition])
 
   return (
     <header
       className={cn(
         "sticky top-0 z-50 h-[86px] items-center px-4 transition-[height] duration-300 ease-in-out md:px-8",
-        "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50"
+        scrolledVariant ? "h-[64px] bg-white/50 shadow backdrop-blur-lg dark:bg-black/50" : null
       )}
     >
       <div className="grid h-full grid-cols-[1fr_40px] xl:flex xl:flex-row xl:justify-between">
