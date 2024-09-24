@@ -63,7 +63,7 @@ export default function RootLayout({
     <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
       <Suspense fallback={null}>
         <GoogleAnalytics isFinance={isFinance} />
-        <GoogleTagManager isFinance={isFinance} />
+        {/* <GoogleTagManager isFinance={isFinance} /> */}
         {isFinance ? <SmartlookScript /> : null}
       </Suspense>
       <body>
