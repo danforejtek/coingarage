@@ -2,7 +2,7 @@ import { getArticlesForSitemap } from "@/app/(main)/[locale]/(coingarage)/blog/l
 import { MetadataRoute } from "next"
 import { locales } from "@/config"
 
-const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic"
 
 const baseUrl = process.env.NEXT_PUBLIC_URL as string
 const baseUrlFinance =
