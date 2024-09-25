@@ -10,8 +10,10 @@ type BestTradersResultProps = {
 }
 
 const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
+  console.log(data)
   if (!data) return null
   const { active_bots, short, dca, grid, long, name, pnl, roi, total_pnl } = data
+  console.log({ kunda: data })
 
   return (
     <div

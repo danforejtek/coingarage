@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@mantine/hooks"
 import BestTradersResult from "./best-trader-results"
 import Autoplay from "embla-carousel-autoplay"
-import useSWR from "swr"
-import { getTradersData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/data"
+// import useSWR from "swr"
+// import { getTradersData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/data"
+import { generateMockTraderData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/utils"
 import {
   Select,
   SelectContent,
@@ -39,10 +40,13 @@ export type TraderData = {
 const BestTraders = ({ interval = "D" }: BestTradersProps) => {
   const [selectedInterval, setSelectedInterval] = useState(interval)
   // fetched via server action, URL here is just cache key
-  const { data, error, isLoading } = useSWR(`https://api.coingarage.io/grid/charts?interval=${selectedInterval}`, () =>
-    getTradersData({ interval: selectedInterval })
-  )
+  // const { data, error, isLoading } = useSWR(`https://api.coingarage.io/grid/charts?interval=${selectedInterval}`, () =>
+  //   getTradersData({ interval: selectedInterval })
+  // )
+  const isLoading = false
+  const data = generateMockTraderData(12)
   const traders = data ? Object.keys(data) : []
+  console.log(data)
   const half = Math.ceil(traders.length / 2)
   const t = useTranslations("eezyTrader.results")
   const isTablet = useMediaQuery("(max-width: 1280px)")

@@ -12,6 +12,8 @@ const chartConfig = {
 type BestTradersResultProps = Record<string, number>
 
 export const BestTraderChart = ({ data }: BestTradersResultProps) => {
+  console.log(data)
+  if (!data) return null
   const chartData = Object.keys(data).map((key) => ({
     date: key,
     pnl: data[key as keyof typeof data],
