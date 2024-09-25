@@ -8,7 +8,7 @@ import GoogleAnalytics from "@/components/google-analytics"
 import { locales, metaLanguagePaths } from "@/config"
 import GoogleTagManager from "@/components/google-tag-manager"
 import { headers } from "next/headers"
-import { SmartlookScript } from "@/components/smartlook-script"
+// import { SmartlookScript } from "@/components/smartlook-script"
 import { Providers } from "@/components/layout/providers"
 
 export const metadata: Metadata = {
@@ -66,7 +66,7 @@ export default function RootLayout({
       </body>
       <GoogleAnalytics isFinance={isFinance} />
       <GoogleTagManager isFinance={isFinance} />
-      {isFinance ? <SmartlookScript /> : null}
+      {/* {isFinance ? <SmartlookScript /> : null} */}
     </html>
   )
 }

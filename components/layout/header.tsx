@@ -12,7 +12,7 @@ import { ModeToggle } from "./mode-toggle"
 import { GarageCoinPresale } from "@/components/promo/garage-coin-presale"
 import { useTranslations } from "next-intl"
 import LocaleSwitcher from "@/components/layout/locale-switch"
-import { useIsClient } from "@/hooks/use-is-clients"
+import { useIsClient } from "@/hooks/is-clients"
 
 export default function Header() {
   const t = useTranslations("Menu")

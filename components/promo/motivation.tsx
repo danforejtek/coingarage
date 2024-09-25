@@ -1,33 +1,34 @@
 import { cn } from "@/lib/utils"
+import { Link } from "@/navigation"
 import Image from "next/image"
 
 export default function Motivation({ className }: { className?: string }) {
   return (
     <section className={cn("container mx-auto mt-14 flex flex-row justify-between p-4 md:p-8", className)}>
       <div className="flex w-full flex-row flex-wrap justify-center gap-4 2xl:justify-between">
-        <a
-          href="https://trade.coingarage.io/launchpad/projects"
-          target="_blank"
+        <Link
+          href="/gara-coin"
+          // target="_blank"
           rel="noopener noreferer"
-          title="Guarantee"
+          title="GARA Coin"
         >
-          <Image src="/images/promo/guarantee.png" alt="" width={310} height={149} className="rounded-xl" />
-        </a>
-        <a
-          href="https://trade.coingarage.io/launchpad/projects"
-          target="_blank"
+          <Image src="/images/promo/Frame1.png" alt="" width={310} height={417} className="rounded-xl" />
+        </Link>
+        <Link
+          href="/trading-bot"
+          // target="_blank"
           rel="noopener noreferer"
-          title="Dividends"
+          title="EezyTrader"
         >
-          <Image src="/images/promo/dividends.jpg" alt="" width={310} height={149} className="rounded-xl" />
-        </a>
+          <Image src="/images/promo/Frame2.png" alt="" width={310} height={417} className="rounded-xl" />
+        </Link>
         <a
           href="https://trade.coingarage.io/launchpad/projects"
           target="_blank"
           rel="noopener noreferer"
           title="Shareholder"
         >
-          <Image src="/images/promo/shareholder.jpg" alt="" width={310} height={149} className="rounded-xl" />
+          <Image src="/images/promo/Frame3.png" alt="" width={310} height={417} className="rounded-xl" />
         </a>
         <a
           href="https://trade.coingarage.io/launchpad/projects"
@@ -35,7 +36,7 @@ export default function Motivation({ className }: { className?: string }) {
           rel="noopener noreferer"
           title="Join us"
         >
-          <Image src="/images/promo/join.png" alt="" width={310} height={149} className="rounded-xl" />
+          <Image src="/images/promo/Frame4.png" alt="" width={310} height={417} className="rounded-xl" />
         </a>
       </div>
     </section>

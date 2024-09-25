@@ -1,6 +1,8 @@
 import Script from "next/script"
 
 export const SmartlookScript = () => {
+  if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") return null
+
   return (
     <>
       <Script
