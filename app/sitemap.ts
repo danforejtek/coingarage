@@ -2,6 +2,8 @@ import { getArticlesForSitemap } from "@/app/(main)/[locale]/(coingarage)/blog/l
 import { MetadataRoute } from "next"
 import { locales } from "@/config"
 
+const dynamic = 'force-dynamic'
+
 const baseUrl = process.env.NEXT_PUBLIC_URL as string
 const baseUrlFinance =
   process.env.NODE_ENV !== "production" ? `${baseUrl}/finance` : `https://${process.env.FINANCE_DOMAIN}`
