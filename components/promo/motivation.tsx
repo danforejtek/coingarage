@@ -23,7 +23,7 @@ export default function Motivation({ className }: { className?: string }) {
           <Image src="/images/promo/Frame2.png" alt="" width={310} height={417} className="rounded-xl" />
         </Link>
         <a
-          href="https://trade.coingarage.io/launchpad/projects"
+          href="https://trade.coingarage.io/buy-crypto/EUR?method=Sepa"
           target="_blank"
           rel="noopener noreferer"
           title="Shareholder"
@@ -31,7 +31,7 @@ export default function Motivation({ className }: { className?: string }) {
           <Image src="/images/promo/Frame3.png" alt="" width={310} height={417} className="rounded-xl" />
         </a>
         <a
-          href="https://trade.coingarage.io/launchpad/projects"
+          href="https://trade.coingarage.io/exchange-fee/trading-rules"
           target="_blank"
           rel="noopener noreferer"
           title="Join us"
