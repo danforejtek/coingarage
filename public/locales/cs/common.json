@@ -838,8 +838,8 @@
     "GARA": {
         "main": {
             "header": "GARAGE Coin <span>GARA</span>",
-            "text1": "GARA je token naši burzy Coingarage, který nám pomáhá rozvíjet ekosystém burzy. Tento token byl vytvořen s pevným maximem pouze 900 milionů kusů a není možné ho navýšit. Naopak díky našemu spalovacímu mechanismu bude počet GARA postupně ubývat.",
-            "text2": "Hlavní využití GARA je pro zaplacení celé řady poplatků na burze. Při jejím využité k platbě těchto poplatků naši uživatelé navíc získají 20% slevu z výše těchto poplatků. Dále GARA slouží jako forma odměny pro naše uživatelé.",
+            "text1": "GARA je token naší burzy Coingarage, který nám pomáhá rozvíjet ekosystém burzy. Tento token byl vytvořen s pevným maximem pouze 900 milionů kusů a není možné ho navýšit. Naopak, díky našemu spalovacímu mechanismu bude počet GARA postupně ubývat.",
+            "text2": "Hlavní využití GARA je pro zaplacení celé řady poplatků na burze. Při jejím využití k platbě těchto poplatků naši uživatelé navíc získají 20% slevu z výše těchto poplatků. Dále GARA slouží jako forma odměny pro naše uživatele.",
             "buyGARA": {
                 "header": "Nákup GARA",
                 "totalTokens": "Celkový počet GARA Tokenů",
@@ -856,7 +856,7 @@
             "header": "Plánované Využití GARA",
             "usage1": "Listovací poplatky",
             "usage2": "Poplatky z nákupu kartou",
-            "usage3": "Požadonvaný plyn pro převod",
+            "usage3": "Požadovaný plyn pro převod",
             "usage4": "Success fee",
             "usage5": "Poplatek za výběr",
             "usage6": "Plyn pro obchodního robota",
@@ -867,7 +867,7 @@
             "header": "GARA Stake",
             "subHeader": "Aktuální zhodnocení až 30% p.a.",
             "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
-            "text2": "Nyní zaváděcí akce <span>jen do 27.10.2024, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
+            "text2": "Nyní zaváděcí akce <span>jen do 27. 10. 2024, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
             "timer": {
                 "header": "DO KONCE AKCE ZBÝVÁ",
                 "day": "DNÍ",
@@ -903,18 +903,18 @@
         "roadmap": {
             "header": "Roadmapa",
             "btnBuyGARA": "Koupit GARA",
-            "text1": "Spuštění Burzy",
+            "text1": "Spuštění burzy",
             "text2": "Vytvoření GARA",
-            "text3": "Spuštění Obchodního Robota",
+            "text3": "Spuštění obchodního robota",
             "text4": "Předprodej GARA",
             "text5": "Zalistování na Uniswap",
             "text6": "Zalistování GARA na Coinmarketcap a Coingecko",
             "text7": "Spuštění obchodování GARA na burze Coingarage ",
             "text8": "GARA Stake",
-            "text9": "Aplikace GARA Poplatků a Spalování GARA",
+            "text9": "Aplikace GARA poplatků a spalování GARA",
             "text10": "Druhý GARA Airdrop",
             "text11": "První GARA Airdrop",
-            "text12": "Crypto Platební Karta a Cash Back v GARA"
+            "text12": "Crypto platební karta a cash back v GARA"
         },
         "alocation": {
             "header": "Alokace",
@@ -956,33 +956,33 @@
         },
         "release": {
             "header": "Uvolňování GARA Pro Tým",
-            "subHeader": "99 Milionů GARA",
-            "text": "99 milionů GARA, která je určena pro tým bude uvolňována postupně a to 20% (19.8 mil.) každý rok po dobu 5ti let.",
+            "subHeader": "99 milionů GARA",
+            "text": "99 milionů GARA, která je určena pro tým, bude uvolňována postupně a to 20% (19,8M.) každý rok po dobu 5ti let.",
             "box1": {
-                "text": "Na Startu Předprodeje",
-                "subText": "20% (19.8M.)"
+                "text": "Na startu předprodeje",
+                "subText": "20% (19,8M.)"
             },
             "box2": {
-                "text": "Po 1 Roce",
-                "subText": "20% (19.8M.)"
+                "text": "Po 1 roce",
+                "subText": "20% (19,8M.)"
             },
             "box3": {
-                "text": "Po 2 Letech",
-                "subText": "20% (19.8M.)"
+                "text": "Po 2 letech",
+                "subText": "20% (19,8M.)"
             },
             "box4": {
-                "text": "Po 3 Letech",
-                "subText": "20% (19.8M.)"
+                "text": "Po 3 letech",
+                "subText": "20% (19,8M.)"
             },
             "box5": {
-                "text": "Po 4 Letech",
-                "subText": "20% (19.8M.)"
+                "text": "Po 4 letech",
+                "subText": "20% (19,8M.)"
             }
         },
         "IEO": {
-            "header": "IEO Veřejný Předprodej",
-            "text1": "40% vybraných finančních prostředků z předprodeje GARA bude použito na budování a vylešení platformy Coingarage v souladu s bussiness plánem.",
-            "text2": "Dalších 40% bude použito na marketing a budování značky Coingarage, tak aby burza co nejrychleji rostla a zíkala si co nejvíce uživatelů, kteří budou využívat služby a nástroje Coingarage a k jejich fungování využívat GARU a tím zvyšovat její využití a urychlovat tak spalování. ",
+            "header": "IEO Veřejný předprodej",
+            "text1": "40% vybraných finančních prostředků z předprodeje GARA bude použito na budování a vylepšení platformy Coingarage v souladu s bussiness plánem.",
+            "text2": "Dalších 40% bude použito na marketing a budování značky Coingarage tak, aby burza co nejrychleji rostla a získala si co nejvíce uživatelů, kteří budou využívat služby a nástroje Coingarage a k jejich fungování využívat GARU, a tím zvyšovat její využití a urychlovat tak spalování. ",
             "text3": "Zbylých 20% z vybraných prostředků bude ponecháno v rezervě pro neočekávané situace.",
             "box": {
                 "address": "Adresa Kontraktu",
@@ -991,7 +991,7 @@
             }
         },
         "GARArunning": {
-            "header": "GARA Běží na Polygon Blockchainu",
+            "header": "GARA běží na Polygon blockchainu",
             "text": "Polygon (dříve známý jako Matic Network) je blockchainová platforma, která rozšiřuje a zlepšuje síť Ethereum. Má několik výhod, které zahrnují:",
             "box1": {
                 "header": "Škálovatelnost",

@@ -955,27 +955,27 @@
         },
         "release": {
             "header": "Rilascio di GARA per il Team",
-            "subHeader": "99 Milioni di GARA",
-            "text": "I 99 milioni di GARA destinati al team saranno rilasciati gradualmente, con il 20% (19.8 milioni) rilasciato ogni anno per un periodo di 5 anni.",
+            "subHeader": "99 milioni di GARA",
+            "text": "I 99 milioni di GARA destinati al team saranno rilasciati gradualmente, con il 20% (19,8M) rilasciato ogni anno per un periodo di 5 anni.",
             "box1": {
-                "text": "Al lancio della prevendita",
-                "subText": "20% (36M.)"
+                "text": "Κατά την έναρξη της προπώλησης",
+                "subText": "20% (19,8M)"
             },
             "box2": {
-                "text": "Dopo 2 anni",
-                "subText": "20% (36M.)"
+                "text": "Μετά από 2 χρόνια",
+                "subText": "20% (19,8M)"
             },
             "box3": {
-                "text": "Dopo 3 anni",
-                "subText": "20% (36M.)"
+                "text": "Μετά από 3 χρόνια",
+                "subText": "20% (19,8M)"
             },
             "box4": {
-                "text": "Dopo 4 anni",
-                "subText": "20% (36M.)"
+                "text": "Μετά από 4 χρόνια",
+                "subText": "20% (19,8M)"
             },
             "box5": {
-                "text": "Dopo 5 anni",
-                "subText": "20% (36M.)"
+                "text": "Μετά από 5 χρόνια",
+                "subText": "20% (19,8M)"
             }
         },
         "IEO": {
