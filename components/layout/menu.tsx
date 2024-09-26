@@ -177,7 +177,7 @@ export const navItems: NavItem[] = [
       {
         title: "Stake",
         key: "stake",
-        href: "https://coingarage-finance.com",
+        href: "https://trade.coingarage.io/stake",
         icon: "stake",
       },
       {
