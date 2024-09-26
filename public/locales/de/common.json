@@ -967,27 +967,27 @@
         },
         "release": {
             "header": "GARA-Freigabe für das Team",
-            "subHeader": "99 Millionen GARA",
-            "text": "Die 99 Millionen GARA, die dem Team zugewiesen wurden, werden schrittweise freigegeben, wobei jedes Jahr 20% (19.8 Millionen) über einen Zeitraum von 5 Jahren freigegeben werden.",
+            "subHeader": "99 millionen GARA",
+            "text": "Die 99 millionen GARA, die dem Team zugewiesen wurden, werden schrittweise freigegeben, wobei jedes Jahr 20% (19,8M.) über einen Zeitraum von 5 Jahren freigegeben werden.",
             "box1": {
-                "text": "Beim Start des Vorverkaufs",
-                "subText": "20% (19.8M.)"
+                "text": "Beim start des vorverkaufs",
+                "subText": "20% (19,8M.)"
             },
             "box2": {
-                "text": "Nach 2 Jahren",
-                "subText": "20% (19.8M.)"
+                "text": "Nach 2 jahren",
+                "subText": "20% (19,8M.)"
             },
             "box3": {
-                "text": "Nach 3 Jahren",
-                "subText": "20% (19.8M.)"
+                "text": "Nach 3 jahren",
+                "subText": "20% (19,8M.)"
             },
             "box4": {
-                "text": "Nach 4 Jahren",
-                "subText": "20% (19.8M.)"
+                "text": "Nach 4 jahren",
+                "subText": "20% (19,8M.)"
             },
             "box5": {
-                "text": "Nach 5 Jahren",
-                "subText": "20% (19.8M.)"
+                "text": "Nach 5 jahren",
+                "subText": "20% (19,8M.)"
             }
         },
         "IEO": {

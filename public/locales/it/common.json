@@ -956,27 +956,27 @@
         },
         "release": {
             "header": "Takım için GARA Sürümü",
-            "subHeader": "99 Milyon GARA",
-            "text": "Takım için ayrılan 99 milyon GARA, kademeli olarak serbest bırakılacak ve 5 yıllık bir süre boyunca her yıl %20'si (19.8 milyon) serbest bırakılacak.",
+            "subHeader": "99 milyon GARA",
+            "text": "Takım için ayrılan 99 milyon GARA, kademeli olarak serbest bırakılacak ve 5 yıllık bir süre boyunca her yıl %20'si (19,8M) serbest bırakılacak.",
             "box1": {
-                "text": "Satış Öncesi Lansmanda",
-                "subText": "20% (36M.)"
+                "text": "Durante il lancio pre-vendita",
+                "subText": "20% (19,8M)"
             },
             "box2": {
-                "text": "2 Yıl Sonra",
-                "subText": "20% (36M.)"
+                "text": "Dopo 2 anni",
+                "subText": "20% (19,8M)"
             },
             "box3": {
-                "text": "3 Yıl Sonra",
-                "subText": "20% (36M.)"
+                "text": "Dopo 3 anni",
+                "subText": "20% (19,8M)"
             },
             "box4": {
-                "text": "4 Yıl Sonra",
-                "subText": "20% (36M.)"
+                "text": "Dopo 4 anni",
+                "subText": "20% (19,8M)"
             },
             "box5": {
-                "text": "5 Yıl Sonra",
-                "subText": "20% (36M.)"
+                "text": "Dopo 5 anni",
+                "subText": "20% (19,8M)"
             }
         },
         "IEO": {
