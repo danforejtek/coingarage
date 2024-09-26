@@ -28,7 +28,7 @@ export function generateMockTraderData(numTraders = 6, startDate = "2024-05-01",
 
   for (let i = 0; i < numTraders; i++) {
     const traderId = `${i + 100000}`
-    const totalPnL = parseFloat((500 + Math.random() * 3000).toFixed(2)) // Simulate total PnL between 500 and 3500
+    const totalPnL = parseFloat((0 + Math.random() * 3000).toFixed(2)) // Simulate total PnL between 0 and 3500
     const startPnl = parseFloat((0.1 + Math.random() * 5).toFixed(2)) // Start with a base PnL between 0.1 and 5
     const pnl = generateRandomGrowth(startPnl, 0.02, 0.1, 0.3) // 30% chance of flat periods, growth 2%-10% otherwise
     const roi = parseFloat((Math.random() * 20).toFixed(2)) // ROI between 0% and 20%
