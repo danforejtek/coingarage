@@ -101,17 +101,20 @@ export const getArtileMetadata = async ({
   } as Metadata
 }
 
-export const getArticles = async ({ params }: { params: { locale: string } }) => {
+export const getArticles = async ({ params, page = "1" }: { params: { locale: string }; page: string }) => {
   const { locale } = params
   const _locale = locale === "cs" ? "cs" : "en"
-  const response = await fetch(`${API_URL}/api/articles?locale=${_locale}&sort[0]=publishedAt:desc&populate=*`, {
-    headers: {
-      Authorization: `Bearer ${API_TOKEN}`,
-    },
-    next: {
-      revalidate: 43200,
-    },
-  })
+  const response = await fetch(
+    `${API_URL}/api/articles?locale=${_locale}&sort[0]=publishedAt:desc&populate=*&pagination[page]=${page}`,
+    {
+      headers: {
+        Authorization: `Bearer ${API_TOKEN}`,
+      },
+      next: {
+        revalidate: 43200,
+      },
+    }
+  )
   const responseData = await response.json()
   const data = responseData?.data
   const pagination = responseData?.meta?.pagination

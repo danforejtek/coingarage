@@ -19,9 +19,10 @@ export const metadata: Metadata = {
 
 const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL
 
-export default async function Page({ params }: { params: { locale: string } }) {
+export default async function Page({ params, searchParams }: { params: { locale: string } }) {
   const { locale } = params
-  const articles = await getArticles({ params })
+  console.log(searchParams.page)
+  const articles = await getArticles({ params, page: searchParams?.page || "1" })
   const { data, pagination } = articles
 
   return (

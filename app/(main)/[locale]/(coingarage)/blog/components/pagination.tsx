@@ -1,39 +1,108 @@
 "use client"
+
+import { useState } from "react"
+import {
+  Pagination as ShadcnPagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationPrevious,
+  PaginationLink,
+  PaginationEllipsis,
+  PaginationNext,
+} from "@/components/ui/pagination"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { useSearchParams, usePathname, useRouter } from "next/navigation"
+import { useSearchParams } from "next/navigation"
+import { useRouter, usePathname } from "@/navigation"
 
-type PaginationProps = {
-  className?: string
+export function Pagination({
+  pagination,
+}: {
   pagination: {
     page: number
-    pageSize: number
     pageCount: number
-    total: number
   }
-}
+}) {
+  const { page, pageCount } = pagination
 
-export const Pagination = ({ pagination, className }: PaginationProps) => {
   const searchParams = useSearchParams()
   const pathname = usePathname()
-  const { replace } = useRouter()
-  if (!pagination) return null
-  if (pagination?.pageCount === 1) return null
-  if (pagination?.pageCount === pagination?.page) return null
+  const { push } = useRouter()
 
-  const currentPage = Number(searchParams.get("page")) || 1
-
-  const handleLoadMore = () => {
+  const updateSearchParams = (newPage) => {
     const params = new URLSearchParams(searchParams)
-    params.set("page", String(currentPage + 1))
-    replace(`${pathname}?${params.toString()}`)
+    params.set("page", String(newPage))
+    push(`${pathname}?${params.toString()}`)
+    // const searchParams = new URLSearchParams(window.location.search)
+    // searchParams.set("page", newPage)
+    // const newUrl = `${window.location.pathname}?${searchParams.toString()}`
+    // window.history.pushState({}, "", newUrl)
+  }
+
+  const handlePageChange = (newPage) => {
+    updateSearchParams(newPage)
+  }
+
+  const renderPageNumbers = () => {
+    const pages = []
+    const maxPagesToShow = 4
+    const halfMaxPagesToShow = Math.floor(maxPagesToShow / 2)
+
+    let startPage = Math.max(1, page - halfMaxPagesToShow)
+    let endPage = Math.min(pageCount, page + halfMaxPagesToShow)
+
+    if (page <= halfMaxPagesToShow) {
+      endPage = Math.min(pageCount, maxPagesToShow)
+    }
+
+    if (page > pageCount - halfMaxPagesToShow) {
+      startPage = Math.max(1, pageCount - maxPagesToShow + 1)
+    }
+
+    if (startPage > 1) {
+      pages.push(
+        <PaginationItem key={1}>
+          <PaginationLink onClick={() => handlePageChange(1)}>1</PaginationLink>
+        </PaginationItem>
+      )
+      if (startPage > 2) {
+        pages.push(<PaginationEllipsis key="start-ellipsis" />)
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(
+        <PaginationItem key={i}>
+          <PaginationLink className={cn(i === page ? "bg-primary" : undefined)} onClick={() => handlePageChange(i)}>
+            {i}
+          </PaginationLink>
+        </PaginationItem>
+      )
+    }
+
+    if (endPage < pageCount) {
+      if (endPage < pageCount - 1) {
+        pages.push(<PaginationEllipsis key="end-ellipsis" />)
+      }
+      pages.push(
+        <PaginationItem key={pageCount}>
+          <PaginationLink onClick={() => handlePageChange(pageCount)}>{pageCount}</PaginationLink>
+        </PaginationItem>
+      )
+    }
+
+    return pages
   }
 
   return (
-    <div className={cn("mt-12 flex w-full items-center justify-center", className)}>
-      <Button variant="link" onClick={handleLoadMore}>
-        Load more
-      </Button>
-    </div>
+    <ShadcnPagination className="mt-6 gap-2">
+      <PaginationPrevious onClick={() => handlePageChange(page - 1)} disabled={page === 1}>
+        Previous
+      </PaginationPrevious>
+      <PaginationContent className="gap-2">{renderPageNumbers()}</PaginationContent>
+      <PaginationNext onClick={() => handlePageChange(page + 1)} disabled={page === pageCount}>
+        Next
+      </PaginationNext>
+    </ShadcnPagination>
   )
 }
