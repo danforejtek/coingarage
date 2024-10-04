@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useState } from "react"
 import { isAddress, parseEther, parseAbi } from "viem"
 // @ts-ignore
-import { useAccount, useBalance, useWalletClient } from "wagmi"
+import { useAccount, useBalance, useWalletClient, useWatchAsset } from "wagmi"
 // @ts-ignore
 import { useAddRecentTransaction, useChainModal } from "@rainbow-me/rainbowkit"
 import { ConnectButton } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/connect-button"
@@ -24,6 +24,7 @@ import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-modal"
 import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-payment"
 import { CurrencySelect } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/currency-select"
+import { getTokenBalance } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/get-balance"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
@@ -50,6 +51,7 @@ export function BuyGara({ className }: { className?: string }) {
     reset: resetState,
   } = useGaraStore((state) => state)
   const [open, setOpen] = useState(false)
+  const [hasUnsufficientBalance, setHasUnsufficientBalance] = useState(false)
   const toggleOpen = () => setOpen(!open)
   const handleOnOpenChange = () => {
     setOpen(!open)
@@ -74,7 +76,15 @@ export function BuyGara({ className }: { className?: string }) {
     },
   })
 
-  const { register, control, handleSubmit, setValue, watch, reset } = form
+  const {
+    register,
+    control,
+    handleSubmit,
+    setValue,
+    watch,
+    reset,
+    formState: { errors },
+  } = form
 
   const amount = useWatch({
     control: form.control,
@@ -85,6 +95,27 @@ export function BuyGara({ className }: { className?: string }) {
     control: form.control,
     name: "token",
   })
+
+  useEffect(() => {
+    if (!address || !token || !chain) return
+    const fetchBalance = async () => {
+      const balance = await getTokenBalance({
+        walletAddress: address as string,
+        token: token,
+        chainName: chain?.name as string,
+      })
+      // console.log(balance)
+      const isInsufficientBalance = balance?.humanReadableBalance < Number(amount)
+      if (isInsufficientBalance) {
+        form.setError("amount", { message: "Insufficient balance" })
+      } else {
+        form.clearErrors("amount")
+      }
+      setHasUnsufficientBalance(balance?.humanReadableBalance < Number(amount))
+    }
+
+    fetchBalance()
+  }, [amount, address, token, chain])
 
   useEffect(() => {
     const garaEstimate = usdcToGara(Number(amount))
@@ -100,16 +131,6 @@ export function BuyGara({ className }: { className?: string }) {
   useEffect(() => {
     setValue("from", address as `0x${string}`)
   }, [address, form])
-
-  useEffect(() => {
-    const isInsufficientBalance = balance && balance?.value < parseEther(amount)
-
-    if (isInsufficientBalance) {
-      form.setError("amount", { message: "Insufficient balance" })
-    } else {
-      form.clearErrors("amount")
-    }
-  }, [amount, balance, form])
 
   useEffect(() => {
     if (token === "ETH" && chain?.name !== "Ethereum") {
@@ -218,7 +239,14 @@ export function BuyGara({ className }: { className?: string }) {
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
         <div className="mt-4 grid w-full grid-cols-2 gap-2 md:grid-cols-[1fr_150px] ">
-          <CoinInput coin="USDC" type="number" placeholder="0.000" {...register("amount")} showIcon={false} />
+          <CoinInput
+            coin="USDC"
+            type="number"
+            placeholder="0.000"
+            {...register("amount")}
+            error={errors?.["amount"]?.message}
+            showIcon={false}
+          />
           <CurrencySelect name="token" form={form} />
         </div>
 
@@ -241,7 +269,11 @@ export function BuyGara({ className }: { className?: string }) {
 
         <div className="mt-8 flex flex-col gap-4">
           <ConnectButton label={t("btnConnectWallet")} showBalance={false} />
-          <Button type="submit" variant={address ? "default" : "outlinePrimary"} disabled={!address}>
+          <Button
+            type="submit"
+            variant={address ? "default" : "outlinePrimary"}
+            disabled={!address || hasUnsufficientBalance}
+          >
             {t("btnBuyGARA")}
           </Button>
         </div>

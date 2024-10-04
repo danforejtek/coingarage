@@ -95,7 +95,11 @@ export const sendPayment = async ({
       },
     })
 
+    console.log({ chain, address: contractAddresses[token][chainName] })
+
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
+
+    // Write contract
     const hash = await walletClient.writeContract({
       address: contractAddresses[token][chainName] as HexAddress,
       abi: AbiFunction,
@@ -104,6 +108,7 @@ export const sendPayment = async ({
       account: senderAddress,
       chain: chain,
     })
+
     await writeClientTransactionLog({
       account_address: senderAddress,
       transaction_tx_hash: hash,
@@ -134,6 +139,7 @@ export const sendPayment = async ({
         log: {
           message: "Error waiting for transaction receipt",
           metadata: {
+            // @ts-ignore
             error: error?.message,
           },
         },
@@ -153,6 +159,6 @@ export const sendPayment = async ({
     setTransactionStatus({ process: "sendPayment", status: "transactionError" })
     setOutcomingTransaction({ error, done: true })
     setIncomingTransaction({ error, done: true })
-    console.error("Error sending USDC:", error)
+    console.error("Error sending ", token, ":", error)
   }
 }
