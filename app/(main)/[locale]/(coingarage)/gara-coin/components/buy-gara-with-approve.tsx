@@ -10,9 +10,6 @@ import {
   parseAbi,
   Chain,
 } from "viem"
-// @ts-ignore
-// import { useAccount, useBalance, useWalletClient } from "wagmi"
-// @ts-ignore
 import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/types"
 import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
 import { getRpcNode } from "@/app/api/gara/lib/utils"
@@ -20,12 +17,11 @@ import { writeClientTransactionLog } from "@/app/(main)/[locale]/(coingarage)/ga
 
 type Address = `0x${string}`
 
-const transferAbi = parseAbi(["function transfer(address to, uint256 value) external returns (bool)"])
+const approveAbi = parseAbi(["function approve(address spender, uint256 amount) external returns (bool)"])
+const transferFromAbi = parseAbi([
+  "function transferFrom(address from, address to, uint256 amount) external returns (bool)",
+])
 
-// const transferFromAbi = parseAbi([
-//   "function approve(address spender, uint256 amount) external returns (bool)",
-//   "function transferFrom(address from, address to, uint256 value) external returns (bool)",
-// ])
 type SendPaymentProps = {
   token: SupportedTokens
   chain: Chain
@@ -43,6 +39,7 @@ type SendPaymentResponse = {
   txHash: HexAddress
   receipt: object
 }
+
 // Helper function for retrying with a delay
 const retryWithDelay = async (fn: () => Promise<any>, retries: number, delay: number) => {
   for (let i = 0; i < retries; i++) {
@@ -59,7 +56,7 @@ const retryWithDelay = async (fn: () => Promise<any>, retries: number, delay: nu
   }
 }
 
-export const sendPayment = async ({
+export const sendPaymentWithApprove = async ({
   token,
   chain,
   senderAddress,
@@ -96,25 +93,13 @@ export const sendPayment = async ({
       },
     })
 
-    console.log({ chain, address: contractAddresses[token][chainName] })
+    setTransactionStatus({ process: "sendPayment", status: "writingApproval" })
 
-    setTransactionStatus({ process: "sendPayment", status: "writingContract" })
-
-    // const simulateWrite = await client.simulateContract({
-    //   address: contractAddresses[token][chainName] as HexAddress,
-    //   abi: transferAbi,
-    //   functionName: "transfer",
-    //   args: [recipientAddress, amountInWei],
-    //   account: senderAddress,
-    //   chain: chain,
-    // })
-    // console.log({ simulateWrite })
-
-    // Write contract
-    const hash = await walletClient.writeContract({
+    // First, approve the recipient to spend the specified amount
+    const approvalHash = await walletClient.writeContract({
       address: contractAddresses[token][chainName] as HexAddress,
-      abi: transferAbi,
-      functionName: "transfer",
+      abi: approveAbi,
+      functionName: "approve",
       args: [recipientAddress, amountInWei],
       account: senderAddress,
       chain: chain,
@@ -122,52 +107,119 @@ export const sendPayment = async ({
 
     await writeClientTransactionLog({
       account_address: senderAddress,
-      transaction_tx_hash: hash,
+      transaction_tx_hash: approvalHash,
       chain: chainName,
       token: token,
       log: {
-        message: "Transaction created",
+        message: "Approval transaction created",
         amount: amount,
       },
     })
-    console.log("Transaction sent:", hash)
-    setTransactionStatus({ process: "sendPayment", status: "contractCreated" })
-    setOutcomingTransaction({ txHash: hash })
+    console.log("Approval sent:", approvalHash)
+    // setTransactionStatus({ process: "sendPayment", status: "approvalCreated" })
+    // setOutcomingTransaction({ txHash: approvalHash })
 
-    setTransactionStatus({ process: "sendPayment", status: "waitingForReceipt" })
-
-    // Wait for transaction receipt with retry mechanism
+    // Wait for approval transaction receipt
     try {
-      receipt = await retryWithDelay(() => client.waitForTransactionReceipt({ hash }), 3, 5000) // 3 retries, 5 seconds delay
+      receipt = await retryWithDelay(() => client.waitForTransactionReceipt({ hash: approvalHash }), 3, 5000) // 3 retries, 5 seconds delay
     } catch (error) {
-      console.error("Error waiting for transaction receipt after retries:", error)
-      setTransactionStatus({ process: "sendPayment", status: "receiptError" })
+      console.error("Error waiting for approval transaction receipt:", error)
+      setTransactionStatus({
+        process: "sendPayment",
+        status: "approvalReceiptError",
+      })
       await writeClientTransactionLog({
         account_address: senderAddress,
-        transaction_tx_hash: hash,
+        transaction_tx_hash: approvalHash,
         chain: chainName,
         token: token,
         log: {
-          message: "Error waiting for transaction receipt",
+          message: "Error waiting for approval receipt",
           metadata: {
             // @ts-ignore
             error: error?.message,
           },
         },
       })
-      throw error // Re-throw the error to handle it in the outer catch block
+      throw error
+    }
+
+    setTransactionStatus({
+      process: "sendPayment",
+      status: "approvalReceived",
+    })
+    setOutcomingTransaction({ receipt, done: true })
+    console.log("Approval confirmed:", receipt)
+
+    // Now, call transferFrom to move the tokens
+    setTransactionStatus({ process: "sendPayment", status: "writingTransfer" })
+
+    const transferHash = await walletClient.writeContract({
+      address: contractAddresses[token][chainName] as HexAddress,
+      abi: transferFromAbi,
+      functionName: "transferFrom",
+      args: [senderAddress, recipientAddress, amountInWei],
+      account: senderAddress,
+      chain: chain,
+    })
+
+    await writeClientTransactionLog({
+      account_address: senderAddress,
+      transaction_tx_hash: transferHash,
+      chain: chainName,
+      token: token,
+      log: {
+        message: "TransferFrom transaction created",
+        amount: amount,
+      },
+    })
+    console.log("TransferFrom sent:", transferHash)
+    setTransactionStatus({ process: "sendPayment", status: "transferCreated" })
+    setOutcomingTransaction({ txHash: transferHash })
+
+    setTransactionStatus({
+      process: "sendPayment",
+      status: "waitingForReceipt",
+    })
+
+    // Wait for transferFrom transaction receipt
+    try {
+      receipt = await retryWithDelay(() => client.waitForTransactionReceipt({ hash: transferHash }), 3, 5000) // 3 retries, 5 seconds delay
+    } catch (error) {
+      console.error("Error waiting for transferFrom receipt:", error)
+      setTransactionStatus({
+        process: "sendPayment",
+        status: "transferReceiptError",
+      })
+      await writeClientTransactionLog({
+        account_address: senderAddress,
+        transaction_tx_hash: transferHash,
+        chain: chainName,
+        token: token,
+        log: {
+          message: "Error waiting for transfer receipt",
+          metadata: {
+            // @ts-ignore
+            error: error?.message,
+          },
+        },
+      })
+      throw error
     }
 
     setTransactionStatus({ process: "sendPayment", status: "receiptReceived" })
     setOutcomingTransaction({ receipt, done: true })
-    console.log("Transaction confirmed:", receipt)
+    console.log("Transfer confirmed:", receipt)
 
     return {
-      txHash: hash,
+      txHash: transferHash,
       receipt,
     }
   } catch (error) {
-    setTransactionStatus({ process: "sendPayment", status: "transactionError" })
+    setTransactionStatus({
+      process: "sendPayment",
+      status: "transactionError",
+    })
     setOutcomingTransaction({ error, done: true })
     setIncomingTransaction({ error, done: true })
     console.error("Error sending ", token, ":", error)
