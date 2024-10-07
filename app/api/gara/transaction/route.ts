@@ -1,7 +1,7 @@
 import { getChainByName, getRpcNode } from "@/app/api/gara/lib/utils"
 import { BigNumberish, HexAddress } from "@/types"
 import { NextRequest, NextResponse } from "next/server"
-import { createPublicClient, http, decodeFunctionData } from "viem"
+import { createPublicClient, http, decodeFunctionData, parseAbi, parseUnits } from "viem"
 
 // import { privateKeyToAccount } from "viem/accounts"
 // import { polygon } from "viem/chains"
@@ -23,6 +23,10 @@ const erc20Abi = [
   },
 ]
 
+const handleOpsAbi = parseAbi([
+  "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[],address)",
+])
+
 export async function POST(req: NextRequest) {
   try {
     const { txHash, chain } = await req.json()
@@ -35,19 +39,38 @@ export async function POST(req: NextRequest) {
     const _chain = getChainByName(chain)
     const publicClient = createPublicClient({ chain: _chain, transport: getRpcNode(chain) })
     const receipt = await publicClient.getTransactionReceipt({ hash: txHash })
+    console.log({ logs: receipt.logs })
     const transaction = await publicClient.getTransaction({ hash: txHash })
-    const decoded = decodeFunctionData({
-      abi: erc20Abi,
-      data: transaction.input,
+    console.log({ transaction })
+    let decoded
+    let functionTo = "" as HexAddress
+    let functionValue = "" as BigNumberish
+    try {
+      decoded = decodeFunctionData({
+        abi: erc20Abi,
+        data: transaction.input,
+      })
+      functionTo = (decoded?.args?.[0] || "") as HexAddress
+      functionValue = (decoded?.args?.[1] || "") as BigNumberish
+    } catch (error) {
+      decoded = decodeFunctionData({
+        abi: handleOpsAbi,
+        data: transaction.input,
+      })
+      functionTo = (decoded?.args?.[0]?.[0]?.[0] || "") as HexAddress
+      functionValue = (parseUnits(transaction.v.toString(), 0) || "") as BigNumberish
+    }
+
+    console.log({
+      functionTo,
+      functionValue,
     })
-    const functionTo = (decoded?.args?.[0] || "") as HexAddress
-    const functionValue = (decoded?.args?.[1] || "") as BigNumberish
 
     return NextResponse.json({
       success: true,
       transactionHash: txHash,
       to: functionTo,
-      amount: functionValue.toString,
+      amount: functionValue.toString(),
       status: receipt.status,
     })
   } catch (error) {

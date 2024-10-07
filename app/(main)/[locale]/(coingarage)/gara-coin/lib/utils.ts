@@ -7,6 +7,7 @@ const USDC_BSC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDC_BSC_CONTRACT_ADDR
 const USDT_POLYGON_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDT_POLYGON_CONTRACT_ADDRESS as `0x${string}`
 const USDT_ETHEREUM_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDT_ETHEREUM_CONTRACT_ADDRESS as `0x${string}`
 const USDT_BSC_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_USDT_BSC_CONTRACT_ADDRESS as `0x${string}`
+const ETH_ETH_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_ETH_ETH_CONTRACT_ADDRESS as `0x${string}`
 
 export type ContractAddresses = {
   [token in SupportedTokens]: {
@@ -24,6 +25,9 @@ export const contractAddresses: ContractAddresses = {
     Polygon: USDT_POLYGON_CONTRACT_ADDRESS,
     Ethereum: USDT_ETHEREUM_CONTRACT_ADDRESS,
     "BNB Smart Chain": USDT_BSC_CONTRACT_ADDRESS,
+  },
+  ETH: {
+    Ethereum: ETH_ETH_CONTRACT_ADDRESS,
   },
 }
 

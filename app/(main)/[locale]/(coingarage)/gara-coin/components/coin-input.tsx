@@ -26,7 +26,7 @@ export const CoinInput = forwardRef<
         <input
           ref={ref}
           min="0"
-          step="0.01"
+          step="0.0001"
           // max={"100000"}
           className={cn(
             "flex-1 bg-transparent font-heading text-lg text-neutral-900 outline-none dark:text-white",

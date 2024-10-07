@@ -20,7 +20,17 @@ import { writeClientTransactionLog } from "@/app/(main)/[locale]/(coingarage)/ga
 
 type Address = `0x${string}`
 
-const transferAbi = parseAbi(["function transfer(address to, uint256 value) external returns (bool)"])
+const transferAbi = [
+  {
+    type: "function",
+    name: "transfer",
+    inputs: [
+      { name: "to", type: "address" },
+      { name: "value", type: "uint256" },
+    ],
+    outputs: [{ name: "", type: "bool" }],
+  },
+]
 
 // const transferFromAbi = parseAbi([
 //   "function approve(address spender, uint256 amount) external returns (bool)",
@@ -95,8 +105,6 @@ export const sendPayment = async ({
         amount: amount,
       },
     })
-
-    console.log({ chain, address: contractAddresses[token][chainName] })
 
     setTransactionStatus({ process: "sendPayment", status: "writingContract" })
 

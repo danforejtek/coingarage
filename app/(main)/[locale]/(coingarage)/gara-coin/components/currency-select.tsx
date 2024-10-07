@@ -11,7 +11,7 @@ import Image from "next/image"
 const tokens = [
   { label: "USDT", value: "USDT" },
   { label: "USDC", value: "USDC" },
-  // { label: "ETH", value: "ETH" },
+  { label: "ETH", value: "ETH" },
 ] as const
 
 export function CurrencySelect({ form }: { form: any }) {

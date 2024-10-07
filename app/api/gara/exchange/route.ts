@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server"
 import { privateKeyToAccount } from "viem/accounts"
-import { createPublicClient, createWalletClient, http, TransactionReceipt } from "viem"
+import { createPublicClient, createWalletClient, http, parseAbi, TransactionReceipt } from "viem"
 import { polygon } from "viem/chains"
 import { parseUnits } from "viem/utils"
 import { HexAddress } from "@/types"
-import { validateTransaction } from "@/app/api/gara/lib/utils"
+import { getGaraEstimate, validateTransaction } from "@/app/api/gara/lib/utils"
 import { usdcToGara } from "@/app/api/gara/lib/utils"
 import { sendMail } from "@/lib/mailer"
 import { universal } from "@/lib/email-templates/universal"
@@ -30,11 +30,15 @@ const garaAbi = [
     name: "transfer",
     inputs: [
       { name: "to", type: "address" },
-      { name: "amount", type: "uint256" },
+      { name: "value", type: "uint256" },
     ],
     outputs: [{ name: "", type: "bool" }],
   },
 ]
+
+const handleOpsAbi = parseAbi([
+  "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[],address)",
+])
 
 const allowedChains = ["Polygon", "Ethereum", "BNB Smart Chain"] // Add more chains if needed
 
@@ -97,9 +101,15 @@ export async function POST(req: NextRequest) {
       })
       return NextResponse.json({ success: false, message: validation.message }, { status: 400 })
     }
-
+    let amountInGara
     // Convert the amount to GARA by fixed rate
-    let amountInGara = usdcToGara(amount)
+    if (["USDC", "USDT"].includes(token)) {
+      amountInGara = usdcToGara(amount)
+    } else {
+      const response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd")
+      const data = await response.json()
+      amountInGara = getGaraEstimate(token, amount, data.ethereum.usd)
+    }
 
     // security measure for test, if amount is greater than 1, set to 1
     // if (amount > 1) amountInGara = 1

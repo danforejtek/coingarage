@@ -19,12 +19,13 @@ import { cn } from "@/lib/utils"
 import { z } from "zod"
 import { useForm, useWatch } from "react-hook-form"
 import { ArrowDown } from "lucide-react"
-import { usdcToGara } from "@/app/api/gara/lib/utils"
+import { getGaraEstimate, usdcToGara } from "@/app/api/gara/lib/utils"
 import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/transaction-status-modal"
 import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/send-payment"
 import { CurrencySelect } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/currency-select"
 import { getTokenBalance } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/get-balance"
+import { useQuery } from "@tanstack/react-query"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
@@ -50,6 +51,16 @@ export function BuyGara({ className }: { className?: string }) {
     setIncomingTransaction,
     reset: resetState,
   } = useGaraStore((state) => state)
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["ethereumPrice"],
+    queryFn: async () => {
+      const response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd")
+      const data = await response.json()
+      return data
+    },
+  })
+  const eth_usd = data?.ethereum?.usd
+
   const [open, setOpen] = useState(false)
   const [hasUnsufficientBalance, setHasUnsufficientBalance] = useState(false)
   const toggleOpen = () => setOpen(!open)
@@ -99,27 +110,41 @@ export function BuyGara({ className }: { className?: string }) {
 
   useEffect(() => {
     if (!address || !token || !chain) return
-    const fetchBalance = async () => {
-      const balance = await getTokenBalance({
-        walletAddress: address as string,
-        token: token,
-        chainName: chain?.name as string,
-      })
-      console.log(balance)
-      const isInsufficientBalance = balance?.humanReadableBalance < Number(amount)
+    if (token === "ETH") {
+      const isInsufficientBalance = balance?.formatted < Number(amount)
       if (isInsufficientBalance) {
         form.setError("amount", { message: "Insufficient balance" })
       } else {
         form.clearErrors("amount")
       }
-      setHasUnsufficientBalance(balance?.humanReadableBalance < Number(amount))
-    }
+      setHasUnsufficientBalance(isInsufficientBalance)
+    } else {
+      const fetchBalance = async () => {
+        const balance = await getTokenBalance({
+          walletAddress: address as string,
+          token: token,
+          chainName: chain?.name as string,
+        })
+        // console.log(balance)
+        const isInsufficientBalance = balance?.humanReadableBalance < Number(amount)
+        if (isInsufficientBalance) {
+          form.setError("amount", { message: "Insufficient balance" })
+        } else {
+          form.clearErrors("amount")
+        }
+        setHasUnsufficientBalance(isInsufficientBalance)
+      }
 
-    fetchBalance()
+      fetchBalance()
+    }
   }, [amount, address, token, chain])
 
   useEffect(() => {
-    const garaEstimate = usdcToGara(Number(amount))
+    const garaEstimate = getGaraEstimate(
+      token,
+      Number(amount),
+      !["USDT", "USDC"].includes(eth_usd) ? eth_usd : undefined
+    )
     setValue(
       "garaEstimate",
       garaEstimate.toLocaleString(undefined, {
@@ -134,8 +159,19 @@ export function BuyGara({ className }: { className?: string }) {
   }, [address, form])
 
   useEffect(() => {
+    if (chain?.name !== "Ethereum" && token === "ETH") {
+      setValue("token", "USDT")
+    }
+    if (chain?.name === "Ethereum" && token !== "ETH") {
+      setValue("token", "ETH")
+    }
+  }, [token, chain])
+
+  useEffect(() => {
     if (token === "ETH" && chain?.name !== "Ethereum") {
-      openChainModal()
+      if (typeof openChainModal === "function") {
+        openChainModal()
+      }
     }
   }, [token, chain, openChainModal])
 

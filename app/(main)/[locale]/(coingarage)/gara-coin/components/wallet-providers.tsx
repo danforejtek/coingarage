@@ -1,17 +1,34 @@
 "use client"
 
-import { getDefaultConfig, RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit"
 import { ReactNode } from "react"
+import { getDefaultConfig, RainbowKitProvider, darkTheme, connectorsForWallets } from "@rainbow-me/rainbowkit"
+import { metaMaskWallet, coinbaseWallet, rainbowWallet, walletConnectWallet } from "@rainbow-me/rainbowkit/wallets"
 import { WagmiProvider, cookieStorage, createConfig, createStorage, http, type Locale } from "wagmi"
 import { polygon, mainnet, bsc } from "wagmi/chains"
 import { GaraStoreProvider } from "@/lib/store/provider"
 import { getRpcNode } from "@/app/api/gara/lib/utils"
 
+const connectors = connectorsForWallets(
+  [
+    {
+      groupName: "Recommended",
+      wallets: [metaMaskWallet, coinbaseWallet],
+    },
+    {
+      groupName: "Other",
+      wallets: [rainbowWallet, walletConnectWallet],
+    },
+  ],
+  {
+    appName: "Coingarage",
+    projectId: process.env.NEXT_PUBLIC_CONNECT_WALLET_PROJECT_ID,
+  }
+)
 const config = getDefaultConfig({
   appName: "Coingarage",
+  connectors,
   projectId: process.env.NEXT_PUBLIC_CONNECT_WALLET_PROJECT_ID,
   chains: [polygon, mainnet, bsc],
-
   transports: {
     [mainnet.id]: getRpcNode(mainnet.name),
     [polygon.id]: getRpcNode(polygon.name),

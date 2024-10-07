@@ -40,6 +40,7 @@ export async function getTokenBalance({
 
   // @ts-ignore
   const tokenContractAddress = contractAddresses[token][chainName]
+  console.log({ tokenContractAddress })
 
   const balance = (await client.readContract({
     address: tokenContractAddress,

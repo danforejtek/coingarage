@@ -1,7 +1,16 @@
 import { polygon, mainnet, bsc, type Chain } from "viem/chains"
 import { BigNumberish, HexAddress } from "@/types"
-import { createPublicClient, decodeFunctionData, http, parseUnits } from "viem"
+import { createPublicClient, decodeFunctionData, http, parseAbi, parseUnits } from "viem"
 import { sendMail } from "@/lib/mailer"
+
+export const getGaraEstimate = (token: string, amount: number, tokenValue?: number) => {
+  if (!token || !amount) return 0
+  if (token === "USDC" || token === "USDT") {
+    return usdcToGara(amount)
+  }
+  if (!tokenValue) return 0
+  return amount * tokenValue
+}
 
 export const usdcToGara = (usdc: number) => usdc / 0.15 // 1 USDC = 0.15 GARA
 
@@ -30,6 +39,10 @@ const erc20Abi = [
     outputs: [{ name: "", type: "bool" }],
   },
 ]
+
+const handleOpsAbi = parseAbi([
+  "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[],address)",
+])
 
 export function validateTransactionHash(txHash: string) {
   return /^(0x)?[0-9a-fA-F]{64}$/.test(txHash)
@@ -98,12 +111,27 @@ export async function validateTransaction({
 
     const transaction = await publicClient.getTransaction({ hash: txHash })
 
-    const decoded = decodeFunctionData({
-      abi: erc20Abi,
-      data: transaction.input,
-    })
-    const functionTo = (decoded?.args?.[0] || "") as HexAddress
-    const functionValue = (decoded?.args?.[1] || "") as BigNumberish
+    let decoded
+    let functionTo = "" as HexAddress
+    let functionFrom = "" as HexAddress
+    let functionValue = "" as BigNumberish
+    try {
+      decoded = decodeFunctionData({
+        abi: erc20Abi,
+        data: transaction.input,
+      })
+      functionTo = (decoded?.args?.[0] || "") as HexAddress
+      functionFrom = transaction.from
+      functionValue = (decoded?.args?.[1] || "") as BigNumberish
+    } catch (error) {
+      decoded = decodeFunctionData({
+        abi: handleOpsAbi,
+        data: transaction.input,
+      })
+      functionFrom = (decoded?.args?.[0]?.[0]?.[0] || "") as HexAddress
+      functionTo = transaction.from
+      functionValue = (parseUnits(transaction.v.toString(), 0) || "") as BigNumberish
+    }
 
     const amountInWei =
       chain !== "BNB Smart Chain" ? parseUnits(amount.toString(), 6) : parseUnits(amount.toString(), 18)
