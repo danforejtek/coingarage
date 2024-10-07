@@ -152,20 +152,20 @@ export function BuyGara({ className }: { className?: string }) {
         maximumFractionDigits: 3,
       })
     )
-  }, [amount, form])
+  }, [amount, token, form])
 
   useEffect(() => {
     setValue("from", address as `0x${string}`)
   }, [address, form])
 
   useEffect(() => {
-    if (chain?.name !== "Ethereum" && token === "ETH") {
+    if (chain?.name !== "Ethereum") {
       setValue("token", "USDT")
     }
-    if (chain?.name === "Ethereum" && token !== "ETH") {
+    if (chain?.name === "Ethereum") {
       setValue("token", "ETH")
     }
-  }, [token, chain])
+  }, [chain])
 
   useEffect(() => {
     if (token === "ETH" && chain?.name !== "Ethereum") {
