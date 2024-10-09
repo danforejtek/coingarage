@@ -24,7 +24,7 @@ const connectors = connectorsForWallets(
     projectId: process.env.NEXT_PUBLIC_CONNECT_WALLET_PROJECT_ID,
   }
 )
-const config = getDefaultConfig({
+export const config = getDefaultConfig({
   appName: "Coingarage",
   connectors,
   projectId: process.env.NEXT_PUBLIC_CONNECT_WALLET_PROJECT_ID,

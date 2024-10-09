@@ -10,6 +10,8 @@ import {
   parseAbi,
   Chain,
 } from "viem"
+import { type UseSendTransactionParameters, UseSendTransactionReturnType } from "wagmi"
+import { sendTransaction } from "@wagmi/core"
 // @ts-ignore
 // import { useAccount, useBalance, useWalletClient } from "wagmi"
 // @ts-ignore
@@ -17,6 +19,7 @@ import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/ty
 import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/utils"
 import { getRpcNode } from "@/app/api/gara/lib/utils"
 import { writeClientTransactionLog } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/actions"
+import { config } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/wallet-providers"
 
 type Address = `0x${string}`
 
@@ -47,6 +50,7 @@ type SendPaymentProps = {
   setOutcomingTransaction: (transaction: { txHash?: HexAddress; done?: boolean; receipt?: any; error?: any }) => void
   setIncomingTransaction: (transaction: { txHash?: HexAddress; done?: boolean; receipt?: any; error?: any }) => void
   resetState: () => void
+  sendTransaction: (params: UseSendTransactionParameters) => UseSendTransactionReturnType
 }
 
 type SendPaymentResponse = {
@@ -80,6 +84,7 @@ export const sendPayment = async ({
   setOutcomingTransaction,
   setIncomingTransaction,
   resetState,
+  // sendTransaction,
 }: SendPaymentProps): Promise<SendPaymentResponse | undefined> => {
   try {
     if (!token || !chain || !senderAddress || !recipientAddress || !amount || !walletClient) return
@@ -119,14 +124,23 @@ export const sendPayment = async ({
     // console.log({ simulateWrite })
 
     // Write contract
-    const hash = await walletClient.writeContract({
-      address: contractAddresses[token][chainName] as HexAddress,
-      abi: transferAbi,
-      functionName: "transfer",
-      args: [recipientAddress, amountInWei],
-      account: senderAddress,
-      chain: chain,
-    })
+    let hash = null
+    if (token === "ETH") {
+      const transaction = await sendTransaction(config, {
+        to: recipientAddress,
+        value: parseEther(String(amount)),
+      })
+      hash = transaction.hash
+    } else {
+      hash = await walletClient.writeContract({
+        address: contractAddresses[token][chainName] as HexAddress,
+        abi: transferAbi,
+        functionName: "transfer",
+        args: [recipientAddress, amountInWei],
+        account: senderAddress,
+        chain: chain,
+      })
+    }
 
     await writeClientTransactionLog({
       account_address: senderAddress,

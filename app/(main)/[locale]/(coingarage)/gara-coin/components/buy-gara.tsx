@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useState } from "react"
 import { isAddress, parseEther, parseAbi } from "viem"
 // @ts-ignore
-import { useAccount, useBalance, useWalletClient, useWriteContract } from "wagmi"
+import { useAccount, useBalance, useSendTransaction, useWalletClient, useWriteContract } from "wagmi"
 // @ts-ignore
 import { useAddRecentTransaction, useChainModal } from "@rainbow-me/rainbowkit"
 import { ConnectButton } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/connect-button"
@@ -74,6 +74,7 @@ export function BuyGara({ className }: { className?: string }) {
   const addRecentTransaction = useAddRecentTransaction()
   const { writeContract } = useWriteContract()
   const { openChainModal } = useChainModal()
+  const { sendTransaction } = useSendTransaction()
   const chainTxUrl = `${chain?.blockExplorers?.default?.url}/tx/`
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -111,7 +112,8 @@ export function BuyGara({ className }: { className?: string }) {
   useEffect(() => {
     if (!address || !token || !chain) return
     if (token === "ETH") {
-      const isInsufficientBalance = balance?.formatted < Number(amount)
+      const isInsufficientBalance = Number(balance?.formatted) < Number(amount)
+
       if (isInsufficientBalance) {
         form.setError("amount", { message: "Insufficient balance" })
       } else {
@@ -119,25 +121,29 @@ export function BuyGara({ className }: { className?: string }) {
       }
       setHasUnsufficientBalance(isInsufficientBalance)
     } else {
-      const fetchBalance = async () => {
-        const balance = await getTokenBalance({
-          walletAddress: address as string,
-          token: token,
-          chainName: chain?.name as string,
-        })
-        // console.log(balance)
-        const isInsufficientBalance = balance?.humanReadableBalance < Number(amount)
-        if (isInsufficientBalance) {
-          form.setError("amount", { message: "Insufficient balance" })
-        } else {
-          form.clearErrors("amount")
+      try {
+        const fetchBalance = async () => {
+          const balance = await getTokenBalance({
+            walletAddress: address as string,
+            token: token,
+            chainName: chain?.name as string,
+          })
+          // console.log(balance)
+          const isInsufficientBalance = balance?.humanReadableBalance < Number(amount)
+          if (isInsufficientBalance) {
+            form.setError("amount", { message: "Insufficient balance" })
+          } else {
+            form.clearErrors("amount")
+          }
+          setHasUnsufficientBalance(isInsufficientBalance)
         }
-        setHasUnsufficientBalance(isInsufficientBalance)
-      }
 
-      fetchBalance()
+        fetchBalance()
+      } catch (error) {
+        console.error(error)
+      }
     }
-  }, [amount, address, token, chain])
+  }, [amount, address, balance, token, chain])
 
   useEffect(() => {
     const garaEstimate = getGaraEstimate(
@@ -197,6 +203,7 @@ export function BuyGara({ className }: { className?: string }) {
       setIncomingTransaction,
       resetState,
       writeContract,
+      sendTransaction,
     })
     if (!response?.txHash) {
       setTransactionStatus({ process: "sendPayment", status: "transactionError" })
