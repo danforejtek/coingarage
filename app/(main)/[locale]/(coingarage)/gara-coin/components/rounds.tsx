@@ -1,6 +1,6 @@
 export function Rounds() {
   return (
-    <div className="mx-2">
+    <div className="mx-4">
       <div className="my-2 flex w-full flex-row justify-center gap-2">
         <div className="flex flex-1 flex-col items-center gap-1 rounded-xl bg-primary px-6 py-2">
           <p className="text-xs leading-none text-white">

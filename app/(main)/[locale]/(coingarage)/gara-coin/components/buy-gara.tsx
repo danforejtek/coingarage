@@ -27,6 +27,7 @@ import { CurrencySelect } from "@/app/(main)/[locale]/(coingarage)/gara-coin/com
 import { getTokenBalance } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/get-balance"
 import { useQuery } from "@tanstack/react-query"
 import { Rounds } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/rounds"
+import CountdownTimer from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/countdown-timer"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
@@ -253,7 +254,7 @@ export function BuyGara({ className }: { className?: string }) {
   return (
     <section
       className={cn(
-        "w-full max-w-full flex-1 overflow-x-hidden rounded-2xl bg-background p-6 shadow-md lg:max-w-[480px]",
+        "w-full max-w-full flex-1 overflow-x-hidden rounded-2xl border border-neutral-300 bg-background p-6 shadow-lg dark:border-neutral-900 lg:max-w-[480px]",
         className
       )}
     >
@@ -274,14 +275,19 @@ export function BuyGara({ className }: { className?: string }) {
           </TableRow>
         </TableBody>
       </Table>
-      <div className="mt-4 grid grid-cols-[1fr_140px_1fr] gap-2">
+      <div className="mt-4 grid grid-cols-[1fr_200px_1fr] gap-2">
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
-        <p className="text-center font-heading font-semibold">1 GARA = $0.15</p>
+        <p className="text-center font-heading font-semibold">
+          Time Left - 1<sup>st</sup> round
+        </p>
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
+      </div>
+      <div className="my-4 flex flex-row justify-center">
+        <CountdownTimer />
       </div>
       <Rounds />
       <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">

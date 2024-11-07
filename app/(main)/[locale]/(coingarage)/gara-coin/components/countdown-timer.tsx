@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
 
-const CountdownTimer = ({ className }: { className: string }) => {
+const CountdownTimer = ({ className }: { className?: string }) => {
   const t = useTranslations("GARA.garaDepo.timer")
   // Set the target date/time
   const targetDate = new Date("2024-12-15T23:59").getTime()
