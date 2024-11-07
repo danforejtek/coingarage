@@ -26,6 +26,7 @@ import { sendPayment } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/se
 import { CurrencySelect } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/currency-select"
 import { getTokenBalance } from "@/app/(main)/[locale]/(coingarage)/gara-coin/lib/get-balance"
 import { useQuery } from "@tanstack/react-query"
+import { Rounds } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/rounds"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_COINGARAGE_ADDRESS as `0x${string}`
@@ -282,6 +283,7 @@ export function BuyGara({ className }: { className?: string }) {
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
+      <Rounds />
       <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
         <div className="mt-4 grid w-full grid-cols-2 gap-2 md:grid-cols-[1fr_150px] ">
           <CoinInput
@@ -294,10 +296,9 @@ export function BuyGara({ className }: { className?: string }) {
           />
           <CurrencySelect name="token" form={form} />
         </div>
-
-        <div className="my-4 flex flex-row justify-center">
+        {/* <div className="my-4 flex flex-row justify-center">
           <ArrowDown className="stroke-black dark:stroke-white" />
-        </div>
+        </div> */}
         <div className=" mt-4">
           <CoinInput
             coin="GARA"

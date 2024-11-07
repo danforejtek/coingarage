@@ -17,10 +17,10 @@ export const CoinInput = forwardRef<
   } & React.InputHTMLAttributes<HTMLInputElement>
 >(({ coin, className, showIcon = true, error, ...rest }, ref) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col self-center">
       <div
         className={cn(
-          "flex w-full flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2 ring-neutral-200 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800"
+          "flex w-full flex-row justify-between gap-4 rounded-full bg-neutral-100 px-6 py-2 ring-1 ring-neutral-200 focus-within:ring-neutral-300 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800"
         )}
       >
         <input
