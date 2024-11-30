@@ -836,6 +836,7 @@
         }
     },
     "GARA": {
+        
         "main": {
             "header": "GARAGE Coin <span>GARA</span>",
             "text1": "GARA je token naší burzy Coingarage, který nám pomáhá rozvíjet ekosystém burzy. Tento token byl vytvořen s pevným maximem pouze 900 milionů kusů a není možné ho navýšit. Naopak, díky našemu spalovacímu mechanismu bude počet GARA postupně ubývat.",
@@ -847,6 +848,8 @@
                 "soldTokens": "Prodáno Tokenů",
                 "btnConnectWallet": "Připojit peněženku",
                 "btnBuyGARA": "Koupit GARA",
+                "btnHelpGarry": "Kupte GARA a pomozte Garymu",
+                "buyWithEurOnCoingarage": "Kupte pomocí EUR na Coingarage",
                 "buyWith": "Nakoupit za",
                 "linkGoToLaunchapad": "Nakoupit na Coingarage",
                 "poweredBy": "Poháněno pomocí"
@@ -859,17 +862,17 @@
             "usage3": "Požadovaný plyn pro převod",
             "usage4": "Success fee",
             "usage5": "Poplatek za výběr",
-            "usage6": "Plyn pro obchodního robota",
+            "usage6": "Poplatek za plyn pro aplikace",
             "usage7": "Poplatky za nákup",
             "usage8": "Reklama"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Aktuální zhodnocení až 30% p.a.",
+            "subHeader": "Aktuální zhodnocení až 35% p.a.",
             "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
-            "text2": "Nyní zaváděcí akce <span>jen do 27. 10. 2024, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
+            "text2": "Nyní zaváděcí akce <span>jen do 28.2.2025, s úrokem 35% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
             "timer": {
-                "header": "DO KONCE AKCE ZBÝVÁ",
+                "header": "Do konce 1. kola zbývá ",
                 "day": "DNÍ",
                 "hours": "HODIN",
                 "minutes": "MINUT",

@@ -821,7 +821,7 @@
             "otherQuestions": {
                 "question1": {
                     "text": "Who will own and run Coingarage s.r.o.?",
-                    "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (30%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
+                    "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (35%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
                 },
                 "question2": {
                     "text": "Why do you need and what will you use the funds for?",
@@ -839,6 +839,7 @@
         }
     },
     "GARA": {
+        
         "main": {
             "header": "Moneda GARAGE <span>GARA</span>",
             "text1": "Es el token de nuestro intercambio Coingarage, ayudándonos a desarrollar nuestro ecosistema de intercambio. Este token se creó con un máximo fijo de solo 900 millones de unidades, y no se puede aumentar.",
@@ -850,6 +851,8 @@
                 "soldTokens": "Tokens vendidos",
                 "btnConnectWallet": "Conectar cartera",
                 "btnBuyGARA": "Comprar GARA",
+                "btnHelpGarry": "Compra GARA y ayuda a Gary",
+                "buyWithEurOnCoingarage": "Compra con EUR en Coingarage",
                 "buyWith": "Comprar con",
                 "linkGoToLaunchapad": "Comprar en Coingarage",
                 "poweredBy": "Impulsado por"
@@ -862,15 +865,15 @@
             "usage3": "Gas requerido para transferencia",
             "usage4": "Tarifa de éxito",
             "usage5": "Tarifa de retiro",
-            "usage6": "Tarifa de gas para EEZY Trader",
+            "usage6": "Tarifa de gas para aplicaciones",
             "usage7": "Tarifas de compra",
             "usage8": "Publicidad"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimiento actual del 30% anual",
+            "subHeader": "Rendimiento actual del 35% anual",
             "text1": "Estaciona tus monedas Garage compradas (GARA) en nuestro programa de Depósito y déjalas crecer. Pagamos intereses regularmente en tu GARA depositada a tu cuenta de Coingarage cada día. No tienes que preocuparte por nada, todo es completamente automático.",
-            "text2": "Ahora oferta introductoria <span>solo hasta el 27.10.2024, con una tasa de interés fija del 30% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
+            "text2": "Ahora oferta introductoria <span>solo hasta el 28.2.2025, con una tasa de interés fija del 35% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
             "timer": {
                 "header": "TIEMPO RESTANTE HASTA EL FIN DE LA OFERTA",
                 "day": "DÍAS",

@@ -837,6 +837,7 @@
         }
     },
     "GARA": {
+        
         "main": {
             "header": "GARAJ Parası <span>GARA</span>",
             "text1": "GARA coingarage değiş-tokuş sistemimizin Tokenidir, ve bize değiştokuş sistemini kodlamamızda yardımcı olur. Bu token yalnızca 900 milyon adetlik sabit maksimum birim ile oluşturulmuştur ve artırılamaz. Ancak yakma mekanizmamız nedeniyle GARA tokenlarının sayısı zamanla giderek azalacaktır.",
@@ -848,6 +849,8 @@
                 "soldTokens": "Tokenler satıldı",
                 "btnConnectWallet": "Cüzdanını Bağla",
                 "btnBuyGARA": "GARA al",
+                "btnHelpGarry": "GARA satın al ve Gary'ye yardımcı ol",
+                "buyWithEurOnCoingarage": "Coingarage'de EUR ile satın al",
                 "buyWith": "İle al",
                 "linkGoToLaunchapad": "Coingarage'da satın al",
                 "poweredBy": "Tarafından çalıştırılır"
@@ -860,17 +863,17 @@
             "usage3": "Transfer için gerekli gaz",
             "usage4": "Başarı ücreti",
             "usage5": "Para çekme ücreti",
-            "usage6": "EEZY Trader için gaz ücreti",
+            "usage6": "Uygulamalar için gas ücreti",
             "usage7": "Satın alma ücreti",
             "usage8": "Reklam"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimento attuale del 30% p.a.",
+            "subHeader": "Rendimento attuale del 35% p.a.",
             "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
-            "text2": "Ora offerta introduttiva <span>solo fino al 27.10.2024, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 35% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
             "timer": {
-                "header": "TEMPO RIMASTO FINO ALLA FINE DELL'OFFERTA",
+                "header": "1. turun bitmesine kalan süre",
                 "day": "GIORNI",
                 "hours": "ORE",
                 "minutes": "MINUTI",

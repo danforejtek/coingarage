@@ -818,7 +818,7 @@
             "otherQuestions": {
                 "question1": {
                     "text": "Chi possiederà e gestirà Coingarage s.r.o.?",
-                    "answer": "I proprietari di Coingarage s.r.o. sono Coingarage Finance s.r.o. (30%) e Ota Janda (70%). Si prevede un aggiustamento della struttura proprietaria nel prossimo futuro, quando esperti tecnologici e investitori stranieri si uniranno alla società. Per ulteriori informazioni sui singoli proprietari e sulla gestione, consulta la sezione Chi Siamo."
+                    "answer": "I proprietari di Coingarage s.r.o. sono Coingarage Finance s.r.o. (35%) e Ota Janda (70%). Si prevede un aggiustamento della struttura proprietaria nel prossimo futuro, quando esperti tecnologici e investitori stranieri si uniranno alla società. Per ulteriori informazioni sui singoli proprietari e sulla gestione, consulta la sezione Chi Siamo."
                 },
                 "question2": {
                     "text": "Perché avete bisogno e per cosa userete i fondi?",
@@ -836,6 +836,7 @@
         }
     },
     "GARA": {
+        
         "main": {
             "header": "GARAGE Coin <span>GARA</span>",
             "text1": "GARA è il token del nostro exchange Coingarage, che ci aiuta a sviluppare l'ecosistema dell'exchange. Questo token è stato creato con un massimo fisso di soli 900 milioni di unità, e non può essere aumentato. Tuttavia, a causa del nostro meccanismo di burning, il numero di token GARA diminuirà gradualmente nel tempo.",
@@ -847,6 +848,8 @@
                 "soldTokens": "Token venduti",
                 "btnConnectWallet": "Collega Wallet",
                 "btnBuyGARA": "Acquista GARA",
+                "btnHelpGarry": "Αγοράστε GARA και βοηθήστε τον Gary",
+                "buyWithEurOnCoingarage": "Αγοράστε με EUR στο Coingarage",
                 "buyWith": "Acquista con",
                 "linkGoToLaunchapad": "Acquista su Coingarage",
                 "poweredBy": "Offerto da"
@@ -859,17 +862,17 @@
             "usage3": "Gas richiesto per il trasferimento",
             "usage4": "Commissione di successo",
             "usage5": "Commissione di prelievo",
-            "usage6": "Commissione gas per EEZY Trader",
+            "usage6": "Χρέωση αερίου για εφαρμογές",
             "usage7": "Commissioni di acquisto",
             "usage8": "Pubblicità"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimento attuale del 30% p.a.",
+            "subHeader": "Rendimento attuale del 35% p.a.",
             "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
-            "text2": "Ora offerta introduttiva <span>solo fino al 27.10.2024, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 35% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
             "timer": {
-                "header": "TEMPO RIMASTO FINO ALLA FINE DELL'OFFERTA",
+                "header": "Υπολείπεται χρόνος μέχρι το τέλος του 1ου γύρου",
                 "day": "GIORNI",
                 "hours": "ORE",
                 "minutes": "MINUTI",

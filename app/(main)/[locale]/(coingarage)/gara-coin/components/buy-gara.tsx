@@ -267,11 +267,11 @@ export function BuyGara({ className }: { className?: string }) {
           </TableRow>
           <TableRow className="!border-none">
             <TableCell className="!p-1 font-heading font-semibold">{t("distributedTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-heading font-bold text-primary">100M GARA</TableCell>
+            <TableCell className="!p-1 text-end font-heading font-bold text-primary">99M GARA</TableCell>
           </TableRow>
           <TableRow className="!border-none">
             <TableCell className="!p-1 font-heading font-semibold">{t("soldTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-heading font-bold text-primary">2M GARA</TableCell>
+            <TableCell className="!p-1 text-end font-heading font-bold text-primary">652,989</TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -290,53 +290,19 @@ export function BuyGara({ className }: { className?: string }) {
         <CountdownTimer />
       </div>
       <Rounds />
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
-        <div className="mt-4 grid w-full grid-cols-2 gap-2 md:grid-cols-[1fr_150px] ">
-          <CoinInput
-            coin="USDC"
-            type="number"
-            placeholder="0.000"
-            {...register("amount")}
-            error={errors?.["amount"]?.message}
-            showIcon={false}
-          />
-          <CurrencySelect name="token" form={form} />
-        </div>
-        {/* <div className="my-4 flex flex-row justify-center">
-          <ArrowDown className="stroke-black dark:stroke-white" />
-        </div> */}
-        <div className=" mt-4">
-          <CoinInput
-            coin="GARA"
-            type="text"
-            placeholder="0.000"
-            className="cursor-disabled pointer-events-none text-neutral-700 dark:text-neutral-400 "
-            {...register("garaEstimate")}
-            readOnly
-          />
-        </div>
-        <input type="hidden" {...register("from")} />
-        <input type="hidden" {...register("to")} />
-        <input type="hidden" name="chain" value={chain?.name} />
-
-        <div className="mt-8 flex flex-col gap-4">
-          <ConnectButton label={t("btnConnectWallet")} showBalance={false} />
-          <Button
-            type="submit"
-            variant={address ? "default" : "outlinePrimary"}
-            disabled={!address || hasUnsufficientBalance}
-          >
-            {t("btnBuyGARA")}
+      <div className="m-auto mt-8 flex flex-col items-center">
+        <a href="https://helpgary.com" target="_blank" className="m-auto w-full text-center">
+          <Button type="button" variant={address ? "default" : "outlinePrimary"} className="m-auto w-[90%] text-center">
+            {t("btnHelpGarry")}
           </Button>
-        </div>
-        <TransactionStatusModal
-          open={open}
-          toggleOpen={handleOnOpenChange}
-          setOpen={setOpen}
-          senderChainTxUrl={chainTxUrl}
-        />
-      </form>
-      <div className="mt-6 flex flex-row justify-between gap-2 px-4">
+        </a>
+        <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" className="m-auto w-full text-center">
+          <Button type="button" variant={"default"} className="m-auto mt-2 w-[90%] text-center">
+            {t("buyWithEurOnCoingarage")}
+          </Button>
+        </a>
+      </div>
+      {/* <div className="mt-6 flex flex-row justify-between gap-2 px-4">
         <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
           <a
             href="https://trade.coingarage.io/exchange/GARA-EUR"
@@ -359,14 +325,7 @@ export function BuyGara({ className }: { className?: string }) {
             {t("linkGoToLaunchapad")}
           </a>
         </Button>
-      </div>
-      <p className="mt-4 flex flex-row items-center justify-center">
-        <span className="leading-none">{t("poweredBy")}</span>
-        <span className="ml-2 inline-flex items-center">
-          <Polygon className="fill-black dark:fill-white" width="84" height="16" />
-          {/* <Image src="/icons/polygon.svg" width="84" height="16" alt="Polygon" /> */}
-        </span>
-      </p>
+      </div> */}
     </section>
   )
 }

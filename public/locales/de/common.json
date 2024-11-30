@@ -848,6 +848,7 @@
         "subscribe": "Abonnieren"
     },
     "GARA": {
+        
         "main": {
             "header": "GARAGE Coin <span>GARA</span>",
             "text1": "Es ist das Token unserer Coingarage-Börse, das uns hilft, unser Börsen-Ökosystem zu entwickeln. Dieses Token wurde mit einem festen Maximum von nur 900 Millionen Einheiten erstellt, und es kann nicht erhöht werden.",
@@ -859,9 +860,12 @@
                 "soldTokens": "Verkaufte Tokens",
                 "btnConnectWallet": "Wallet verbinden",
                 "btnBuyGARA": "GARA kaufen",
+                "btnHelpGarry": "Kaufe GARA und hilf Gary",
+                "buyWithEurOnCoingarage": "Kaufe mit EUR auf Coingarage",
                 "buyWith": "Kaufen mit",
                 "linkGoToLaunchapad": "Kaufen Sie auf Coingarage",
                 "poweredBy": "Angetrieben von"
+                
             }
         },
         "usage": {
@@ -871,17 +875,17 @@
             "usage3": "Erforderliches Gas für Transfers",
             "usage4": "Erfolgsgebühr",
             "usage5": "Abhebungsgebühr",
-            "usage6": "Gasgebühr für EEZY Trader",
+            "usage6": "Gasgebühr für Apps",
             "usage7": "Kaufgebühren",
             "usage8": "Werbung"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Aktuelle Rendite von 30% p.a.",
+            "subHeader": "Aktuelle Rendite von 35% p.a.",
             "text1": "Parken Sie Ihre gekauften Garage Coins (GARA) in unserem Einzahlungsprogramm und lassen Sie sie wachsen. Wir zahlen täglich Zinsen auf Ihre eingezahlten GARA auf Ihr Coingarage-Konto. Sie müssen sich um nichts kümmern, alles ist vollständig automatisiert.",
-            "text2": "Jetzt ein Einführungsangebot <span>nur bis 27.10.2024, mit einem festen Zinssatz von 30% p.a.</span> für die gesamte Staking-Periode. Nutzen Sie diese einzigartige Gelegenheit und lassen Sie Ihr GARA wachsen.",
+            "text2": "Jetzt ein Einführungsangebot <span>nur bis 28.2.2025, mit einem festen Zinssatz von 35% p.a.</span> für die gesamte Staking-Periode. Nutzen Sie diese einzigartige Gelegenheit und lassen Sie Ihr GARA wachsen.",
             "timer": {
-                "header": "ZEIT BIS ZUM ENDE DES ANGEBOTS",
+                "header": "Es verbleibt bis zum Ende der 1. runde",
                 "day": "TAGE",
                 "hours": "STUNDEN",
                 "minutes": "MINUTEN",

@@ -87,7 +87,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <Button variant="link" className="!px-0 font-heading text-xl text-primary" asChild>
             <a
               // @ts-ignore
-              href="https://graceful-hope-03323ffb1e.media.strapiapp.com/Whitepaper_4d17d687d2.pdf"
+              href="/GaraWhitePaper.pdf"
               target="_blank"
               rel="noopener"
             >
@@ -308,9 +308,22 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </ul>
           </div>
           <div className="flex w-full justify-center">
-            <Button variant="default" className="min-w-[200px]" asChild>
-              <Link href="/gara-coin/buy">{t("roadmap.btnBuyGARA")}</Link>
-            </Button>
+            <div className="m-auto mt-8 items-center gap-2 md:flex">
+              <a href="https://helpgary.com" target="_blank" className="m-auto w-full text-center">
+                <Button type="button" variant={"outlinePrimary"} className="m-auto w-full text-center">
+                  {t("main.buyGARA.btnHelpGarry")}
+                </Button>
+              </a>
+              <a
+                href="https://trade.coingarage.io/exchange/GARA-EUR"
+                target="_blank"
+                className="m-auto w-full text-center"
+              >
+                <Button type="button" variant={"default"} className="m-auto mt-2 w-full text-center md:mt-0">
+                  {t("main.buyGARA.buyWithEurOnCoingarage")}
+                </Button>
+              </a>
+            </div>
           </div>
         </section>
       </div>
@@ -320,14 +333,17 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <p className="mt-12 w-full text-center font-heading text-sm font-bold">{t("alocation.limit")}</p>
         <div className="mx-4 mt-20 bg-tertiary/10 p-6 dark:bg-tertiary/20 md:p-12 lg:mx-10">
           <div className="flex flex-row justify-between gap-6">
-            <div>
+            <div className="">
               <h2 className="mb-6 hidden font-heading text-3xl font-bold lg:block">
-                {t("release.header")} <span className="ml-4 text-xl text-primary">{t("release.subHeader")}</span>
+                {t("release.header")} <span className="ml-10 text-xl text-primary">{t("release.subHeader")}</span>
               </h2>
               <h2 className="mb-6 flex flex-col font-heading text-3xl font-bold lg:hidden">
                 <span className="text-xl text-primary">{t("release.subHeader")}</span>
                 {t("release.header")}
               </h2>
+              <a className="mb-6  text-lg text-primary underline" target="_blank" href="https://www.pinksale.finance/">
+                Locked by Pinksale
+              </a>
             </div>
             <div className="mr-6 hidden lg:flex">
               {/* <Image src="/images/gara-coin/present.svg" alt="" width="100" height="104" /> */}
@@ -394,15 +410,21 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <Image src="/images/gara-coin/3DGARA.png" alt="" width="110" height="121" quality="100" />
               <h2 className="text-center font-heading text-2xl font-bold">{t("IEO.box.address")}</h2>
               <PolygonAddressCopyToClipboard />
-              <div className="flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap lg:justify-between lg:gap-8">
-                <Button variant="default" className="min-w-[200px]" asChild>
-                  <Link href="/gara-coin/buy">{t("IEO.box.btnBuyWithUSDT")}</Link>
-                </Button>
-                <Button variant="default" className="min-w-[200px]" asChild>
-                  <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
-                    {t("main.buyGARA.buyWith")} EUR
-                  </a>
-                </Button>
+              <div className="m-auto mt-8 items-center gap-2 md:flex">
+                <a href="https://helpgary.com" target="_blank" className="m-auto w-full text-center">
+                  <Button type="button" variant={"outlinePrimary"} className="m-auto w-full text-center">
+                    {t("main.buyGARA.btnHelpGarry")}
+                  </Button>
+                </a>
+                <a
+                  href="https://trade.coingarage.io/exchange/GARA-EUR"
+                  target="_blank"
+                  className="m-auto w-full text-center"
+                >
+                  <Button type="button" variant={"default"} className="m-auto mt-2 w-full text-center md:mt-0">
+                    {t("main.buyGARA.buyWithEurOnCoingarage")}
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
