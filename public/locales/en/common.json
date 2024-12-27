@@ -869,9 +869,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Current return up to 35% p.a.",
+            "subHeader": "Current return up to 30% p.a.",
             "text1": "Park your purchased Garage coins (GARA) in our Deposit program and let them grow. We regularly pay interest on your deposited GARA to your Coingarage account every day. You don’t have to worry about anything, everything is fully automatic.",
-            "text2": "Now an introductory offer <span>only until 28.2.2025, with a fixed interest rate of 35% p.a.</span> for the entire staking period. Take advantage of this unique opportunity and let your GARA grow.",
+            "text2": "Now an introductory offer <span>only until 28.2.2025, with a fixed interest rate of 30% p.a.</span> for the entire staking period. Take advantage of this unique opportunity and let your GARA grow.",
             "timer": {
                 "header": "Time left until the 1st round ends",
                 "day": "DAYS",
@@ -920,13 +920,13 @@
             "text12": "Crypto card and cash back in GARA"
         },
         "alocation": {
-            "header": "Alokace",
+            "header": "Alokacation",
             "rewards": {
                 "text": "11% (99M GARA)",
                 "subText": "Stake rewards"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Company"
             },
             "baseTeam": {
@@ -954,6 +954,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "GARA in OTC form after admission",
                 "subText1": "to trading on the issuer's trading platform"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "For launchpads",
+                "subText1": "on centralized exchanges"
             },
             "limit": "The limit of 900 million GARA has been set and will never increase."
         },
@@ -984,9 +989,10 @@
         },
         "IEO": {
             "header": "IEO Public Presale",
-            "text1": "40% of the funds raised from the GARA presale will be used to build and improve the Coingarage platform in accordance with the business plan.",
-            "text2": "Another 40% will be used for marketing and building the Coingarage brand to ensure the exchange grows quickly and attracts as many users as possible. These users will utilize Coingarage's services and tools, paying with GARA, thus increasing its usage and accelerating its burn rate.",
-            "text3": "The remaining 20% of the funds raised will be kept in reserve for unexpected situations.",
+            "text1": "40% of the funds raised will be used to build the platform Coingarage in accordance with the business plan, i.e. primarily the further development of the platform, the implementation of new tools, features and services and the costs associated with the operation exchange.",
+            "text2": "30% will be used for Marketing - building the Coingarage brand. Promotion will be ongoing so that Coingarage gains popularity and attracts sufficient number of investors and users.",
+            "text3": "20% will be used for liquidity.",
+            "text4": "10% will be kept in reserve in case of an emergency.",
             "box": {
                 "address": "Contract Address",
                 "btnBuyWithUSDT": "Buy with USDT",

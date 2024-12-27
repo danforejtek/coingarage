@@ -871,9 +871,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimiento actual del 35% anual",
+            "subHeader": "Rendimiento actual del 30% anual",
             "text1": "Estaciona tus monedas Garage compradas (GARA) en nuestro programa de Depósito y déjalas crecer. Pagamos intereses regularmente en tu GARA depositada a tu cuenta de Coingarage cada día. No tienes que preocuparte por nada, todo es completamente automático.",
-            "text2": "Ahora oferta introductoria <span>solo hasta el 28.2.2025, con una tasa de interés fija del 35% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
+            "text2": "Ahora oferta introductoria <span>solo hasta el 28.2.2025, con una tasa de interés fija del 30% anual</span> durante todo el período de staking. Aprovecha esta oportunidad única y deja que tu GARA crezca.",
             "timer": {
                 "header": "TIEMPO RESTANTE HASTA EL FIN DE LA OFERTA",
                 "day": "DÍAS",
@@ -928,7 +928,7 @@
                 "subText": "Recompensa por staking"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Empresa"
             },
             "baseTeam": {
@@ -956,6 +956,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "GARA en forma OTC tras la admisión ",
                 "subText1": "a la negociación en la plataforma del emisor"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "Para launchpads",
+                "subText1": "en intercambios centralizados"
             },
             "limit": " Se ha fijado un límite de 900 millones de GARA, que nunca se incrementará."
         },
@@ -986,9 +991,10 @@
         },
         "IEO": {
             "header": "Preventa pública de IEO",
-            "text1": "El 40% de los fondos recaudados en la preventa de GARA se utilizarán para construir y mejorar la plataforma Coingarage de acuerdo con el plan de negocios.",
-            "text2": "Otro 40% se utilizará para marketing y construcción de la marca Coingarage para asegurar que el intercambio crezca rápidamente y atraiga a la mayor cantidad de usuarios posible. Estos usuarios utilizarán los servicios y herramientas de Coingarage, pagando con GARA, aumentando así su uso y acelerando su tasa de quema.",
-            "text3": "El 20% restante de los fondos recaudados se mantendrá en reserva para situaciones imprevistas.",
+            "text1": "El 40 % de los fondos recaudados se utilizará para construir la plataforma Coingarage de acuerdo con el plan de negocios, es decir, principalmente para el desarrollo adicional de la plataforma, la implementación de nuevas herramientas, funciones y servicios, y los costos asociados con la operación del intercambio.",
+            "text2": "El 30 % se utilizará para marketing: construir la marca Coingarage. La promoción será continua para que Coingarage gane popularidad y atraiga a un número suficiente de inversores y usuarios.",
+            "text3": "El 20 % se utilizará para liquidez.",
+            "text4": "El 10 % se mantendrá en reserva en caso de emergencia.",
             "box": {
                 "address": "Dirección del contrato",
                 "btnBuyWithUSDT": "Comprar con USDT",

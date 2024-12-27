@@ -868,9 +868,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimento attuale del 35% p.a.",
+            "subHeader": "Rendimento attuale del 30% p.a.",
             "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
-            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 35% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
             "timer": {
                 "header": "Υπολείπεται χρόνος μέχρι το τέλος του 1ου γύρου",
                 "day": "GIORNI",
@@ -925,7 +925,7 @@
                 "subText": "Ricompensa per lo staking"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Azienda"
             },
             "baseTeam": {
@@ -953,6 +953,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "GARA in forma OTC dopo l'ammissione alla",
                 "subText1": "negoziazione sulla piattaforma di trading dell'emittente"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "Για launchpads",
+                "subText1": "σε κεντρικοποιημένα ανταλλακτήρια"
             },
             "limit": " È fissato un limite di 900 milioni di GARA, che non sarà mai aumentato."
         },
@@ -983,9 +988,10 @@
         },
         "IEO": {
             "header": "Prevendita pubblica IEO",
-            "text1": "Il 40% dei fondi raccolti dalla prevendita di GARA sarà utilizzato per costruire e migliorare la piattaforma Coingarage in conformità con il piano aziendale.",
-            "text2": "Un altro 40% sarà utilizzato per il marketing e la costruzione del marchio Coingarage per garantire che l'exchange cresca rapidamente e attragga il maggior numero possibile di utenti. Questi utenti utilizzeranno i servizi e gli strumenti di Coingarage, pagando con GARA, aumentando così il suo utilizzo e accelerando il suo tasso di burning.",
-            "text3": "Il restante 20% dei fondi raccolti sarà tenuto in riserva per situazioni impreviste.",
+            "text1": "Το 40% των συγκεντρωμένων κεφαλαίων θα χρησιμοποιηθεί για την ανάπτυξη της πλατφόρμας Coingarage σύμφωνα με το επιχειρηματικό σχέδιο, δηλαδή κυρίως για την περαιτέρω ανάπτυξη της πλατφόρμας, την υλοποίηση νέων εργαλείων, λειτουργιών και υπηρεσιών και τα κόστη που σχετίζονται με τη λειτουργία του ανταλλακτηρίου.",
+            "text2": "Το 30% θα χρησιμοποιηθεί για το μάρκετινγκ - την οικοδόμηση του εμπορικού σήματος Coingarage. Η προώθηση θα είναι συνεχής ώστε το Coingarage να αποκτήσει δημοτικότητα και να προσελκύσει επαρκή αριθμό επενδυτών και χρηστών.",
+            "text3": "Το 20% θα χρησιμοποιηθεί για ρευστότητα.",
+            "text4": "Το 10% θα διατηρηθεί ως εφεδρεία για περιπτώσεις έκτακτης ανάγκης.",
             "box": {
                 "address": "Indirizzo del contratto",
                 "btnBuyWithUSDT": "Acquista con USDT",

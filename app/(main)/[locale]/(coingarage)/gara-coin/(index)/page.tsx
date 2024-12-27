@@ -403,6 +403,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <p className="text-md mb-4 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
                 {t("IEO.text3")}
               </p>
+              <p className="text-md mb-4 text-justify text-neutral-800 dark:text-neutral-300 lg:pl-12 lg:text-left">
+                {t("IEO.text4")}
+              </p>
             </div>
           </div>
           <div className="mx-4 md:flex md:justify-end">

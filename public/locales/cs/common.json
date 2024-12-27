@@ -868,9 +868,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Aktuální zhodnocení až 35% p.a.",
+            "subHeader": "Aktuální zhodnocení až 30% p.a.",
             "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
-            "text2": "Nyní zaváděcí akce <span>jen do 28.2.2025, s úrokem 35% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
+            "text2": "Nyní zaváděcí akce <span>jen do 28.2.2025, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
             "timer": {
                 "header": "Do konce 1. kola zbývá ",
                 "day": "DNÍ",
@@ -926,7 +926,7 @@
                 "subText": "Odměna za stakování"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Společnost"
             },
             "baseTeam": {
@@ -954,6 +954,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "GARA v mimoburzovní formě po přijetí",
                 "subText1": "k obchodování na obchodní platformě emitenta"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "Pro launchpady",
+                "subText1": "na centralizovaných burzách"
             },
             "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
         },
@@ -984,9 +989,10 @@
         },
         "IEO": {
             "header": "IEO Veřejný předprodej",
-            "text1": "40% vybraných finančních prostředků z předprodeje GARA bude použito na budování a vylepšení platformy Coingarage v souladu s bussiness plánem.",
-            "text2": "Dalších 40% bude použito na marketing a budování značky Coingarage tak, aby burza co nejrychleji rostla a získala si co nejvíce uživatelů, kteří budou využívat služby a nástroje Coingarage a k jejich fungování využívat GARU, a tím zvyšovat její využití a urychlovat tak spalování. ",
-            "text3": "Zbylých 20% z vybraných prostředků bude ponecháno v rezervě pro neočekávané situace.",
+            "text1": "40 % získaných prostředků bude použito na vybudování platformy Coingarage v souladu s obchodním plánem, tj. především na další rozvoj platformy, implementaci nových nástrojů, funkcí a služeb a náklady spojené s provozem burzy.",
+            "text2": "30 % bude použito na marketing - budování značky Coingarage. Propagace bude probíhat průběžně, aby Coingarage získal popularitu a přilákal dostatečný počet investorů a uživatelů.",
+            "text3": "20 % bude použito na likviditu.",
+            "text4": "10 % bude ponecháno jako rezerva pro případ nouze.",
             "box": {
                 "address": "Adresa Kontraktu",
                 "btnBuyWithUSDT": "Nakoupit za USDT",

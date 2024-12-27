@@ -24,7 +24,7 @@ export function AlocationChart() {
         label: t("company.text"),
         description: t("company.subText"),
         color: "hsl(var(--chart-2))",
-        value: 198,
+        value: 180,
       },
       3: {
         label: t("baseTeam.text"),
@@ -63,6 +63,13 @@ export function AlocationChart() {
         description2: t("nonExchange.subText1"),
         color: "hsl(var(--chart-8))",
         value: 90,
+      },
+      9: {
+        label: t("launchpads.text"),
+        description: t("launchpads.subText"),
+        description2: t("launchpads.subText1"),
+        color: "hsl(var(--chart-9))",
+        value: 18,
       },
     }
   }, []) satisfies ChartConfig

@@ -881,9 +881,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Aktuelle Rendite von 35% p.a.",
+            "subHeader": "Aktuelle Rendite von 30% p.a.",
             "text1": "Parken Sie Ihre gekauften Garage Coins (GARA) in unserem Einzahlungsprogramm und lassen Sie sie wachsen. Wir zahlen täglich Zinsen auf Ihre eingezahlten GARA auf Ihr Coingarage-Konto. Sie müssen sich um nichts kümmern, alles ist vollständig automatisiert.",
-            "text2": "Jetzt ein Einführungsangebot <span>nur bis 28.2.2025, mit einem festen Zinssatz von 35% p.a.</span> für die gesamte Staking-Periode. Nutzen Sie diese einzigartige Gelegenheit und lassen Sie Ihr GARA wachsen.",
+            "text2": "Jetzt ein Einführungsangebot <span>nur bis 28.2.2025, mit einem festen Zinssatz von 30% p.a.</span> für die gesamte Staking-Periode. Nutzen Sie diese einzigartige Gelegenheit und lassen Sie Ihr GARA wachsen.",
             "timer": {
                 "header": "Es verbleibt bis zum Ende der 1. runde",
                 "day": "TAGE",
@@ -938,7 +938,7 @@
                 "subText": "Staking-Belohnung"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Unternehmen"
             },
             "baseTeam": {
@@ -966,6 +966,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "GARA in OTC-Form nach der Zulassung zum Handel",
                 "subText1": "auf der Handelsplattform des Emittenten"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "Für Launchpads",
+                "subText1": "auf zentralisierten Börsen"
             },
             "limit": " Es gibt ein Limit von 900 Millionen GARA, das nie erhöht wird."
         },
@@ -996,9 +1001,10 @@
         },
         "IEO": {
             "header": "Öffentlicher IEO-Vorverkauf",
-            "text1": "40% der Mittel, die aus dem GARA-Vorverkauf aufgebracht werden, werden verwendet, um die Coingarage-Plattform gemäß dem Geschäftsplan zu bauen und zu verbessern.",
-            "text2": "Weitere 40% werden für Marketing und Markenbildung der Coingarage verwendet, um sicherzustellen, dass die Börse schnell wächst und so viele Nutzer wie möglich anzieht. Diese Nutzer werden die Dienste und Werkzeuge von Coingarage nutzen und mit GARA bezahlen, wodurch die Nutzung erhöht und die Verbrennungsrate beschleunigt wird.",
-            "text3": "Die verbleibenden 20% der aufgebrachten Mittel werden als Reserve für unerwartete Situationen aufbewahrt.",
+            "text1": "40 % der gesammelten Mittel werden verwendet, um die Plattform Coingarage gemäß dem Geschäftsplan zu entwickeln, d. h. vor allem für die Weiterentwicklung der Plattform, die Implementierung neuer Tools, Funktionen und Dienstleistungen sowie die mit dem Betrieb der Börse verbundenen Kosten.",
+            "text2": "30 % werden für Marketing verwendet - zum Aufbau der Marke Coingarage. Die Promotion wird fortlaufend erfolgen, damit Coingarage an Popularität gewinnt und eine ausreichende Anzahl von Investoren und Nutzern anzieht.",
+            "text3": "20 % werden für die Liquidität verwendet.",
+            "text4": "10 % werden als Reserve für Notfälle zurückgehalten.",
             "box": {
                 "address": "Vertragsadresse",
                 "btnBuyWithUSDT": "Mit USDT kaufen",

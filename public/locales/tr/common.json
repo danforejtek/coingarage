@@ -869,9 +869,9 @@
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimento attuale del 35% p.a.",
+            "subHeader": "Rendimento attuale del 30% p.a.",
             "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
-            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 35% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
             "timer": {
                 "header": "1. turun bitmesine kalan süre",
                 "day": "GIORNI",
@@ -926,7 +926,7 @@
                 "subText": "Staking ödülü"
             },
             "company": {
-                "text": "22% (198M GARA)",
+                "text": "20% (180M GARA)",
                 "subText": "Şirket"
             },
             "baseTeam": {
@@ -954,6 +954,11 @@
                 "text": "10% (90M GARA)",
                 "subText": "İhraççının ticaret platformunda",
                 "subText1": "işlem görmeye başladıktan sonra borsadışı formda GARA"
+            },
+            "launchpads": {
+                "text": "2% (18M GARA)",
+                "subText": "Lansman panoları için",
+                "subText1": "merkezi borsalarda"
             },
             "limit": "900 milyon GARA ile sınırlıdır ve bu limit asla artırılmayacaktır."
         },
@@ -984,9 +989,10 @@
         },
         "IEO": {
             "header": "IEO Halka Açık Ön Satış",
-            "text1": "GARA ön satışından elde edilen fonların %40'ı, Coingarage platformunu iş planına uygun olarak inşa etmek ve geliştirmek için kullanılacak.",
-            "text2": "Diğer %40'lık kısım ise borsanın hızla büyümesini ve mümkün olduğunca çok kullanıcı çekmesini sağlamak amacıyla Coingarage markasını pazarlamak ve oluşturmak için kullanılacak. Bu kullanıcılar Coingarage'ın hizmetlerinden ve araçlarından yararlanacak, GARA ile ödeme yapacak, böylece kullanımını artıracak ve yanma oranını hızlandıracak.",
-            "text3": "Toplanan bütçenin kalan %20'lik kısmı beklenmedik durumlara karşı yedek olarak tutulacaktır.",
+            "text1": "Toplanan fonların %40'ı, iş planına uygun olarak Coingarage platformunu oluşturmak için kullanılacaktır, yani öncelikle platformun daha fazla geliştirilmesi, yeni araçlar, özellikler ve hizmetlerin uygulanması ve borsa operasyonuyla ilgili maliyetler için.",
+            "text2": "%30'u pazarlama için kullanılacaktır - Coingarage markasının oluşturulması. Tanıtım, Coingarage'ın popülerlik kazanması ve yeterli sayıda yatırımcı ve kullanıcı çekmesi için sürekli olacaktır.",
+            "text3": "%20'si likidite için kullanılacaktır.",
+            "text4": "Acil durumlarda kullanılmak üzere %10'u yedek olarak tutulacaktır.",
             "box": {
                 "address": "Sözleşme Adresi",
                 "btnBuyWithUSDT": "USDT ile satın al",

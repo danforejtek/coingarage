@@ -302,30 +302,6 @@ export function BuyGara({ className }: { className?: string }) {
           </Button>
         </a>
       </div>
-      {/* <div className="mt-6 flex flex-row justify-between gap-2 px-4">
-        <Button variant="link" size="sm" className="p-0 text-foreground" asChild>
-          <a
-            href="https://trade.coingarage.io/exchange/GARA-EUR"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="flex items-center"
-          >
-            {t("buyWith")}
-            <span className="mx-2 inline-flex">
-              <Image src="/icons/coins/eur.png" width="18" height="18" alt="EUR" />
-            </span>
-            EUR
-          </a>
-        </Button>
-        <div className="flex items-center justify-center">
-          <Arrow className="stroke-black dark:stroke-white" />
-        </div>
-        <Button variant="link" size="sm" className="p-0">
-          <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
-            {t("linkGoToLaunchapad")}
-          </a>
-        </Button>
-      </div> */}
     </section>
   )
 }
