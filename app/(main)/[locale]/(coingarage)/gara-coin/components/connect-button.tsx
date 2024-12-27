@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "./button"
 import { formatAddress } from "@/lib/utils"
 import { ConnectButton as RainbowkitConnectButton } from "@rainbow-me/rainbowkit"
 import { Loader2 } from "lucide-react"
@@ -21,7 +21,12 @@ export const ConnectButton = ({ label, showBalance }) => {
             {(() => {
               if (!connected) {
                 return (
-                  <Button variant="default" onClick={openConnectModal} type="button" className="w-full">
+                  <Button
+                    variant="outlinePrimary"
+                    onClick={openConnectModal}
+                    type="button"
+                    className="h-12 w-full border-none bg-gary-pink text-xl font-bold outline-none hover:bg-gary-pink/80 dark:hover:bg-gary-pink/80"
+                  >
                     {label}
                   </Button>
                 )
@@ -40,6 +45,7 @@ export const ConnectButton = ({ label, showBalance }) => {
                     onClick={openChainModal}
                     style={{ display: "flex", alignItems: "center" }}
                     type="button"
+                    className="text-[#FFAE17]"
                   >
                     {chain.hasIcon && (
                       <div
@@ -59,7 +65,7 @@ export const ConnectButton = ({ label, showBalance }) => {
                     )}
                     {chain.name}
                   </Button>
-                  <Button variant="outline" onClick={openAccountModal} type="button" className="w-full">
+                  <Button variant="outline" onClick={openAccountModal} type="button" className="w-full text-[#FFAE17]">
                     {formatAddress(account.address, 12)}
                     {showBalance ? ` (${account.displayBalance})` : ""}
                   </Button>

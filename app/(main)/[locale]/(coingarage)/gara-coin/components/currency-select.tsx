@@ -7,14 +7,29 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import Image from "next/image"
+import { useAccount } from "wagmi"
 
-const tokens = [
+const ethTokens = [
   { label: "USDT", value: "USDT" },
   { label: "USDC", value: "USDC" },
   { label: "ETH", value: "ETH" },
+  // { label: "SOL", value: "SOL" },
+] as const
+const bnbTokens = [
+  { label: "USDT", value: "USDT" },
+  { label: "USDC", value: "USDC" },
+  { label: "BNB", value: "BNB" },
+  // { label: "SOL", value: "SOL" },
+] as const
+const polTokens = [
+  { label: "USDT", value: "USDT" },
+  { label: "USDC", value: "USDC" },
+  { label: "POL", value: "POL" },
+  // { label: "SOL", value: "SOL" },
 ] as const
 
 export function CurrencySelect({ form }: { form: any }) {
+  const { chain, address } = useAccount()
   return (
     <Form {...form}>
       <FormField
@@ -30,7 +45,7 @@ export function CurrencySelect({ form }: { form: any }) {
                     variant="outline"
                     role="combobox"
                     className={cn(
-                      "!mt-0 h-[48px] w-full justify-between bg-neutral-100 ring-neutral-300 dark:bg-neutral-900 dark:ring-1 dark:ring-neutral-800",
+                      "!mt-0 h-[44px] w-full justify-between rounded-full border-none bg-white dark:bg-secondary font-bold text-gary-blue hover:bg-gary-light-blue",
                       !field.value && "text-muted-foreground"
                     )}
                   >
@@ -41,7 +56,10 @@ export function CurrencySelect({ form }: { form: any }) {
                       height={32}
                       className="mr-1"
                     />
-                    {field.value ? tokens.find((token) => token.value === field.value)?.label : "Select currency"}
+                    {field.value && !address && ethTokens.find((token) => token.value === field.value)?.label}
+                    {field.value && chain?.id === 1 && ethTokens.find((token) => token.value === field.value)?.label}
+                    {field.value && chain?.id === 137 && polTokens.find((token) => token.value === field.value)?.label}
+                    {field.value && chain?.id === 56 && bnbTokens.find((token) => token.value === field.value)?.label}
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </FormControl>
@@ -52,27 +70,105 @@ export function CurrencySelect({ form }: { form: any }) {
                   <CommandList>
                     <CommandEmpty>No coin found.</CommandEmpty>
                     <CommandGroup>
-                      {tokens.map((token) => (
-                        <CommandItem
-                          value={token.label}
-                          key={token.value}
-                          onSelect={() => {
-                            form.setValue("token", token.value)
-                          }}
-                        >
-                          <Check
-                            className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-0")}
-                          />
-                          <Image
-                            src={`/icons/coins/${token.value?.toLowerCase()}.png`}
-                            alt={token.value}
-                            width={20}
-                            height={20}
-                            className="mr-2"
-                          />
-                          {token.label}
-                        </CommandItem>
-                      ))}
+                      {chain?.id === 1 &&
+                        address &&
+                        ethTokens.map((token) => (
+                          <CommandItem
+                            value={token.label}
+                            key={token.value}
+                            onSelect={() => {
+                              form.setValue("token", token.value)
+                            }}
+                            className="text-white"
+                          >
+                            <Check
+                              className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                            />
+
+                            <Image
+                              src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                              alt={token.value}
+                              width={20}
+                              height={20}
+                              className="mr-2"
+                            />
+                            {token.label}
+                          </CommandItem>
+                        ))}
+                      {chain?.id === 137 &&
+                        address &&
+                        polTokens.map((token) => (
+                          <CommandItem
+                            value={token.label}
+                            key={token.value}
+                            onSelect={() => {
+                              form.setValue("token", token.value)
+                            }}
+                            className="text-white"
+                          >
+                            <Check
+                              className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                            />
+
+                            <Image
+                              src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                              alt={token.value}
+                              width={20}
+                              height={20}
+                              className="mr-2"
+                            />
+                            {token.label}
+                          </CommandItem>
+                        ))}
+                      {chain?.id === 56 &&
+                        address &&
+                        bnbTokens.map((token) => (
+                          <CommandItem
+                            value={token.label}
+                            key={token.value}
+                            onSelect={() => {
+                              form.setValue("token", token.value)
+                            }}
+                            className="text-white"
+                          >
+                            <Check
+                              className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                            />
+
+                            <Image
+                              src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                              alt={token.value}
+                              width={20}
+                              height={20}
+                              className="mr-2"
+                            />
+                            {token.label}
+                          </CommandItem>
+                        ))}
+                      {!address &&
+                        ethTokens.map((token) => (
+                          <CommandItem
+                            value={token.label}
+                            key={token.value}
+                            onSelect={() => {
+                              form.setValue("token", token.value)
+                            }}
+                            className="text-white"
+                          >
+                            <Check
+                              className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                            />
+
+                            <Image
+                              src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                              alt={token.value}
+                              width={20}
+                              height={20}
+                              className="mr-2"
+                            />
+                            {token.label}
+                          </CommandItem>
+                        ))}
                     </CommandGroup>
                   </CommandList>
                 </Command>
