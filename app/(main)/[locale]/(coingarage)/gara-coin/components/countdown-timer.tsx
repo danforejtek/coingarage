@@ -105,15 +105,15 @@ const CountdownTimer = ({ className }: { className?: string }) => {
   return (
     <div className={cn("flex items-center justify-center space-x-2", className)}>
       {/* Days */}
-      <div className="flex w-[64px] flex-col items-center rounded-xl bg-gary-blue p-2 font-heading shadow-md">
+      <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">{String(timeLeft.days).padStart(2, "0")}</div>
         <div className="text-xs font-bold texy-black dark:text-white">{t("day")}</div>
       </div>
-
+    
       {/* Hours */}
       <div className="text-xl font-bold text-secondary">:</div>
 
-      <div className="flex w-[64px] flex-col items-center rounded-xl bg-gary-blue p-2 font-heading shadow-md">
+      <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">{String(timeLeft.hours).padStart(2, "0")}</div>
         <div className="text-xs font-bold texy-black dark:text-white">{t("hours")}</div>
       </div>
@@ -121,7 +121,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
       {/* Minutes */}
       <div className="text-xl font-bold text-secondary">:</div>
 
-      <div className="flex w-[64px] flex-col items-center rounded-xl bg-gary-blue p-2 font-heading shadow-md">
+      <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">
           {String(timeLeft.minutes).padStart(2, "0")}
         </div>
@@ -131,7 +131,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
       {/* Seconds */}
       <div className="text-xl font-bold text-secondary">:</div>
 
-      <div className="flex w-[64px] flex-col items-center rounded-xl bg-gary-blue p-2 font-heading shadow-md">
+      <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">
           {String(timeLeft.seconds).padStart(2, "0")}
         </div>

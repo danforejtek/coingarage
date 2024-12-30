@@ -68,7 +68,6 @@ export default function RootLayout({
                     <Button className="mr-2 text-center text-sm leading-none" asChild>
                       <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
                     </Button>
-                    {/* <ModeToggle /> */}
                     <LocaleSwitcher />
                   </div>
                 </div>

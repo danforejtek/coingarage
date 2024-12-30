@@ -62,6 +62,7 @@ const ArrowRight = ({ width = 300 }) => {
 //   de: "https://drive.google.com/file/d/1k1B95gX09dpDdquhW8DJC2eoqHpqzHaD/view",
 // } as const
 
+
 export default function Page({ params: { locale } }: { params: { locale: string } }) {
   // unstable_setRequestLocale(locale)
   // const { theme } = useTheme()

@@ -58,7 +58,6 @@ export default function Header() {
               <Button className="mr-2 text-center text-sm leading-none" variant="violet" asChild>
                 <a href="https://trade.coingarage.io/signup">{t("signUp")}</a>
               </Button>
-              <ModeToggle />
               <LocaleSwitcher />
             </div>
           </div>

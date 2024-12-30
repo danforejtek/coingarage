@@ -34,7 +34,7 @@ export function Providers({ children, locale }: ProvidersProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
         {/* <MetaMaskProvider sdkOptions={sdkOptions}> */}
         {children}
         {/* </MetaMaskProvider> */}

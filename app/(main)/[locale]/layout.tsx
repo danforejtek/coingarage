@@ -55,7 +55,11 @@ export default function RootLayout({
   const isFinance = process.env.FINANCE_DOMAIN === hostname
 
   return (
-    <html lang={locale} className={`${inter.variable} ${sofia_sans.variable}`} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={`${inter.variable} ${sofia_sans.variable} dark`}
+      suppressHydrationWarning
+    >
       <body>
         <Providers>
           <NextIntlClientProvider locale={locale} messages={messages}>

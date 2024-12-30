@@ -118,7 +118,6 @@ const MobileNav = ({ scrolled = false }) => {
         </div>
         <DialogFooter className="h-12 flex-row items-center justify-between">
           <div className="flex flex-row gap-2">
-            <ModeToggle />
             <LocaleSwitcher />
           </div>
           <ul className="flex flex-row items-center justify-center gap-6">

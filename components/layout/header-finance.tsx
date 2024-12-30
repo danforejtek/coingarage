@@ -50,7 +50,6 @@ export default function HeaderFinance({ locale }: { locale: string }) {
               <Button variant="default" className={cn("text-sm mr-2")} asChild>
                 <a href="https://app.coingarage-finance.com/accounts/login">{tMenu("login")}</a>
               </Button>
-              <ModeToggle />
               <LocaleSwitcher isFinance={true} />
             </div>
           </div>

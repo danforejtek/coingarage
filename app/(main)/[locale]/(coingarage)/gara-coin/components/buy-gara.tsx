@@ -1383,7 +1383,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     <section
       id="buy-gara"
       className={cn(
-        "relative w-full max-w-[500px] mx-auto flex-1 rounded-2xl bg-gradient-to-b from-[#FFFFFF] to-[#CFEFFF] dark:from-[#121212] dark:to-secondary p-6 px-5 shadow-md mb-20",
+        "relative w-full max-w-[500px] mx-auto flex-1 rounded-2xl bg-backgroundMuted p-6 px-5 shadow-md mb-20",
         className
       )}
     >
