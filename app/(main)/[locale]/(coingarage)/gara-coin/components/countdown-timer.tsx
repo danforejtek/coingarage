@@ -111,7 +111,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
       </div>
     
       {/* Hours */}
-      <div className="text-xl font-bold text-secondary">:</div>
+      <div className="text-xl font-bold text-white">:</div>
 
       <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">{String(timeLeft.hours).padStart(2, "0")}</div>
@@ -119,7 +119,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
       </div>
 
       {/* Minutes */}
-      <div className="text-xl font-bold text-secondary">:</div>
+      <div className="text-xl font-bold text-white">:</div>
 
       <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">
@@ -129,7 +129,7 @@ const CountdownTimer = ({ className }: { className?: string }) => {
       </div>
 
       {/* Seconds */}
-      <div className="text-xl font-bold text-secondary">:</div>
+      <div className="text-xl font-bold text-white">:</div>
 
       <div className="flex w-[64px] flex-col items-center rounded-xl bg-primary p-2 font-heading shadow-md border border-neutral shadow-md dark:shadow-neutral-800 leading-tight">
         <div className="text-lg font-bold text-gary-yellow">

@@ -4,6 +4,7 @@ import { AlocationChart } from "@/app/(main)/[locale]/(coingarage)/gara-coin/com
 import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara"
 import Heading from "@/components/heading"
 import { Button } from "@/components/ui/button"
+import OurTeam from "../components/our-team"
 import { useTranslations } from "next-intl"
 // import { unstable_setRequestLocale } from "next-intl/server"
 import Image from "next/image"
@@ -100,6 +101,9 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <div className="flex flex-row justify-end">
           <BuyGara />
         </div>
+      </section>
+      <section id="ourteam" className="my-28">
+        <OurTeam />
       </section>
       <section className="container mx-auto mt-16 px-8 py-12">
         <h2 className="mb-12 text-center font-heading text-3xl font-bold">{t("usage.header")}</h2>

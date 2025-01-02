@@ -25,8 +25,8 @@ export function Rounds() {
             <p className="text-lg font-bold leading-none text-white">$0.10</p>
           </div>
         ) : (
-          <div className="flex flex-1 flex-col items-center gap-1 rounded-xl bg-gary-input-blue px-6 py-2 text-center">
-            <p className="text-xs font-bold leading-none text-[#0D1E35]">
+          <div className="flex flex-1 flex-col items-center gap-1 rounded-xl bg-gary-input-blue px-6 py-2 text-center border border-neutral px-6 py-2 text-center shadow-md dark:shadow-neutral-800 leading-tight">
+            <p className="text-xs font-bold leading-none text-white">
               1<sup>st</sup> round
             </p>
             <p className="text-lg font-bold leading-none text-gary-pink">$0.10</p>
@@ -49,7 +49,7 @@ export function Rounds() {
           </div>
         )}
 
-        {Number(calculateRound()) === Number(2) ? (
+        {Number(calculateRound()) === Number(3) ? (
           <div className="flex flex-1 flex-col items-center gap-1 rounded-xl bg-tertiary px-6 py-2 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800">
             <p className="text-xs font-bold leading-none text-white"> 
               3<sup>rd</sup> round
