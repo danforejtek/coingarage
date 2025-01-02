@@ -206,25 +206,25 @@ export default function Page({ params: { locale } }: { params: { locale: string 
           <div className="mb-6 flex flex-1 flex-col items-center md:mb-0">
             <Image src="/images/gara-coin/garaDepo.svg" className="" alt="" width={500} height={479} />
             <div className="my-6 flex flex-col justify-center gap-4 md:gap-4 lg:flex-row">
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center border border-neutral-300/30 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <EasyIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.1")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center border border-neutral-300/30 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <SecureIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.2")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center border border-neutral-300/30 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <EarnIcon className="size-8 stroke-primary stroke-2" />
                 </p>
                 <p className="mt-2 font-heading font-bold">{t("garaDepo.boxes.3")}</p>
               </div>
-              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center leading-tight shadow-md dark:border-neutral-800 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
+              <div className="flex w-full flex-col items-center justify-between rounded-lg border border-neutral-100 bg-background px-2 py-4 text-center border border-neutral-300/30 dark:shadow-neutral-800 md:px-6 lg:w-[130px]">
                 <p className="font-heading text-lg font-bold">
                   <DayIcon className="size-8 stroke-primary stroke-2" />
                 </p>
@@ -257,11 +257,11 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <p className="font-heading text-4xl font-bold">{t("burnMechanism.header")}</p>
               <p className="mt-4">{t("burnMechanism.text1")}</p>
               <div className="my-6 flex flex-row justify-center gap-4 md:gap-8">
-                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center border border-neutral-300/30 lg:w-[220px]">
                   <p className="font-heading text-lg font-bold">{t("burnMechanism.boxes.1.header")}</p>
                   <p className="mt-2 font-heading  text-primary">{t("burnMechanism.boxes.1.text")}</p>
                 </div>
-                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center shadow-md dark:border-neutral-800 dark:shadow-neutral-800 lg:w-[220px]">
+                <div className="flex w-full flex-col items-center justify-center rounded-lg border border-neutral-100 bg-background p-4 text-center border border-neutral-300/30 lg:w-[220px]">
                   <p className="font-heading text-lg font-bold">{t("burnMechanism.boxes.2.header")}</p>
                   <p className="mt-2 font-heading  text-primary">{t("burnMechanism.boxes.2.text")}</p>
                 </div>
