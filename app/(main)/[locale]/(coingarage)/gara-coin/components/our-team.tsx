@@ -47,7 +47,7 @@ export default function OurTeam() {
         {teamMembers.map((member) => (
           <div
             key={member.name}
-            className="bg-secondary p-6 rounded-lg text-center w-64 shadow-lg border border-neutral px-6 py-2 text-center shadow-md dark:shadow-neutral-800 leading-tight"
+            className="p-6 rounded-lg text-center w-64 shadow-lg border border-neutral text-center shadow-md dark:shadow-neutral-800 leading-tight"
           >
             <div className="w-32 h-32 mx-auto mb-4 relative">
               <Image
