@@ -56,11 +56,17 @@ module.exports = {
           DEFAULT: "hsl(var(--violet))",
           foreground: "hsl(var(--violet-foreground))",
         },
+        green: {
+          DEFAULT: "hsl(var(--positive-green))",
+          foreground: "hsl(var(--positive-green))",
+        },        
       },
       borderRadius: {
         lg: `var(--radius)`,
+        xlg: `calc(var(--radius) + 2px)`,
         md: `calc(var(--radius) - 2px)`,
         sm: "calc(var(--radius) - 4px)",
+        circle: "55px",
       },
       fontFamily: {
         sans: ["var(--font-inter)", ...fontFamily.sans],

@@ -11,6 +11,7 @@
         "earn": "Guadagna",
         "becomeAShareholder": "Diventa un Socio Silenzioso",
         "affiliate": "Referente",
+        "btcSavingPlan": "Piano di Risparmio BTC",
         "stake": "Stake",
         "more": "Altro",
         "aboutUs": "Chi Siamo",
@@ -287,6 +288,91 @@
                 "answer3": "Il Dollar-cost averaging (DCA) è una strategia in cui un investitore divide l'importo totale da investire in acquisti periodici di un'attività target per ridurre l'impatto della volatilità sul prezzo complessivo. I principali vantaggi dell'uso del DCA includono la riduzione del rischio associato al tempismo del mercato, potenzialmente abbassando il costo medio per azione nel tempo e promuovendo un comportamento di investimento disciplinato."
             }
         },
+        "BtcSaving":{
+            "whatIsSavingPlan": {
+                "header": "Cos'è un Piano di Risparmio in Bitcoin?",
+                "text": "Un piano di risparmio in Bitcoin è un modo semplice ed efficace per aumentare i tuoi risparmi attraverso investimenti regolari in Bitcoin. Che tu sia nuovo nel mondo delle criptovalute o un investitore esperto, il nostro piano offre una soluzione facile e automatizzata per costruire gradualmente il tuo patrimonio.",
+                "btn": "Inizia a risparmiare",
+                "cards": {
+                    "card1": {
+                        "header": "Approfitta del costo medio",
+                        "text": "Acquisti settimanali, quindicinali o mensili ti rendono meno dipendente dalle fluttuazioni a breve termine del mercato."
+                    },
+                    "card2": {
+                        "header": "Metodi di pagamento semplici",
+                        "text": "Puoi configurare un piano di risparmio personalizzato con Visa, Mastercard o SEPA."
+                    },
+                    "card3": {
+                        "header": "Imposta acquisti aggiuntivi",
+                        "text": "Acquisti aggiuntivi di Bitcoin durante significative diminuzioni del prezzo. In questo modo, acquisti più BTC a un costo inferiore e ottieni rendimenti maggiori in futuro."
+                    },
+                    "card4": {
+                        "header": "Prelievo in qualsiasi momento",
+                        "text": "I tuoi fondi sono direttamente nel tuo wallet. Ciò significa che puoi ritirarli in qualsiasi momento, senza alcun blocco."
+                    }
+                }
+            },
+            "dcaCalculator": {
+                "subheader": "Calcolatore DCA Bitcoin",
+                "header": "Calcola quanto avresti potuto risparmiare"
+            },
+            "whatIsDCA": {
+                "header": "Cos'è la strategia DCA?",
+                "text": "Il Dollar Cost Averaging (DCA) è una strategia di investimento che consiste nell'investire regolarmente la stessa quantità di denaro in un determinato asset, indipendentemente dal prezzo corrente. L'obiettivo di questa strategia è ridurre l'impatto della volatilità sull'investimento complessivo.",
+                "benefits": {
+                    "header": "Vantaggi",
+                    "benefit1": "Riduzione del rischio: Distribuendo l'investimento nel tempo, riduci il rischio di acquistare a un prezzo elevato.",
+                    "benefit2": "Stabilità emotiva: Eviti di cercare di prevedere il mercato, cosa che può essere emotivamente impegnativa e rischiosa.",
+                    "benefit3": "Diversificazione del rischio: Acquisti più unità dell'asset quando i prezzi sono bassi e meno unità quando i prezzi sono alti, mediando così il tuo costo di acquisto."
+                },
+                "regularSaving": {
+                    "header": "Risparmio regolare in Bitcoin (esempio)",
+                    "text": "Acquisti regolari di BTC/CZK tramite il nostro piano di risparmio da 8000 CZK al mese.",
+                    "bought": "Acquistato",
+                    "investedAmount": "Importo investito",
+                    "receivedAmount": "Importo ricevuto",
+                    "totalAmount": "Importo totale",
+                    "percentageCalculation": "Calcolo percentuale"
+                },
+                "dynamicDCA": {
+                    "header": "DCA Dinamico",
+                    "text1": "Basato sulla situazione attuale del mercato, investi di più o di meno, allocando il tuo capitale in modo più efficace durante i cicli di Bitcoin.",
+                    "text2": "Se credi in Bitcoin, non temi di investire importi maggiori durante i ribassi e desideri ottimizzare la tua strategia per ottenere rendimenti maggiori, questa è la scelta giusta per te.",
+                    "text3": "Moltiplicando l'importo investito in un mercato in calo, il tuo prezzo medio di acquisto è garantito a scendere in unità o decimi di percentuali. Soprattutto, investi più denaro nel momento giusto, portando a rendimenti significativamente maggiori."
+                }
+            },
+            "extraDCA": {
+                "header": "Acquisti aggiuntivi nella strategia DCA",
+                "text": "Questa funzione è progettata per aiutarti a massimizzare il valore dei tuoi risparmi. Definisci quanto deve calare il mercato (in percentuale) affinché venga acquistata automaticamente un'altra porzione nella tua posizione. Questa funzione ti consente di sfruttare al meglio la volatilità del mercato e ridurre il prezzo medio di acquisto di BTC il più possibile.",
+                "howItWorks": {
+                    "header": "Come funziona?",
+                    "work1": "Definisci acquisti aggiuntivi: Scegli la percentuale di calo al quale deve essere effettuato un acquisto.",
+                    "work2": "Risposta automatica ai ribassi: Quando il mercato scende sotto il livello impostato, viene acquistata automaticamente un'altra porzione nella tua posizione.",
+                    "work3": "Ottimizzazione del prezzo di acquisto: Acquistando a prezzi più bassi, ottieni un prezzo medio di acquisto più basso per BTC, aumentando il tuo potenziale di guadagno durante la crescita del mercato."
+                },
+                "whyAdvantageous": {
+                    "header": "Perché è vantaggioso?",
+                    "advantageous1": "Prezzo medio di acquisto più basso: Gli acquisti aggiuntivi ti consentono di acquistare di più quando i prezzi sono bassi, riducendo il prezzo medio di acquisto di BTC.",
+                    "advantageous2": "Strategia passiva: Non hai bisogno di monitorare costantemente il mercato; tutto è automatizzato.",
+                    "advantageous3": "Gestione del rischio efficiente: Ti consente di sfruttare al meglio la volatilità e i ribassi del mercato a tuo favore."
+                },
+                "graph": {
+                    "classicDCA": "DCA Classico",
+                    "dcaExtra": "DCA con acquisti aggiuntivi",
+                    "dcaBuy": "Acquisto DCA $100",
+                    "dcaExtraBuy": "Acquisto aggiuntivo",
+                    "weeks": {
+                        "week1": "Settimana 1",
+                        "week2": "Settimana 2",
+                        "week3": "Settimana 3",
+                        "week4": "Settimana 4",
+                        "week5": "Settimana 5"
+                    },
+                    "btn": "Inizia a risparmiare"
+                }
+            }
+        },
+        
         "affiliate": {
             "btnAffiliate": "Inizia subito",
             "main": {

@@ -1,1029 +1,1125 @@
 {
-    "Menu": {
-        "buyCrypto": "Koupit kryptoměny",
-        "depositFiat": "Vložit FIAT",
-        "depositFiatViaSepa": "Vložit FIAT přes SEPA",
-        "trade": "Obchodování",
-        "spotTrading": "Spot obchodování",
-        "launchpad": "Launchpad",
-        "tradingBot": "Trading bot",
-        "convert": "Konvertovat",
-        "earn": "Profitovat",
-        "becomeAShareholder": "Začít Investovat",
-        "affiliate": "Referral",
-        "stake": "Stake",
-        "more": "Více",
-        "aboutUs": "O Nás",
-        "partners": "Partneři",
-        "blog": "Blog",
-        "garageCoinPreSale": "GARAGECoin Pre-Sale",
-        "buyGarageCoin": "Koupit GARAGECoin",
-        "whitepaperEn": "Whitepaper EN",
-        "whitepaperCz": "Whitepaper CZ",
-        "whitepaperDe": "Whitepaper DE",
-        "login": "Přihlásit se",
-        "signUp": "Registrovat se",
-        "radio": "Coingarage FM",
-        "knowledgeBase": "Báze znalostí",
-        "contacts": "Kontakty",
-        "fees": "Obchodní poplatky",
-        "api_docs": "Dokumentace API",
-        "mode": {
-            "light": "Světlý",
-            "dark": "Tmavý",
-            "system": "Systém"
-        }
+  "Menu": {
+    "buyCrypto": "Koupit kryptoměny",
+    "depositFiat": "Vložit FIAT",
+    "depositFiatViaSepa": "Vložit FIAT přes SEPA",
+    "trade": "Obchodování",
+    "spotTrading": "Spot obchodování",
+    "launchpad": "Launchpad",
+    "tradingBot": "Trading bot",
+    "convert": "Konvertovat",
+    "earn": "Profitovat",
+    "becomeAShareholder": "Začít Investovat",
+    "affiliate": "Referral",
+    "btcSavingPlan": "BTC spořící plán",
+    "stake": "Stake",
+    "more": "Více",
+    "aboutUs": "O Nás",
+    "partners": "Partneři",
+    "blog": "Blog",
+    "garageCoinPreSale": "GARAGECoin Pre-Sale",
+    "buyGarageCoin": "Koupit GARAGECoin",
+    "whitepaperEn": "Whitepaper EN",
+    "whitepaperCz": "Whitepaper CZ",
+    "whitepaperDe": "Whitepaper DE",
+    "login": "Přihlásit se",
+    "signUp": "Registrovat se",
+    "radio": "Coingarage FM",
+    "knowledgeBase": "Báze znalostí",
+    "contacts": "Kontakty",
+    "fees": "Obchodní poplatky",
+    "api_docs": "Dokumentace API",
+    "mode": {
+      "light": "Světlý",
+      "dark": "Tmavý",
+      "system": "Systém"
+    }
+  },
+  "CryptoLandingPage": {
+    "nameLine1": "Krypto",
+    "nameLine2": "Jednoduchá a bezpečná",
+    "nameLine3": "Burza",
+    "mainText": "Objevte vyšší úroveň finančního soukromí a svobody než nabízí tradiční bankovní systémy, a to v jednoduchém a bezpečném prostředí naší burzy. Jsme burza se sídlem v srdci Evropské unie. První, kdo představí regulaci, která tady nechá kryptoměnu explodovat!",
+    "register": {
+      "content": "Registrujte se a získejte až 100 USDT odměnu v GARAGECoin (GARA)",
+      "limitedOffer": "Omezená nabídka",
+      "mark": {
+        "option1": "Každý nový uživatel na burze obdrží 10 USDT ve směnárenském tokenu GARA.",
+        "option2": "Každý 50. uživatel obdrží 50 USDT ve směnárenském tokenu GARA.",
+        "option3": "Každý 100. uživatel obdrží 100 USDT ve směnárenském tokenu GARA.",
+        "option4": "Zapojte nového uživatele a obdržíte stejnou odměnu jako každý nový uživatel, kterého jste doporučili."
+      }
     },
-    "CryptoLandingPage": {
-        "nameLine1": "Krypto",
-        "nameLine2": "Jednoduchá a bezpečná",
-        "nameLine3": "Burza",
-        "mainText": "Objevte vyšší úroveň finančního soukromí a svobody než nabízí tradiční bankovní systémy, a to v jednoduchém a bezpečném prostředí naší burzy. Jsme burza se sídlem v srdci Evropské unie. První, kdo představí regulaci, která tady nechá kryptoměnu explodovat!",
-        "register": {
-            "content": "Registrujte se a získejte až 100 USDT odměnu v GARAGECoin (GARA)",
-            "limitedOffer": "Omezená nabídka",
-            "mark": {
-                "option1": "Každý nový uživatel na burze obdrží 10 USDT ve směnárenském tokenu GARA.",
-                "option2": "Každý 50. uživatel obdrží 50 USDT ve směnárenském tokenu GARA.",
-                "option3": "Každý 100. uživatel obdrží 100 USDT ve směnárenském tokenu GARA.",
-                "option4": "Zapojte nového uživatele a obdržíte stejnou odměnu jako každý nový uživatel, kterého jste doporučili."
-            }
+    "signUp": "Registrovat se",
+    "becomeAShareholder": "Stát se Tichým Společníkem",
+    "howToSignUp": "Jak se zaregistrovat?",
+    "scanQrCode": "Naskenujte QR kód",
+    "toDownloadApp": "pro stažení aplikace"
+  },
+  "App": {
+    "name": "Jednoduše, kdykoliv a kdekoli",
+    "text": "Odemkněte sílu globálních finančních trhů přímo z dlaně ruky s mobilní obchodní aplikací Coingarage. Zažijte budoucnost obchodování, kde se rychlost, pohodlí a přesnost setkávají.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "scanQrCode": "Naskenujte QR kód",
+    "toDownloadApp": "pro stažení aplikace"
+  },
+  "CryptoMarket": {
+    "name": "Krypto Market",
+    "currency": "Coin",
+    "price": "Cena",
+    "24hChange": "24h změna",
+    "24hVolume": "24h objem",
+    "marketCap": "Market Cap"
+  },
+  "CryptoStats": {
+    "trending": "Trendující",
+    "topGainers": "Nejlépe vynášející",
+    "recentlyAdded": "Nedávno přidané"
+  },
+  "Statistics": {
+    "icon1": "100 kryptoměn v nabídce",
+    "icon2": "100+ zapojených zemí",
+    "icon3": "12 aktiv pro staking již brzy",
+    "icon4": "Koupit kryptoměny",
+    "icon5": "Vkládat EUR přes SEPA nebo kartou"
+  },
+  "DiscoverMoreProducts": {
+    "name": "Objevte Další Produkty",
+    "eezyTrader": {
+      "name": "EEZY Trader",
+      "text": "Nechte pracovat za vás umělou inteligenci.",
+      "masterTraders": "Mistři Obchodování",
+      "followers": "Sledující",
+      "bestTraders": {
+        "7DROI": "7denní ROI",
+        "7DFollowersPnL": "7denní PnL Sledujících",
+        "copy": "Kopírovat"
+      },
+      "features": {
+        "tradingBot": {
+          "name": "Obchodní Robot",
+          "text": "Roboti Grid a DCA. Strategie Long, Short a další."
         },
-        "signUp": "Registrovat se",
-        "becomeAShareholder": "Stát se Tichým Společníkem",
-        "howToSignUp": "Jak se zaregistrovat?",
-        "scanQrCode": "Naskenujte QR kód",
-        "toDownloadApp": "pro stažení aplikace"
-    },
-    "App": {
-        "name": "Jednoduše, kdykoliv a kdekoli",
-        "text": "Odemkněte sílu globálních finančních trhů přímo z dlaně ruky s mobilní obchodní aplikací Coingarage. Zažijte budoucnost obchodování, kde se rychlost, pohodlí a přesnost setkávají.",
-        "appStore": "App Store",
-        "googlePlay": "Google Play",
-        "scanQrCode": "Naskenujte QR kód",
-        "toDownloadApp": "pro stažení aplikace"
-    },
-    "CryptoMarket": {
-        "name": "Krypto Market",
-        "currency": "Coin",
-        "price": "Cena",
-        "24hChange": "24h změna",
-        "24hVolume": "24h objem",
-        "marketCap": "Market Cap"
-    },
-    "CryptoStats": {
-        "trending": "Trendující",
-        "topGainers": "Nejlépe vynášející",
-        "recentlyAdded": "Nedávno přidané"
-    },
-    "Statistics": {
-        "icon1": "100 kryptoměn v nabídce",
-        "icon2": "100+ zapojených zemí",
-        "icon3": "12 aktiv pro staking již brzy",
-        "icon4": "Koupit kryptoměny",
-        "icon5": "Vkládat EUR přes SEPA nebo kartou"
-    },
-    "DiscoverMoreProducts": {
-        "name": "Objevte Další Produkty",
-        "eezyTrader": {
-            "name": "EEZY Trader",
-            "text": "Nechte pracovat za vás umělou inteligenci.",
-            "masterTraders": "Mistři Obchodování",
-            "followers": "Sledující",
-            "bestTraders": {
-                "7DROI": "7denní ROI",
-                "7DFollowersPnL": "7denní PnL Sledujících",
-                "copy": "Kopírovat"
-            },
-            "features": {
-                "tradingBot": {
-                    "name": "Obchodní Robot",
-                    "text": "Roboti Grid a DCA. Strategie Long, Short a další."
-                },
-                "takeProfit": {
-                    "name": "Vzít zisk",
-                    "text": "Nechte růst své kryptoměnové jmění jednoduše, chytře, efektivně."
-                },
-                "copyTrading": {
-                    "name": "Kopírování obchodů",
-                    "text": "Nechte nejlepšího obchodníka pracovat za vás a jen ho kopírujte."
-                },
-                "bargain": {
-                    "name": "Nabídka",
-                    "text": "Nejlepší nabídka na trhu."
-                }
-            }
+        "takeProfit": {
+          "name": "Vzít zisk",
+          "text": "Nechte růst své kryptoměnové jmění jednoduše, chytře, efektivně."
+        },
+        "copyTrading": {
+          "name": "Kopírování obchodů",
+          "text": "Nechte nejlepšího obchodníka pracovat za vás a jen ho kopírujte."
+        },
+        "bargain": {
+          "name": "Nabídka",
+          "text": "Nejlepší nabídka na trhu."
         }
+      }
+    }
+  },
+  "Faq": {
+    "question1": {
+      "question": "Jaký je rozdíl mezi 'Coin' a 'Token'?",
+      "answer": "Coin je kryptoměna, která může operovat nezávisle. Token je kryptoměna, která závisí na jiné kryptoměně jako platformě pro svůj provoz. Podívejte se na náš blog pro více informací."
     },
-    "Faq": {
+    "question2": {
+      "question": "Co je Bitcoin (BTC)?",
+      "answer": "Bitcoin je první kryptoměna vytvořená v roce 2009 Satoshi Nakamotem. Je to decentralizovaná digitální měna, kterou lze posílat od uživatele k uživateli v peer-to-peer síti bitcoinu bez potřeby prostředníků."
+    },
+    "question3": {
+      "question": "Co je USDT Coin (USDT)?",
+      "answer": "Tether (USDT) je kryptoměna s hodnotou, která má odrážet hodnotu amerického dolaru. Cílem bylo vytvořit stabilní kryptoměnu, která může být používána jako digitální dolary. Mince, které slouží k tomuto účelu stabilní náhrady dolaru, se nazývají „stablecoiny“. USDT je nejoblíbenější stabilní coin a dokonce slouží jako náhrada dolaru na mnoha populárních směnárnách!"
+    },
+    "question4": {
+      "question": "Jak mohu koupit kryptoměnu?",
+      "answer": "Můžete koupit kryptoměnu na Coingarage následujícím třemi kroky: 1. Zaregistrujte se na účet Coingarage. 2. Ověřte svůj účet. 3. Vložte EUR nebo jiné podporované kryptoměny. 4. Kupte si své oblíbené kryptoměny."
+    },
+    "question5": {
+      "question": "Jak mohu ověřit svůj osobní účet?",
+      "answer": "Svůj osobní účet můžete ověřit třemi kroky: 1. Přihlaste se do svého účtu Coingarage. 2. Přejděte do nastavení účtu. 3. Klepněte na kartu ověření. 4. Postupujte podle instrukcí a nahrajte požadované dokumenty. 5. Počkejte, až bude váš ověření zpracováno. 6. Začněte obchodovat!"
+    }
+  },
+  "Footer": {
+    "aboutUs": "O nás",
+    "contactUs": "Kontaktujte nás",
+    "fees": "Poplatky",
+    "hotCoins": "Oblíbené coiny",
+    "blog": "Blog",
+    "faqs": "Často kladené otázky",
+    "coinListing": "Zalistovat coin",
+    "markets": "Trhy",
+    "trade": "Obchodování",
+    "buyCrypto": "Koupit kryptoměny",
+    "staking": "Staking",
+    "login": "Přihlásit se",
+    "legal": {
+      "termsOfService": "Obchodní podmínky",
+      "privacyPolicy": "Zásady ochrany osobních údajů",
+      "cookiePolicy": "Zásady používání souborů cookie",
+      "sportTradingTerms": "Podmínky spotového obchodování",
+      "btcSavingPlanTerms": "Podmínky služby BTC Saving Plan",
+      "garaStakeTerms": "Podmínky služby GARA Stake"
+    }
+  },
+  "Contact": {
+    "street": "Revoluční&nbsp;1082/8",
+    "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
+    "postalCode": "110 00",
+    "country": "Prague, Czech Republic",
+    "phone": "+420 778 116 516",
+    "email": "support@coingarage.io",
+    "companyID": "IČ: 11667974"
+  },
+
+  "Affiliate": {
+    "name": "Affiliate program",
+    "claim": "Přidejte se k Coingarage",
+    "text1": "Věříte, že kryptoměny a blockchainová technologie mohou změnit svět k lepšímu?",
+    "text2": "Pokud ano, připojte se k affiliate programu Coingarage a získejte speciální odměny. Představte svým přátelům Coingarage, plně licencovanou kryptoměnovou burzu v srdci Evropy.",
+    "reward": "Můžete získat 3 úrovně odměn"
+  },
+  "AboutUs": {
+    "weAreCoingarage": "Jsme coingarage",
+    "name": "O nás",
+    "text1": "Ne na vzdálených ostrovech v daňových rájích, ale v srdci Evropy byla v <b>Praze</b> založena první kryptoměnová burza, která má plnou licenci na držení a obchodování s kryptoměnami.",
+    "text2": "Veškerá činnost je plně podřízena <b>zákonům EU</b> a dohledu regulátorů a úřadů. Zde si můžete koupit krypto za fiat, držet jej a obchodovat na jedné z nejmodernějších platforem s důrazem na úplnost a jednoduchost",
+    "elements": {
+      "text1": "Klíčovým prvkem naší platformy je jednoduchost.",
+      "text2": "Zde najdete spotové obchodování, ale v budoucnu také Futures",
+      "text3": "Na burze budete moci vydělávat stakingem nejpopulárnějších mincí",
+      "text4": "Také bude možné vyměňovat mince na burze pomocí principu P2P",
+      "text5": "Na jednom místě si můžete koupit krypto za fiat měnu prostřednictvím své debetní karty nebo převodem ze svého účtu, poté jej zde můžete držet a obchodovat s ním.",
+      "text6": "Od ledna roku 2024 budete moci využít naše profesionální obchodní DCA, GRID, Futures Boots s umělou inteligencí pro obchody",
+      "text7": "Naše burza také nabídne vlastní NFT platformu, včetně tržiště",
+      "text8": "Všechny tyto funkce budou doplněny vzdělávacími programy a videi"
+    },
+    "financialWorld": {
+      "name": "Chceme, aby se kryptoměny staly běžnou a respektovanou součástí finančního světa v Evropě.",
+      "text1": "Chceme přispět k adopci kryptoměn v Evropě a nabídnout zcela transparentní a bezpečné prostředí, které je v souladu s právem a předpisy EU.",
+      "text2": "Aby lidé věděli, co mohou od kryptosvěta očekávat a byli si vědomi výhod, ale také rizik tohoto průmyslu. Aby věděli, že investování do krypta není jen krátkodobá spekulace, ale dlouhodobá a smysluplná investice",
+      "text3": "Naše vize je založena na čtyřech základních hodnotách: transparentnost, úplnost, bezpečnost a jednoduchost. Pokud dosáhneme naplnění těchto hodnot v naší vizi, pak budeme na cestě přinést lidem dlouhodobý pravidelný zisk z kryptosvěta.",
+      "text4": ""
+    },
+    "getStarted": "Začít"
+  },
+  "security": {
+    "security": "Zabezpečení burzy",
+    "securityText": "Naše platforma využívá několik nejmodernějších technologií, které zajišťují robustní a efektivní systém. Pro přenos i ukládání dat používáme nejnovější verze šifrování. Používáme také pokročilé ochranné funkce založené na umělé inteligenci, které zajišťují bezpečné prostředí pro naše uživatele.",
+    "protection": "Ochrana zákazníků",
+    "protectionText": "Opatření na ochranu zákazníků společnosti Coingarage jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie na ochranu vašich osobních údajů. Buďte si jisti, že vaše soukromí je naší nejvyšší prioritou.",
+    "fundsSecurity": "Ochrana finančních prostředků",
+    "fundsSecurityText": "Naše ochrana finanční prostředků je vytvořena veterány blockchainového a webového průmyslu. Vytvořili jsme cloudovou platformu nové generace, která prochází hodnocením shody s bezpečnostními předpisy na úrovni bank a vysoce žádanými standardy kvality.",
+    "monitoring": "Monitorování v reálném čase",
+    "monitoringText": "Naše monitorovací systémy v reálném čase aktivně sledují a analyzují aktivity na naší platformě, což nám umožňuje okamžitě odhalit a reagovat na jakékoli podezřelé chování. Tento proaktivní přístup zajišťuje, že vaše aktiva a data jsou pod neustálou ochranou.",
+    "secureByDesign": "Bezpečný by design",
+    "secureByDesignText": "Naše opatření na ochranu soukromí jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie pro ochranu vašich osobních údajů. Můžete si být jisti, že vaše soukromí je naší nejvyšší prioritou.",
+    "heading": "Bezpečný přístav: Kde je standard soukromí, design a monitorování v reálném čase pro váš klid.",
+    "newDesign": "Pracujeme na novem designu",
+    "continueToTrader": "Přejít do EEZY Trader"
+  },
+  "eezy-trader": {
+    "nav": {
+      "knowledgeBase": "Báze Znalostí",
+      "affiliateProgram": "Partnerský Program",
+      "payments": "Platby a předplatné"
+    },
+    "homepage": {
+      "trialBtn": "ZAČÍT 7DNÍ ZDARMA",
+      "main": {
+        "header": "Nejlepší Kryptoměnový Obchodní Robot s Umělou Inteligencí",
+        "noCreditCard": "*Není vyžadována kreditní karta"
+      },
+      "results": {
+        "header": "Realizujte kompletní potenciál vaší obchodní strategie využitím pokročilých schopností kryptoměnového robota EEZY Trader od společnosti Coingarage, což vám umožní dosáhnout maximální obchodní výkonnosti a maximalizovat zisky.",
+        "topPerformers": "Top Výkonnost",
+        "topPairs": "Top Páry",
+        "name": "Jméno",
+        "pair": "Pár"
+      },
+      "trusting": {
+        "subHeader": "Důvěřuje tisícům obchodníků",
+        "header": "Coingarage “Jednoduchá a Bezpečná Burza”",
+        "columns": {
+          "1": "Dlouhá / Krátká",
+          "2": "Obchodní zisk",
+          "3": "DCA/ GRID",
+          "4": "Uložit strategii",
+          "5": "Spuštění pomocí umělé inteligence",
+          "6": "Kopírování obchodů",
+          "7": "100 Párů k obchodu",
+          "8": "Technické ukazatele",
+          "9": "90 Robotů"
+        }
+      },
+      "investment": {
+        "header": "Posaďte se a sledujte růst svých investic do kryptoměn, den i noc, 24/7, kdekoli se právě nacházíte",
+        "free7Days": "Vyzkoušejte zdarma po dobu 7 dnů",
+        "howToConnect": {
+          "register": "Registrovat",
+          "connect": "Připojit",
+          "startTrading": "Začít obchodovat"
+        }
+      },
+      "login": {
+        "header": "<span>Začněte vydělávat s</span><span class='text-violet'>Coingarage Traderem</span><span><span class='text-violet'>Botem</span> dnes</span>",
+        "subText": "Přihlaste se k Coingarage a získejte plně funkční <b>7denní PRO zkušební</b> období, abyste vyzkoušeli všechny pokročilé funkce robota.",
+        "loginForm": {
+          "login": "Přihlásit se",
+          "yourEmail": "Vaše e-mailová adresa",
+          "password": "Heslo",
+          "forgotPassword": "Zapomenuté heslo?",
+          "noAccount": "Nemáte účet? Zaregistrujte se zde"
+        }
+      },
+      "start": {
+        "header": "Spusťte EEZY TRADERA v 5 Jednoduchých Krocích",
+        "subText": "Spusťte svého obchodního robota jednoduše v pěti jednoduchých krocích: zahajte obchodování a optimalizujte své zisky ještě dnes s Coingarage.",
+        "steps": {
+          "1": "Registrovat se na Coingarage",
+          "2": "Přihlásit se na burzu",
+          "3": "Přejděte na Podúčet a vyberte v nabídce EEZY Trader",
+          "4": "Vytvořte strategii",
+          "5": "Spusťte robota a sledujte jeho zisky!"
+        }
+      },
+      "faq": {
+        "question1": "Jak mohu začít s vaší platformou?",
+        "answer1": "Začátek je snadný! Stačí se zaregistrovat, dokončit proces ověření, vložit prostředky na svůj účet a začít obchodovat pomocí naší intuitivní platformy a silných obchodních nástrojů.",
+        "question2": "Jak zajistíte bezpečnost mých prostředků a osobních údajů?",
+        "answer2": "Používáme standardní bezpečnostní opatření, včetně šifrování, dvoufaktorové autentizace (2FA) a pravidelných bezpečnostních auditů, abychom ochránili vaše prostředky a osobní údaje. Kromě toho náš systém dodržuje přísné standardy shody, aby chránil proti neoprávněnému přístupu a podvodným činnostem.",
+        "question3": "Jaké jsou výhody používání DCA?",
+        "answer3": "Dollar-cost averaging (DCA) je strategie, kdy investor rozdělí celkovou částku určenou k investici mezi periodické nákupy cílového aktiva s cílem snížit dopad volatility na celkový nákup. Hlavní výhody používání DCA zahrnují snížení rizika spojeného s časováním trhu, potenciální snížení průměrné ceny akcie v čase a podporu disciplinovaného investování."
+      }
+    },
+    "BtcSaving": {
+      "whatIsSavingPlan": {
+        "header": "Co je bitcoin spořící plán?",
+        "text": "Bitcoinový spořící plán je jednoduchý a efektivní způsob, jak zhodnotit své úspory pravidelnými investicemi do Bitcoinu. Ať už jste v kryptoměnách nováček nebo zkušený investor, náš plán nabízí snadné a automatizované řešení pro postupné budování vašeho bohatství.",
+        "btn": "Začít spořit",
+        "cards": {
+          "card1": {
+            "header": "Využijte efektu průměrování ceny",
+            "text": "Nákup na týdenní, dvoutýdenní nebo měsíční bázi vás činí méně závislými na krátkodobých výkyvech cen."
+          },
+          "card2": {
+            "header": "Jednoduché platební možnosti",
+            "text": "Můžete si nastavit osobní spořicí plán pomocí Visa, Mastercard nebo SEPA."
+          },
+          "card3": {
+            "header": "Nastavení extra dokupu",
+            "text": "Extra dokoupení Bitcoinu při výrazných poklesech ceny. Díky tomu získáte více BTC za nižší cenu a dosáhnete většího zhodnocení v budoucnu."
+          },
+          "card4": {
+            "header": "Možnost výběru kdykoliv",
+            "text": "Vaše peníze jsou přímo ve vaší peněžence. To znamená, že je můžete kdykoliv vybrat a nejste vázáni jejich uzamčením."
+          }
+        }
+      },
+      "whatIsDCA": {
+        "header": "Co to je DCA Strategie ?",
+        "text": "Dollar Cost Averaging (DCA), je investiční strategie, která zahrnuje pravidelné investování stejné částky peněz do určitého aktiva, bez ohledu na jeho aktuální cenu. Cílem této strategie je snížit vliv volatility na celkovou investici.",
+        "benefits": {
+          "header": "Výhody",
+          "benefit1": "Snížení rizika: Tím, že rozložíte investici v čase, snižujete riziko nákupu za vysokou cenu.",
+          "benefit2": "Emocionální stabilita: Vyhýbáte se pokusům načasovat trh, což může být emocionálně náročné a riskantní.",
+          "benefit3": "Rozložení rizika: Koupíte více jednotek aktiva, když je jeho cena nízká, a méně jednotek, když je cena vysoká. Tím se vaše nákupní cena průměruje."
+        },
+        "regularSaving": {
+          "header": "Pravidelné spoření do Bitcoinu (modelový příklad)",
+          "text": "Pravidelný nákup BTC/CZK přes náše spoření za 8000 CZK  měsíčně.",
+          "bought": "Nakoupeno",
+          "investedAmount": "Investovaná částka",
+          "receivedAmount": "Získaná částka",
+          "totalAmount": "Celková hodnota",
+          "percentageCalculation": "Procentuelní výpočet"
+        },
+        "dynamicDCA": {
+          "header": "Dynamická DCA",
+          "text1": "Podle aktuální situace na trhu investuješ více či méně a alokuješ tak lépe svůj kapitál v průběhu bitcoinových cyklů.",
+          "text2": "Pokud jsi o Bitcoinu přesvědčen, nebojíš se investovat větší čístku při cenovém poklesu a chceš strategii optimalizovat k dosažení vyššího zhodnocení, je to pro tebee správná volba",
+          "text3": "Díky pronásobení investované částky v klesajícím trhu se tvá průměrná nákupní cena zaručeně sníží o jednotky až desítky procent, ale hlavně zainvestuješ více peněz v ten správný okamžik, takže tvé výsledné zhodnocení bude o deístky procent vyšší."
+        }
+      },
+      "dcaCalculator": {
+        "subheader": "DCA Bitcoin Kalkulačka",
+        "header": "Spočítejte si zpětně kolik by jste naspořili",
+        "invested": "Investováno",
+        "enterAmount": "Zadejte hodnotu",
+        "frequency": "Frekvence",
+        "weekly": "Týdně",
+        "monthly": "Měsíčně",
+        "dateOpening": "Datum zahájení",
+        "dateClosing": "Datum ukončení",
+        "notice": "Hodnoty jsou vypočítány na základě historických dat bitcoinu a nemusí sedět úplně přesně na $.",
+        "enterAmountCta": "K zobrazení grafu, zadejte částku, co chcete investovat (v USD)",
+        "yourDeposit": "Váš vklad:",
+        "normalSavings": "Výnos na spořícím účtě:",
+        "btcSavings": "Výnos ve spořícím plánu"
+      },
+      "extraDCA": {
+        "header": "Extra dokup v DCA strategii",
+        "text": "Funkce je navržena tak, aby vám pomohla co nejvíce zhodnotit vaše úspory. Nastavte si, o kolik procent musí trh klesnout, aby se automaticky přikoupil další podíl do vaší pozice. Tato funkce vám umožňuje vytěžit z volatility trhu co nejvíce a snížit průměrnou nákupní cenu BTC.",
+        "howItWorks": {
+          "header": "Jak to funguje?",
+          "work1": "Definujete extra dokup: Zvolíte procentuální pokles, při kterém se má provést nákup.",
+          "work2": "Automatická reakce na pokles: Pokud trh spadne pod vámi nastavenou úroveň,  automaticky se nakoupí další část do vaší pozice.",
+          "work3": "Optimalizace nákupní ceny: Díky přikupování za nižší ceny dosáhnete  nižší průměrné nákupní ceny BTC, což zvyšuje váš potenciál zisku při následném růstu trhu."
+        },
+        "whyAdvantageous": {
+          "header": "Proč je to výhodné?",
+          "advantageous1": "Nižší průměrná nákupní cena: Extra dokupy vám umožní nakupovat více, když jsou ceny nízko, což snižuje průměrnou nákupní cenu BTC.",
+          "advantageous2": "Pasivní strategie: Nemusíte trh neustále sledovat, vše je automatické.",
+          "advantageous3": "Efektivní správa rizik: Umožňuje vám lépe využívat volatilitu a poklesy trhu ve svůj prospěch."
+        },
+        "graph": {
+          "classicDCA": "Klasické DCA",
+          "dcaExtra": "DCA s extra dokupy",
+          "dcaBuy": "DCA nákup $100",
+          "dcaExtraBuy": "Extra dokup",
+          "weeks": {
+            "week1": "1. týden",
+            "week2": "2. týden",
+            "week3": "3. týden",
+            "week4": "4. týden",
+            "week5": "5. týden"
+          },
+          "btn": "Začít spořit"
+        }
+      }
+    },
+    "affiliate": {
+      "btnAffiliate": "Začít",
+      "main": {
+        "header1": "Referral program",
+        "header2": "Vydělávejte až 15% z poplatků za každý obchod svých partnerů",
+        "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>"
+      },
+      "getStarted": {
+        "header": "Jak začít",
+        "header1": "Registrovat se do Coingarage",
+        "subText1": "Vytvořte účet na Coingarage, přihlaste se a pak přejděte do sekce Affiliate.",
+        "header2": "Pozvěte své přátele a partnery",
+        "subText2": "Zkopírujte si svůj odkaz na affiliate a pošlete ho svým přátelům nebo partnerům.",
+        "header3": "Užijte si své výdělky",
+        "subText3": "Když si vytvoří účet a začnou obchodovat, získáte své odměny.",
+        "disclaimer": "Budete přesměrováni na přihlašovací stránku. Po přihlášení do svého účtu najdete svůj kód doporučení v Moje -> Doporučení"
+      },
+      "faq": {
+        "question1": "Jak funguje partnerský program?",
+        "answer1": "Jako partner obdržíte jedinečný odkaz nebo kód, který můžete sdílet se svým publikem. Když někdo klikne na váš odkaz nebo použije váš kód k nákupu nebo registraci, získáte provizi ze zisku nebo registrace.",
+        "question2": "Existuje nějaký limit pro to, kolik mohu vydělat prostřednictvím partnerského programu?",
+        "answer2": "Neexistuje žádný limit pro to, kolik můžete vydělat prostřednictvím našeho partnerského programu. Vaše příjmy závisí na počtu doporučení, která generujete, a hodnotě jejich nákupů nebo registrací.",
+        "question3": "Jak mohu sledovat své doporučení a provize?",
+        "answer3": "Náš partnerský program poskytuje přístup k ovládacímu panelu nebo portálu, kde můžete sledovat svá doporučení, monitorovat prodeje nebo registrace a zobrazovat své provizní příjmy v reálném čase.",
+        "question4": "Jaká je provizní struktura pro partnerský program?",
+        "answer4": "Náš partnerský program nabízí víceúrovňovou provizní strukturu s procentuální provizí založenou na úrovni doporučení:",
+        "levels": {
+          "1": "Úroveň 1: 15% provize",
+          "2": "Úroveň 2: 10% provize",
+          "3": "Úroveň 3: 5% provize"
+        }
+      },
+      "setupTradingBot": {
+        "name": "Nevíte Jak Nastavit Obchodního Robota?",
+        "claim": "Žádné Starosti, Vytvořili Jsme Bázi Znalostí",
+        "text1": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
+      },
+      "example": "Příklad",
+      "levels": {
+        "text1": "John je první osobou v řetězci doporučení. Pokud John doporučí Alice, získává 15% z celkové odměny za registraci Alice.",
+        "text2": "Alice je registrována pod Johnem, takže je na druhé úrovni. Pokud Alice doporučí Petera, John (první úroveň) získá 10% z celkové odměny za účet Petera.",
+        "text3": "Peter je registrován pod Alicí, takže je na třetí úrovni. Pokud Peter doporučí dalšího uživatele, John (první úroveň) získá 5% z celkové odměny za nového uživatele registrovaného Peterem."
+      },
+      "disclaimer": "Odměny jsou generovány z poplatků, které platí vaše doporučení."
+    },
+    "subscription": {
+      "btnBuy": "Koupit předplatné",
+      "disclaimer": "Po dokončení registrace si budete moci vybrat plán předplatného.",
+      "header": "Co je to předplatné?",
+      "subText": "Předplatné vám poskytuje přístup k našim službám v plném rozsahu. <b>S předplatným získáte přístup k našemu revolučnímu obchodnímu robotovi</b>, který vám umožní obchodovat na trzích s absolutní lehkostí a efektivitou.",
+      "plans": {
+        "header": "Předplatné",
+        "subText": "Nejste si jisti, zda je naše předplatné pro vás to pravé? Žádný problém! Nabízíme zkušební verzi, kde si můžete vyzkoušet našeho robota a zažít jeho schopnosti na vlastní kůži.",
+        "trial": {
+          "header": "Zkušební verze",
+          "free": "Zdarma",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 10 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit"
+          }
+        },
+        "month": {
+          "mostUsed": "Nejvíce používané",
+          "header": "Základní měsíc",
+          "competitionPrice": "$45/měsíc",
+          "price": "$15/měsíc",
+          "package": {
+            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "1": "Až 50 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "year": {
+          "header": "Základní rok",
+          "competitionPrice": "$384/rok",
+          "price": "$120/rok",
+          "save60": "Ušetříte $60",
+          "package": {
+            "header": "Odemkněte plný potenciál obchodního robota",
+            "1": "Až 99 robotů",
+            "2": "Všechny strategie",
+            "3": "Obchodní terminály",
+            "4": "Trailing Take profit",
+            "5": "Automatické obnovení"
+          }
+        },
+        "fee": "Z každého zisku je odečten úspěšný poplatek ve výši 10 % v EEZY Coin."
+      }
+    }
+  },
+  "knowledgeBase": {
+    "general": {
+      "name": "Obecné",
+      "activation": "Aktivace",
+      "subscription": "Předplatné",
+      "features": "Funkce",
+      "activationYoutubeId": "4LNhJWa-Xg4",
+      "subscriptionYoutubeId": "IZqeJ3ZPQcA",
+      "featuresYoutubeId": "pt561SgW-6s",
+      "introduction": {
+        "name": "Úvod",
+        "overview": {
+          "header": "Přehled",
+          "subText": "Obchodování s boty, také známé jako automatizované obchodování, využívá předprogramovaný software k provádění obchodů za obchodníky. Tato metoda obchodování získala popularitu díky schopnosti provádět obchody rychle a přesně, 24/7, bez potřeby lidského zásahu."
+        },
+        "advantages": {
+          "header": "Výhody",
+          "subText1": "Rychlost: Boti mohou provádět obchody v milisekundách, kteří využívají rychlejších pohybů na trhu než lidský obchodník.",
+          "subText2": "Emoční Nezávislost: Boti obchodují na základě předdefinovaných pravidel a eliminují emoce jako strach a chamtivost, které mohou ovlivnit lidské rozhodování.",
+          "subText3": "24/7 Obchodování: Boti mohou pracovat nepřetržitě, využívat příležitosti na globálních trzích i tehdy, když jsou obchodníci spící nebo offline.",
+          "subText4": "Zpětné Testování a Optimalizace: Obchodníci mohou zpětně testovat strategie botů pomocí historických dat, aby posoudili výkon a optimalizovali strategie pro lepší výsledky.",
+          "subText5": "Diverzifikace: Boti mohou obchodovat současně přes více aktiv, což umožňuje větší diverzifikaci obchodních portfolií."
+        },
+        "conclusion": {
+          "header": "Závěr",
+          "subText": "Toto úvodní schéma poskytuje přehled o obchodování s boty, jejich výhodách, různých typech strategií, úvahách a končí potenciálními výhodami, které si obchodníci mohou odvodit z využívání botů ve svých obchodních aktivitách."
+        }
+      },
+      "slang": {
+        "name": "Slang",
+        "GRID": "Obchodní strategie, která zahrnuje umístění nákupních a prodejních objednávek v předem stanovených cenových intervalech v určeném rozmezí. Cílem grid obchodování je profitovat z cenových fluktuací v nastaveném rozsahu.",
+        "DCA": "Dolarové průměrování (DCA) je investiční strategie, kde investor pravidelně kupuje pevnou částku určité investice bez ohledu na cenu aktiva. Tato strategie si klade za cíl snížit dopad volatility trhu tím, že rozloží nákupní cenu v průběhu času.",
+        "TP": "Take Profit (TP) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k realizaci zisků. Objednávky Take Profit jsou obvykle nastaveny nad aktuální tržní cenou pro dlouhé pozice a pod aktuální tržní cenou pro krátké pozice.",
+        "SL": "Stop Loss (SL) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k omezení potenciálních ztrát. Objednávky Stop Loss jsou obvykle nastaveny pod aktuální tržní cenou pro dlouhé pozice a nad aktuální tržní cenou pro krátké pozice.",
+        "SHORT": "Obchodní pozice, kde obchodník prodává aktivum s očekáváním, že jeho cena klesne. Obchodníci profitují ze short pozic tím, že zpětně nakupují aktivum za nižší cenu, než za jakou je prodali. Zde používejte pouze pro coiny, kterým dlouhodobě věříte a držíte je. Vyděláváte na jejich poklesu USDT, ale pokud je prodáte dříve, než se vrátí na původní cenu, zrealizujete ztrátu.",
+        "LONG": "Obchodní pozice, kde obchodník kupuje aktivum s očekáváním, že jeho cena vzroste. Obchodníci profitují z long pozic tím, že prodávají aktivum za vyšší cenu, než za jakou je koupili.",
+        "START_BY_AI": "Zahájení nebo zahájení obchodních aktivit pomocí algoritmů umělé inteligence (AI) nebo platforem. To může zahrnovat automatizované obchodní strategie, kde AI analyzuje tržní data a provádí obchody na základě předdefinovaných pravidel nebo algoritmů.",
+        "DCA_Auto": "S DCA Auto jsou zavedeny hodnoty vybrané naší burzou, umožňující automatizované provedení nákupů v určených intervalech. To eliminuje potřebu manuálního zásahu, protože platforma automaticky provádí nákupy na základě přednastavených parametrů, umožňujíc investorům akumulaci aktiv v průběhu času bez kontinuálního monitorování.",
+        "GRID_Auto": "S GRID Auto jsou zavedeny hodnoty vybrané naší platformou, usnadňující automatizované provedení obchodů na základě těchto předem stanovených parametrů. To umožňuje obchodníkům kapitalizovat na tržních fluktuacích v určeném rozsahu bez potřeby manuálního zásahu."
+      }
+    },
+    "gridBot": {
+      "gridStrategy": {
+        "name": "Grid Strategie",
+        "strategy": {
+          "subText1": "Strategie GRID představuje základní kámen jak ve světě kryptoměn, tak v oblasti obchodování s forexem. Operuje prostřednictvím odkladů limitních nákupních a prodejních objednávek v předem stanovených cenových intervalech. Rozdělením vybrané cenové oblasti do více úrovní se vytváří síť objednávek, odtud také název strategie GRID.",
+          "subText2": "Naši GRID boti jsou navrženi tak, aby prováděli obchody na základě této strategie, neúnavně generují zisky z pohybů na trhu i tehdy, když neaktivně sledujete své obchody. Každá síť funguje vzájemně: jakmile je dokončena nákupní objednávka, bot okamžitě zahájí prodejní objednávku nad provedenou cenou a naopak. Veškeré vaše obchodní aktivity jsou efektivně řízeny prostřednictvím platformy Bitsgap."
+        },
+        "profit": {
+          "header": "Generování zisků pomocí strategie GRID:",
+          "subText": "Zajímavým aspektem strategie GRID je její schopnost využít přirozených fluktuací cen aktiv. Namísto utrácení nesčetných hodin za detailním studiem grafů pro načasování tržních pohybů, GRID boti provádějí obchody v příhodných okamžicích, nakupují za nízké ceny a prodávají za vysoké ceny. Pravidelně generují zisky bez nutnosti spoléhat se na složité algoritmy, jednoduše dodržují parametry sítě, které nastavíte."
+        },
+        "risk": {
+          "header": "Rizika spojená se strategií GRID:",
+          "subText1": "Automatizace strategie GRID nese v sobě základní rizika, zejména v nepříznivých tržních podmínkách. Neočekávané fluktuace cen mohou významně ovlivnit vaše obchodní výsledky. Pro zajištění vaší investice může být užitečné využít funkce jako Stop Loss nebo Trailing.",
+          "subText2": "Přestože existují rizika, obchodování pomocí sítě představuje jednu z nejjednodušších a osvědčených obchodních metod. V průběhu času má potenciál dosáhnout značných výsledků. Avšak jeho účinnost klesá během silných obratů trendu. Je tedy klíčové rozhodnout, kdy zahájit nebo zastavit provoz vašich botů."
+        }
+      },
+      "setupGridBot": "Nastavení Grid Bota",
+      "customizeGridBot": "Customizace Grid Bota",
+      "setupGridBotYoutubeIdLong": "B43M0fN16Hs",
+      "setupGridBotYoutubeIdShort": "w-2oaeHJEpw"
+    },
+    "dcaBot": {
+      "dcaStrategy": {
+        "name": "DCA Strategie",
+        "strategy": {
+          "subText1": "Strategie DCA (Dollar-Cost Averaging) je široce přijímaný přístup jak v kryptoměnových, tak v forexových obchodních sférách. Spočívá v systematickém nákupu pevného množství aktiva v pravidelných intervalech, bez ohledu na fluktuace jeho ceny. Tato disciplinovaná strategie si klade za cíl snížit dopad volatility trhu na výnosy z investic v průběhu času.",
+          "subText2": "Naši DCA boti jsou pečlivě vytvořeni pro implementaci této strategie, umožňují obchodníkům postupně akumulovat aktiva v průběhu času bez potřeby neustálé manuální intervence. Tyto boti provádějí obchody podle předem stanovených parametrů, usnadňují bezproblémový růst portfolia a řízení rizik."
+        },
+        "profit": {
+          "header": "Generování zisku pomocí strategie DCA:",
+          "subText": "Krása strategie DCA spočívá v její schopnosti využít konceptu průměrování dolů. Tím, že pravidelně nakupují aktiva v pravidelných intervalech, bez ohledu na krátkodobé pohyby cen, umožňují boti DCA obchodníkům akumulovat aktiva za průměrnou cenu v průběhu času. Tento přístup může vést k významným ziskům během období tržní volatility, protože minimalizuje riziko nakupování aktiv za jednu, potenciálně nadhodnocenou cenu."
+        },
+        "risk": {
+          "header": "Rizika spojená se strategií DCA:",
+          "subText": "I když strategie DCA nabízí systematický přístup k investování, není bez rizika. Poklesy na trhu nebo dlouhé období úpadku aktiv mohou ovlivnit celkový výkon strategie. Obchodníci musí také pečlivě zvážit faktory jako je frekvence nákupů a délka investičního horizontu, aby optimalizovali výnosy a účinně řídili riziko."
+        },
+        "conclusion": {
+          "header": "Závěr",
+          "subText": "Strategie DCA poskytuje obchodníkům disciplinovaný a systematický přístup k investování na kryptoměnových a forexových trzích. Díky pravidelnému nákupu aktiv v pravidelných intervalech umožňují boti DCA obchodníkům minimalizovat dopad tržní volatility a potenciálně generovat významné zisky v průběhu času. Nicméně je nezbytné porozumět souvisejícím rizikům a implementovat vhodné strategie řízení rizika pro optimalizaci výkonu a dosažení dlouhodobých investičních cílů."
+        }
+      },
+      "setupDcaBot": {
+        "name": "Nastavení DCA Bota",
+        "started": {
+          "header": "Jak Začít",
+          "subText": "Při spouštění DCA bota máte možnost vybrat obchodní směr a vytvořit buď pozici Long nebo Short."
+        },
+        "long": {
+          "header": "Pozice Long:",
+          "subText1": "V pozici Long se bot zapojuje do nákupních aktivit, s cílem akumulovat zisk v měně kvóty.",
+          "subText2": "Váš bot zahájí pozici nákupem základní měny. Následně umístí DCA (nákupní) objednávky pod tímto obchodem a objednávku Take Profit (prodej) nad ním. Jakmile cena stoupá, váš bot bude prodávat veškerou zakoupenou základní měnu na úrovni Take Profit, čímž vygeneruje zisk. V tomto okamžiku cyklus končí a bot zahájí nový s počátečním investičním obnosem."
+        },
+        "short": {
+          "header": "Pozice Short:",
+          "subtext1": "Naopak v pozici Short se bot pouští do prodejních aktivit, snaží se akumulovat zisk v základní měně.",
+          "subtext2": "Váš bot zahájí pozici prodejem základní měny. Nad tímto obchodem umístí DCA (prodejní) objednávky a objednávku Take Profit (nákup) pod ním. Pokud cena stoupne, bot bude prodávat více základní měny a nakupovat měnu kvóty na úrovních DCA. Naopak, když cena klesá, váš bot znovu nakoupí základní měnu na úrovni Take Profit. Po dokončení cyklu bot zahájí nový s počátečním investičním obnosem základní měny.",
+          "subtext3": "Pro vytvoření a provedení vašeho úvodního DCA bota Long a Short se prosím držte následujících kroků."
+        },
+        "setupDcaBotYoutubeIdLong": "ZBeMML_-dOs",
+        "setupDcaBotYoutubeIdShort": "RFT9a0aL4ME"
+      },
+      "setupDcaStrategy": {
+        "name": "Customizace DCA Strategie"
+      }
+    }
+  },
+  "finance": {
+    "main": {
+      "text1": "Investujte do",
+      "text2": "Nejrychleji rostoucího odvětví",
+      "text3": "Na Světě",
+      "subText": "Trh s digitálními měnami a technologií blockchainu je dnes nejrychleji rostoucím odvětvím. Nyní máte jedinečnou příležitost investovat do této oblasti a stát se tichým společníkem globální kryptoměnové burzy.",
+      "exchangeBtn": "Vstupte na Burzu",
+      "shareholderBtn": "Stát se Tichým Společníkem"
+    },
+    "developement": {
+      "header": "Aktuální vývoj burzy Coingarage",
+      "subtext": "Coingarage je nová evropská kryptoměnová burza založená v roce 2022 a vlastněná podnikatelem Otou Jandou. Po roce příprav a vývoje potřebného softwaru jsme burzu spustili v lednu roku 2023. Od té doby jsme přidali mnoho nových funkcí pro naše uživatele a nadále je rozvíjíme.",
+      "done": "Hotovo",
+      "developement": "Ve vývoji",
+      "planned": "Plánováno",
+      "list": {
+        "box1": "Obchodování 1.0",
+        "box2": "Obchodní Bot",
+        "box3": "Mobilní Aplikace",
+        "box4": "GARA Coin",
+        "box5": "Listování Coinů",
+        "box6": "Doporučení",
+        "box7": "Spoření do Bitcoinu",
+        "box8": "Obchodování v 2.0",
+        "box9": "Akademie",
+        "box10": "Úročení",
+        "box11": "NFT's",
+        "box12": "Krypto Karta"
+      }
+    },
+    "estimatedValuation": {
+      "header": "Odhadovaná hodnota společnosti v roce 2030",
+      "subText": "Pro výpočet hodnoty společnosti používáme reference a příklady ocenění konkurenčních burz po celém světě, kromě toho také uznávaný ukazatel nazývaný EBITDA.",
+      "estimated": {
+        "text1": "2.4B USD",
+        "text2": "Odhadovaná hodnota firmy Coingarage s.r.o. při získání 2.5 milionů uživatelů v průběhu 6ti let.",
+        "investBtn": "Začít Investovat"
+      },
+      "tableHeader": "Valuace Konkurence",
+      "table": {
+        "header": {
+          "column1": "Burza",
+          "column2": "Počet uživatelů",
+          "column3": "Hodnota Firmy"
+        },
+        "rows": {
+          "row1": {
+            "exchange": "Gemini",
+            "users": "2 Miliony",
+            "value": "7 Miliard Dalarů"
+          },
+          "row2": {
+            "exchange": "Kraken",
+            "users": "9 Milionů",
+            "value": "20 Miliard Dalarů"
+          },
+          "row3": {
+            "exchange": "BYBIT",
+            "users": "15 Milionů",
+            "value": "19 Miliard Dalarů"
+          },
+          "row4": {
+            "exchange": "KuCoin",
+            "users": "20 Milionů",
+            "value": "20 Miliard Dalarů"
+          },
+          "row5": {
+            "exchange": "Coinbase",
+            "users": "56 Milionů",
+            "value": "100 Miliard Dalarů"
+          },
+          "row6": {
+            "exchange": "Binance",
+            "users": "120 Milionů",
+            "value": "300 Miliard Dalarů"
+          }
+        }
+      }
+    },
+    "revolution": {
+      "header": "Na které straně této nové technologické revoluce chcete být?",
+      "negativeClaims": {
+        "claim1": {
+          "text": "<grey>2017:</grey> “Kryptoměna prostě není reálná věc, nakonec bude zrušena.”",
+          "name": "Jamie Dimon"
+        },
+        "claim2": {
+          "text": "<grey>1997:</grey> “Neexistuje žádný důvod, proč by kdokoli chtěl mít doma počítač.”",
+          "name": "Ken Olsen, spoluzakladatel Digital Equipment Corporation"
+        },
+        "claim3": {
+          "text": "<grey>1995:</grey> “Předpovídám, že internet brzy spektakulárně vybuchne a v roce 1996 katastrofálně zkolabuje”",
+          "name": "Robert Metcalfe (vynálezce Ethernetu)"
+        },
+        "claim4": {
+          "text": "<grey>1989:</grey> “Nikdy nebudeme schopni vytvořit 32-bit operační systém.”",
+          "name": "Bill Gates, zakladatel Microsoftu"
+        },
+        "claim5": {
+          "text": "<grey>1961:</grey> “Je prakticky nulová šance, že družice pro komunikace budou použity k poskytování lepší telefonní, telegrafní, televizní nebo rozhlasové služby v rámci Spojených států.”",
+          "name": "T.A.M. Craven,  FCC komisař"
+        },
+        "claim6": {
+          "text": "<grey>1946:</grey> “Televize nebude schopna udržet jakýkoli trh, který získá, po prvních šesti měsících. Lidi brzo omrzí  zírat každý večer na dřevěnou krabici.”",
+          "name": "Darryl Zanuck, 20th Century Fox"
+        },
+        "claim7": {
+          "text": "<grey>1903:</grey> “Kůň tu zůstane, automobil je pouze novinka – módní výstřelek.”",
+          "name": "Prezident Michiganské Banky"
+        }
+      },
+      "positiveClaims": {
+        "claim1": {
+          "text": "<primary>Aktualní:</primary> “Struktura Bitcoinu je velmi vynalézavá. Papírové peníze mizí a kryptoměny jsou mnohem lepším způsobem přenosu hodnoty než kus papíru.“",
+          "name": "Elon Mask zakladatel Tesla a SpaceX"
+        },
+        "claim2": {
+          "text": "<primary>Aktualní:</primary> “Ve svém jádru jsou kryptoměny postaveny na principu univerzálního, nezcizitelného účetního knižního záznamu, který je plně veřejný a neustále ověřován těmito výkonnými počítači, kde každý z nich v podstatě jedná nezávisle na ostatních“",
+          "name": "Paul Vigna, reportér The Wall Street Journal"
+        },
+        "claim3": {
+          "text": "<primary>Aktualní:</primary> “Když začnou decentralizované blockchainové protokoly vytlačovat centralizované webové služby, které dominují současnému internetu, začneme vidět skutečnou suverenitu založenou na internetu. Budoucnost internetu bude decentralizovaná.“",
+          "name": "Olaf Carlson-Wee"
+        },
+        "claim4": {
+          "text": "<primary>Aktualní:</primary> “Důvodem, proč jsme všichni v cryptu, je to, že současný finanční systém je zastaralý.“",
+          "name": "Charlie Shrem, Zakladatel & CEO of Bitinstant"
+        },
+        "claim5": {
+          "text": "<primary>Aktualní:</primary> “Blockchain je technologie. Bitcoin je pouze prvním hlavním projevem jejího potenciálu.”",
+          "name": "Marc Kenigsber"
+        },
+        "claim6": {
+          "text": "<primary>Aktualní:</primary> “To, co se děje právě teď, by bylo snem nositele Nobelovy ceny za ekonomii Roberta Mundella: zavést globální měnový systém nepodléhající kontrole žádného jednotlivce.”",
+          "name": "Cathie Wood — Ark Invest CEO"
+        }
+      },
+      "ps": "<bold>PS:</bold> Navzdory kritice Bitcoinu ze strany Jamieho Dimona se postoj JPMorganu změnil, banka nyní působí v oblasti kryptoměn a technologie blockchain. Dokonce vyvinuli vlastní platební systém založený na blockchainu nazvaný JPM Coin"
+    },
+    "oppurtunities": {
+      "header": "Investiční příležitost byla ukončena",
+      "subtext": "Otevřeli jsme první investiční kolo, které je určeno jen pro fyzické osoby. Další kola, která budou následovat, budou už pouze pro investiční společnosti.",
+      "bonuses": "Bonusy k vaší investici",
+      "investment1": "Od 50 000 CZK, získáte *GARA Coin v hodnotě 50% vaší investice.",
+      "investment2": "Od 100 000 CZK, získáte *GARA Coin v hodnotě 100% vaší investice.",
+      "round1": "1.kolo",
+      "money": "141M CZK",
+      "shareholderBtn": "Stát se Tichým Společníkem"
+    },
+    "simpleSteps": {
+      "header": "Investujte jednoduše v 5ti krocích",
+      "subtext": "Coingarage je globální projekt a proto nechceme omezovat investiční příležitosti pouze na jednu zemi nebo region. Ve spolupráci s právními experty a partnery jsme vyvinuli jednoduchý pětikrokový systém, díky kterému může každý investovat pohodlně z domova kdekoli ve světě. Navíc, po vytvoření účtu získá každý investor přístup k naší investiční platformě, kde mohou spravovat svou investici a dostávat nové informace o vývoji projektu.",
+      "box1": "Registrace",
+      "box2": "Osobní Informace",
+      "box3": "KYC",
+      "box4": "Smlouva",
+      "box5": "Platba",
+      "download": "Stáhněte si šablonu smlouvy"
+    },
+    "yourValuation": {
+      "header": "Odhadovaná hodnota vaší investice (modelový příklad)",
+      "investment": "Investice",
+      "table": {
+        "header": {
+          "column1": "Info",
+          "column2": "1.kolo",
+          "column3": "2.kolo",
+          "column4": "3.kolo"
+        },
+        "rows": {
+          "row1": "Podíl na rozděleném zisku:",
+          "row2": "Zisk Coingarage Finance s.r.o.:",
+          "row3": "Zhodnocení:",
+          "row4": "Bude vyplacena celková částka:"
+        },
+        "concluision": "Modelový výpočet vychází z vypočtené hodnoty Coingarage s.r.o. ve výši 2.4 MLD USD Modelový výpočet negarantuje dosažení zvoleného zhodnocení  vkladu a stejně jako každá investice i tato nese značnou míru rizika. Předpokládané zhodnocení bude vypláceno v průběhu let v CZK, EUR nebo USD s exitem v roce 2030."
+      },
+      "table2": {
+        "header": "Chcete získat více informací?",
+        "subtext": "Pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a zodpoví všechny vaše dotazy.",
+        "placeholder1": "Jméno a příjmení",
+        "placeholder2": "Telefonní číslo",
+        "placeholder3": "Email",
+        "consent": "Souhlasím se zpracováním osobních údajů",
+        "sendBtn": "Poslat"
+      },
+      "subheader": "Jak je možné, že dosáhneme tak vysokých investičních výnosů?",
+      "subtext1": "Burza sama s aktivy neobchoduje, peníze vydělává prostřednictvím poplatků za zprostředkování obchodů, převod aktiv a další služby. Není tedy přímo ovlivněna tržními podmínkami a vydělává, ať už cena aktiv stoupá nebo klesá. Kromě toho trh s kryptoměnami nemá jako jiné burzy omezené otevírací hodiny a nezavírá se o víkendech. Obchodování s digitálními měnami probíhá globálně a nepřetržitě 24/7.",
+      "subtext2": "Trh s kryptoměnami je také dnes nejrychleji rostoucím trhem, který průměrně roste o 56,4 % ročně za posledních 6 let. To významně ovlivňuje příliv nového kapitálu a má silný pozitivní vliv na všechny společnosti působící v tomto odvětví. Díky tomu jsme schopni rychle růst a dosáhnout uvedeného zhodnocení 1100 %. Tyto údaje, stejně jako všechny výpočty, které najdete v prezentaci, jsou založeny na současných a historických datech od konkurence a jsou výsledkem standardně používaných ekonomických výpočtů.",
+      "investBtn": "Začít Investovat"
+    },
+    "taxHeavens": {
+      "header": "Ne v daňových rájích, ale přímo v srdci Evropy.",
+      "subtext1": "Většina současných kryptoměnových burz sídlí v daňových rájích a zemích mimo jurisdikci zákonů EU. Naše burza je umístěna přímo v srdci Evropy v České republice a funguje podle místních a evropských zákonů a předpisů upravujících obchodování s kryptoměnami.",
+      "subtext2": "Naším cílem je podílet se na narovnání digitálního trhu s měnami a poskytnout všem uživatelům v Evropě bezpečné a regulované prostředí pro jejich obchody. Proto spolupracujeme s právníky a experty v oblasti regulace kryptoměn a aktivně se připravujeme na novou evropskou regulaci MiCA."
+    },
+    "partnersImages": {
+      "header": "Partneři",
+      "infoBtn": "Kliknětě pro více informací"
+    },
+    "partnersMain": {
+      "partner1": {
+        "header": "Blockchain Legal",
+        "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
+      },
+      "partner2": {
+        "header": "FINROCK GLOBAL LTD",
+        "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
+      },
+      "partner3": {
+        "header": "Simplex by NUVEI",
+        "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
+      },
+      "partner4": {
+        "header": "ZEN",
+        "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
+      },
+      "partner5": {
+        "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
+        "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
+      },
+      "partner6": {
+        "header": "Creative Heroes",
+        "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
+      },
+      "exchangeBtn": "Vstupte na Burzu"
+    },
+    "investorPlatform": {
+      "header": "Náhled investorské platformy",
+      "createAccountBtn": "Založit účet"
+    },
+    "faq": {
+      "header": "Často kladené otázky",
+      "section1": "Obecné otázky",
+      "section2": "Tiché partnerství",
+      "section3": "Vize",
+      "section4": "Ostatní",
+      "generalQuestions": {
         "question1": {
-            "question": "Jaký je rozdíl mezi 'Coin' a 'Token'?",
-            "answer": "Coin je kryptoměna, která může operovat nezávisle. Token je kryptoměna, která závisí na jiné kryptoměně jako platformě pro svůj provoz. Podívejte se na náš blog pro více informací."
+          "text": "Jaká je minimální částka, kterou mohu investovat?",
+          "answer": "Minimální výše investice je stanovena na 10 000 Kč (či ekvivalent v jiné měně) odpovídající 0,00075% podílu z distribuovaného zisku společnosti Coingarage Finance s.r.o."
         },
         "question2": {
-            "question": "Co je Bitcoin (BTC)?",
-            "answer": "Bitcoin je první kryptoměna vytvořená v roce 2009 Satoshi Nakamotem. Je to decentralizovaná digitální měna, kterou lze posílat od uživatele k uživateli v peer-to-peer síti bitcoinu bez potřeby prostředníků."
+          "text": "Co znamená distribuovaný zisk?",
+          "answer": "Distribuovaný zisk je roven 90 % celkového zisku společnosti Coingarage Finance s.r.o. Zbývajících 10 % patří týmu společnosti Coingarage s.r.o."
         },
         "question3": {
-            "question": "Co je USDT Coin (USDT)?",
-            "answer": "Tether (USDT) je kryptoměna s hodnotou, která má odrážet hodnotu amerického dolaru. Cílem bylo vytvořit stabilní kryptoměnu, která může být používána jako digitální dolary. Mince, které slouží k tomuto účelu stabilní náhrady dolaru, se nazývají „stablecoiny“. USDT je nejoblíbenější stabilní coin a dokonce slouží jako náhrada dolaru na mnoha populárních směnárnách!"
+          "text": "Podléhá tento projekt dohledu České národní banky?",
+          "answer": "Tichá společnost se řadí k závazkovým smluvním vztahům. Na předestřený obchodní model a závazkové vztahy se nevztahuje věcná působnost zákona č. 240/2013 Sb., o investičních společnostech a investičních fondech, ve znění pozdějších předpisů (dále jen „ZISIF“), neboť se jedná o činnost spočívající ve shromažďování prostředků za účelem financování obchodních aktivit jiné než finanční povahy, čímž jsou splněny podmínky tzv. rozvojové výjimky dle ustanovení § 2 ZISIF a stejně tak předmětná činnost – nabídka uzavření smlouvy o tiché společnosti – není považována za veřejnou nabídku podle ustanovení § 34 a násl. zákona č. 256/2004 Sb., o podnikání na kapitálovém trhu (dále jen „ZPKT“) a není ani investičním nástrojem ve smyslu ustanovení § 3 ZPKT. S ohledem na výše uvedené popsaná činnost společnosti nepodléhá dohledu ČNB."
         },
         "question4": {
-            "question": "Jak mohu koupit kryptoměnu?",
-            "answer": "Můžete koupit kryptoměnu na Coingarage následujícím třemi kroky: 1. Zaregistrujte se na účet Coingarage. 2. Ověřte svůj účet. 3. Vložte EUR nebo jiné podporované kryptoměny. 4. Kupte si své oblíbené kryptoměny."
+          "text": "Jaká je zamýšlená hodnota společnosti Coingarage s.r.o.?",
+          "answer": "Zamýšlená hodnota společnosti Coingarage s.r.o. je stanovena ke konci roku 2030 ve výši 2.4 mld USD. Výpočet hodnoty společnosti je založený nejen na hodnotě nehmotného majetku, ale využíváme i mezinárodně uznávaný ukazatel EBITDA vynásobený multiplikátorem atraktivnosti a koeficientem konkurence. Zároveň vycházíme z oficiálních údajů o valuaci konkurenčních burz s přihlédnutím ke klíčovým ukazatelům jako jsou počet registrovaných uživatelů objemy obchodů."
         },
         "question5": {
-            "question": "Jak mohu ověřit svůj osobní účet?",
-            "answer": "Svůj osobní účet můžete ověřit třemi kroky: 1. Přihlaste se do svého účtu Coingarage. 2. Přejděte do nastavení účtu. 3. Klepněte na kartu ověření. 4. Postupujte podle instrukcí a nahrajte požadované dokumenty. 5. Počkejte, až bude váš ověření zpracováno. 6. Začněte obchodovat!"
+          "text": "K čemu slouží a co je vlastně Coingarage Finance s.r.o.?",
+          "answer": "Coingarage Finance s.r.o. slouží jako právní jistota toho, že z případného budoucího prodeje společnosti Coingarage s.r.o. budou profitovat i vkladatelé skrze tichého společníka. Kdyby tichý společník vložil finanční prostředky na přímo do Coingarage s.r.o., pak by mu ze zákona nebylo možné vyplatit podíl z případného prodeje společnosti Coingarage s.r.o., ale pouze podíl na zisku společnosti Coingarage s.r.o. při běžném fungování v průběhu roku. Díky tomuto modelu získá tichý společník podíl na zisku a zároveň i podíl z plánovaného prodeje společnosti Coingarage s.r.o."
+        },
+        "question6": {
+          "text": "Budu mít možnost dohledu nad svou investicí?",
+          "answer": "Tichý společník má dohled nad svou investicí skrze naši privátní investorskou platformu, kde uvidí progres plánu vývoje, významné obchodní aktivity, aktuální hodnotu společnosti, informace od CEO a vedení společnosti, účetní dokumenty a přehled novinek ve společnosti Coingarage Finance s.r.o. a Coingarage s.r.o. Dále bude mít možnost přímo přes investorskou interní platformu komunikovat s vedením společnosti."
         }
-    },
-    "Footer": {
-        "aboutUs": "O nás",
-        "contactUs": "Kontaktujte nás",
-        "fees": "Poplatky",
-        "hotCoins": "Oblíbené coiny",
-        "blog": "Blog",
-        "faqs": "Často kladené otázky",
-        "coinListing": "Zalistovat coin",
-        "markets": "Trhy",
-        "trade": "Obchodování",
-        "buyCrypto": "Koupit kryptoměny",
-        "staking": "Staking",
-        "login": "Přihlásit se",
-        "legal": {
-            "termsOfService": "Obchodní podmínky",
-            "privacyPolicy": "Zásady ochrany osobních údajů",
-            "cookiePolicy": "Zásady používání souborů cookie",
-            "sportTradingTerms": "Podmínky spotového obchodování",
-            "btcSavingPlanTerms": "Podmínky služby BTC Saving Plan",
-            "garaStakeTerms": "Podmínky služby GARA Stake"
+      },
+      "silentPartnershipQuestions": {
+        "question1": {
+          "text": "Co dle zákona znamená tichý společník, je to legální?",
+          "answer": "Tichým společníkem může být fyzická nebo právnická osoba, podnikatel či nepodnikatel, která se svým vkladem podílí na podnikání jiné osoby. V mnoha vyspělých zemích světa patří tiché společenství k běžné formě účasti na podnikání jiných osob. V rámci právního řádu České republiky byla tichá společnost nejdříve upravena obchodním zákoníkem (po roce 1989), nicméně od 1. 1. 2014 je její právní úprava zahrnuta v občanském zákoníku. Smlouvou o tiché společnosti se ve smyslu ustanovení § 2747 zákona č. 89/2012 Sb., občanského zákoníku, ve znění pozdějších předpisů, tichý společník zavazuje ke vkladu, kterým se bude podílet po celou dobu trvání tiché společnosti na výsledcích podnikání společnosti, a společnost se zavazuje platit tichému společníkovi podíl na zisku."
+        },
+        "question2": {
+          "text": "Jaká práva a povinnosti má tichý společník?",
+          "answer": "Tichý společník má právo prostřednictvím naší privátní platformy nahlížet do veškerých zveřejněných obchodních dokladů a účetních záznamů společností Coingarage Finance s.r.o. a Coingarage s.r.o.Dále má právo prostřednictvím privátní platformy obdržet stejnopisy každé účetní závěrky, každého přiznání k dani z příjmů včetně příloh k nim a každé zprávy auditora k auditu účetní závěrky společnosti Coingarage Finance s.r.o., které budou vyhotovovány v době či za období působení tichého společníka ve společnosti.Tichý společník má právo na podíl z distribuovaného zisku ve výši, kterou si za svou investici koupil, ke dni vyhotovení účetní závěrky, a také z jakéhokoli dalšího zisku určeného k vyplacení na základě rozhodnutí valné hromady společnosti Coingarage Finance s.r.o.Povinností tichého společníka kromě řádného složení vkladu a mlčenlivosti, je i daňová povinnost z případných příjmů z podílu na zisku, kterou nehradí společnost Coingarage Finance s.r.o., ani je neúčtuje tichému společníkovi a ani je za tichého společníka neplatí."
+        },
+        "question3": {
+          "text": "Jaké výhody má tichý společník oproti jiným typům investování do společností?",
+          "answer": "<ul><li>Podíl na zisku společnosti Coingarage Finance s.r.o. a podíl na zisku z eventuálního prodeje společnosti Coingarage s.r.o., čímž lze dosáhnout vyššího zhodnocení než například u dluhopisů, kde je pevně stanovený procentuální roční výnos.</li><li>Žádné vstupní ani průběžné poplatky, investujete přímo do projektu bez zprostředkovatele.</li><li>Možnost nahlížet do zveřejněných dokumentů týkající se hospodaření společnosti skrze privátní platformu společnosti Coingarage Finance s.r.o.</li><li>Lze vstoupit do projektu hned zkraje vzniku myšlenky, a získat tak mnohonásobně vyšší zhodnocení.</li></ul>"
+        },
+        "question4": {
+          "text": "Jak se mohu stát tichým společníkem?",
+          "answer": "Registrací skrze naši privátní investorskou platformu app.coingarage-finance.com. Tichým společníkem se může stát svéprávný člověk nebo podnikatel, který úspěšně projde procesem verifikace, vloží požadované finanční prostředky do společnosti Coingarage Finance s.r.o. a bude schválen na valné hromadě společnosti Coingarage Finance s.r.o."
+        },
+        "question5": {
+          "text": "Jak probíhá proces verifikace (KYC, AML apod.)?",
+          "answer": "I když nejsme povinnou osobou ve smyslu ustanovení § 2 zákona č. 253/2008 Sb., o některých opatřeních proti legalizaci výnosů z trestné činnosti a financování terorismu, ve znění pozdějších předpisů (dále jen „AML zákon“), tedy že se na nás nevztahují povinnosti týkající se identifikace a kontroly klientů dle AML zákona, přesto pro ochranu naší společnosti, do které chcete investovat, identifikujeme každého tichého společníka pomocí alespoň jednoho dokladu totožnosti a základního prověření (PEP, mezinárodní sankce, negativní zmínky v médiích apod.). Tento úkon pro nás zajišťuje aplikace veriff.com sídlící v Evropské unii, nemusíte se tak o své osobní údaje bát, jelikož společnost GetID Ltd podléhá přísné evropské legislativě včetně GDPR."
+        },
+        "question6": {
+          "text": "Jsou spojeny s vkladem tichého společníka nějaké poplatky?",
+          "answer": "Vše je bez poplatku, investujete přímo do projektu bez zprostředkovatelů. Poplatek může vzniknout pouze v rámci samotné transakce, který si může účtovat Vaše banka či platební brána."
+        },
+        "question7": {
+          "text": "Kdy a za jakých podmínek má tichý společník nárok na podíl z distribuovaného zisku?",
+          "answer": "Nárok na vyplacení zisku vzniká v momentě, kdy to schválí valná hromada společnosti Coingarage Finance s.r.o. a následná výše podílu na zisku odpovídá zakoupenému podílu z distribuovaného zisku. Bližší informace jsou k dispozici v kalkulačce předpokládaného zhodnocneí na hlavní stránce tohoto webu."
+        },
+        "question8": {
+          "text": "Na jak dlouho je smlouva o investici tichého společníka?",
+          "answer": "Smlouva o investici tichého společníka je na dobu 7 let, kdy je předpokládáno, že bude dokončená vývojová fáze, růst firmy Coingarage s.r.o. bude na globální úrovni."
         }
-    },
-    "Contact": {
-        "street": "Revoluční&nbsp;1082/8",
-        "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
-        "postalCode": "110 00",
-        "country": "Prague, Czech Republic",
-        "phone": "+420 778 116 516",
-        "email": "support@coingarage.io",
-        "companyID": "IČ: 11667974"
-    },
-    "Affiliate": {
-        "name": "Affiliate program",
-        "claim": "Přidejte se k Coingarage",
-        "text1": "Věříte, že kryptoměny a blockchainová technologie mohou změnit svět k lepšímu?",
-        "text2": "Pokud ano, připojte se k affiliate programu Coingarage a získejte speciální odměny. Představte svým přátelům Coingarage, plně licencovanou kryptoměnovou burzu v srdci Evropy.",
-        "reward": "Můžete získat 3 úrovně odměn"
-    },
-    "AboutUs": {
-        "weAreCoingarage": "Jsme coingarage",
-        "name": "O nás",
-        "text1": "Ne na vzdálených ostrovech v daňových rájích, ale v srdci Evropy byla v <b>Praze</b> založena první kryptoměnová burza, která má plnou licenci na držení a obchodování s kryptoměnami.",
-        "text2": "Veškerá činnost je plně podřízena <b>zákonům EU</b> a dohledu regulátorů a úřadů. Zde si můžete koupit krypto za fiat, držet jej a obchodovat na jedné z nejmodernějších platforem s důrazem na úplnost a jednoduchost",
-        "elements": {
-            "text1": "Klíčovým prvkem naší platformy je jednoduchost.",
-            "text2": "Zde najdete spotové obchodování, ale v budoucnu také Futures",
-            "text3": "Na burze budete moci vydělávat stakingem nejpopulárnějších mincí",
-            "text4": "Také bude možné vyměňovat mince na burze pomocí principu P2P",
-            "text5": "Na jednom místě si můžete koupit krypto za fiat měnu prostřednictvím své debetní karty nebo převodem ze svého účtu, poté jej zde můžete držet a obchodovat s ním.",
-            "text6": "Od ledna roku 2024 budete moci využít naše profesionální obchodní DCA, GRID, Futures Boots s umělou inteligencí pro obchody",
-            "text7": "Naše burza také nabídne vlastní NFT platformu, včetně tržiště",
-            "text8": "Všechny tyto funkce budou doplněny vzdělávacími programy a videi"
+      },
+      "visionQuestions": {
+        "question1": {
+          "text": "Kdo je Vaše cílová skupina?",
+          "answer": "V Evropě žije cca 480 milionů obyvatel v produktivním věku a pouze 9% - cca 43 milionů z nich má nějaké zkušennosti s cryptem. Oproti Asii, Americe, Africe a latiské Americe je to cca o 16% méně. To znamená, že kromě těchto 43 milionů je zde potenciál minimálně 77 milionů nových lidí, kteří v následujících sedmi letech začnou držet nebo obchodovat crypto."
         },
-        "financialWorld": {
-            "name": "Chceme, aby se kryptoměny staly běžnou a respektovanou součástí finančního světa v Evropě.",
-            "text1": "Chceme přispět k adopci kryptoměn v Evropě a nabídnout zcela transparentní a bezpečné prostředí, které je v souladu s právem a předpisy EU.",
-            "text2": "Aby lidé věděli, co mohou od kryptosvěta očekávat a byli si vědomi výhod, ale také rizik tohoto průmyslu. Aby věděli, že investování do krypta není jen krátkodobá spekulace, ale dlouhodobá a smysluplná investice",
-            "text3": "Naše vize je založena na čtyřech základních hodnotách: transparentnost, úplnost, bezpečnost a jednoduchost. Pokud dosáhneme naplnění těchto hodnot v naší vizi, pak budeme na cestě přinést lidem dlouhodobý pravidelný zisk z kryptosvěta.",
-            "text4": ""
+        "question2": {
+          "text": "Proč zrovna crypto a crypto burza?",
+          "answer": "Technologie blockchainu a na něj navázaných kryptoměn nabízí uživatelům řadu přínosů a má potenciál způsobit revoluci v globálním finančním ekosystému. Věříme, že do roku 2032 se do světového ekosystému digtitálních aktiv zapojí 1 mld lidí a významná část hrubého domácího produktu se bude odehrávat v bitcoinové ekonomice."
         },
-        "getStarted": "Začít"
-    },
-    "security": {
-        "security": "Zabezpečení burzy",
-        "securityText": "Naše platforma využívá několik nejmodernějších technologií, které zajišťují robustní a efektivní systém. Pro přenos i ukládání dat používáme nejnovější verze šifrování. Používáme také pokročilé ochranné funkce založené na umělé inteligenci, které zajišťují bezpečné prostředí pro naše uživatele.",
-        "protection": "Ochrana zákazníků",
-        "protectionText": "Opatření na ochranu zákazníků společnosti Coingarage jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie na ochranu vašich osobních údajů. Buďte si jisti, že vaše soukromí je naší nejvyšší prioritou.",
-        "fundsSecurity": "Ochrana finančních prostředků",
-        "fundsSecurityText": "Naše ochrana finanční prostředků je vytvořena veterány blockchainového a webového průmyslu. Vytvořili jsme cloudovou platformu nové generace, která prochází hodnocením shody s bezpečnostními předpisy na úrovni bank a vysoce žádanými standardy kvality.",
-        "monitoring": "Monitorování v reálném čase",
-        "monitoringText": "Naše monitorovací systémy v reálném čase aktivně sledují a analyzují aktivity na naší platformě, což nám umožňuje okamžitě odhalit a reagovat na jakékoli podezřelé chování. Tento proaktivní přístup zajišťuje, že vaše aktiva a data jsou pod neustálou ochranou.",
-        "secureByDesign": "Bezpečný by design",
-        "secureByDesignText": "Naše opatření na ochranu soukromí jdou nad rámec průmyslových norem a zavádějí důkladné zásady a technologie pro ochranu vašich osobních údajů. Můžete si být jisti, že vaše soukromí je naší nejvyšší prioritou.",
-        "heading": "Bezpečný přístav: Kde je standard soukromí, design a monitorování v reálném čase pro váš klid.",
-        "newDesign": "Pracujeme na novem designu",
-        "continueToTrader": "Přejít do EEZY Trader"
-    },
-    "eezy-trader": {
-        "nav": {
-            "knowledgeBase": "Báze Znalostí",
-            "affiliateProgram": "Partnerský Program",
-            "payments": "Platby a předplatné"
+        "question3": {
+          "text": "Proč burza v Evropě? A proč se chcete soustředít na Evropu?",
+          "answer": "Většina významných burz má dnes sídlo v daňových rájích nebo v zemích, kde není zaručena stoprocentní transparentnost a bezpečnost. Poud zároveň porovnáme procenta lidí, kteří v Evropě přišli do styku s cryptem s jinými kontinenty, vidíme na evropském trhu velkou příležitost."
         },
-        "homepage": {
-            "trialBtn": "ZAČÍT 7DNÍ ZDARMA",
-            "main": {
-                "header": "Nejlepší Kryptoměnový Obchodní Robot s Umělou Inteligencí",
-                "noCreditCard": "*Není vyžadována kreditní karta"
-            },
-            "results": {
-                "header": "Realizujte kompletní potenciál vaší obchodní strategie využitím pokročilých schopností kryptoměnového robota EEZY Trader od společnosti Coingarage, což vám umožní dosáhnout maximální obchodní výkonnosti a maximalizovat zisky.",
-                "topPerformers": "Top Výkonnost",
-                "topPairs": "Top Páry",
-                "name": "Jméno",
-                "pair": "Pár"
-            },
-            "trusting": {
-                "subHeader": "Důvěřuje tisícům obchodníků",
-                "header": "Coingarage “Jednoduchá a Bezpečná Burza”",
-                "columns": {
-                    "1": "Dlouhá / Krátká",
-                    "2": "Obchodní zisk",
-                    "3": "DCA/ GRID",
-                    "4": "Uložit strategii",
-                    "5": "Spuštění pomocí umělé inteligence",
-                    "6": "Kopírování obchodů",
-                    "7": "100 Párů k obchodu",
-                    "8": "Technické ukazatele",
-                    "9": "90 Robotů"
-                }
-            },
-            "investment": {
-                "header": "Posaďte se a sledujte růst svých investic do kryptoměn, den i noc, 24/7, kdekoli se právě nacházíte",
-                "free7Days": "Vyzkoušejte zdarma po dobu 7 dnů",
-                "howToConnect": {
-                    "register": "Registrovat",
-                    "connect": "Připojit",
-                    "startTrading": "Začít obchodovat"
-                }
-            },
-            "login": {
-                "header": "<span>Začněte vydělávat s</span><span class='text-violet'>Coingarage Traderem</span><span><span class='text-violet'>Botem</span> dnes</span>",
-                "subText": "Přihlaste se k Coingarage a získejte plně funkční <b>7denní PRO zkušební</b> období, abyste vyzkoušeli všechny pokročilé funkce robota.",
-                "loginForm": {
-                    "login": "Přihlásit se",
-                    "yourEmail": "Vaše e-mailová adresa",
-                    "password": "Heslo",
-                    "forgotPassword": "Zapomenuté heslo?",
-                    "noAccount": "Nemáte účet? Zaregistrujte se zde"
-                }
-            },
-            "start": {
-                "header": "Spusťte EEZY TRADERA v 5 Jednoduchých Krocích",
-                "subText": "Spusťte svého obchodního robota jednoduše v pěti jednoduchých krocích: zahajte obchodování a optimalizujte své zisky ještě dnes s Coingarage.",
-                "steps": {
-                    "1": "Registrovat se na Coingarage",
-                    "2": "Přihlásit se na burzu",
-                    "3": "Přejděte na Podúčet a vyberte v nabídce EEZY Trader",
-                    "4": "Vytvořte strategii",
-                    "5": "Spusťte robota a sledujte jeho zisky!"
-                }
-            },
-            "faq": {
-                "question1": "Jak mohu začít s vaší platformou?",
-                "answer1": "Začátek je snadný! Stačí se zaregistrovat, dokončit proces ověření, vložit prostředky na svůj účet a začít obchodovat pomocí naší intuitivní platformy a silných obchodních nástrojů.",
-                "question2": "Jak zajistíte bezpečnost mých prostředků a osobních údajů?",
-                "answer2": "Používáme standardní bezpečnostní opatření, včetně šifrování, dvoufaktorové autentizace (2FA) a pravidelných bezpečnostních auditů, abychom ochránili vaše prostředky a osobní údaje. Kromě toho náš systém dodržuje přísné standardy shody, aby chránil proti neoprávněnému přístupu a podvodným činnostem.",
-                "question3": "Jaké jsou výhody používání DCA?",
-                "answer3": "Dollar-cost averaging (DCA) je strategie, kdy investor rozdělí celkovou částku určenou k investici mezi periodické nákupy cílového aktiva s cílem snížit dopad volatility na celkový nákup. Hlavní výhody používání DCA zahrnují snížení rizika spojeného s časováním trhu, potenciální snížení průměrné ceny akcie v čase a podporu disciplinovaného investování."
-            }
+        "question4": {
+          "text": "Jak dosáhnete 10 milionů aktivních uživatelů?",
+          "answer": "Vycházíme již ze zmíněného předpokladu růstu celého crypto světa a zvýšení procenta uživatelů v Evropě na úroveň např. USA a Asie. Zároveň jsme si vědomi naší technologické výhody, kdy na jedné platformě brzy spojíme nabídneme všechny dostupné funkce tohoto odvětví. Důležitou roli hraje také marketing, kdy ve spojení se špičkami v oboru plánujeme mimo běžných nástrojů i celou řadu významných aktivit ve světě sportu, kultury apod."
         },
-        "affiliate": {
-            "btnAffiliate": "Začít",
-            "main": {
-                "header1": "Referral program",
-                "header2": "Vydělávejte až 15% z poplatků za každý obchod svých partnerů",
-                "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>"
-            },
-            "getStarted": {
-                "header": "Jak začít",
-                "header1": "Registrovat se do Coingarage",
-                "subText1": "Vytvořte účet na Coingarage, přihlaste se a pak přejděte do sekce Affiliate.",
-                "header2": "Pozvěte své přátele a partnery",
-                "subText2": "Zkopírujte si svůj odkaz na affiliate a pošlete ho svým přátelům nebo partnerům.",
-                "header3": "Užijte si své výdělky",
-                "subText3": "Když si vytvoří účet a začnou obchodovat, získáte své odměny.",
-                "disclaimer": "Budete přesměrováni na přihlašovací stránku. Po přihlášení do svého účtu najdete svůj kód doporučení v Moje -> Doporučení"
-            },
-            "faq": {
-                "question1": "Jak funguje partnerský program?",
-                "answer1": "Jako partner obdržíte jedinečný odkaz nebo kód, který můžete sdílet se svým publikem. Když někdo klikne na váš odkaz nebo použije váš kód k nákupu nebo registraci, získáte provizi ze zisku nebo registrace.",
-                "question2": "Existuje nějaký limit pro to, kolik mohu vydělat prostřednictvím partnerského programu?",
-                "answer2": "Neexistuje žádný limit pro to, kolik můžete vydělat prostřednictvím našeho partnerského programu. Vaše příjmy závisí na počtu doporučení, která generujete, a hodnotě jejich nákupů nebo registrací.",
-                "question3": "Jak mohu sledovat své doporučení a provize?",
-                "answer3": "Náš partnerský program poskytuje přístup k ovládacímu panelu nebo portálu, kde můžete sledovat svá doporučení, monitorovat prodeje nebo registrace a zobrazovat své provizní příjmy v reálném čase.",
-                "question4": "Jaká je provizní struktura pro partnerský program?",
-                "answer4": "Náš partnerský program nabízí víceúrovňovou provizní strukturu s procentuální provizí založenou na úrovni doporučení:",
-                "levels": {
-                    "1": "Úroveň 1: 15% provize",
-                    "2": "Úroveň 2: 10% provize",
-                    "3": "Úroveň 3: 5% provize"
-                }
-            },
-            "setupTradingBot": {
-                "name": "Nevíte Jak Nastavit Obchodního Robota?",
-                "claim": "Žádné Starosti, Vytvořili Jsme Bázi Znalostí",
-                "text1": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
-            },
-            "example": "Příklad",
-            "levels": {
-                "text1": "John je první osobou v řetězci doporučení. Pokud John doporučí Alice, získává 15% z celkové odměny za registraci Alice.",
-                "text2": "Alice je registrována pod Johnem, takže je na druhé úrovni. Pokud Alice doporučí Petera, John (první úroveň) získá 10% z celkové odměny za účet Petera.",
-                "text3": "Peter je registrován pod Alicí, takže je na třetí úrovni. Pokud Peter doporučí dalšího uživatele, John (první úroveň) získá 5% z celkové odměny za nového uživatele registrovaného Peterem."
-            },
-            "disclaimer": "Odměny jsou generovány z poplatků, které platí vaše doporučení."
+        "question5": {
+          "text": "Jak budete dosahovat průběžných zisků?",
+          "answer": "Není žádným tajemstvím, že klíčovou roli ve vytváření zisků hrají poplatky. Kdykoliv se na naší burze odehraje jakýkoliv obchod nebo transakce mimo vkladu, je toto spojeno s poplatky. Burza tvoří zisk dvacet čtyři hodin denně sedm dní v týdnu."
         },
-        "subscription": {
-            "btnBuy": "Koupit předplatné",
-            "disclaimer": "Po dokončení registrace si budete moci vybrat plán předplatného.",
-            "header": "Co je to předplatné?",
-            "subText": "Předplatné vám poskytuje přístup k našim službám v plném rozsahu. <b>S předplatným získáte přístup k našemu revolučnímu obchodnímu robotovi</b>, který vám umožní obchodovat na trzích s absolutní lehkostí a efektivitou.",
-            "plans": {
-                "header": "Předplatné",
-                "subText": "Nejste si jisti, zda je naše předplatné pro vás to pravé? Žádný problém! Nabízíme zkušební verzi, kde si můžete vyzkoušet našeho robota a zažít jeho schopnosti na vlastní kůži.",
-                "trial": {
-                    "header": "Zkušební verze",
-                    "free": "Zdarma",
-                    "package": {
-                        "header": "Vyzkoušejte a užijte si obchodního robota",
-                        "1": "Až 10 robotů",
-                        "2": "Všechny strategie",
-                        "3": "Obchodní terminály",
-                        "4": "Trailing Take profit"
-                    }
-                },
-                "month": {
-                    "mostUsed": "Nejvíce používané",
-                    "header": "Základní měsíc",
-                    "competitionPrice": "$45/měsíc",
-                    "price": "$15/měsíc",
-                    "package": {
-                        "header": "Vyzkoušejte a užijte si obchodního robota",
-                        "1": "Až 50 robotů",
-                        "2": "Všechny strategie",
-                        "3": "Obchodní terminály",
-                        "4": "Trailing Take profit",
-                        "5": "Automatické obnovení"
-                    }
-                },
-                "year": {
-                    "header": "Základní rok",
-                    "competitionPrice": "$384/rok",
-                    "price": "$120/rok",
-                    "save60": "Ušetříte $60",
-                    "package": {
-                        "header": "Odemkněte plný potenciál obchodního robota",
-                        "1": "Až 99 robotů",
-                        "2": "Všechny strategie",
-                        "3": "Obchodní terminály",
-                        "4": "Trailing Take profit",
-                        "5": "Automatické obnovení"
-                    }
-                },
-                "fee": "Z každého zisku je odečten úspěšný poplatek ve výši 10 % v EEZY Coin."
-            }
+        "question6": {
+          "text": "Jak docílíte předpokládané hodnoty společnosti 2.4 mld. USD za 7 let?",
+          "answer": "Hodnotu společnosti bude tvořit unikátní řešení v podobě robustní a zároveň jednoduché crypto burzy, která bude dostupná na všech zařízeních. Dále pak velká komunita uživatelů, miliardové zisky ročně, brand, zkušený tým. Hodnotu naší společnosti jsme porovnávali s podobnými společnostmi jako je Kraken, KuCoin., Binance a přesto je hodnota naší společnosti Coingarage s.r.o. podhodnocena"
         }
-    },
-    "knowledgeBase": {
-        "general": {
-            "name": "Obecné",
-            "activation": "Aktivace",
-            "subscription": "Předplatné",
-            "features": "Funkce",
-            "activationYoutubeId": "4LNhJWa-Xg4",
-            "subscriptionYoutubeId": "IZqeJ3ZPQcA",
-            "featuresYoutubeId": "pt561SgW-6s",
-            "introduction": {
-                "name": "Úvod",
-                "overview": {
-                    "header": "Přehled",
-                    "subText": "Obchodování s boty, také známé jako automatizované obchodování, využívá předprogramovaný software k provádění obchodů za obchodníky. Tato metoda obchodování získala popularitu díky schopnosti provádět obchody rychle a přesně, 24/7, bez potřeby lidského zásahu."
-                },
-                "advantages": {
-                    "header": "Výhody",
-                    "subText1": "Rychlost: Boti mohou provádět obchody v milisekundách, kteří využívají rychlejších pohybů na trhu než lidský obchodník.",
-                    "subText2": "Emoční Nezávislost: Boti obchodují na základě předdefinovaných pravidel a eliminují emoce jako strach a chamtivost, které mohou ovlivnit lidské rozhodování.",
-                    "subText3": "24/7 Obchodování: Boti mohou pracovat nepřetržitě, využívat příležitosti na globálních trzích i tehdy, když jsou obchodníci spící nebo offline.",
-                    "subText4": "Zpětné Testování a Optimalizace: Obchodníci mohou zpětně testovat strategie botů pomocí historických dat, aby posoudili výkon a optimalizovali strategie pro lepší výsledky.",
-                    "subText5": "Diverzifikace: Boti mohou obchodovat současně přes více aktiv, což umožňuje větší diverzifikaci obchodních portfolií."
-                },
-                "conclusion": {
-                    "header": "Závěr",
-                    "subText": "Toto úvodní schéma poskytuje přehled o obchodování s boty, jejich výhodách, různých typech strategií, úvahách a končí potenciálními výhodami, které si obchodníci mohou odvodit z využívání botů ve svých obchodních aktivitách."
-                }
-            },
-            "slang": {
-                "name": "Slang",
-                "GRID": "Obchodní strategie, která zahrnuje umístění nákupních a prodejních objednávek v předem stanovených cenových intervalech v určeném rozmezí. Cílem grid obchodování je profitovat z cenových fluktuací v nastaveném rozsahu.",
-                "DCA": "Dolarové průměrování (DCA) je investiční strategie, kde investor pravidelně kupuje pevnou částku určité investice bez ohledu na cenu aktiva. Tato strategie si klade za cíl snížit dopad volatility trhu tím, že rozloží nákupní cenu v průběhu času.",
-                "TP": "Take Profit (TP) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k realizaci zisků. Objednávky Take Profit jsou obvykle nastaveny nad aktuální tržní cenou pro dlouhé pozice a pod aktuální tržní cenou pro krátké pozice.",
-                "SL": "Stop Loss (SL) je předem stanovená úroveň ceny, na které obchodník rozhodne se prodat část nebo všechny své pozice k omezení potenciálních ztrát. Objednávky Stop Loss jsou obvykle nastaveny pod aktuální tržní cenou pro dlouhé pozice a nad aktuální tržní cenou pro krátké pozice.",
-                "SHORT": "Obchodní pozice, kde obchodník prodává aktivum s očekáváním, že jeho cena klesne. Obchodníci profitují ze short pozic tím, že zpětně nakupují aktivum za nižší cenu, než za jakou je prodali. Zde používejte pouze pro coiny, kterým dlouhodobě věříte a držíte je. Vyděláváte na jejich poklesu USDT, ale pokud je prodáte dříve, než se vrátí na původní cenu, zrealizujete ztrátu.",
-                "LONG": "Obchodní pozice, kde obchodník kupuje aktivum s očekáváním, že jeho cena vzroste. Obchodníci profitují z long pozic tím, že prodávají aktivum za vyšší cenu, než za jakou je koupili.",
-                "START_BY_AI": "Zahájení nebo zahájení obchodních aktivit pomocí algoritmů umělé inteligence (AI) nebo platforem. To může zahrnovat automatizované obchodní strategie, kde AI analyzuje tržní data a provádí obchody na základě předdefinovaných pravidel nebo algoritmů.",
-                "DCA_Auto": "S DCA Auto jsou zavedeny hodnoty vybrané naší burzou, umožňující automatizované provedení nákupů v určených intervalech. To eliminuje potřebu manuálního zásahu, protože platforma automaticky provádí nákupy na základě přednastavených parametrů, umožňujíc investorům akumulaci aktiv v průběhu času bez kontinuálního monitorování.",
-                "GRID_Auto": "S GRID Auto jsou zavedeny hodnoty vybrané naší platformou, usnadňující automatizované provedení obchodů na základě těchto předem stanovených parametrů. To umožňuje obchodníkům kapitalizovat na tržních fluktuacích v určeném rozsahu bez potřeby manuálního zásahu."
-            }
+      },
+      "otherQuestions": {
+        "question1": {
+          "text": "Kdo bude vlastnit a vést společnost Coingarage s.r.o.?",
+          "answer": "Vlastníky společnosti Coingarage s.r.o. jsou Coingarage Finance s.r.o. (30 %) a Ota Janda (70 %). V blízké budoucnosti očekávejte úpravu vlastnické struktury, kdy do firmy vstoupí technologičtí odborníci a zahraniční investoři. Bližší informace o jednotlivých majitelích a vedení společnosti naleznete v sekci O nás."
         },
-        "gridBot": {
-            "gridStrategy": {
-                "name": "Grid Strategie",
-                "strategy": {
-                    "subText1": "Strategie GRID představuje základní kámen jak ve světě kryptoměn, tak v oblasti obchodování s forexem. Operuje prostřednictvím odkladů limitních nákupních a prodejních objednávek v předem stanovených cenových intervalech. Rozdělením vybrané cenové oblasti do více úrovní se vytváří síť objednávek, odtud také název strategie GRID.",
-                    "subText2": "Naši GRID boti jsou navrženi tak, aby prováděli obchody na základě této strategie, neúnavně generují zisky z pohybů na trhu i tehdy, když neaktivně sledujete své obchody. Každá síť funguje vzájemně: jakmile je dokončena nákupní objednávka, bot okamžitě zahájí prodejní objednávku nad provedenou cenou a naopak. Veškeré vaše obchodní aktivity jsou efektivně řízeny prostřednictvím platformy Bitsgap."
-                },
-                "profit": {
-                    "header": "Generování zisků pomocí strategie GRID:",
-                    "subText": "Zajímavým aspektem strategie GRID je její schopnost využít přirozených fluktuací cen aktiv. Namísto utrácení nesčetných hodin za detailním studiem grafů pro načasování tržních pohybů, GRID boti provádějí obchody v příhodných okamžicích, nakupují za nízké ceny a prodávají za vysoké ceny. Pravidelně generují zisky bez nutnosti spoléhat se na složité algoritmy, jednoduše dodržují parametry sítě, které nastavíte."
-                },
-                "risk": {
-                    "header": "Rizika spojená se strategií GRID:",
-                    "subText1": "Automatizace strategie GRID nese v sobě základní rizika, zejména v nepříznivých tržních podmínkách. Neočekávané fluktuace cen mohou významně ovlivnit vaše obchodní výsledky. Pro zajištění vaší investice může být užitečné využít funkce jako Stop Loss nebo Trailing.",
-                    "subText2": "Přestože existují rizika, obchodování pomocí sítě představuje jednu z nejjednodušších a osvědčených obchodních metod. V průběhu času má potenciál dosáhnout značných výsledků. Avšak jeho účinnost klesá během silných obratů trendu. Je tedy klíčové rozhodnout, kdy zahájit nebo zastavit provoz vašich botů."
-                }
-            },
-            "setupGridBot": "Nastavení Grid Bota",
-            "customizeGridBot": "Customizace Grid Bota",
-            "setupGridBotYoutubeIdLong": "B43M0fN16Hs",
-            "setupGridBotYoutubeIdShort": "w-2oaeHJEpw"
+        "question2": {
+          "text": "Proč potřebujete a k čemu využijete získané finanční prostředky?",
+          "answer": "Veškeré finanční prostředky použijeme na aktivity pro stabilní růst a expanzi společnosti Coingarage s.r.o. Zejména na samotný vývoj burzy a jejich součástí. Také budeme investovat do povědomí naší značky, tedy do aktivního marketingu a obchodní činnosti."
         },
-        "dcaBot": {
-            "dcaStrategy": {
-                "name": "DCA Strategie",
-                "strategy": {
-                    "subText1": "Strategie DCA (Dollar-Cost Averaging) je široce přijímaný přístup jak v kryptoměnových, tak v forexových obchodních sférách. Spočívá v systematickém nákupu pevného množství aktiva v pravidelných intervalech, bez ohledu na fluktuace jeho ceny. Tato disciplinovaná strategie si klade za cíl snížit dopad volatility trhu na výnosy z investic v průběhu času.",
-                    "subText2": "Naši DCA boti jsou pečlivě vytvořeni pro implementaci této strategie, umožňují obchodníkům postupně akumulovat aktiva v průběhu času bez potřeby neustálé manuální intervence. Tyto boti provádějí obchody podle předem stanovených parametrů, usnadňují bezproblémový růst portfolia a řízení rizik."
-                },
-                "profit": {
-                    "header": "Generování zisku pomocí strategie DCA:",
-                    "subText": "Krása strategie DCA spočívá v její schopnosti využít konceptu průměrování dolů. Tím, že pravidelně nakupují aktiva v pravidelných intervalech, bez ohledu na krátkodobé pohyby cen, umožňují boti DCA obchodníkům akumulovat aktiva za průměrnou cenu v průběhu času. Tento přístup může vést k významným ziskům během období tržní volatility, protože minimalizuje riziko nakupování aktiv za jednu, potenciálně nadhodnocenou cenu."
-                },
-                "risk": {
-                    "header": "Rizika spojená se strategií DCA:",
-                    "subText": "I když strategie DCA nabízí systematický přístup k investování, není bez rizika. Poklesy na trhu nebo dlouhé období úpadku aktiv mohou ovlivnit celkový výkon strategie. Obchodníci musí také pečlivě zvážit faktory jako je frekvence nákupů a délka investičního horizontu, aby optimalizovali výnosy a účinně řídili riziko."
-                },
-                "conclusion": {
-                    "header": "Závěr",
-                    "subText": "Strategie DCA poskytuje obchodníkům disciplinovaný a systematický přístup k investování na kryptoměnových a forexových trzích. Díky pravidelnému nákupu aktiv v pravidelných intervalech umožňují boti DCA obchodníkům minimalizovat dopad tržní volatility a potenciálně generovat významné zisky v průběhu času. Nicméně je nezbytné porozumět souvisejícím rizikům a implementovat vhodné strategie řízení rizika pro optimalizaci výkonu a dosažení dlouhodobých investičních cílů."
-                }
-            },
-            "setupDcaBot": {
-                "name": "Nastavení DCA Bota",
-                "started": {
-                    "header": "Jak Začít",
-                    "subText": "Při spouštění DCA bota máte možnost vybrat obchodní směr a vytvořit buď pozici Long nebo Short."
-                },
-                "long": {
-                    "header": "Pozice Long:",
-                    "subText1": "V pozici Long se bot zapojuje do nákupních aktivit, s cílem akumulovat zisk v měně kvóty.",
-                    "subText2": "Váš bot zahájí pozici nákupem základní měny. Následně umístí DCA (nákupní) objednávky pod tímto obchodem a objednávku Take Profit (prodej) nad ním. Jakmile cena stoupá, váš bot bude prodávat veškerou zakoupenou základní měnu na úrovni Take Profit, čímž vygeneruje zisk. V tomto okamžiku cyklus končí a bot zahájí nový s počátečním investičním obnosem."
-                },
-                "short": {
-                    "header": "Pozice Short:",
-                    "subtext1": "Naopak v pozici Short se bot pouští do prodejních aktivit, snaží se akumulovat zisk v základní měně.",
-                    "subtext2": "Váš bot zahájí pozici prodejem základní měny. Nad tímto obchodem umístí DCA (prodejní) objednávky a objednávku Take Profit (nákup) pod ním. Pokud cena stoupne, bot bude prodávat více základní měny a nakupovat měnu kvóty na úrovních DCA. Naopak, když cena klesá, váš bot znovu nakoupí základní měnu na úrovni Take Profit. Po dokončení cyklu bot zahájí nový s počátečním investičním obnosem základní měny.",
-                    "subtext3": "Pro vytvoření a provedení vašeho úvodního DCA bota Long a Short se prosím držte následujících kroků."
-                },
-                "setupDcaBotYoutubeIdLong": "ZBeMML_-dOs",
-                "setupDcaBotYoutubeIdShort": "RFT9a0aL4ME"
-            },
-            "setupDcaStrategy": {
-                "name": "Customizace DCA Strategie"
-            }
+        "question3": {
+          "text": "Máte v plánu vydat vlastní krypto tokeny?",
+          "answer": "Ano, chystáme vydání vlastního utility tokenu, který bude stejně jako například BNB na Binance plnit podobnou funkci. Sdružíme pod tento utility token také již existující komunitní tokeny."
+        },
+        "question4": {
+          "text": "Proč tichý společník a ne venture kapitálové fondy?",
+          "answer": "Cesta s venture kapitalovými fondy je obvykle zdlouhavá, nechceme brzdit projekt, a proto je zejména 1. investiční kolo určeno pro tiché společníky z řad veřejnosti. V plánu je, že od dalších investičních kol budou v hlavní roli primárně venture kapitálové fondy."
         }
-    },
-    "finance": {
-        "main": {
-            "text1": "Investujte do",
-            "text2": "Nejrychleji rostoucího odvětví",
-            "text3": "Na Světě",
-            "subText": "Trh s digitálními měnami a technologií blockchainu je dnes nejrychleji rostoucím odvětvím. Nyní máte jedinečnou příležitost investovat do této oblasti a stát se tichým společníkem globální kryptoměnové burzy.",
-            "exchangeBtn": "Vstupte na Burzu",
-            "shareholderBtn": "Stát se Tichým Společníkem"
-        },
-        "developement": {
-            "header": "Aktuální vývoj burzy Coingarage",
-            "subtext": "Coingarage je nová evropská kryptoměnová burza založená v roce 2022 a vlastněná podnikatelem Otou Jandou. Po roce příprav a vývoje potřebného softwaru jsme burzu spustili v lednu roku 2023. Od té doby jsme přidali mnoho nových funkcí pro naše uživatele a nadále je rozvíjíme.",
-            "done": "Hotovo",
-            "developement": "Ve vývoji",
-            "planned": "Plánováno",
-            "list": {
-                "box1": "Obchodování 1.0",
-                "box2": "Obchodní Bot",
-                "box3": "Mobilní Aplikace",
-                "box4": "GARA Coin",
-                "box5": "Listování Coinů",
-                "box6": "Doporučení",
-                "box7": "Spoření do Bitcoinu",
-                "box8": "Obchodování v 2.0",
-                "box9": "Akademie",
-                "box10": "Úročení",
-                "box11": "NFT's",
-                "box12": "Krypto Karta"
-            }
-        },
-        "estimatedValuation": {
-            "header": "Odhadovaná hodnota společnosti v roce 2030",
-            "subText": "Pro výpočet hodnoty společnosti používáme reference a příklady ocenění konkurenčních burz po celém světě, kromě toho také uznávaný ukazatel nazývaný EBITDA.",
-            "estimated": {
-                "text1": "2.4B USD",
-                "text2": "Odhadovaná hodnota firmy Coingarage s.r.o. při získání 2.5 milionů uživatelů v průběhu 6ti let.",
-                "investBtn": "Začít Investovat"
-            },
-            "tableHeader": "Valuace Konkurence",
-            "table": {
-                "header": {
-                    "column1": "Burza",
-                    "column2": "Počet uživatelů",
-                    "column3": "Hodnota Firmy"
-                },
-                "rows": {
-                    "row1": {
-                        "exchange": "Gemini",
-                        "users": "2 Miliony",
-                        "value": "7 Miliard Dalarů"
-                    },
-                    "row2": {
-                        "exchange": "Kraken",
-                        "users": "9 Milionů",
-                        "value": "20 Miliard Dalarů"
-                    },
-                    "row3": {
-                        "exchange": "BYBIT",
-                        "users": "15 Milionů",
-                        "value": "19 Miliard Dalarů"
-                    },
-                    "row4": {
-                        "exchange": "KuCoin",
-                        "users": "20 Milionů",
-                        "value": "20 Miliard Dalarů"
-                    },
-                    "row5": {
-                        "exchange": "Coinbase",
-                        "users": "56 Milionů",
-                        "value": "100 Miliard Dalarů"
-                    },
-                    "row6": {
-                        "exchange": "Binance",
-                        "users": "120 Milionů",
-                        "value": "300 Miliard Dalarů"
-                    }
-                }
-            }
-        },
-        "revolution": {
-            "header": "Na které straně této nové technologické revoluce chcete být?",
-            "negativeClaims": {
-                "claim1": {
-                    "text": "<grey>2017:</grey> “Kryptoměna prostě není reálná věc, nakonec bude zrušena.”",
-                    "name": "Jamie Dimon"
-                },
-                "claim2": {
-                    "text": "<grey>1997:</grey> “Neexistuje žádný důvod, proč by kdokoli chtěl mít doma počítač.”",
-                    "name": "Ken Olsen, spoluzakladatel Digital Equipment Corporation"
-                },
-                "claim3": {
-                    "text": "<grey>1995:</grey> “Předpovídám, že internet brzy spektakulárně vybuchne a v roce 1996 katastrofálně zkolabuje”",
-                    "name": "Robert Metcalfe (vynálezce Ethernetu)"
-                },
-                "claim4": {
-                    "text": "<grey>1989:</grey> “Nikdy nebudeme schopni vytvořit 32-bit operační systém.”",
-                    "name": "Bill Gates, zakladatel Microsoftu"
-                },
-                "claim5": {
-                    "text": "<grey>1961:</grey> “Je prakticky nulová šance, že družice pro komunikace budou použity k poskytování lepší telefonní, telegrafní, televizní nebo rozhlasové služby v rámci Spojených států.”",
-                    "name": "T.A.M. Craven,  FCC komisař"
-                },
-                "claim6": {
-                    "text": "<grey>1946:</grey> “Televize nebude schopna udržet jakýkoli trh, který získá, po prvních šesti měsících. Lidi brzo omrzí  zírat každý večer na dřevěnou krabici.”",
-                    "name": "Darryl Zanuck, 20th Century Fox"
-                },
-                "claim7": {
-                    "text": "<grey>1903:</grey> “Kůň tu zůstane, automobil je pouze novinka – módní výstřelek.”",
-                    "name": "Prezident Michiganské Banky"
-                }
-            },
-            "positiveClaims": {
-                "claim1": {
-                    "text": "<primary>Aktualní:</primary> “Struktura Bitcoinu je velmi vynalézavá. Papírové peníze mizí a kryptoměny jsou mnohem lepším způsobem přenosu hodnoty než kus papíru.“",
-                    "name": "Elon Mask zakladatel Tesla a SpaceX"
-                },
-                "claim2": {
-                    "text": "<primary>Aktualní:</primary> “Ve svém jádru jsou kryptoměny postaveny na principu univerzálního, nezcizitelného účetního knižního záznamu, který je plně veřejný a neustále ověřován těmito výkonnými počítači, kde každý z nich v podstatě jedná nezávisle na ostatních“",
-                    "name": "Paul Vigna, reportér The Wall Street Journal"
-                },
-                "claim3": {
-                    "text": "<primary>Aktualní:</primary> “Když začnou decentralizované blockchainové protokoly vytlačovat centralizované webové služby, které dominují současnému internetu, začneme vidět skutečnou suverenitu založenou na internetu. Budoucnost internetu bude decentralizovaná.“",
-                    "name": "Olaf Carlson-Wee"
-                },
-                "claim4": {
-                    "text": "<primary>Aktualní:</primary> “Důvodem, proč jsme všichni v cryptu, je to, že současný finanční systém je zastaralý.“",
-                    "name": "Charlie Shrem, Zakladatel & CEO of Bitinstant"
-                },
-                "claim5": {
-                    "text": "<primary>Aktualní:</primary> “Blockchain je technologie. Bitcoin je pouze prvním hlavním projevem jejího potenciálu.”",
-                    "name": "Marc Kenigsber"
-                },
-                "claim6": {
-                    "text": "<primary>Aktualní:</primary> “To, co se děje právě teď, by bylo snem nositele Nobelovy ceny za ekonomii Roberta Mundella: zavést globální měnový systém nepodléhající kontrole žádného jednotlivce.”",
-                    "name": "Cathie Wood — Ark Invest CEO"
-                }
-            },
-            "ps": "<bold>PS:</bold> Navzdory kritice Bitcoinu ze strany Jamieho Dimona se postoj JPMorganu změnil, banka nyní působí v oblasti kryptoměn a technologie blockchain. Dokonce vyvinuli vlastní platební systém založený na blockchainu nazvaný JPM Coin"
-        },
-        "oppurtunities": {
-            "header": "Investiční příležitost byla ukončena",
-            "subtext": "Otevřeli jsme první investiční kolo, které je určeno jen pro fyzické osoby. Další kola, která budou následovat, budou už pouze pro investiční společnosti.",
-            "bonuses": "Bonusy k vaší investici",
-            "investment1": "Od 50 000 CZK, získáte *GARA Coin v hodnotě 50% vaší investice.",
-            "investment2": "Od 100 000 CZK, získáte *GARA Coin v hodnotě 100% vaší investice.",
-            "round1": "1.kolo",
-            "money": "141M CZK",
-            "shareholderBtn": "Stát se Tichým Společníkem"
-        },
-        "simpleSteps": {
-            "header": "Investujte jednoduše v 5ti krocích",
-            "subtext": "Coingarage je globální projekt a proto nechceme omezovat investiční příležitosti pouze na jednu zemi nebo region. Ve spolupráci s právními experty a partnery jsme vyvinuli jednoduchý pětikrokový systém, díky kterému může každý investovat pohodlně z domova kdekoli ve světě. Navíc, po vytvoření účtu získá každý investor přístup k naší investiční platformě, kde mohou spravovat svou investici a dostávat nové informace o vývoji projektu.",
-            "box1": "Registrace",
-            "box2": "Osobní Informace",
-            "box3": "KYC",
-            "box4": "Smlouva",
-            "box5": "Platba",
-            "download": "Stáhněte si šablonu smlouvy"
-        },
-        "yourValuation": {
-            "header": "Odhadovaná hodnota vaší investice (modelový příklad)",
-            "investment": "Investice",
-            "table": {
-                "header": {
-                    "column1": "Info",
-                    "column2": "1.kolo",
-                    "column3": "2.kolo",
-                    "column4": "3.kolo"
-                },
-                "rows": {
-                    "row1": "Podíl na rozděleném zisku:",
-                    "row2": "Zisk Coingarage Finance s.r.o.:",
-                    "row3": "Zhodnocení:",
-                    "row4": "Bude vyplacena celková částka:"
-                },
-                "concluision": "Modelový výpočet vychází z vypočtené hodnoty Coingarage s.r.o. ve výši 2.4 MLD USD Modelový výpočet negarantuje dosažení zvoleného zhodnocení  vkladu a stejně jako každá investice i tato nese značnou míru rizika. Předpokládané zhodnocení bude vypláceno v průběhu let v CZK, EUR nebo USD s exitem v roce 2030."
-            },
-            "table2": {
-                "header": "Chcete získat více informací?",
-                "subtext": "Pošlete nám svůj e-mail a telefonní číslo a náš obchodní zástupce vás bude kontaktovat a zodpoví všechny vaše dotazy.",
-                "placeholder1": "Jméno a příjmení",
-                "placeholder2": "Telefonní číslo",
-                "placeholder3": "Email",
-                "consent": "Souhlasím se zpracováním osobních údajů",
-                "sendBtn": "Poslat"
-            },
-            "subheader": "Jak je možné, že dosáhneme tak vysokých investičních výnosů?",
-            "subtext1": "Burza sama s aktivy neobchoduje, peníze vydělává prostřednictvím poplatků za zprostředkování obchodů, převod aktiv a další služby. Není tedy přímo ovlivněna tržními podmínkami a vydělává, ať už cena aktiv stoupá nebo klesá. Kromě toho trh s kryptoměnami nemá jako jiné burzy omezené otevírací hodiny a nezavírá se o víkendech. Obchodování s digitálními měnami probíhá globálně a nepřetržitě 24/7.",
-            "subtext2": "Trh s kryptoměnami je také dnes nejrychleji rostoucím trhem, který průměrně roste o 56,4 % ročně za posledních 6 let. To významně ovlivňuje příliv nového kapitálu a má silný pozitivní vliv na všechny společnosti působící v tomto odvětví. Díky tomu jsme schopni rychle růst a dosáhnout uvedeného zhodnocení 1100 %. Tyto údaje, stejně jako všechny výpočty, které najdete v prezentaci, jsou založeny na současných a historických datech od konkurence a jsou výsledkem standardně používaných ekonomických výpočtů.",
-            "investBtn": "Začít Investovat"
-        },
-        "taxHeavens": {
-            "header": "Ne v daňových rájích, ale přímo v srdci Evropy.",
-            "subtext1": "Většina současných kryptoměnových burz sídlí v daňových rájích a zemích mimo jurisdikci zákonů EU. Naše burza je umístěna přímo v srdci Evropy v České republice a funguje podle místních a evropských zákonů a předpisů upravujících obchodování s kryptoměnami.",
-            "subtext2": "Naším cílem je podílet se na narovnání digitálního trhu s měnami a poskytnout všem uživatelům v Evropě bezpečné a regulované prostředí pro jejich obchody. Proto spolupracujeme s právníky a experty v oblasti regulace kryptoměn a aktivně se připravujeme na novou evropskou regulaci MiCA."
-        },
-        "partnersImages": {
-            "header": "Partneři",
-            "infoBtn": "Kliknětě pro více informací"
-        },
-        "partnersMain": {
-            "partner1": {
-                "header": "Blockchain Legal",
-                "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
-            },
-            "partner2": {
-                "header": "FINROCK GLOBAL LTD",
-                "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
-            },
-            "partner3": {
-                "header": "Simplex by NUVEI",
-                "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
-            },
-            "partner4": {
-                "header": "ZEN",
-                "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
-            },
-            "partner5": {
-                "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
-                "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
-            },
-            "partner6": {
-                "header": "Creative Heroes",
-                "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
-            },
-            "exchangeBtn": "Vstupte na Burzu"
-        },
-        "investorPlatform": {
-            "header": "Náhled investorské platformy",
-            "createAccountBtn": "Založit účet"
-        },
-        "faq": {
-            "header": "Často kladené otázky",
-            "section1": "Obecné otázky",
-            "section2": "Tiché partnerství",
-            "section3": "Vize",
-            "section4": "Ostatní",
-            "generalQuestions": {
-                "question1": {
-                    "text": "Jaká je minimální částka, kterou mohu investovat?",
-                    "answer": "Minimální výše investice je stanovena na 10 000 Kč (či ekvivalent v jiné měně) odpovídající 0,00075% podílu z distribuovaného zisku společnosti Coingarage Finance s.r.o."
-                },
-                "question2": {
-                    "text": "Co znamená distribuovaný zisk?",
-                    "answer": "Distribuovaný zisk je roven 90 % celkového zisku společnosti Coingarage Finance s.r.o. Zbývajících 10 % patří týmu společnosti Coingarage s.r.o."
-                },
-                "question3": {
-                    "text": "Podléhá tento projekt dohledu České národní banky?",
-                    "answer": "Tichá společnost se řadí k závazkovým smluvním vztahům. Na předestřený obchodní model a závazkové vztahy se nevztahuje věcná působnost zákona č. 240/2013 Sb., o investičních společnostech a investičních fondech, ve znění pozdějších předpisů (dále jen „ZISIF“), neboť se jedná o činnost spočívající ve shromažďování prostředků za účelem financování obchodních aktivit jiné než finanční povahy, čímž jsou splněny podmínky tzv. rozvojové výjimky dle ustanovení § 2 ZISIF a stejně tak předmětná činnost – nabídka uzavření smlouvy o tiché společnosti – není považována za veřejnou nabídku podle ustanovení § 34 a násl. zákona č. 256/2004 Sb., o podnikání na kapitálovém trhu (dále jen „ZPKT“) a není ani investičním nástrojem ve smyslu ustanovení § 3 ZPKT. S ohledem na výše uvedené popsaná činnost společnosti nepodléhá dohledu ČNB."
-                },
-                "question4": {
-                    "text": "Jaká je zamýšlená hodnota společnosti Coingarage s.r.o.?",
-                    "answer": "Zamýšlená hodnota společnosti Coingarage s.r.o. je stanovena ke konci roku 2030 ve výši 2.4 mld USD. Výpočet hodnoty společnosti je založený nejen na hodnotě nehmotného majetku, ale využíváme i mezinárodně uznávaný ukazatel EBITDA vynásobený multiplikátorem atraktivnosti a koeficientem konkurence. Zároveň vycházíme z oficiálních údajů o valuaci konkurenčních burz s přihlédnutím ke klíčovým ukazatelům jako jsou počet registrovaných uživatelů objemy obchodů."
-                },
-                "question5": {
-                    "text": "K čemu slouží a co je vlastně Coingarage Finance s.r.o.?",
-                    "answer": "Coingarage Finance s.r.o. slouží jako právní jistota toho, že z případného budoucího prodeje společnosti Coingarage s.r.o. budou profitovat i vkladatelé skrze tichého společníka. Kdyby tichý společník vložil finanční prostředky na přímo do Coingarage s.r.o., pak by mu ze zákona nebylo možné vyplatit podíl z případného prodeje společnosti Coingarage s.r.o., ale pouze podíl na zisku společnosti Coingarage s.r.o. při běžném fungování v průběhu roku. Díky tomuto modelu získá tichý společník podíl na zisku a zároveň i podíl z plánovaného prodeje společnosti Coingarage s.r.o."
-                },
-                "question6": {
-                    "text": "Budu mít možnost dohledu nad svou investicí?",
-                    "answer": "Tichý společník má dohled nad svou investicí skrze naši privátní investorskou platformu, kde uvidí progres plánu vývoje, významné obchodní aktivity, aktuální hodnotu společnosti, informace od CEO a vedení společnosti, účetní dokumenty a přehled novinek ve společnosti Coingarage Finance s.r.o. a Coingarage s.r.o. Dále bude mít možnost přímo přes investorskou interní platformu komunikovat s vedením společnosti."
-                }
-            },
-            "silentPartnershipQuestions": {
-                "question1": {
-                    "text": "Co dle zákona znamená tichý společník, je to legální?",
-                    "answer": "Tichým společníkem může být fyzická nebo právnická osoba, podnikatel či nepodnikatel, která se svým vkladem podílí na podnikání jiné osoby. V mnoha vyspělých zemích světa patří tiché společenství k běžné formě účasti na podnikání jiných osob. V rámci právního řádu České republiky byla tichá společnost nejdříve upravena obchodním zákoníkem (po roce 1989), nicméně od 1. 1. 2014 je její právní úprava zahrnuta v občanském zákoníku. Smlouvou o tiché společnosti se ve smyslu ustanovení § 2747 zákona č. 89/2012 Sb., občanského zákoníku, ve znění pozdějších předpisů, tichý společník zavazuje ke vkladu, kterým se bude podílet po celou dobu trvání tiché společnosti na výsledcích podnikání společnosti, a společnost se zavazuje platit tichému společníkovi podíl na zisku."
-                },
-                "question2": {
-                    "text": "Jaká práva a povinnosti má tichý společník?",
-                    "answer": "Tichý společník má právo prostřednictvím naší privátní platformy nahlížet do veškerých zveřejněných obchodních dokladů a účetních záznamů společností Coingarage Finance s.r.o. a Coingarage s.r.o.Dále má právo prostřednictvím privátní platformy obdržet stejnopisy každé účetní závěrky, každého přiznání k dani z příjmů včetně příloh k nim a každé zprávy auditora k auditu účetní závěrky společnosti Coingarage Finance s.r.o., které budou vyhotovovány v době či za období působení tichého společníka ve společnosti.Tichý společník má právo na podíl z distribuovaného zisku ve výši, kterou si za svou investici koupil, ke dni vyhotovení účetní závěrky, a také z jakéhokoli dalšího zisku určeného k vyplacení na základě rozhodnutí valné hromady společnosti Coingarage Finance s.r.o.Povinností tichého společníka kromě řádného složení vkladu a mlčenlivosti, je i daňová povinnost z případných příjmů z podílu na zisku, kterou nehradí společnost Coingarage Finance s.r.o., ani je neúčtuje tichému společníkovi a ani je za tichého společníka neplatí."
-                },
-                "question3": {
-                    "text": "Jaké výhody má tichý společník oproti jiným typům investování do společností?",
-                    "answer": "<ul><li>Podíl na zisku společnosti Coingarage Finance s.r.o. a podíl na zisku z eventuálního prodeje společnosti Coingarage s.r.o., čímž lze dosáhnout vyššího zhodnocení než například u dluhopisů, kde je pevně stanovený procentuální roční výnos.</li><li>Žádné vstupní ani průběžné poplatky, investujete přímo do projektu bez zprostředkovatele.</li><li>Možnost nahlížet do zveřejněných dokumentů týkající se hospodaření společnosti skrze privátní platformu společnosti Coingarage Finance s.r.o.</li><li>Lze vstoupit do projektu hned zkraje vzniku myšlenky, a získat tak mnohonásobně vyšší zhodnocení.</li></ul>"
-                },
-                "question4": {
-                    "text": "Jak se mohu stát tichým společníkem?",
-                    "answer": "Registrací skrze naši privátní investorskou platformu app.coingarage-finance.com. Tichým společníkem se může stát svéprávný člověk nebo podnikatel, který úspěšně projde procesem verifikace, vloží požadované finanční prostředky do společnosti Coingarage Finance s.r.o. a bude schválen na valné hromadě společnosti Coingarage Finance s.r.o."
-                },
-                "question5": {
-                    "text": "Jak probíhá proces verifikace (KYC, AML apod.)?",
-                    "answer": "I když nejsme povinnou osobou ve smyslu ustanovení § 2 zákona č. 253/2008 Sb., o některých opatřeních proti legalizaci výnosů z trestné činnosti a financování terorismu, ve znění pozdějších předpisů (dále jen „AML zákon“), tedy že se na nás nevztahují povinnosti týkající se identifikace a kontroly klientů dle AML zákona, přesto pro ochranu naší společnosti, do které chcete investovat, identifikujeme každého tichého společníka pomocí alespoň jednoho dokladu totožnosti a základního prověření (PEP, mezinárodní sankce, negativní zmínky v médiích apod.). Tento úkon pro nás zajišťuje aplikace veriff.com sídlící v Evropské unii, nemusíte se tak o své osobní údaje bát, jelikož společnost GetID Ltd podléhá přísné evropské legislativě včetně GDPR."
-                },
-                "question6": {
-                    "text": "Jsou spojeny s vkladem tichého společníka nějaké poplatky?",
-                    "answer": "Vše je bez poplatku, investujete přímo do projektu bez zprostředkovatelů. Poplatek může vzniknout pouze v rámci samotné transakce, který si může účtovat Vaše banka či platební brána."
-                },
-                "question7": {
-                    "text": "Kdy a za jakých podmínek má tichý společník nárok na podíl z distribuovaného zisku?",
-                    "answer": "Nárok na vyplacení zisku vzniká v momentě, kdy to schválí valná hromada společnosti Coingarage Finance s.r.o. a následná výše podílu na zisku odpovídá zakoupenému podílu z distribuovaného zisku. Bližší informace jsou k dispozici v kalkulačce předpokládaného zhodnocneí na hlavní stránce tohoto webu."
-                },
-                "question8": {
-                    "text": "Na jak dlouho je smlouva o investici tichého společníka?",
-                    "answer": "Smlouva o investici tichého společníka je na dobu 7 let, kdy je předpokládáno, že bude dokončená vývojová fáze, růst firmy Coingarage s.r.o. bude na globální úrovni."
-                }
-            },
-            "visionQuestions": {
-                "question1": {
-                    "text": "Kdo je Vaše cílová skupina?",
-                    "answer": "V Evropě žije cca 480 milionů obyvatel v produktivním věku a pouze 9% - cca 43 milionů z nich má nějaké zkušennosti s cryptem. Oproti Asii, Americe, Africe a latiské Americe je to cca o 16% méně. To znamená, že kromě těchto 43 milionů je zde potenciál minimálně 77 milionů nových lidí, kteří v následujících sedmi letech začnou držet nebo obchodovat crypto."
-                },
-                "question2": {
-                    "text": "Proč zrovna crypto a crypto burza?",
-                    "answer": "Technologie blockchainu a na něj navázaných kryptoměn nabízí uživatelům řadu přínosů a má potenciál způsobit revoluci v globálním finančním ekosystému. Věříme, že do roku 2032 se do světového ekosystému digtitálních aktiv zapojí 1 mld lidí a významná část hrubého domácího produktu se bude odehrávat v bitcoinové ekonomice."
-                },
-                "question3": {
-                    "text": "Proč burza v Evropě? A proč se chcete soustředít na Evropu?",
-                    "answer": "Většina významných burz má dnes sídlo v daňových rájích nebo v zemích, kde není zaručena stoprocentní transparentnost a bezpečnost. Poud zároveň porovnáme procenta lidí, kteří v Evropě přišli do styku s cryptem s jinými kontinenty, vidíme na evropském trhu velkou příležitost."
-                },
-                "question4": {
-                    "text": "Jak dosáhnete 10 milionů aktivních uživatelů?",
-                    "answer": "Vycházíme již ze zmíněného předpokladu růstu celého crypto světa a zvýšení procenta uživatelů v Evropě na úroveň např. USA a Asie. Zároveň jsme si vědomi naší technologické výhody, kdy na jedné platformě brzy spojíme nabídneme všechny dostupné funkce tohoto odvětví. Důležitou roli hraje také marketing, kdy ve spojení se špičkami v oboru plánujeme mimo běžných nástrojů i celou řadu významných aktivit ve světě sportu, kultury apod."
-                },
-                "question5": {
-                    "text": "Jak budete dosahovat průběžných zisků?",
-                    "answer": "Není žádným tajemstvím, že klíčovou roli ve vytváření zisků hrají poplatky. Kdykoliv se na naší burze odehraje jakýkoliv obchod nebo transakce mimo vkladu, je toto spojeno s poplatky. Burza tvoří zisk dvacet čtyři hodin denně sedm dní v týdnu."
-                },
-                "question6": {
-                    "text": "Jak docílíte předpokládané hodnoty společnosti 2.4 mld. USD za 7 let?",
-                    "answer": "Hodnotu společnosti bude tvořit unikátní řešení v podobě robustní a zároveň jednoduché crypto burzy, která bude dostupná na všech zařízeních. Dále pak velká komunita uživatelů, miliardové zisky ročně, brand, zkušený tým. Hodnotu naší společnosti jsme porovnávali s podobnými společnostmi jako je Kraken, KuCoin., Binance a přesto je hodnota naší společnosti Coingarage s.r.o. podhodnocena"
-                }
-            },
-            "otherQuestions": {
-                "question1": {
-                    "text": "Kdo bude vlastnit a vést společnost Coingarage s.r.o.?",
-                    "answer": "Vlastníky společnosti Coingarage s.r.o. jsou Coingarage Finance s.r.o. (30 %) a Ota Janda (70 %). V blízké budoucnosti očekávejte úpravu vlastnické struktury, kdy do firmy vstoupí technologičtí odborníci a zahraniční investoři. Bližší informace o jednotlivých majitelích a vedení společnosti naleznete v sekci O nás."
-                },
-                "question2": {
-                    "text": "Proč potřebujete a k čemu využijete získané finanční prostředky?",
-                    "answer": "Veškeré finanční prostředky použijeme na aktivity pro stabilní růst a expanzi společnosti Coingarage s.r.o. Zejména na samotný vývoj burzy a jejich součástí. Také budeme investovat do povědomí naší značky, tedy do aktivního marketingu a obchodní činnosti."
-                },
-                "question3": {
-                    "text": "Máte v plánu vydat vlastní krypto tokeny?",
-                    "answer": "Ano, chystáme vydání vlastního utility tokenu, který bude stejně jako například BNB na Binance plnit podobnou funkci. Sdružíme pod tento utility token také již existující komunitní tokeny."
-                },
-                "question4": {
-                    "text": "Proč tichý společník a ne venture kapitálové fondy?",
-                    "answer": "Cesta s venture kapitalovými fondy je obvykle zdlouhavá, nechceme brzdit projekt, a proto je zejména 1. investiční kolo určeno pro tiché společníky z řad veřejnosti. V plánu je, že od dalších investičních kol budou v hlavní roli primárně venture kapitálové fondy."
-                }
-            }
-        }
-    },
-    "GARA": {
-        
-        "main": {
-            "header": "GARAGE Coin <span>GARA</span>",
-            "text1": "GARA je token naší burzy Coingarage, který nám pomáhá rozvíjet ekosystém burzy. Tento token byl vytvořen s pevným maximem pouze 900 milionů kusů a není možné ho navýšit. Naopak, díky našemu spalovacímu mechanismu bude počet GARA postupně ubývat.",
-            "text2": "Hlavní využití GARA je pro zaplacení celé řady poplatků na burze. Při jejím využití k platbě těchto poplatků naši uživatelé navíc získají 20% slevu z výše těchto poplatků. Dále GARA slouží jako forma odměny pro naše uživatele.",
-            "buyGARA": {
-                "header": "Nákup GARA",
-                "totalTokens": "Celkový počet GARA Tokenů",
-                "distributedTokens": "Celkový počet nabízených GARA Tokenů",
-                "soldTokens": "Prodáno Tokenů",
-                "btnConnectWallet": "Připojit peněženku",
-                "btnBuyGARA": "Koupit GARA",
-                "btnHelpGarry": "Kupte GARA a pomozte Garymu",
-                "buyWithEurOnCoingarage": "Kupte pomocí EUR na Coingarage",
-                "buyWith": "Nakoupit za",
-                "linkGoToLaunchapad": "Nakoupit na Coingarage",
-                "poweredBy": "Poháněno pomocí"
-            }
-        },
-        "usage": {
-            "header": "Plánované Využití GARA",
-            "usage1": "Listovací poplatky",
-            "usage2": "Poplatky z nákupu kartou",
-            "usage3": "Požadovaný plyn pro převod",
-            "usage4": "Success fee",
-            "usage5": "Poplatek za výběr",
-            "usage6": "Poplatek za plyn pro aplikace",
-            "usage7": "Poplatky za nákup",
-            "usage8": "Reklama"
-        },
-        "garaDepo": {
-            "header": "GARA Stake",
-            "subHeader": "Aktuální zhodnocení až 30% p.a.",
-            "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
-            "text2": "Nyní zaváděcí akce <span>jen do 28.2.2025, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
-            "timer": {
-                "header": "Do konce 1. kola zbývá ",
-                "day": "DNÍ",
-                "hours": "HODIN",
-                "minutes": "MINUT",
-                "seconds": "SEKUND",
-                "disclaimer": "*Po tomto datu bude stále možné vložit GARA, ale již s nižším zhodnocením, které se bude dynamicky měnit podle celkového vloženého objemu GARA."
-            },
-            "boxes": {
-                "1": "Snadné a bez starostí",
-                "2": "Bezpečné a transparentní",
-                "3": "Vysoké zhodnocení",
-                "4": "Vyplácení výdělku každý den"
-            },
-            "garaStakebtn": "Zobrazit stake plány"
-
-        },
-        "burnMechanism": {
-            "header": "Spalovací mechanismus GARA",
-            "text1": "Za účelem hladšího vývoje hodnoty GARA jsme se rozhodli implementovat spalovací mechanismus, který bude postupně spalovat GARA tokeny na základě jejich zvyšujícího se využití.",
-            "boxes": {
-                "1": {
-                    "header": "Dokud nezůstane  200 milionů GARA",
-                    "text": "z původních 900 milionů"
-                },
-                "2": {
-                    "header": "Každý měsíc spálíme 20% GARA",
-                    "text": "přijatých na poplatcích"
-                }
-            },
-            "disclaimer": "*Spalování tokenů je metoda řízení celkové nabídky určité kryptoměny na trhu za účelem snížení dostupného množství  a tím potenciálně zvýšení hodnoty dané kryptoměny. Tento koncept je podobný zpětnému odkupu akcií v tradičním světě financí."
-        },
-        "roadmap": {
-            "header": "Roadmapa",
-            "btnBuyGARA": "Koupit GARA",
-            "text1": "Spuštění burzy",
-            "text2": "Vytvoření GARA",
-            "text3": "Spuštění obchodního robota",
-            "text4": "Předprodej GARA",
-            "text5": "Zalistování na Uniswap",
-            "text6": "Zalistování GARA na Coinmarketcap a Coingecko",
-            "text7": "Spuštění obchodování GARA na burze Coingarage ",
-            "text8": "GARA Stake",
-            "text9": "Aplikace GARA poplatků a spalování GARA",
-            "text10": "Druhý GARA Airdrop",
-            "text11": "První GARA Airdrop",
-            "text12": "Crypto platební karta a cash back v GARA"
-        },
-        "alocation": {
-            "header": "Alokace",
-            "rewards": {
-                "text": "11% (99M GARA)",
-                "subText": "Odměna za stakování"
-            },
-            "company": {
-                "text": "20% (180M GARA)",
-                "subText": "Společnost"
-            },
-            "baseTeam": {
-                "text": "11% (99M GARA)",
-                "subText": "Zakládající team"
-            },
-            "burnedAt": {
-                "text": "15% (135M GARA)",
-                "subText": "Bude spáleno 1. března 2024"
-            },
-            "marketing": {
-                "text": "10% (90M GARA)",
-                "subText": "Marketing noví uživatelé burzy"
-            },
-            "angelInvestors": {
-                "text": "10% (90M GARA)",
-                "subText": "Andělští investoři"
-            },
-            "reserved": {
-                "text": "11% (99M GARA)",
-                "subText": "Rezervováno pro veřejný předprodej",
-                "subText1": "a nabízeno ke koupi na www.coingarage.io."
-            },
-            "nonExchange": {
-                "text": "10% (90M GARA)",
-                "subText": "GARA v mimoburzovní formě po přijetí",
-                "subText1": "k obchodování na obchodní platformě emitenta"
-            },
-            "launchpads": {
-                "text": "2% (18M GARA)",
-                "subText": "Pro launchpady",
-                "subText1": "na centralizovaných burzách"
-            },
-            "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
-        },
-        "release": {
-            "header": "Uvolňování GARA Pro Tým",
-            "subHeader": "99 milionů GARA",
-            "text": "99 milionů GARA, která je určena pro tým, bude uvolňována postupně a to 20% (19,8M.) každý rok po dobu 5ti let.",
-            "box1": {
-                "text": "Na startu předprodeje",
-                "subText": "20% (19,8M.)"
-            },
-            "box2": {
-                "text": "Po 1 roce",
-                "subText": "20% (19,8M.)"
-            },
-            "box3": {
-                "text": "Po 2 letech",
-                "subText": "20% (19,8M.)"
-            },
-            "box4": {
-                "text": "Po 3 letech",
-                "subText": "20% (19,8M.)"
-            },
-            "box5": {
-                "text": "Po 4 letech",
-                "subText": "20% (19,8M.)"
-            }
-        },
-        "IEO": {
-            "header": "IEO Veřejný předprodej",
-            "text1": "40 % získaných prostředků bude použito na vybudování platformy Coingarage v souladu s obchodním plánem, tj. především na další rozvoj platformy, implementaci nových nástrojů, funkcí a služeb a náklady spojené s provozem burzy.",
-            "text2": "30 % bude použito na marketing - budování značky Coingarage. Propagace bude probíhat průběžně, aby Coingarage získal popularitu a přilákal dostatečný počet investorů a uživatelů.",
-            "text3": "20 % bude použito na likviditu.",
-            "text4": "10 % bude ponecháno jako rezerva pro případ nouze.",
-            "box": {
-                "address": "Adresa Kontraktu",
-                "btnBuyWithUSDT": "Nakoupit za USDT",
-                "btnBuyWithMatic": "Nakoupit za Matic"
-            }
-        },
-        "GARArunning": {
-            "header": "GARA běží na Polygon blockchainu",
-            "text": "Polygon (dříve známý jako Matic Network) je blockchainová platforma, která rozšiřuje a zlepšuje síť Ethereum. Má několik výhod, které zahrnují:",
-            "box1": {
-                "header": "Škálovatelnost",
-                "text": "Polygon umožňuje rychlou a efektivní škálovatelnost sítě Ethereum. Díky tzv. srovnávacím vrstvám (scaling layers) dokáže zpracovat mnohem více transakcí za sekundu než základní blockchain Ethereum."
-            },
-            "box2": {
-                "header": "Nízké poplatky",
-                "text": "Díky škálovatelnosti a optimalizaci transakčního procesu nabízí Polygon nízké poplatky za prováděné transakce. To je výhodné pro uživatele, kteří chtějí provádět časté a levné transakce."
-            },
-            "box3": {
-                "header": "Interoperabilita",
-                "text": "Polygon je kompatibilní s Ethereum, což znamená, že dAppy a smart kontrakty vyvinuté pro Ethereum mohou být snadno přeneseny na Polygon. To umožňuje vývojářům využít výhod Polygonu, aniž by museli psát nový kód."
-            },
-            "box4": {
-                "header": "Bezpečnost",
-                "text": "Polygon staví na bezpečnosti sítě Ethereum a využívá jejího konsensu Proof of Stake (PoS). To znamená, že držitelé Polygon tokenu mohou své tokeny stakovat a pomáhat tak zabezpečovat síť a získávat za to odměny."
-            },
-            "btnGARAOnPolygon": "GARA na Polygonscanu"
-        }
-    },
-    "widget": {
-        "button": "Chci se dozvědět více",
-        "header": "Rádi zodpovíme všechny vaše dotazy",
-        "text": "Nezávazně nám pošlete svůj e-mail a telefonní číslo. Náš obchodní zástupce vás bude kontaktovat a zodpoví vám všechny vaše dotazy."
+      }
     }
+  },
+  "GARA": {
+    "main": {
+      "header": "GARAGE Coin <span>GARA</span>",
+      "text1": "GARA je token naší burzy Coingarage, který nám pomáhá rozvíjet ekosystém burzy. Tento token byl vytvořen s pevným maximem pouze 900 milionů kusů a není možné ho navýšit. Naopak, díky našemu spalovacímu mechanismu bude počet GARA postupně ubývat.",
+      "text2": "Hlavní využití GARA je pro zaplacení celé řady poplatků na burze. Při jejím využití k platbě těchto poplatků naši uživatelé navíc získají 20% slevu z výše těchto poplatků. Dále GARA slouží jako forma odměny pro naše uživatele.",
+      "buyGARA": {
+        "header": "Nákup GARA",
+        "totalTokens": "Celkový počet GARA Tokenů",
+        "distributedTokens": "Celkový počet nabízených GARA Tokenů",
+        "soldTokens": "Prodáno Tokenů",
+        "btnConnectWallet": "Připojit peněženku",
+        "btnBuyGARA": "Koupit GARA",
+        "btnHelpGarry": "Kupte GARA a pomozte Garymu",
+        "buyWithEurOnCoingarage": "Kupte pomocí EUR na Coingarage",
+        "buyWith": "Nakoupit za",
+        "linkGoToLaunchapad": "Nakoupit na Coingarage",
+        "poweredBy": "Poháněno pomocí"
+      }
+    },
+    "usage": {
+      "header": "Plánované Využití GARA",
+      "usage1": "Listovací poplatky",
+      "usage2": "Poplatky z nákupu kartou",
+      "usage3": "Požadovaný plyn pro převod",
+      "usage4": "Success fee",
+      "usage5": "Poplatek za výběr",
+      "usage6": "Poplatek za plyn pro aplikace",
+      "usage7": "Poplatky za nákup",
+      "usage8": "Reklama"
+    },
+    "garaDepo": {
+      "header": "GARA Stake",
+      "subHeader": "Aktuální zhodnocení až 30% p.a.",
+      "text1": "Zaparkujte svoje nakoupené Garage coiny (GARA) v našem programu Depo a nechte je růst. Z vaší uložené GARA vám pravidelně vyplácíme úroky  na váš  účet u Coingarage a to každý den. O nic se nemusíte starat, vše je plně automatické.",
+      "text2": "Nyní zaváděcí akce <span>jen do 28.2.2025, s úrokem 30% p.a. fixně</span> po celou dobu stakingu. Využijte této jedinečné možnosti a nechte svoji GARA růst.",
+      "timer": {
+        "header": "Do konce 1. kola zbývá ",
+        "day": "DNÍ",
+        "hours": "HODIN",
+        "minutes": "MINUT",
+        "seconds": "SEKUND",
+        "disclaimer": "*Po tomto datu bude stále možné vložit GARA, ale již s nižším zhodnocením, které se bude dynamicky měnit podle celkového vloženého objemu GARA."
+      },
+      "boxes": {
+        "1": "Snadné a bez starostí",
+        "2": "Bezpečné a transparentní",
+        "3": "Vysoké zhodnocení",
+        "4": "Vyplácení výdělku každý den"
+      },
+      "garaStakebtn": "Zobrazit stake plány"
+    },
+    "burnMechanism": {
+      "header": "Spalovací mechanismus GARA",
+      "text1": "Za účelem hladšího vývoje hodnoty GARA jsme se rozhodli implementovat spalovací mechanismus, který bude postupně spalovat GARA tokeny na základě jejich zvyšujícího se využití.",
+      "boxes": {
+        "1": {
+          "header": "Dokud nezůstane  200 milionů GARA",
+          "text": "z původních 900 milionů"
+        },
+        "2": {
+          "header": "Každý měsíc spálíme 20% GARA",
+          "text": "přijatých na poplatcích"
+        }
+      },
+      "disclaimer": "*Spalování tokenů je metoda řízení celkové nabídky určité kryptoměny na trhu za účelem snížení dostupného množství  a tím potenciálně zvýšení hodnoty dané kryptoměny. Tento koncept je podobný zpětnému odkupu akcií v tradičním světě financí."
+    },
+    "roadmap": {
+      "header": "Roadmapa",
+      "btnBuyGARA": "Koupit GARA",
+      "text1": "Spuštění burzy",
+      "text2": "Vytvoření GARA",
+      "text3": "Spuštění obchodního robota",
+      "text4": "Předprodej GARA",
+      "text5": "Zalistování na Uniswap",
+      "text6": "Zalistování GARA na Coinmarketcap a Coingecko",
+      "text7": "Spuštění obchodování GARA na burze Coingarage ",
+      "text8": "GARA Stake",
+      "text9": "Aplikace GARA poplatků a spalování GARA",
+      "text10": "Druhý GARA Airdrop",
+      "text11": "První GARA Airdrop",
+      "text12": "Crypto platební karta a cash back v GARA"
+    },
+    "alocation": {
+      "header": "Alokace",
+      "rewards": {
+        "text": "11% (99M GARA)",
+        "subText": "Odměna za stakování"
+      },
+      "company": {
+        "text": "20% (180M GARA)",
+        "subText": "Společnost"
+      },
+      "baseTeam": {
+        "text": "11% (99M GARA)",
+        "subText": "Zakládající team"
+      },
+      "burnedAt": {
+        "text": "15% (135M GARA)",
+        "subText": "Bude spáleno 1. března 2024"
+      },
+      "marketing": {
+        "text": "10% (90M GARA)",
+        "subText": "Marketing noví uživatelé burzy"
+      },
+      "angelInvestors": {
+        "text": "10% (90M GARA)",
+        "subText": "Andělští investoři"
+      },
+      "reserved": {
+        "text": "11% (99M GARA)",
+        "subText": "Rezervováno pro veřejný předprodej",
+        "subText1": "a nabízeno ke koupi na www.coingarage.io."
+      },
+      "nonExchange": {
+        "text": "10% (90M GARA)",
+        "subText": "GARA v mimoburzovní formě po přijetí",
+        "subText1": "k obchodování na obchodní platformě emitenta"
+      },
+      "launchpads": {
+        "text": "2% (18M GARA)",
+        "subText": "Pro launchpady",
+        "subText1": "na centralizovaných burzách"
+      },
+      "limit": " Je vytvořen limit 900 milionů GARA, který se nikdy nezvýší."
+    },
+    "release": {
+      "header": "Uvolňování GARA Pro Tým",
+      "subHeader": "99 milionů GARA",
+      "text": "99 milionů GARA, která je určena pro tým, bude uvolňována postupně a to 20% (19,8M.) každý rok po dobu 5ti let.",
+      "box1": {
+        "text": "Na startu předprodeje",
+        "subText": "20% (19,8M.)"
+      },
+      "box2": {
+        "text": "Po 1 roce",
+        "subText": "20% (19,8M.)"
+      },
+      "box3": {
+        "text": "Po 2 letech",
+        "subText": "20% (19,8M.)"
+      },
+      "box4": {
+        "text": "Po 3 letech",
+        "subText": "20% (19,8M.)"
+      },
+      "box5": {
+        "text": "Po 4 letech",
+        "subText": "20% (19,8M.)"
+      }
+    },
+    "IEO": {
+      "header": "IEO Veřejný předprodej",
+      "text1": "40 % získaných prostředků bude použito na vybudování platformy Coingarage v souladu s obchodním plánem, tj. především na další rozvoj platformy, implementaci nových nástrojů, funkcí a služeb a náklady spojené s provozem burzy.",
+      "text2": "30 % bude použito na marketing - budování značky Coingarage. Propagace bude probíhat průběžně, aby Coingarage získal popularitu a přilákal dostatečný počet investorů a uživatelů.",
+      "text3": "20 % bude použito na likviditu.",
+      "text4": "10 % bude ponecháno jako rezerva pro případ nouze.",
+      "box": {
+        "address": "Adresa Kontraktu",
+        "btnBuyWithUSDT": "Nakoupit za USDT",
+        "btnBuyWithMatic": "Nakoupit za Matic"
+      }
+    },
+    "GARArunning": {
+      "header": "GARA běží na Polygon blockchainu",
+      "text": "Polygon (dříve známý jako Matic Network) je blockchainová platforma, která rozšiřuje a zlepšuje síť Ethereum. Má několik výhod, které zahrnují:",
+      "box1": {
+        "header": "Škálovatelnost",
+        "text": "Polygon umožňuje rychlou a efektivní škálovatelnost sítě Ethereum. Díky tzv. srovnávacím vrstvám (scaling layers) dokáže zpracovat mnohem více transakcí za sekundu než základní blockchain Ethereum."
+      },
+      "box2": {
+        "header": "Nízké poplatky",
+        "text": "Díky škálovatelnosti a optimalizaci transakčního procesu nabízí Polygon nízké poplatky za prováděné transakce. To je výhodné pro uživatele, kteří chtějí provádět časté a levné transakce."
+      },
+      "box3": {
+        "header": "Interoperabilita",
+        "text": "Polygon je kompatibilní s Ethereum, což znamená, že dAppy a smart kontrakty vyvinuté pro Ethereum mohou být snadno přeneseny na Polygon. To umožňuje vývojářům využít výhod Polygonu, aniž by museli psát nový kód."
+      },
+      "box4": {
+        "header": "Bezpečnost",
+        "text": "Polygon staví na bezpečnosti sítě Ethereum a využívá jejího konsensu Proof of Stake (PoS). To znamená, že držitelé Polygon tokenu mohou své tokeny stakovat a pomáhat tak zabezpečovat síť a získávat za to odměny."
+      },
+      "btnGARAOnPolygon": "GARA na Polygonscanu"
+    }
+  },
+  "widget": {
+    "button": "Chci se dozvědět více",
+    "header": "Rádi zodpovíme všechny vaše dotazy",
+    "text": "Nezávazně nám pošlete svůj e-mail a telefonní číslo. Náš obchodní zástupce vás bude kontaktovat a zodpoví vám všechny vaše dotazy."
+  }
 }

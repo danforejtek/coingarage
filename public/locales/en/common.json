@@ -11,6 +11,7 @@
         "earn": "Earn",
         "becomeAShareholder": "Become a Silent Partner",
         "affiliate": "Referral",
+        "btcSavingPlan": "BTC Saving Plan",
         "stake": "Stake",
         "more": "More",
         "aboutUs": "About Us",
@@ -286,6 +287,101 @@
                 "answer2": "We employ industry-standard security measures, including encryption, two-factor authentication (2FA), and regular security audits, to safeguard your funds and personal data. Additionally, our platform adheres to strict compliance standards to protect against unauthorized access and fraudulent activities.",
                 "question3": "What are the benefits of using DCA?",
                 "answer3": "Dollar-cost averaging (DCA) is a strategy where an investor divides up the total amount to be invested across periodic purchases of a target asset in an effort to reduce the impact of volatility on the overall purchase. The key benefits of using DCA include reducing the risk associated with market timing, potentially lowering the average cost per share over time, and promoting disciplined investing behavior."
+            }
+        },
+        "BtcSaving": {
+            "whatIsSavingPlan": {
+                "header": "What is a Bitcoin Saving Plan?",
+                "text": "A Bitcoin saving plan is a simple and effective way to grow your savings through regular investments in Bitcoin. Whether you're a newcomer to cryptocurrencies or an experienced investor, our plan offers an easy and automated solution to gradually build your wealth.",
+                "btn": "Start saving",
+                    "cards": {
+                    "card1": {
+                        "header": "Benefit from cost averaging",
+                        "text": "Purchasing on a weekly, bi-weekly, or monthly basis makes you less dependent on short-term price fluctuations."
+                    },
+                    "card2": {
+                        "header": "Simple payment options",
+                        "text": "You can set up a personal saving plan using Visa, Mastercard, or SEPA."
+                    },
+                    "card3": {
+                        "header": "Set up extra purchases",
+                        "text": "Extra Bitcoin purchases during significant price drops. This way, you acquire more BTC at a lower cost and achieve greater returns in the future."
+                    },
+                    "card4": {
+                        "header": "Withdraw anytime",
+                        "text": "Your funds are directly in your wallet. This means you can withdraw them anytime, and they are not locked."
+                    }
+                }
+            },
+            "whatIsDCA": {
+                "header": "What is the DCA Strategy?",
+                "text": "Dollar Cost Averaging (DCA) is an investment strategy involving regular investments of the same amount of money into a specific asset, regardless of its current price. The goal of this strategy is to reduce the impact of volatility on the overall investment.",
+                "benefits": {
+                    "header": "Benefits",
+                    "benefit1": "Risk reduction: By spreading your investment over time, you reduce the risk of buying at a high price.",
+                    "benefit2": "Emotional stability: Avoid attempts to time the market, which can be emotionally challenging and risky.",
+                    "benefit3": "Risk diversification: Buy more units of the asset when prices are low and fewer units when prices are high. This averages your purchase cost."
+                },
+                "regularSaving": {
+                    "header": "Regular Bitcoin saving (example)",
+                    "text": "Regular BTC/CZK purchases through our savings plan at 8000 CZK per month.",
+                    "bought": "Bought",
+                    "investedAmount": "Invested amount",
+                    "receivedAmount": "Received amount",
+                    "totalAmount": "Total amount",
+                    "percentageCalculation": "Percentage calculation"
+                },
+                "dynamicDCA": {
+                    "header": "Dynamic DCA",
+                    "text1": "Based on the current market situation, you invest more or less, allocating your capital more effectively throughout Bitcoin cycles.",
+                    "text2": "If you're confident in Bitcoin, aren't afraid to invest larger amounts during price drops, and want to optimize your strategy for higher returns, this is the right choice for you.",
+                    "text3": "By multiplying the invested amount in a declining market, your average purchase cost is guaranteed to decrease by units or tens of percentages. Most importantly, you invest more money at the right moment, leading to significantly higher returns."
+                }
+            },
+            "dcaCalculator": {
+                "subheader": "DCA Bitcoin Calculator",
+                "header": "Calculate how much you could have saved",
+                "invested": "Invested",
+                "enterAmount": "Enter amount",
+                "frequency": "Frequency",
+                "weekly": "Weekly",
+                "monthly": "Monthly",
+                "dateOpening": "Date of opening",
+                "dateClosing": "Date of closing",
+                "notice": "Values are calculated based on historical bitcoin data and may not fit exactly to the $.",
+                "yourDeposit":"Your deposit",
+                "normalSavings":"Savings account yield",
+                "btcSavings":"Income in savings plan"
+            },
+            "extraDCA": {
+                "header": "Extra purchases in DCA strategy",
+                "text": "This feature is designed to help you maximize the value of your savings. Set how much the market must drop (in percentage) for an additional portion to be automatically purchased into your position. This function allows you to leverage market volatility and lower the average purchase price of BTC as much as possible.",
+                "howItWorks": {
+                    "header": "How does it work?",
+                    "work1": "Define extra purchase: Choose the percentage drop at which a purchase should be made.",
+                    "work2": "Automatic response to drop: If the market falls below your set level, an additional portion is automatically purchased into your position.",
+                    "work3": "Purchase price optimization: By buying at lower prices, you achieve a lower average purchase price for BTC, which increases your profit potential during subsequent market growth."
+                },
+                "whyAdvantageous": {
+                    "header": "Why is it advantageous?",
+                    "advantageous1": "Lower average purchase price: Extra purchases allow you to buy more when prices are low, lowering your average BTC purchase price.",
+                    "advantageous2": "Passive strategy: You don't have to monitor the market constantly; everything is automatic.",
+                    "advantageous3": "Efficient risk management: Enables you to better utilize volatility and market downturns to your advantage."
+                },
+                "graph": {
+                    "classicDCA": "Classic DCA",
+                    "dcaExtra": "DCA with extra purchases",
+                    "dcaBuy": "DCA purchase $100",
+                    "dcaExtraBuy": "Extra purchase",
+                    "weeks": {
+                        "week1": "Week 1",
+                        "week2": "Week 2",
+                        "week3": "Week 3",
+                        "week4": "Week 4",
+                        "week5": "Week 5"
+                    },
+                    "btn": "Start saving"
+                }
             }
         },
         "affiliate": {
