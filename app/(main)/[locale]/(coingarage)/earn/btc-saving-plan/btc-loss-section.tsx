@@ -26,13 +26,14 @@ export default function BtcLossSection() {
       id="extra-buy-strategy"
       className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
     >
-      <div className="w-full rounded-xlg bg-card p-4 sm:ml-4 sm:w-[25%] lg:p-8">
+      {/* ----------- Control Panel */}
+      <div id="control-panel" className="mb-10 w-full rounded-xlg bg-card p-4 sm:mb-0 sm:ml-4 sm:w-[25%] lg:p-8">
         <label className="input-label" htmlFor="amount">
           {t("dcaCalculator.invested")}:
         </label>
 
-        <div className="relative" >
-          <span className="label absolute top-[10px] right-5">USD</span>
+        <div className="relative">
+          <span className="label absolute right-5 top-[10px]">USD</span>
           <Input
             value={amount}
             name="amount"
@@ -82,13 +83,11 @@ export default function BtcLossSection() {
           className="mb-5 mt-1 block !rounded-circle  border-none !text-base"
         ></Input>
 
-        
-        <p className="italic mt-6">{t("dcaCalculator.notice")}</p>
-        
+        <p className="mt-6 italic">{t("dcaCalculator.notice")}</p>
       </div>
 
-      {/* ----------- savings Graph */}
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-start sm:w-[75%]">
+      {/* ----------- interactive Graph */}
+      <div className="relative flex w-full flex-col items-center justify-start sm:w-[75%]">
         <BtcLossGraph amount={amount} frequency={frequency} dateOpening={dateOpening} dateClosing={dateClosing} />
       </div>
     </section>

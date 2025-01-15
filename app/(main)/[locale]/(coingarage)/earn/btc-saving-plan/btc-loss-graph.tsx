@@ -23,6 +23,11 @@ type Props = {
   dateClosing: string
 }
 
+function formatInUSD(amount: number | null) {
+  if (amount === null || Number.isNaN(amount)) return "$"
+  return amount.toLocaleString("en-US", { style: "currency", currency: "USD" })
+}
+
 export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosing }: Props) {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [series, setSeries] = React.useState<LineSeriesType[]>([])
@@ -30,10 +35,8 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
   const [nbSeries, setNbSeries] = React.useState(1)
   const amountNum: number = parseInt(amount)
   const dateOpeningDate = new Date(dateOpening).getTime()
-  console.log(dateOpeningDate)
-  console.log(amountNum)
+
   const url = `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${dateOpeningDate}&interval=1440`
-  console.log(url)
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -46,6 +49,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       try {
         const response = await fetch(url)
         let data = await response.json()
+        const savingAccountInterest = 0.03
 
         data = data.reverse()
         const dataLength = data.length
@@ -57,7 +61,9 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
         let btcUsdArary: number[] = []
         // count conservative sum during the time
         for (let i = 1; i < dataLength; i++) {
-          let currentAmount: number = Math.round((conservativeArray[i - 1] + amountNum) * (1 + 0.03 / 12))
+          let currentAmount: number = Math.round(
+            (conservativeArray[i - 1] + amountNum) * (1 + savingAccountInterest / 12)
+          )
           conservativeArray.push(currentAmount)
         }
         // count btc sum during the time
@@ -67,7 +73,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
         }
         // convert btc sum to usd
         for (let i = 0; i < dataLength; i++) {
-          btcUsdArary[i] = btcArray[i] * data[i].close
+          btcUsdArary[i] = Math.round(btcArray[i] * data[i].close)
         }
 
         setDates(data.map((entry: any) => new Date(entry.time)))
@@ -77,11 +83,19 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
             type: "line",
             data: conservativeArray,
             area: false,
-            color: "#4c93dc",
-            label: "Conservative 3% pa",
+            color: "#00abfe",
+            label: t("dcaCalculator.normalSavings"),
             showMark: false,
           },
-          { id: "2", type: "line", data: btcUsdArary, area: false, color: "#e60040", label: "BTC", showMark: false },
+          {
+            id: "2",
+            type: "line",
+            data: btcUsdArary,
+            area: false,
+            color: "#e60040",
+            label: t("dcaCalculator.btcSavings"),
+            showMark: false,
+          },
         ])
         setTimeout(() => {
           setNbSeries(2)
@@ -94,37 +108,58 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
     fetchData()
   }, [amount, frequency, dateOpening, dateClosing])
 
-  console.log(series)
-
   return (
-    <div id="graphFrame" className="relative w-full">
-      <div>
-        {isNaN(amountNum) && (
-          <p className="index absolute left-[50%] top-[50%] z-20 translate-x-[-50%] translate-y-[-50%] bg-card p-4 text-center">
-            {t("dcaCalculator.enterAmountCta")}
-          </p>
-        )}
+    <div className="relative w-full">
+      <div className="flex flex-wrap justify-evenly gap-2">
+        <span className="label inline-block h-10 rounded-xlg border-2 border-[#3FCC88] bg-[color:hsla(151,58%,52%,0.1)] px-4 leading-9 !opacity-100">
+          {t("dcaCalculator.yourDeposit")}
+          <span className="font-bold text-[#3FCC88]">
+            {"\u00a0"} {formatInUSD(parseInt(amount))}
+          </span>
+        </span>
+        <span className="label inline-block h-10 rounded-xlg border-2 border-[#00ABFE] bg-[color:hsla(200,100%,50%,0.1)] px-4 leading-9 !opacity-100">
+          {t("dcaCalculator.normalSavings")}
+          <span className="font-bold text-[#00ABFE]">
+            {"\u00a0"} {formatInUSD(series.length && series[0].data ? series[0].data[dates.length - 1] : null)}
+          </span>
+        </span>
+        <span className="label inline-block h-10 rounded-xlg border-2  border-primary bg-[color:hsla(338,100%,56%,0.1)]  px-4 leading-9 !opacity-100">
+          {t("dcaCalculator.btcSavings")}
+          <span className="font-bold text-primary">
+            {"\u00a0"} {formatInUSD(series.length && series[1].data ? series[1].data[dates.length - 1] : null)}
+          </span>
+        </span>
       </div>
-      <div>
-        <LineChart
-          yAxis={[{ tickLabelStyle: { fill: "white", fontWeight: "lighter" }, valueFormatter: thousandsFormatter }]}
-          xAxis={[
-            {
-              tickLabelStyle: { fill: "white", fontWeight: "lighter" },
-              data: dates,
-              scaleType: "time",
-              valueFormatter: yearFormatter,
-            },
-          ]}
-          series={[...series.slice(0, nbSeries)]}
-          skipAnimation={false}
-          height={500}
-          sx={{
-            "& .MuiChartsAxis-line": { stroke: "white !important" },
-            "& .MuiChartsLegend-root": { display: "none" },
-            "& *:not(circle):not(path)": { transitionDuration: "2s" },
-          }}
-        />
+
+      <div id="graphFrame">
+        <div>
+          {isNaN(amountNum) && (
+            <p className="index absolute  left-[50%] top-[50%] z-20 translate-x-[-50%] translate-y-[-50%] bg-card p-4 text-center">
+              {t("dcaCalculator.enterAmountCta")}
+            </p>
+          )}
+        </div>
+        <div>
+          <LineChart
+            yAxis={[{ tickLabelStyle: { fill: "white", fontWeight: "lighter" }, valueFormatter: thousandsFormatter }]}
+            xAxis={[
+              {
+                tickLabelStyle: { fill: "white", fontWeight: "lighter" },
+                data: dates,
+                scaleType: "time",
+                valueFormatter: yearFormatter,
+              },
+            ]}
+            series={[...series.slice(0, nbSeries)]}
+            skipAnimation={false}
+            height={500}
+            sx={{
+              "& .MuiChartsAxis-line": { stroke: "white !important" },
+              "& .MuiChartsLegend-root": { display: "none" },
+              "& *:not(circle):not(path)": { transitionDuration: "2s" },
+            }}
+          />
+        </div>
       </div>
     </div>
   )
