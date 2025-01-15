@@ -86,6 +86,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
             color: "#00abfe",
             label: t("dcaCalculator.normalSavings"),
             showMark: false,
+            valueFormatter: formatInUSD,
           },
           {
             id: "2",
@@ -95,6 +96,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
             color: "#e60040",
             label: t("dcaCalculator.btcSavings"),
             showMark: false,
+            valueFormatter: formatInUSD,
           },
         ])
         setTimeout(() => {
