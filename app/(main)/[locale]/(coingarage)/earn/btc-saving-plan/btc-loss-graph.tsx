@@ -48,6 +48,11 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       }
       try {
         const response = await fetch(url)
+        fetch("/api/btc-data/read")
+          .then((response) => response.json())
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Error:", error))
+
         let data = await response.json()
         const savingAccountInterest = 0.03
 

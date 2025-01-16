@@ -10,6 +10,7 @@ import GoogleTagManager from "@/components/google-tag-manager"
 import { headers } from "next/headers"
 // import { SmartlookScript } from "@/components/smartlook-script"
 import { Providers } from "@/components/layout/providers"
+import '@/utils/writeBTCdata';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coingarage.io"),
