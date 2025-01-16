@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 // import { useTranslations } from "next-intl"
 import Image from "next/image"
 import SavingsWidget from "./savings-widget"
-import { BenefitCarousel } from "../../../finance/components/benefit-carousel"
+import { BenefitCarousel } from "./benefit-carousel"
 import BtcSavingsSvg from "./btc-saving-svg"
 import BtcLossSection from "./btc-loss-section"
 
@@ -16,7 +16,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
   return (
     <main className="relative">
-      <section id="What-is-a-Bitcoin-Saving-Plan" className="container mx-auto mt-16 flex items-center justify-between">
+      <section id="What-is-a-Bitcoin-Saving-Plan" className="container mx-auto mt-16 pr-0 flex items-center justify-between">
         <div className="w-[60%] max-w-[620px] p-4 sm:w-[50%]">
           <h1 className="h1-caption mb-6 mr-[-66%] sm:mr-0">{t("whatIsSavingPlan.header")}</h1>
           <p className="text-text-neutral-600 mb-4 text-lg dark:text-neutral-300 lg:text-left">
@@ -31,7 +31,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </div>
         </div>
 
-        <div className="mr-[-16px] w-[40%] overflow-hidden  xl:mr-0">
+        <div className="w-[40%] overflow-hidden  xl:mr-0">
           <Image
             src="/images/eezy-trader/images/pig_pink.png"
             alt=""

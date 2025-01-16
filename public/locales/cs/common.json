@@ -297,22 +297,22 @@
         "btn": "Začít spořit",
         "cards": {
           "card1": {
-            "header": "Využijte efektu průměrování ceny",
-            "text": "Nákup na týdenní, dvoutýdenní nebo měsíční bázi vás činí méně závislými na krátkodobých výkyvech cen."
+              "header": "Využijte DCA",
+              "text": "Nakupování na týdenní nebo měsíční bázi vás činí méně závislými na krátkodobých cenových výkyvech."
           },
           "card2": {
-            "header": "Jednoduché platební možnosti",
-            "text": "Můžete si nastavit osobní spořicí plán pomocí Visa, Mastercard nebo SEPA."
+              "header": "Jednoduchá platba",
+              "text": "Můžete si nastavit osobní spořicí plán pomocí Visa, Mastercard nebo SEPA."
           },
           "card3": {
-            "header": "Nastavení extra dokupu",
-            "text": "Extra dokoupení Bitcoinu při výrazných poklesech ceny. Díky tomu získáte více BTC za nižší cenu a dosáhnete většího zhodnocení v budoucnu."
+              "header": "Extra nákupy",
+              "text": "Další nákupy Bitcoinu během významných cenových propadů. Tímto způsobem získáváte více BTC za nižší cenu."
           },
           "card4": {
-            "header": "Možnost výběru kdykoliv",
-            "text": "Vaše peníze jsou přímo ve vaší peněžence. To znamená, že je můžete kdykoliv vybrat a nejste vázáni jejich uzamčením."
+              "header": "Výběr kdykoli",
+              "text": "Vaše prostředky jsou přímo ve vaší peněžence. To znamená, že je můžete kdykoli vybrat a nejsou uzamčeny."
           }
-        }
+      }
       },
       "whatIsDCA": {
         "header": "Co to je DCA Strategie ?",
@@ -353,7 +353,7 @@
         "enterAmountCta": "K zobrazení grafu, zadejte částku, co chcete investovat (v USD)",
         "yourDeposit": "Váš vklad:",
         "normalSavings": "Výnos na spořícím účtě:",
-        "btcSavings": "Výnos ve spořícím plánu:"
+        "btcSavings": "Výnos ve spořícím plánu"
       },
       "extraDCA": {
         "header": "Extra dokup v DCA strategii",

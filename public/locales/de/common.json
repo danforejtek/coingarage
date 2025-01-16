@@ -298,26 +298,38 @@
                     "btn": "Jetzt sparen",
                     "cards": {
                         "card1": {
-                            "header": "Nutzen Sie den Durchschnittskosteneffekt",
-                            "text": "Durch wöchentliche, zweiwöchentliche oder monatliche Käufe sind Sie weniger von kurzfristigen Kursschwankungen abhängig."
+                            "header": "Profitieren Sie von DCA",
+                            "text": "Der wöchentliche oder monatliche Kauf macht Sie weniger abhängig von kurzfristigen Preisschwankungen."
                         },
                         "card2": {
-                            "header": "Einfache Zahlungsmöglichkeiten",
+                            "header": "Einfache Zahlung",
                             "text": "Sie können einen persönlichen Sparplan mit Visa, Mastercard oder SEPA einrichten."
                         },
                         "card3": {
-                            "header": "Zusätzliche Käufe einstellen",
-                            "text": "Zusätzliche Bitcoin-Käufe bei signifikanten Kursrückgängen. So erwerben Sie mehr BTC zu niedrigeren Kosten und erzielen in Zukunft höhere Renditen."
+                            "header": "Zusätzliche Käufe",
+                            "text": "Zusätzliche Bitcoin-Käufe bei erheblichen Preisrückgängen. So erwerben Sie mehr BTC zu einem niedrigeren Preis."
                         },
                         "card4": {
-                            "header": "Jederzeitige Auszahlung möglich",
-                            "text": "Ihr Geld befindet sich direkt in Ihrer Wallet. Das bedeutet, dass Sie es jederzeit abheben können, ohne es sperren zu müssen."
+                            "header": "Jederzeit abheben",
+                            "text": "Ihre Gelder befinden sich direkt in Ihrer Wallet. Das bedeutet, dass Sie sie jederzeit abheben können und sie nicht gesperrt sind."
                         }
                     }
                 },
                 "dcaCalculator": {
-                    "subheader": "DCA Bitcoin-Rechner",
-                    "header": "Berechnen Sie, wie viel Sie hätten sparen können"
+                    "subheader": "DCA Bitcoin Rechner",
+                    "header": "Berechnen Sie rückwirkend, wie viel Sie gespart hätten",
+                    "invested": "Investiert",
+                    "enterAmount": "Betrag eingeben",
+                    "frequency": "Frequenz",
+                    "weekly": "Wöchentlich",
+                    "monthly": "Monatlich",
+                    "dateOpening": "Startdatum",
+                    "dateClosing": "Enddatum",
+                    "notice": "Die Werte basieren auf historischen Bitcoin-Daten und stimmen möglicherweise nicht genau mit $ überein.",
+                    "enterAmountCta": "Um das Diagramm anzuzeigen, geben Sie den Betrag ein, den Sie investieren möchten (in USD)",
+                    "yourDeposit": "Ihre Einzahlung:",
+                    "normalSavings": "Ertrag auf Sparkonto:",
+                    "btcSavings": "Ertrag im Bitcoin-Sparplan"
                 },
                 "whatIsDCA": {
                     "header": "Was ist die DCA-Strategie?",

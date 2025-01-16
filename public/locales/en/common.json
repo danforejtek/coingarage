@@ -294,24 +294,24 @@
                 "header": "What is a Bitcoin Saving Plan?",
                 "text": "A Bitcoin saving plan is a simple and effective way to grow your savings through regular investments in Bitcoin. Whether you're a newcomer to cryptocurrencies or an experienced investor, our plan offers an easy and automated solution to gradually build your wealth.",
                 "btn": "Start saving",
-                    "cards": {
+                "cards": {
                     "card1": {
-                        "header": "Benefit from cost averaging",
-                        "text": "Purchasing on a weekly, bi-weekly, or monthly basis makes you less dependent on short-term price fluctuations."
+                        "header": "Benefit from DCA",
+                        "text": "Purchasing on a weekly or monthly basis makes you less dependent on short-term price fluctuations."
                     },
                     "card2": {
-                        "header": "Simple payment options",
+                        "header": "Simple payment",
                         "text": "You can set up a personal saving plan using Visa, Mastercard, or SEPA."
                     },
                     "card3": {
-                        "header": "Set up extra purchases",
-                        "text": "Extra Bitcoin purchases during significant price drops. This way, you acquire more BTC at a lower cost and achieve greater returns in the future."
+                        "header": "Extra purchases",
+                        "text": "Extra Bitcoin purchases during significant price drops. This way, you acquire more BTC at a lower cost."
                     },
                     "card4": {
                         "header": "Withdraw anytime",
                         "text": "Your funds are directly in your wallet. This means you can withdraw them anytime, and they are not locked."
                     }
-                }
+                }                
             },
             "whatIsDCA": {
                 "header": "What is the DCA Strategy?",
@@ -340,18 +340,19 @@
             },
             "dcaCalculator": {
                 "subheader": "DCA Bitcoin Calculator",
-                "header": "Calculate how much you could have saved",
+                "header": "Calculate retrospectively how much you would have saved",
                 "invested": "Invested",
                 "enterAmount": "Enter amount",
                 "frequency": "Frequency",
                 "weekly": "Weekly",
                 "monthly": "Monthly",
-                "dateOpening": "Date of opening",
-                "dateClosing": "Date of closing",
-                "notice": "Values are calculated based on historical bitcoin data and may not fit exactly to the $.",
-                "yourDeposit":"Your deposit",
-                "normalSavings":"Savings account yield",
-                "btcSavings":"Income in savings plan"
+                "dateOpening": "Start date",
+                "dateClosing": "End date",
+                "notice": "Values are calculated based on historical Bitcoin data and may not perfectly match $.",
+                "enterAmountCta": "To display the chart, enter the amount you want to invest (in USD)",
+                "yourDeposit": "Your deposit:",
+                "normalSavings": "Savings account yield:",
+                "btcSavings": "Bitcoin savings plan yield"
             },
             "extraDCA": {
                 "header": "Extra purchases in DCA strategy",
