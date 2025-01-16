@@ -27,4 +27,4 @@ const writeToFile = async () => {
 };
 
 // Naplánuj úlohu na každý den v 7:00 ráno
-cron.schedule('30 15 * * *', writeToFile);
+cron.schedule('55 15 * * *', writeToFile);
