@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <div id="btcsaving-layout" className="primary-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
+      <div id="btcsaving-layout" className="btcsaving-gradient absolute left-0 top-0 -z-10 h-[100vh] w-full"></div>
       {children}
     </div>
   )

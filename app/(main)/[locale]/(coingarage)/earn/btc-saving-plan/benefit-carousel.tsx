@@ -25,9 +25,9 @@ export const BenefitCarousel = () => {
       <CarouselContent className="ml-0">
         {
           benefitsImgs.map((img, index) => (
-            <CarouselItem id="carouselItem" key={img} className="bg-card p-8 rounded-xlg md:basis-[47%] lg:basis-1/5 mr-[5%] grow lg:last:mr-0">
+            <CarouselItem id="carouselItem" key={img} className="bg-backgroundMuted p-8 rounded-xlg md:basis-[47%] lg:basis-1/5 mr-[5%] grow lg:last:mr-0">
               <Image src={`/images/eezy-trader/icons/${img}.svg`} alt="" width={55} height={55} className="mx-auto" />
-              <h3 className="card-caption text-center my-6">{t("whatIsSavingPlan.cards.card" + (index + 1) + ".header")}</h3>
+              <h3 className="card-caption !font-bold text-center my-6">{t("whatIsSavingPlan.cards.card" + (index + 1) + ".header")}</h3>
 
               <p className="text-center">{t("whatIsSavingPlan.cards.card" + (index + 1) + ".text")}</p>
             </CarouselItem>))

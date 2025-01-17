@@ -18,7 +18,7 @@ export default function BtcLossSection() {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [amount, setAmount] = useState("")
   const [frequency, setFrequency] = useState("monthly")
-  const [dateOpening, setDateOpening] = useState("2024-01-01")
+  const [dateOpening, setDateOpening] = useState("2020-01-01")
   const [dateClosing, setDateClosing] = useState(new Date().toISOString().split("T")[0])
 
   return (
@@ -27,7 +27,7 @@ export default function BtcLossSection() {
       className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
     >
       {/* ----------- Control Panel */}
-      <div id="control-panel" className="mb-10 w-full rounded-xlg bg-card p-4 sm:mb-0 sm:ml-4 sm:w-[25%] lg:p-8">
+      <div id="control-panel" className="mb-10 w-full rounded-xlg bg-backgroundMuted p-8 sm:mb-0 sm:ml-4 sm:w-[25%]">
         <label className="input-label" htmlFor="amount">
           {t("dcaCalculator.invested")}:
         </label>
@@ -55,8 +55,8 @@ export default function BtcLossSection() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectItem value="weekly">{t("dcaCalculator.monthly")}</SelectItem>
-              <SelectItem value="monthly">{t("dcaCalculator.weekly")}</SelectItem>
+              <SelectItem value="monthly">{t("dcaCalculator.monthly")}</SelectItem>
+              <SelectItem value="weekly">{t("dcaCalculator.weekly")}</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -67,6 +67,8 @@ export default function BtcLossSection() {
         <Input
           name="amount"
           type="date"
+          min="2017-01-01"
+          max={new Date().toISOString().split("T")[0]}
           value={dateOpening}
           onChange={(e) => setDateOpening(e.target.value)}
           className="mb-5 mt-1 block !rounded-circle border-none !text-base"
@@ -78,6 +80,8 @@ export default function BtcLossSection() {
         <Input
           name="amount"
           type="date"
+          min="2017-01-01"
+          max={new Date().toISOString().split("T")[0]}
           value={dateClosing}
           onChange={(e) => setDateClosing(e.target.value)}
           className="mb-5 mt-1 block !rounded-circle  border-none !text-base"
@@ -87,7 +91,7 @@ export default function BtcLossSection() {
       </div>
 
       {/* ----------- interactive Graph */}
-      <div className="relative flex w-full flex-col items-center justify-start sm:w-[75%]">
+      <div className="relative flex w-full flex-col pt-5 bg-backgroundMuted rounded-xlg items-center justify-start sm:w-[75%]">
         <BtcLossGraph amount={amount} frequency={frequency} dateOpening={dateOpening} dateClosing={dateClosing} />
       </div>
     </section>

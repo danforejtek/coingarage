@@ -16,7 +16,10 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
   return (
     <main className="relative">
-      <section id="What-is-a-Bitcoin-Saving-Plan" className="container mx-auto mt-16 pr-0 flex items-center justify-between">
+      <section
+        id="What-is-a-Bitcoin-Saving-Plan"
+        className="container mx-auto mt-16 flex items-center justify-between pr-0"
+      >
         <div className="w-[60%] max-w-[620px] p-4 sm:w-[50%]">
           <h1 className="h1-caption mb-6 mr-[-66%] sm:mr-0">{t("whatIsSavingPlan.header")}</h1>
           <p className="text-text-neutral-600 mb-4 text-lg dark:text-neutral-300 lg:text-left">
@@ -44,55 +47,56 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
       {/* ----------- Benefits section */}
 
-      <section id="four-benefits" className="container mx-auto mb-36 mt-28 flex justify-between">
+      <section id="four-benefits" className="container mx-auto mb-16 sm:mb-24 mt-28 flex justify-between">
         <BenefitCarousel />
       </section>
 
       {/* ----------- DCA strategy */}
+      <section className="bg-backgroundMuted p-3 sm:p-36">
+        <section
+          id="What-is-a-Bitcoin-Saving-Plan"
+          className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
+        >
+          <div className="w-full p-4 sm:w-1/2">
+            <h2 className="h2-caption mb-6">{t("whatIsDCA.header")}</h2>
+            <p className="common-text">{t("whatIsDCA.text")}</p>
+            <h3 className="h3-caption-primary mb-2 mt-7">{t("whatIsDCA.benefits.header")}</h3>
+            <ul className="unlist">
+              <li className="common-text">
+                <strong>{t("whatIsDCA.benefits.benefit1").split(":")[0]}</strong>:
+                {t("whatIsDCA.benefits.benefit1").split(":")[1]}
+              </li>
+              <li className="common-text">
+                <strong>{t("whatIsDCA.benefits.benefit2").split(":")[0]}</strong>:
+                {t("whatIsDCA.benefits.benefit2").split(":")[1]}
+              </li>
+              <li className="common-text">
+                <strong>{t("whatIsDCA.benefits.benefit3").split(":")[0]}</strong>:
+                {t("whatIsDCA.benefits.benefit3").split(":")[1]}
+              </li>
+            </ul>
+          </div>
 
-      <section
-        id="What-is-a-Bitcoin-Saving-Plan"
-        className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
-      >
-        <div className="w-full p-4 sm:w-1/2">
-          <h2 className="h2-caption mb-6">{t("whatIsDCA.header")}</h2>
-          <p className="common-text">{t("whatIsDCA.text")}</p>
-          <h3 className="h3-caption-primary mb-2 mt-7">{t("whatIsDCA.benefits.header")}</h3>
-          <ul className="unlist">
-            <li className="common-text">
-              <strong>{t("whatIsDCA.benefits.benefit1").split(":")[0]}</strong>:
-              {t("whatIsDCA.benefits.benefit1").split(":")[1]}
-            </li>
-            <li className="common-text">
-              <strong>{t("whatIsDCA.benefits.benefit2").split(":")[0]}</strong>:
-              {t("whatIsDCA.benefits.benefit2").split(":")[1]}
-            </li>
-            <li className="common-text">
-              <strong>{t("whatIsDCA.benefits.benefit3").split(":")[0]}</strong>:
-              {t("whatIsDCA.benefits.benefit3").split(":")[1]}
-            </li>
-          </ul>
-        </div>
+          {/* ----------- Savings Widget */}
+          <div className="flex w-full flex-col items-center justify-start sm:w-1/2">
+            <SavingsWidget />
+          </div>
+        </section>
 
-        {/* ----------- Savings Widget */}
-        <div className="flex w-full flex-col items-center justify-start sm:w-1/2">
-          <SavingsWidget />
-        </div>
-      </section>
-
-      {/* ----------- dynamic DCA */}
-      <section className="container">
-        <div id="dynamic-DCA" className="mx-auto mt-16 rounded-xlg bg-card p-5 sm:p-10">
-          <h2 className="h2-caption mb-3 sm:mb-8">{t("whatIsDCA.dynamicDCA.header")}</h2>
-          <p className="mb-2 sm:w-[496px] sm:max-w-[50%]">{t("whatIsDCA.dynamicDCA.text1")}</p>
-          <p className="mb-2 sm:w-[750px] sm:max-w-[75%]">{t("whatIsDCA.dynamicDCA.text2")}</p>
-          <p className="mb-2 sm:w-[1050px] sm:max-w-[100%]">{t("whatIsDCA.dynamicDCA.text3")}</p>
-        </div>
+        {/* ----------- dynamic DCA */}
+        <section className="container">
+          <div id="dynamic-DCA" className="mx-auto mt-16 rounded-xlg bg-background p-5 sm:p-10">
+            <h2 className="h2-caption mb-3 sm:mb-8">{t("whatIsDCA.dynamicDCA.header")}</h2>
+            <p className="mb-2 sm:w-[496px] sm:max-w-[50%]">{t("whatIsDCA.dynamicDCA.text1")}</p>
+            <p className="mb-2 sm:w-[750px] sm:max-w-[75%]">{t("whatIsDCA.dynamicDCA.text2")}</p>
+            <p className="mb-2 sm:w-[1050px] sm:max-w-[100%]">{t("whatIsDCA.dynamicDCA.text3")}</p>
+          </div>
+        </section>
       </section>
 
       {/* ----------- Calculate your loss + Graph */}
 
-      <div className="container mx-auto mt-16">
+      <div className="container mx-auto mt-16 sm:mt-24">
         <h3 className="h3-caption-primary mb-1 ml-4">{t("dcaCalculator.subheader")}</h3>
         <h2 className="h2-caption mb-6  ml-4">{t("dcaCalculator.header")}</h2>
       </div>
@@ -103,9 +107,9 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
 
       <section
         id="extra-buy-strategy"
-        className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
+        className="container mx-auto mt-16 flex flex-col items-start justify-center sm:pt-24 sm:gap-[2%] lg:flex-row lg:justify-between xl:gap-[10%]"
       >
-        <div className="w-full p-4 sm:w-1/2">
+        <div className="w-full p-4 lg:w-1/2">
           <h2 className="h2-caption mb-6">{t("extraDCA.header")}</h2>
           <p className="common-text">{t("extraDCA.text")}</p>
           <h3 className="h3-caption mb-2 mt-7 font-bold">{t("extraDCA.howItWorks.header")}</h3>
@@ -142,7 +146,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         </div>
 
         {/* ----------- savings Graph */}
-        <div className="relative flex w-full flex-col items-center justify-start sm:w-1/2">
+        <div className="w-full lg:w-1/2">
           <BtcSavingsSvg />
         </div>
       </section>

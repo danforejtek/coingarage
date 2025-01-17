@@ -6,7 +6,7 @@ export default function SavingsWidget() {
   const t = useTranslations("eezy-trader.BtcSaving")
 
   return (
-    <div className="p-6 bg-card rounded-xlg">
+    <div className="p-6 bg-background rounded-xlg">
       <h3 className="h3-caption-primary !font-bold mt-7 mb-2">{t("whatIsDCA.regularSaving.header")}</h3>
       <p className="mt-4 mb-8 common-text">{t("whatIsDCA.regularSaving.text")}</p>
 
