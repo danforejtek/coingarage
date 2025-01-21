@@ -4,6 +4,7 @@ import { LineChart } from "@mui/x-charts/LineChart"
 import { LineSeriesType } from "@mui/x-charts"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
+import { btc1, btc2 } from "./data"
 
 const yearFormatter = (date: Date) => date.toLocaleDateString()
 const monthFormatter = (date: Date) => date.toLocaleDateString("default", { month: "short" }) + " " + date.getFullYear()
@@ -83,6 +84,8 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       try {
         const response = await fetch(url)
         let data = await response.json()
+        // delete btc1
+        data = btc1;
         setMainData(data.reverse())
       } catch (error) {
         console.error("Error fetching chart data:", error)
@@ -103,8 +106,11 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
             `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${minDate.getTime()}&interval=10080`
           )
           let data = await response.json()
-
-          data = data.reverse()
+          // delete btc2
+          data = btc2;
+          
+          // uncomment to reverse the data
+          //data = data.reverse()
           // find the index where the new data should be merged
           const mergeIndex = data.findIndex((entry: any) => entry.time == mainData[0].time)
           // merge the new data with the old data
