@@ -350,9 +350,9 @@
                 "dateClosing": "End date",
                 "notice": "Values are calculated based on historical Bitcoin data and may not perfectly match $.",
                 "enterAmountCta": "To display the chart, enter the amount you want to invest (in USD)",
-                "yourDeposit": "Your deposit:",
-                "normalSavings": "Savings account yield:",
-                "btcSavings": "Bitcoin savings plan yield"
+                "yourDeposit": "Deposit:",
+                "normalSavings": "Savings account:",
+                "btcSavings": "Bitcoin savings plan:"
             },
             "extraDCA": {
                 "header": "Extra purchases in DCA strategy",

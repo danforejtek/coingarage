@@ -194,6 +194,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       {
         id: "1",
         type: "line",
+        curve: "linear",
         data: conservativeArray,
         area: false,
         color: "#00abfe",
