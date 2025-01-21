@@ -85,7 +85,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
         // const response = await fetch(url)
         // let data = await response.json()
         // delete btc1
-        let data = btc1;
+        let data = btc1
         setMainData(data)
         //setMainData(data.reverse())
       } catch (error) {
@@ -108,8 +108,8 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
           // )
           // let data = await response.json()
           // delete btc2
-          let data = btc2;
-          
+          let data = btc2
+
           // uncomment to reverse the data
           //data = data.reverse()
           // find the index where the new data should be merged
@@ -267,10 +267,16 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
           )}
         </div>
         <div>
-          <span className="absolute right-5 text-[#00ABFE]" style={{ bottom: conPosY + 50 + "px" }}>
+          <span
+            className="absolute right-5 text-[#00ABFE]"
+            style={{ bottom: conPosY + 50 + "px", transition: "all 0.5s" }}
+          >
             {isNaN(conReturn) ? "" : Math.round((conReturn / deposit - 1) * 1000) / 10 + " %"}
           </span>
-          <span className="absolute right-5 text-[#3FCC88]" style={{ bottom: btcPosY + 50 + "px" }}>
+          <span
+            className="absolute right-5 text-[#3FCC88]"
+            style={{ bottom: btcPosY + 50 + "px", transition: "all 0.5s" }}
+          >
             {isNaN(btcReturn) ? "" : Math.round((btcReturn / deposit - 1) * 1000) / 10 + " %"}
           </span>
           <LineChart
