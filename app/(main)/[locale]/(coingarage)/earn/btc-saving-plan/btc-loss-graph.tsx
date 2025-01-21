@@ -82,10 +82,10 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
     // fetch data once when the page loads and store them for future use
     const fetchData = async () => {
       try {
-        const response = await fetch(url)
-        let data = await response.json()
+        // const response = await fetch(url)
+        // let data = await response.json()
         // delete btc1
-        data = btc1;
+        let data = btc1;
         setMainData(data.reverse())
       } catch (error) {
         console.error("Error fetching chart data:", error)
@@ -102,12 +102,12 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
     if (new Date(dateOpening).getTime() < minDate.getTime() && !noMoreFetching) {
       const fetchData = async () => {
         try {
-          const response = await fetch(
-            `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${minDate.getTime()}&interval=10080`
-          )
-          let data = await response.json()
+          // const response = await fetch(
+          //   `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${minDate.getTime()}&interval=10080`
+          // )
+          // let data = await response.json()
           // delete btc2
-          data = btc2;
+          let data = btc2;
           
           // uncomment to reverse the data
           //data = data.reverse()
