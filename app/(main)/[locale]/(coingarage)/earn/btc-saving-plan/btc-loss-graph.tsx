@@ -86,7 +86,8 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
         // let data = await response.json()
         // delete btc1
         let data = btc1;
-        setMainData(data.reverse())
+        setMainData(data)
+        //setMainData(data.reverse())
       } catch (error) {
         console.error("Error fetching chart data:", error)
       }
