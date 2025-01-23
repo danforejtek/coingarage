@@ -52,7 +52,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section>
 
       {/* ----------- DCA strategy */}
-      <section className="bg-backgroundMuted p-3 sm:p-36">
+      <section className="bg-backgroundMuted p-3 sm:py-36">
         <section
           id="What-is-a-Bitcoin-Saving-Plan"
           className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"

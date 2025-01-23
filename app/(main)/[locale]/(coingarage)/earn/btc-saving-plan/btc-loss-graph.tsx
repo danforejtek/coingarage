@@ -19,6 +19,34 @@ const thousandsFormatter = (value: string) => {
   }
 }
 
+export interface BTCDataType {
+  time: number
+  open: number
+  high: number
+  low: number
+  close: number
+  volume: number
+}
+
+const fetchBTCdata = async (timestamp: number) => {
+  // remove mockup before push to master
+  if (new Date().getTime() === timestamp) {
+    return btc1;
+  } else {
+    return btc2;
+  }
+
+  try {
+    const url = `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${timestamp}&interval=10080`
+    const response = await fetch(url)
+    let data: BTCDataType[] = await response.json()
+    return data.reverse()
+  } catch (error) {
+    console.error("Error fetching chart data:", error)
+    return []
+  }
+}
+
 // convert weekly data to monthly data
 const convertToMonthly = (data: any) => {
   let savedMonth = 0
@@ -38,6 +66,7 @@ type Props = {
   frequency: number
   dateOpening: string
   dateClosing: string
+  inputClicked: number
 }
 
 function formatInUSD(amount: number | null) {
@@ -51,13 +80,13 @@ const minDate = new Date()
 minDate.setDate(minDate.getDate() - 249 * 7)
 
 // how this component works:
-// fetch intial btc data from the api -  from actual date to 250 weeks ago (api limit)
+// when input is clicked, fetch intial btc data from the api -  from actual date to 250 weeks ago (api limit)
 // if user sets dateOpening earlier than minDate, fetch the rest of the data
 // there will be no more fetching, at this moment all BTC data is stored in mainData
 // if a user sets different time span, slice the mainData
 // calculate the the savings time lines and display them on the graph
 
-export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosing }: Props) {
+export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosing, inputClicked }: Props) {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [series, setSeries] = useState<LineSeriesType[]>([])
   const [dates, setDates] = useState<Date[]>([])
@@ -73,57 +102,37 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
   const [refreshChart, setRefreshChart] = useState<boolean>(false)
   const [noMoreFetching, setNoMoreFetching] = useState<boolean>(false)
   // store the fetched graph data
-  const [mainData, setMainData] = useState<any>([])
+  const [mainData, setMainData] = useState<BTCDataType[]>([])
 
   // day interval 1440 , week interval 10080, month interval 43200
   const url = `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${new Date().getTime()}&interval=10080`
 
   React.useEffect(() => {
-    // fetch data once when the page loads and store them for future use
-    const fetchData = async () => {
-      try {
-        // const response = await fetch(url)
-        // let data = await response.json()
-        // delete btc1
-        let data = btc1
-        setMainData(data)
-        //setMainData(data.reverse())
-      } catch (error) {
-        console.error("Error fetching chart data:", error)
-      }
+    // fetch the first half of the data when input is clicked, fetch them only once
+    const fetchFirstData = async () => {
+      const data = await fetchBTCdata(new Date().getTime())
+      setMainData(data)
     }
 
-    fetchData()
-  }, [])
+    if (inputClicked === 1) fetchFirstData()
+  }, [inputClicked])
 
   React.useEffect(() => {
-    // if user sets dateOpening earlier than minDate, fetch more data
+    // if user sets dateOpening earlier than minDate, fetch more data and merge them
     // but do it only once, noMoreFetching prevents another data fetch
 
-    if (new Date(dateOpening).getTime() < minDate.getTime() && !noMoreFetching) {
-      const fetchData = async () => {
-        try {
-          // const response = await fetch(
-          //   `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${minDate.getTime()}&interval=10080`
-          // )
-          // let data = await response.json()
-          // delete btc2
-          let data = btc2
+    const mergeSecondData = async () => {
+      const data = await fetchBTCdata(minDate.getTime())
 
-          // uncomment to reverse the data
-          //data = data.reverse()
-          // find the index where the new data should be merged
-          const mergeIndex = data.findIndex((entry: any) => entry.time == mainData[0].time)
-          // merge the new data with the old data
-          setMainData([...data.slice(0, mergeIndex), ...mainData])
-          setNoMoreFetching(true)
-        } catch (error) {
-          console.error("Error fetching chart data:", error)
-        }
-      }
-
-      fetchData()
+      // find the index where the new data should be merged
+      const mergeIndex = data.findIndex((entry: any) => entry.time == mainData[0].time)
+      console.log("mergeIndex", mergeIndex)
+      // merge the new data with the old data
+      setMainData([...data.slice(0, mergeIndex), ...mainData])
+      setNoMoreFetching(true)
     }
+
+    if (new Date(dateOpening).getTime() < minDate.getTime() && !noMoreFetching) mergeSecondData()
   }, [dateOpening])
 
   React.useEffect(() => {
@@ -217,8 +226,8 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       setNbSeries(2)
       setTimeout(() => {
         setRefreshChart((prev) => !prev)
-      }, 222)
-    }, 2000)
+      }, 444)
+    }, 1500)
 
     // conservative array and btc array has the right length - number of records in the chart
     setDeposit(parseInt(amount) * conservativeArray.length)
@@ -296,6 +305,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
               "& .MuiChartsAxis-line": { stroke: "white !important" },
               "& .MuiChartsLegend-root": { display: "none" },
               "& *:not(circle):not(path)": { transitionDuration: "2s" },
+              "& .MuiChartsAxis-tick": { stroke: "white !important", opacity: 0.33 },
             }}
             tooltip={{ trigger: "axis" }}
           />

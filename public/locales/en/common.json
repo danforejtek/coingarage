@@ -344,15 +344,16 @@
                 "invested": "Invested",
                 "enterAmount": "Enter amount",
                 "frequency": "Frequency",
-                "weekly": "Weekly",
-                "monthly": "Monthly",
                 "dateOpening": "Start date",
                 "dateClosing": "End date",
                 "notice": "Values are calculated based on historical Bitcoin data and may not perfectly match $.",
                 "enterAmountCta": "To display the chart, enter the amount you want to invest (in USD)",
                 "yourDeposit": "Deposit:",
                 "normalSavings": "Savings account:",
-                "btcSavings": "Bitcoin savings plan:"
+                "btcSavings": "Bitcoin savings plan:",
+                "weekly": "Weekly",
+                "monthly": "Monthly",
+                "biMonthly": "Bi-monthly"
             },
             "extraDCA": {
                 "header": "Extra purchases in DCA strategy",
@@ -381,6 +382,8 @@
                         "week4": "Week 4",
                         "week5": "Week 5"
                     },
+                    "price": "Price",
+                    "time": "Time",
                     "btn": "Start saving"
                 }
             }

@@ -24,6 +24,7 @@ export default function BtcLossSection() {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [amount, setAmount] = useState("")
   const [frequency, setFrequency] = useState("4")
+  const [inputClicked, setInputClicked] = useState(0)
 
   const [dateOpening, setDateOpening] = useState(defaultDate.toISOString().slice(0, 7))
   const [dateClosing, setDateClosing] = useState(new Date().toISOString().slice(0, 7))
@@ -46,6 +47,7 @@ export default function BtcLossSection() {
             value={amount}
             name="amount"
             onChange={(e) => setAmount(e.target.value)}
+            onClick={() => {setInputClicked(inputClicked + 1)}}
             className="mb-5 mt-1 !block !rounded-circle border-none !text-base"
             placeholder={t("dcaCalculator.enterAmount")}
           ></Input>
@@ -106,6 +108,7 @@ export default function BtcLossSection() {
           frequency={parseInt(frequency)}
           dateOpening={dateOpening}
           dateClosing={dateClosing}
+          inputClicked={inputClicked}
         />
       </div>
     </section>
