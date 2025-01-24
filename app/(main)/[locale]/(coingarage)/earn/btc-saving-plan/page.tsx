@@ -41,7 +41,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
             alt=""
             width={463}
             height={448}
-            className="w-80 max-w-[563px] sm:w-[544px] "
+            className="w-80 max-w-[563px] sm:w-[500px] "
           />
         </div>
       </section>
