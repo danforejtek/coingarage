@@ -29,11 +29,11 @@ export interface BTCDataType {
 }
 
 const fetchBTCdata = async (timestamp: number) => {
-  // remove mockup before push to master
+  // remove mock before push to master
   if (new Date().getTime() === timestamp) {
-    return btc1;
+    return btc1
   } else {
-    return btc2;
+    return btc2
   }
 
   try {
@@ -65,8 +65,7 @@ type Props = {
   amount: string
   frequency: number
   dateOpening: string
-  dateClosing: string
-  inputClicked: number
+  dateClosing: string  
 }
 
 function formatInUSD(amount: number | null) {
@@ -86,7 +85,7 @@ minDate.setDate(minDate.getDate() - 249 * 7)
 // if a user sets different time span, slice the mainData
 // calculate the the savings time lines and display them on the graph
 
-export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosing, inputClicked }: Props) {
+export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosing }: Props) {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [series, setSeries] = useState<LineSeriesType[]>([])
   const [dates, setDates] = useState<Date[]>([])
@@ -108,14 +107,14 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
   const url = `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${new Date().getTime()}&interval=10080`
 
   React.useEffect(() => {
-    // fetch the first half of the data when input is clicked, fetch them only once
-    const fetchFirstData = async () => {
-      const data = await fetchBTCdata(new Date().getTime())
-      setMainData(data)
-    }
+    // fetch the first half of the data when page is loaded, fetch them only once
 
-    if (inputClicked === 1) fetchFirstData()
-  }, [inputClicked])
+    fetchBTCdata(new Date().getTime())
+      .then((data) => {
+        setMainData(data)
+      })
+      .catch((error) => console.error("Error fetching chart data:", error))
+  }, [])
 
   React.useEffect(() => {
     // if user sets dateOpening earlier than minDate, fetch more data and merge them
@@ -126,7 +125,6 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
 
       // find the index where the new data should be merged
       const mergeIndex = data.findIndex((entry: any) => entry.time == mainData[0].time)
-      console.log("mergeIndex", mergeIndex)
       // merge the new data with the old data
       setMainData([...data.slice(0, mergeIndex), ...mainData])
       setNoMoreFetching(true)

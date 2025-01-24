@@ -297,22 +297,22 @@
         "btn": "Začít spořit",
         "cards": {
           "card1": {
-              "header": "Využijte DCA",
-              "text": "Nakupování na týdenní nebo měsíční bázi vás činí méně závislými na krátkodobých cenových výkyvech."
+            "header": "Využijte DCA",
+            "text": "Nakupování na týdenní nebo měsíční bázi vás činí méně závislými na krátkodobých cenových výkyvech."
           },
           "card2": {
-              "header": "Jednoduchá platba",
-              "text": "Můžete si nastavit osobní spořicí plán pomocí Visa, Mastercard nebo SEPA."
+            "header": "Jednoduchá platba",
+            "text": "Můžete si nastavit osobní spořicí plán pomocí Visa, Mastercard nebo SEPA."
           },
           "card3": {
-              "header": "Extra nákupy",
-              "text": "Další nákupy Bitcoinu během významných cenových propadů. Tímto způsobem získáváte více BTC za nižší cenu."
+            "header": "Extra nákupy",
+            "text": "Další nákupy Bitcoinu během významných cenových propadů. Tímto způsobem získáváte více BTC za nižší cenu."
           },
           "card4": {
-              "header": "Výběr kdykoli",
-              "text": "Vaše prostředky jsou přímo ve vaší peněžence. To znamená, že je můžete kdykoli vybrat a nejsou uzamčeny."
+            "header": "Výběr kdykoli",
+            "text": "Vaše prostředky jsou přímo ve vaší peněžence. To znamená, že je můžete kdykoli vybrat a nejsou uzamčeny."
           }
-      }
+        }
       },
       "whatIsDCA": {
         "header": "Co to je DCA Strategie ?",
@@ -352,8 +352,9 @@
         "notice": "Hodnoty jsou vypočítány na základě historických dat bitcoinu a nemusí sedět úplně přesně na $.",
         "enterAmountCta": "K zobrazení grafu, zadejte částku, co chcete investovat (v USD)",
         "yourDeposit": "Vklad:",
-        "normalSavings": "Výnos na spořícím účtě:",
-        "btcSavings": "Výnos ve spořícím plánu:"
+        "normalSavings": "Spořicí účet:",
+        "btcSavings": "Bitcoin spořicí plán:",
+        "biMonthly": "14 denně"
       },
       "extraDCA": {
         "header": "Extra dokup v DCA strategii",
@@ -382,7 +383,9 @@
             "week4": "4. týden",
             "week5": "5. týden"
           },
-          "btn": "Začít spořit"
+          "btn": "Začít spořit",
+          "price": "Cena",
+          "time": "Čas"
         }
       }
     },

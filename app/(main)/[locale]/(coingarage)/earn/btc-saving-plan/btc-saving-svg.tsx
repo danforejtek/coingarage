@@ -120,12 +120,12 @@ export default function BtcSavingsSvg() {
       </text>
       <text fill="white" fillOpacity="0.35" style={{ fontSize: "12" }}>
         <tspan x="85" y="464.6">
-          Time
+          {t("extraDCA.graph.time")}
         </tspan>
       </text>
       <text fill="white" fillOpacity="0.35" style={{ fontSize: "12" }}>
         <tspan x="570" y="121.6">
-          Price
+          {t("extraDCA.graph.price")}
         </tspan>
       </text>
       <rect x="147" y="197" width="8" height="8" rx="4" fill="#00ABFE" />

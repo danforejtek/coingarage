@@ -324,9 +324,10 @@
                 "dateClosing": "Data di fine",
                 "notice": "I valori sono calcolati sulla base di dati storici di Bitcoin e potrebbero non corrispondere perfettamente a $.",
                 "enterAmountCta": "Per visualizzare il grafico, inserisci l'importo che vuoi investire (in USD)",
-                "yourDeposit": "Il tuo deposito:",
-                "normalSavings": "Rendimento del conto di risparmio:",
-                "btcSavings": "Rendimento del piano di risparmio in Bitcoin"
+                "yourDeposit": "Deposito:",
+                "normalSavings": "Conto di risparmio:",
+                "btcSavings": "Piano di risparmio Bitcoin:",
+                "biMonthly": "Bimestrale"                
             },
             "whatIsDCA": {
                 "header": "Cos'è la strategia DCA?",
@@ -380,7 +381,9 @@
                         "week4": "Settimana 4",
                         "week5": "Settimana 5"
                     },
-                    "btn": "Inizia a risparmiare"
+                    "btn": "Inizia a risparmiare",
+                    "price": "Prezzo",
+                    "time": "Tempo" 
                 }
             }
         },

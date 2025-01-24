@@ -13,6 +13,7 @@ import BtcLossSection from "./btc-loss-section"
 export default function Affiliate({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
   const t = useTranslations("eezy-trader.BtcSaving")
+  const t2 = useTranslations("eezy-trader.homepage")
 
   return (
     <main className="relative">
@@ -29,7 +30,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
           </p>
           <div className="">
             <Button variant="default" size="lg" className="mt-8" asChild>
-              <a href="https://trade.coingarage.io/login">{t("whatIsSavingPlan.btn")}</a>
+              <a href="https://trade.coingarage.io/auto-buy/create-plan">{t("whatIsSavingPlan.btn")}</a>
             </Button>
           </div>
         </div>
@@ -52,10 +53,10 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
       </section>
 
       {/* ----------- DCA strategy */}
-      <section className="bg-backgroundMuted p-3 sm:py-36">
+      <section className="bg-backgroundMuted py-6 p-3 sm:py-[136px]">
         <section
-          id="What-is-a-Bitcoin-Saving-Plan"
-          className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
+          id="What-is-a-DCA"
+          className="container mx-auto flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
         >
           <div className="w-full p-4 sm:w-1/2">
             <h2 className="h2-caption mb-6">{t("whatIsDCA.header")}</h2>
@@ -149,6 +150,30 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         <div className="w-full lg:w-1/2">
           <BtcSavingsSvg />
         </div>
+      </section>
+
+      <section id="faq" className="container mx-auto my-32 max-w-[1000px] xl:mt-36">
+        <p className="text-center text-3xl font-bold">FAQ</p>
+        <Accordion type="multiple" className="mt-12">
+          <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{t2("faq.question1")}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{t2("faq.answer1")}</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={`item-2`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{t2("faq.question2")}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{t2("faq.answer2")}</AccordionContent>
+          </AccordionItem>
+          <AccordionItem value={`item-3`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
+            <AccordionTrigger className="text-left text-lg">
+              <span className="mr-6">{t2("faq.question3")}</span>
+            </AccordionTrigger>
+            <AccordionContent className="text-md">{t2("faq.answer3")}</AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </section>
     </main>
   )

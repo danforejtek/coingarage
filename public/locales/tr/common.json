@@ -324,9 +324,10 @@
                 "dateClosing": "Bitiş tarihi",
                 "notice": "Değerler, Bitcoin'in tarihsel verilerine dayalı olarak hesaplanır ve $ ile tam olarak uyuşmayabilir.",
                 "enterAmountCta": "Grafiği görüntülemek için yatırım yapmak istediğiniz miktarı girin (USD cinsinden)",
-                "yourDeposit": "Mevduatınız:",
-                "normalSavings": "Birikim hesabı getirisi:",
-                "btcSavings": "Bitcoin tasarruf planı getirisi"
+                "yourDeposit": "Mevduat:",
+                "normalSavings": "Tasarruf hesabı:",
+                "btcSavings": "Bitcoin tasarruf planı:",
+                "biMonthly": "İki aylık"                
             },
             "whatIsDCA": {
                 "header": "DCA Stratejisi Nedir?",
@@ -380,7 +381,9 @@
                         "week4": "Hafta 4",
                         "week5": "Hafta 5"
                     },
-                    "btn": "Tasarruf Etmeye Başla"
+                    "btn": "Tasarruf Etmeye Başla",
+                    "price": "Fiyat",
+                    "time": "Zaman"
                 }
             }
         },

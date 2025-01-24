@@ -12,7 +12,7 @@ import {
   SelectItem,
 } from "@/components/ui/select"
 import { useTranslations } from "next-intl"
-import { useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 // api returns 250 weeks of data at once
 // I calculate with 244 so the defaultDate date is bigger then minDate used in graph component
@@ -24,19 +24,38 @@ export default function BtcLossSection() {
   const t = useTranslations("eezy-trader.BtcSaving")
   const [amount, setAmount] = useState("")
   const [frequency, setFrequency] = useState("4")
-  const [inputClicked, setInputClicked] = useState(0)
 
   const [dateOpening, setDateOpening] = useState(defaultDate.toISOString().slice(0, 7))
   const [dateClosing, setDateClosing] = useState(new Date().toISOString().slice(0, 7))
-  
+  const graphRef = useRef(null)
+
+  useEffect(() => {
+    // intersection observer to check if the graph is in the viewport
+    const callback = (entries: IntersectionObserverEntry[]) => {
+      const entry = entries[0]
+      if (entry?.isIntersecting) {
+        // if the graph is in the viewport, set the default amount, which triggers the graph to render
+        setAmount("100")
+      }
+    }
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust the threshold as needed
+    })
+
+    if (graphRef.current) {
+      observer.observe(graphRef.current)
+    }
+  }, [])
 
   return (
     <section
       id="extra-buy-strategy"
-      className="container mx-auto mt-16 flex flex-col items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
+      className="container mx-auto mt-16 flex flex-col-reverse items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
     >
       {/* ----------- Control Panel */}
-      <div id="control-panel" className="mb-10 w-full rounded-xlg bg-backgroundMuted p-8 sm:mb-0 sm:ml-4 sm:w-[25%]">
+      <div id="control-panel" className="mt-10 w-full rounded-xlg bg-backgroundMuted p-8 sm:mb-0 sm:ml-4 sm:w-[25%]">
         <label className="input-label" htmlFor="amount">
           {t("dcaCalculator.invested")}:
         </label>
@@ -47,7 +66,6 @@ export default function BtcLossSection() {
             value={amount}
             name="amount"
             onChange={(e) => setAmount(e.target.value)}
-            onClick={() => {setInputClicked(inputClicked + 1)}}
             className="mb-5 mt-1 !block !rounded-circle border-none !text-base"
             placeholder={t("dcaCalculator.enterAmount")}
           ></Input>
@@ -66,7 +84,7 @@ export default function BtcLossSection() {
           <SelectContent>
             <SelectGroup>
               <SelectItem value="4">{t("dcaCalculator.monthly")}</SelectItem>
-              <SelectItem value="2">2 {t("dcaCalculator.weekly")}</SelectItem>
+              <SelectItem value="2">{t("dcaCalculator.biMonthly")}</SelectItem>
               <SelectItem value="1">{t("dcaCalculator.weekly")}</SelectItem>
             </SelectGroup>
           </SelectContent>
@@ -102,13 +120,15 @@ export default function BtcLossSection() {
       </div>
 
       {/* ----------- interactive Graph */}
-      <div className="relative flex w-full flex-col items-center justify-start rounded-xlg bg-backgroundMuted pt-5 sm:w-[75%]">
+      <div
+        ref={graphRef}
+        className="relative flex w-full flex-col overflow-hidden items-center justify-start rounded-xlg bg-backgroundMuted pt-5 sm:w-[75%]"
+      >
         <BtcLossGraph
           amount={amount}
           frequency={parseInt(frequency)}
           dateOpening={dateOpening}
           dateClosing={dateClosing}
-          inputClicked={inputClicked}
         />
       </div>
     </section>
