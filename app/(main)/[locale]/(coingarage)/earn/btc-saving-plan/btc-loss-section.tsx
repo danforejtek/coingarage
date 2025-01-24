@@ -2,6 +2,7 @@
 
 import BtcLossGraph from "./btc-loss-graph"
 import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 import {
   Select,
   SelectGroup,
@@ -52,10 +53,10 @@ export default function BtcLossSection() {
   return (
     <section
       id="extra-buy-strategy"
-      className="container mx-auto mt-16 flex flex-col-reverse items-start justify-center sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
+      className="container mx-auto mt-16 flex flex-col-reverse items-start justify-center sm:items-stretch sm:flex-row sm:justify-between sm:gap-[2%] lg:gap-[10%]"
     >
       {/* ----------- Control Panel */}
-      <div id="control-panel" className="mt-10 w-full rounded-xlg bg-backgroundMuted p-8 sm:mb-0 sm:ml-4 sm:w-[25%]">
+      <div id="control-panel" className="mt-10 w-full rounded-xlg bg-backgroundMuted p-8 sm:mt-0 sm:mb-0 sm:ml-4 sm:w-[25%]">
         <label className="input-label" htmlFor="amount">
           {t("dcaCalculator.invested")}:
         </label>
@@ -117,12 +118,18 @@ export default function BtcLossSection() {
         ></Input>
 
         <p className="mt-6 italic">{t("dcaCalculator.notice")}</p>
+
+        <div className="text-center">
+          <Button variant="default" size="lg" className="mt-8" asChild>
+            <a href="https://trade.coingarage.io/auto-buy/create-plan">{t("whatIsSavingPlan.btn")}</a>
+          </Button>
+        </div>
       </div>
 
       {/* ----------- interactive Graph */}
       <div
         ref={graphRef}
-        className="relative flex w-full flex-col overflow-hidden items-center justify-start rounded-xlg bg-backgroundMuted pt-5 sm:w-[75%]"
+        className="relative flex w-full flex-col items-center justify-start overflow-hidden rounded-xlg bg-backgroundMuted pt-5 sm:w-[75%]"
       >
         <BtcLossGraph
           amount={amount}
