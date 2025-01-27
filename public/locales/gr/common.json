@@ -1,659 +1,760 @@
 {
     "Menu": {
-        "buyCrypto": "Acquista Crypto",
-        "depositFiat": "Deposita FIAT",
-        "depositFiatViaSepa": "Deposita FIAT tramite SEPA",
-        "trade": "Commercio",
-        "spotTrading": "Trading Spot",
+        "buyCrypto": "Buy Crypto",
+        "depositFiat": "Deposit FIAT",
+        "depositFiatViaSepa": "Deposit FIAT via SEPA",
+        "trade": "Trade",
+        "spotTrading": "Spot Trading",
         "launchpad": "Launchpad",
         "tradingBot": "Trading Bot",
-        "convert": "Converti",
-        "earn": "Guadagna",
-        "becomeAShareholder": "Diventa un Socio Silenzioso",
-        "affiliate": "Referente",
+        "convert": "Convert",
+        "earn": "Earn",
+        "becomeAShareholder": "Become a Silent Partner",
+        "affiliate": "Referral",
+        "btcSavingPlan": "BTC Saving Plan",
         "stake": "Stake",
-        "more": "Altro",
-        "aboutUs": "Chi Siamo",
-        "partners": "Partner",
+        "more": "More",
+        "aboutUs": "About Us",
+        "partners": "Partners",
         "blog": "Blog",
-        "garageCoinPreSale": "Pre-vendita GARAGECoin",
-        "buyGarageCoin": "Acquista GARAGECoin",
+        "garageCoinPreSale": "GARAGECoin_Pre-Sale",
+        "buyGarageCoin": "Buy GARAGECoin",
         "whitepaperEn": "Whitepaper EN",
         "whitepaperCz": "Whitepaper CZ",
         "whitepaperDe": "Whitepaper DE",
-        "login": "Accesso",
-        "signUp": "Iscriviti",
+        "login": "Login",
+        "signUp": "Sign Up",
         "radio": "Coingarage FM",
-        "knowledgeBase": "Base di Conoscenza",
-        "contacts": "Contatti",
-        "fees": "Chreóseis synallagón",
-        "api_docs": "Tekmíriosi API",
+        "knowledgeBase": "Knowledge Base",
+        "contacts": "Contacts",
+        "fees": "Trading Fees",
+        "api_docs": "Api Docs",
         "mode": {
-            "light": "Chiaro",
-            "dark": "Scuro",
-            "system": "Sistema"
+            "light": "Light",
+            "dark": "Dark",
+            "system": "System"
         }
     },
     "CryptoLandingPage": {
-        "nameLine1": "Cripto",
-        "nameLine2": "Semplice & Sicuro",
-        "nameLine3": "Scambia",
-        "mainText": "<b>Scopri un livello superiore di privacy finanziaria e libertà</b> rispetto ai sistemi bancari tradizionali nell'ambiente <b>semplice e sicuro</b> del nostro exchange. Siamo un exchange con sede nel cuore dell'<b>Unione Europea</b>. Il primo a introdurre regolamentazioni che faranno <b>esplodere la cripto qui!</b>",
+        "nameLine1": "Crypto",
+        "nameLine2": "Simply & Safely",
+        "nameLine3": "Exchange",
+        "mainText": "<b>Discover a higher level of financial privacy and freedom</b> than traditional banking systems offer In the <b>simple and secure environment</b> of our exchange. We are an exchange based in the heart of <b>European union</b>. The first to introduce regulation That will make <b>crypto explode here!</b>",
         "register": {
-            "content": "Registrati e ottieni fino a 100 USDT in ricompensa in GARAGECoin (GARA)",
-            "limitedOffer": "Offerta Limitata",
+            "content": "Register and get up to 100 USDT reward in GARAGECoin (GARA)",
+            "limitedOffer": "Limited Offer",
             "mark": {
-                "option1": "Ogni nuovo utente sull'exchange riceverà 10 USDT nel token di scambio GARA.",
-                "option2": "Ogni 50° utente riceverà 50 USDT nel token di scambio GARA.",
-                "option3": "Ogni 100° utente riceverà 100 USDT nel token di scambio GARA.",
-                "option4": "Presenta un nuovo utente e riceverai la stessa ricompensa di ogni nuovo utente che hai presentato."
+                "option1": "Each new user on the exchange will receive 10 USDT in the GARA exchange token.",
+                "option2": "Every 50th user will receive 50 USDT in GARA exchange token.",
+                "option3": "Every 100th user will receive 100 USDT in a GARA exchange token.",
+                "option4": "Refer a new user and you will receive the same reward as each new user you refered."
             }
         },
-        "signUp": "Iscriviti",
-        "becomeAShareholder": "Diventa un Socio Silenzioso",
-        "howToSignUp": "Come iscriversi?",
-        "scanQrCode": "Scansiona il Codice QR",
-        "toDownloadApp": "per Scaricare l'App"
+        "signUp": "Sign Up",
+        "becomeAShareholder": "Become a Silent Partner",
+        "howToSignUp": "How to sign up?",
+        "scanQrCode": "Scan QR Code",
+        "toDownloadApp": "to Download App"
     },
     "App": {
-        "name": "Semplice Ovunque e Sempre",
-        "text": "Sblocca il potere dei mercati finanziari globali direttamente dal palmo della tua mano con l'App di Trading Mobile di Coingarage. Vivi il futuro del trading, dove velocità, convenienza e precisione convergono.",
+        "name": "Simply Anywhere Anytime",
+        "text": "Unlock the power of global financial markets right from the palm of your hand with the Coingarage Mobile Trading App. Experience the future of trading, where speed, convenience, and precision converge.",
         "appStore": "App Store",
         "googlePlay": "Google Play",
-        "scanQrCode": "Scansiona il Codice QR",
-        "toDownloadApp": "per Scaricare l'App"
+        "scanQrCode": "Scan QR Code",
+        "toDownloadApp": "to Download App"
     },
     "CryptoMarket": {
-        "name": "Mercato Cripto",
-        "currency": "Valuta",
-        "price": "Prezzo",
-        "24hChange": "Cambiamento 24h",
-        "24hVolume": "Volume 24h",
-        "marketCap": "Capitalizzazione di Mercato"
+        "name": "Crypto Market",
+        "currency": "Currency",
+        "price": "Price",
+        "24hChange": "24h Change",
+        "24hVolume": "24h Volume",
+        "marketCap": "MarketCap"
     },
     "CryptoStats": {
-        "trending": "Di Tendenza",
-        "topGainers": "Maggiori Vincitori",
-        "recentlyAdded": "Aggiunti di Recente"
+        "trending": "Trending",
+        "topGainers": "Top Gainers",
+        "recentlyAdded": "Recently Added"
     },
     "Statistics": {
-        "icon1": "100 Valute Elencate",
-        "icon2": "100+ Paesi Partecipanti",
-        "icon3": "12 Attività per staking in arrivo",
-        "icon4": "Acquista Crypto",
-        "icon5": "Deposita EUR tramite Sepa o Carta"
+        "icon1": "100 Currencies Listed",
+        "icon2": "100+ Participating Countries",
+        "icon3": "12 Assets for staking coming soon",
+        "icon4": "Buy Crypto",
+        "icon5": "Deposit EUR via Sepa or Card"
     },
     "DiscoverMoreProducts": {
-        "name": "Scopri Più Prodotti",
+        "name": "Discover More Products",
         "eezyTrader": {
             "name": "EEZY Trader",
-            "text": "Lascia che il Bot AI lavori per te.",
-            "masterTraders": "Trader Maestri",
-            "followers": "Seguaci",
+            "text": "Let AI Bot work for you.",
+            "masterTraders": "Master Traders",
+            "followers": "Followers",
             "bestTraders": {
-                "7DROI": "7G Ritorno",
-                "7DFollowersPnL": "7G Profitti dei Seguaci",
-                "copy": "Copia"
+                "7DROI": "7DROI",
+                "7DFollowersPnL": "7D Followers PnL",
+                "copy": "Copy"
             },
             "features": {
                 "tradingBot": {
                     "name": "TradingBot",
-                    "text": "Bot Grid e DCA. Strategia lunga, corta e altro."
+                    "text": "Grid a DCA bots. Long, short strategy and more."
                 },
                 "takeProfit": {
-                    "name": "Prendi Profitto",
-                    "text": "Fai crescere la tua ricchezza cripto Semplicemente in modo intelligente, efficace."
+                    "name": "Take Profit",
+                    "text": "Grow your crypto wealth Simply smartly, effectively."
                 },
                 "copyTrading": {
-                    "name": "Copy Trading",
-                    "text": "Lascia che i migliori trader lavorino per te, semplicemente copiali."
+                    "name": "Copy Trading                    ",
+                    "text": "Let top trader work for you just copy them"
                 },
                 "bargain": {
-                    "name": "Offerta",
-                    "text": "La migliore offerta sul mercato"
+                    "name": "Bargain",
+                    "text": "Best offer on the Market"
                 }
             }
         }
     },
     "Faq": {
         "question1": {
-            "question": "Qual è la differenza tra una 'Moneta' e un 'Token' sul sito?",
-            "answer": "Una moneta è una criptovaluta che può operare indipendentemente. Un token è una criptovaluta che dipende da un'altra criptovaluta come piattaforma per operare. Consulta il nostro post sul blog per maggiori informazioni."
+            "question": "What is the difference between a 'Coin' and a 'Token' on the site?",
+            "answer": "A coin is a cryptocurrency that can operate independently. A token is a cryptocurrency that depends on another cryptocurrency as a platform to operate. Check out our blog post for more information."
         },
         "question2": {
-            "question": "Che cos'è Bitcoin (BTC)?",
-            "answer": "Bitcoin è la prima criptovaluta creata nel 2009 da Satoshi Nakamoto. È una valuta digitale decentralizzata che può essere inviata da utente a utente sulla rete peer-to-peer di bitcoin senza la necessità di intermediari."
+            "question": "What is Bitcoin (BTC)?",
+            "answer": "Bitcoin is the first cryptocurrency created in 2009 by Satoshi Nakamoto. It is a decentralized digital currency that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries."
         },
         "question3": {
-            "question": "Che cos'è USDT Coin (USDT)?",
-            "answer": "Tether (USDT) è una criptovaluta con un valore destinato a rispecchiare il valore del dollaro USA. L'idea era di creare una criptovaluta stabile che potesse essere usata come dollari digitali. Le monete che servono a questo scopo di essere un sostituto stabile del dollaro sono chiamate 'monete stabili'. USDT è la moneta stabile più popolare e funge anche da sostituto del dollaro su molti exchange popolari!"
+            "question": "What is USDT Coin (USDT)?",
+            "answer": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar. The idea was to create a stable cryptocurrency that can be used like digital dollars. Coins that serve this purpose of being a stable dollar substitute are called “stable coins.” USDT is the most popular stable coin and even acts as a dollar replacement on many popular exchanges!"
         },
         "question4": {
-            "question": "Come posso acquistare criptovaluta?",
-            "answer": "Puoi acquistare criptovaluta su Coingarage seguendo questi tre passaggi: 1. Iscriviti per un account Coingarage. 2. Verifica il tuo account. 3. Deposita EUR o altre criptovalute supportate. 4. Acquista le tue criptovalute preferite."
+            "question": "How can I buy cryptocurrency?",
+            "answer": "You can buy cryptocurrency on Coingarage by following these three steps: 1. Sign up for a Coingarage account. 2. Verify your account. 3. Deposit EUR or other supported cryptocurrencies. 4. Buy your favorite cryptocurrencies."
         },
         "question5": {
-            "question": "Come posso verificare il mio account personale?",
-            "answer": "Puoi verificare il tuo account personale seguendo questi tre passaggi: 1. Accedi al tuo account Coingarage. 2. Vai alle impostazioni del tuo account. 3. Clicca sulla scheda di verifica. 4. Segui le istruzioni e carica i documenti richiesti. 5. Attendi che la tua verifica venga elaborata. 6. Inizia a fare trading!"
+            "question": "How can I verify my personal account?",
+            "answer": "You can verify your personal account by following these three steps: 1. Log in to your Coingarage account. 2. Go to your account settings. 3. Click on the verification tab. 4. Follow the instructions and upload the required documents. 5. Wait for your verification to be processed. 6. Start trading!"
         }
     },
     "Footer": {
-        "aboutUs": "Chi Siamo",
-        "contactUs": "Contattaci",
-        "fees": "Commissioni",
-        "hotCoins": "Monete Calde",
+        "aboutUs": "About Us",
+        "contactUs": "Contact Us",
+        "fees": "Fees",
+        "hotCoins": "Hot Coins",
         "blog": "Blog",
         "faqs": "FAQ's",
-        "coinListing": "Elenco Monete",
-        "markets": "Mercati",
-        "trade": "Commercio",
-        "buyCrypto": "Acquista Crypto",
+        "coinListing": "Coin Listing",
+        "markets": "Markets",
+        "trade": "Trade",
+        "buyCrypto": "Buy Crypto",
         "staking": "Staking",
-        "login": "Accesso",
+        "login": "Login",
         "legal": {
-            "termsOfService": "Termini di Servizio",
-            "privacyPolicy": "Politica sulla Privacy",
-            "cookiePolicy": "Politica sui Cookie",
-            "sportTradingTerms": "Termini del mercato spot",
-            "btcSavingPlanTerms": "Termini del Piano di Risparmio BTC",
-            "garaStakeTerms": "Termini del GARA Stake"
+            "termsOfService": "Terms of Service",
+            "privacyPolicy": "Privacy Policy",
+            "cookiePolicy": "Cookie Policy",
+            "sportTradingTerms": "Terms of the spot market",
+            "btcSavingPlanTerms": "Terms of the BTC Saving Plan",
+            "garaStakeTerms": "Terms of the GARA Stake"
         }
     },
     "Contact": {
         "street": "Revoluční&nbsp;1082/8",
         "city": " Nové&nbsp;Město&nbsp;(Praha&nbsp;1)",
         "postalCode": "110 00",
-        "country": "Praga, Repubblica Ceca",
-
+        "country": "Prague, Czech Republic",
         "phone": "+420 778 116 516",
         "email": "support@coingarage.io",
         "companyID": "IČ: 11667974"
     },
     "Affiliate": {
-        "name": "Programma di affiliazione",
-        "claim": "Unisciti a Coingarage",
-        "text1": "Credi che le criptovalute e la tecnologia blockchain possano cambiare il mondo in meglio?",
-        "text2": "Se sì, unisciti al programma di affiliazione di Coingarage e guadagna ricompense speciali. Presenta i tuoi amici a Coingarage, un exchange cripto completamente autorizzato nel cuore dell'Europa.",
-        "reward": "Puoi ottenere 3 livelli di ricompense",
-        "warning": "*Molto importante: si prega di notare che il tuo programma di affiliazione non si conclude solo con i tuoi referral diretti se i tuoi referral diretti iniziano a lavorare e referral dai tuoi referral diretti riceveranno le prossime ricompense."
+        "name": "Affiliate program",
+        "claim": "Join the Coingarage",
+        "text1": "Do you believe that cryptocurrencies and blockchain technology can change the world for better?",
+        "text2": "If yes, than join the Coingarage Affiliate program and earn special rewards. Introduce your friends Coingarage, a full licensed Crypto Exchange in the heart of Europe.",
+        "reward": "You Can Get 3 Levels of Rewards",
+        "warning": "*Very important: Please note that your Affiliate does not end only with your direct referrals if your direct referrals start to work and referrals from your direct referrals will receive the next rewards."
     },
     "AboutUs": {
-        "weAreCoingarage": "Siamo Coingarage",
-        "text1": "Non su isole lontane nei paradisi fiscali, ma nel cuore dell'Europa, è stato fondato il primo exchange cripto a <b>Praga</b>, che ha una licenza completa per detenere e scambiare criptovalute.",
-        "text2": "Tutte le attività sono completamente soggette alle <b>leggi dell'UE</b> e alla supervisione dei regolatori e delle autorità. Qui puoi acquistare cripto per fiat, tenerle e scambiarle su una delle piattaforme più moderne con un'enfasi su completezza e semplicità.",
+        "weAreCoingarage": "We are Coingarage",
+        "text1": "Not on distant islands in tax havens, but in the heart of Europe, the first crypto exchange was established in <b>Prague</b>, which has a full license to hold and trade cryptocurrencies.",
+        "text2": "All activity is fully subject to <b>EU laws</b> and the supervision of regulators and authorities. Here you can buy crypto for fiat, hold it and trade it on one of the most modern platforms with an emphasis on completeness and simplicity",
         "elements": {
-            "text1": "Un elemento chiave della nostra piattaforma è la completezza dei servizi",
-            "text2": "In un unico luogo puoi acquistare cripto per valuta fiat tramite la tua carta di debito o tramite trasferimento dal tuo account, puoi poi tenerle qui e scambiarle.",
-            "text3": "Qui puoi trovare il trading spot, ma anche i Futures",
-            "text4": "Potrai utilizzare i nostri bot di trading professionali DCA, GRID, Futures con intelligenza artificiale per gli scambi",
-            "text5": "Puoi guadagnare sull'exchange facendo staking delle monete più popolari",
-            "text6": "Il nostro exchange offrirà anche la propria piattaforma NFT, incluso un marketplace",
-            "text7": "Puoi anche scambiare monete sull'exchange utilizzando il principio P2P",
-            "text8": "Tutte queste funzioni saranno integrate con programmi educativi e video"
+            "text1": "A key element of our platform is the comprehensiveness of services",
+            "text2": "In one place you can buy crypto for fiat currency through your debit card or by transfer from your account, you can then hold it here and trade it.",
+            "text3": "You can find spot trading here, but also Futures",
+            "text4": "You will be able to use our professional trading DCA, GRID, Futures Boots with artificial intelligence for trades",
+            "text5": "You can earn on the exchange by staking the most popular coins",
+            "text6": "Our exchange will also offer its own NFT platform, including a market place",
+            "text7": "You can also exchange coins on the exchange using the P2P principle",
+            "text8": "All these functions will be supplemented with educational programs and videos"
         },
         "financialWorld": {
-            "name": "Vogliamo che le criptovalute diventino una parte comune e rispettata del mondo finanziario in Europa.",
-            "text1": "Vogliamo contribuire all'adozione delle criptovalute in Europa e offrire un ambiente completamente trasparente e sicuro che sia in linea con le leggi e i regolamenti dell'UE.",
-            "text2": "Così che le persone sappiano cosa possono aspettarsi dal mondo cripto e siano consapevoli dei benefici, ma anche dei rischi di questo settore. Così che sappiano che investire in cripto non è solo una speculazione a breve termine, ma un investimento a lungo termine e significativo.",
-            "text3": "La nostra visione si basa su quattro valori fondamentali: trasparenza, completezza, sicurezza e semplicità. Se riusciremo a realizzare questi valori nella nostra visione, allora saremo sulla buona strada per portare alle persone un profitto regolare a lungo termine dal mondo cripto."
+            "name": "We want cryptocurrencies to become a common and respected part of the financial world in Europe.",
+            "text1": "We want to contribute to the adoption of cryptocurrencies in Europe and offer a completely transparent and safe environment that is in line with EU law and regulations.",
+            "text2": "So that people know what they can expect from the crypto world and are aware of the benefits, but also the risks of this industry. So that they know that investing in crypto is not just a short-term speculation, but a long-term and meaningful investment.",
+            "text3": "Our vision is based on four basic values: transparency, comprehensiveness, security and simplicity. If we achieve the fulfillment of these values in our vision, then we will be on the way to bring people long-term regular profit from the crypto world.",
+            "text4": ""
         }
     },
     "security": {
-        "security": "Sicurezza dell'Exchange",
-        "securityText": "La nostra piattaforma utilizza diverse tecnologie all'avanguardia per garantire un sistema robusto ed efficiente. Utilizziamo le ultime versioni di crittografia dei dati sia per la trasmissione che per l'archiviazione. Utilizziamo anche funzionalità di protezione avanzate basate sull'intelligenza artificiale, garantendo un ambiente sicuro per i nostri utenti.",
-        "protection": "Protezione del Cliente",
-        "protectionText": "Le misure di protezione dei clienti di Coingarage vanno oltre le norme del settore, implementando politiche e tecnologie robuste per salvaguardare le tue informazioni personali. Stai certo, la tua privacy è la nostra massima priorità.",
-        "fundsSecurity": "Sicurezza dei Fondi",
-        "fundsSecurityText": "La sicurezza dei nostri fondi è costruita da veterani del settore blockchain e web. Abbiamo creato una piattaforma cloud di nuova generazione che supera le valutazioni di conformità alla sicurezza di livello bancario e gli standard di qualità altamente ricercati.",
-        "monitoring": "Monitoraggio in Tempo Reale",
-        "monitoringText": "I nostri sistemi di monitoraggio in tempo reale tracciano e analizzano attivamente le attività sulla nostra piattaforma, permettendoci di rilevare e rispondere prontamente a qualsiasi comportamento sospetto. Questo approccio proattivo garantisce che i tuoi beni e dati siano sotto costante protezione.",
-        "secureByDesign": "Sicuro per Progettazione",
-        "secureByDesignText": "Le nostre misure di protezione della privacy vanno oltre le norme del settore, implementando politiche e tecnologie robuste per salvaguardare le tue informazioni personali. Stai certo, la tua privacy è la nostra massima priorità.",
-        "heading": "Un Rifugio Sicuro: Dove Privacy, Design e Monitoraggio in Tempo Reale Convergono per la Tua Tranquillità",
-        "newDesign": "Stiamo lavorando a un nuovo design",
-        "continueToTrader": "Continua su EEZY Trader"
+        "security": "Exchange Security",
+        "securityText": "Our platform uses several state-of-the-art technologies to ensure a robust and efficient system. We use the latest versions of data encryption for both transmission and storage. We use advanced protection features based on artificial intelligence as well, ensuring a safe and secure environment for our users.",
+        "protection": "Customer Protection",
+        "protectionText": "Coingarage's customer protection measures go beyond industry norms, implementing robust policies and technologies to safeguard your personal information. Rest assured, your privacy is our top priority.",
+        "fundsSecurity": "Security of Funds",
+        "fundsSecurityText": "Our Fund Security is built by veterans of the blockchain & web industry. We created a next-generation cloud platform that passes bank-grade security compliance assessments and highly sought-after quality standards.",
+        "monitoring": "Real-Time Monitoring",
+        "monitoringText": "Our real-time monitoring systems actively track and analyze activities on our platform, allowing us to promptly detect and respond to any suspicious behavior. This proactive approach ensures that your assets and data are under constant protection.",
+        "secureByDesign": "Secure by Design",
+        "secureByDesignText": "Our privacy protection measures go beyond industry norms, implementing robust policies and technologies to safeguard your personal information. Rest assured, your privacy is our top priority.",
+        "heading": "A Secure Haven: Where Privacy, Design, and Real-Time Monitoring Converge for Your Peace of Mind",
+        "newDesign": "We are working on new design",
+        "continueToTrader": "Continue to EEZY Trader"
     },
+
     "eezy-trader": {
         "nav": {
-            "knowledgeBase": "Base di Conoscenza",
-            "affiliateProgram": "Programma di Affiliazione",
-            "payments": "Pagamenti & Abbonamenti"
+            "knowledgeBase": "Knowledge Base",
+            "affiliateProgram": "Affiliate Program",
+            "payments": "Payments & Subscriptions"
         },
         "homepage": {
-            "trialBtn": "INIZIA LA PROVA GRATUITA DI 7 GIORNI",
+            "trialBtn": "START 7-DAY FREE TRIAL",
             "main": {
-                "header": "Il miglior bot di trading cripto basato su AI",
-                "noCreditCard": "*Non è richiesta la carta di credito"
+                "header": "The best AI-powered crypto trading bot",
+                "noCreditCard": "*No credit card required"
             },
             "results": {
-                "header": "Realizza il completo potenziale della tua strategia di trading sfruttando le avanzate capacità del bot cripto di Coingarage EEZY Trader, permettendoti di raggiungere prestazioni di trading di punta e massimizzare i profitti.",
-                "topPerformers": "Migliori Performer",
-                "topPairs": "Migliori Coppie",
-                "name": "Nome",
-                "pair": "Coppia"
+                "header": "Realize the complete potential of your trading strategy by leveraging the advanced capabilities of the Coingarage’s EEZY Trader crypto bot, empowering you to attain peak trading performance and maximize profits.",
+                "topPerformers": "Top Performers",
+                "topPairs": "Top Pairs",
+                "name": "Name",
+                "pair": "Pair"
             },
             "trusting": {
-                "subHeader": "Fidato da migliaia di trader, potenziato da",
-                "header": "Coingarage “Scambio Semplice & Sicuro”",
+                "subHeader": "Trusted by thousands of traders, powered by",
+                "header": "Coingarage “Simply & safely Exchange”",
                 "columns": {
-                    "1": "Lungo / Corto",
-                    "2": "Profitto dal Trading",
+                    "1": "Long / Short",
+                    "2": "Trading Profit",
                     "3": "DCA/ GRID",
-                    "4": "Salva Strategia",
-                    "5": "Avviato da AI",
+                    "4": "Save Strategy",
+                    "5": "Starting by AI",
                     "6": "Copy Trading",
-                    "7": "100 Coppie da Scambiare",
-                    "8": "Indicatori Tecnici",
-                    "9": "90 Bot"
+                    "7": "100 Pairs to Trade",
+                    "8": "Technical Indicators",
+                    "9": "90 Bots"
                 }
             },
             "investment": {
-                "header": "Siediti e guarda crescere i tuoi investimenti in criptovalute, giorno e notte, 24/7, ovunque ti trovi",
-                "free7Days": "Prova gratis per 7 giorni",
+                "header": "Sit back and watch your cryptocurrency investments grow, day and night, 24/7, wherever you are",
+                "free7Days": "Try free for 7 days",
                 "howToConnect": {
-                    "register": "Registrati",
-                    "connect": "Connetti",
-                    "startTrading": "Inizia a Fare Trading"
+                    "register": "Register",
+                    "connect": "Connect",
+                    "startTrading": "Start Trading"
                 }
             },
             "login": {
-                "header": "<span>Inizia a Guadagnare con</span><span class='text-violet'>Coingarage’s Trader</span><span><span class='text-violet'>Bot</span> Oggi</span>",
-                "subText": "Iscriviti a Coingarage e ottieni un periodo di prova PRO completamente funzionale di <b>7 giorni</b> per testare tutte le funzionalità avanzate del bot.",
+                "header": "<span>Start Earning with</span><span class='text-violet'>Coingarage’s Trader</span><span><span class='text-violet'>Bot</span> Today</span>",
+                "subText": "Sign up to Coingarage and get fully functional <b>7-day PRO trial</b> period to test all the advanced bot's features.",
                 "loginForm": {
-                    "login": "Accesso",
-                    "yourEmail": "La tua email",
+                    "login": "Login",
+                    "yourEmail": "Your email",
                     "password": "Password",
-                    "forgotPassword": "Password dimenticata?",
-                    "noAccount": "Non hai un account? Iscriviti qui"
+                    "forgotPassword": "Forgot password ?",
+                    "noAccount": "Don't have an account? Sign up here"
                 }
             },
             "start": {
-                "header": "Avvia EEZY TRADER in 5 Semplici Passaggi",
-                "subText": "Avvia il tuo bot di trading EEZY in modo facile in cinque semplici passaggi: avvia il trading e ottimizza i tuoi profitti oggi stesso con Coingarage.",
+                "header": "Start EEZY TRADER in 5 Easy Steps",
+                "subText": "Launch your EEZY trading bot effortlessly in five simple steps: initiate trading and optimize your profits today with Coingarage.",
                 "steps": {
-                    "1": "Iscriviti su Coingarage",
-                    "2": "Accedi a un Exchange",
-                    "3": "Vai al Sottoaccount e scegli nel menu EEZY Trader",
-                    "4": "Crea una strategia",
-                    "5": "Avvia il bot e guarda i profitti!"
+                    "1": "Sign up on Coingarage",
+                    "2": "Log in to an Exchange",
+                    "3": "Go to Sub account and choose in menu EEZY Trader",
+                    "4": "Create an strategy",
+                    "5": "Run the bot and watch it profits!"
                 }
             },
             "faq": {
-                "question1": "Come posso iniziare con la vostra piattaforma?",
-                "answer1": "Iniziare è facile! Basta iscriversi per un account, completare il processo di verifica, depositare fondi nel tuo account e iniziare a fare trading utilizzando la nostra piattaforma intuitiva e potenti strumenti di trading.",
-                "question2": "Come garantite la sicurezza dei miei fondi e delle informazioni personali?",
-                "answer2": "Utilizziamo misure di sicurezza standard del settore, tra cui crittografia, autenticazione a due fattori (2FA) e audit di sicurezza regolari, per proteggere i tuoi fondi e dati personali. Inoltre, la nostra piattaforma aderisce a rigidi standard di conformità per proteggere contro l'accesso non autorizzato e le attività fraudolente.",
-                "question3": "Quali sono i vantaggi dell'utilizzo del DCA?",
-                "answer3": "Il Dollar-cost averaging (DCA) è una strategia in cui un investitore divide l'importo totale da investire in acquisti periodici di un'attività target per ridurre l'impatto della volatilità sul prezzo complessivo. I principali vantaggi dell'uso del DCA includono la riduzione del rischio associato al tempismo del mercato, potenzialmente abbassando il costo medio per azione nel tempo e promuovendo un comportamento di investimento disciplinato."
+                "question1": "How can I get started with your platform?",
+                "answer1": "Getting started is easy! Simply sign up for an account, complete the verification process, deposit funds into your account, and start trading using our intuitive platform and powerful trading tools.",
+                "question2": "How do you ensure the security of my funds and personal information?",
+                "answer2": "We employ industry-standard security measures, including encryption, two-factor authentication (2FA), and regular security audits, to safeguard your funds and personal data. Additionally, our platform adheres to strict compliance standards to protect against unauthorized access and fraudulent activities.",
+                "question3": "What are the benefits of using DCA?",
+                "answer3": "Dollar-cost averaging (DCA) is a strategy where an investor divides up the total amount to be invested across periodic purchases of a target asset in an effort to reduce the impact of volatility on the overall purchase. The key benefits of using DCA include reducing the risk associated with market timing, potentially lowering the average cost per share over time, and promoting disciplined investing behavior."
+            }
+        },
+        "BtcSaving": {
+            "whatIsSavingPlan": {
+                "header": "What is a Bitcoin Saving Plan?",
+                "text": "A Bitcoin saving plan is a simple and effective way to grow your savings through regular investments in Bitcoin. Whether you're a newcomer to cryptocurrencies or an experienced investor, our plan offers an easy and automated solution to gradually build your wealth.",
+                "btn": "Start saving",
+                "cards": {
+                    "card1": {
+                        "header": "Benefit from DCA",
+                        "text": "Purchasing on a weekly or monthly basis makes you less dependent on short-term price fluctuations."
+                    },
+                    "card2": {
+                        "header": "Simple payment",
+                        "text": "You can set up a personal saving plan using Visa, Mastercard, or SEPA."
+                    },
+                    "card3": {
+                        "header": "Extra purchases",
+                        "text": "Extra Bitcoin purchases during significant price drops. This way, you acquire more BTC at a lower cost."
+                    },
+                    "card4": {
+                        "header": "Withdraw anytime",
+                        "text": "Your funds are directly in your wallet. This means you can withdraw them anytime, and they are not locked."
+                    }
+                }                
+            },
+            "whatIsDCA": {
+                "header": "What is the DCA Strategy?",
+                "text": "Dollar Cost Averaging (DCA) is an investment strategy involving regular investments of the same amount of money into a specific asset, regardless of its current price. The goal of this strategy is to reduce the impact of volatility on the overall investment.",
+                "benefits": {
+                    "header": "Benefits",
+                    "benefit1": "Risk reduction: By spreading your investment over time, you reduce the risk of buying at a high price.",
+                    "benefit2": "Emotional stability: Avoid attempts to time the market, which can be emotionally challenging and risky.",
+                    "benefit3": "Risk diversification: Buy more units of the asset when prices are low and fewer units when prices are high. This averages your purchase cost."
+                },
+                "regularSaving": {
+                    "header": "Regular Bitcoin saving (example)",
+                    "text": "Regular BTC/CZK purchases through our savings plan at 8000 CZK per month.",
+                    "bought": "Bought",
+                    "investedAmount": "Invested amount",
+                    "receivedAmount": "Received amount",
+                    "totalAmount": "Total amount",
+                    "percentageCalculation": "Percentage calculation"
+                },
+                "dynamicDCA": {
+                    "header": "Dynamic DCA",
+                    "text1": "Based on the current market situation, you invest more or less, allocating your capital more effectively throughout Bitcoin cycles.",
+                    "text2": "If you're confident in Bitcoin, aren't afraid to invest larger amounts during price drops, and want to optimize your strategy for higher returns, this is the right choice for you.",
+                    "text3": "By multiplying the invested amount in a declining market, your average purchase cost is guaranteed to decrease by units or tens of percentages. Most importantly, you invest more money at the right moment, leading to significantly higher returns."
+                }
+            },
+            "dcaCalculator": {
+                "subheader": "DCA Bitcoin Calculator",
+                "header": "Calculate retrospectively how much you would have saved",
+                "invested": "Invested",
+                "enterAmount": "Enter amount",
+                "frequency": "Frequency",
+                "dateOpening": "Start date",
+                "dateClosing": "End date",
+                "notice": "Values are calculated based on historical Bitcoin data and may not perfectly match $.",
+                "enterAmountCta": "To display the chart, enter the amount you want to invest (in USD)",
+                "yourDeposit": "Deposit:",
+                "normalSavings": "Savings account:",
+                "btcSavings": "Bitcoin savings plan:",
+                "weekly": "Weekly",
+                "monthly": "Monthly",
+                "biMonthly": "Bi-monthly"
+            },
+            "extraDCA": {
+                "header": "Extra purchases in DCA strategy",
+                "text": "This feature is designed to help you maximize the value of your savings. Set how much the market must drop (in percentage) for an additional portion to be automatically purchased into your position. This function allows you to leverage market volatility and lower the average purchase price of BTC as much as possible.",
+                "howItWorks": {
+                    "header": "How does it work?",
+                    "work1": "Define extra purchase: Choose the percentage drop at which a purchase should be made.",
+                    "work2": "Automatic response to drop: If the market falls below your set level, an additional portion is automatically purchased into your position.",
+                    "work3": "Purchase price optimization: By buying at lower prices, you achieve a lower average purchase price for BTC, which increases your profit potential during subsequent market growth."
+                },
+                "whyAdvantageous": {
+                    "header": "Why is it advantageous?",
+                    "advantageous1": "Lower average purchase price: Extra purchases allow you to buy more when prices are low, lowering your average BTC purchase price.",
+                    "advantageous2": "Passive strategy: You don't have to monitor the market constantly; everything is automatic.",
+                    "advantageous3": "Efficient risk management: Enables you to better utilize volatility and market downturns to your advantage."
+                },
+                "graph": {
+                    "classicDCA": "Classic DCA",
+                    "dcaExtra": "DCA with extra purchases",
+                    "dcaBuy": "DCA purchase $100",
+                    "dcaExtraBuy": "Extra purchase",
+                    "weeks": {
+                        "week1": "Week 1",
+                        "week2": "Week 2",
+                        "week3": "Week 3",
+                        "week4": "Week 4",
+                        "week5": "Week 5"
+                    },
+                    "price": "Price",
+                    "time": "Time",
+                    "btn": "Start saving"
+                }
             }
         },
         "affiliate": {
-            "btnAffiliate": "Inizia subito",
+            "btnAffiliate": "Get started",
             "main": {
-                "header1": "Programma di Referenza",
-                "header2": "Guadagna fino al 15% delle commissioni di ogni trade dei tuoi partner",
-                "subText": "Ricompense mensili, senza sforzo. Immagina la gioia di vedere i soldi fluire senza alzare un dito. <b>Invita i tuoi amici e goditi i profitti condivisi insieme!</b>"
+                "header1": "Referral Program",
+                "header2": "Earn Up to 15% from fees of every trade of your partners",
+                "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>"
             },
             "getStarted": {
-                "header": "Come iniziare",
-                "header1": "Registrati su Coingarage",
-                "subText1": "Crea un account su Coingarage, accedi e poi vai alla sezione Affiliato.",
-                "header2": "Invita i tuoi Amici e Partner",
-                "subText2": "Copia il tuo link di affiliazione e invialo ai tuoi amici o partner.",
-                "header3": "Goditi i Tuoi Guadagni",
-                "subText3": "Dopo che avranno creato un account e iniziato a fare trading, guadagnerai le tue ricompense.",
-                "disclaimer": "Sarai reindirizzato alla pagina di accesso. Dopo aver effettuato l'accesso al tuo account, puoi trovare il tuo codice di referenza in My -> Referral"
+                "header": "How to get started",
+                "header1": "Register to a Coingarage",
+                "subText1": "Create an Account on Coingarage, Log in and then go to section Affiliate.",
+                "header2": "Invite Your Friends and Partners",
+                "subText2": "Copy your Affiliate Link and send it to your friends or partners.",
+                "header3": "Enjoy Your Earnings",
+                "subText3": "After they create an account and start trading, you will earn your rewards.",
+                "disclaimer": "You will be redirected to login page. After you login to your account, you can find your referral code in My -> Referral"
             },
             "faq": {
-                "question1": "Come funziona il programma di affiliazione?",
-                "answer1": "Come affiliato, riceverai un link o un codice di referenza unico che puoi condividere con il tuo pubblico. Quando qualcuno clicca sul tuo link o utilizza il tuo codice per effettuare un acquisto o iscriversi, guadagnerai una commissione sulla vendita o iscrizione.",
-                "question2": "C'è un limite a quanto posso guadagnare tramite il programma di affiliazione?",
-                "answer2": "Non c'è limite a quanto puoi guadagnare tramite il nostro programma di affiliazione. I tuoi guadagni dipendono dal numero di referral che generi e dal valore dei loro acquisti o iscrizioni.",
-                "question3": "Come posso monitorare i miei referral e le commissioni?",
-                "answer3": "Il nostro programma di affiliazione fornisce l'accesso a una dashboard o portale dove puoi monitorare i tuoi referral, monitorare le vendite o le iscrizioni e visualizzare i guadagni delle tue commissioni in tempo reale.",
-                "question4": "Qual è la struttura delle commissioni del programma di affiliazione?",
-                "answer4": "Il nostro programma di affiliazione offre una struttura di commissioni multi-livello, con percentuali di commissione basate sul livello dei referral:",
+                "question1": "How does the affiliate program work?",
+                "answer1": "As an affiliate, you'll receive a unique referral link or code thast you can share with your audience. When someone clicks on your link or uses your code to make a purchase or sign up, you'll earn a commission on the sale or sign-up.",
+                "question2": "Is there a limit to how much I can earn through the affiliate program?",
+                "answer2": "There is no limit to how much you can earn through our affiliate program. Your earnings depend on the number of referrals you generate and the value of their purchases or sign-ups.",
+                "question3": " How can I track my referrals and commissions?",
+                "answer3": "Our affiliate program provides access to a dashboard or portal where you can track your referrals, monitor sales or sign-ups, and view your commission earnings in real-time.",
+                "question4": "What is the commission structure for the affiliate program?",
+                "answer4": "Our affiliate program offers a multi-level commission structure, with commission percentages based on the level of referrals:",
                 "levels": {
-                    "1": "Livello 1: 15% di commissione",
-                    "2": "Livello 2: 10% di commissione",
-                    "3": "Livello 3: 5% di commissione"
+                    "1": "Level 1: 15% commission",
+                    "2": "Level 2: 10% commission",
+                    "3": "Level 3: 5% commission"
                 }
             },
             "setupTradingBot": {
-                "name": "Non sai come impostare il Trading Bot?",
-                "claim": "Non preoccuparti, abbiamo creato una base di conoscenza",
-                "text1": "Qui troverai una guida completa per stabilire e operare un trading bot, coprendo tutti gli aspetti essenziali."
+                "name": "Don’t Know How to Setup Trading Bot?",
+                "claim": "No worries, we have created a knowledgebase",
+                "text1": "Here, you'll discover comprehensive guidance on establishing and operating a trading bot, covering all essential aspects."
             },
-            "example": "Esempio",
+            "example": "Example",
             "levels": {
-                "text1": "John è la prima persona nella catena di referenza. Se John presenta Alice, guadagna il 15% del totale della ricompensa per la registrazione di Alice.",
-                "text2": "Alice è registrata sotto John, quindi al secondo livello. Se Alice presenta Peter, John (primo livello) guadagna il 10% del totale della ricompensa per l'account di Peter.",
-                "text3": "Peter è registrato sotto Alice, quindi al terzo livello. Se Peter presenta un altro utente, John (primo livello) guadagna il 5% del totale della ricompensa per il nuovo utente registrato da Peter."
+                "text1": "John is the first person in the referral chain.If John refers Alice, he earns 15% of the total reward for Alice's registration.",
+                "text2": "Alice is registered under John, thus on the second level. If Alice refers Peter, John (first level) earns 10% of the total reward for Peter's account.",
+                "text3": "Peter is registered under Alice, thus on the third level. If Peter refers another user, John (first level) earns 5% of the total reward for the new user registered by Peter."
             },
-            "disclaimer": "Le ricompense sono generate dalle commissioni pagate dai tuoi referral"
+            "disclaimer": "Rewards are generated from fees paid by your referrals"
         },
         "subscription": {
-            "disclaimer": "Dopo aver completato la tua registrazione, potrai selezionare un piano di abbonamento",
-            "btnBuy": "Acquista Abbonamento",
-            "header": "Cos'è un piano di abbonamento?",
-            "subText": "Un piano di abbonamento ti garantisce l'accesso ai nostri servizi a piena capacità. <b>Con un abbonamento, ottieni l'accesso al nostro rivoluzionario robot di trading</b>, che ti permette di fare trading nei mercati con assoluta facilità ed efficienza.",
+            "disclaimer": "After you finish your registration, you will be able to select a subscription plan",
+            "btnBuy": "Buy Subscription",
+            "header": "What is a subscription plan?",
+            "subText": "A subscription plan grants you access to our services at full capacity. <b>With a subscription, you gain access to our revolutionary trading robot</b>, which allows you to trade in the markets with absolute ease and efficiency.",
             "plans": {
-                "header": "Abbonamento",
-                "subText": "Non sei sicuro se il nostro abbonamento è giusto per te? Nessun problema! Offriamo una versione di prova dove puoi testare il nostro bot e sperimentare le sue capacità in prima persona.",
+                "header": "Subscription",
+                "subText": "Not sure if our subscription is right for you? No problem! We offer a trial version where you can test out our bot and experience its capabilities firsthand.",
                 "trial": {
-                    "header": "Prova",
-                    "free": "Gratuito",
+                    "header": "Trial",
+                    "free": "Free",
                     "package": {
-                        "header": "Prova e Goditi il Trading Bot",
-                        "1": "Fino a 10 Bot",
-                        "2": "Tutte le Strategie",
-                        "3": "Terminali di Trading",
+                        "header": "Test and Enjoy Trading Bot",
+                        "1": "Up to 10 Bots",
+                        "2": "All Strategies",
+                        "3": "Trading Terminals",
                         "4": "Trailing Take profit"
                     }
                 },
                 "month": {
-                    "mostUsed": "Più popolare",
-                    "header": "Mese Base",
-                    "competitionPrice": "$45/mese",
-                    "price": "$15/mese",
+                    "mostUsed": "Most popular",
+                    "header": "Basic Month",
+                    "competitionPrice": "$45/month",
+                    "price": "$15/month",
                     "package": {
-                        "header": "Prova e Goditi il Trading Bot",
-                        "1": "Fino a 50 Bot",
-                        "2": "Tutte le Strategie",
-                        "3": "Terminali di Trading",
+                        "header": "Test and Enjoy Trading Bot",
+                        "1": "Up to 50 Bots",
+                        "2": "All Strategies",
+                        "3": "Trading Terminals",
                         "4": "Trailing Take profit",
-                        "5": "Rinnovo Automatico"
+                        "5": "Auto Renewal"
                     }
                 },
                 "year": {
-                    "header": "Anno Base",
-                    "competitionPrice": "$384/anno",
-                    "price": "$120/anno",
-                    "save60": "Risparmia $60",
+                    "header": "Basic Year",
+                    "competitionPrice": "$384/year",
+                    "price": "$120/year",
+                    "save60": "Save $60",
                     "package": {
-                        "header": "Sblocca il Pieno Potenziale del Trading Bot",
-                        "1": "Fino a 99 Bot",
-                        "2": "Tutte le Strategie",
-                        "3": "Terminali di Trading",
+                        "header": "Unlock Full Trading Bot Potential",
+                        "1": "Up to 99 Bots",
+                        "2": "All Strategies",
+                        "3": "Trading Terminals",
                         "4": "Trailing Take profit",
-                        "5": "Rinnovo Automatico"
+                        "5": "Auto Renewal"
                     }
                 },
-                "fee": "Il 10% della commissione di successo in EEZY Coin viene detratto da ogni profitto."
+                "fee": "10% success fee in EEZY Coin is deducted from every profit."
             }
         }
     },
     "knowledgeBase": {
         "general": {
-            "name": "Generale",
-            "activation": "Attivazione",
-            "subscription": "Abbonamento",
-            "features": "Caratteristiche",
+            "name": "General",
+            "activation": "Activation",
+            "subscription": "Subscription",
+            "features": "Features",
             "activationYoutubeId": "m5HTNiSygck",
             "subscriptionYoutubeId": "2JO4aMUHEpM",
             "featuresYoutubeId": "s5qHJ_1u_V0",
             "introduction": {
-                "name": "Introduzione",
+                "name": "Introduction",
                 "overview": {
-                    "header": "Panoramica",
-                    "subText": "Il trading bot, noto anche come trading automatizzato, utilizza software pre-programmati per eseguire scambi a nome dei trader. Questo metodo di trading ha guadagnato popolarità grazie alla sua capacità di eseguire scambi con velocità e precisione, 24/7, senza bisogno di intervento umano."
+                    "header": "Overview",
+                    "subText": "Bot trading, also known as automated trading, utilizes pre-programmed software to execute trades on behalf of traders. This method of trading has gained popularity due to its ability to execute trades with speed and precision, 24/7, without the need for human intervention."
                 },
                 "advantages": {
-                    "header": "Vantaggi",
-                    "subText1": "Velocità: I bot possono eseguire scambi in millisecondi, capitalizzando sui movimenti del mercato più velocemente dei trader umani.",
-                    "subText2": "Trading senza emozioni: I bot scambiano in base a regole predefinite, eliminando emozioni come paura e avidità che possono influenzare le decisioni umane.",
-                    "subText3": "Trading 24/7: I bot possono operare 24 ore su 24, 7 giorni su 7, sfruttando le opportunità nei mercati globali anche quando i trader dormono o sono offline.",
-                    "subText4": "Backtesting e Ottimizzazione: I trader possono testare le strategie dei bot utilizzando dati storici per valutare le prestazioni e ottimizzare le strategie per risultati migliori.",
-                    "subText5": "Diversificazione: I bot possono scambiare contemporaneamente su più asset, consentendo una maggiore diversificazione dei portafogli di trading."
+                    "header": "Advantages",
+                    "subText1": "Speed: Bots can execute trades in milliseconds, capitalizing on market movements faster than human traders.",
+                    "subText2": "Emotionless Trading: Bots trade based on predefined rules, eliminating emotions such as fear and greed that can affect human decision-making.",
+                    "subText3": "24/7 Trading: Bots can operate round the clock, taking advantage of opportunities in global markets even when traders are asleep or offline.",
+                    "subText4": "Backtesting and Optimization: Traders can backtest bot strategies using historical data to assess performance and optimize strategies for better results.",
+                    "subText5": "Diversification: Bots can trade across multiple assets simultaneously, allowing for greater diversification of trading portfolios."
                 },
                 "conclusion": {
-                    "header": "Conclusione",
-                    "subText": "Questo schema introduttivo fornisce una panoramica del trading bot, dei suoi vantaggi, delle diverse tipologie di strategie, delle considerazioni e conclude con i potenziali benefici che i trader possono trarre dall'utilizzo dei bot nelle loro attività di trading."
+                    "header": "Conclusion",
+                    "subText": "This introduction schema provides an overview of bot trading, its advantages, different types of strategies, considerations, and concludes with the potential benefits traders can derive from utilizing bots in their trading activities."
                 }
             },
             "slang": {
                 "name": "Slang",
-                "GRID": "Una strategia di trading che implica l'inserimento di ordini di acquisto e vendita a intervalli di prezzo predeterminati all'interno di un intervallo specificato. L'obiettivo del trading a griglia è trarre profitto dalle fluttuazioni di prezzo all'interno dell'intervallo stabilito.",
-                "DCA": "Il Dollar-Cost Averaging (DCA) è una strategia di investimento in cui un investitore acquista una quantità fissa di un determinato investimento a intervalli regolari, indipendentemente dal prezzo dell'asset. Questa strategia mira a ridurre l'impatto della volatilità del mercato distribuendo il prezzo di acquisto nel tempo.",
-                "TP": "Take Profit (TP) è un livello di prezzo predeterminato al quale un trader decide di vendere una parte o tutta la propria posizione per realizzare profitti. Gli ordini di Take Profit sono tipicamente impostati al di sopra del prezzo di mercato corrente per le posizioni lunghe e al di sotto del prezzo di mercato corrente per le posizioni corte.",
-                "SL": "Stop Loss (SL) è un livello di prezzo predeterminato al quale un trader decide di vendere una parte o tutta la propria posizione per limitare le potenziali perdite. Gli ordini di Stop Loss sono tipicamente impostati al di sotto del prezzo di mercato corrente per le posizioni lunghe e al di sopra del prezzo di mercato corrente per le posizioni corte.",
-                "SHORT": "Una posizione di trading in cui un trader vende un asset con l'aspettativa che il suo prezzo diminuisca. I trader traggono profitto dalle posizioni corte acquistando nuovamente l'asset a un prezzo inferiore rispetto a quello a cui l'hanno venduto.",
-                "LONG": "Una posizione di trading in cui un trader acquista un asset con l'aspettativa che il suo prezzo aumenti. I trader traggono profitto dalle posizioni lunghe vendendo l'asset a un prezzo superiore rispetto a quello a cui l'hanno acquistato.",
-                "START_BY_AI": "Iniziare o avviare attività di trading utilizzando algoritmi o piattaforme di intelligenza artificiale (AI). Questo può comportare strategie di trading automatizzate, in cui l'AI analizza i dati di mercato ed esegue scambi basati su regole o algoritmi predefiniti.",
-                "DCA_Auto": "Con DCA Auto, i valori scelti dal nostro exchange vengono introdotti, consentendo l'esecuzione automatica degli acquisti a intervalli specificati. Questo elimina la necessità di intervento manuale, poiché la piattaforma esegue automaticamente gli acquisti in base ai parametri preimpostati, consentendo agli investitori di accumulare asset nel tempo senza la necessità di monitoraggio continuo.",
-                "GRID_Auto": "Con GRID Auto, i valori selezionati dalla nostra piattaforma vengono introdotti, facilitando l'esecuzione automatica degli scambi in base a questi parametri predeterminati. Questo consente ai trader di capitalizzare sulle fluttuazioni di mercato all'interno dell'intervallo specificato senza richiedere intervento manuale."
+                "GRID": "A trading strategy that involves placing buy and sell orders at predetermined price intervals within a specified range. The goal of grid trading is to profit from price fluctuations within the set range.",
+                "DCA": "Dollar-Cost Averaging (DCA) is an investment strategy where an investor purchases a fixed dollar amount of a particular investment on a regular schedule, regardless of the asset's price. This strategy aims to reduce the impact of market volatility by spreading out the purchase price over time.",
+                "TP": "Take Profit (TP) is a predetermined price level at which a trader decides to sell a portion or all of their position to realize profits. Take Profit orders are typically set above the current market price for long positions and below the current market price for short positions.",
+                "SL": "Stop Loss (SL) is a predetermined price level at which a trader decides to sell a portion or all of their position to limit potential losses. Stop Loss orders are typically set below the current market price for long positions and above the current market price for short positions.",
+                "SHORT": "A trading position where a trader sells an asset with the expectation that its price will decrease. Traders profit from short positions by buying back the asset at a lower price than they sold it for. Only use here for coins that you trust and hold for the long term. You profit from their USDT drop, but if you sell them before they return to their original price, you will realize a loss.",
+                "LONG": "A trading position where a trader buys an asset with the expectation that its price will increase. Traders profit from long positions by selling the asset at a higher price than they bought it for.",
+                "START_BY_AI": "Initiating or beginning trading activities using artificial intelligence (AI) algorithms or platforms. This may involve automated trading strategies, where AI analyzes market data and executes trades based on predefined rules or algorithms.",
+                "DCA_Auto": "With DCA Auto, the values chosen by our exchange are introduced, enabling automated execution of purchases at specified intervals. This eliminates the need for manual intervention, as the platform automatically executes purchases based on the preset parameters, allowing investors to accumulate assets over time without the need for continuous monitoring.",
+                "GRID_Auto": "With GRID Auto, the exchange values selected by our platform are introduced, facilitating automated execution of trades based on these predetermined parameters. This allows traders to capitalize on market fluctuations within the specified range without requiring manual intervention."
             }
         },
         "gridBot": {
             "gridStrategy": {
-                "name": "Strategia Grid",
+                "name": "Grid Strategy",
                 "strategy": {
-                    "subText1": "La strategia GRID è una pietra miliare nei regni del trading cripto e forex. Opera tramite ordini limitati di acquisto e vendita differiti all'interno di intervalli di prezzo predeterminati. Dividendo l'intervallo di prezzo selezionato in più livelli, si crea una griglia di ordini, da cui il nome, strategia GRID.",
-                    "subText2": "I nostri bot GRID sono progettati per eseguire scambi basati su questa strategia, generando continuamente profitti dai movimenti di mercato anche quando non stai monitorando attivamente i tuoi scambi. Ogni griglia funziona in modo intercambiabile: una volta completato un ordine di acquisto, il bot avvia prontamente un ordine di vendita sopra il prezzo eseguito, e viceversa. Tutte le tue attività di trading sono gestite in modo efficiente attraverso la piattaforma Bitsgap."
+                    "subText1": "The GRID strategy stands as a cornerstone in both crypto and forex trading realms. It operates through deferred limit buy and sell orders within predetermined price intervals. By dividing the selected price range into multiple levels, a grid of orders is established, hence its name, the GRID strategy.",
+                    "subText2": "Our GRID bots are engineered to execute trades based on this strategy, tirelessly generating profits from market movements even when you're not actively monitoring your trades. Every grid functions interchangeably: once a buy order is completed, the bot promptly initiates a sell order above the executed price, and vice versa. All your trading activities are efficiently managed through the Bitsgap platform."
                 },
                 "profit": {
-                    "header": "Generazione di Profitti con la Strategia GRID:",
-                    "subText": "L'aspetto interessante della strategia GRID risiede nella sua capacità di capitalizzare sulle fluttuazioni naturali dei prezzi degli asset. Piuttosto che trascorrere innumerevoli ore a scrutare i grafici per individuare i movimenti di mercato, i bot GRID eseguono scambi nei momenti opportuni, acquistando a prezzi bassi e vendendo a prezzi alti. Conseguono continuamente profitti senza fare affidamento su algoritmi complessi, semplicemente aderendo ai parametri della griglia che hai impostato."
+                    "header": "Profit Generation with the GRID Strategy:",
+                    "subText": "The intriguing aspect of the GRID strategy lies in its ability to capitalize on the natural fluctuations of asset prices. Rather than spending countless hours scrutinizing charts to time market moves, GRID bots execute trades at opportune moments, buying at low prices and selling at high prices. They consistently deliver profits without relying on complex algorithms, simply adhering to the grid parameters you set."
                 },
                 "risk": {
-                    "header": "Rischi Associati alla Strategia Grid:",
-                    "subText1": "Automatizzare la strategia GRID comporta rischi intrinseci, in particolare durante le condizioni di mercato avverse. Le fluttuazioni di prezzo inaspettate possono influenzare significativamente i risultati dei tuoi scambi. Per proteggere il tuo investimento, l'utilizzo di funzionalità come Stop Loss o Trailing può risultare vantaggioso.",
-                    "subText2": "Nonostante i rischi, il trading a griglia presenta una delle metodologie di trading più semplici e collaudate. Nel tempo, ha il potenziale di produrre risultati sostanziali. Tuttavia, la sua efficacia diminuisce durante le forti inversioni di tendenza. Pertanto, è cruciale discernere quando avviare o interrompere le operazioni del tuo bot."
+                    "header": "Risks Associated with the Grid Strategy:",
+                    "subText1": "Automating the GRID strategy entails inherent risks, particularly during adverse market conditions. Unexpected price fluctuations can significantly impact your trading outcomes. To safeguard your investment, employing features like Stop Loss or Trailing can prove beneficial.",
+                    "subText2": "Despite the risks, grid trading presents one of the most straightforward and time-tested trading methodologies. Over time, it has the potential to yield substantial results. However, its efficacy diminishes during strong trend reversals. Hence, it's crucial to discern when to initiate or halt your bot operations."
                 }
             },
-            "setupGridBot": "Imposta Bot Grid",
-            "customizeGridBot": "Personalizza Bot Grid",
+            "setupGridBot": "Setup Grid Bot",
+            "customizeGridBot": "Customize Grid Bot",
             "setupGridBotYoutubeIdLong": "168caz6BLv8",
             "setupGridBotYoutubeIdShort": "dYD9YkndroU"
         },
         "dcaBot": {
             "dcaStrategy": {
-                "name": "Strategia DCA",
+                "name": "DCA Strategy",
                 "strategy": {
-                    "subText1": "La strategia DCA (Dollar-Cost Averaging) è un approccio ampiamente adottato nei regni del trading cripto e forex. Implica l'acquisto sistematico di una quantità fissa di un asset a intervalli regolari, indipendentemente dalle sue fluttuazioni di prezzo. Questa strategia disciplinata mira a ridurre l'impatto della volatilità del mercato sui rendimenti degli investimenti nel tempo.",
-                    "subText2": "I nostri bot DCA sono meticolosamente progettati per implementare questa strategia, consentendo ai trader di accumulare gradualmente asset nel tempo senza la necessità di intervento manuale costante. Questi bot eseguono scambi secondo parametri predefiniti, facilitando la crescita del portafoglio e la gestione del rischio in modo fluido."
+                    "subText1": "The DCA (Dollar-Cost Averaging) strategy is a widely embraced approach in both crypto and forex trading spheres. It involves systematically purchasing a fixed amount of an asset at regular intervals, regardless of its price fluctuations. This disciplined strategy aims to reduce the impact of market volatility on investment returns over time.",
+                    "subText2": "Our DCA bots are meticulously crafted to implement this strategy, enabling traders to steadily accumulate assets over time without the need for constant manual intervention. These bots execute trades according to predetermined parameters, facilitating seamless portfolio growth and risk management."
                 },
                 "profit": {
-                    "header": "Generazione di Profitti con la Strategia DCA:",
-                    "subText": "Il bello della strategia DCA risiede nella sua capacità di capitalizzare sul concetto di mediazione verso il basso. Acquistando costantemente asset a intervalli regolari, indipendentemente dai movimenti di prezzo a breve termine, i bot DCA consentono ai trader di accumulare asset a un costo medio nel tempo. Questo approccio può portare a profitti significativi durante periodi di volatilità del mercato, poiché mitiga il rischio di acquistare asset a un prezzo unico, potenzialmente gonfiato."
+                    "header": "Profit Generation with the DCA Strategy:",
+                    "subText": "The beauty of the DCA strategy lies in its ability to capitalize on the concept of averaging down. By consistently purchasing assets at regular intervals, regardless of short-term price movements, DCA bots enable traders to accumulate assets at an average cost over time. This approach can lead to significant profits during periods of market volatility, as it mitigates the risk of buying assets at a single, potentially inflated price point."
                 },
                 "risk": {
-                    "header": "Rischi Associati alla Strategia DCA:",
-                    "subText": "Sebbene la strategia DCA offra un approccio sistematico all'investimento, non è priva di rischi. Le flessioni del mercato o i periodi prolungati di deprezzamento degli asset possono influenzare le prestazioni complessive della strategia. Inoltre, i trader devono considerare attentamente fattori come la frequenza degli acquisti e la durata dell'orizzonte d'investimento per ottimizzare i rendimenti e gestire efficacemente il rischio."
+                    "header": "Risks Associated with the DCA Strategy:",
+                    "subText": "While the DCA strategy offers a systematic approach to investing, it is not without risks. Market downturns or prolonged periods of asset depreciation can impact the overall performance of the strategy. Additionally, traders must carefully consider factors such as the frequency of purchases and the duration of the investment horizon to optimize returns and manage risk effectively."
                 },
                 "conclusion": {
-                    "header": "Conclusione",
-                    "subText": "La strategia DCA fornisce ai trader un approccio disciplinato e sistematico all'investimento nei mercati cripto e forex. Acquistando costantemente asset a intervalli regolari, i bot DCA consentono ai trader di mitigare l'impatto della volatilità del mercato e potenzialmente generare rendimenti significativi nel tempo. Tuttavia, è essenziale comprendere i rischi associati e implementare strategie di gestione del rischio appropriate per ottimizzare le prestazioni e raggiungere obiettivi d'investimento a lungo termine."
+                    "header": "Conclusion",
+                    "subText": "The DCA strategy provides traders with a disciplined and systematic approach to investing in crypto and forex markets. By consistently purchasing assets at regular intervals, DCA bots enable traders to mitigate the impact of market volatility and potentially generate significant returns over time. However, it's essential to understand the associated risks and implement appropriate risk management strategies to optimize performance and achieve long-term investment objectives."
                 }
             },
             "setupDcaBot": {
-                "name": "Imposta Bot DCA",
+                "name": "Setup DCA Bot",
                 "started": {
-                    "header": "Per iniziare:",
-                    "subText": "Quando si avvia un Bot DCA, hai l'opzione di selezionare una direzione di trading e stabilire una posizione lunga o corta."
+                    "header": "Getting Started:",
+                    "subText": "When initiating a DCA Bot, you have the option to select a trading direction and establish either a Long or a Short position."
                 },
                 "long": {
-                    "header": "Posizione Lunga:",
-                    "subText1": "In una posizione lunga, il bot si impegna in attività di acquisto, mirando ad accumulare profitto nella valuta di quotazione.",
-                    "subText2": "Il tuo bot avvierà una posizione acquistando la valuta base. Successivamente, posizionerà ordini DCA (acquisto) al di sotto di questo trade e un ordine Take Profit (vendita) al di sopra di esso. Con l'aumento del prezzo, il tuo bot venderà tutta la valuta base acquisita al livello di Take Profit, generando così profitto. A questo punto, il ciclo si conclude e il bot ne inizia uno nuovo con l'importo iniziale dell'investimento."
+                    "header": "Long Position:",
+                    "subText1": "In a Long position, the bot engages in buying activities, aiming to accumulate profit in the quote currency.",
+                    "subText2": "Your bot will initiate a position by purchasing the base currency. Subsequently, it will position DCA (buy) orders below this trade and a Take Profit (sell) order above it. As the price escalates, your bot will vend all the acquired base currency at the Take Profit level, thus generating profit. At this point, the cycle concludes, and the bot initiates a new one with the initial investment amount."
                 },
                 "short": {
-                    "header": "Posizione Corta:",
-                    "subtext1": "Al contrario, in una posizione corta, il bot inizia attività di vendita, cercando di accumulare profitto nella valuta base.",
-                    "subtext2": "Il tuo bot avvierà una posizione vendendo la valuta base. Al di sopra di questo trade, posizionerà ordini DCA (vendita) e un ordine Take Profit (acquisto) al di sotto di esso. Se il prezzo sale, il bot venderà più valuta base e procurerà la valuta di quotazione ai livelli DCA. Al contrario, quando il prezzo scende, il tuo bot riacquisterà la valuta base con il Take Profit. Una volta completato il ciclo, il bot ne avvia uno nuovo con l'investimento iniziale nella valuta base.",
-                    "subtext3": "Per creare ed eseguire il tuo primo bot DCA lungo e corto, segui attentamente le istruzioni passo-passo fornite di seguito."
+                    "header": "Short Position:",
+                    "subtext1": "Conversely, in a Short position, the bot embarks on selling endeavors, seeking to amass profit in the base currency.",
+                    "subtext2": "Your bot will initiate a position by selling the base currency. Above this trade, it will place DCA (sell) orders and a Take Profit (buy) order below it. Should the price ascend, the bot will vend more base currency and procure the quote currency at the DCA levels. Conversely, when the price declines, your bot will repurchase the base currency with the Take Profit. Upon completion of the cycle, the bot commences a new one with the initial base currency investment.",
+                    "subtext3": "To create and execute your inaugural Long and Short DCA bot, kindly adhere to the following step-by-step instructions provided below."
                 },
                 "setupDcaBotYoutubeIdLong": "jv8L4_Njuu8",
                 "setupDcaBotYoutubeIdShort": "x00-x6uMfas"
             },
             "setupDcaStrategy": {
-                "name": "Imposta Strategia DCA"
+                "name": "Setup DCA Strategie"
             }
         }
     },
     "finance": {
         "main": {
-            "text1": "Investi Nel",
-            "text2": "Settore a Crescita Più Rapida",
-            "text3": "Del Mondo.",
-            "subText": "Il mercato delle valute digitali e della tecnologia blockchain è il settore a crescita più rapida di oggi. Ora hai un'opportunità unica di investire in questo settore diventando un socio silenzioso dell'exchange cripto globale.",
-            "exchangeBtn": "Entra nell'Exchange",
-            "shareholderBtn": "Diventa un Socio Silenzioso"
+            "text1": "Invest In The",
+            "text2": "Fastest-growing Industry",
+            "text3": "In The World.",
+            "subText": "Market with digital currencies and the technology of blockchain is the fastest-growing industry today. You are now getting a unique opportunity to invest in this industry by becoming a silent partner of the global crypto Exchange.",
+            "exchangeBtn": "Enter the Exchange",
+            "shareholderBtn": "Become a Silent Partner"
         },
         "developement": {
-            "header": "Sviluppo attuale di Coingarage Exchange",
-            "subtext": "Coingarage è un nuovo exchange di criptovalute europeo fondato dall'imprenditore Ota Janda nel 2021. Dopo due anni di preparazione e sviluppo del software necessario, abbiamo lanciato l'exchange nel 2023. Da allora, abbiamo aggiunto numerose nuove funzionalità per i nostri utenti e continuiamo a svilupparne altre.",
-            "done": "Fatto",
-            "developement": "In Sviluppo",
-            "planned": "Pianificato",
+            "header": "Current development of Coingarage Exchange",
+            "subtext": "Coingarage is a new European cryptocurrency exchange founded by entrepreneur Ota Janda in 2021. After two years of preparation and development of the necessary software, we launched the exchange in 2023. Since then, we have added numerous new features for our users and continue to develop more.",
+            "done": "Done",
+            "developement": "In Developement",
+            "planned": "Planned",
             "list": {
                 "box1": "Trading v 1.0",
                 "box2": "Trading Bot",
-                "box3": "App Mobile",
+                "box3": "Mobile App",
                 "box4": "GARA Coin",
-                "box5": "Elenco Monete",
-                "box6": "Referente",
-                "box7": "Risparmio Bitcoin",
+                "box5": "Coin Listing",
+                "box6": "Referral",
+                "box7": "Bitcoin Saving",
                 "box8": "Trading v 2.0",
-                "box9": "Accademia",
+                "box9": "Academy",
                 "box10": "Staking",
                 "box11": "NFT's",
-                "box12": "Carta Cripto"
+                "box12": "Crypto Card"
             }
         },
         "estimatedValuation": {
-            "header": "Valutazione Stimata entro il 2030",
-            "subText": "Per calcolare il valore della società, utilizziamo riferimenti ed esempi di valutazioni di exchange concorrenti in tutto il mondo, oltre a un indicatore riconosciuto chiamato EBITDA.",
+            "header": "Estimated Valuation by 2030",
+            "subText": "To calculate the company's value, we use references and examples of valuations of competing exchanges across the world, in addition to a recognized indicator called EBITDA.",
             "estimated": {
                 "text1": "2.4B USD",
-                "text2": "il valore stimato della società Coingarage s.r.o.",
-                "investBtn": "Inizia a Investire"
+                "text2": "the estimated value of the company Coingarage s.r.o.",
+                "investBtn": "Start Investing"
             },
-            "tableHeader": "Valutazione dei Concorrenti",
+            "tableHeader": "Valuation of Competitors",
             "table": {
                 "header": {
                     "column1": "Exchange",
-                    "column2": "Numero di Utenti",
-                    "column3": "Valore della Società"
+                    "column2": "Number of Users",
+                    "column3": "Company Value"
                 },
                 "rows": {
                     "row1": {
                         "exchange": "Gemini",
-                        "users": "2 Milioni",
-                        "value": "7 Miliardi di Dollari"
+                        "users": "2 Million",
+                        "value": "7 Billion Dollars"
                     },
                     "row2": {
                         "exchange": "Kraken",
-                        "users": "9 Milioni",
-                        "value": "20 Miliardi di Dollari"
+                        "users": "9 Million",
+                        "value": "20 Billion Dollars"
                     },
                     "row3": {
                         "exchange": "BYBIT",
-                        "users": "15 Milioni",
-                        "value": "19 Miliardi di Dollari"
+                        "users": "15 Million",
+                        "value": "19 Billion Dollars"
                     },
                     "row4": {
                         "exchange": "KuCoin",
-                        "users": "20 Milioni",
-                        "value": "20 Miliardi di Dollari"
+                        "users": "20 Million",
+                        "value": "20 Billion Dollars"
                     },
                     "row5": {
                         "exchange": "Coinbase",
-                        "users": "56 Milioni",
-                        "value": "100 Miliardi di Dollari"
+                        "users": "56 Million",
+                        "value": "100 Billion Dollars"
                     },
                     "row6": {
                         "exchange": "Binance",
-                        "users": "120 Milioni",
-                        "value": "300 Miliardi di Dollari"
+                        "users": "120 Million",
+                        "value": "300 Billion Dollars"
                     }
                 }
             }
         },
         "revolution": {
-            "header": "Da che parte vuoi essere in questa nuova rivoluzione tecnologica?",
+            "header": "At which side in this new technological revolution you want to be?",
             "negativeClaims": {
                 "claim1": {
-                    "text": "<grey>2017:</grey> “La criptovaluta non è una cosa reale, alla fine sarà chiusa.”",
+                    "text": "<grey>2017:</grey> “Cryptocurrency is just not a real thing, eventually it will be closed.”",
                     "name": "Jamie Dimon"
                 },
                 "claim2": {
-                    "text": "<grey>1997:</grey> “Non c'è motivo per cui qualcuno vorrebbe un computer a casa propria.”",
-                    "name": "Ken Olsen, co-fondatore Digital Equipment Corporation"
+                    "text": "<grey>1997:</grey> “There is no reason anyone would want a computer in their home.”",
+                    "name": "Ken Olsen, co-founder Digital Equipment Corporation"
                 },
                 "claim3": {
-                    "text": "<grey>1995:</grey> “Prevedo che Internet esploderà presto spettacolarmente e nel 1996 crollerà catastroficamente.”",
-                    "name": "Robert Metcalfe (l'inventore di Ethernet)"
+                    "text": "<grey>1995:</grey> “I predict the Internet will soon go spectacularly supernova and in 1996 catastrophically collapse.”",
+                    "name": " Robert Metcalfe (the inventor of Ethernet)"
                 },
                 "claim4": {
-                    "text": "<grey>1989:</grey> “Non faremo mai un sistema operativo a 32 bit.”",
-                    "name": "Bill Gates, Fondatore di Microsoft"
+                    "text": "<grey>1989:</grey> “We will never make a 32-bit operating system.”",
+                    "name": "Bill Gates, Founder of Microsoft"
                 },
                 "claim5": {
-                    "text": "<grey>1961:</grey> “Non c'è praticamente alcuna possibilità che i satelliti di comunicazione spaziale saranno utilizzati per fornire un miglior servizio di telefono, telegrafo, televisione o radio all'interno degli Stati Uniti.”",
-                    "name": "T.A.M. Craven, commissario FCC"
+                    "text": "<grey>1961:</grey> “There is practically no chance communications space satellites will be used to provide better telephone, telegraph, television or radio service inside the United States.”",
+                    "name": "T.A.M. Craven,  FCC commissioner"
                 },
                 "claim6": {
-                    "text": "<grey>1946:</grey> “La televisione non sarà in grado di mantenere nessun mercato che cattura dopo i primi sei mesi. Le persone si stancheranno presto di guardare una scatola di compensato ogni sera.”",
+                    "text": "<grey>1946:</grey> “Television won't be able to hold on to any market it captures after the first six months. People will soon get tired of staring at a plywood box every night.”",
                     "name": "Darryl Zanuck, 20th Century Fox"
                 },
                 "claim7": {
-                    "text": "<grey>1903:</grey> “Il cavallo è qui per restare, ma l'automobile è solo una novità - una moda.”",
-                    "name": "Presidente della Michigan Bank"
+                    "text": "<grey>1903:</grey> “The horse is here to stay but the automobile is only a novelty – a fad.”",
+                    "name": "President of the Michigan Bank"
                 }
             },
             "positiveClaims": {
                 "claim1": {
-                    "text": "<primary>Attuale:</primary> “La struttura di Bitcoin è molto ingegnosa. La moneta cartacea scomparirà e le criptovalute sono un modo molto migliore per trasferire valori rispetto a un pezzo di carta, questo è certo.“",
-                    "name": "Elon Mask fondatore di Tesla e SpaceX"
+                    "text": "<primary>Actual:</primary> “Bitcoin's structure is very ingenious. The paper money disappears, and crypto-currencies are a much better way to transfer values than a piece of paper, that's for sure.“",
+                    "name": "Elon Mask founder of Tesla nad SpaceX"
                 },
                 "claim2": {
-                    "text": "<primary>Attuale:</primary> “Alla loro base, le criptovalute sono costruite attorno al principio di un registro universale, inviolabile, uno che è reso completamente pubblico e viene costantemente verificato da questi computer ad alte prestazioni, ciascuno agendo essenzialmente indipendentemente dagli altri.“",
-                    "name": "Paul Vigna, giornalista di mercati per The Wall Street Journal"
+                    "text": "<primary>Actual:</primary> “At their core, cryptocurrencies are built around the principle of a universal, inviolable ledger, one that is made fully public and is constantly being verified by these high-powered computers, each essentially acting independently of the others.“",
+                    "name": "Paul Vigna, Markets reporter for The Wall Street Journal"
                 },
                 "claim3": {
-                    "text": "<primary>Attuale:</primary> “Quando i protocolli blockchain decentralizzati iniziano a sostituire i servizi web centralizzati che dominano l'attuale Internet, inizieremo a vedere una vera sovranità basata su Internet. Il futuro di Internet sarà decentralizzato.“",
+                    "text": "<primary>Actual:</primary> “ When decentralised blockchain protocols start displacing the centralised web services that dominate the current Internet, we'll start to see real internet-based sovereignty. The future Internet will be decentralised.“",
                     "name": "Olaf Carlson-Wee"
                 },
                 "claim4": {
-                    "text": "<primary>Attuale:</primary> “Il motivo per cui siamo tutti qui è che il sistema finanziario attuale è obsoleto.“",
-                    "name": "Charlie Shrem, Fondatore & CEO di Bitinstant"
+                    "text": "<primary>Actual:</primary> “The reason we are all here is that the current financial system is outdated.“",
+                    "name": "Charlie Shrem, Founder & CEO of Bitinstant"
                 },
                 "claim5": {
-                    "text": "<primary>Attuale:</primary> “La Blockchain è la tecnologia. Il Bitcoin è semplicemente la prima manifestazione mainstream del suo potenziale.”",
+                    "text": "<primary>Actual:</primary> “Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.”",
                     "name": "Marc Kenigsber"
                 },
                 "claim6": {
-                    "text": "<primary>Attuale:</primary> “Quello che sta accadendo in questo momento sarebbe stato il sogno del vincitore del premio Nobel per l'economia Robert Mundell: introdurre un sistema monetario globale non sotto il controllo di nessuno.”",
-                    "name": "Cathie Wood — CEO & gestore di fondi di Ark Invest"
+                    "text": "<primary>Actual:</primary> “What’s going on right now would have been Nobel prize winning economist Robert Mundell’s dream: to introduce a global monetary system not under anyone’s control.”",
+                    "name": "Cathie Wood — Ark Invest CEO & fund manager"
                 }
             },
-            "ps": "<bold>PS:</bold> Nonostante le critiche di Jamie Dimon a Bitcoin, la posizione di JPMorgan è cambiata, con la banca ora coinvolta nelle criptovalute e nella tecnologia blockchain. Hanno persino sviluppato il proprio sistema di pagamento basato su blockchain chiamato JPM Coin."
+            "ps": "<bold>PS:</bold> Despite Jamie Dimon's criticism of Bitcoin, JPMorgan's stance has shifted, with the bank now involved in cryptocurrencies and blockchain technology. They've even developed their own blockchain-based payment system called JPM Coin."
         },
         "oppurtunities": {
-            "header": "L'opportunità di investimento è stata chiusa",
-            "subtext": "Abbiamo aperto il primo round, che è per investitori al dettaglio. I prossimi round saranno solo per grandi società di investimento!",
-            "bonuses": "Bonus di Investimento",
-            "investment1": "Da 2.200 USD, riceverai GARA Coin per il 50% del tuo investimento.",
-            "investment2": "Da 4.400 USD, riceverai GARA Coin per il 100% del tuo investimento.",
-            "visitBtn": "Visita Launchpad",
+            "header": "The investment opportunity was terminated",
+            "subtext": "We have opened the first round, which is for retail investors. The next rounds will be for large investment companies only!",
+            "bonuses": "Investment Bonuses",
+            "investment1": "From 2,200 USD, you will receive GARA Coin worth 50% of your investment.",
+            "investment2": "From 4,400 USD, you will receive GARA Coin worth 100% of your investment.",
+            "visitBtn": "Visit Launchpad",
             "round1": "1.round",
             "money": "6,4M USD",
-            "shareholderBtn": "Diventa un Socio Silenzioso"
+            "shareholderBtn": "Become a Silent Partner"
         },
         "simpleSteps": {
-            "header": "5 Semplici Passaggi per Investire",
-            "subtext": "Coingarage è un progetto globale, e quindi, non vogliamo limitare le opportunità di investimento a un solo paese o regione. In collaborazione con esperti legali e partner, abbiamo sviluppato un semplice sistema in cinque passaggi in cui ogni investitore può investire comodamente da casa propria ovunque nel mondo. Inoltre, dopo aver creato l'account, ogni investitore avrà accesso alla nostra piattaforma di investimento, dove potrà gestire il proprio investimento e ricevere nuove informazioni sullo sviluppo del progetto.",
-            "box1": "Registrazione",
-            "box2": "Dati Personali",
+            "header": "5 Simple Steps to Investing",
+            "subtext": "Coingarage is a global project, and therefore, we don't want to limit investment opportunities to just one country or region. In collaboration with legal experts and partners, we have developed a simple five-step system where every investor can invest comfortably from their home anywhere in the world. Additionally, after creating account, each investor will gain access to our investment platform, where they can manage their investment and receive new information about the project's development.",
+            "box1": "Registration",
+            "box2": "Personal Data",
             "box3": "KYC",
-            "box4": "Pagamento",
-            "box5": "Contratto",
-            "download": "Scarica il modello di contratto"
+            "box4": "Payment",
+            "box5": "Contract",
+            "download": "Download the contract template"
         },
         "yourValuation": {
-            "header": "Quale sarà la Valutazione del Tuo Investimento",
-            "investment": "Investimento",
+            "header": "What Will be Valuation of Your Investment",
+            "investment": "Investment",
             "table": {
                 "header": {
                     "column1": "Info",
@@ -662,175 +763,175 @@
                     "column4": "3.round"
                 },
                 "rows": {
-                    "row1": "Quota di profitto distribuito:",
-                    "row2": "Profitto Coingarage Finance s.r.o.:",
-                    "row3": "Valutazione:",
-                    "row4": "Il totale sarà pagato:"
+                    "row1": "Share of distributed profit:",
+                    "row2": "Profit Coingarage Finance s.r.o.:",
+                    "row3": "Evaluation:",
+                    "row4": "The total will be paid:"
                 },
-                "concluision": "Il calcolo del modello presuppone la valutazione di Coingarage s.r.o. di USD 2.4 MLD. Il calcolo del modello non garantisce il raggiungimento dell'apprezzamento selezionato sul deposito. L'apprezzamento presunto sarà pagato su un orizzonte di 7 anni in CZK, EUR o USD."
+                "concluision": "Model calculation assumes Coingarage s.r.o. Valuation of USD 2.4 MLD The model calculation does not guarantee the achievement of the selected appreciation on the deposit. The assumed appreciation will be paid over a 7-year horizon in CZK, EUR or USD."
             },
             "table2": {
-                "header": "Vuoi Ottenere Maggiori Informazioni?",
-                "subtext": "Inviaci la tua email e il tuo numero di telefono e il nostro rappresentante commerciale ti contatterà e risponderà a tutte le tue domande.",
-                "placeholder1": "Nome Completo",
-                "placeholder2": "Numero di Telefono",
+                "header": "Would You Like to Get More Information?",
+                "subtext": "Send us your email and phone number and our sales representative will contact you and answer all your questions.",
+                "placeholder1": "Full Name",
+                "placeholder2": "Phone Number",
                 "placeholder3": "Email",
-                "consent": "Acconsento al trattamento dei miei dati personali",
-                "sendBtn": "Invia"
+                "consent": "I agree to the processing of personal data",
+                "sendBtn": "Send"
             },
-            "subheader": "Come Possiamo Ottenere Ritorni di Investimento Così Elevati?",
-            "subtext1": "L'exchange stesso non scambia asset, guadagna denaro attraverso commissioni per facilitare gli scambi, trasferire asset e altri servizi. Pertanto, non è direttamente influenzato dalle condizioni di mercato e guadagna sia quando il prezzo degli asset sale che quando scende. Inoltre, il mercato delle criptovalute non ha orari di apertura come altri exchange, che sono chiusi nei fine settimana. Il trading con valute digitali avviene globalmente 24/7 senza interruzioni.",
-            "subtext2": "Inoltre, il mercato cripto è il mercato a crescita più rapida oggi, crescendo in media del 56.4% ogni anno negli ultimi 6 anni. Questo influisce significativamente sull'afflusso di nuovo capitale e ha un forte impatto positivo su tutte le aziende operanti in questo settore. Grazie a ciò, siamo in grado di crescere rapidamente e ottenere l'apprezzamento dichiarato del 1100%. Questi numeri, così come tutti i calcoli che troverai sul nostro sito web, si basano su dati attuali e storici dei concorrenti e sono i risultati di calcoli economici standard utilizzati.",
-            "investBtn": "Inizia a Investire"
+            "subheader": "How Can We Achieve Such High Investment Returns?",
+            "subtext1": "The exchange itself does not trade assets, it earns money through fees for facilitating trades, transferring assets, and other services. Therefore, it is not directly influenced by market conditions and earns whether the price of assets goes up or down. Additionally, the cryptocurrency market does not have opening hours like other exchanges, which are closed on weekends. Trading with digital currencies occurs globally 24/7 without interruption.",
+            "subtext2": "Furthermore, the crypto market is the fastest-growing market today, growing on average by 56.4% each year over the last 6 years. This significantly affects the influx of new capital and has a strong positive impact on all companies operating in this industry. Thanks to this, we are able to grow rapidly and achieve the stated appreciation of 1100%. These figures, as well as all calculations you will find on our website, are based on current and historical data from competitors and are the results of standard economic calculations used.",
+            "investBtn": "Start Investing"
         },
         "taxHeavens": {
-            "header": "Non nei paradisi fiscali, ma nel cuore dell'Europa.",
-            "subtext1": "La maggior parte degli exchange di criptovalute attuali sono basati nei paradisi fiscali e in paesi al di fuori della giurisdizione delle leggi dell'UE. Il nostro exchange si trova direttamente nel cuore dell'Europa nella Repubblica Ceca e opera secondo le leggi locali ed europee che regolano il trading di criptovalute.",
-            "subtext2": "Il nostro obiettivo è rettificare il mercato delle valute digitali e fornire a tutti gli utenti in Europa un ambiente sicuro e regolamentato per i loro scambi. Per questo motivo collaboriamo con avvocati ed esperti in regolamentazione cripto e ci prepariamo attivamente per la nuova regolamentazione europea MiCA."
+            "header": "Not in tax havens, but in the heart of Europe.",
+            "subtext1": "Most of the current cryptocurrency exchanges are based in tax havens and countries outside the jurisdiction of EU laws. Our exchange is located directly in the heart of Europe in the Czech Republic and operates under local and European laws and regulations governing cryptocurrency trading.",
+            "subtext2": "Our aim is to rectify the digital currency market and provide all users in Europe with a safe and regulated environment for their trades. That's why we collaborate with lawyers and experts in crypto regulation and actively prepare for the new European regulation MiCA."
         },
         "partnersImages": {
-            "header": "Partner",
-            "infoBtn": "Clicca per maggiori informazioni"
+            "header": "Partners",
+            "infoBtn": "Click For More Information"
         },
         "partnersMain": {
             "partner1": {
                 "header": "Blockchain Legal",
-                "subtext": "Avvocati che forniscono servizi legali nel campo delle tecnologie digitali, blockchain e criptovalute (bitcoin, litecoin, ethereum, monero e altre). Ci forniscono tutta l'agenda di conformità (conformità alle normative legali). In collaborazione con loro, abbiamo già avviato i passi per ottenere una licenza MiCA."
+                "subtext": "Lawyers providing legal services in the field of digital technologies, blockchain and cryptocurrencies (bitcoin, litecoin, ethereum, monero and others). They provide us with all the compliance agenda (compliance with legal standards). In cooperation with them, we have already initiated steps to obtain a MiCA license."
             },
             "partner2": {
                 "header": "FINROCK GLOBAL LTD",
-                "subtext": "Con sede a Londra, Finrock ci fornisce servizi di custodia di asset digitali ricchi di funzionalità, offrendo al contempo crittografia di livello militare."
+                "subtext": "Based in London, Finrock provides us feature-rich digital asset custody services, whilst offering military-grade encryption."
             },
             "partner3": {
                 "header": "Simplex by NUVEI",
-                "subtext": "Potenziando l'industria cripto con un'infrastruttura fiat completa. Grazie alla collaborazione con questa azienda, è possibile acquistare direttamente criptovalute per FIAT utilizzando carte di credito su Coingarage."
+                "subtext": "Empowers the crypto industry with full fiat infrastructure. Thanks to the cooperation with this company, it is possible to directly buy cryptocurrencies for FIAT using credit cards on Coingarage."
             },
             "partner4": {
                 "header": "ZEN",
-                "subtext": "Ci fornisce servizi nel campo dei pagamenti digitali e delle transazioni finanziarie, inclusa una gateway di pagamento. Offre una serie di funzionalità e prodotti che mirano a semplificare e accelerare i pagamenti online per individui e aziende. La collaborazione con ZEN.COM ci ha permesso di creare un portafoglio EUR e una coppia di trading EUR/BTC. Allo stesso tempo, grazie ai suoi servizi, è possibile trasferire e prelevare EUR su Coingarage."
+                "subtext": "Providesus services in the field of digital payments and financial transactions, including a payment gateway. It offers a number of features and products that are aimed at simplifying and speeding up online payments for individuals and businesses. Cooperation with ZEN.COM allowed us to create a EUR wallet and a EUR/BTC trading pair. At the same time, thanks to its services, you can transfer and withdraw EUR to Coingarage."
             },
             "partner5": {
                 "header": "EFFECTIVE SOLUTIONS PRIVATE LIMITED",
-                "subtext": "Con sede a Delhi (India) con uffici di vendita nel Regno Unito e negli Emirati Arabi Uniti, Efficacious ha oltre un decennio di esperienza nella fornitura di servizi IT e Blockchain alle aziende di tutto il mondo. I loro servizi vanno dalla consulenza aziendale all'implementazione di soluzioni Blockchain complesse, compreso il supporto tecnico estensivo."
+                "subtext": "Headquartered in Delhi (India) with sales offices in the UK & the UAE, Efficacious has over a decade of experience in providing IT and Blockchain services to businesses worldwide. Their services range from the provision of business consulting to the implementation of complex Blockchain solutions, including extensive technical support."
             },
             "partner6": {
                 "header": "Creative Heroes",
-                "subtext": "Un'agenzia creativa con un approccio insolito al marketing. Siamo qui per chiunque cerchi buone idee, performance, innovazione e originalità! Creative Heroes è dietro il marchio Coingarage. Insieme pianifichiamo campagne di marketing focalizzate sulla costruzione del marchio, ma anche campagne di performance nel campo di SM, SEO, PPC, email marketing. Non dimentichiamo anche il marketing degli eventi e l'aiuto degli influencer. Vogliamo entrare congiuntamente nel campo dello sport e della cultura come partner importante delle organizzazioni europee."
+                "subtext": "A creative agency with an unusual approach to marketing. We are here for everyone looking for good ideas, performance, innovation and originality! Creative Heroes is behind the Coingarage brand. Together we plan marketing campaigns focused on brand building, but also performance campaigns in the field of SM, SEO, PPC, email marketing. We also don’t forget about event marketing and the help of influencers. We want to jointly enter the field of sports and culture as an important partner of European organizations."
             },
-            "exchangeBtn": "Entra nell'Exchange"
+            "exchangeBtn": "Enter the Exchange"
         },
         "investorPlatform": {
-            "header": "Anteprima della piattaforma per investitori",
-            "createAccountBtn": "Crea un Account"
+            "header": "Preview of the investor platform",
+            "createAccountBtn": "Create an Account"
         },
         "faq": {
-            "header": "Domande Frequenti",
-            "section1": "Domande generali",
-            "section2": "La partnership silenziosa",
-            "section3": "Visione",
-            "section4": "Altro",
+            "header": "Frequently Asked Questions",
+            "section1": "General questions",
+            "section2": "The silent partnership",
+            "section3": "Vision",
+            "section4": "Other",
             "generalQuestions": {
                 "question1": {
-                    "text": "Qual è l'importo minimo che posso investire?",
-                    "answer": "L'importo minimo di investimento è fissato a 2.200 USD (o equivalente in un'altra valuta) corrispondente allo 0,00075% del profitto distribuito di Coingarage Finance s.r.o."
+                    "text": "What is the minimum ammount I can invest?",
+                    "answer": "The minimum investment amount is set at 2 200 USD (or equivalent in another currency) corresponding to 0.00075% of the distributed profit of Coingarage Finance s.r.o."
                 },
                 "question2": {
-                    "text": "Cosa significa profitto distribuito?",
-                    "answer": "Il profitto distribuito è pari al 90% del profitto totale di Coingarage Finance s.r.o. Il restante 10% appartiene al team di Coingarage s.r.o."
+                    "text": "What does distributed profit mean?",
+                    "answer": "istributed profit is equal to 90% of the total profit of Coingarage Finance s.r.o. The remaining 10% belongs to the Coingarage s.r.o. team."
                 },
                 "question3": {
-                    "text": "Questo progetto è soggetto alla supervisione della Banca Nazionale Ceca?",
-                    "answer": "Una partnership silenziosa è una relazione contrattuale di obbligazione. Il modello di business presentato e le relazioni contrattuali non sono coperti dall'ambito materiale della legge n. 240/2013 Coll., sulle società di investimento e i fondi di investimento, come modificata (di seguito denominata 'ZISIF'), poiché si tratta di un'attività consistente nella raccolta di fondi per il finanziamento di attività commerciali di natura non finanziaria, che soddisfa le condizioni dell'esenzione di sviluppo ai sensi della sezione 2 di ZISIF, e l'attività in questione - l'offerta di concludere un accordo di partnership silenziosa - non è considerata un'offerta pubblica ai sensi della sezione 34 e seguenti della legge n. 256/2004 Coll., in considerazione di quanto sopra, l'attività descritta della società non è soggetta alla supervisione della CNB."
+                    "text": "Is this project subject to the supervision of the Czech National Bank?",
+                    "answer": "A silent partnership is a contractual relationship of obligation. The presented business model and contractual relationships are not covered by the material scope of Act No. 240/2013 Coll, on investment companies and investment funds, as amended (hereinafter referred to as 'ZISIF'), as it is an activity consisting in raising funds for the purpose of financing business activities of a non-financial nature, which fulfils the conditions of the so-called development exemption under Section 2 of ZISIF, and the activity in question - the offer to conclude a silent partnership agreement - is not considered a public offer under Section 34 et seq. of Act No. 256/2004 Coll, in view of the above, the described activity of the company is not subject to the supervision of the CNB."
                 },
                 "question4": {
-                    "text": "Qual è il valore previsto di Coingarage s.r.o.?",
-                    "answer": "Il valore previsto di Coingarage s.r.o. è fissato a 2.4 miliardi di USD entro la fine del 2030. Il calcolo del valore della società si basa non solo sul valore degli asset intangibili, ma utilizziamo anche l'EBITDA riconosciuto a livello internazionale moltiplicato per un moltiplicatore di attrattività e un moltiplicatore competitivo. Allo stesso tempo, ci basiamo su dati ufficiali di valutazione di exchange concorrenti, tenendo conto di indicatori chiave come il numero di utenti registrati e i volumi di scambio."
+                    "text": "What is the intended value of Coingarage s.r.o.?",
+                    "answer": "The intended value of Coingarage s.r.o. is set at USD 2.4 billion by the end of 2030. The calculation of the company's value is based not only on the value of intangible assets, but we also use the internationally recognized EBITDA multiplied by an attractiveness multiplier and a competitive multiplier. At the same time, we rely on official valuation data from competing exchanges, taking into account key indicators such as the number of registered users and trading volumes."
                 },
                 "question5": {
-                    "text": "Che cos'è Coingarage Finance s.r.o.?",
-                    "answer": "Coingarage Finance s.r.o. funge da garanzia legale che qualsiasi futura vendita di Coingarage s.r.o. beneficerà anche i depositanti attraverso il socio silenzioso. Se il socio silenzioso avesse contribuito con fondi direttamente a Coingarage s.r.o., il socio silenzioso non potrebbe legalmente essere pagato una quota di qualsiasi vendita di Coingarage s.r.o., ma solo una quota dei profitti di Coingarage s.r.o. nel normale corso degli affari durante l'anno. Con questo modello, il socio silenzioso riceverà una quota dei profitti e anche una quota della vendita pianificata di Coingarage s.r.o."
+                    "text": "What is Coingarage Finance s.r.o.?",
+                    "answer": "Coingarage Finance s.r.o. serves as a legal guarantee that any future sale of Coingarage s.r.o. will also benefit the depositors through the silent partner. If the silent partner had contributed funds directly to Coingarage s.r.o., then the silent partner would not legally be able to be paid a share of any sale of Coingarage s.r.o., but only a share of the profits of Coingarage s.r.o. in the normal course of business during the year. With this model, the silent partner will receive a share of the profits and also a share of the planned sale of Coingarage s.r.o."
                 },
                 "question6": {
-                    "text": "Sarò in grado di supervisionare il mio investimento?",
-                    "answer": "Il socio silenzioso ha il controllo del proprio investimento tramite la nostra piattaforma privata per investitori dove può vedere l'avanzamento del piano di sviluppo, attività aziendali significative, valore attuale della società, informazioni dal CEO e dal team di gestione, documenti contabili e un riepilogo delle notizie di Coingarage Finance Ltd. e Coingarage s.r.o.. Avrà anche l'opportunità di comunicare direttamente con la direzione della società tramite la piattaforma interna per investitori."
+                    "text": "Will I be able to supervise my investment?",
+                    "answer": "The silent partner has oversight of their investment through our private investor platform where they can see the progress of the development plan, significant business activity, current company value, information from the CEO and management team, accounting documents and a summary of Coingarage Finance Ltd. and Coingarage s.r.o.. news. He will also have the opportunity to communicate directly with the management of the company via the investor internal platform."
                 }
             },
             "silentPartnershipQuestions": {
                 "question1": {
-                    "text": "Cosa significa socio silenzioso ai sensi della legge, è legale?",
-                    "answer": "Un socio silenzioso può essere una persona fisica o giuridica, imprenditore o non imprenditore, che contribuisce all'attività commerciale di un'altra persona. In molti paesi sviluppati del mondo, le partnership silenziose sono una forma comune di partecipazione all'attività commerciale di altre persone. All'interno del sistema giuridico della Repubblica Ceca, la partnership silenziosa è stata regolamentata per la prima volta dal Codice Commerciale (dopo il 1989), tuttavia, dal 1° gennaio 2014 la sua regolamentazione giuridica è stata inclusa nel Codice Civile. In conformità con le disposizioni della sezione 2747 della legge n. 89/2012 Coll., il Codice Civile, come modificato, il socio silenzioso si impegna a effettuare un contributo che contribuirà ai risultati dell'attività commerciale della società per tutta la durata della partnership silenziosa, e la società si impegna a pagare al socio silenzioso una quota dei profitti."
+                    "text": "What does a silent partner mean under the law, is it legal?",
+                    "answer": " silent partner may be a natural or legal person, entrepreneur or nonentrepreneur, who contributes to the business of another person. In many developed countries of the world, silent partnerships are a common form of participation in the business of other persons. Within the legal system of the Czech Republic, the silent partnership was first regulated by the Commercial Code (after 1989), however, since 1 January 2014 its legal regulation has been included in the Civil Code. In accordance with the provisions of Section 2747 of Act No. 89/2012 Coll., the Civil Code, as amended, the silent partner undertakes to make a contribution that will contribute to the results of the company's business for the entire duration of the silent partnership, and the company undertakes to pay the silent partner a share of the profits."
                 },
                 "question2": {
-                    "text": "Quali diritti e obblighi ha un socio silenzioso?",
-                    "answer": "Il socio silenzioso ha il diritto di ispezionare tutti i documenti aziendali pubblicati e i registri contabili di Coingarage Finance s.r.o. e Coingarage s.r.o. tramite la nostra piattaforma privata. Il socio silenzioso ha anche il diritto di ricevere copie di ogni bilancio, di ogni dichiarazione dei redditi, comprese le relative tabelle, e di ogni rapporto dell'audit sul bilancio di Coingarage Finance s.r.o. tramite la piattaforma privata, che saranno redatti durante o per il periodo di servizio del socio silenzioso presso la società. Il socio silenzioso ha diritto a una quota dei profitti distribuiti pari al suo investimento alla data del bilancio e anche a qualsiasi altro profitto determinato come pagabile ai sensi di una risoluzione dell'assemblea generale di Coingarage Finance Ltd. Oltre al corretto deposito e riservatezza, il socio silenzioso è anche responsabile delle imposte sul reddito da profitto non pagate da Coingarage Finance s.r.o., né addebita al socio silenzioso, né le paga per conto del socio silenzioso."
+                    "text": "What rights and obligations does a silent partner have?",
+                    "answer": "A silent partner has the right to inspect all published business documents and accounting records of Coingarage Finance s.r.o. and Coingarage s.r.o. through our private platform. The silent partner also has the right to receive copies of each financial statement, each income tax return, including the schedules thereto, and each auditor's report on the audit of the financial statements of Coingarage Finance s.r.o. through the private platform, which shall be made during or for the period of the silent partner's service with the company.The silent partner shall be entitled to a share of the distributed profits in the amount of his investment as at the date of the financial statements and also of any other profits determined to be payable pursuant to a resolution of the general meeting of Coingarage Finance Ltd.r.o.In addition to the proper deposit and confidentiality, the silent partner is also liable for tax on any income from the profit share not paid by Coingarage Finance s.r.o, nor does it charge it to the silent partner, nor does it pay it on behalf of the silent partner."
                 },
                 "question3": {
-                    "text": "Quali sono i vantaggi di una partnership silenziosa rispetto ad altri tipi di investimento in aziende?",
-                    "answer": "<ul><li>Quota dei profitti di Coingarage Finance s.r.o. e quota dei profitti della eventuale vendita di Coingarage s.r.o., che può ottenere un apprezzamento maggiore rispetto, ad esempio, alle obbligazioni, dove c'è un rendimento percentuale fisso annuo.</li><li>Nessuna commissione iniziale o continuativa, investi direttamente nel progetto senza intermediari.</li><li>Possibilità di visualizzare documenti pubblicati relativi alle prestazioni della società tramite la piattaforma privata di Coingarage Finance s.r.o..</li><li>Puoi entrare nel progetto sin dall'inizio dell'idea e ottenere molte volte l'apprezzamento</li></ul>"
+                    "text": "What are the advantages of a silent partnership over other types of investment in companies?",
+                    "answer": "<ul><li>Share in the profits of Coingarage Finance s.r.o. and share in the profits of the eventual sale of Coingarage s.r.o., which can achieve a higher appreciation than, for example, bonds, where there is a fixed percentage annual return.</li><li>No upfront or ongoing fees, you invest directly in the project without an intermediary.</li><li>Ability to view published documents relating to the company's performance through Coingarage Finance s.r.o.'s private platform.</li><li>You can enter the project right from the inception of the idea, and get many times the appreciation</li></ul>"
                 },
                 "question4": {
-                    "text": "Come posso diventare un socio silenzioso?",
-                    "answer": "Iscrivendoti tramite la nostra piattaforma privata per investitori app.coingarage-finance.com. Una persona abilitata o un imprenditore che supera con successo il processo di verifica, investe i fondi richiesti in Coingarage Finance Ltd. e viene approvato in un'assemblea generale di Coingarage Finance Ltd. può diventare un socio silenzioso."
+                    "text": "How can I become a silent partner?",
+                    "answer": "By registering through our private investor platform app.coingarage-finance.com. A self-empowered person or businessman who successfully passes the verification process, invests the required funds in Coingarage Finance Ltd. and is approved at a general meeting of Coingarage Finance Ltd. can become a silent partner."
                 },
                 "question5": {
-                    "text": "Qual è il processo di verifica (KYC, AML, ecc.)?",
-                    "answer": "Anche se non siamo un soggetto obbligato ai sensi della sezione 2 della legge n. 253/2008 Coll., su alcune misure contro il riciclaggio di denaro e il finanziamento del terrorismo, come modificato (di seguito denominata 'legge AML'), vale a dire che non siamo soggetti agli obblighi relativi all'identificazione e al controllo dei clienti ai sensi della legge AML, identifichiamo comunque ogni socio silenzioso utilizzando almeno un documento d'identità e un controllo di base (PEP, sanzioni internazionali, menzioni negative nei media, ecc.) per la protezione della nostra società in cui desideri investire. Questo viene gestito per noi da veriff.com, un'applicazione con sede nell'Unione Europea, quindi non devi preoccuparti dei tuoi dati personali poiché GetID Ltd è soggetta a rigide normative europee, incluso il GDPR."
+                    "text": "What is the verification process (KYC, AML, etc.)?",
+                    "answer": "Even though we are not an obliged person within the meaning of Section 2 of Act No. 253/2008 Coll., on certain measures against the legalization of proceeds of crime and terrorist financing, as amended (hereinafter referred to as the 'AML Act'), i.e. we are not subject to the obligations regarding the identification and control of clients under the AML Act, we nevertheless identify each silent partner using at least one identity document and a basic background check (PEP, international sanctions, negative media mentions, etc.) for the protection of our company in which you wish to invest. This is handled for us by veriff.com, an application based in the European Union, so you don't have to worry about your personal data as GetID Ltd is subject to strict European legislation including GDPR."
                 },
                 "question6": {
-                    "text": "Ci sono commissioni associate al contributo della partnership silenziosa?",
-                    "answer": "Tutto è gratuito, investi direttamente nel progetto senza intermediari. Le commissioni possono essere addebitate solo come parte della transazione stessa, che possono essere addebitate dalla tua banca o gateway di pagamento."
+                    "text": "Are there any fees associated with the silent partnership contribution?",
+                    "answer": "Everything is free of charge, you invest directly in the project without intermediaries. Fees may only be incurred as part of the transaction itself, which may be charged by your bank or payment gateway."
                 },
                 "question7": {
-                    "text": "Quando e a quali condizioni il socio silenzioso ha diritto a una quota dei profitti distribuiti?",
-                    "answer": "Il diritto al pagamento dei profitti sorge quando approvato dall'assemblea generale di Coingarage Finance s.r.o. e l'importo successivo della quota di profitto corrisponde alla quota dei profitti distribuiti acquistata. Ulteriori informazioni sono disponibili nel calcolatore di apprezzamento proiettato sulla pagina principale di questo sito web."
+                    "text": "When and under what conditions is a silent partner entitled to a share of the distributed profit?",
+                    "answer": "The entitlement to the payment of profits arises when approved by the general meeting of Coingarage Finance s.r.o. and the subsequent amount of the profit share corresponds to the purchased share of the distributed profits. Further information is available in the projected appreciation calculator on the main page of this website."
                 },
                 "question8": {
-                    "text": "Quanto dura l'accordo di investimento della partnership silenziosa?",
-                    "answer": "L'accordo di investimento della partnership silenziosa ha una durata di 7 anni, momento in cui si prevede che la fase di sviluppo sarà completata e la crescita di Coingarage s.r.o. sarà a livello globale."
+                    "text": "How long is the silent partnership investment agreement?",
+                    "answer": "The silent partner investment agreement is for a period of 7 years, at which time it is anticipated that the development phase will be completed and the growth of Coingarage s.r.o. will be at a global level."
                 }
             },
             "visionQuestions": {
                 "question1": {
-                    "text": "Chi è il vostro gruppo target?",
-                    "answer": "Ci sono circa 480 milioni di persone in età lavorativa in Europa e solo il 9% - circa 43 milioni di loro ha qualche esperienza con le criptovalute. Rispetto all'Asia, alle Americhe, all'Africa e all'America Latina, questo è circa il 16% in meno. Ciò significa che oltre a questi 43 milioni, c'è un potenziale per almeno 77 milioni di nuove persone che inizieranno a detenere o scambiare cripto nei prossimi sette anni."
+                    "text": "Who is your target group?",
+                    "answer": "There are about 480 million people of working age in Europe and only 9% - about 43 million of them have some experience with cryptos. Compared to Asia, the Americas, Africa and Latin America, this is about 16% less. This means that in addition to these 43 million, there is a potential for at least 77 million new people to start holding or trading crypto in the next seven years."
                 },
                 "question2": {
-                    "text": "Perché cripto e exchange di cripto?",
-                    "answer": "La tecnologia blockchain e le relative criptovalute offrono numerosi vantaggi agli utenti e hanno il potenziale per rivoluzionare l'ecosistema finanziario globale. Crediamo che entro il 2032, 1 miliardo di persone sarà coinvolto nell'ecosistema globale degli asset digitali e una parte significativa del prodotto interno lordo sarà nell'economia bitcoin."
+                    "text": "Why crypto and crypto exchange?",
+                    "answer": "Blockchain technology and its related cryptocurrencies offer a number of benefits to users and have the potential to revolutionise the global financial ecosystem. We believe that by 2032, 1 billion people will be involved in the global ecosystem of digital assets and a significant portion of gross domestic product will be in the bitcoin economy."
                 },
                 "question3": {
-                    "text": "Perché un exchange in Europa? E perché vuoi concentrarti sull'Europa?",
-                    "answer": "La maggior parte dei principali exchange di oggi sono basati nei paradisi fiscali o in paesi dove non è garantita una trasparenza e sicurezza al 100%. Allo stesso tempo, se confrontiamo la percentuale di persone che hanno avuto contatto con le cripto in Europa con altri continenti, vediamo una grande opportunità nel mercato europeo."
+                    "text": "Why a stock exchange in Europe? And why do you want to focus on Europe?",
+                    "answer": "Most of the major stock exchanges today are based in tax havens or in countries where 100% transparency and security are not guaranteed. At the same time, if we compare the percentage of people who have come into contact with crypto in Europe with other continents, we see a great opportunity in the European market."
                 },
                 "question4": {
-                    "text": "Come raggiungerai 10 milioni di utenti attivi?",
-                    "answer": "Questo si basa sul presupposto menzionato sopra della crescita dell'intero mondo cripto e un aumento della percentuale di utenti in Europa al livello di ad esempio gli USA e l'Asia. Allo stesso tempo, siamo consapevoli del nostro vantaggio tecnologico, dove presto combineremo su una piattaforma per offrire tutte le funzioni disponibili del settore. Anche il marketing gioca un ruolo importante, dove stiamo pianificando numerose attività importanti nel mondo dello sport, della cultura, ecc. in collaborazione con i leader del settore, oltre agli strumenti usuali."
+                    "text": "How do you reach 10 million active users?",
+                    "answer": "This is based on the aforementioned assumption of the growth of the entire crypto world and an increase in the percentage of users in Europe to the level of e.g. the USA and Asia. At the same time, we are aware of our technological advantage, where we will soon combine on one platform to offer all the available functions of the industry. Marketing also plays an important role, where we are planning a number of important activities in the world of sports, culture, etc. in conjunction with the industry leaders, in addition to the usual tools."
                 },
                 "question5": {
-                    "text": "Come raggiungerai i profitti continuativi?",
-                    "answer": "Non è un segreto che le commissioni giocano un ruolo chiave nella generazione di profitti. Ogni volta che avviene un trade o una transazione sul nostro exchange al di fuori di un deposito, ci sono commissioni associate ad esso. L'exchange genera profitti ventiquattro ore al giorno, sette giorni alla settimana."
+                    "text": "How will you achieve ongoing profits?",
+                    "answer": "It's no secret that fees play a key role in generating profits. Whenever any trade or transaction takes place on our exchange outside of a deposit, there are fees associated with it. The exchange makes a profit twenty-four hours a day, seven days a week."
                 },
                 "question6": {
-                    "text": "Come raggiungerai il valore previsto della società di 10 miliardi di USD in 7 anni?",
-                    "answer": "Il valore della società sarà una soluzione unica sotto forma di un exchange cripto robusto ma semplice che sarà disponibile su tutti i dispositivi. Poi c'è la grande comunità di utenti, miliardi di profitti annuali, il marchio e il team esperto. Abbiamo confrontato il valore della nostra società con società simili come Kraken, KuCoin, Binance e tuttavia il valore della nostra società Coingarage s.r.o. è sottovalutato."
+                    "text": "How will you achieve the projected value of the company of USD 10 billion in 7 years?",
+                    "answer": "The value of the company will be a unique solution in the form of a robust yet simple crypto exchange that will be available on all devices. Then there is the large community of users, billions in annual profits, brand, and experienced team. We have compared the value of our company with similar companies such as Kraken, KuCoin, Binance and yet the value of our company Coingarage s.r.o.. is undervalued"
                 }
             },
             "otherQuestions": {
                 "question1": {
-                    "text": "Chi possiederà e gestirà Coingarage s.r.o.?",
-                    "answer": "I proprietari di Coingarage s.r.o. sono Coingarage Finance s.r.o. (35%) e Ota Janda (70%). Si prevede un aggiustamento della struttura proprietaria nel prossimo futuro, quando esperti tecnologici e investitori stranieri si uniranno alla società. Per ulteriori informazioni sui singoli proprietari e sulla gestione, consulta la sezione Chi Siamo."
+                    "text": "Who will own and run Coingarage s.r.o.?",
+                    "answer": "The owners of Coingarage s.r.o. are Coingarage Finance s.r.o. (35%) and Ota Janda (70%). Expect an adjustment of the ownership structure in the near future, when technology experts and foreign investors will join the company. For more information about the individual owners and management, please see the About Us section."
                 },
                 "question2": {
-                    "text": "Perché avete bisogno e per cosa userete i fondi?",
-                    "answer": "Tutti i fondi saranno utilizzati per attività per la crescita stabile e l'espansione di Coingarage s.r.o. In particolare per lo sviluppo dell'exchange e dei suoi componenti. Investiremo anche nella consapevolezza del nostro marchio, ovvero in attività di marketing e vendite attive."
+                    "text": "Why do you need and what will you use the funds for?",
+                    "answer": "All funds will be used for activities for the stable growth and expansion of Coingarage s.r.o. Especially on the development of the stock exchange and its components. We will also invest in our brand awareness, i.e. in active marketing and sales activities."
                 },
                 "question3": {
-                    "text": "Prevedete di rilasciare i vostri token cripto?",
-                    "answer": "Sì, stiamo pianificando di rilasciare il nostro token di utilità, che svolgerà una funzione simile a BNB su Binance. Combineremo anche token comunitari esistenti sotto questo token di utilità."
+                    "text": "Do you plan to release your own crypto tokens?",
+                    "answer": "Yes, we are planning to release our own utility token, which will perform a similar function to BNB on Binance. We will also combine existing community tokens under this utility token."
                 },
                 "question4": {
-                    "text": "Perché un socio silenzioso e non fondi di capitale di rischio?",
-                    "answer": "Il percorso con i fondi di capitale di rischio è solitamente lungo, non vogliamo rallentare il progetto, quindi il 1° round di investimento in particolare è per i soci silenziosi del pubblico. Il piano è che dai prossimi round di investimento in poi, i fondi di capitale di rischio saranno il focus principale."
+                    "text": "Why a silent partner and not venture capital funds?",
+                    "answer": "The journey with venture capital funds is usually a long one, we don't want to hold up the project, so the 1st investment round in particular is for silent partners from the public. The plan is that from the next investment rounds onwards, venture capital funds will be the primary focus."
                 }
             }
         }
@@ -839,190 +940,190 @@
         
         "main": {
             "header": "GARAGE Coin <span>GARA</span>",
-            "text1": "GARA è il token del nostro exchange Coingarage, che ci aiuta a sviluppare l'ecosistema dell'exchange. Questo token è stato creato con un massimo fisso di soli 900 milioni di unità, e non può essere aumentato. Tuttavia, a causa del nostro meccanismo di burning, il numero di token GARA diminuirà gradualmente nel tempo.",
-            "text2": "L'uso principale di GARA è per pagare varie commissioni sull'exchange. Quando viene utilizzato per pagare queste commissioni, i nostri utenti ricevono inoltre uno sconto del 20% sull'importo di queste commissioni. Inoltre, GARA serve come forma di ricompensa per i nostri utenti.",
+            "text1": "GARA is the token of our Coingarage exchange, which helps us develop the exchange ecosystem. This token was created with a fixed maximum of only 900 million units, and it cannot be increased. However, due to our burning mechanism, the number of GARA tokens will gradually decrease over time.",
+            "text2": "The main use of GARA is to pay for various fees on the exchange. When used to pay these fees, our users additionally receive a 20% discount on the amount of these fees. Furthermore, GARA serves as a form of reward for our users.",
             "buyGARA": {
-                "header": "Acquista GARA",
-                "totalTokens": "Quantità totale di token GARA",
-                "distributedTokens": "Token GARA distribuiti totali",
-                "soldTokens": "Token venduti",
-                "btnConnectWallet": "Collega Wallet",
-                "btnBuyGARA": "Acquista GARA",
-                "btnHelpGarry": "Αγοράστε GARA και βοηθήστε τον Gary",
-                "buyWithEurOnCoingarage": "Αγοράστε με EUR στο Coingarage",
-                "buyWith": "Acquista con",
-                "linkGoToLaunchapad": "Acquista su Coingarage",
-                "poweredBy": "Offerto da"
+                "header": "Buy GARA",
+                "totalTokens": "Total amount of GARA tokens",
+                "distributedTokens": "Total distributed GARA tokens",
+                "soldTokens": "Tokens sold",
+                "btnConnectWallet": "Connect Wallet",
+                "btnBuyGARA": "Buy GARA",
+                "btnHelpGarry": "Buy GARA and help Gary",
+                "buyWithEurOnCoingarage": "Buy with EUR on Coingarage",
+                "buyWith": "Buy with",
+                "linkGoToLaunchapad": "Buy on Coingarage",
+                "poweredBy": "Powered by"
             }
         },
         "usage": {
-            "header": "Pianificazione dell'uso di GARA",
-            "usage1": "Commissioni di listing",
-            "usage2": "Commissioni dalle transazioni con carta",
-            "usage3": "Gas richiesto per il trasferimento",
-            "usage4": "Commissione di successo",
-            "usage5": "Commissione di prelievo",
-            "usage6": "Χρέωση αερίου για εφαρμογές",
-            "usage7": "Commissioni di acquisto",
-            "usage8": "Pubblicità"
+            "header": "GARA Planning Use",
+            "usage1": "Listing fees",
+            "usage2": "Fees from card transactions",
+            "usage3": "Required gas for transfer",
+            "usage4": "Success fee",
+            "usage5": "Withdrawal fee",
+            "usage6": "Gas fee for Apps",
+            "usage7": "Purchase fees",
+            "usage8": "Advertisement"
         },
         "garaDepo": {
             "header": "GARA Stake",
-            "subHeader": "Rendimento attuale del 30% p.a.",
-            "text1": "Parcheggia i tuoi Garage coins acquistati (GARA) nel nostro programma di deposito e lasciali crescere. Paghiamo regolarmente gli interessi sul tuo GARA depositato sul tuo account Coingarage ogni giorno. Non devi preoccuparti di nulla, tutto è completamente automatico.",
-            "text2": "Ora offerta introduttiva <span>solo fino al 28.2.2025, con un tasso di interesse fisso del 30% p.a.</span> per l'intero periodo di staking. Approfitta di questa opportunità unica e lascia che il tuo GARA cresca.",
+            "subHeader": "Current return up to 30% p.a.",
+            "text1": "Park your purchased Garage coins (GARA) in our Deposit program and let them grow. We regularly pay interest on your deposited GARA to your Coingarage account every day. You don’t have to worry about anything, everything is fully automatic.",
+            "text2": "Now an introductory offer <span>only until 28.2.2025, with a fixed interest rate of 30% p.a.</span> for the entire staking period. Take advantage of this unique opportunity and let your GARA grow.",
             "timer": {
-                "header": "Υπολείπεται χρόνος μέχρι το τέλος του 1ου γύρου",
-                "day": "GIORNI",
-                "hours": "ORE",
-                "minutes": "MINUTI",
-                "seconds": "SECONDI",
-                "disclaimer": "*Dopo questa data sarà ancora possibile depositare GARA, ma con un rendimento inferiore, che cambierà dinamicamente in base all'importo totale depositato di GARA."
+                "header": "Time left until the 1st round ends",
+                "day": "DAYS",
+                "hours": "HOURS",
+                "minutes": "MINUTES",
+                "seconds": "SECONDS",
+                "disclaimer": "*After this date, it will still be possible to deposit GARA, but with a lower return, which will dynamically change depending on the total deposited amount of GARA."
             },
             "boxes": {
-                "1": "Facile e senza preoccupazioni",
-                "2": "Sicuro e trasparente",
-                "3": "Alti rendimenti",
-                "4": "Pagamento giornaliero dei guadagni"
+                "1": "Easy and worry-free",
+                "2": "Safe and transparent",
+                "3": "High returns",
+                "4": "Daily earnings payout"
             },
-            "garaStakebtn": "Προβολή σχεδίων stake"
+            "garaStakebtn": "View stake plans"
         },
         "burnMechanism": {
-            "header": "Meccanismo di Bruciatura GARA",
-            "text1": "Per garantire uno sviluppo più regolare del valore di GARA, abbiamo deciso di implementare un meccanismo di bruciatura che brucerà gradualmente i token GARA in base al loro crescente utilizzo.",
+            "header": "GARA Burning Mechanism",
+            "text1": "To ensure a smoother value development of GARA, we have decided to implement a burning mechanism that will gradually burn GARA tokens based on their increasing use.",
             "boxes": {
                 "1": {
-                    "header": "Fino a quando rimarranno solo 200 milioni di GARA",
-                    "text": "dai 900 milioni originali"
+                    "header": "Until only 200 million GARA remain",
+                    "text": "from the original 900 million"
                 },
                 "2": {
-                    "header": "Ogni mese bruceremo il 20% di GARA",
-                    "text": "ricevuti dalle commissioni"
+                    "header": "Every month we will burn 20% of GARA",
+                    "text": "received in fees"
                 }
             },
-            "disclaimer": "*La bruciatura di token è un metodo per gestire l'offerta totale di una criptovaluta sul mercato per ridurre la quantità disponibile e quindi potenzialmente aumentare il valore della criptovaluta. Questo concetto è simile ai riacquisti di azioni nel mondo finanziario tradizionale."
+            "disclaimer": "*Token burning is a method of managing the total supply of a cryptocurrency in the market to reduce the available amount and thereby potentially increase the value of the cryptocurrency. This concept is similar to share buybacks in the traditional finance world."
         },
         "roadmap": {
             "header": "Roadmap",
-            "btnBuyGARA": "Acquista GARA",
-            "text1": "Exchange avviato",
-            "text2": "GARA creato",
-            "text3": "Lanciato il robot di trading EEZY Trader",
-            "text4": "Prevendita di GARA",
-            "text5": "Listing su Uniswap",
-            "text6": "Listing di GARA su Coinmarketcap e Coingecko",
-            "text7": "Lancio del trading di GARA su Coingarage",
+            "btnBuyGARA": "Buy GARA",
+            "text1": "Exchange Started",
+            "text2": "GARA Created",
+            "text3": "Launched the Trading Robot EEZY Trader",
+            "text4": "Presale of GARA",
+            "text5": "Listing on Uniswap",
+            "text6": "GARA Listing on Coinmarketcap & Coingecko",
+            "text7": "Launch of GARA trading on Coingarage exchange",
             "text8": "GARA Stake",
-            "text9": "Applicazione delle commissioni GARA e burning di GARA",
-            "text10": "Secondo airdrop di GARA",
-            "text11": "Primo airdrop di GARA",
-            "text12": "Carta crittografica e cashback in GARA"
+            "text9": "Application of GARA fees and GARA burning",
+            "text10": "Second GARA Airdrop",
+            "text11": "First GARA Airdrop",
+            "text12": "Crypto card and cash back in GARA"
         },
         "alocation": {
-            "header": "Allocazione",
+            "header": "Alocation",
             "rewards": {
                 "text": "11% (99M GARA)",
-                "subText": "Ricompensa per lo staking"
+                "subText": "Stake rewards"
             },
             "company": {
                 "text": "20% (180M GARA)",
-                "subText": "Azienda"
+                "subText": "Company"
             },
             "baseTeam": {
                 "text": "11% (99M GARA)",
-                "subText": "Team fondatore"
+                "subText": "Founding Team"
             },
             "burnedAt": {
                 "text": "15% (135M GARA)",
-                "subText": "Sarà bruciato il 1 marzo 2024"
+                "subText": "To be burned 1st March 2024"
             },
             "marketing": {
                 "text": "10% (90M GARA)",
-                "subText": "Marketing nuovi utenti dell'exchange"
+                "subText": "Marketing new users of the exchange"
             },
             "angelInvestors": {
                 "text": "10% (90M GARA)",
-                "subText": "Investitori angelici"
+                "subText": "Angel lnvestors"
             },
             "reserved": {
                 "text": "11% (99M GARA)",
-                "subText": "Riservato per la prevendita pubblica",
-                "subText1": "e offerto all'acquisto su www.coingarage.io."
+                "subText": "Reserved for public pre-sale offered for",
+                "subText1": "purchase on www.coingarage.io."
             },
             "nonExchange": {
                 "text": "10% (90M GARA)",
-                "subText": "GARA in forma OTC dopo l'ammissione alla",
-                "subText1": "negoziazione sulla piattaforma di trading dell'emittente"
+                "subText": "GARA in OTC form after admission",
+                "subText1": "to trading on the issuer's trading platform"
             },
             "launchpads": {
                 "text": "2% (18M GARA)",
-                "subText": "Για launchpads",
-                "subText1": "σε κεντρικοποιημένα ανταλλακτήρια"
+                "subText": "For launchpads",
+                "subText1": "on centralized exchanges"
             },
-            "limit": " È fissato un limite di 900 milioni di GARA, che non sarà mai aumentato."
+            "limit": "The limit of 900 million GARA has been set and will never increase."
         },
         "release": {
-            "header": "Rilascio di GARA per il Team",
-            "subHeader": "99 milioni di GARA",
-            "text": "I 99 milioni di GARA destinati al team saranno rilasciati gradualmente, con il 20% (19,8M) rilasciato ogni anno per un periodo di 5 anni.",
+            "header": "GARA Release for Team",
+            "subHeader": "99 Millions GARA",
+            "text": "The 99 million GARA allocated for the team will be released gradually, with 20% (19,8M) being released each year over a period of 5 years.",
             "box1": {
-                "text": "Κατά την έναρξη της προπώλησης",
-                "subText": "20% (19,8M)"
+                "text": "At the presale launch",
+                "subText": "20% (19,8M.)"
             },
             "box2": {
-                "text": "Μετά από 2 χρόνια",
-                "subText": "20% (19,8M)"
+                "text": "After 2 years",
+                "subText": "20% (19,8M.)"
             },
             "box3": {
-                "text": "Μετά από 3 χρόνια",
-                "subText": "20% (19,8M)"
+                "text": "After 3 years",
+                "subText": "20% (19,8M.)"
             },
             "box4": {
-                "text": "Μετά από 4 χρόνια",
-                "subText": "20% (19,8M)"
+                "text": "After 4 years",
+                "subText": "20% (19,8M.)"
             },
             "box5": {
-                "text": "Μετά από 5 χρόνια",
-                "subText": "20% (19,8M)"
+                "text": "After 5 years",
+                "subText": "20% (19,8M.)"
             }
         },
         "IEO": {
-            "header": "Prevendita pubblica IEO",
-            "text1": "Το 40% των συγκεντρωμένων κεφαλαίων θα χρησιμοποιηθεί για την ανάπτυξη της πλατφόρμας Coingarage σύμφωνα με το επιχειρηματικό σχέδιο, δηλαδή κυρίως για την περαιτέρω ανάπτυξη της πλατφόρμας, την υλοποίηση νέων εργαλείων, λειτουργιών και υπηρεσιών και τα κόστη που σχετίζονται με τη λειτουργία του ανταλλακτηρίου.",
-            "text2": "Το 30% θα χρησιμοποιηθεί για το μάρκετινγκ - την οικοδόμηση του εμπορικού σήματος Coingarage. Η προώθηση θα είναι συνεχής ώστε το Coingarage να αποκτήσει δημοτικότητα και να προσελκύσει επαρκή αριθμό επενδυτών και χρηστών.",
-            "text3": "Το 20% θα χρησιμοποιηθεί για ρευστότητα.",
-            "text4": "Το 10% θα διατηρηθεί ως εφεδρεία για περιπτώσεις έκτακτης ανάγκης.",
+            "header": "IEO Public Presale",
+            "text1": "40% of the funds raised will be used to build the platform Coingarage in accordance with the business plan, i.e. primarily the further development of the platform, the implementation of new tools, features and services and the costs associated with the operation exchange.",
+            "text2": "30% will be used for Marketing - building the Coingarage brand. Promotion will be ongoing so that Coingarage gains popularity and attracts sufficient number of investors and users.",
+            "text3": "20% will be used for liquidity.",
+            "text4": "10% will be kept in reserve in case of an emergency.",
             "box": {
-                "address": "Indirizzo del contratto",
-                "btnBuyWithUSDT": "Acquista con USDT",
-                "btnBuyWithMatic": "Acquista con Matic"
+                "address": "Contract Address",
+                "btnBuyWithUSDT": "Buy with USDT",
+                "btnBuyWithMatic": "Buy with Matic"
             }
         },
         "GARArunning": {
-            "header": "GARA funziona sulla blockchain di Polygon",
-            "text": "Polygon (precedentemente conosciuto come Matic Network) è una piattaforma blockchain che espande e migliora la rete Ethereum. Ha diversi vantaggi, tra cui:",
+            "header": "GARA Runs on Polygon Blockchain",
+            "text": "Polygon (formerly known as Matic Network) is a blockchain platform that expands and enhances the Ethereum network. It has several advantages, including:",
             "box1": {
-                "header": "Scalabilità",
-                "text": "Polygon consente una scalabilità rapida ed efficiente della rete Ethereum. Attraverso i cosiddetti strati di scaling, può elaborare molte più transazioni al secondo rispetto alla blockchain base di Ethereum."
+                "header": "Scalability",
+                "text": "Polygon enables fast and efficient scalability of the Ethereum network. Through so-called scaling layers, it can process many more transactions per second than the Ethereum base blockchain."
             },
             "box2": {
-                "header": "Commissioni basse",
-                "text": "Grazie alla scalabilità e all'ottimizzazione del processo di transazione, Polygon offre commissioni basse per le transazioni. Questo è vantaggioso per gli utenti che desiderano effettuare transazioni frequenti ed economiche."
+                "header": "Low fees",
+                "text": "Thanks to scalability and transaction process optimization, Polygon offers low fees for transactions. This is advantageous for users who want to conduct frequent and inexpensive transactions."
             },
             "box3": {
-                "header": "Interoperabilità",
-                "text": "Polygon è compatibile con Ethereum, il che significa che le dApp e gli smart contract sviluppati per Ethereum possono essere facilmente trasferiti su Polygon. Questo consente agli sviluppatori di sfruttare i vantaggi di Polygon senza dover scrivere un nuovo codice."
+                "header": "Interoperability",
+                "text": "Polygon is compatible with Ethereum, that means that dApps and smart contracts developed for Ethereum can be easily transferred to Polygon. This allows developers to leverage Polygon's advantages without a need write a new code."
             },
             "box4": {
-                "header": "Sicurezza",
-                "text": "Polygon si basa sulla sicurezza della rete Ethereum e utilizza il consenso Proof of Stake (PoS). Questo significa che i detentori del token Polygon possono mettere in staking i loro token per aiutare a garantire la sicurezza della rete e guadagnare ricompense per farlo."
+                "header": "Security",
+                "text": "Polygon relies on the security of the Ethereum network and utilizes its Proof of Stake (PoS) consensus. This means that holders of the Polygon token can stake their tokens to help secure the network and earn rewards for doing so."
             },
-            "btnGARAOnPolygon": "GARA su Polygonscanu"
+            "btnGARAOnPolygon": "GARA on Polygonscan"
         }
     },
     "widget": {
-        "button": "Voglio saperne di più",
-        "header": "Saremo felici di rispondere a tutte le tue domande",
-        "text": "Sentiti libero di inviarci la tua email e il tuo numero di telefono e un rappresentante commerciale ti contatterà per rispondere a tutte le tue domande."
+        "button": "I want to know more",
+        "header": "We will be happy to answer all your questions",
+        "text": "Feel free to send us your email and phone number and a sales representative will contact you to answer any questions you may have."
     }
 }

@@ -181,6 +181,12 @@ export const navItems: NavItem[] = [
         icon: "stake",
       },
       {
+        title: "BTC saving plan",
+        key: "btcSavingPlan",
+        href: "/earn/btc-saving-plan",
+        icon: "stake",
+      },
+      {
         title: "Affiliate",
         key: "affiliate",
         href: "/earn",

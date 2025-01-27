@@ -11,6 +11,7 @@
         "earn": "Ganar",
         "becomeAShareholder": "Convertirse en Accionista",
         "affiliate": "Referral",
+        "btcSavingPlan": "Plan de Ahorro de BTC",
         "stake": "Apostar",
         "more": "Más",
         "aboutUs": "Acerca de Nosotros",
@@ -287,6 +288,105 @@
                 "answer2": "Implementamos medidas de seguridad estándar de la industria, incluyendo cifrado, autenticación de dos factores (2FA) y auditorías de seguridad regulares, para proteger tus fondos e información personal. Además, nuestra plataforma cumple con estrictos estándares de cumplimiento para proteger contra el acceso no autorizado y actividades fraudulentas.",
                 "question3": "¿Cuáles son los beneficios de usar DCA?",
                 "answer3": "El promedio de costo en dólares (DCA) es una estrategia donde un inversor divide el monto total a invertir entre compras periódicas de un activo objetivo en un esfuerzo por reducir el impacto de la volatilidad en la compra total. Los principales beneficios de usar DCA incluyen reducir el riesgo asociado con el momento del mercado, potencialmente reducir el costo promedio por acción con el tiempo y promover un comportamiento de inversión disciplinado."
+            }
+        },
+        "BtcSaving": {
+            "whatIsSavingPlan": {
+                "header": "¿Qué es un Plan de Ahorro en\u00A0Bitcoin?",
+                "text": "Un plan de ahorro en Bitcoin es una forma sencilla y efectiva de aumentar tus ahorros mediante inversiones regulares en Bitcoin. Ya seas nuevo en las criptomonedas o un inversor experimentado, nuestro plan ofrece una solución fácil y automatizada para construir tu patrimonio de manera gradual.",
+                "btn": "Comenzar a ahorrar",
+                "cards": {
+                    "card1": {
+                        "header": "Benefíciate del DCA",
+                        "text": "Comprar semanal o mensualmente te hace menos dependiente de las fluctuaciones de precios a corto plazo."
+                    },
+                    "card2": {
+                        "header": "Pago simple",
+                        "text": "Puedes configurar un plan de ahorro personal utilizando Visa, Mastercard o SEPA."
+                    },
+                    "card3": {
+                        "header": "Compras adicionales",
+                        "text": "Compras adicionales de Bitcoin durante caídas significativas de precio. Así obtienes más BTC a un costo más bajo."
+                    },
+                    "card4": {
+                        "header": "Retira en cualquier momento",
+                        "text": "Tus fondos están directamente en tu billetera. Esto significa que puedes retirarlos en cualquier momento y no están bloqueados."
+                    }
+                }
+            },
+            "dcaCalculator": {
+                "subheader": "Calculadora de Bitcoin DCA",
+                "header": "Calcula retrospectivamente cuánto habrías ahorrado",
+                "invested": "Invertido",
+                "enterAmount": "Introducir cantidad",
+                "frequency": "Frecuencia",
+                "weekly": "Semanal",
+                "monthly": "Mensual",
+                "dateOpening": "Fecha de inicio",
+                "dateClosing": "Fecha de cierre",
+                "notice": "Los valores se calculan en base a datos históricos de Bitcoin y pueden no coincidir exactamente con $.",
+                "enterAmountCta": "Para mostrar el gráfico, introduce la cantidad que deseas invertir (en USD)",
+                "yourDeposit": "Depósito:",
+                "normalSavings": "Cuenta de ahorros:",
+                "btcSavings": "Plan de ahorro en Bitcoin:",
+                "biMonthly": "Bimestral"                
+            },
+            "whatIsDCA": {
+                "header": "¿Qué es la estrategia DCA?",
+                "text": "El Promedio de Costos (DCA) es una estrategia de inversión que consiste en invertir regularmente la misma cantidad de dinero en un activo específico, independientemente de su precio actual. El objetivo de esta estrategia es reducir el impacto de la volatilidad en la inversión total.",
+                "benefits": {
+                    "header": "Beneficios",
+                    "benefit1": "Reducción del riesgo: Al distribuir tu inversión en el tiempo, reduces el riesgo de comprar a un precio alto.",
+                    "benefit2": "Estabilidad emocional: Evitas intentar cronometrar el mercado, lo que puede ser emocionalmente desafiante y arriesgado.",
+                    "benefit3": "Diversificación del riesgo: Compras más unidades del activo cuando los precios son bajos y menos unidades cuando los precios son altos, promediando así tu costo de compra."
+                },
+                "regularSaving": {
+                    "header": "Ahorro regular en Bitcoin (ejemplo)",
+                    "text": "Compras regulares de BTC/CZK a través de nuestro plan de ahorro por 8000 CZK al mes.",
+                    "bought": "Comprado",
+                    "investedAmount": "Cantidad invertida",
+                    "receivedAmount": "Cantidad recibida",
+                    "totalAmount": "Cantidad total",
+                    "percentageCalculation": "Cálculo porcentual"
+                },
+                "dynamicDCA": {
+                    "header": "DCA Dinámico",
+                    "text1": "Según la situación actual del mercado, inviertes más o menos, asignando tu capital de manera más efectiva durante los ciclos de Bitcoin.",
+                    "text2": "Si confías en Bitcoin, no temes invertir mayores cantidades durante caídas de precios y deseas optimizar tu estrategia para obtener mayores rendimientos, esta es la elección adecuada para ti.",
+                    "text3": "Al multiplicar la cantidad invertida en un mercado en declive, tu precio promedio de compra garantiza disminuir en unidades o decenas de porcentajes. Lo más importante, inviertes más dinero en el momento adecuado, lo que lleva a rendimientos significativamente mayores."
+                }
+            },
+            "extraDCA": {
+                "header": "Compras adicionales en la estrategia DCA",
+                "text": "Esta función está diseñada para ayudarte a maximizar el valor de tus ahorros. Establece cuánto debe caer el mercado (en porcentaje) para que automáticamente se compre una porción adicional en tu posición. Esta función te permite aprovechar la volatilidad del mercado y reducir el precio promedio de compra de BTC tanto como sea posible.",
+                "howItWorks": {
+                    "header": "¿Cómo funciona?",
+                    "work1": "Define compras adicionales: Elige el porcentaje de caída en el que se debe realizar una compra.",
+                    "work2": "Respuesta automática a la caída: Si el mercado cae por debajo de tu nivel establecido, se compra automáticamente una porción adicional en tu posición.",
+                    "work3": "Optimización del precio de compra: Al comprar a precios más bajos, logras un precio promedio de compra más bajo para BTC, lo que aumenta tu potencial de ganancias durante el crecimiento del mercado."
+                },
+                "whyAdvantageous": {
+                    "header": "¿Por qué es ventajoso?",
+                    "advantageous1": "Precio promedio de compra más bajo: Las compras adicionales te permiten adquirir más cuando los precios son bajos, reduciendo tu precio promedio de compra de BTC.",
+                    "advantageous2": "Estrategia pasiva: No necesitas monitorear constantemente el mercado; todo es automático.",
+                    "advantageous3": "Gestión de riesgos eficiente: Te permite aprovechar mejor la volatilidad y las caídas del mercado a tu favor."
+                },
+                "graph": {
+                    "classicDCA": "DCA clásico",
+                    "dcaExtra": "DCA con compras adicionales",
+                    "dcaBuy": "Compra DCA $100",
+                    "dcaExtraBuy": "Compra adicional",
+                    "weeks": {
+                        "week1": "Semana 1",
+                        "week2": "Semana 2",
+                        "week3": "Semana 3",
+                        "week4": "Semana 4",
+                        "week5": "Semana 5"
+                    },
+                    "btn": "Comenzar a ahorrar",
+                    "price": "Precio",
+                    "time": "Tiempo"
+                }
             }
         },
         "affiliate": {

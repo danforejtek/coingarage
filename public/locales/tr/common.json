@@ -288,6 +288,106 @@
                 "answer3": "Dolar-maliyet ortalaması (DCA), bir yatırımcının volatilitenin toplam satın alma üzerindeki etkisini azaltmak amacıyla yatırım yapılacak toplam tutarı bir hedef varlığın periyodik satın alımlarına böldüğü bir stratejidir. DCA kullanmanın temel faydaları arasında piyasa zamanlamasıyla ilişkili riskin azaltılması, zaman içinde hisse başına ortalama maliyetin potansiyel olarak düşürülmesi ve disiplinli yatırım davranışının teşvik edilmesi yer alır."
             }
         },
+        "BtcSaving": {
+            "whatIsSavingPlan": {
+                "header": "Bitcoin Birikim Planı\u00A0Nedir?",
+                "text": "Bitcoin birikim planı, Bitcoin'e düzenli yatırımlar yaparak birikimlerinizi artırmanın basit ve etkili bir yoludur. Kripto paralara yeni başlayan biri veya deneyimli bir yatırımcı olun, planımız servetinizi aşamalı olarak büyütmek için kolay ve otomatik bir çözüm sunar.",
+                "btn": "Tasarruf Etmeye Başla",
+                "cards": {
+                    "card1": {
+                        "header": "Maliyet Ortalamasından Yararlanın",
+                        "text": "Haftalık, iki haftalık veya aylık alımlarınız, kısa vadeli piyasa dalgalanmalarına olan bağımlılığınızı azaltır."
+                    },
+                    "card2": {
+                        "header": "Kolay Ödeme Yöntemleri",
+                        "text": "Visa, Mastercard veya SEPA ile kişisel birikim planınızı kolayca oluşturabilirsiniz."
+                    },
+                    "card3": {  
+                        "header": "Ek Alımlar Ayarlayın",
+                        "text": "Fiyat düşüşleri sırasında ek Bitcoin alımları gerçekleştirin. Bu sayede daha düşük maliyetle daha fazla BTC edinir ve gelecekte daha yüksek getiriler sağlarsınız."
+                    },
+                    "card4": {
+                        "header": "İstediğiniz Zaman Çekin",
+                        "text": "Fonlarınız doğrudan cüzdanınızda bulunur. Bu, paralarınızı herhangi bir zamanda çekebileceğiniz ve kilitli kalmayacağı anlamına gelir."
+                    }
+                }
+            },
+            "dcaCalculator": {
+                "subheader": "DCA Bitcoin Hesaplayıcı",
+                "header": "Geriye dönük olarak ne kadar biriktireceğinizi hesaplayın",
+                "invested": "Yatırılan",
+                "enterAmount": "Miktarı girin",
+                "frequency": "Sıklık",
+                "weekly": "Haftalık",
+                "monthly": "Aylık",
+                "dateOpening": "Başlangıç tarihi",
+                "dateClosing": "Bitiş tarihi",
+                "notice": "Değerler, Bitcoin'in tarihsel verilerine dayalı olarak hesaplanır ve $ ile tam olarak uyuşmayabilir.",
+                "enterAmountCta": "Grafiği görüntülemek için yatırım yapmak istediğiniz miktarı girin (USD cinsinden)",
+                "yourDeposit": "Mevduat:",
+                "normalSavings": "Tasarruf hesabı:",
+                "btcSavings": "Bitcoin tasarruf planı:",
+                "biMonthly": "İki aylık"                
+            },
+            "whatIsDCA": {
+                "header": "DCA Stratejisi Nedir?",
+                "text": "Dolar Maliyet Ortalaması (DCA), belirli bir varlığa aynı miktarda parayı düzenli olarak yatırmayı içeren bir yatırım stratejisidir. Bu stratejinin amacı, toplam yatırım üzerindeki volatilite etkisini azaltmaktır.",
+                "benefits": {
+                    "header": "Faydaları",
+                    "benefit1": "Risk Azaltma: Yatırımınızı zamana yayarak, yüksek fiyattan alım yapma riskinizi azaltırsınız.",
+                    "benefit2": "Duygusal Sabır: Piyasayı tahmin etmeye çalışmaktan kaçınırsınız, bu da hem duygusal olarak zor hem de risklidir.",
+                    "benefit3": "Risk Dağıtımı: Fiyatlar düşükken daha fazla, fiyatlar yüksekken daha az birim satın alarak maliyet ortalamasını sağlarsınız."
+                },
+                "regularSaving": {
+                    "header": "Bitcoin'de Düzenli Tasarruf (Örnek)",
+                    "text": "8000 CZK ile aylık BTC/CZK alımları üzerinden birikim planımız.",
+                    "bought": "Satın Alındı",
+                    "investedAmount": "Yatırım Tutarı",
+                    "receivedAmount": "Alınan Miktar",
+                    "totalAmount": "Toplam Tutar",
+                    "percentageCalculation": "Yüzde Hesaplama"
+                },
+                "dynamicDCA": {
+                    "header": "Dinamik DCA",
+                    "text1": "Piyasadaki mevcut duruma bağlı olarak, döngüler boyunca sermayenizi daha etkili bir şekilde dağıtmak için daha fazla veya daha az yatırım yaparsınız.",
+                    "text2": "Bitcoin'e inanıyorsanız, düşüşler sırasında daha büyük meblağlar yatırmaktan korkmuyorsanız ve daha büyük getiri için stratejinizi optimize etmek istiyorsanız, bu doğru bir seçenektir.",
+                    "text3": "Düşüşteki bir piyasaya yatırım miktarını artırarak, satın alma ortalama fiyatınız birimler veya onlarca birim oranında düşecektir. En önemlisi, doğru zamanda daha fazla yatırım yaparak, çok daha büyük getirilere ulaşırsınız."
+                }
+            },
+            "extraDCA": {
+                "header": "DCA Stratejisine Ek Alımlar",
+                "text": "Bu özellik, birikimlerinizi en üst düzeye çıkarmanıza yardımcı olmak için tasarlanmıştır. Piyasanın ne kadar düşmesi gerektiğini (yüzde olarak) belirleyerek sizin adınıza otomatik bir ek alım yapılmasını sağlayabilirsiniz. Bu özellik, piyasa dalgalanmalarından yararlanmanıza ve BTC'nin ortalama alım fiyatını mümkün olduğunca düşürmenize olanak tanır.",
+                "howItWorks": {
+                    "header": "Nasıl Çalışır?",
+                    "work1": "Ek Alımlar Ayarlayın: Alım yapılacak düşüş oranını belirleyin.",
+                    "work2": "Düşüşe Otomatik Yanıt: Piyasa belirlediğiniz seviyenin altına düştüğünde, sizin adınıza otomatik bir ek alım gerçekleştirilir.",
+                    "work3": "Alım Fiyatı Optimizasyonu: Daha düşük fiyatlarla satın alarak, BTC'nin ortalama alım fiyatını düşürür ve piyasa yükseldiğinde potansiyel kârınızı artırırsınız."
+                },
+                "whyAdvantageous": {
+                    "header": "Neden Avantajlı?",
+                    "advantageous1": "Daha Düşük Ortalama Alım Fiyatı: Ek alımlar, düşük fiyatlarla daha fazla satın almanıza olanak tanır, böylece BTC'nin ortalama alım fiyatını düşürürsünüz.",
+                    "advantageous2": "Pasif Strateji: Piyasayı sürekli izlemenize gerek yok; her şey otomatik olarak gerçekleştirilir.",
+                    "advantageous3": "Etkili Risk Yönetimi: Piyasa dalgalanmalarını ve düşüşlerini kendi yararınıza kullanmanıza olanak tanır."
+                },
+                "graph": {
+                    "classicDCA": "Klasik DCA",
+                    "dcaExtra": "Ek Alımlı DCA",
+                    "dcaBuy": "DCA $100 Alım",
+                    "dcaExtraBuy": "Ek $100 Alım",
+                    "weeks": {
+                        "week1": "Hafta 1",
+                        "week2": "Hafta 2",
+                        "week3": "Hafta 3",
+                        "week4": "Hafta 4",
+                        "week5": "Hafta 5"
+                    },
+                    "btn": "Tasarruf Etmeye Başla",
+                    "price": "Fiyat",
+                    "time": "Zaman"
+                }
+            }
+        },
+        
         "affiliate": {
             "btnAffiliate": "Başlarken",
             "main": {
