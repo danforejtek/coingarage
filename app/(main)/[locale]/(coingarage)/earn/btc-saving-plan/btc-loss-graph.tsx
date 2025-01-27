@@ -29,13 +29,6 @@ export interface BTCDataType {
 }
 
 const fetchBTCdata = async (timestamp: number) => {
-  // remove mock before push to master
-  if (new Date().getTime() === timestamp) {
-    return btc1
-  } else {
-    return btc2
-  }
-
   try {
     const url = `https://api.coingarage.io/market/charts?base=BTC&quote=USDT&ts=${timestamp}&interval=10080`
     const response = await fetch(url)
