@@ -290,7 +290,7 @@
         },
         "BtcSaving":{
             "whatIsSavingPlan": {
-                "header": "Cos'è un Piano di Risparmio in Bitcoin?",
+                "header": "Cos'è un Piano di Risparmio in\u00A0Bitcoin?",
                 "text": "Un piano di risparmio in Bitcoin è un modo semplice ed efficace per aumentare i tuoi risparmi attraverso investimenti regolari in Bitcoin. Che tu sia nuovo nel mondo delle criptovalute o un investitore esperto, il nostro piano offre una soluzione facile e automatizzata per costruire gradualmente il tuo patrimonio.",
                 "btn": "Inizia a risparmiare",
                 "cards": {

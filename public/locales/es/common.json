@@ -292,7 +292,7 @@
         },
         "BtcSaving": {
             "whatIsSavingPlan": {
-                "header": "¿Qué es un Plan de Ahorro en Bitcoin?",
+                "header": "¿Qué es un Plan de Ahorro en\u00A0Bitcoin?",
                 "text": "Un plan de ahorro en Bitcoin es una forma sencilla y efectiva de aumentar tus ahorros mediante inversiones regulares en Bitcoin. Ya seas nuevo en las criptomonedas o un inversor experimentado, nuestro plan ofrece una solución fácil y automatizada para construir tu patrimonio de manera gradual.",
                 "btn": "Comenzar a ahorrar",
                 "cards": {

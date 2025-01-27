@@ -290,7 +290,7 @@
         },
         "BtcSaving": {
             "whatIsSavingPlan": {
-                "header": "Bitcoin Birikim Planı Nedir?",
+                "header": "Bitcoin Birikim Planı\u00A0Nedir?",
                 "text": "Bitcoin birikim planı, Bitcoin'e düzenli yatırımlar yaparak birikimlerinizi artırmanın basit ve etkili bir yoludur. Kripto paralara yeni başlayan biri veya deneyimli bir yatırımcı olun, planımız servetinizi aşamalı olarak büyütmek için kolay ve otomatik bir çözüm sunar.",
                 "btn": "Tasarruf Etmeye Başla",
                 "cards": {

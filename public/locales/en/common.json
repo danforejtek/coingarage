@@ -291,7 +291,7 @@
         },
         "BtcSaving": {
             "whatIsSavingPlan": {
-                "header": "What is a Bitcoin Saving Plan?",
+                "header": "What is a Bitcoin Saving\u00A0Plan?",
                 "text": "A Bitcoin saving plan is a simple and effective way to grow your savings through regular investments in Bitcoin. Whether you're a newcomer to cryptocurrencies or an experienced investor, our plan offers an easy and automated solution to gradually build your wealth.",
                 "btn": "Start saving",
                 "cards": {

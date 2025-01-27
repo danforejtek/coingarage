@@ -292,7 +292,7 @@
     },
     "BtcSaving": {
       "whatIsSavingPlan": {
-        "header": "Co je bitcoin spořící plán?",
+        "header": "Co je bitcoin spořící\u00A0plán?",
         "text": "Bitcoinový spořící plán je jednoduchý a efektivní způsob, jak zhodnotit své úspory pravidelnými investicemi do Bitcoinu. Ať už jste v kryptoměnách nováček nebo zkušený investor, náš plán nabízí snadné a automatizované řešení pro postupné budování vašeho bohatství.",
         "btn": "Začít spořit",
         "cards": {

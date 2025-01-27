@@ -21,7 +21,7 @@ export default function Affiliate({ params: { locale } }: { params: { locale: st
         id="What-is-a-Bitcoin-Saving-Plan"
         className="container mx-auto mt-16 flex items-center justify-between pr-0"
       >
-        <div className="w-[60%] max-w-[620px] p-4 sm:w-[50%]">
+        <div className="w-[60%] box-content max-w-[620px] p-4 sm:w-[50%]">
           <h1 className="h1-caption mb-6 mr-[-66%] sm:mr-0">{t("whatIsSavingPlan.header")}</h1>
           <p className="text-text-neutral-600 mb-4 text-lg dark:text-neutral-300 lg:text-left">
             {t.rich("whatIsSavingPlan.text", {
