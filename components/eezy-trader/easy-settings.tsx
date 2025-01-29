@@ -3,8 +3,13 @@ import { Check } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { ReactElement } from "react"
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel"
 
 const CHECK_MARKS = 5
 const SAMPLE_IMAGES = [
@@ -29,7 +34,7 @@ const EasySettings = (): ReactElement => {
         />
 
         <div className="absolute inset-0 px-6">
-          <Carousel opts={{ align: "start", loop: true }} plugins={[Autoplay({ delay: 4000 })]} className="w-full">
+          <Carousel className="relative w-full h-full" opts={{ align: "start", loop: true }}>
             <CarouselContent className="h-[544px]">
               {SAMPLE_IMAGES.map((src, index) => (
                 <CarouselItem key={index} className="relative h-full">
@@ -41,6 +46,16 @@ const EasySettings = (): ReactElement => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+
+            {/* Left Arrow */}
+            <CarouselPrevious
+              className="absolute left-8 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-900 text-white p-2 rounded-full"
+            />
+            
+            {/* Right Arrow */}
+            <CarouselNext
+              className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-900 text-white p-2 rounded-full"
+            />
           </Carousel>
         </div>
       </div>

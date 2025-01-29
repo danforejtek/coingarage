@@ -10,6 +10,7 @@ import { useMediaQuery } from "@mantine/hooks"
 interface Reference {
   name: string
   text: string
+  rating: string
 }
 
 interface ReferencesData {
@@ -47,7 +48,7 @@ export default function CustomerReviews() {
                         <div className="flex justify-between">
                           <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                           <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
-                            <p>4,7</p>
+                            <p>{src.rating}</p>
                             <Star fill="white" className="w-4" />
                           </div>
                         </div>
@@ -62,7 +63,7 @@ export default function CustomerReviews() {
                           <div className="flex justify-between">
                             <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                             <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
-                              <p>4,7</p>
+                              <p>{src.rating}</p>
                               <Star fill="white" className="w-4" />
                             </div>
                           </div>
@@ -81,13 +82,13 @@ export default function CustomerReviews() {
                       <div className="flex justify-between">
                         <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                         <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
-                          <p>4,7</p>
+                          <p>{src.rating}</p>
                           <Star fill="white" className="w-4" />
                         </div>
                       </div>
                       <div className="mt-4">
-                        <p className="mb-4 min-h-14 text-xl font-bold leading-tight">{src.name}</p>
-                        <p className="italic">{src.text}</p>
+                        <p className="mb-4 min-h-14 text-xl font-bold leading-tight">{t("referends.1.name")}</p>
+                        <p className="italic">{t("referends.1.text")}</p>
                       </div>
                     </Card>
                   </CarouselItem>

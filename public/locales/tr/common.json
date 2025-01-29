@@ -1021,43 +1021,53 @@
       "referends": {
         "1": {
           "name": "Antonín Sulovský",
-          "text": "EEZY Trader'da diğer trader'ları kopyalama imkanı ve genel açıklık konusunda takdir ediyorum. Ve en önemlisi, EEZY Trader yatırımınızı önemli ölçüde değerlendirebilir."
+          "text": "EEZY Trader'da diğer trader'ları kopyalama imkanı ve genel açıklık konusunda takdir ediyorum. Ve en önemlisi, EEZY Trader yatırımınızı önemli ölçüde değerlendirebilir.",
+          "rating": "4,6"
         },
         "2": {
           "name": "Jakub Hasalík",
-          "text": "Botun uyurken bile çalışması hoşuma gidiyor. Ben para için çalışmıyorum, para benim için çalışıyor. Yani, robot paramı benim için değerlendiriyor ve bunu hayatım boyunca aradım ve coingarage'de buldum."
+          "text": "Botun uyurken bile çalışması hoşuma gidiyor. Ben para için çalışmıyorum, para benim için çalışıyor. Yani, robot paramı benim için değerlendiriyor ve bunu hayatım boyunca aradım ve coingarage'de buldum.",
+          "rating": "4,8"
         },
         "3": {
           "name": "Roman Balajka",
-          "text": "Coingarage'in ticaret robotunda en çok takdir ettiğim şey, diğer robotlara kıyasla basitliği ve net arayüzü."
+          "text": "Coingarage'in ticaret robotunda en çok takdir ettiğim şey, diğer robotlara kıyasla basitliği ve net arayüzü.",
+          "rating": "4,5"
         },
         "4": {
           "name": "Jana D'Antoni",
-          "text": "Paramı hiçbir yere göndermiyorum; tüm işlemler bot tarafından hesabımda yapılıyor, bu yüzden param üzerinde tam kontrolüm var."
+          "text": "Paramı hiçbir yere göndermiyorum; tüm işlemler bot tarafından hesabımda yapılıyor, bu yüzden param üzerinde tam kontrolüm var.",
+          "rating": "4,5"
         },
         "5": {
           "name": "Jaroslava Němečková",
-          "text": "EEZY Trader'dan memnunum, benim için en büyük avantajı gerçekten para kazandırması."
+          "text": "EEZY Trader'dan memnunum, benim için en büyük avantajı gerçekten para kazandırması.",
+          "rating": "4,9"
         },
         "6": {
           "name": "Vojtěch Nedělník",
-          "text": "Robotun ana avantajı, tabii ki, işlevselliğidir. Robot işlemleri hızlı ve tereddütsüz gerçekleştirir. Kişisel olarak çok memnunum."
+          "text": "Robotun ana avantajı, tabii ki, işlevselliğidir. Robot işlemleri hızlı ve tereddütsüz gerçekleştirir. Kişisel olarak çok memnunum.",
+          "rating": "5"
         },
         "7": {
           "name": "Petr Sliwka",
-          "text": "Robotu ayrıntılı olarak inceleyen biri değilim. Ancak sıradan bir kullanıcı olarak, yatırımımla ilgili endişelenmem gerekmediğini ve her zaman bir kazanç bekleyebileceğimi takdir ediyorum."
+          "text": "Robotu ayrıntılı olarak inceleyen biri değilim. Ancak sıradan bir kullanıcı olarak, yatırımımla ilgili endişelenmem gerekmediğini ve her zaman bir kazanç bekleyebileceğimi takdir ediyorum.",
+          "rating": "4,6"
         },
         "8": {
           "name": "Jaroslav Balajka",
-          "text": "Bana göre EEZY Trader iyi çalışıyor; ekleyecek pek bir şey yok."
+          "text": "Bana göre EEZY Trader iyi çalışıyor; ekleyecek pek bir şey yok.",
+          "rating": "4,9"
         },
         "9": {
           "name": "Ivan Štěp",
-          "text": "Meşgulüm ve kendim ticaret yapacak zamanım yok, bu yüzden EEZY Trader'a sahip olmaktan mutluyum; ticaret yapıyor ve para kazanıyor, bu da diğer aktivitelerime odaklanmamı sağlıyor."
+          "text": "Meşgulüm ve kendim ticaret yapacak zamanım yok, bu yüzden EEZY Trader'a sahip olmaktan mutluyum; ticaret yapıyor ve para kazanıyor, bu da diğer aktivitelerime odaklanmamı sağlıyor.",
+          "rating": "4,5"
         },
         "10": {
           "name": "Petr Janhuba",
-          "text": "Bot neredeyse tamamen bağımsızdır ve ticaretlerinin denetlenmesine ihtiyaç duymaz. İşlemleri hızlı ve doğru bir şekilde gerçekleştirir ve gerçekten 24/7 çalışır."
+          "text": "Bot neredeyse tamamen bağımsızdır ve ticaretlerinin denetlenmesine ihtiyaç duymaz. İşlemleri hızlı ve doğru bir şekilde gerçekleştirir ve gerçekten 24/7 çalışır.",
+          "rating": "4,8"
         }
       }
     },

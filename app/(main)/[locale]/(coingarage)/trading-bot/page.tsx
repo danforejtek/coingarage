@@ -21,7 +21,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute -right-[110px] top-[216px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]">
+      <div className="absolute -right-[110px] top-[260px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]">
         <Image src="/images/eezy-trader/images/robotcomputer.png" alt="" fill={true} style={{ objectFit: "cover" }} />
       </div>
       {/* <div className="absolute right-0 top-[300px] -z-10 h-[260px] w-[290px] max-w-[96vw] lg:top-[300px] lg:w-[509px] xl:w-[789px]">

@@ -1021,43 +1021,53 @@
       "referends": {
         "1": {
           "name": "Antonín Sulovský",
-          "text": "U EEZY Tradera oceňuji dobrou celkovou přehlednost a možnost kopírování ostatních obchodníků. A to hlavní, EEZY Trader dokáže výborně zhodnotit investici."
+          "text": "U EEZY Tradera oceňuji dobrou celkovou přehlednost a možnost kopírování ostatních obchodníků. A to hlavní, EEZY Trader dokáže výborně zhodnotit investici.",
+          "rating": "4,6"
         },
         "2": {
           "name": "Jakub Hasalík",
-          "text": "Líbí se mi, že bot pracuje i když spím. Nepracuji tak pro peníze, ale peníze pracojí pro mě. Nebo spíše robot zhodnocuje moje peníze pro mě a to hledám celý život a u coingarage jsem to našel."
+          "text": "Líbí se mi, že bot pracuje i když spím. Nepracuji tak pro peníze, ale peníze pracojí pro mě. Nebo spíše robot zhodnocuje moje peníze pro mě a to hledám celý život a u coingarage jsem to našel.",
+          "rating": "4,8"
         },
         "3": {
           "name": "Roman Balajka",
-          "text": "U obchodního robota od Coingarage oceňuji nejvíc jeho jednoduchosti a přehledné rozhraní v porovnání s jinými roboty."
+          "text": "U obchodního robota od Coingarage oceňuji nejvíc jeho jednoduchosti a přehledné rozhraní v porovnání s jinými roboty.",
+          "rating": "4,5"
         },
         "4": {
           "name": "Jana D'Antoni",
-          "text": "Své peníze nikam neposílám, veškeré obchody provádí bot na mém účtu a mám tak své peníze plně pod kontrolou."
+          "text": "Své peníze nikam neposílám, veškeré obchody provádí bot na mém účtu a mám tak své peníze plně pod kontrolou.",
+          "rating": "4,5"
         },
         "5": {
           "name": "Jaroslava Němečková",
-          "text": "S EEZY Traderem jsem spokojena, jeho hlavní předností pro mě je, že skutečně mi ty peníze vydělává."
+          "text": "S EEZY Traderem jsem spokojena, jeho hlavní předností pro mě je, že skutečně mi ty peníze vydělává.",
+          "rating": "4,9"
         },
         "6": {
           "name": "Vojtěch Nedělník",
-          "text": "Hlavní předností je robota je samozřejmě jeho funkčnost. Robot provádí obchody rychle a a bez váhání. Osobně jsem velice spokojen."
+          "text": "Hlavní předností robota je samozřejmě jeho funkčnost. Robot provádí obchody rychle a a bez váhání. Osobně jsem velice spokojen.",
+          "rating": "5"
         },
         "7": {
           "name": "Petr Sliwka",
-          "text": "Nepatřím k lidem, kteří by robota nějak dopodrobna studovali a vyhodnocovali. Avšak jako běžný uživatel kvituju, že o svůj vklad se nemusím bát a vždy můžu počítat s nějakým profitem."
+          "text": "Nepatřím k lidem, kteří by robota nějak dopodrobna studovali a vyhodnocovali. Avšak jako běžný uživatel kvituju, že o svůj vklad se nemusím bát a vždy můžu počítat s nějakým profitem.",
+          "rating": "4,6"
         },
         "8": {
           "name": "Jaroslav Balajka",
-          "text": "EEZY Trader dle mého názoru to funguje dobře, víc k tomu není co dodat."
+          "text": "EEZY Trader dle mého názoru to funguje dobře, víc k tomu není co dodat.",
+          "rating": "4,9"
         },
         "9": {
           "name": "Ivan Štěp",
-          "text": "Jsem vytížený a nemám čas sám obchodovat, proto jsme rád, že mám EEZY Tradera, který obchoduje a vydělává peníze za mě a já se tak mohu věnovat jiným činnostem. "
+          "text": "Jsem vytížený a nemám čas sám obchodovat, proto jsme rád, že mám EEZY Tradera, který obchoduje a vydělává peníze za mě a já se tak mohu věnovat jiným činnostem.",
+          "rating": "4,5"
         },
         "10": {
           "name": "Petr Janhuba",
-          "text": "Bot je více méně zcela samostatný a není třeba jeho obchody nějak korigovat. Obchody realizuje rychle a přesně a skutečně pracuje 24/7."
+          "text": "Bot je více méně zcela samostatný a není třeba jeho obchody nějak korigovat. Obchody realizuje rychle a přesně a skutečně pracuje 24/7.",
+          "rating": "4,8"
         }
       }
     },

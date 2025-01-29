@@ -1021,43 +1021,53 @@
       "referends": {
         "1": {
           "name": "Antonín Sulovský",
-          "text": "I appreciate the good overall clarity and the possibility of copying other traders with EEZY Trader. And most importantly, EEZY Trader can significantly appreciate the investment."
+          "text": "I appreciate the good overall clarity and the possibility of copying other traders with EEZY Trader. And most importantly, EEZY Trader can significantly appreciate the investment.",
+          "rating": "4,6"
         },
         "2": {
           "name": "Jakub Hasalík",
-          "text": "I like that the bot works even when I sleep. I don't work for money, but money works for me. Or rather, the robot appreciates my money for me, and that’s what I’ve been looking for all my life, and I found it at coingarage."
+          "text": "I like that the bot works even when I sleep. I don't work for money, but money works for me. Or rather, the robot appreciates my money for me, and that’s what I’ve been looking for all my life, and I found it at coingarage.",
+          "rating": "4,8"
         },
         "3": {
           "name": "Roman Balajka",
-          "text": "What I appreciate most about the trading robot from Coingarage is its simplicity and clear interface compared to other robots."
+          "text": "What I appreciate most about the trading robot from Coingarage is its simplicity and clear interface compared to other robots.",
+          "rating": "4,5"
         },
         "4": {
           "name": "Jana D'Antoni",
-          "text": "I don't send my money anywhere; all trades are made by the bot on my account, so I have full control over my money."
+          "text": "I don't send my money anywhere; all trades are made by the bot on my account, so I have full control over my money.",
+          "rating": "4,5"
         },
         "5": {
           "name": "Jaroslava Němečková",
-          "text": "I am satisfied with EEZY Trader, its main advantage for me is that it really makes me money."
+          "text": "I am satisfied with EEZY Trader, its main advantage for me is that it really makes me money.",
+          "rating": "4,9"
         },
         "6": {
           "name": "Vojtěch Nedělník",
-          "text": "The main advantage of the robot is, of course, its functionality. The robot executes trades quickly and without hesitation. I am personally very satisfied."
+          "text": "The main advantage of the robot is, of course, its functionality. The robot executes trades quickly and without hesitation. I am personally very satisfied.",
+          "rating": "5"
         },
         "7": {
           "name": "Petr Sliwka",
-          "text": "I am not one of those who would study and evaluate the robot in detail. However, as an ordinary user, I appreciate that I don't have to worry about my deposit and can always count on some profit."
+          "text": "I am not one of those who would study and evaluate the robot in detail. However, as an ordinary user, I appreciate that I don't have to worry about my deposit and can always count on some profit.",
+          "rating": "4,6"
         },
         "8": {
           "name": "Jaroslav Balajka",
-          "text": "In my opinion, EEZY Trader works well; there’s not much more to add."
+          "text": "In my opinion, EEZY Trader works well; there’s not much more to add.",
+          "rating": "4,9"
         },
         "9": {
           "name": "Ivan Štěp",
-          "text": "I am busy and don’t have time to trade myself, so I am glad I have EEZY Trader, which trades and makes money for me, allowing me to focus on other activities."
+          "text": "I am busy and don’t have time to trade myself, so I am glad I have EEZY Trader, which trades and makes money for me, allowing me to focus on other activities.",
+          "rating": "4,5"
         },
         "10": {
           "name": "Petr Janhuba",
-          "text": "The bot is more or less completely independent and doesn't need its trades to be supervised. It executes trades quickly and accurately and truly works 24/7."
+          "text": "The bot is more or less completely independent and doesn't need its trades to be supervised. It executes trades quickly and accurately and truly works 24/7.",
+          "rating": "4,8"
         }
       }
     },

@@ -1032,43 +1032,53 @@
       "referends": {
         "1": {
           "name": "Antonín Sulovský",
-          "text": "Ich schätze die gute Gesamtübersicht und die Möglichkeit, andere Händler mit EEZY Trader zu kopieren. Und vor allem kann EEZY Trader die Investition erheblich schätzen."
+          "text": "Ich schätze die gute Gesamtübersicht und die Möglichkeit, andere Händler mit EEZY Trader zu kopieren. Und vor allem kann EEZY Trader die Investition erheblich schätzen.",
+          "rating": "4,6"
         },
         "2": {
           "name": "Jakub Hasalík",
-          "text": "Ich mag, dass der Bot auch funktioniert, wenn ich schlafe. Ich arbeite nicht für Geld, sondern Geld arbeitet für mich. Oder besser gesagt, der Roboter schätzt mein Geld für mich, und das ist, wonach ich mein ganzes Leben gesucht habe, und ich habe es bei Coingarage gefunden."
+          "text": "Ich mag, dass der Bot auch funktioniert, wenn ich schlafe. Ich arbeite nicht für Geld, sondern Geld arbeitet für mich. Oder besser gesagt, der Roboter schätzt mein Geld für mich, und das ist, wonach ich mein ganzes Leben gesucht habe, und ich habe es bei Coingarage gefunden.",
+          "rating": "4,8"
         },
         "3": {
           "name": "Roman Balajka",
-          "text": "Was ich am meisten am Handelsroboter von Coingarage schätze, ist seine Einfachheit und die klare Benutzeroberfläche im Vergleich zu anderen Robotern."
+          "text": "Was ich am meisten am Handelsroboter von Coingarage schätze, ist seine Einfachheit und die klare Benutzeroberfläche im Vergleich zu anderen Robotern.",
+          "rating": "4,5"
         },
         "4": {
           "name": "Jana D'Antoni",
-          "text": "Ich sende mein Geld nirgendwohin; alle Trades werden vom Bot auf meinem Konto durchgeführt, sodass ich die volle Kontrolle über mein Geld habe."
+          "text": "Ich sende mein Geld nirgendwohin; alle Trades werden vom Bot auf meinem Konto durchgeführt, sodass ich die volle Kontrolle über mein Geld habe.",
+          "rating": "4,5"
         },
         "5": {
           "name": "Jaroslava Němečková",
-          "text": "Ich bin zufrieden mit EEZY Trader, sein Hauptvorteil für mich ist, dass es mir wirklich Geld bringt."
+          "text": "Ich bin zufrieden mit EEZY Trader, sein Hauptvorteil für mich ist, dass es mir wirklich Geld bringt.",
+          "rating": "4,9"
         },
         "6": {
           "name": "Vojtěch Nedělník",
-          "text": "Der Hauptvorteil des Roboters ist natürlich seine Funktionalität. Der Roboter führt Trades schnell und ohne zu zögern aus. Ich bin persönlich sehr zufrieden."
+          "text": "Der Hauptvorteil des Roboters ist natürlich seine Funktionalität. Der Roboter führt Trades schnell und ohne zu zögern aus. Ich bin persönlich sehr zufrieden.",
+          "rating": "5"
         },
         "7": {
           "name": "Petr Sliwka",
-          "text": "Ich gehöre nicht zu denen, die den Roboter im Detail studieren und bewerten würden. Als normaler Benutzer schätze ich jedoch, dass ich mir keine Sorgen um meine Einzahlung machen muss und immer auf einen Gewinn zählen kann."
+          "text": "Ich gehöre nicht zu denen, die den Roboter im Detail studieren und bewerten würden. Als normaler Benutzer schätze ich jedoch, dass ich mir keine Sorgen um meine Einzahlung machen muss und immer auf einen Gewinn zählen kann.",
+          "rating": "4,6"
         },
         "8": {
           "name": "Jaroslav Balajka",
-          "text": "Meiner Meinung nach funktioniert EEZY Trader gut; es gibt nicht viel mehr hinzuzufügen."
+          "text": "Meiner Meinung nach funktioniert EEZY Trader gut; es gibt nicht viel mehr hinzuzufügen.",
+          "rating": "4,9"
         },
         "9": {
           "name": "Ivan Štěp",
-          "text": "Ich bin beschäftigt und habe keine Zeit, selbst zu handeln, daher bin ich froh, dass ich EEZY Trader habe, der für mich handelt und Geld verdient, sodass ich mich auf andere Aktivitäten konzentrieren kann."
+          "text": "Ich bin beschäftigt und habe keine Zeit, selbst zu handeln, daher bin ich froh, dass ich EEZY Trader habe, der für mich handelt und Geld verdient, sodass ich mich auf andere Aktivitäten konzentrieren kann.",
+          "rating": "4,5"
         },
         "10": {
           "name": "Petr Janhuba",
-          "text": "Der Bot ist mehr oder weniger völlig unabhängig und benötigt keine Überwachung seiner Trades. Er führt Trades schnell und genau aus und arbeitet wirklich rund um die Uhr."
+          "text": "Der Bot ist mehr oder weniger völlig unabhängig und benötigt keine Überwachung seiner Trades. Er führt Trades schnell und genau aus und arbeitet wirklich rund um die Uhr.",
+          "rating": "4,8"
         }
       }
     },

@@ -34,8 +34,7 @@ const IS_PRODUCTION = process.env.NODE_ENV === "production"
 export default function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode
+}: {ds
   params: { locale: string }
 }) {
   unstable_setRequestLocale(locale)

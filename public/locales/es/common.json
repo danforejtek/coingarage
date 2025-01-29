@@ -1023,43 +1023,53 @@
       "referends": {
         "1": {
           "name": "Antonín Sulovský",
-          "text": "Aprecio la buena claridad general y la posibilidad de copiar a otros traders con EEZY Trader. Y lo más importante, EEZY Trader puede apreciar significativamente la inversión."
+          "text": "Aprecio la buena claridad general y la posibilidad de copiar a otros traders con EEZY Trader. Y lo más importante, EEZY Trader puede apreciar significativamente la inversión.",
+          "rating": "4,6"
         },
         "2": {
           "name": "Jakub Hasalík",
-          "text": "Me gusta que el bot funcione incluso mientras duermo. No trabajo por dinero, sino que el dinero trabaja para mí. O más bien, el robot aprecia mi dinero por mí, y eso es lo que he estado buscando toda mi vida, y lo encontré en coingarage."
+          "text": "Me gusta que el bot funcione incluso mientras duermo. No trabajo por dinero, sino que el dinero trabaja para mí. O más bien, el robot aprecia mi dinero por mí, y eso es lo que he estado buscando toda mi vida, y lo encontré en coingarage.",
+          "rating": "4,8"
         },
         "3": {
           "name": "Roman Balajka",
-          "text": "Lo que más aprecio del robot de trading de Coingarage es su simplicidad y la interfaz clara en comparación con otros robots."
+          "text": "Lo que más aprecio del robot de trading de Coingarage es su simplicidad y la interfaz clara en comparación con otros robots.",
+          "rating": "4,5"
         },
         "4": {
           "name": "Jana D'Antoni",
-          "text": "No envío mi dinero a ninguna parte; todas las operaciones son realizadas por el bot en mi cuenta, así que tengo control total sobre mi dinero."
+          "text": "No envío mi dinero a ninguna parte; todas las operaciones son realizadas por el bot en mi cuenta, así que tengo control total sobre mi dinero.",
+          "rating": "4,5"
         },
         "5": {
           "name": "Jaroslava Němečková",
-          "text": "Estoy satisfecha con EEZY Trader, su principal ventaja para mí es que realmente me genera ganancias."
+          "text": "Estoy satisfecha con EEZY Trader, su principal ventaja para mí es que realmente me genera ganancias.",
+          "rating": "4,9"
         },
         "6": {
           "name": "Vojtěch Nedělník",
-          "text": "La principal ventaja del robot es, por supuesto, su funcionalidad. El robot ejecuta operaciones rápida y sin dudar. Estoy personalmente muy satisfecho."
+          "text": "La principal ventaja del robot es, por supuesto, su funcionalidad. El robot ejecuta operaciones rápida y sin dudar. Estoy personalmente muy satisfecho.",
+          "rating": "5"
         },
         "7": {
           "name": "Petr Sliwka",
-          "text": "No soy de los que estudian y evalúan el robot en detalle. Sin embargo, como usuario común, aprecio que no tengo que preocuparme por mi depósito y siempre puedo contar con algún beneficio."
+          "text": "No soy de los que estudian y evalúan el robot en detalle. Sin embargo, como usuario común, aprecio que no tengo que preocuparme por mi depósito y siempre puedo contar con algún beneficio.",
+          "rating": "4,6"
         },
         "8": {
           "name": "Jaroslav Balajka",
-          "text": "En mi opinión, EEZY Trader funciona bien; no hay mucho más que añadir."
+          "text": "En mi opinión, EEZY Trader funciona bien; no hay mucho más que añadir.",
+          "rating": "4,9"
         },
         "9": {
           "name": "Ivan Štěp",
-          "text": "Estoy ocupado y no tengo tiempo para operar yo mismo, así que me alegra tener EEZY Trader, que opera y genera dinero por mí, permitiéndome enfocarme en otras actividades."
+          "text": "Estoy ocupado y no tengo tiempo para operar yo mismo, así que me alegra tener EEZY Trader, que opera y genera dinero por mí, permitiéndome enfocarme en otras actividades.",
+          "rating": "4,5"
         },
         "10": {
           "name": "Petr Janhuba",
-          "text": "El bot es más o menos completamente independiente y no necesita supervisión de sus operaciones. Ejecuta las operaciones de manera rápida y precisa y realmente funciona 24/7."
+          "text": "El bot es más o menos completamente independiente y no necesita supervisión de sus operaciones. Ejecuta las operaciones de manera rápida y precisa y realmente funciona 24/7.",
+          "rating": "4,8"
         }
       }
     },
