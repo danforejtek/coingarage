@@ -11,9 +11,11 @@ export function SubscriptionPlans() {
 
   return (
     <div className="flex flex-col items-center lg:block">
-      <p className="text-center text-3xl font-bold">{t("plans.header")}</p>
+      <p className="text-center font-heading text-4xl font-bold">{t("plans.header")}</p>
       <div className="mx-auto max-w-[800px]">
-        <p className="text-text-neutral-600 mt-6 text-center text-lg dark:text-neutral-300">{t("plans.subText")}</p>
+        <p className="text-text-neutral-600 mt-6 text-center font-heading text-lg dark:text-neutral-300">
+          {t("plans.subText")}
+        </p>
       </div>
       <div className="mt-24 flex flex-col items-start justify-between gap-16 lg:flex-row lg:gap-4">
         <div className="flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-tertiary/10 p-8 dark:bg-tertiary/10 lg:mt-16 lg:min-h-[800px] lg:w-[380px]">
@@ -179,7 +181,7 @@ export function SubscriptionPlans() {
           </div>
         </div>
       </div>
-      <p className="mt-12 text-center text-neutral-400">{t("plans.fee")}</p>
+      <p className="mt-24 text-center text-base text-neutral-400">{t("plans.fee")}</p>
     </div>
   )
 }

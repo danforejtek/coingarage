@@ -1125,5 +1125,209 @@
         "button": "I want to know more",
         "header": "We will be happy to answer all your questions",
         "text": "Feel free to send us your email and phone number and a sales representative will contact you to answer any questions you may have."
+    },
+    "eezyTrader": {
+      "main": {
+        "header": "Earn easily with our automatic crypto trading robot EEZY Trader",
+        "text": "Take full advantage of new technologies and let the automatic trading robot trade for you, which never sleeps and does not miss any trading opportunity. Activate EEZY Trader for free for 7 days and try it yourself to see how it works and how much it can appreciate your money.",
+        "startBtn": "Start 7-Day FREE Trial",
+        "cards": {
+          "1": {
+            "header": "Full control over your finances",
+            "text": "The robot trades on your account. You can withdraw your deposit and profits at any time."
+          },
+          "2": {
+            "header": "Maximizes trading efficiency",
+            "text": "You won't miss any lucrative opportunity, even when you're away from the screen."
+          },
+          "3": {
+            "header": "Never sleeps, trades 24/7",
+            "text": "The cryptocurrency market never sleeps, and neither does our robot; it trades continuously."
+          },
+          "4": {
+            "header": "Eliminates emotional trading",
+            "text": "The robot does not suffer from emotions and therefore does not make mistakes due to fear or greed."
+          },
+          "5": {
+            "header": "Tailor everything to your strategy",
+            "text": "Set the robot's trading strategies exactly according to your goals and risk tolerance."
+          }
+        }
+      },
+      "results": {
+        "subheader": "EEZY Trader Results",
+        "header": "Top Traders",
+        "text1": "Check out the results of our most successful traders who fully utilize the potential of the automated trading robot EEZY Trader every day to realize their profits.",
+        "text2": "Join our successful EEZY Trader users and start earning with our automatic trading robot today.",
+        "options": {
+          "monthly": "Monthly",
+          "weekly": "Weekly",
+          "daily": "Daily"
+        },
+        "startBtn": "Start"
+      },
+      "references": {
+        "subheader": "References",
+        "header": "What EEZY Trader users say",
+        "referends": {
+          "1": {
+            "name": "Antonín Sulovský",
+            "text": "I appreciate the good overall clarity and the possibility of copying other traders with EEZY Trader. And most importantly, EEZY Trader can significantly appreciate the investment.",
+            "rating": "4,6"
+          },
+          "2": {
+            "name": "Jakub Hasalík",
+            "text": "I like that the bot works even when I sleep. I don't work for money, but money works for me. Or rather, the robot appreciates my money for me, and that’s what I’ve been looking for all my life, and I found it at coingarage.",
+            "rating": "4,8"
+          },
+          "3": {
+            "name": "Roman Balajka",
+            "text": "What I appreciate most about the trading robot from Coingarage is its simplicity and clear interface compared to other robots.",
+            "rating": "4,5"
+          },
+          "4": {
+            "name": "Jana D'Antoni",
+            "text": "I don't send my money anywhere; all trades are made by the bot on my account, so I have full control over my money.",
+            "rating": "4,5"
+          },
+          "5": {
+            "name": "Jaroslava Němečková",
+            "text": "I am satisfied with EEZY Trader, its main advantage for me is that it really makes me money.",
+            "rating": "4,9"
+          },
+          "6": {
+            "name": "Vojtěch Nedělník",
+            "text": "The main advantage of the robot is, of course, its functionality. The robot executes trades quickly and without hesitation. I am personally very satisfied.",
+            "rating": "5"
+          },
+          "7": {
+            "name": "Petr Sliwka",
+            "text": "I am not one of those who would study and evaluate the robot in detail. However, as an ordinary user, I appreciate that I don't have to worry about my deposit and can always count on some profit.",
+            "rating": "4,6"
+          },
+          "8": {
+            "name": "Jaroslav Balajka",
+            "text": "In my opinion, EEZY Trader works well; there’s not much more to add.",
+            "rating": "4,9"
+          },
+          "9": {
+            "name": "Ivan Štěp",
+            "text": "I am busy and don’t have time to trade myself, so I am glad I have EEZY Trader, which trades and makes money for me, allowing me to focus on other activities.",
+            "rating": "4,5"
+          },
+          "10": {
+            "name": "Petr Janhuba",
+            "text": "The bot is more or less completely independent and doesn't need its trades to be supervised. It executes trades quickly and accurately and truly works 24/7.",
+            "rating": "4,8"
+          }
+        }
+      },
+      "functions": {
+        "header": "Lots of functions and different settings",
+        "text": "EEZY Trader offers many functions so that you can set it up according to your needs and trading strategy. You can also easily start our robot using the Auto trade function or copy the strategies of other successful traders.",
+        "startBtn": "Start 7-Day FREE Trial",
+        "functionFields": {
+          "1": "DCA",
+          "2": "GRID",
+          "3": "99 Robots",
+          "4": "Long",
+          "5": "Short",
+          "6": "Referral Program",
+          "7": "100 Pairs",
+          "8": "Copy Trades",
+          "9": "Save Strategy",
+          "10": "Knowledge Base"
+        }
+      },
+      "environment": {
+        "header": "Clear environment and easy setup",
+        "checkmarks": {
+          "1": "Simple environment and start-up",
+          "2": "Ideal introduction to automatic trading",
+          "3": "Automatic setting option (auto trade)",
+          "4": "Copy strategies from more experienced traders",
+          "5": "Active support and knowledge base"
+        }
+      },
+      "activation": {
+        "header": "Activate your EEZY Trader in 5 simple steps",
+        "steps": {
+          "1": "Register on the Coingarage exchange",
+          "2": "Complete the verification (KYC)",
+          "3": "Deposit funds into your account",
+          "4": "Buy a plan and EEZY Coin",
+          "5": "Set your strategy and start earning"
+        },
+        "registerBtn": "Register"
+      },
+      "subscription": {
+        "btnBuy": "Buy Subscription",
+        "disclaimer": "After completing the registration, you will be able to choose a subscription plan.",
+        "header": "What is a subscription?",
+        "subText": "A subscription gives you full access to our services. <b>With a subscription, you gain access to our revolutionary trading robot</b>, which allows you to trade on the markets with absolute ease and efficiency.",
+        "plans": {
+          "header": "Subscription",
+          "subText": "Not sure if our subscription is right for you? No problem! We offer a trial version where you can try our robot and experience its capabilities firsthand.",
+          "trial": {
+            "header": "Trial Version",
+            "free": "Free",
+            "package": {
+              "header": "Try and enjoy the trading robot",
+              "1": "Up to 10 robots",
+              "2": "All strategies",
+              "3": "Trading terminals",
+              "4": "Trailing Take profit"
+            }
+          },
+          "month": {
+            "mostUsed": "Most Used",
+            "header": "Basic Month",
+            "competitionPrice": "$45/month",
+            "price": "$15/month",
+            "package": {
+              "header": "Try and enjoy the trading robot",
+              "1": "Up to 50 robots",
+              "2": "All strategies",
+              "3": "Trading terminals",
+              "4": "Trailing Take profit",
+              "5": "Automatic renewal"
+            }
+          },
+          "year": {
+            "header": "Basic Year",
+            "competitionPrice": "$384/year",
+            "price": "$120/year",
+            "save60": "Save $60",
+            "package": {
+              "header": "Unlock the full potential of the trading robot",
+              "1": "Up to 99 robots",
+              "2": "All strategies",
+              "3": "Trading terminals",
+              "4": "Trailing Take profit",
+              "5": "Automatic renewal"
+            }
+          },
+          "fee": "A success fee of 10% in EEZY Coin is deducted from each profit."
+        }
+      },
+      "referralEEZY": {
+        "subHeader": "Referral program",
+        "header": "Earn up to 30% from the trading fees of your partners",
+        "subText": "Effortless monthly rewards. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>",
+        "startBtn": "Start"
+      },
+      "knowledgeBase": {
+        "subHeader": "Don't know how to set up the trading robot?",
+        "Header": "No worries, we have created a knowledge base",
+        "text": "Here you will find complete guides on setting up and operating the trading robot, covering all basic aspects."
+      },
+      "faq": {
+        "question1": "How can I start with your platform?",
+        "answer1": "Starting is easy! Just register, complete the verification process, deposit funds into your account, and start trading using our intuitive platform and powerful trading tools.",
+        "question2": "What cryptocurrencies do you support?",
+        "answer2": "We support a wide range of cryptocurrencies. Check our platform for the complete list of supported digital assets.",
+        "question3": "How secure is your platform?",
+        "answer3": "We prioritize the security of our users' funds and data. Our platform uses advanced encryption methods and security protocols to ensure a safe trading environment."
+      }
     }
 }

@@ -1127,5 +1127,209 @@
         "button": "",
         "header": "Estaremos encantados de responder a todas sus preguntas",
         "text": "No dude en enviarnos su correo electrónico y número de teléfono y un representante de ventas se pondrá en contacto con usted para responder a cualquier pregunta que pueda tener."
+    },
+    "eezyTrader": {
+      "main": {
+        "header": "Gana fácilmente con nuestro robot de trading automático EEZY Trader",
+        "text": "Aprovecha al máximo las nuevas tecnologías y deja que el robot de trading automático opere por ti, que nunca duerme y no pierde ninguna oportunidad de trading. Activa EEZY Trader gratis durante 7 días y pruébalo tú mismo para ver cómo funciona y cuánto puede valorar tu dinero.",
+        "startBtn": "Comienza tu prueba GRATUITA de 7 días",
+        "cards": {
+          "1": {
+            "header": "Control total sobre tus finanzas",
+            "text": "El robot opera en tu cuenta. Puedes retirar tu depósito y ganancias en cualquier momento."
+          },
+          "2": {
+            "header": "Maximiza la eficiencia del trading",
+            "text": "No perderás ninguna oportunidad lucrativa, incluso cuando estés lejos de la pantalla."
+          },
+          "3": {
+            "header": "Nunca duerme, opera 24/7",
+            "text": "El mercado de criptomonedas nunca duerme, y nuestro robot tampoco; opera continuamente."
+          },
+          "4": {
+            "header": "Elimina el trading emocional",
+            "text": "El robot no sufre de emociones y, por lo tanto, no comete errores por miedo o codicia."
+          },
+          "5": {
+            "header": "Adapta todo a tu estrategia",
+            "text": "Configura las estrategias de trading del robot exactamente según tus objetivos y tolerancia al riesgo."
+          }
+        }
+      },
+      "results": {
+        "subheader": "Resultados de EEZY Trader",
+        "header": "Top Traders",
+        "text1": "Consulta los resultados de nuestros traders más exitosos que utilizan al máximo el potencial del robot de trading automático EEZY Trader cada día para realizar sus ganancias.",
+        "text2": "Únete a nuestros usuarios exitosos de EEZY Trader y comienza a ganar con nuestro robot de trading automático hoy mismo.",
+        "options": {
+          "monthly": "Mensual",
+          "weekly": "Semanal",
+          "daily": "Diario"
+        },
+        "startBtn": "Comenzar"
+      },
+      "references": {
+        "subheader": "Referencias",
+        "header": "Lo que dicen los usuarios de EEZY Trader",
+        "referends": {
+          "1": {
+            "name": "Antonín Sulovský",
+            "text": "Aprecio la buena claridad general y la posibilidad de copiar a otros traders con EEZY Trader. Y lo más importante, EEZY Trader puede apreciar significativamente la inversión.",
+            "rating": "4,6"
+          },
+          "2": {
+            "name": "Jakub Hasalík",
+            "text": "Me gusta que el bot funcione incluso mientras duermo. No trabajo por dinero, sino que el dinero trabaja para mí. O más bien, el robot aprecia mi dinero por mí, y eso es lo que he estado buscando toda mi vida, y lo encontré en coingarage.",
+            "rating": "4,8"
+          },
+          "3": {
+            "name": "Roman Balajka",
+            "text": "Lo que más aprecio del robot de trading de Coingarage es su simplicidad y la interfaz clara en comparación con otros robots.",
+            "rating": "4,5"
+          },
+          "4": {
+            "name": "Jana D'Antoni",
+            "text": "No envío mi dinero a ninguna parte; todas las operaciones son realizadas por el bot en mi cuenta, así que tengo control total sobre mi dinero.",
+            "rating": "4,5"
+          },
+          "5": {
+            "name": "Jaroslava Němečková",
+            "text": "Estoy satisfecha con EEZY Trader, su principal ventaja para mí es que realmente me genera ganancias.",
+            "rating": "4,9"
+          },
+          "6": {
+            "name": "Vojtěch Nedělník",
+            "text": "La principal ventaja del robot es, por supuesto, su funcionalidad. El robot ejecuta operaciones rápida y sin dudar. Estoy personalmente muy satisfecho.",
+            "rating": "5"
+          },
+          "7": {
+            "name": "Petr Sliwka",
+            "text": "No soy de los que estudian y evalúan el robot en detalle. Sin embargo, como usuario común, aprecio que no tengo que preocuparme por mi depósito y siempre puedo contar con algún beneficio.",
+            "rating": "4,6"
+          },
+          "8": {
+            "name": "Jaroslav Balajka",
+            "text": "En mi opinión, EEZY Trader funciona bien; no hay mucho más que añadir.",
+            "rating": "4,9"
+          },
+          "9": {
+            "name": "Ivan Štěp",
+            "text": "Estoy ocupado y no tengo tiempo para operar yo mismo, así que me alegra tener EEZY Trader, que opera y genera dinero por mí, permitiéndome enfocarme en otras actividades.",
+            "rating": "4,5"
+          },
+          "10": {
+            "name": "Petr Janhuba",
+            "text": "El bot es más o menos completamente independiente y no necesita supervisión de sus operaciones. Ejecuta las operaciones de manera rápida y precisa y realmente funciona 24/7.",
+            "rating": "4,8"
+          }
+        }
+      },
+      "functions": {
+        "header": "Muchas funciones y diferentes configuraciones",
+        "text": "EEZY Trader ofrece muchas funciones para que puedas configurarlo según tus necesidades y estrategia de trading. También puedes comenzar fácilmente con nuestra función de Auto trading o copiar las estrategias de otros traders exitosos.",
+        "startBtn": "Comienza tu prueba GRATUITA de 7 días",
+        "functionFields": {
+          "1": "DCA",
+          "2": "GRID",
+          "3": "99 Robots",
+          "4": "Largo",
+          "5": "Corto",
+          "6": "Programa de Referidos",
+          "7": "100 Pares",
+          "8": "Copiar Operaciones",
+          "9": "Guardar Estrategia",
+          "10": "Base de Conocimiento"
+        }
+      },
+      "environment": {
+        "header": "Entorno claro y fácil configuración",
+        "checkmarks": {
+          "1": "Entorno y puesta en marcha sencillos",
+          "2": "Introducción ideal al trading automático",
+          "3": "Opción de configuración automática (auto trade)",
+          "4": "Copiar estrategias de traders más experimentados",
+          "5": "Soporte activo y base de conocimiento"
+        }
+      },
+      "activation": {
+        "header": "Activa tu EEZY Trader en 5 pasos simples",
+        "steps": {
+          "1": "Regístrate en el intercambio Coingarage",
+          "2": "Completa la verificación (KYC)",
+          "3": "Deposita fondos en tu cuenta",
+          "4": "Compra un plan y EEZY Coin",
+          "5": "Configura tu estrategia y comienza a ganar"
+        },
+        "registerBtn": "Registrarse"
+      },
+      "subscription": {
+        "btnBuy": "Comprar Suscripción",
+        "disclaimer": "Después de completar el registro, podrás elegir un plan de suscripción.",
+        "header": "¿Qué es una suscripción?",
+        "subText": "Una suscripción te da acceso completo a nuestros servicios. <b>Con una suscripción, obtienes acceso a nuestro revolucionario robot de trading</b>, que te permite operar en los mercados con absoluta facilidad y eficiencia.",
+        "plans": {
+          "header": "Suscripción",
+          "subText": "¿No estás seguro si nuestra suscripción es adecuada para ti? ¡No hay problema! Ofrecemos una versión de prueba donde puedes probar nuestro robot y experimentar sus capacidades de primera mano.",
+          "trial": {
+            "header": "Versión de Prueba",
+            "free": "Gratis",
+            "package": {
+              "header": "Prueba y disfruta del robot de trading",
+              "1": "Hasta 10 robots",
+              "2": "Todas las estrategias",
+              "3": "Terminales de trading",
+              "4": "Trailing Take profit"
+            }
+          },
+          "month": {
+            "mostUsed": "Más Usado",
+            "header": "Básico Mensual",
+            "competitionPrice": "$45/mes",
+            "price": "$15/mes",
+            "package": {
+              "header": "Prueba y disfruta del robot de trading",
+              "1": "Hasta 50 robots",
+              "2": "Todas las estrategias",
+              "3": "Terminales de trading",
+              "4": "Trailing Take profit",
+              "5": "Renovación automática"
+            }
+          },
+          "year": {
+            "header": "Básico Anual",
+            "competitionPrice": "$384/año",
+            "price": "$120/año",
+            "save60": "Ahorra $60",
+            "package": {
+              "header": "Desbloquea todo el potencial del robot de trading",
+              "1": "Hasta 99 robots",
+              "2": "Todas las estrategias",
+              "3": "Terminales de trading",
+              "4": "Trailing Take profit",
+              "5": "Renovación automática"
+            }
+          },
+          "fee": "Se deduce una comisión de éxito del 10% en EEZY Coin de cada ganancia."
+        }
+      },
+      "referralEEZY": {
+        "subHeader": "Programa de Referidos",
+        "header": "Gana hasta el 30% de las tarifas de trading de tus socios",
+        "subText": "Recompensas mensuales sin esfuerzo. Imagina la alegría de ver dinero fluyendo sin mover un dedo. <b>Invita a tus amigos y disfruta de las ganancias compartidas juntos!</b>",
+        "startBtn": "Comenzar"
+      },
+      "knowledgeBase": {
+        "subHeader": "¿No sabes cómo configurar el robot de trading?",
+        "Header": "No te preocupes, hemos creado una base de conocimiento",
+        "text": "Aquí encontrarás guías completas sobre la configuración y operación del robot de trading, cubriendo todos los aspectos básicos."
+      },
+      "faq": {
+        "question1": "¿Cómo puedo comenzar con tu plataforma?",
+        "answer1": "¡Es fácil comenzar! Solo regístrate, completa el proceso de verificación, deposita fondos en tu cuenta y comienza a operar usando nuestra plataforma intuitiva y herramientas de trading poderosas.",
+        "question2": "¿Qué criptomonedas soportan?",
+        "answer2": "Soportamos una amplia gama de criptomonedas. Consulta nuestra plataforma para la lista completa de activos digitales soportados.",
+        "question3": "¿Qué tan segura es tu plataforma?",
+        "answer3": "Priorizamos la seguridad de los fondos y datos de nuestros usuarios. Nuestra plataforma utiliza métodos avanzados de cifrado y protocolos de seguridad para garantizar un entorno de trading seguro."
+      }
     }
 }
