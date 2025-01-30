@@ -26,7 +26,11 @@ export default function BtcLossSection() {
   const [amount, setAmount] = useState("")
   const [frequency, setFrequency] = useState("4")
 
-  const [dateOpening, setDateOpening] = useState(defaultDate.toISOString().slice(0, 7))
+  // deactivated: dateOpening is not calculated from defaultDate, but set to a fixed date
+  // const [dateOpening, setDateOpening] = useState(defaultDate.toISOString().slice(0, 7))
+  const [dateOpening, setDateOpening] = useState("2019-12")
+
+
   const [dateClosing, setDateClosing] = useState(new Date().toISOString().slice(0, 7))
   const graphRef = useRef(null)
 

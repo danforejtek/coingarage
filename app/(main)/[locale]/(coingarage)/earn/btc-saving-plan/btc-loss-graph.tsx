@@ -58,7 +58,7 @@ type Props = {
   amount: string
   frequency: number
   dateOpening: string
-  dateClosing: string  
+  dateClosing: string
 }
 
 function formatInUSD(amount: number | null) {
@@ -117,14 +117,22 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
       const data = await fetchBTCdata(minDate.getTime())
 
       // find the index where the new data should be merged
+
       const mergeIndex = data.findIndex((entry: any) => entry.time == mainData[0].time)
       // merge the new data with the old data
       setMainData([...data.slice(0, mergeIndex), ...mainData])
       setNoMoreFetching(true)
     }
 
-    if (new Date(dateOpening).getTime() < minDate.getTime() && !noMoreFetching) mergeSecondData()
-  }, [dateOpening])
+    // second batch of data is fetched after the first batch is fetched
+    if (mainData.length > 0) {
+      mergeSecondData()
+    }
+
+    // deactivated: at this moment all data is fetched at the beginning
+    // if (new Date(dateOpening).getTime() < minDate.getTime() && !noMoreFetching) mergeSecondData()
+    // [dateOpening]
+  }, [mainData.length])
 
   React.useEffect(() => {
     // if amount is not a number, dont try to calculate the chart
