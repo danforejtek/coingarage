@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useTranslations } from "next-intl"
@@ -7,10 +6,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@mantine/hooks"
 import BestTradersResult from "./best-trader-results"
-import Autoplay from "embla-carousel-autoplay"
-// import useSWR from "swr"
-// import { getTradersData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/data"
-import { generateMockTraderData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/utils"
+import useSWR from "swr"
+import { getTradersData } from "@/app/(main)/[locale]/(coingarage)/trading-bot/lib/data"
 import {
   Select,
   SelectContent,
@@ -29,6 +26,7 @@ type BestTradersProps = {
 export type TraderData = {
   name: string
   pnl: Record<string, number>
+  c_pnl: Record<string, number>
   roi: number
   total_pnl: number
   active_bots: number
@@ -38,16 +36,30 @@ export type TraderData = {
   grid: boolean
 }
 
-const BestTraders = ({ interval = "D" }: BestTradersProps) => {
+const BestTraders = ({ interval = "M" }: BestTradersProps) => {
   const [selectedInterval, setSelectedInterval] = useState(interval)
   // fetched via server action, URL here is just cache key
-  // const { data, error, isLoading } = useSWR(`https://api.coingarage.io/grid/charts?interval=${selectedInterval}`, () =>
-  //   getTradersData({ interval: selectedInterval })
-  // )
-  const isLoading = false
-  const data = generateMockTraderData(12)
+  const { data, error, isLoading } = useSWR(`https://api.coingarage.io/grid/charts?interval=${selectedInterval}`, () =>
+    getTradersData({ interval: selectedInterval })
+  )
+  // const isLoading = false
+  // const data = generateMockTraderData(12)
+
+  // convert data object to array
+  const dataArray = data
+    ? Object.entries(data).map((entry) => {
+        return { id: entry[0], ...entry[1] }
+      })
+    : []
+
+  const sortedData = dataArray.sort((a, b) => b.roi - a.roi)
+
+  console.log('tbots')
+  console.log(sortedData)
+
+  console.log(sortedData)
+
   const traders = data ? Object.keys(data) : []
-  console.log(data)
   const half = Math.ceil(traders.length / 2)
   const t = useTranslations("eezyTrader.results")
   const isTablet = useMediaQuery("(max-width: 1280px)")
@@ -82,8 +94,8 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
         <Button className="mt-8 hidden w-32 xl:block">{t("startBtn")}</Button>
       </div>
 
-      <div className="mx-auto xl:mx-0 xl:mr-10">
-        <div className="w-[268px] sm:w-[568px] md:w-[710px] lg:w-[768px]">
+      <div id="carousel-root-with-arrows" className="mx-auto xl:mx-0 xl:mr-10">
+        <div id="carousel-body" className="w-[90vw] sm:w-[568px] md:w-[710px] lg:w-[768px]">
           <div className="mb-4 mr-4 flex flex-row-reverse sm:mr-6 md:mr-2 lg:mr-8">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
               <SelectTrigger className="w-[180px]">
@@ -98,17 +110,7 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
               </SelectContent>
             </Select>
           </div>
-          <Carousel
-            opts={{ align: "start", loop: false }}
-            plugins={[
-              Autoplay({
-                delay: 4000,
-                // stopOnMouseEnter: true,
-              }),
-            ]}
-            className="w-full"
-            orientation="horizontal"
-          >
+          <Carousel opts={{ align: "start", loop: false }} className="w-full" orientation="horizontal">
             <CarouselContent className="mx-auto flex h-[434px] w-[568px] md:-ml-8 md:w-full lg:-ml-4">
               {isLoading ? (
                 <CarouselItem className="">
@@ -118,16 +120,18 @@ const BestTraders = ({ interval = "D" }: BestTradersProps) => {
                 Array(half)
                   .fill("")
                   .map((_, index) => {
-                    const item1 = traders[index]
-                    const item2 = traders[index + half]
-                    const itemData1 = data?.[item1 as keyof typeof data]
-                    const itemData2 = data?.[item2 as keyof typeof data]
+                    const top = index * 2
+                    const bottom = index * 2 + 1
 
                     return (
                       <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/3">
-                        <div className="flex flex-col gap-8 sm:ml-4 lg:ml-0">
-                          <BestTradersResult key={itemData1?.name} index={index} data={itemData1} />
-                          <BestTradersResult key={itemData2?.name} index={index + half} data={itemData2} />
+                        <div id="carousel-item" className="flex flex-col gap-8 sm:ml-4 lg:ml-0">
+                          <BestTradersResult key={sortedData[top]?.name} index={top} data={sortedData[top]} />
+                          <BestTradersResult
+                            key={sortedData[bottom]?.name}
+                            index={bottom}
+                            data={sortedData[bottom]}
+                          />
                         </div>
                       </CarouselItem>
                     )

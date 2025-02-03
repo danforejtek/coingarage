@@ -115,3 +115,37 @@ export const formatDateString = (date: string) => {
   if (typeof window === "undefined") return new Date(date).toLocaleDateString("en-US")
   return new Date(date).toLocaleDateString()
 }
+
+export const yearFormatter = (date: Date) => date.toLocaleDateString()
+
+export const monthFormatter = (date: Date) => date.toLocaleDateString("default", { month: "short" }) + " " + date.getFullYear()
+
+export const shortNumberFormatter = (value: string) => {
+  const valueNum = parseInt(value)
+  if (valueNum > 1000000) {
+    return `${valueNum / 1000000}M`
+  } else if (valueNum > 1000) {
+    return `${valueNum / 1000}k`
+  } else {
+    return valueNum.toString()
+  }
+}
+
+// convert weekly data to monthly data
+export const convertToMonthly = (data: any) => {
+    let savedMonth = 0
+    let monthlyData = []
+    for (let i = 0; i < data.length; i++) {
+      let actualMonth: number = new Date(data[i].time).getMonth()
+      if (actualMonth !== savedMonth) {
+        monthlyData.push(data[i])
+        savedMonth = actualMonth
+      }
+    }
+    return monthlyData
+  }
+  
+export function formatInUSD(amount: number | null) {
+    if (amount === null || Number.isNaN(amount)) return "$"
+    return amount.toLocaleString("en-US", { style: "currency", currency: "USD" })
+}

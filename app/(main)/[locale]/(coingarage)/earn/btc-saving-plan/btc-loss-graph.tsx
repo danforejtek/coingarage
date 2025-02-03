@@ -5,19 +5,7 @@ import { LineSeriesType } from "@mui/x-charts"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
 import { btc1, btc2 } from "./data"
-
-const yearFormatter = (date: Date) => date.toLocaleDateString()
-const monthFormatter = (date: Date) => date.toLocaleDateString("default", { month: "short" }) + " " + date.getFullYear()
-const thousandsFormatter = (value: string) => {
-  const valueNum = parseInt(value)
-  if (valueNum > 1000000) {
-    return `${valueNum / 1000000}M`
-  } else if (valueNum > 1000) {
-    return `${valueNum / 1000}k`
-  } else {
-    return valueNum.toString()
-  }
-}
+import { formatInUSD, monthFormatter, shortNumberFormatter, yearFormatter, convertToMonthly } from "@/lib/utils"
 
 export interface BTCDataType {
   time: number
@@ -40,30 +28,11 @@ const fetchBTCdata = async (timestamp: number) => {
   }
 }
 
-// convert weekly data to monthly data
-const convertToMonthly = (data: any) => {
-  let savedMonth = 0
-  let monthlyData = []
-  for (let i = 0; i < data.length; i++) {
-    let actualMonth: number = new Date(data[i].time).getMonth()
-    if (actualMonth !== savedMonth) {
-      monthlyData.push(data[i])
-      savedMonth = actualMonth
-    }
-  }
-  return monthlyData
-}
-
 type Props = {
   amount: string
   frequency: number
   dateOpening: string
   dateClosing: string
-}
-
-function formatInUSD(amount: number | null) {
-  if (amount === null || Number.isNaN(amount)) return "$"
-  return amount.toLocaleString("en-US", { style: "currency", currency: "USD" })
 }
 
 // api returns 250 weeks of data at once
@@ -288,7 +257,7 @@ export default function BtcLossGraph({ amount, frequency, dateOpening, dateClosi
             {isNaN(btcReturn) ? "" : Math.round((btcReturn / deposit - 1) * 1000) / 10 + " %"}
           </span>
           <LineChart
-            yAxis={[{ tickLabelStyle: { fill: "white", fontWeight: "lighter" }, valueFormatter: thousandsFormatter }]}
+            yAxis={[{ tickLabelStyle: { fill: "white", fontWeight: "lighter" }, valueFormatter: shortNumberFormatter }]}
             xAxis={[
               {
                 tickLabelStyle: { fill: "white", fontWeight: "lighter" },

@@ -12,18 +12,19 @@ type BestTradersResultProps = {
 const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
   console.log(data)
   if (!data) return null
-  const { active_bots, short, dca, grid, long, name, pnl, roi, total_pnl } = data
-  console.log({ kunda: data })
+  const { active_bots, short, dca, grid, long, name, pnl, c_pnl, roi, total_pnl } = data
+  
+  // text DCA GRID throws hydratation error
 
   return (
     <div
       data-index={index}
+      id="best-trader-result"
       className="flex h-[200px] w-[234px] flex-col items-center justify-between rounded-xl bg-background p-4 dark:bg-[#1D1E25]"
     >
       <div className="flex h-[34px] w-full justify-between">
         <div className="w-40">
-          <h4>{name}</h4>
-          <p className="text-[8px] text-primary">Expert</p>
+          <h4>{name}</h4>          
         </div>
         <div className="flex flex-wrap justify-end gap-1">
           {dca ? (
@@ -52,10 +53,10 @@ const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
       <div className="flex h-[64x] w-full justify-between">
         <div>
           <p className="text-sm text-[#738795]">Total PnL</p>
-          <p className="text-[24px] text-[#3FCC88]">{formatCurrency(total_pnl, 2)}</p>
+          <p className="text-[24px] text-[#3FCC88]">{formatCurrency(total_pnl, 0)}</p>
         </div>
         <div className="relative h-full w-[86px]">
-          <BestTraderChart data={pnl} />
+          <BestTraderChart data={c_pnl} />
           {/* <Image src={src} height={65} width={85} alt="" className="h-[65px] object-contain" /> */}
           <div className="absolute bottom-0 left-0 h-[1px] w-full border-b-2 border-dashed border-b-neutral-300"></div>
         </div>
