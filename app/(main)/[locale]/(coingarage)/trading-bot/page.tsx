@@ -21,14 +21,27 @@ export default function Page({ params: { locale } }: { params: { locale: string 
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative overflow-hidden">
-      <div id="robot-image" className="absolute -right-[110px] top-[260px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]">
-        <Image src="/images/eezy-trader/images/robotcomputer.png" alt="" fill={true} style={{ objectFit: "cover" }} />
-      </div>
-      {/* <div className="absolute right-0 top-[300px] -z-10 h-[260px] w-[290px] max-w-[96vw] lg:top-[300px] lg:w-[509px] xl:w-[789px]">
-        <Image src="/images/eezy-trader/images/red-vector.svg" fill={true} style={{ objectFit: "cover" }} alt="" />
-      </div> */}
-      <div className="absolute right-[-150px] top-[326px] -z-50 h-[270px] w-[774px] max-w-[96vw] overflow-hidden sm:right-[-200px] sm:top-[320px] sm:h-[300px] md:-right-[260px] md:top-[190px] lg:top-[24px] lg:h-[577px] lg:w-[843px]">
-        <Image src="/images/eezy-trader/images/red-vector.svg" alt="" className="object-contain" fill={true} />
+      <div className="absolute left-[55%] top-[260px] -z-10 h-[1000px] w-[1800px] md:top-[100px] lg:top-0">
+        <div
+          id="red-shape-image"
+          lassName="absolute left-[50%] top-[326px] -z-50 h-[270px] w-[774px] max-w-[96vw] overflow-hidden sm:right-[-200px] sm:top-[320px] sm:h-[300px] md:-right-[260px] md:top-[190px] lg:top-[24px] lg:h-[577px] lg:w-[843px]"
+          className="absolute left-0 top-0 z-10 h-full w-full"
+        >
+          <Image src="/images/eezy-trader/images/red-vector.svg" alt="" className="object-contain" fill={true} />
+        </div>
+
+        <div
+          id="robot-image"
+          lassName="absolute left-[50%] top-[260px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]"
+          className="abolute left-0 top-0 z-20 h-[31%] pb-[29%]"
+        >
+          <Image
+            src="/images/eezy-trader/images/robotcomputer.png"
+            alt=""
+            fill={true}
+            style={{ objectFit: "contain" }}
+          />
+        </div>
       </div>
       {/* Easy trader main section with cards and h3 */}
       <section className="mb-20">
@@ -108,7 +121,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </Button>
           </div>
         </div>
-        <div className="mt-0 xl:mt-16 flex h-80 w-80 flex-col items-center justify-start sm:h-[450px] sm:w-[450px] xl:mt-0">
+        <div className="mt-0 flex h-80 w-80 flex-col items-center justify-start sm:h-[450px] sm:w-[450px] xl:mt-0 xl:mt-16">
           <KnowledgeSvg />
         </div>
       </section>
