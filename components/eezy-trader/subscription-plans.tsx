@@ -181,7 +181,7 @@ export function SubscriptionPlans() {
           </div>
         </div>
       </div>
-      <p className="mt-24 text-center text-base text-neutral-400">{t("plans.fee")}</p>
+      <p className="mt-12 sm:mt-24 text-center text-base text-neutral-400">{t("plans.fee")}</p>
     </div>
   )
 }

@@ -94,8 +94,8 @@ export default function CustomerReviews() {
                   </CarouselItem>
                 ))}
           </CarouselContent>
-          <CarouselPrevious className="-mt-8 ml-2 !bg-transparent text-primary md:-mt-5" />
-          <CarouselNext className="-mt-8 mr-2 !bg-transparent text-primary md:-mt-5" />
+          <CarouselPrevious className="-mt-8 ml-8 sm:ml-2 !bg-transparent text-primary md:-mt-5" />
+          <CarouselNext className="-mt-8 mr-8 sm:mr-2 !bg-transparent text-primary md:-mt-5" />
         </Carousel>
       </div>
     </div>

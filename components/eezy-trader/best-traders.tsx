@@ -54,7 +54,7 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
 
   const sortedData = dataArray.sort((a, b) => b.roi - a.roi)
 
-  console.log('tbots')
+  console.log("tbots")
   console.log(sortedData)
 
   console.log(sortedData)
@@ -98,7 +98,7 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
         <div id="carousel-body" className="w-[90vw] sm:w-[568px] md:w-[710px] lg:w-[768px]">
           <div className="mb-4 mr-2 flex flex-row-reverse sm:mr-4 md:mr-0 lg:mr-6">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
-              <SelectTrigger className="w-[180px] rounded-circle">
+              <SelectTrigger className="ml-2 rounded-circle sm:w-36">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -111,7 +111,7 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
             </Select>
           </div>
           <Carousel opts={{ align: "start", loop: false }} className="w-full" orientation="horizontal">
-            <CarouselContent className="mx-auto flex w-[90vw] h-[434px] sm:w-[568px] md:-ml-8 md:w-full lg:-ml-4">
+            <CarouselContent className="mx-auto flex h-[434px] w-[90vw] sm:w-[568px] md:-ml-8 md:w-full lg:-ml-4">
               {isLoading ? (
                 <CarouselItem className="">
                   <SkeletonLoader count={isMobile ? 4 : 6} />
@@ -127,19 +127,15 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
                       <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/3">
                         <div id="carousel-item" className="flex flex-col gap-8 sm:ml-4 lg:ml-0">
                           <BestTradersResult key={sortedData[top]?.name} index={top} data={sortedData[top]} />
-                          <BestTradersResult
-                            key={sortedData[bottom]?.name}
-                            index={bottom}
-                            data={sortedData[bottom]}
-                          />
+                          <BestTradersResult key={sortedData[bottom]?.name} index={bottom} data={sortedData[bottom]} />
                         </div>
                       </CarouselItem>
                     )
                   })
               )}
             </CarouselContent>
-            <CarouselPrevious className="!bg-transparent text-primary -left-4 sm:-left-12" />
-            <CarouselNext className="!bg-transparent text-primary -right-4 sm:-right-12"  />
+            <CarouselPrevious className="-left-4 !bg-transparent text-primary sm:-left-12" />
+            <CarouselNext className="-right-4 !bg-transparent text-primary sm:-right-12" />
           </Carousel>
         </div>
         <Button className="mx-auto mt-16 block w-32 xl:mt-8 xl:hidden">{t("startBtn")}</Button>

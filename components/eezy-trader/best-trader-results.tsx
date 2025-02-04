@@ -50,7 +50,7 @@ const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
         </div>
       </div>
 
-      <div className="flex h-[64x] w-full justify-between">
+      <div className="flex h-[64x] w-full gap-[2vw] justify-between">
         <div>
           <p className="text-sm text-[#738795]">Total PnL</p>
           <p className="text-[20px] text-[#3FCC88] sm:text-[24px]">

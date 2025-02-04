@@ -45,7 +45,7 @@ const EezyTrader = () => {
         {cards.map((card, index) => (
           <Card
             key={index}
-            className="flex mb-[4vw] sm:mb-0 p-6 w-full max-w-[48%] sm:max-w-[244px] flex-col sm:gap-4 border bg-background sm:px-7 sm:pb-10 sm:pt-8 text-center lg:min-h-72"
+            className="flex mb-[4vw] sm:mb-0 p-6 w-full max-w-[48%] sm:max-w-[244px] flex-col sm:gap-4 border-none bg-backgroundMuted sm:px-7 sm:pb-10 sm:pt-8 text-center lg:min-h-72"
           >
             {card.svg}
             <p className="text-primary">{etMain(`cards.${index + 1}.header`)}</p>
