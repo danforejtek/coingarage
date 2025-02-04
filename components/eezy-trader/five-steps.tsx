@@ -71,14 +71,14 @@ const FiveSteps = (): ReactElement => {
   return (
     <>
       <p className="mb-6 mt-20 text-center font-heading text-4xl font-bold">{t("header")}</p>
-      <div className="relative mt-12 flex w-full grid-cols-5 grid-rows-1 flex-col flex-wrap gap-5 lg:grid lg:flex-row lg:px-8">
-        <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+24px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-6 lg:w-[calc(100%+24px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
+      <div id="activate-step" className="relative mt-12 flex w-full grid-cols-5 grid-rows-1 flex-col flex-wrap gap-2 lg:gap-5 lg:grid lg:flex-row lg:px-8">
+        <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+38px)] sm:h-[calc(100%+24px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 lg:h-6 lg:w-[calc(100%+24px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
         {steps.map((step, index) => (
-          <div key={step.id} className="flex flex-col items-center gap-4 font-heading lg:flex-row">
+          <div key={step.id} className="flex flex-col items-center gap-2 lg:gap-6 last:mr-0 font-heading lg:flex-row">
             <IconFigure
               status="done"
               caption={t(step.caption)}
-              icon={<span className="font-bold text-primary">{step.id}</span>}
+              icon={<span className="text-xl font-bold text-primary">{step.id}</span>}
             >
               {step.icon}
             </IconFigure>

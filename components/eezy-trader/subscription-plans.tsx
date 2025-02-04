@@ -17,7 +17,7 @@ export function SubscriptionPlans() {
           {t("plans.subText")}
         </p>
       </div>
-      <div className="mt-24 flex flex-col items-start justify-between gap-16 lg:flex-row lg:gap-4">
+      <div className="mt-12 lg:mt-24 flex flex-col items-start justify-between gap-16 lg:flex-row lg:gap-4">
         <div className="flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-tertiary/10 p-8 dark:bg-tertiary/10 lg:mt-16 lg:min-h-[800px] lg:w-[380px]">
           <span className="text-center text-xl font-bold">{t("plans.trial.header")}</span>
           <Image

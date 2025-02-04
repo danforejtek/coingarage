@@ -96,9 +96,9 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
 
       <div id="carousel-root-with-arrows" className="mx-auto xl:mx-0 xl:mr-10">
         <div id="carousel-body" className="w-[90vw] sm:w-[568px] md:w-[710px] lg:w-[768px]">
-          <div className="mb-4 mr-4 flex flex-row-reverse sm:mr-6 md:mr-2 lg:mr-8">
+          <div className="mb-4 mr-2 flex flex-row-reverse sm:mr-4 md:mr-0 lg:mr-6">
             <Select defaultValue={selectedInterval} onValueChange={handleChangeInterval}>
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-[180px] rounded-circle">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -111,7 +111,7 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
             </Select>
           </div>
           <Carousel opts={{ align: "start", loop: false }} className="w-full" orientation="horizontal">
-            <CarouselContent className="mx-auto flex h-[434px] w-[568px] md:-ml-8 md:w-full lg:-ml-4">
+            <CarouselContent className="mx-auto flex w-[90vw] h-[434px] sm:w-[568px] md:-ml-8 md:w-full lg:-ml-4">
               {isLoading ? (
                 <CarouselItem className="">
                   <SkeletonLoader count={isMobile ? 4 : 6} />
@@ -138,8 +138,8 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
                   })
               )}
             </CarouselContent>
-            <CarouselPrevious className="!bg-transparent text-primary" />
-            <CarouselNext className="!bg-transparent text-primary" />
+            <CarouselPrevious className="!bg-transparent text-primary -left-4 sm:-left-12" />
+            <CarouselNext className="!bg-transparent text-primary -right-4 sm:-right-12"  />
           </Carousel>
         </div>
         <Button className="mx-auto mt-16 block w-32 xl:mt-8 xl:hidden">{t("startBtn")}</Button>

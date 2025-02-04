@@ -36,7 +36,7 @@ const EezyTrader = () => {
           <h3 className="text-left font-heading text-3xl font-bold md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
           <p className="pr-[24%] sm:pr-[40%] md:pr-[30%] lg:pr-0">{etMain("text")}</p>
           <div className="justify-left mt-20 flex w-full flex-row">
-            <Button className="mt-3 sm:mt-12 w-48 h-auto sm:min-w-64 md:mt-4 ">{etMain("startBtn")}</Button>
+            <Button className="mt-3 sm:mt-12 w-36 h-auto sm:min-w-64 md:mt-4 ">{etMain("startBtn")}</Button>
           </div>
         </div>
       </div>

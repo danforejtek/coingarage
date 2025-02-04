@@ -1,7 +1,7 @@
 import Image from "next/image"
 import React from "react"
 import type { TraderData } from "@/components/eezy-trader/best-traders"
-import { formatCurrency, formatPercentage } from "@/lib/utils"
+import { shortNumberFormatterCurrency, formatPercentage } from "@/lib/utils"
 import { BestTraderChart } from "@/components/eezy-trader/best-trader-chart"
 
 type BestTradersResultProps = {
@@ -13,18 +13,18 @@ const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
   console.log(data)
   if (!data) return null
   const { active_bots, short, dca, grid, long, name, pnl, c_pnl, roi, total_pnl } = data
-  
+
   // text DCA GRID throws hydratation error
 
   return (
     <div
       data-index={index}
       id="best-trader-result"
-      className="flex h-[200px] w-[234px] flex-col items-center justify-between rounded-xl bg-background p-4 dark:bg-[#1D1E25]"
+      className="relative -left-2 flex h-[200px] w-[41vw] flex-col items-center justify-between overflow-hidden rounded-xl bg-background p-4 dark:bg-[#1D1E25] sm:left-0 sm:w-[234px]"
     >
       <div className="flex h-[34px] w-full justify-between">
         <div className="w-40">
-          <h4>{name}</h4>          
+          <h4>{name}</h4>
         </div>
         <div className="flex flex-wrap justify-end gap-1">
           {dca ? (
@@ -53,10 +53,12 @@ const BestTradersResult = ({ data, index }: BestTradersResultProps) => {
       <div className="flex h-[64x] w-full justify-between">
         <div>
           <p className="text-sm text-[#738795]">Total PnL</p>
-          <p className="text-[24px] text-[#3FCC88]">{formatCurrency(total_pnl, 0)}</p>
+          <p className="text-[20px] text-[#3FCC88] sm:text-[24px]">
+            {shortNumberFormatterCurrency(total_pnl.toString(), "$")}
+          </p>
         </div>
         <div className="relative h-full w-[86px]">
-          <BestTraderChart data={c_pnl} />
+          <BestTraderChart data={c_pnl} roi={roi} />
           {/* <Image src={src} height={65} width={85} alt="" className="h-[65px] object-contain" /> */}
           <div className="absolute bottom-0 left-0 h-[1px] w-full border-b-2 border-dashed border-b-neutral-300"></div>
         </div>

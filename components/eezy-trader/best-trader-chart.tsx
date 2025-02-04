@@ -1,5 +1,5 @@
 "use client"
-import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
+import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
 const chartConfig = {
@@ -9,15 +9,21 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-type BestTradersResultProps = Record<string, number>
+type BestTradersResultProps = { data: Record<string, number>; roi: number }
 
-export const BestTraderChart = ({ data }: BestTradersResultProps) => {
-  console.log(data)
+export const BestTraderChart = ({ data, roi }: BestTradersResultProps) => {  
   if (!data) return null
   const chartData = Object.keys(data).map((key) => ({
     date: key,
     pnl: data[key as keyof typeof data],
   }))
+  // recalculate absolute number (dolars) to percents
+  // percentBase (100%) is the last element of the array (highest number)
+  const percentBase: number = chartData[chartData.length - 1].pnl
+  // convert percents to ROI
+  for (let i = 0; i < chartData.length; i++) {
+    chartData[i].pnl = (chartData[i].pnl / percentBase) * roi
+  }
 
   return (
     <ChartContainer config={chartConfig} className="min-h-[64px] w-[86px]">
@@ -45,6 +51,7 @@ export const BestTraderChart = ({ data }: BestTradersResultProps) => {
           strokeWidth={2}
           legendType="none"
         />
+        <YAxis mirror width={0} domain={[0, 110]} />
       </AreaChart>
     </ChartContainer>
   )

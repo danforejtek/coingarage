@@ -108,7 +108,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             </Button>
           </div>
         </div>
-        <div className="mt-16 flex h-80 w-80 flex-col items-center justify-start sm:h-[450px] sm:w-[450px] xl:mt-0">
+        <div className="mt-0 xl:mt-16 flex h-80 w-80 flex-col items-center justify-start sm:h-[450px] sm:w-[450px] xl:mt-0">
           <KnowledgeSvg />
         </div>
       </section>

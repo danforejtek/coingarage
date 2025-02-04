@@ -131,6 +131,20 @@ export const shortNumberFormatter = (value: string) => {
   }
 }
 
+export const shortNumberFormatterCurrency = (value: string, currency: string) => {
+  const valueNum = parseInt(value)
+  console.log(currency)
+  
+  
+  if (valueNum > 1000000) {
+    return `${currency}${Math.round(valueNum / 100000)/10}M`
+  } else if (valueNum > 1000) {
+    return `${currency}${Math.round(valueNum / 100)/10}k`
+  } else {
+    return currency + valueNum.toString()
+  }
+}
+
 // convert weekly data to monthly data
 export const convertToMonthly = (data: any) => {
     let savedMonth = 0
