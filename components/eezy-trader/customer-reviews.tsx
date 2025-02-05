@@ -44,7 +44,7 @@ export default function CustomerReviews() {
                       key={index}
                       className="mb-3 pb-8 sm:basis-1/2 md:basis-1/3 xl:basis-1/4 2xl:basis-1/5"
                     >
-                      <Card className="mx-auto flex h-1/2 w-[90%] flex-col p-6 dark:bg-[#1D1E25] md:min-h-96 md:w-full">
+                      <Card className="mx-auto flex h-1/2 w-[90%] !border-0 flex-col p-6 dark:bg-[#1D1E25] md:min-h-96 md:w-full">
                         <div className="flex justify-between">
                           <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                           <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
@@ -59,7 +59,7 @@ export default function CustomerReviews() {
                       </Card>
 
                       {!!secondItem && (
-                        <Card className="mx-auto mt-4 flex h-1/2 w-[90%] flex-col p-6 dark:bg-[#1D1E25] md:mt-10 md:min-h-96 md:w-full">
+                        <Card className="mx-auto mt-4 flex h-1/2 w-[90%] !border-0 flex-col p-6 dark:bg-[#1D1E25] md:mt-10 md:min-h-96 md:w-full">
                           <div className="flex justify-between">
                             <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                             <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
@@ -78,7 +78,7 @@ export default function CustomerReviews() {
                 })
               : referencesArray.map((src, index) => (
                   <CarouselItem key={index} className="mb-3 pb-8 sm:basis-1/2 md:basis-1/3 xl:basis-1/4 2xl:basis-1/5">
-                    <Card className="mx-auto flex h-1/2 w-full flex-col p-6 dark:bg-[#1D1E25] md:min-h-96">
+                    <Card className="mx-auto flex h-1/2 w-full !border-0 flex-col p-6 dark:bg-[#1D1E25] md:min-h-96">
                       <div className="flex justify-between">
                         <Image src="/images/eezy-trader/icons/quote.svg" width={40} height={40} alt="" />
                         <div className="flex w-14 items-center justify-center rounded-3xl bg-primary text-white">
@@ -94,8 +94,8 @@ export default function CustomerReviews() {
                   </CarouselItem>
                 ))}
           </CarouselContent>
-          <CarouselPrevious className="-mt-8 ml-8 sm:ml-2 !bg-transparent text-primary md:-mt-5" />
-          <CarouselNext className="-mt-8 mr-8 sm:mr-2 !bg-transparent text-primary md:-mt-5" />
+          <CarouselPrevious className="-mt-8 ml-8 sm:ml-2 border-0 !bg-transparent text-primary md:-mt-5" />
+          <CarouselNext className="-mt-8 mr-8 sm:mr-2 border-0 !bg-transparent text-primary md:-mt-5" />
         </Carousel>
       </div>
     </div>

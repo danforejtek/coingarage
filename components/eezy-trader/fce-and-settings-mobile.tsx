@@ -40,7 +40,7 @@ const FceAndSettingsMobile = (props: Props) => {
   return (
     <div className="mt-4 flex flex-wrap justify-center gap-6">
       {functionCards.map((card, index) => (
-        <Card key={index} className="flex h-[150px] w-32 flex-col items-center justify-between py-3 dark:bg-[#1D1E25]">
+        <Card key={index} className="flex border-0 h-[150px] w-32 flex-col items-center justify-between py-3 dark:bg-[#1D1E25]">
           <card.svg className="dark:fill-white" />
           <p className="mt-1 px-2 text-center text-lg md:mt-4">{t(card.titleKey)}</p>
         </Card>

@@ -135,7 +135,7 @@ const BestTraders = ({ interval = "M" }: BestTradersProps) => {
               )}
             </CarouselContent>
             <CarouselPrevious className="-left-4 !bg-transparent text-primary sm:-left-12" />
-            <CarouselNext className="-right-4 !bg-transparent text-primary sm:-right-12" />
+            <CarouselNext className="-right-4 !bg-transparent text-primary sm:-right-7" />
           </Carousel>
         </div>
         <Button className="mx-auto mt-16 block w-32 xl:mt-8 xl:hidden">{t("startBtn")}</Button>

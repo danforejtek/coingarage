@@ -21,20 +21,12 @@ export default function Page({ params: { locale } }: { params: { locale: string 
   const tAfi = useTranslations("eezy-trader.affiliate")
   return (
     <main className="relative overflow-hidden">
-      <div className="absolute left-[55%] top-[260px] -z-10 h-[1000px] w-[1800px] md:top-[100px] lg:top-0">
-        <div
-          id="red-shape-image"
-          lassName="absolute left-[50%] top-[326px] -z-50 h-[270px] w-[774px] max-w-[96vw] overflow-hidden sm:right-[-200px] sm:top-[320px] sm:h-[300px] md:-right-[260px] md:top-[190px] lg:top-[24px] lg:h-[577px] lg:w-[843px]"
-          className="absolute left-0 top-0 z-10 h-full w-full"
-        >
+      <div className="absolute top-[280px] -z-10 h-[530px] w-[1000px] left-[42%] sm:left-[54%] sm:top-[194px] lg:top-5 lg:h-[940px] lg:w-[1800px]">
+        <div id="red-shape-image" className="absolute left-0 top-0 z-0 h-full w-full">
           <Image src="/images/eezy-trader/images/red-vector.svg" alt="" className="object-contain" fill={true} />
         </div>
 
-        <div
-          id="robot-image"
-          lassName="absolute left-[50%] top-[260px] -z-40 h-[330px] w-[338px] md:right-0 md:top-[100px] lg:right-[-100px] lg:top-0 lg:h-[574px] lg:w-[612px] xl:right-[60px]"
-          className="abolute left-0 top-0 z-20 h-[31%] pb-[29%]"
-        >
+        <div id="robot-image" className="absolute left-2 top-0 z-30 w-[33%] pb-[30%]">
           <Image
             src="/images/eezy-trader/images/robotcomputer.png"
             alt=""
