@@ -71,7 +71,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
       </section>
 
       {/* Referal program */}
-      <div className="mt-12 bg-tertiary/25 py-12 dark:bg-[#26272B] xl:mt-28">
+      <div id="referral-program" className="mt-12 bg-tertiary/25 py-12 dark:bg-[#26272B] xl:mt-28">
         <section className="container mx-auto flex flex-col-reverse flex-wrap items-center justify-center lg:flex-row xl:justify-between">
           <div className="mt-16 flex w-full flex-col items-center justify-start pl-4 lg:w-1/2 xl:mt-0">
             <Image src="/images/eezy-trader/images/referalMain.svg" alt="" width={675} height={497} />
@@ -95,9 +95,11 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         </section>
       </div>
 
-      <section className="container mx-auto mt-2 flex flex-col flex-wrap items-center justify-center md:mt-8 lg:flex-row xl:justify-between">
+      {/* Knowledge base */}
+
+      <section id="knowledge-base" className="container mx-auto mt-2 flex flex-col flex-wrap items-center justify-center md:mt-8 lg:flex-row xl:justify-between">
         <div className="mt-12 w-full max-w-[800px] p-4">
-          <h1 className="font-heading text-3xl font-bold text-primary">Knowledge Base</h1>
+          <h1 className="font-heading text-3xl font-bold text-primary">{tAfi("setupTradingBot.knowledgeBase")}</h1>
           <h1 className="mb-6 flex flex-col gap-3 font-heading text-4xl font-bold">
             <div className="text-4xl">{tAfi("setupTradingBot.name")}</div>
             <div className="text-4xl">{tAfi("setupTradingBot.claim")}</div>
@@ -123,19 +125,19 @@ export default function Page({ params: { locale } }: { params: { locale: string 
         <Accordion type="multiple" className="mt-12">
           <AccordionItem value={`item-1`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{t("faq.question1")}</span>
+              <span className="mr-6 font-bold">{t("faq.question1")}</span>
             </AccordionTrigger>
             <AccordionContent className="text-md">{t("faq.answer1")}</AccordionContent>
           </AccordionItem>
           <AccordionItem value={`item-2`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{t("faq.question2")}</span>
+              <span className="mr-6 font-bold">{t("faq.question2")}</span>
             </AccordionTrigger>
             <AccordionContent className="text-md">{t("faq.answer2")}</AccordionContent>
           </AccordionItem>
           <AccordionItem value={`item-3`} className="mb-8 rounded border-b-0 px-8 shadow-md dark:bg-backgroundMuted">
             <AccordionTrigger className="text-left text-lg">
-              <span className="mr-6">{t("faq.question3")}</span>
+              <span className="mr-6 font-bold">{t("faq.question3")}</span>
             </AccordionTrigger>
             <AccordionContent className="text-md">{t("faq.answer3")}</AccordionContent>
           </AccordionItem>

@@ -1,8 +1,9 @@
 import RegistrationIcon from "@/public/images/finance/icons/registration.svg"
-import PersonalDataIcon from "@/public/images/finance/icons/personalData.svg"
+import PersonalDataIcon from "@/public/images/finance/icons/kyc.svg"
 import KycIcon from "@/public/images/finance/icons/kyc.svg"
 import PaymentIcon from "@/public/images/finance/icons/payment.svg"
-import ContractIcon from "@/public/images/finance/icons/contract.svg"
+import GaraCoin from "@/public/images/finance/icons/garaCoin.svg"
+import Staking from "@/public/images/finance/icons/staking.svg"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { ChevronDown } from "lucide-react"
@@ -18,22 +19,22 @@ const steps = [
   {
     id: 2,
     caption: "steps.2",
-    icon: <PersonalDataIcon width="64px" height="64px" className="dark:fill-white" />,
+    icon: <KycIcon width="54px" height="64px" className="dark:fill-white" />,
   },
   {
     id: 3,
     caption: "steps.3",
-    icon: <KycIcon width="54px" height="64px" className="dark:fill-white" />,
+    icon: <PaymentIcon width="64px" height="64px" className="dark:fill-white" />,
   },
   {
     id: 4,
     caption: "steps.4",
-    icon: <PaymentIcon width="64px" height="64px" className="dark:fill-white" />,
+    icon: <GaraCoin width="64px" height="64px" className="dark:fill-white" />,
   },
   {
     id: 5,
     caption: "steps.5",
-    icon: <ContractIcon width="50px" height="64px" className="dark:fill-white" />,
+    icon: <Staking width="64px" height="64px" className="dark:fill-white" />,
   },
 ]
 
@@ -57,8 +58,8 @@ const IconFigure = ({
         : "/images/finance/icons/planned.svg"
 
   return (
-    <figure className="h-[192px] w-[256px] min-w-[13vw] xl:min-w-[auto] rounded-lg border bg-background px-2 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#1D1E25] lg:w-[146px] xl:w-[186px]">
-      <div className="flex flex-row pl-2">{icon || <Image src={statusImage} width={18} height={18} alt="" />}</div>
+    <figure className="h-[100%] w-[256px] min-w-[13vw] xl:min-w-[auto] rounded-lg border bg-background px-4 pb-6 pt-2 shadow transition-all dark:border-none dark:bg-[#1D1E25] lg:w-[146px] xl:w-[186px]">
+      <div className="flex flex-row">{icon || <Image src={statusImage} width={18} height={18} alt="" />}</div>
       <div className="flex flex-row items-center justify-center px-6 py-2">{children}</div>
       <figcaption className="text-wrap text-center font-heading">{caption}</figcaption>
     </figure>
@@ -78,7 +79,7 @@ const FiveSteps = (): ReactElement => {
         <div className="absolute left-1/2 top-1/2 -z-10 h-[calc(100%+38px)] w-6 -translate-x-1/2 -translate-y-1/2 transform rounded-xl bg-primary/25 sm:h-[calc(100%+36px)] lg:h-6 lg:w-[calc(100%+16px)] lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
         {steps.map((step, index) => (
           <>
-            <div key={step.id} className="flex flex-col items-center gap-2 font-heading last:mr-0 lg:flex-row lg:gap-6">
+            <div key={step.id} className="flex self-stretch flex-col items-center gap-2 font-heading last:mr-0 lg:flex-row lg:gap-6">
               <IconFigure
                 status="done"
                 caption={t(step.caption)}

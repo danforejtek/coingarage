@@ -392,7 +392,7 @@
             "btnAffiliate": "Get started",
             "main": {
                 "header1": "Referral Program",
-                "header2": "Earn Up to 15% from fees of every trade of your partners",
+                "header2": "Earn Up to 30% from fees of your partners",
                 "subText": "Monthly rewards, effortless. Imagine the joy of money flowing in without lifting a finger. <b>Invite your friends and enjoy shared profits together!</b>"
             },
             "getStarted": {
@@ -421,9 +421,10 @@
                 }
             },
             "setupTradingBot": {
+                "knowledgeBase": "Knowledge Base",
                 "name": "Don’t Know How to Setup Trading Bot?",
-                "claim": "No worries, we have created a knowledgebase",
-                "text1": "Here, you'll discover comprehensive guidance on establishing and operating a trading bot, covering all essential aspects."
+                "claim": "We have created a knowledgebase for easy start",
+                "text1": "In our knowledgebase you'll discover comprehensive guidance covering all essential aspects on setup and operating of automatic trading robot EEZY Trader. Every step of activation of EEZY Trader is described in video, if you will have any difficulties to start your own trading robot, you cna always contact our support and they will gladly help you with settings and other things."
             },
             "example": "Example",
             "levels": {
@@ -453,12 +454,12 @@
                     }
                 },
                 "month": {
-                    "mostUsed": "Most popular",
+                    "mostUsed": "Most used",
                     "header": "Basic Month",
                     "competitionPrice": "$45/month",
                     "price": "$15/month",
                     "package": {
-                        "header": "Test and Enjoy Trading Bot",
+                        "header": "Start Your Trading Experience",
                         "1": "Up to 50 Bots",
                         "2": "All Strategies",
                         "3": "Trading Terminals",
@@ -1223,7 +1224,7 @@
         }
       },
       "functions": {
-        "header": "Lots of functions and different settings",
+        "header": "Lots of functions and\u00A0different settings",
         "text": "EEZY Trader offers many functions so that you can set it up according to your needs and trading strategy. You can also easily start our robot using the Auto trade function or copy the strategies of other successful traders.",
         "startBtn": "Start 7-Day FREE Trial",
         "functionFields": {
@@ -1253,10 +1254,10 @@
         "header": "Activate your EEZY Trader in 5 simple steps",
         "steps": {
           "1": "Register on the Coingarage exchange",
-          "2": "Complete the verification (KYC)",
-          "3": "Deposit funds into your account",
-          "4": "Buy a plan and EEZY Coin",
-          "5": "Set your strategy and start earning"
+          "2": "Complete personal verification (KYC)",
+          "3": "Deposit the funds you wish to trade",
+          "4": "Choose a plan and purchase EEZY Coin",
+          "5": "Set up your strategy and start earning"
         },
         "registerBtn": "Register"
       },

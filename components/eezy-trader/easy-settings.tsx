@@ -33,7 +33,7 @@ const EasySettings = (): ReactElement => {
           style={{ objectFit: "cover" }}
         />
 
-        <div className="absolute inset-0 px-6">
+        <div id="carousel-root" className="absolute inset-0 py-6 overflow-hidden px-11">
           <Carousel className="relative w-full h-full" opts={{ align: "start", loop: true }}>
             <CarouselContent className="h-[544px]">
               {SAMPLE_IMAGES.map((src, index) => (
@@ -49,12 +49,12 @@ const EasySettings = (): ReactElement => {
 
             {/* Left Arrow */}
             <CarouselPrevious
-              className="absolute left-8 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-900 text-white p-2 rounded-full"
+              className="absolute -left-3 top-1/2 transform -translate-y-1/2 hover:bg-gray-900 text-white p-2 rounded-full"
             />
             
             {/* Right Arrow */}
             <CarouselNext
-              className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-900 text-white p-2 rounded-full"
+              className="absolute -right-3 top-1/2 transform -translate-y-1/2 hover:bg-gray-900 text-white p-2 rounded-full"
             />
           </Carousel>
         </div>
