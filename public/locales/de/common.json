@@ -395,7 +395,7 @@
             "btnAffiliate": "Loslegen",
             "main": {
                 "header1": "Empfehlungsprogramm",
-                "header2": "Verdienen Sie bis zu 15% der Gebühren für jeden Handel Ihrer Partner",
+                "header2": "Verdienen Sie bis zu 30% aus den Gebühren Ihrer Partner",
                 "subText": "Monatliche Belohnungen, mühelos. Stellen Sie sich die Freude vor, wie das Geld ohne einen Finger zu rühren hereinkommt. <b>Laden Sie Ihre Freunde ein und genießen Sie gemeinsame Gewinne!</b>"
             },
             "getStarted": {
@@ -424,10 +424,11 @@
                 }
             },
             "setupTradingBot": {
-                "name": "Wissen Sie nicht, wie Sie einen Handelsroboter einrichten?",
-                "claim": "Keine Sorge, wir haben für Sie ein Lexikon erstellt",
-                "text1": "Hier finden Sie umfassende Anleitungen zur Einrichtung und zum Betrieb eines Handelsroboters, die alle wesentlichen Aspekte abdecken."
-            },
+                "knowledgeBase": "Wissensdatenbank",
+                "name": "Wissen Sie nicht, wie man einen Trading-Bot einrichtet?",
+                "claim": "Wir haben eine Wissensdatenbank für einen einfachen Start erstellt",
+                "text1": "In unserer Wissensdatenbank finden Sie umfassende Anleitungen, die alle wesentlichen Aspekte zur Einrichtung und zum Betrieb des automatischen Handelsroboters EEZY Trader abdecken. Jeder Schritt der Aktivierung von EEZY Trader ist in einem Video beschrieben. Wenn Sie Schwierigkeiten haben, Ihren eigenen Handelsroboter zu starten, können Sie sich jederzeit an unseren Support wenden und wir helfen Ihnen gerne bei den Einstellungen und anderen Dingen."
+              },
             "example": "Beispiel",
             "levels": {
                 "text1": "John ist die erste Person in der Empfehlungskette. Wenn John Alice empfiehlt, verdient er 15% der Gesamtbelohnung für die Registrierung von Alice.",
@@ -461,7 +462,7 @@
                     "competitionPrice": "$45/Monat",
                     "price": "$15/Monat",
                     "package": {
-                        "header": "Testen und Genießen Sie den Handelsbot",
+                        "header": "Beginnen Sie Ihre Handelserfahrung",
                         "1": "Bis zu 50 Bots",
                         "2": "Alle Strategien",
                         "3": "Handelsterminals",
@@ -1237,7 +1238,7 @@
       }
     },
     "functions": {
-      "header": "Viele Funktionen und verschiedene Einstellungen",
+      "header": "Viele Funktionen und\u00A0verschiedene Einstellungen",
       "text": "EEZY Trader bietet viele Funktionen, damit Sie es nach Ihren Bedürfnissen und Ihrer Handelsstrategie einrichten können. Sie können auch unseren Roboter einfach mit der Auto-Trade-Funktion starten oder die Strategien anderer erfolgreicher Händler kopieren.",
       "startBtn": "Starten Sie die 7-tägige KOSTENLOSE Testversion",
       "functionFields": {
@@ -1257,10 +1258,10 @@
       "header": "Klare Umgebung und einfache Einrichtung",
       "checkmarks": {
         "1": "Einfache Umgebung und Start",
-        "2": "Ideale Einführung in den automatischen Handel",
-        "3": "Automatische Einstellungsoption (Auto-Trade)",
-        "4": "Strategien von erfahreneren Händlern kopieren",
-        "5": "Aktiver Support und Wissensdatenbank"
+        "2": "Führen Sie die persönliche Verifizierung (KYC) durch",
+        "3": "Zahlen Sie die Mittel ein, mit denen Sie handeln möchten",
+        "4": "Wählen Sie einen Plan und kaufen Sie EEZY Coin",
+        "5": "Richten Sie Ihre Strategie ein und beginnen Sie zu verdienen"
       }
     },
     "activation": {

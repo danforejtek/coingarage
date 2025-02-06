@@ -393,7 +393,7 @@
       "btnAffiliate": "Začít",
       "main": {
         "header1": "Referral program",
-        "header2": "Vydělávejte až 15% z poplatků za každý obchod svých partnerů",
+        "header2": "Vydělávejte až 30% z poplatků za každý obchod svých partnerů",
         "subText": "Měsíční odměny bez námahy. Představte si radost z peněz, které proudí, aniž byste zdvihli prst. <b>Pozvěte své přátele a společně si užijte sdílené zisky!</b>"
       },
       "getStarted": {
@@ -422,9 +422,10 @@
         }
       },
       "setupTradingBot": {
-        "name": "Nevíte Jak Nastavit Obchodního Robota?",
-        "claim": "Žádné Starosti, Vytvořili Jsme Bázi Znalostí",
-        "text1": "Zde najdete kompletní průvodce nastavením a provozem obchodního robota, který pokrývá všechny základní aspekty."
+        "knowledgeBase": "Znalostní báze",
+        "name": "Nevíte, jak nastavit obchodního robota?",
+        "claim": "Vytvořili jsme znalostní bázi pro snadný začátek",
+        "text1": "V naší znalostní bázi najdete komplexní návody pokrývající všechny základní aspekty nastavení a provozu automatického obchodního robota EEZY Trader. Každý krok aktivace EEZY Trader je popsán ve videu. Pokud budete mít potíže se zahájením provozu vlastního obchodního robota, můžete se vždy obrátit na naši podporu a rádi vám pomohou s nastavením a dalšími věcmi."
       },
       "example": "Příklad",
       "levels": {
@@ -454,12 +455,12 @@
           }
         },
         "month": {
-          "mostUsed": "Nejvíce používané",
+          "mostUsed": "Nejpoužívanější",
           "header": "Základní měsíc",
           "competitionPrice": "$45/měsíc",
           "price": "$15/měsíc",
           "package": {
-            "header": "Vyzkoušejte a užijte si obchodního robota",
+            "header": "Začněte s obchodováním",
             "1": "Až 50 robotů",
             "2": "Všechny strategie",
             "3": "Obchodní terminály",
@@ -1252,10 +1253,10 @@
       "header": "Aktivujte svého EEZY Tradera v 5ti jednoduchých krocích",
       "steps": {
         "1": "Zaregistrujte se na burze Coingarage",
-        "2": "Udělejte si verifikaci (KYC)",
-        "3": "Vložte si na účet prostředky",
-        "4": "Kupte si plán a EEZY Coin",
-        "5": "Nastavte si strategii a začněte vydělávat"
+        "2": "Proveďte osobní ověření (KYC)",
+        "3": "Vložte prostředky, které chcete obchodovat",
+        "4": "Vyberte plán a zakupte EEZY Coin",
+        "5": "Nastavte svou strategii a začněte vydělávat"
       },
       "registerBtn": "Register"
     },

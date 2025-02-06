@@ -393,7 +393,7 @@
             "btnAffiliate": "Empezar",
             "main": {
                 "header1": "Programa de Referidos",
-                "header2": "Gana hasta un 15% de comisión de cada operación de tus socios",
+                "header2": "Gane hasta un 30% de las tarifas de sus socios",
                 "subText": "Recompensas mensuales, sin esfuerzo. Imagina la alegría de que el dinero entre sin mover un dedo. <b>¡Invita a tus amigos y disfruten de ganancias compartidas juntos!</b>"
             },
             "getStarted": {
@@ -422,9 +422,10 @@
                 }
             },
             "setupTradingBot": {
-                "name": "¿No sabes cómo configurar un robot de trading?",
-                "claim": "No se preocupe, hemos creado una base de conocimientos",
-                "text1": "Aquí encontrará una guía completa para establecer y operar un robot de trading, que cubre todos los aspectos esenciales."
+                "knowledgeBase": "Base de Conocimientos",
+                "name": "¿No sabes cómo configurar un bot de trading?",
+                "claim": "Hemos creado una base de conocimientos para un inicio fácil",
+                "text1": "En nuestra base de conocimientos encontrarás una guía completa que cubre todos los aspectos esenciales de la configuración y operación del robot de trading automático EEZY Trader. Cada paso de la activación de EEZY Trader está descrito en un vídeo. Si tienes dificultades para iniciar tu propio robot de trading, siempre puedes contactar con nuestro soporte y te ayudarán encantados con la configuración y otras cosas."
             },
             "example": "Ejemplo",
             "levels": {
@@ -455,12 +456,12 @@
                     }
                 },
                 "month": {
-                    "mostUsed": "Más utilizado",
+                    "mostUsed": "Más usado",
                     "header": "Básico Mensual",
                     "competitionPrice": "$45/mes",
                     "price": "$15/mes",
                     "package": {
-                        "header": "Prueba y Disfruta del Bot de Trading",
+                        "header": "Comienza tu experiencia de trading",
                         "1": "Hasta 50 Bots",
                         "2": "Todas las Estrategias",
                         "3": "Terminales de Trading",
@@ -1225,7 +1226,7 @@
         }
       },
       "functions": {
-        "header": "Muchas funciones y diferentes configuraciones",
+        "header": "Muchas funciones y\u00A0diferentes configuraciones",
         "text": "EEZY Trader ofrece muchas funciones para que puedas configurarlo según tus necesidades y estrategia de trading. También puedes comenzar fácilmente con nuestra función de Auto trading o copiar las estrategias de otros traders exitosos.",
         "startBtn": "Comienza tu prueba GRATUITA de 7 días",
         "functionFields": {
@@ -1255,10 +1256,10 @@
         "header": "Activa tu EEZY Trader en 5 pasos simples",
         "steps": {
           "1": "Regístrate en el intercambio Coingarage",
-          "2": "Completa la verificación (KYC)",
-          "3": "Deposita fondos en tu cuenta",
-          "4": "Compra un plan y EEZY Coin",
-          "5": "Configura tu estrategia y comienza a ganar"
+          "2": "Completa la verificación personal (KYC)",
+          "3": "Depósita los fondos que deseas negociar",
+          "4": "Elige un plan y compra EEZY Coin",
+          "5": "Configura tu estrategia y empieza a ganar"
         },
         "registerBtn": "Registrarse"
       },

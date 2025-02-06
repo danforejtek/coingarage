@@ -392,7 +392,7 @@
             "btnAffiliate": "Başlarken",
             "main": {
                 "header1": "Referans Programı",
-                "header2": "Ortaklarınızın her işleminin ücretlerinden %15'e kadar kazanın",
+                "header2": "Ortaklarınızın ücretlerinden %30'a kadar kazanın",
                 "subText": "Zahmet gerektirmeyen aylık ödüller. Parmağınızı bile kıpırdatmadan akan paranın keyfini hayal edin. <b>Arkadaşlarınızı davet edin ve ortak kazancın tadını birlikte çıkarın!</b>"
             },
             "getStarted": {
@@ -421,10 +421,11 @@
                 }
             },
             "setupTradingBot": {
+                "knowledgeBase": "Bilgi Tabanı",
                 "name": "Ticaret Botunu Nasıl Kuracağınızı Bilmiyor musunuz?",
-                "claim": "Endişelenmeyin, bir bilgi tabanı oluşturduk",
-                "text1": "Burada, bir ticaret botunun kurulması ve işletilmesine ilişkin tüm temel hususları kapsayan kapsamlı bir rehber bulacaksınız."
-            },
+                "claim": "Kolay başlangıç için bir bilgi tabanı oluşturduk",
+                "text1": "Bilgi tabanımızda, otomatik ticaret robotu EEZY Trader'ın kurulumu ve işletimi ile ilgili tüm temel konuları kapsayan kapsamlı bir kılavuz bulacaksınız. EEZY Trader'ın etkinleştirilmesinin her adımı videoda anlatılmıştır. Kendi ticaret robotunuzu başlatmakta zorluk yaşarsanız, her zaman destek ekibimize başvurabilir ve ayarlar ve diğer konular hakkında size memnuniyetle yardımcı olurlar."
+              },
             "example": "Örneğin",
             "levels": {
                 "text1": "John, referans zincirindeki ilk kişidir ve Alice'i yönlendirirse Alice'in kaydı için toplam ödülün %15'ini kazanır.",
@@ -453,12 +454,12 @@
                     }
                 },
                 "month": {
-                    "mostUsed": "En popüler",
+                    "mostUsed": "En çok kullanılan",
                     "header": "Temel Ay",
                     "competitionPrice": "$45/ay",
                     "price": "$15/ay",
                     "package": {
-                        "header": "Ticaret Botunu Test Edin ve Keyfini Çıkarın",
+                        "header": "Ticaret Deneyiminizi Başlatın",
                         "1": "50 Bot'a kadar",
                         "2": "Tüm Stratejiler",
                         "3": "Ticaret Terminalleri",
@@ -1253,10 +1254,10 @@
         "header": "EEZY Trader'ı 5 basit adımda etkinleştirin",
         "steps": {
           "1": "Coingarage borsa platformunda kayıt olun",
-          "2": "Doğrulama işlemini tamamlayın (KYC)",
-          "3": "Hesabınıza fon yatırın",
-          "4": "Bir plan ve EEZY Coin satın alın",
-          "5": "Stratejinizi ayarlayın ve kazanmaya başlayın"
+          "2": "Kişisel doğrulamanızı tamamlayın (KYC)",
+          "3": "Ticaret yapmak istediğiniz fonları yatırın",
+        "4": "Bir plan seçin ve EEZY Coin satın alın",
+        "5": "Stratejinizi ayarlayın ve kazanmaya başlayın"
         },
         "registerBtn": "Kayıt Ol"
       },
