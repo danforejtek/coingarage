@@ -81,7 +81,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
               <div className="text-3xl text-primary">{tAfi("main.header1")}</div>
               <div>{tAfi("main.header2")}</div>
             </h1>
-            <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
+            <p className="text-text-neutral-600 mb-4 text-lg dark:text-neutral-300 lg:text-left">
               {tAfi.rich("main.subText", {
                 b: (text) => <span className="font-bold text-primary">{text}</span>,
               })}
@@ -104,7 +104,7 @@ export default function Page({ params: { locale } }: { params: { locale: string 
             <div className="text-4xl">{tAfi("setupTradingBot.name")}</div>
             <div className="text-4xl">{tAfi("setupTradingBot.claim")}</div>
           </h1>
-          <p className="text-text-neutral-600 mb-4 text-justify text-lg dark:text-neutral-300 lg:text-left">
+          <p className="text-text-neutral-600 mb-4 text-lg dark:text-neutral-300 lg:text-left">
             {tAfi.rich("setupTradingBot.text1", {
               b: (text) => <span className="font-heading text-primary">{text}</span>,
             })}

@@ -19,7 +19,7 @@ export function SubscriptionPlans() {
         </p>
       </div>
       <div id="sub-root" className="mt-12 items-stretch px-6 max-w-[1280px] mx-auto lg:mt-24 flex flex-col justify-between md:flex-row gap-20 sm:gap-4 lg:gap-12 xl:gap-20">
-        <div className="flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-tertiary/10 py-8 px-6 pt-14 dark:bg-tertiary/10 lg:min-h-[800px] lg:w-[380px]">
+        <div className="flex flex-col items-center gap-6 rounded-lg bg-tertiary/10 py-14 px-6 dark:bg-tertiary/10 lg:w-[380px]">
           <span className="text-center text-xl font-bold">{t("plans.trial.header")}</span>
           <Image
             src="/images/eezy-trader/images/route.svg"
@@ -58,7 +58,7 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="flex flex-1 flex-col items-center justify-end">
-            <div className="mt-12 flex flex-row items-center">
+            <div className="mt-2 flex flex-row items-center">
               <Button variant="tertiary" className="px-10" asChild>
                 <a href="https://trade.coingarage.io/login">{tAfi("btnAffiliate")}</a>
               </Button>
@@ -66,7 +66,7 @@ export function SubscriptionPlans() {
             
           </div>
         </div>
-        <div className="relative flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-primary/10 py-8 px-6 dark:bg-primary/10 lg:w-[380px]">
+        <div className="relative flex flex-col items-center gap-6 rounded-lg bg-primary/10 py-8 px-6 pb-14 dark:bg-primary/10 lg:w-[380px]">
           <div className="absolute -top-[20px] rounded-3xl bg-primary px-12 py-2 text-lg text-background">
             {t("plans.month.mostUsed")}
           </div>
@@ -117,7 +117,7 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="flex flex-1 flex-col items-center justify-end">
-            <div className="mt-12 flex flex-row items-center">
+            <div className="mt-2 flex flex-row items-center">
               <Button variant="default" className="px-10" asChild>
                 <a href="https://trade.coingarage.io/login">{tAfi("btnAffiliate")}</a>
               </Button>
@@ -125,7 +125,7 @@ export function SubscriptionPlans() {
             
           </div>
         </div>
-        <div className="dark:bg-tertiary-200/10 flex min-h-[340px] flex-col items-center gap-6 rounded-lg bg-tertiary/10 py-8 px-6 pt-14 lg:min-h-[800px] lg:w-[380px]">
+        <div className="dark:bg-tertiary-200/10 flex flex-col items-center gap-6 rounded-lg bg-tertiary/10 py-14 px-6 lg:w-[380px]">
           <span className="text-center text-xl font-bold">{t("plans.year.header")}</span>
           <Image
             src="/images/eezy-trader/images/rocket-launch.svg"
@@ -173,7 +173,7 @@ export function SubscriptionPlans() {
             </li>
           </ul>
           <div className="flex flex-1 flex-col items-center justify-end">
-            <div className="mt-12 flex flex-row items-center">
+            <div className="mt-2 flex flex-row items-center">
               <Button variant="tertiary" className="px-10" asChild>
                 <a href="https://trade.coingarage.io/login">{tAfi("btnAffiliate")}</a>
               </Button>

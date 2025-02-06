@@ -13,9 +13,10 @@ import {
 
 const CHECK_MARKS = 5
 const SAMPLE_IMAGES = [
-  "/images/eezy-trader/easySettings/1.png",
-  "/images/eezy-trader/easySettings/2.png",
-  "/images/eezy-trader/easySettings/3.png",
+  "/images/eezy-trader/easySettings/1b.png",
+  "/images/eezy-trader/easySettings/2b.png",
+  "/images/eezy-trader/easySettings/3b.png",
+  "/images/eezy-trader/easySettings/4b.png",
 ]
 
 const EasySettings = (): ReactElement => {
@@ -39,7 +40,7 @@ const EasySettings = (): ReactElement => {
               {SAMPLE_IMAGES.map((src, index) => (
                 <CarouselItem key={index} className="relative h-full">
                   <div className="-mt-16 flex h-full items-center justify-center sm:mt-0">
-                    <div className="relative h-[346px] w-[325px]">
+                    <div className="relative h-[444px] w-[325px]">
                       <Image src={src} alt={`Carousel image ${index + 1}`} fill className="" />
                     </div>
                   </div>

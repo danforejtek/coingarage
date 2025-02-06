@@ -32,9 +32,9 @@ const EezyTrader = () => {
   return (
     <div className="container">
       <div id="opening-block" className="pl-[4vw]">
-        <div className="mt-6 flex flex-col gap-4 lg:mt-16 lg:w-1/2">
+        <div className="mt-6 flex flex-col gap-4 lg:mt-16 lg:w-[55%]">
           <h3 className="text-left font-heading text-3xl font-bold md:text-4xl lg:text-5xl"> {etMain("header")} </h3>
-          <p className="pr-[40%] md:pr-[40%] lg:pr-0">{etMain("text")}</p>
+          <p className="pr-[40%] md:pr-[40%] lg:pr-[20%]">{etMain("text")}</p>
           <div className="justify-left mt-3 flex w-full flex-row">
             <Button className="mt-3 sm:mt-12 w-36 h-auto sm:min-w-64 md:mt-4 ">{etMain("startBtn")}</Button>
           </div>
