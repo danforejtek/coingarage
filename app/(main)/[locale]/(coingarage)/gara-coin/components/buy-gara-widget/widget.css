@@ -1,0 +1,56 @@
+#buy-gara-root {
+  background-color: hsl(var(--background-muted));
+  padding: 40px;
+  box-sizing: content-box;
+  * {
+    color: hsl(var(--foreground));
+    font-weight: normal;
+  }
+
+  .font-heading,
+  .text-gray-900 {
+    font-weight: bold;
+  }
+
+  .gara-highlight {
+    font-weight: bold;
+    color: #28e0b9;
+  }
+
+  .gara-input {
+    background-color: hsl(var(--secondary));
+  }
+
+  .ring-offset-background {
+    background-color: transparent;
+  }
+
+  #gara-amount-buttons button {
+    background-color: hsl(var(--secondary));
+    &:hover {
+      background-color: hsl(var(--primary));
+    }
+  }
+
+  #gara-main-button {
+    margin-top: 3rem;
+    button {
+      background-color: hsl(var(--primary));
+      border-radius: 40px;
+      box-shadow: none !important;
+      border: hsl(var(--primary));
+      &:hover {
+        background-color: transparent;
+      }
+      border: 2px solid hsl(var(--primary));
+    }
+  }
+}
+
+.gara-countdown {
+  background-color: hsl(var(--background));
+  border: 1px solid rgb(212 212 212 / 0.3);
+  div {
+    color: hsl(var(--primary)) !important;
+  }
+}

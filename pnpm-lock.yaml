@@ -143,6 +143,9 @@ importers:
       lucide-react:
         specifier: ^0.287.0
         version: 0.287.0(react@18.2.0)
+      modified-react-progress-bar.git:
+        specifier: github:louskac/modified-react-progress-bar
+        version: modified-react-progress-bar@https://codeload.github.com/louskac/modified-react-progress-bar/tar.gz/865536d97f282b037fc03a8272513b693ba2e8a7
       negotiator:
         specifier: ^0.6.3
         version: 0.6.3
@@ -5958,6 +5961,10 @@ packages:
 
   modern-ahocorasick@1.0.1:
     resolution: {integrity: sha512-yoe+JbhTClckZ67b2itRtistFKf8yPYelHLc7e5xAwtNAXxM6wJTUx2C7QeVSJFDzKT7bCIFyBVybPMKvmB9AA==}
+
+  modified-react-progress-bar@https://codeload.github.com/louskac/modified-react-progress-bar/tar.gz/865536d97f282b037fc03a8272513b693ba2e8a7:
+    resolution: {tarball: https://codeload.github.com/louskac/modified-react-progress-bar/tar.gz/865536d97f282b037fc03a8272513b693ba2e8a7}
+    version: 0.0.0
 
   motion@10.16.2:
     resolution: {integrity: sha512-p+PurYqfUdcJZvtnmAqu5fJgV2kR0uLFQuBKtLeFVTrYEVllI99tiOTSefVNYuip9ELTEkepIIDftNdze76NAQ==}
@@ -14962,6 +14969,8 @@ snapshots:
       ufo: 1.5.4
 
   modern-ahocorasick@1.0.1: {}
+
+  modified-react-progress-bar@https://codeload.github.com/louskac/modified-react-progress-bar/tar.gz/865536d97f282b037fc03a8272513b693ba2e8a7: {}
 
   motion@10.16.2:
     dependencies:

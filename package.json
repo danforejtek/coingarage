@@ -66,6 +66,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.48.2",
+    "modified-react-progress-bar.git": "github:louskac/modified-react-progress-bar",
     "react-timer-hook": "^3.0.7",
     "recharts": "^2.11.0",
     "sass": "^1.69.3",

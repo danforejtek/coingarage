@@ -1,7 +1,7 @@
 "use client"
 import { useTheme } from "next-themes"
 import { AlocationChart } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/alocation-chart"
-import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara"
+import { BuyGara } from "../components/buy-gara-widget/widget"
 import Heading from "@/components/heading"
 import { Button } from "@/components/ui/button"
 import OurTeam from "../components/our-team"
