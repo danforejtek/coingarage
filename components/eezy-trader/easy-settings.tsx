@@ -3,13 +3,7 @@ import { Check } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { ReactElement } from "react"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 
 const CHECK_MARKS = 5
 const SAMPLE_IMAGES = [
@@ -34,29 +28,25 @@ const EasySettings = (): ReactElement => {
           style={{ objectFit: "cover" }}
         />
 
-        <div id="carousel-root" className="absolute inset-0 py-6 overflow-hidden px-11">
-          <Carousel className="relative w-full h-full" opts={{ align: "start", loop: true }}>
-            <CarouselContent className="h-[544px]">
+        <div id="carousel-root" className="absolute inset-0 h-[544px] overflow-hidden px-11 py-8">
+          <Carousel className="relative h-full w-full" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="h-[480px]">
               {SAMPLE_IMAGES.map((src, index) => (
-                <CarouselItem key={index} className="relative h-full">
-                  <div className="-mt-16 flex h-full items-center justify-center sm:mt-0">
-                    <div className="relative h-[444px] w-[325px]">
-                      <Image src={src} alt={`Carousel image ${index + 1}`} fill className="" />
+                <CarouselItem key={index} className="relative h-full pl-0">
+                  
+                    <div className="relative h-[480px] w-[375px]">
+                      <Image src={src} alt={`Carousel image ${index + 1}`} fill style={{ objectFit: "contain" }} />
                     </div>
-                  </div>
+                  
                 </CarouselItem>
               ))}
             </CarouselContent>
 
             {/* Left Arrow */}
-            <CarouselPrevious
-              className="absolute -left-3 top-1/2 transform -translate-y-1/2 hover:bg-gray-900 text-white p-2 rounded-full"
-            />
-            
+            <CarouselPrevious className="absolute -left-3 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-white hover:bg-gray-900" />
+
             {/* Right Arrow */}
-            <CarouselNext
-              className="absolute -right-3 top-1/2 transform -translate-y-1/2 hover:bg-gray-900 text-white p-2 rounded-full"
-            />
+            <CarouselNext className="absolute -right-3 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-white hover:bg-gray-900" />
           </Carousel>
         </div>
       </div>
