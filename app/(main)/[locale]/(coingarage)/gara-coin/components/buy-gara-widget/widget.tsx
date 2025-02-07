@@ -1317,6 +1317,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     }
   }, [token, chain, openChainModal])
 
+    // handle Buy Gara button
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     const { amount, token } = data
     console.log("onSubmit amount, token", amount, token, chain?.id)
@@ -1627,7 +1628,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
           </span>
         </button>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full mb-4">
+      <form onSubmit={handleSubmit(onSubmit) } className="w-full max-w-full mb-4">
         <div className="mt-8 grid grid-cols-2 gap-4">
           <div className="flex flex-col relative">
             <p className="font-black">Pay with eth</p>
