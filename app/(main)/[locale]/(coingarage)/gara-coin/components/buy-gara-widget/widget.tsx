@@ -11,7 +11,7 @@ import { z } from "zod"
 import { useQuery } from "@tanstack/react-query"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import { ethers } from "ethers"
+import { BigNumber, ethers } from "ethers"
 
 import { CoinInput } from "./coin-input"
 import { Button } from "@/components/ui/button"
@@ -21,14 +21,20 @@ import { useForm, useWatch } from "react-hook-form"
 import { getGaraEstimate, usdcToGara } from "@/app/api/gara/lib/utils"
 import { useGaraStore } from "@/lib/store/provider"
 import TransactionStatusModal from "./transaction-status-modal"
-import { sendPayment } from "../lib/send-payment"
+import { sendPayment } from "../../lib/send-payment"
 import { CurrencySelect } from "./currency-select"
-import { getTokenBalance } from "../lib/get-balance"
+import { getTokenBalance } from "../../lib/get-balance"
 
 import Arrow from "@/public/images/gara-coin/arrow.svg"
 import Polygon from "@/public/images/gara-coin/pol.png"
-import CountdownTimer from "./countdown-timer"
-import { Rounds } from "./rounds"
+import CountdownTimer from "../countdown-timer"
+import ProgressBar from 'modified-react-progress-bar.git/@ramonak/react-progress-bar'
+
+import { useSwitchChain } from "wagmi"
+import { mainnet, polygon, bsc } from "@wagmi/core/chains"
+import { getChainByName } from "@/app/api/gara/lib/utils"
+import { ReferralPopup } from "../popup-referal"
+import "./widget.css"
 
 // const COINGARAGE_CONTRACT_ADDRESS = "0xA4AC096554f900d2F5AafcB9671FA84c55cA3bE1" as `0x${string}`
 const COINGARAGE_CONTRACT_ADDRESS = "0x3027691e9Fe28499DAB102e591a6BA9cc40d0Ead" as `0x${string}`
@@ -42,9 +48,9 @@ const polygonRpcUrl = "https://polygon-mainnet.g.alchemy.com/v2/" + process.env.
 const ethRpcUrl = "https://eth-mainnet.g.alchemy.com/v2/" + process.env.NEXT_PUBLIC_ETH_RPC_KEY
 const bscRpcUrl = "https://bnb-mainnet.g.alchemy.com/v2/" + process.env.NEXT_PUBLIC_BSC_RPC_KEY
 
-const polygonProvider = new ethers.providers.JsonRpcProvider(polygonRpcUrl);
-const ethProvider = new ethers.providers.JsonRpcProvider(ethRpcUrl);
-const bscProvider = new ethers.providers.JsonRpcProvider(bscRpcUrl);
+const polygonProvider = new ethers.providers.JsonRpcProvider(polygonRpcUrl)
+const ethProvider = new ethers.providers.JsonRpcProvider(ethRpcUrl)
+const bscProvider = new ethers.providers.JsonRpcProvider(bscRpcUrl)
 
 const contractAddress = "0x8ecE1A114ae4768545211Ec3f5Bb62987165cd79"
 
@@ -984,6 +990,7 @@ const formSchema = z.object({
   amount: z.string(),
   token: z.string(),
 })
+
 const calculateRound = () => {
   const currentTime = new Date().getTime()
   if (firstRoundEndDate * 1000 > Number(currentTime)) {
@@ -996,7 +1003,67 @@ const calculateRound = () => {
 }
 
 export function BuyGara({ className, hideHeader = false }: { className?: string; hideHeader?: boolean }) {
+  const [currentNetworkId, setCurrentNetworkId] = useState(1)
   const [hasFetchedOnLoad, setHasFetchedOnLoad] = useState(false)
+  const [activeButton, setActiveButton] = useState("ethereum") // Default active button
+  const { switchChainAsync } = useSwitchChain()
+  const [showPopup, setShowPopup] = useState(false)
+
+  //@ts-ignore
+  async function changeChain(chains) {
+    try {
+      const _chain = getChainByName(chains)
+      //@ts-ignore
+      const switchedChain = await switchChainAsync({ chainId: _chain.id })
+      //@ts-ignore
+      console.log("Switched to chain:", switchedChain.id)
+      setCurrentNetworkId(switchedChain.id)
+      // console.log('Switched to chain:', chain&&chain?.id);
+    } catch (error) {
+      //@ts-ignore
+      console.error("Failed to switch chain:", error.message)
+    }
+  }
+  //L: Here implement the functions
+  //L: After wallet connect this entire logic and the 3 frontend buttons can be hidden so it won't confuse users (once wallet is connected only way to switch networks is the current way thru the connect button)
+  const switchToEthereum = async () => {
+    console.log("Switching to Ethereum")
+    await changeChain("Ethereum")
+    //L: Switch the network to etheruem (the default state)
+    //L: Currency select will have USDT, USDC and ETH currencies
+    //L: Please fix the minimum amount check to work here as well (before the wallet connect)
+  }
+
+  const switchToPolygon = async () => {
+    console.log("Switching to Polygon", polygon.id)
+    await changeChain("Polygon")
+    //L: Switch the network to polygon
+    //L: Currency select will have USDT, USDC and POL currencies
+  }
+
+  const switchToBSC = async () => {
+    console.log("Switching to Binance Smart Chain")
+    await changeChain("BNB Smart Chain")
+    //L: Switch the network to polygon
+    //L: Currency select will have USDT, USDC and BSC currencies
+  }
+
+  const handleNetworkSwitch = (network) => {
+    setActiveButton(network)
+    switch (network) {
+      case "ethereum":
+        switchToEthereum()
+        break
+      case "polygon":
+        switchToPolygon()
+        break
+      case "bsc":
+        switchToBSC()
+        break
+      default:
+        console.error("Unknown network:", network)
+    }
+  }
 
   const t = useTranslations("GARA.main.buyGARA")
   const [tokenSold, setTokenSold] = useState(0)
@@ -1036,24 +1103,16 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     reset: resetState,
   } = useGaraStore((state) => state)
   const { address, chain } = useAccount()
-  // const { data, isLoading, error } = useQuery({
-  //   queryKey: ["ethereumPrice"],
-  //   queryFn: async () => {
-  //     console.log("-----------")
-  //     // let response = null;
-  //     // if(chain?.id === 11155111){
-  //     const response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd")
-  //     // }else if(chain?.id === 97){
-  //     //   response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd")
-  //     // }else{
-  //     //   response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd")
-  //     // }
 
-  //     const data = await response?.json()
-  //     console.log("price:", data)
-  //     return data
-  //   },
-  // })
+  useEffect(() => {
+    if (chain?.id === 1) {
+      setActiveButton("ethereum")
+    } else if (chain?.id === 137) {
+      setActiveButton("polygon")
+    } else if (chain?.id === 56) {
+      setActiveButton("bsc")
+    }
+  }, [chain?.id])
   useEffect(() => {
     // Trigger analytics when a wallet is connected
     console.log("wallet connected")
@@ -1066,7 +1125,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
   useEffect(() => {
     const fetchPrice = async () => {
       // Default to Ethereum chain if no chain is connected
-      const currentChainId = chain?.id || 1
+      const currentChainId = chain?.id || currentNetworkId
 
       if (currentChainId === 1) {
         // ETH
@@ -1093,10 +1152,10 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     }
 
     // Run normally when dependencies change
-    if (chain) {
+    if (chain || currentNetworkId) {
       fetchPrice()
     }
-  }, [chain, hasFetchedOnLoad])
+  }, [chain, hasFetchedOnLoad, currentNetworkId])
 
   // const eth_usd = data?.ethereum?.usd
 
@@ -1163,7 +1222,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
         setMinBalance(20)
         console.log("ETH")
       } else {
-        setMinBalance(10)
+        setMinBalance(20)
         console.log("Not ETH")
       }
 
@@ -1248,7 +1307,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     if (chain?.name === "Ethereum") {
       setValue("token", "ETH")
     }
-  }, [chain])
+  }, [chain, currentNetworkId])
 
   useEffect(() => {
     if (token === "ETH" && chain?.name !== "Ethereum") {
@@ -1258,6 +1317,7 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     }
   }, [token, chain, openChainModal])
 
+    // handle Buy Gara button
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     const { amount, token } = data
     console.log("onSubmit amount, token", amount, token, chain?.id)
@@ -1379,39 +1439,85 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
     reset()
   }
 
+  useEffect(() => {
+    const progressBarFillers = document.querySelectorAll("#progress-bar-filler")
+
+    if (progressBarFillers.length > 0) {
+      // Ensure each progress bar has the animation
+      progressBarFillers.forEach((progressBarFiller) => {
+        // Ensure the progress bar has relative positioning
+        progressBarFiller.style.position = "relative"
+
+        // Create arrow container
+        const arrowContainer = document.createElement("div")
+        arrowContainer.className = "absolute inset-0 flex items-center justify-start pointer-events-none arrow"
+
+        // Add spans for the arrows
+        for (let i = 0; i < 3; i++) {
+          const arrow = document.createElement("span")
+          arrow.className =
+            "block w-[3vw] h-[3vw] border-b-[25px] border-r-[25px] lg:w-[1.5vw] lg:h-[1.5vw] lg:border-b-[5px] lg:border-r-[5px] border-white transform rotate-45"
+          if (i === 1) arrow.style.animationDelay = "-0.2s"
+          if (i === 2) arrow.style.animationDelay = "-0.4s"
+          arrowContainer.appendChild(arrow)
+        }
+
+        // Append arrow container to the progress bar filler
+        progressBarFiller.appendChild(arrowContainer)
+      })
+
+      const style = document.createElement("style")
+      style.textContent = `
+        @keyframes animate {
+          0% {
+            opacity: 0;
+            transform: rotate(315deg) translate(-10px, -10px);
+          }
+          50% {
+            opacity: 0.3;
+          }
+          100% {
+            opacity: 0;
+            transform: rotate(315deg) translate(10px, 10px);
+          }
+        }
+  
+        .arrow span {
+          animation: animate 2s infinite;
+          margin: -10px;
+        }
+      `
+      document.head.appendChild(style)
+    }
+  }, [])
+
+  const setAmountValue = (value: string) => {
+    form.setValue("amount", value)
+  }
+
+  useEffect(() => {
+    setAmountValue('20');
+  }, []);
+
+  const getRefferalLink = () => {
+    console.log("Referral link requested");
+    setShowPopup(true)
+    //L: Your implemetation logic here
+  };
+
   return (
     <section
-      id="buy-gara"
+      id="buy-gara-root"
       className={cn(
-        "relative w-full max-w-[500px] mx-auto flex-1 rounded-2xl bg-backgroundMuted p-6 px-5 shadow-md mb-20",
+        "gara-root relative mb-20 w-full max-w-[420px] flex-1 rounded-2xl bg-white p-6 px-5 shadow-md lg:rounded-t-2xl lg:ml-auto",
         className
       )}
     >
-      {!hideHeader && (
-        <h3 className="mb-6 text-center font-heading text-4xl font-bold text-gary-blue">{t("header")}</h3>
-      )}
-      <Table className="text-base">
-        <TableBody className="text-base">
-          <TableRow className="!border-none hover:bg-transparent">
-            <TableCell className="!p-1 font-bold">{t("distributedTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-bold text-gary-pink">99M GARA</TableCell>
-          </TableRow>
-          <TableRow className="!border-none hover:bg-transparent">
-            <TableCell className="!p-1 font-bold">{t("soldTokens")}</TableCell>
-            <TableCell className="!p-1 text-end font-bold text-gary-pink" lang="en-US" suppressHydrationWarning>
-              {new Intl.NumberFormat("en-US").format(tokenSold)} GARA
-            </TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
-      <div className="mt-4 grid grid-cols-[1fr_180px_1fr] gap-2">
+      <div className="mt-4 grid grid-cols-[1fr_280px_1fr] gap-2">
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
-        <p className="text-center font-heading font-bold">
-          Time Left - {calculateRound()}
-          <sup>nd</sup> round
-        </p>
+        <p className="text-center font-heading text-xl font-black">Countdown to Price Increase</p>
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
@@ -1419,74 +1525,191 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
       <div className="my-4 flex flex-row justify-center">
         <CountdownTimer />
       </div>
-      <div className="mt-4 grid grid-cols-[1fr_120px_1fr] gap-2">
+      <div className="flex flex-col items-center justify-between rounded-md p-4">
+        <div className="flex w-full justify-between text-lg text-gray-800">
+          <span>
+            Current Price: <span className="font-bold gara-highlight text-[#28E0B9]">$0.12</span>
+          </span>
+          <span>
+            Listing price: <span className="font-bold text-gray-900">$0.36</span>
+          </span>
+        </div>
+        <div className="relative my-2 w-full">
+          <ProgressBar
+            completed={((tokenSold / 4000000) * 100).toFixed(2)}
+            animateOnRender={true}
+            isLabelVisible={false}
+            height="16px"
+            bgColor="#28E0B9"
+            baseBgColor="#28e0b938"
+            borderRadius="20px"
+            className=""
+          />
+        </div>
+        <p className="text-center text-lg text-gray-800">
+          Raised: <span className="font-black text-gray-900">${new Intl.NumberFormat("en-US").format(tokenSold)}</span>{" "}
+          / $4,000,000
+        </p>
+      </div>
+      <div className="mt-4 grid grid-cols-[1fr_220px_1fr] gap-2 lg:hidden">
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
-        <p className="text-center font-heading font-bold">Rounds</p>
+        <p className="text-center font-heading text-lg">Presale payment methods</p>
         <div className="relative flex w-full flex-row items-center justify-center">
           <div className="h-[2px] w-full bg-black dark:bg-neutral-700"></div>
         </div>
       </div>
-      <Rounds />
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-full">
-        <div className="mt-4 grid w-full grid-cols-[1fr_auto] gap-2">
-          <CoinInput
-            coin="USDC"
-            type="number"
-            placeholder="0.000"
-            {...register("amount", { required: "Amount is required" })}
-            showIcon={false}
-            className="w-full"
+      <div className="mt-6 flex flex-row items-center justify-between gap-3">
+        <button
+          onClick={() => handleNetworkSwitch("ethereum")}
+          className={`group flex-1 rounded-3xl border-0 ${
+            activeButton === "ethereum" ? "bg-primary" : "bg-[#3b3b3b]"
+          } flex h-[80px] w-[80px] flex-col items-center justify-center px-4 py-4 sm:h-12 sm:w-auto sm:flex-row sm:px-6 sm:py-2`}
+        >
+          <Image
+            src="/images/gara-coin/ethereum.png"
+            alt="Ethereum"
+            width={24}
+            height={24}
+            className="mb-1 sm:mb-0 sm:mr-2"
           />
-          <div className="flex items-center">
-            <CurrencySelect name="token" form={form} />
+          <span
+            className={`font-black ${
+              activeButton === "ethereum" ? "text-white" : "text-black"
+            } text-[10px] sm:text-base`}
+          >
+            <span className="hidden sm:inline">Ethereum</span>
+            <span className="inline text-2xl sm:hidden">ETH</span>
+          </span>
+        </button>
+
+        <button
+          onClick={() => handleNetworkSwitch("polygon")}
+          className={`group flex-1 rounded-3xl border-0 ${
+            activeButton === "polygon" ? "bg-primary" : "bg-[#3b3b3b]"
+          } flex h-[80px] w-[80px] flex-col items-center justify-center px-4 py-4 sm:h-12 sm:w-auto sm:flex-row sm:px-6 sm:py-2`}
+        >
+          <Image
+            src="/images/gara-coin/polygon.png"
+            alt="Polygon"
+            width={24}
+            height={24}
+            className="mb-1 sm:mb-0 sm:mr-2"
+          />
+          <span
+            className={`font-black ${
+              activeButton === "polygon" ? "text-white" : "text-black"
+            } text-[10px] sm:text-base`}
+          >
+            <span className="hidden sm:inline">Polygon</span>
+            <span className="inline text-2xl sm:hidden">POL</span>
+          </span>
+        </button>
+
+        <button
+          onClick={() => handleNetworkSwitch("bsc")}
+          className={`group flex-1 rounded-3xl border-0 ${
+            activeButton === "bsc" ? "bg-primary" : "bg-[#3b3b3b]"
+          } flex h-[80px] w-[80px] flex-col items-center justify-center px-4 py-4 sm:h-12 sm:w-auto sm:flex-row sm:px-6 sm:py-2`}
+        >
+          <Image
+            src="/images/gara-coin/bsc.png"
+            alt="BSC"
+            width={24}
+            height={24}
+            className="mb-1 sm:mb-0 sm:mr-2"
+          />
+          <span
+            className={`font-black ${activeButton === "bsc" ? "text-white" : "text-black"} text-[10px] sm:text-base`}
+          >
+            <span className="hidden sm:inline">BSC</span>
+            <span className="inline text-2xl sm:hidden">BSC</span>
+          </span>
+        </button>
+      </div>
+      <form onSubmit={handleSubmit(onSubmit) } className="w-full max-w-full mb-4">
+        <div className="mt-8 grid grid-cols-2 gap-4">
+          <div className="flex flex-col relative">
+            <p className="font-black">Pay with eth</p>
+            <CoinInput
+              coin="USDC"
+              type="number"
+              placeholder="0.000"
+              {...register("amount", { required: "Amount is required" })}
+              showIcon={false}  // Disable icon, show CurrencySelect instead
+              className="w-full"
+            />
+            <div className="absolute -right-2 top-2/3 transform -translate-y-1/2">
+              <CurrencySelect name="token" form={form} currentNetworkId={currentNetworkId} />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <p className="font-black">Receive $GARA</p>
+            <CoinInput
+              coin="GARA"
+              type="text"
+              placeholder="0.000"
+              className="cursor-disabled pointer-events-none w-full"
+              {...register("garaEstimate")}
+              readOnly
+            />
           </div>
         </div>
         {hasLowerInputBalance && (
-          <p className="mt-2 pl-4 text-sm text-red-500">
-            Amount must be greater than {minTokenBalance} {token}
-          </p>
-        )}
-        {hasUnsufficientBalance && <p className="mt-2 pl-4 text-sm text-red-500">Insufficient balance</p>}
-        <div className="mt-4">
-          <CoinInput
-            coin="GARA"
-            type="text"
-            placeholder="0.000"
-            className="cursor-disabled pointer-events-none"
-            {...register("garaEstimate")}
-            readOnly
-          />
-        </div>
+              <p className="mt-2 pl-4 text-sm text-red-500">
+                Amount must be greater than {minTokenBalance} {token}
+              </p>
+            )}
+            {hasUnsufficientBalance && (
+              <p className="mt-2 pl-4 text-sm text-red-500">Insufficient balance</p>
+            )}
         <input type="hidden" {...register("from")} />
         <input type="hidden" {...register("to")} />
         <input type="hidden" name="chain" value={chain?.name} />
-
-        <div
-          className={cn(
-            "mt-8 gap-4",
-            address ? "flex flex-col" : "flex flex-col lg:flex-row"
-          )}
-        >
-          <div className="flex-1">
-            <ConnectButton
-              label={t("btnConnectWallet")}
-              showBalance={false}
-              className="h-12 w-full rounded-full border border-primary text-black bg-transparent text-xl font-bold text-center"
-            />
-          </div>
-          <div className="flex-1">
+        <div id="gara-amount-buttons" className="mt-4 grid grid-cols-5 gap-2">
+          {[50, 100, 500, 1000, 5000].map((value) => (
+            <button
+              key={value}
+              className="group flex flex-1 items-center justify-center rounded-full border-0 bg-[#FFEEDC] p-2 font-black hover:bg-[#024365] hover:text-white"
+              onClick={(e) => {
+                e.preventDefault()
+                setAmountValue(value.toString())
+              }}
+            >
+              {`$${value}`}
+            </button>
+          ))}
+        </div>
+        <div id="gara-main-button" className={cn("mt-6 gap-4", address ? "flex flex-col" : "flex flex-col lg:flex-row")}>
+          <div className={cn("flex-1", !address && "hidden")}>
             <Button
               type="submit"
               variant={address ? "default" : "outlinePrimary"}
               disabled={!address || hasUnsufficientBalance || hasLowerInputBalance || isCalculatingMinBalance}
-              className="h-12 w-full rounded-full bg-primary text-xl font-bold text-white text-center"
+              className="h-12 w-full rounded-full bg-[#061022] text-center text-xl font-bold text-[#FFAE17]"
             >
               {t("btnBuyGARA")}
             </Button>
           </div>
+          <div className="flex-1">
+            <ConnectButton
+              label={t("btnConnectWallet")}
+              showBalance={false}
+              className="h-12 w-full rounded-full bg-[#FF4473] text-center text-xl font-bold text-black shadow-[0px_5px_0px_#D29200] outline-none transition-all hover:bg-white hover:text-black"
+            />
+          </div>
         </div>
+        {/*
+        <button
+          type="button" 
+          onClick={getRefferalLink}
+          className="w-full text-gary-yellow pt-6 px-6 rounded-full font-semibold"
+        >
+          + GET REFERRAL LINK
+        </button>
+        */}
+        {showPopup && <ReferralPopup onClose={() => setShowPopup(false)} />}
         <TransactionStatusModal
           open={open}
           toggleOpen={handleOnOpenChange}
@@ -1494,31 +1717,6 @@ export function BuyGara({ className, hideHeader = false }: { className?: string;
           senderChainTxUrl={chainTxUrl}
         />
       </form>
-      {/*
-      <div className="mt-6 flex flex-row justify-between gap-2 px-4 font-bold">
-        <Button variant="link" size="sm" className="p-0 font-bold text-foreground" asChild>
-          <a
-            href="https://trade.coingarage.io/exchange/GARA-EUR"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="flex items-center"
-          >
-            {t("buyWith")}
-            <span className="mx-2 inline-flex">
-              <Image src="/icons/coins/eur.png" width="18" height="18" alt="EUR" />
-            </span>
-            EUR
-          </a>
-        </Button>
-        <div className="flex items-center justify-center">
-        </div>
-        <Button variant="link" className="p-0 font-bold">
-          <a href="https://trade.coingarage.io/exchange/GARA-EUR" target="_blank" rel="noreferrer noopener">
-            {t("linkGoToLaunchapad")}
-          </a>
-        </Button>
-      </div>
-      */}
-    </section>
+    </section> 
   )
 }

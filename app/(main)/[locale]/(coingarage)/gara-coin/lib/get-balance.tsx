@@ -1,4 +1,4 @@
-import { contractAddresses } from "./utils"
+import { contractAddresses } from "../components/buy-gara-widget/utils"
 import { getChainByName } from "@/app/api/gara/lib/utils"
 import { createPublicClient, http } from "viem"
 import { getRpcNode } from "@/app/api/gara/lib/utils"

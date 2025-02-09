@@ -1,4 +1,4 @@
-import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara"
+import { BuyGara } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara-widget/widget"
 
 export default function Page() {
   return (

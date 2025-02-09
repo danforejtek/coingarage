@@ -1,6 +1,6 @@
 import "@rainbow-me/rainbowkit/styles.css"
 import type { Metadata } from "next"
-import { WalletProviders } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/wallet-providers"
+import { WalletProviders } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara-widget/wallet-providers"
 import { SmartlookScript } from "@/components/smartlook-script"
 
 export const metadata: Metadata = {

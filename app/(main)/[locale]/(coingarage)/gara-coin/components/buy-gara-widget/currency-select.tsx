@@ -1,5 +1,5 @@
 "use client"
-import { Check, ChevronsUpDown } from "lucide-react"
+import { Check, ChevronDown } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -8,6 +8,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import Image from "next/image"
 import { useAccount } from "wagmi"
+import { useEffect } from "react"
 
 const ethTokens = [
   { label: "USDT", value: "USDT" },
@@ -28,8 +29,11 @@ const polTokens = [
   // { label: "SOL", value: "SOL" },
 ] as const
 
-export function CurrencySelect({ form }: { form: any }) {
+export function CurrencySelect({ form , currentNetworkId} ) {
   const { chain, address } = useAccount()
+  useEffect(()=>{
+    console.log("currentNetworkId", currentNetworkId)
+  },[currentNetworkId])
   return (
     <Form {...form}>
       <FormField
@@ -45,7 +49,7 @@ export function CurrencySelect({ form }: { form: any }) {
                     variant="outline"
                     role="combobox"
                     className={cn(
-                      "!mt-0 h-[44px] w-full justify-between rounded-full border-none bg-white dark:bg-secondary font-bold text-gary-blue hover:bg-gary-light-blue",
+                      "!mt-0 h-[24px] w-full justify-between rounded-full border-none bg-transparent !p-0 font-bold text-gary-blue",
                       !field.value && "text-muted-foreground"
                     )}
                   >
@@ -54,13 +58,9 @@ export function CurrencySelect({ form }: { form: any }) {
                       alt={field.value}
                       width={32}
                       height={32}
-                      className="mr-1"
+                      className="mr-2"
                     />
-                    {field.value && !address && ethTokens.find((token) => token.value === field.value)?.label}
-                    {field.value && chain?.id === 1 && ethTokens.find((token) => token.value === field.value)?.label}
-                    {field.value && chain?.id === 137 && polTokens.find((token) => token.value === field.value)?.label}
-                    {field.value && chain?.id === 56 && bnbTokens.find((token) => token.value === field.value)?.label}
-                    <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                    <ChevronDown className="mr-4 h-8 w-8 shrink-0 opacity-50" />
                   </Button>
                 </FormControl>
               </PopoverTrigger>
@@ -145,30 +145,79 @@ export function CurrencySelect({ form }: { form: any }) {
                             {token.label}
                           </CommandItem>
                         ))}
-                      {!address &&
-                        ethTokens.map((token) => (
-                          <CommandItem
-                            value={token.label}
-                            key={token.value}
-                            onSelect={() => {
-                              form.setValue("token", token.value)
-                            }}
-                            className="text-white"
-                          >
-                            <Check
-                              className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
-                            />
-
+                        
+                       {currentNetworkId === 1 &&
+                         !address &&
+                         ethTokens.map((token) => (
+                           <CommandItem
+                             value={token.label}
+                             key={token.value}
+                             onSelect={() => {
+                               form.setValue("token", token.value)
+                             }}
+                             className="text-white"
+                           >
+                             <Check
+                               className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                             />
                             <Image
-                              src={`/icons/coins/${token.value?.toLowerCase()}.png`}
-                              alt={token.value}
-                              width={20}
-                              height={20}
-                              className="mr-2"
-                            />
-                            {token.label}
-                          </CommandItem>
-                        ))}
+                               src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                               alt={token.value}
+                               width={20}
+                               height={20}
+                               className="mr-2"
+                             />
+                             {token.label}
+                           </CommandItem>
+                         ))}
+                       {currentNetworkId === 137 &&
+                         !address &&
+                         polTokens.map((token) => (
+                           <CommandItem
+                             value={token.label}
+                             key={token.value}
+                             onSelect={() => {
+                               form.setValue("token", token.value)
+                             }}
+                             className="text-white"
+                           >
+                             <Check
+                               className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                             />
+                            <Image
+                               src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                               alt={token.value}
+                               width={20}
+                               height={20}
+                               className="mr-2"
+                             />
+                             {token.label}
+                           </CommandItem>
+                         ))}
+                       {currentNetworkId === 56 &&
+                         !address &&
+                         bnbTokens.map((token) => (
+                           <CommandItem
+                             value={token.label}
+                             key={token.value}
+                             onSelect={() => {
+                               form.setValue("token", token.value)
+                             }}
+                             className="text-white"
+                           >
+                             <Check
+                               className={cn("mr-2 h-4 w-4", token.value === field.value ? "opacity-100" : "opacity-10")}
+                             />
+                            <Image
+                               src={`/icons/coins/${token.value?.toLowerCase()}.png`}
+                               alt={token.value}
+                               width={20}
+                               height={20}
+                               className="mr-2"
+                             />
+                             {token.label}
+                           </CommandItem>
+                         ))} 
                     </CommandGroup>
                   </CommandList>
                 </Command>
