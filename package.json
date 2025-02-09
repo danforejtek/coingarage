@@ -12,6 +12,8 @@
     "drizzle:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@depay/web3-wallets": "^17.5.0",
+    "@depay/widgets": "^12.16.5",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@formatjs/intl-localematcher": "^0.5.4",
@@ -39,7 +41,8 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@rainbow-me/rainbowkit": "^2.1.5",
+    "@rainbow-me/rainbowkit": "^2.2.0",
+    "@solana/web3.js": "^1.95.4",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "@tanstack/react-query": "^5.51.15",
@@ -81,6 +84,7 @@
     "vaul": "^0.9.1",
     "viem": "~2.21.3",
     "wagmi": "^2.12.9",
+    "web3": "^4.15.0",
     "zod": "^3.22.4",
     "zustand": "5.0.0-rc.2"
   },
