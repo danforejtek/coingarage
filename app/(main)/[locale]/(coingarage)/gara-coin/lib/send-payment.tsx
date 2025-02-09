@@ -5,7 +5,7 @@ import { sendTransaction } from "@wagmi/core"
 // import { useAccount, useBalance, useWalletClient } from "wagmi"
 // @ts-ignore
 import { BigNumberish, HexAddress, SupportedChains, SupportedTokens } from "@/types"
-import { contractAddresses } from "@/components/buy-gara-widget/utils"
+import { contractAddresses } from "@/app/(main)/[locale]/(coingarage)/gara-coin/components/buy-gara-widget/utils"
 import { getRpcNode } from "@/app/api/gara/lib/utils"
 import { writeClientTransactionLog } from "./actions"
 import { config } from "../components/buy-gara-widget/wallet-providers"
