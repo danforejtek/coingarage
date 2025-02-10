@@ -986,6 +986,8 @@ const formSchema = z.object({
 })
 const calculateRound = () => {
   const currentTime = new Date().getTime()
+  // quick fix for this moment, whole widget will be replaced
+  return 2;
   if (firstRoundEndDate * 1000 > Number(currentTime)) {
     return 1
   } else if (secondRoundEndDate * 1000 > Number(currentTime)) {

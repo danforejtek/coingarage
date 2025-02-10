@@ -5,6 +5,8 @@ const firstRoundEndDate = 1735689599
 const secondRoundEndDate = 1738367999
 const calculateRound = () => {
   const currentTime = new Date().getTime()
+  // quick fix for this moment, whole widget will be replaced
+  return 2;
   if (firstRoundEndDate * 1000 > Number(currentTime)) {
     return 1
   } else if (secondRoundEndDate * 1000 > Number(currentTime)) {
@@ -69,7 +71,7 @@ export function Rounds() {
       <div className="my-2 flex w-full flex-row justify-center">
         <div className="bg-gary-green mt-2 flex flex-1 flex-col items-center gap-1 rounded-xl border border-neutral px-6 py-2 text-center border border-neutral-300/30">
           <p className="text-md font-bold leading-none">Listing</p>
-          <p className="text-xl font-bold leading-none">$0.20</p>
+          <p className="text-xl font-bold leading-none">$0.36</p>
         </div>
       </div>
     </div>
