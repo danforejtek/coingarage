@@ -87,6 +87,9 @@ module.exports = {
           "100%": { transform: "translateY(0)" },
         },
       },
+      boxShadow: {
+        'tablet-blue': '0 0 6px #12121B',
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

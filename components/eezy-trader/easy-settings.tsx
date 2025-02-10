@@ -28,13 +28,13 @@ const EasySettings = (): ReactElement => {
           style={{ objectFit: "cover" }}
         />
 
-        <div id="carousel-root" className="absolute inset-0 h-[544px] overflow-hidden px-11 py-8">
+        <div id="carousel-root" className="absolute inset-0 h-[358px] sm:h-[480px] box-content overflow-hidden px-8 py-6 sm:px-11 sm:py-8">
           <Carousel className="relative h-full w-full" opts={{ align: "start", loop: true }}>
-            <CarouselContent className="h-[480px]">
+            <CarouselContent classNameRoot="rounded-2xl shadow-tablet-blue" className="-ml-6 sm:-ml-4">
               {SAMPLE_IMAGES.map((src, index) => (
                 <CarouselItem key={index} className="relative h-full pl-0">
                   
-                    <div className="relative h-[480px] w-[375px]">
+                    <div className="relative h-[358px] w-[306px] sm:h-[480px] sm:w-[375px]">
                       <Image src={src} alt={`Carousel image ${index + 1}`} fill style={{ objectFit: "contain" }} />
                     </div>
                   
