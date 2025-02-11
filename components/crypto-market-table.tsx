@@ -6,11 +6,10 @@ import { getTranslations } from "next-intl/server"
 
 const getData = async () => {
   try {
-    // load prices
     const response = await fetch(
       process.env.NODE_ENV === "development"
-        ? `http://localhost:4200/api/latest`
-        : `https://${process.env.VERCEL_URL}/api/latest`,
+        ? `http://localhost:4200/api/latest?limit=6`
+        : `https://${process.env.VERCEL_URL}/api/latest?limit=6`,
       { next: { revalidate: 60 * 9 } }
     )
     const data = await response.json()
