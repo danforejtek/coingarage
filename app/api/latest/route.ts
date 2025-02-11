@@ -1,8 +1,14 @@
 export async function GET(request: Request) {
   try {
+    let amount = "6"
+
+    if (request.url.includes("limit=")) {
+      amount = request.url.split("limit=")[1]
+    }
+    
     // const { searchParams } = new URL(request.url)
     // const id = searchParams.get("id")
-    const amount = "6";
+
     const res = await fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${amount}`, {
       next: { revalidate: 60 * 10 }, // in seconds
       // cache: "no-cache", // Don't cache response
