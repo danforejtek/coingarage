@@ -1,9 +1,8 @@
 export async function GET(request: Request) {
   try {
-    const { searchParams } = new URL(request.url)
-    const limit = searchParams.get('limit') || '6'
-    console.log(limit)
-    const res = await fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${limit}`, {
+    // const { searchParams } = new URL(request.url)
+    // const id = searchParams.get("id")
+    const res = await fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${6}`, {
       next: { revalidate: 60 * 10 }, // in seconds
       // cache: "no-cache", // Don't cache response
       // @ts-ignore
