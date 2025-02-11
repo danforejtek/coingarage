@@ -1,11 +1,7 @@
 export async function GET(request: Request) {
   try {
     let amount = "6"
-
-    if (request.url.includes("limit=")) {
-      amount = request.url.split("limit=")[1]
-    }
-    
+    // searchParams works fine locally, but in production the server is not passing the request param :/
     // const { searchParams } = new URL(request.url)
     // const id = searchParams.get("id")
 
