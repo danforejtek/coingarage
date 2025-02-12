@@ -25,14 +25,15 @@ import {
 } from "@tanstack/react-table"
 import React from "react"
 import { symbol } from "zod"
+import { Value } from "@radix-ui/react-select"
 
 type Props = { inputData: any }
 
 type Crypto = {
   name: string
   price: number
-  volume_24h: number
   volume_change_24h: number
+  volume_24h: number
   market_cap: number
 }
 
@@ -61,10 +62,9 @@ export default function CryptoMarketTable({ inputData }: Props) {
         id: "name",
         header: () => <span>Currency</span>,
         cell: (info) => {
-          const symbol = (info.getValue() as string).split("#")[1];
+          const symbol = (info.getValue() as string).split("#")[1]
           return (
-            <span>
-              {(info.getValue() as string).split("#")[0]}
+            <span className="flex items-start gap-8">
               <Image
                 // src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
                 src={`/icons/coins/${symbol.toLowerCase()}.png`}
@@ -72,38 +72,38 @@ export default function CryptoMarketTable({ inputData }: Props) {
                 width={40}
                 height={40}
               />
+              {(info.getValue() as string).split("#")[0]}
             </span>
           )
         },
-        footer: (props) => props.column.id,
       },
       {
         accessorKey: "price",
         id: "price",
         header: () => <span>Price</span>,
-        cell: (info) => formatCurrency(info.getValue()),
-        footer: (props) => formatCurrency(props.column.getAggregatedValue()),
-      },
-      {
-        accessorKey: "volume_24h",
-        id: "volume_24h",
-        header: () => <span>24h Volume</span>,
-        cell: (info) => formatCurrency(info.getValue()),
-        footer: (props) => formatCurrency(props.column.getAggregatedValue()),
+        cell: (info) => formatCurrency(info.getValue() as number),
       },
       {
         accessorKey: "volume_change_24h",
         id: "volume_change_24h",
         header: () => <span>24h Change</span>,
-        cell: (info) => formatPercentage(info.getValue()),
-        footer: (props) => formatPercentage(props.column.getAggregatedValue()),
+        cell: (info) => {
+          const value = info.getValue() as number
+          return <span className={value < 0 ? "text-red-500" : "text-green-500"}>{formatPercentage(value)}</span>
+        },
       },
+      {
+        accessorKey: "volume_24h",
+        id: "volume_24h",
+        header: () => <span>24h Volume</span>,
+        cell: (info) => formatCurrency(info.getValue() as number),
+      },
+
       {
         accessorKey: "market_cap",
         id: "market_cap",
         header: () => <span>Market Cap</span>,
-        cell: (info) => formatCurrency(info.getValue(), 0),
-        footer: (props) => formatCurrency(props.column.getAggregatedValue(), 0),
+        cell: (info) => formatCurrency(info.getValue() as number, 0),
       },
     ],
     []
@@ -135,7 +135,7 @@ export default function CryptoMarketTable({ inputData }: Props) {
             return (
               <TableRow key={index}>
                 <TableCell className="font-medium">
-                  <div className="flex flex-row items-center gap-8">
+                  <div className="flex items-start gap-8">
                     <Image
                       // src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
                       src={`/icons/coins/${item.symbol.toLowerCase()}.png`}
@@ -180,30 +180,38 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
     state: {
       pagination,
     },
+    initialState: {
+      sorting: [
+        {
+          id: "market_cap",
+          desc: true,
+        },
+      ],
+    },
     // autoResetPageIndex: false, // turn off page index reset when sorting or filtering
   })
 
   return (
     <div className="p-2">
       <div className="h-2" />
-      <table>
+      <table className="w-full table-auto">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
-              {headerGroup.headers.map((header) => {
+              {headerGroup.headers.map((header, index) => {
                 return (
-                  <th key={header.id} colSpan={header.colSpan}>
+                  <th className={index === 0 ? "text-left" : "text-right"} key={header.id} colSpan={header.colSpan}>
                     <div
                       {...{
                         className: header.column.getCanSort() ? "cursor-pointer select-none" : "",
                         onClick: header.column.getToggleSortingHandler(),
                       }}
                     >
-                      {flexRender(header.column.columnDef.header, header.getContext())}
                       {{
-                        asc: " 🔼",
-                        desc: " 🔽",
-                      }[header.column.getIsSorted() as string] ?? null}
+                        asc: <span>🔼🔽</span>,
+                        desc: " 🔽🔼",
+                      }[header.column.getIsSorted() as string] ?? <span className="opacity-25"> 🔼🔽</span>}
+                      {flexRender(header.column.columnDef.header, header.getContext())}
                       {header.column.getCanFilter() ? (
                         <div>
                           <Filter column={header.column} table={table} />
@@ -220,8 +228,12 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
           {table.getRowModel().rows.map((row) => {
             return (
               <tr key={row.id}>
-                {row.getVisibleCells().map((cell) => {
-                  return <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+                {row.getVisibleCells().map((cell, index) => {
+                  return (
+                    <td className={index === 0 ? "text-left" : "text-right"} key={cell.id}>
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </td>
+                  )
                 })}
               </tr>
             )
@@ -229,7 +241,7 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
         </tbody>
       </table>
       <div className="h-2" />
-      <div className="flex items-center gap-2">
+      <div className="flex justify-center gap-2">
         <button className="rounded border p-1" onClick={() => table.firstPage()} disabled={!table.getCanPreviousPage()}>
           {"<<"}
         </button>
@@ -239,50 +251,29 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
           disabled={!table.getCanPreviousPage()}
         >
           {"<"}
-        </button>
+        </button>        
+        {Array.apply(null, Array(table.getPageCount())).map((_, index) => (
+          <button
+            key={index}
+            className={cn("rounded border p-1", {
+              "bg-gray-600": table.getState().pagination.pageIndex === index,
+            })}
+            onClick={() => table.setPageIndex(index)}
+          >
+            {index + 1}
+          </button>
+        ))}
         <button className="rounded border p-1" onClick={() => table.nextPage()} disabled={!table.getCanNextPage()}>
           {">"}
         </button>
         <button className="rounded border p-1" onClick={() => table.lastPage()} disabled={!table.getCanNextPage()}>
           {">>"}
-        </button>
-        <span className="flex items-center gap-1">
-          <div>Page</div>
-          <strong>
-            {table.getState().pagination.pageIndex + 1} of {table.getPageCount().toLocaleString()}
-          </strong>
-        </span>
-        <span className="flex items-center gap-1">
-          | Go to page:
-          <input
-            type="number"
-            min="1"
-            max={table.getPageCount()}
-            defaultValue={table.getState().pagination.pageIndex + 1}
-            onChange={(e) => {
-              const page = e.target.value ? Number(e.target.value) - 1 : 0
-              table.setPageIndex(page)
-            }}
-            className="w-16 rounded border p-1"
-          />
-        </span>
-        <select
-          value={table.getState().pagination.pageSize}
-          onChange={(e) => {
-            table.setPageSize(Number(e.target.value))
-          }}
-        >
-          {[10, 20, 30, 40, 50].map((pageSize) => (
-            <option key={pageSize} value={pageSize}>
-              Show {pageSize}
-            </option>
-          ))}
-        </select>
+        </button>        
       </div>
-      <div>
-        Showing {table.getRowModel().rows.length.toLocaleString()} of {table.getRowCount().toLocaleString()} Rows
-      </div>
-      <pre>{JSON.stringify(table.getState().pagination, null, 2)}</pre>
+
+      <br />
+      <br />
+      <br />
     </div>
   )
 }
@@ -293,7 +284,7 @@ function Filter({ column, table }: { column: Column<any, any>; table: Table<any>
   const columnFilterValue = column.getFilterValue()
 
   return typeof firstValue === "number" ? (
-    <div className="flex space-x-2" onClick={(e) => e.stopPropagation()}>
+    <div className="flex justify-end space-x-2" onClick={(e) => e.stopPropagation()}>
       <input
         type="number"
         value={(columnFilterValue as [number, number])?.[0] ?? ""}
@@ -320,3 +311,5 @@ function Filter({ column, table }: { column: Column<any, any>; table: Table<any>
     />
   )
 }
+
+// https://tanstack.com/table/latest/docs/framework/react/examples/pagination
