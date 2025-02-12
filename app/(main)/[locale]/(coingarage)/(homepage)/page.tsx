@@ -4,7 +4,6 @@ import { unstable_setRequestLocale } from "next-intl/server"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Heading from "@/components/heading"
-import CryptoMarketTable from "@/components/crypto-market-table"
 // import Link from "next/link"
 import Faq from "@/components/faq"
 import GetGara from "@/components/promo/get-gara"
@@ -18,6 +17,7 @@ import { GetAppHp } from "@/components/promo/get-app-hp"
 import { ClaimGaraModal } from "@/components/promo/claim-gara-modal"
 import { RegistrationHelp } from "@/components/promo/registration-help"
 import { Safety } from "@/components/promo/safety"
+import CryptoMarketTableSsrData from "@/components/crypto-market-table-SSR-data"
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
@@ -61,7 +61,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       </section>
       <Motivation />
       <section id="hot-coins" className="container mx-auto mt-28">
-        <CryptoMarketTable />
+        <CryptoMarketTableSsrData />
         <div className="mt-12">
           <CryptoStats />
         </div>
