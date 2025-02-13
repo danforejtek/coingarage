@@ -1,14 +1,8 @@
 "use client"
 import Image from "next/image"
-import {
-  Table as Taable,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
+import { IoSearchSharp } from "react-icons/io5"
+import { FaSort } from "react-icons/fa"
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti"
 import { cn, formatCurrency, formatPercentage } from "@/lib/utils"
 import { useTranslations } from "next-intl"
 import {
@@ -49,6 +43,9 @@ const convertData = (data: any): Crypto[] => {
   })
 }
 
+// set columns width to fix percents, so the table doesnt jump when pages are changed
+const columnWidths = ["24%", "14%", "14%", "24%", "24%"]
+
 export default function CryptoMarketTable({ inputData }: Props) {
   const t = useTranslations("CryptoMarket")
   console.log(inputData)
@@ -60,11 +57,11 @@ export default function CryptoMarketTable({ inputData }: Props) {
       {
         accessorKey: "name",
         id: "name",
-        header: () => <span>Currency</span>,
+        header: () => <span>{t("currency")}</span>,
         cell: (info) => {
           const symbol = (info.getValue() as string).split("#")[1]
           return (
-            <span className="flex items-start gap-8">
+            <span className="flex items-center gap-8">
               <Image
                 // src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
                 src={`/icons/coins/${symbol.toLowerCase()}.png`}
@@ -80,13 +77,13 @@ export default function CryptoMarketTable({ inputData }: Props) {
       {
         accessorKey: "price",
         id: "price",
-        header: () => <span>Price</span>,
+        header: () => <span>{t("price")}</span>,
         cell: (info) => formatCurrency(info.getValue() as number),
       },
       {
         accessorKey: "volume_change_24h",
         id: "volume_change_24h",
-        header: () => <span>24h Change</span>,
+        header: () => <span>{t("24hChange")}</span>,
         cell: (info) => {
           const value = info.getValue() as number
           return <span className={value < 0 ? "text-red-500" : "text-green-500"}>{formatPercentage(value)}</span>
@@ -95,14 +92,14 @@ export default function CryptoMarketTable({ inputData }: Props) {
       {
         accessorKey: "volume_24h",
         id: "volume_24h",
-        header: () => <span>24h Volume</span>,
+        header: () => <span>{t("24hVolume")}</span>,
         cell: (info) => formatCurrency(info.getValue() as number),
       },
 
       {
         accessorKey: "market_cap",
         id: "market_cap",
-        header: () => <span>Market Cap</span>,
+        header: () => <span>{t("marketCap")}</span>,
         cell: (info) => formatCurrency(info.getValue() as number, 0),
       },
     ],
@@ -110,54 +107,12 @@ export default function CryptoMarketTable({ inputData }: Props) {
   )
 
   return (
-    <>
-      <MyTable
-        {...{
-          data,
-          columns,
-        }}
-      />
-
-      <Taable>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="min-w-[160px]">{t("currency")}</TableHead>
-            <TableHead className="text-right">{t("price")}</TableHead>
-            <TableHead className="text-right">{t("24hChange")}</TableHead>
-            <TableHead className="text-right">{t("24hVolume")}</TableHead>
-            <TableHead className="text-right">{t("marketCap")}</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {inputData?.data?.map((item: any, index: number) => {
-            // console.log(index === 1 ? item : null)
-            const changeClass = item?.quote?.USD?.percent_change_24h < 0 ? "text-red-500" : "text-green-500"
-            return (
-              <TableRow key={index}>
-                <TableCell className="font-medium">
-                  <div className="flex items-start gap-8">
-                    <Image
-                      // src={`https://coinicons-api.vercel.app/api/icon/${item.symbol.toLowerCase()}`}
-                      src={`/icons/coins/${item.symbol.toLowerCase()}.png`}
-                      alt={item.symbol}
-                      width={40}
-                      height={40}
-                    />
-                    <span>{item.name}</span>
-                  </div>
-                </TableCell>
-                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.price)}</TableCell>
-                <TableCell className={cn("text-right", changeClass)}>
-                  {formatPercentage(item?.quote?.USD?.percent_change_24h)}
-                </TableCell>
-                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.volume_24h)}</TableCell>
-                <TableCell className={cn("text-right")}>{formatCurrency(item?.quote?.USD?.market_cap, 0)}</TableCell>
-              </TableRow>
-            )
-          })}
-        </TableBody>
-      </Taable>
-    </>
+    <MyTable
+      {...{
+        data,
+        columns,
+      }}
+    />
   )
 }
 
@@ -176,6 +131,7 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     onPaginationChange: setPagination,
+    enableSortingRemoval: false,
     //no need to pass pageCount or rowCount with client-side pagination as it is calculated automatically
     state: {
       pagination,
@@ -192,56 +148,77 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
   })
 
   return (
-    <div className="p-2">
-      <div className="h-2" />
-      <table className="w-full table-auto">
-        <thead>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map((header, index) => {
-                return (
-                  <th className={index === 0 ? "text-left" : "text-right"} key={header.id} colSpan={header.colSpan}>
-                    <div
-                      {...{
-                        className: header.column.getCanSort() ? "cursor-pointer select-none" : "",
-                        onClick: header.column.getToggleSortingHandler(),
-                      }}
-                    >
-                      {{
-                        asc: <span>🔼🔽</span>,
-                        desc: " 🔽🔼",
-                      }[header.column.getIsSorted() as string] ?? <span className="opacity-25"> 🔼🔽</span>}
-                      {flexRender(header.column.columnDef.header, header.getContext())}
-                      {header.column.getCanFilter() ? (
-                        <div>
-                          <Filter column={header.column} table={table} />
-                        </div>
-                      ) : null}
-                    </div>
-                  </th>
-                )
-              })}
-            </tr>
-          ))}
-        </thead>
-        <tbody>
-          {table.getRowModel().rows.map((row) => {
-            return (
-              <tr key={row.id}>
-                {row.getVisibleCells().map((cell, index) => {
+    <div>
+      <div className="relative overflow-auto p-2">
+        <div className="h-2" />
+        <table className="mt-6 w-full min-w-[800px] table-auto">
+          <thead>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr
+                key={headerGroup.id}
+                className="h-14 border-b pb-3 transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                {headerGroup.headers.map((header, index) => {
                   return (
-                    <td className={index === 0 ? "text-left" : "text-right"} key={cell.id}>
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </td>
+                    <th
+                      className={cn(
+                        "h-12 p-3 text-left align-middle font-medium text-muted-foreground",
+                        index === 0 ? "text-left" : "text-right"
+                      )}
+                      style={{ width: columnWidths[index] }}
+                      key={header.id}
+                      colSpan={header.colSpan}
+                    >
+                      <div
+                        {...{
+                          className: header.column.getCanSort() ? "cursor-pointer select-none" : "",
+                          onClick: header.column.getToggleSortingHandler(),
+                        }}
+                      >
+                        {{
+                          asc: <span>▲ </span>,
+                          desc: "▼ ",
+                        }[header.column.getIsSorted() as string] ?? (
+                          <div className="relative top-[-6px] mr-2 inline-flex flex-col text-[8px] leading-[9px]">
+                            <span>▲</span>
+                            <span>▼</span>
+                          </div>
+                        )}
+                        {flexRender(header.column.columnDef.header, header.getContext())}
+                        {header.column.getCanFilter() ? (
+                          <div>
+                            <Filter column={header.column} table={table} />
+                          </div>
+                        ) : null}
+                      </div>
+                    </th>
                   )
                 })}
               </tr>
-            )
-          })}
-        </tbody>
-      </table>
+            ))}
+          </thead>
+          <tbody>
+            {table.getRowModel().rows.map((row) => {
+              return (
+                <tr
+                  key={row.id}
+                  className="h-16 border-b transition-colors last:border-0 hover:bg-muted/50 data-[state=selected]:bg-muted"
+                >
+                  {row.getVisibleCells().map((cell, index) => {
+                    return (
+                      <td className={index === 0 ? "p-3 text-left" : "p-3 text-right"} key={cell.id}>
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </td>
+                    )
+                  })}
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
       <div className="h-2" />
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center gap-2 opacity-60">
         <button className="rounded border p-1" onClick={() => table.firstPage()} disabled={!table.getCanPreviousPage()}>
           {"<<"}
         </button>
@@ -251,7 +228,7 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
           disabled={!table.getCanPreviousPage()}
         >
           {"<"}
-        </button>        
+        </button>
         {Array.apply(null, Array(table.getPageCount())).map((_, index) => (
           <button
             key={index}
@@ -268,12 +245,8 @@ function MyTable({ data, columns }: { data: Crypto[]; columns: ColumnDef<Crypto>
         </button>
         <button className="rounded border p-1" onClick={() => table.lastPage()} disabled={!table.getCanNextPage()}>
           {">>"}
-        </button>        
+        </button>
       </div>
-
-      <br />
-      <br />
-      <br />
     </div>
   )
 }
@@ -283,33 +256,19 @@ function Filter({ column, table }: { column: Column<any, any>; table: Table<any>
 
   const columnFilterValue = column.getFilterValue()
 
-  return typeof firstValue === "number" ? (
-    <div className="flex justify-end space-x-2" onClick={(e) => e.stopPropagation()}>
+  return typeof firstValue === "string" ? (
+    <div className="absolute left-2 top-1">
+      <IoSearchSharp size={20} className="absolute left-2 top-[6px]" />
       <input
-        type="number"
-        value={(columnFilterValue as [number, number])?.[0] ?? ""}
-        onChange={(e) => column.setFilterValue((old: [number, number]) => [e.target.value, old?.[1]])}
-        placeholder={`Min`}
-        className="w-24 rounded border shadow"
-      />
-      <input
-        type="number"
-        value={(columnFilterValue as [number, number])?.[1] ?? ""}
-        onChange={(e) => column.setFilterValue((old: [number, number]) => [old?.[0], e.target.value])}
-        placeholder={`Max`}
-        className="w-24 rounded border shadow"
+        className="h-8 w-64 rounded border pl-8 shadow"
+        onChange={(e) => column.setFilterValue(e.target.value)}
+        onClick={(e) => e.stopPropagation()}
+        placeholder={`Search currency...`}
+        type="text"
+        value={(columnFilterValue ?? "") as string}
       />
     </div>
-  ) : (
-    <input
-      className="w-36 rounded border shadow"
-      onChange={(e) => column.setFilterValue(e.target.value)}
-      onClick={(e) => e.stopPropagation()}
-      placeholder={`Search...`}
-      type="text"
-      value={(columnFilterValue ?? "") as string}
-    />
-  )
+  ) : null
 }
 
 // https://tanstack.com/table/latest/docs/framework/react/examples/pagination

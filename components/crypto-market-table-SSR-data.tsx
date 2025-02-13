@@ -6,7 +6,7 @@ const getData = async () => {
   try {
     // https://pro.coinmarketcap.com/api/v1?source=post_page---------------------------#operation/getV1CryptocurrencyListingsLatest
     const response = await fetch(
-      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${33}`,
+      `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=${40}`,
       {
         next: { revalidate: 60 * 10 }, // in seconds
         headers: {
@@ -15,8 +15,7 @@ const getData = async () => {
         },
       }
     )
-    const data = await response.json()
-    console.log(data)
+    const data = await response.json()    
     return data
   } catch (error) {
     console.log(error)
